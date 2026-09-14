@@ -34,21 +34,6 @@ export const WORK: WorkItem[] = [
     links: [],
   },
   {
-    title: "BiteMate: AI Food Finder",
-    category: "Mobile Apps",
-    year: "2026",
-    tag: "Live on the App Store",
-    image: "/bitemate-shot.png",
-    fit: "contain",
-    icon: "phone",
-    body: "A published iOS and Android app that answers \"what should I eat?\" in one tap. AI matches you to nearby restaurants or recipes based on what you're actually craving, with four modes (Mate, Date, Health, and Recipe) and a clear reason behind every recommendation. Rated 5.0 stars on the App Store.",
-    stack: ["React Native", "AI Recommendations", "iOS", "Android"],
-    links: [
-      { label: "App Store", href: "https://apps.apple.com/us/app/bitemate-ai-food-finder/id6756649109" },
-      { label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.bitemate.app" },
-    ],
-  },
-  {
     title: "Agency OS",
     category: "Web Apps",
     year: "2026",

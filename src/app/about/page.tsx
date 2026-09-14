@@ -82,7 +82,7 @@ export default function AboutPage() {
           <p>
             EVOGENCY runs the other way. The person who writes the code is the
             person you talk to. Everything on the work page was built here, from
-            a published App Store product to the CRM that runs this business.
+            a professional desktop app to the CRM that runs this business.
             That is the bar, and your website gets held to it too.
           </p>
         </div>

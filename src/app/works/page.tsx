@@ -7,7 +7,7 @@ import { WORK, WORK_CATEGORIES } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Work | EVOGENCY",
   description:
-    "Real products, actually shipped: a published AI app on the App Store, a live CRM platform, and a professional desktop tool.",
+    "Real products, actually shipped: a live CRM platform, a professional desktop tool, and real client work.",
 };
 
 export default function WorksPage() {
@@ -25,8 +25,8 @@ export default function WorksPage() {
           <span className="gradient-text">That Actually Ship</span>
         </h1>
         <p className="mt-6 max-w-2xl text-balance text-white/70 sm:text-lg">
-          Not mockups. Not concepts sitting in a folder. Real products in the
-          App Store, on Google Play, and in production right now.
+          Not mockups. Not concepts sitting in a folder. Real software,
+          live and in production right now.
         </p>
       </section>
 
@@ -40,10 +40,10 @@ export default function WorksPage() {
           <span className="gradient-text">build your website</span>
         </h2>
         <p className="mt-5 text-white/65">
-          Shipping a real app to the App Store means handling design, speed,
-          security, and everything Apple throws at you. That is the standard we
-          bring to every local business site we build: fast, clean, and built to
-          bring you customers.
+          Building a real CRM platform that runs a business every day means
+          handling data, security, and reliability that cannot break. That is
+          the standard we bring to every local business site we build: fast,
+          clean, and built to bring you customers.
         </p>
       </section>
 
