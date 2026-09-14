@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, Phone, Mail, CalendarClock } from "lucide-react";
@@ -14,10 +14,31 @@ const LINKS = [
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const lastY = useRef(0);
+
+  useEffect(() => {
+    lastY.current = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      if (open || y < 80) {
+        setHidden(false);
+        lastY.current = y;
+        return;
+      }
+      if (y > lastY.current + 4) setHidden(true);
+      else if (y < lastY.current - 4) setHidden(false);
+      lastY.current = y;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [open]);
 
   return (
     <>
-      <header className="sticky top-0 z-50 flex justify-center px-4 pt-4">
+      <header
+        className={`sticky top-0 z-50 flex justify-center px-4 pt-4 transition-transform duration-300 ease-out ${hidden ? "-translate-y-full" : "translate-y-0"}`}
+      >
         <nav className="glass-nav flex w-full max-w-5xl items-center justify-between rounded-2xl px-4 py-2.5">
           <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
             <Image src="/evogency-logo.png" alt="EVOGENCY" width={36} height={36} className="h-9 w-9 object-contain" />
