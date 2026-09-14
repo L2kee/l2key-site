@@ -19,9 +19,20 @@ export const SERVICES = [
   },
 ];
 
-export const WORK_CATEGORIES = ["All", "Mobile Apps", "Web Apps", "Desktop Apps"];
+export const WORK_CATEGORIES = ["All", "Websites", "Mobile Apps", "Web Apps", "Desktop Apps"];
 
 export const WORK: WorkItem[] = [
+  {
+    title: "Orlando Suits",
+    category: "Websites",
+    year: "2026",
+    tag: "Design concept",
+    icon: "globe",
+    images: ["/orlando-hero.png", "/orlando-reviews.png", "/orlando-grid.png"],
+    body: "A pitch concept for a downtown Orlando menswear and tailoring shop, built with real product photography to show the client what the brand could look like online before any commitment. Full landing page, review driven, built to get a man through the door for a fitting.",
+    stack: ["HTML", "CSS", "Design"],
+    links: [],
+  },
   {
     title: "BiteMate: AI Food Finder",
     category: "Mobile Apps",

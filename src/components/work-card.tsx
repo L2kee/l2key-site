@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { ArrowUpRight, Smartphone, LayoutDashboard, Zap } from "lucide-react";
+import { ArrowUpRight, Smartphone, LayoutDashboard, Zap, Globe2 } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { WorkCarousel } from "@/components/work-carousel";
 
-const ICONS = { phone: Smartphone, dashboard: LayoutDashboard, bolt: Zap };
+const ICONS = { phone: Smartphone, dashboard: LayoutDashboard, bolt: Zap, globe: Globe2 };
 
 export type WorkItem = {
   title: string;
