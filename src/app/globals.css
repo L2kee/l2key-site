@@ -140,6 +140,78 @@ body::after {
     color: transparent;
   }
 
+  /* One-shot bloom reveal: 24 real rendered stages of the flower opening,
+     bud to full bloom, stepped through once and held on the final frame.
+     transform: translateX is GPU-composited (no repaint per step). To land
+     exactly on the real last frame (index 23) and freeze there via
+     fill-mode: forwards, this uses steps(23) ending at -(23 * frameWidth) —
+     steps(24) would overshoot past the last real frame into blank space. */
+  .logo-bloom-wrap {
+    width: 155px;
+    height: 128px;
+  }
+  .logo-bloom-viewport {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    mask-image: radial-gradient(circle, #000 58%, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle, #000 58%, transparent 80%);
+    filter: drop-shadow(0 10px 30px rgba(240, 193, 75, 0.35));
+  }
+  .logo-bloom-sprite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3720px;
+    height: 100%;
+    background-image: url('/evogency-logo-bloom.png');
+    background-repeat: no-repeat;
+    background-size: 3720px 128px;
+    animation: logo-bloom-frames-mobile 2.2s steps(23) 1 forwards;
+    will-change: transform;
+  }
+  @media (min-width: 640px) {
+    .logo-bloom-wrap {
+      width: 193px;
+      height: 160px;
+    }
+    .logo-bloom-sprite {
+      width: 4632px;
+      background-size: 4632px 160px;
+      animation: logo-bloom-frames-sm 2.2s steps(23) 1 forwards;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .logo-bloom-sprite {
+      animation: none;
+      transform: translateX(-3565px);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) and (min-width: 640px) {
+    .logo-bloom-sprite {
+      transform: translateX(-4439px);
+    }
+  }
+
+  /* Duplicate track: the second group is an identical copy, so translating
+     the pair by exactly -50% lands the copy where the original started and
+     the loop is seamless. */
+  .marquee {
+    overflow: hidden;
+  }
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 34s linear infinite;
+  }
+  .marquee-group {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+  }
+
   /* 3D tilt surface — perspective lives on the parent, this is the card
      that actually rotates so the shadow below can stay put and read as
      real depth instead of moving with it. */
@@ -150,5 +222,27 @@ body::after {
     transform-style: preserve-3d;
     transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 400ms ease;
     will-change: transform;
+  }
+}
+
+@keyframes logo-bloom-frames-mobile {
+  from { transform: translateX(0); }
+  to { transform: translateX(-3565px); }
+}
+
+@keyframes logo-bloom-frames-sm {
+  from { transform: translateX(0); }
+  to { transform: translateX(-4439px); }
+}
+
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
   }
 }

@@ -1,10 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { StatPills } from "@/components/stat-pills";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { Marquee } from "@/components/marquee";
+import { WorkCard } from "@/components/work-card";
 import { SERVICES, WORK } from "@/lib/content";
 
 export default function Home() {
@@ -17,15 +18,11 @@ export default function Home() {
           Available for new projects
         </div>
 
-        <div className="mt-8 h-28 w-28 overflow-hidden rounded-full shadow-[0_20px_60px_-15px_rgba(240,193,75,0.55)] sm:h-32 sm:w-32">
-          <Image
-            src="/evogency-logo.png"
-            alt="EVOGENCY"
-            width={128}
-            height={128}
-            className="h-full w-full object-cover"
-            priority
-          />
+        <div className="logo-bloom-wrap relative mt-8">
+          <div className="absolute inset-0 rounded-full bg-[#f0c14b]/20 blur-3xl" />
+          <div role="img" aria-label="EVOGENCY" className="logo-bloom-viewport">
+            <div className="logo-bloom-sprite" />
+          </div>
         </div>
 
         <h1 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -37,14 +34,14 @@ export default function Home() {
         <p className="mt-6 max-w-2xl text-balance text-white/70 sm:text-lg">
           We help local businesses build a real online presence: professional
           websites, stronger Google reviews, and SEO that actually gets
-          found — so more of the right people walk through the door.
+          found, so more of the right people walk through the door.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <Link href="/contact" className="btn-solid">
             Get a free site audit <ArrowRight size={16} />
           </Link>
-          <Link href="/work" className="btn-glass text-white">
+          <Link href="/works" className="btn-glass text-white">
             See our work
           </Link>
         </div>
@@ -70,31 +67,18 @@ export default function Home() {
         <CtaBand text="Get a Free Proposal" />
       </section>
 
+      <Marquee />
+
       {/* Work preview */}
       <section className="mx-auto max-w-5xl px-6 py-16">
         <SectionHeading eyebrow="Proof, not promises" title="Featured work" />
-        <div className="mt-10 space-y-6">
-          {WORK.map((w) => (
-            <TiltCard key={w.title} className="glass-strong rounded-2xl p-8">
-              <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
-                <div>
-                  <h3 className="text-xl font-semibold text-white">{w.title}</h3>
-                  <p className="mt-2 max-w-xl text-sm leading-relaxed text-white/65">{w.body}</p>
-                </div>
-                <a
-                  href={w.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-glass shrink-0 text-white"
-                >
-                  {w.linkLabel} <ArrowRight size={16} />
-                </a>
-              </div>
-            </TiltCard>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          {WORK.slice(0, 2).map((w) => (
+            <WorkCard key={w.title} item={w} />
           ))}
         </div>
         <div className="mt-8 text-center">
-          <Link href="/work" className="text-sm font-medium text-[#f0c14b] hover:underline">
+          <Link href="/works" className="text-sm font-medium text-[#f0c14b] hover:underline">
             See all work →
           </Link>
         </div>
@@ -107,8 +91,8 @@ export default function Home() {
             Let&apos;s get your business found online
           </h2>
           <p className="mx-auto mt-3 max-w-md text-white/65">
-            Free, no-pressure audit of your current site and Google presence —
-            we&apos;ll tell you exactly what&apos;s costing you customers.
+            Free, no pressure audit of your current site and Google presence.
+            We&apos;ll tell you exactly what&apos;s costing you customers.
           </p>
           <div className="mt-8 flex justify-center">
             <Link href="/contact" className="btn-solid">

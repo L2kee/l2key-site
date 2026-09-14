@@ -5,8 +5,23 @@ import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
 
 export const metadata: Metadata = {
-  title: "About — EVOGENCY",
+  title: "About | EVOGENCY",
 };
+
+const PRINCIPLES = [
+  {
+    title: "Ship real things, not mockups",
+    body: "Every project ends with something live that you can open, use, and measure. No endless revision cycles on a slide deck.",
+  },
+  {
+    title: "Speed is a feature",
+    body: "A beautiful site that takes six seconds to load loses the customer before they see it. Everything gets built fast first, mobile first.",
+  },
+  {
+    title: "You talk to the builder",
+    body: "No account manager relaying messages to an offshore team. The person who writes your code answers your calls.",
+  },
+];
 
 export default function AboutPage() {
   return (
@@ -28,7 +43,7 @@ export default function AboutPage() {
             <h3 className="text-xl font-semibold text-white">Mohamed Eltoukhy</h3>
             <p className="text-sm font-medium text-[#f0c14b]">Founder, EVOGENCY</p>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
-              I build the websites, tools, and systems behind EVOGENCY myself —
+              I build the websites, tools, and systems behind EVOGENCY myself,
               from full CRM platforms to the sites and SEO work we run for
               clients. Every project ships real, working software, not just
               a pitch deck.
@@ -36,6 +51,42 @@ export default function AboutPage() {
           </div>
         </TiltCard>
       </div>
+
+      {/* How we work */}
+      <section className="mt-24">
+        <SectionHeading eyebrow="How we work" title="Three rules we don't break" />
+        <div className="mt-12 space-y-8">
+          {PRINCIPLES.map((p, i) => (
+            <div key={p.title} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
+              <span className="shrink-0 text-2xl font-bold text-[#f0c14b]/50">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <div>
+                <h3 className="text-lg font-semibold text-white">{p.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/60">{p.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Story */}
+      <section className="mt-20">
+        <SectionHeading eyebrow="Why EVOGENCY exists" title="Built by someone who builds" />
+        <div className="mt-10 space-y-4 text-white/65">
+          <p>
+            Most agencies sell local businesses a template, a monthly retainer,
+            and a report nobody reads. The work gets outsourced, the site loads
+            slow, and the owner never finds out why the phone isn&apos;t ringing.
+          </p>
+          <p>
+            EVOGENCY runs the other way. The person who writes the code is the
+            person you talk to. Everything on the work page was built here, from
+            a published App Store product to the CRM that runs this business.
+            That is the bar, and your website gets held to it too.
+          </p>
+        </div>
+      </section>
 
       <CtaBand text="Work with us" />
     </div>

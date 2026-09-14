@@ -1,5 +1,5 @@
 const PILLS = [
-  { label: "Based in", value: "Tampa Bay, FL — remote-friendly" },
+  { label: "Based in", value: "Tampa Bay, FL, remote friendly" },
   { label: "First step", value: "Free site audit, no pitch" },
   { label: "Approach", value: "Real software, not just slides" },
 ];

@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EVOGENCY — Evolve. Elevate. Grow.",
+  title: "EVOGENCY: Evolve. Elevate. Grow.",
   description:
-    "EVOGENCY, founded by Mohamed Eltoukhy, helps local businesses build a real online presence — professional websites, stronger Google reviews, and SEO that gets found.",
+    "EVOGENCY, founded by Mohamed Eltoukhy, helps local businesses build a real online presence: professional websites, stronger Google reviews, and SEO that gets found.",
   icons: { icon: "/evogency-logo.png" },
 };
 

@@ -5,7 +5,7 @@ import { CtaBand } from "@/components/cta-band";
 import { SERVICES, SKILLS } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Services — EVOGENCY",
+  title: "Services | EVOGENCY",
 };
 
 export default function ServicesPage() {

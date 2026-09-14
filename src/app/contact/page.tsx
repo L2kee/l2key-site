@@ -3,7 +3,7 @@ import { Phone, CalendarClock, Mail, ExternalLink } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 
 export const metadata: Metadata = {
-  title: "Contact — EVOGENCY",
+  title: "Contact | EVOGENCY",
 };
 
 export default function ContactPage() {
@@ -14,8 +14,8 @@ export default function ContactPage() {
           Let&apos;s get your business found online
         </h1>
         <p className="mx-auto mt-3 max-w-md text-white/65">
-          Free, no-pressure audit of your current site and Google presence —
-          we&apos;ll tell you exactly what&apos;s costing you customers.
+          Free, no pressure audit of your current site and Google presence.
+          We&apos;ll tell you exactly what&apos;s costing you customers.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <a href="tel:+18138971954" className="btn-solid">
@@ -29,7 +29,7 @@ export default function ContactPage() {
           >
             <CalendarClock size={16} /> Book a call
           </a>
-          <a href="mailto:mohamed.eltoukhy011@gmail.com" className="btn-glass text-white">
+          <a href="mailto:hello@evogencyglobal.com" className="btn-glass text-white">
             <Mail size={16} /> Email us
           </a>
           <a
