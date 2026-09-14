@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-accent-gold: #f0c14b;
+  --color-accent-amber: #c9922c;
+}
+
+html,
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Anchor-nav sections must clear the sticky glass navbar, or the jump
+   lands content half-hidden underneath it. */
+section[id],
+div#top {
+  scroll-margin-top: 6rem;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background: #0a0805;
+  color: #f3ede0;
+}
+
+/* Soft ambient color wash, sitting BEHIND the 3D wireframe scene
+   (that one lives at z-index -1) so the wireframe reads clearly on top. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -2;
+  width: 46rem;
+  height: 46rem;
+  border-radius: 9999px;
+  filter: blur(130px);
+  pointer-events: none;
+}
+body::before {
+  top: -14rem;
+  left: -14rem;
+  background: radial-gradient(circle, rgba(240, 193, 75, 0.16), transparent 70%);
+}
+body::after {
+  bottom: -16rem;
+  right: -14rem;
+  background: radial-gradient(circle, rgba(201, 146, 44, 0.14), transparent 70%);
+}
+
+@layer components {
+  /* Glass surfaces with a real shadow, not a flat border. */
+  .glass {
+    background: linear-gradient(160deg, rgb(255 255 255 / 0.07), rgb(255 255 255 / 0.015));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255 255 255 / 0.1);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.06) inset,
+      0 30px 60px -30px rgba(0, 0, 0, 0.7),
+      0 0 40px -20px rgba(240, 193, 75, 0.16);
+  }
+
+  /* The sticky nav needs to stay legible over WHATEVER scrolls behind
+     it (headlines, wireframe lines), so it gets a much more opaque
+     backing than the decorative .glass cards. */
+  .glass-nav {
+    background: linear-gradient(160deg, rgba(12, 9, 5, 0.98), rgba(12, 9, 5, 0.95));
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgb(255 255 255 / 0.1);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.06) inset,
+      0 20px 40px -20px rgba(0, 0, 0, 0.8);
+  }
+
+  .glass-strong {
+    background: linear-gradient(160deg, rgb(255 255 255 / 0.1), rgb(255 255 255 / 0.03));
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgb(255 255 255 / 0.14);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.08) inset,
+      0 40px 80px -30px rgba(0, 0, 0, 0.75),
+      0 0 60px -20px rgba(201, 146, 44, 0.2);
+  }
+
+  /* Glass button — the "made of glass" ask. */
+  .btn-glass {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    background: linear-gradient(160deg, rgb(255 255 255 / 0.14), rgb(255 255 255 / 0.04));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgb(255 255 255 / 0.18);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.15) inset,
+      0 14px 30px -12px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+  }
+  .btn-glass:hover {
+    transform: translateY(-2px);
+    border-color: rgb(255 255 255 / 0.3);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.2) inset,
+      0 20px 40px -14px rgba(0, 0, 0, 0.7),
+      0 0 30px -8px rgba(240, 193, 75, 0.45);
+  }
+
+  .btn-solid {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+    color: #241a05;
+    font-weight: 600;
+    box-shadow: 0 14px 30px -10px rgba(240, 193, 75, 0.5);
+    transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
+  }
+  .btn-solid:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+    box-shadow: 0 20px 40px -10px rgba(201, 146, 44, 0.6);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* 3D tilt surface — perspective lives on the parent, this is the card
+     that actually rotates so the shadow below can stay put and read as
+     real depth instead of moving with it. */
+  .tilt-wrap {
+    perspective: 1200px;
+  }
+  .tilt-card {
+    transform-style: preserve-3d;
+    transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 400ms ease;
+    will-change: transform;
+  }
+}
