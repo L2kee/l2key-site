@@ -236,6 +236,70 @@ body::after {
     will-change: transform;
   }
 
+  /* BUILD / DISCOVER / TRUST — three scroll-scrubbed service stages, same
+     JS-driven-inline-style approach as the Evolve journey (no CSS
+     transitions here; they'd lag behind the exact scroll position). */
+  .services-journey-stage {
+    position: relative;
+    width: 240px;
+    height: 220px;
+  }
+  .services-journey-layer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+  .services-journey-visual {
+    width: 190px;
+    height: auto;
+  }
+
+  .services-journey-lotus-wrap {
+    position: relative;
+    width: 220px;
+    height: 220px;
+  }
+  .services-journey-lotus-viewport {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 132px;
+    height: 109px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    mask-image: radial-gradient(circle, #000 55%, transparent 80%);
+    -webkit-mask-image: radial-gradient(circle, #000 55%, transparent 80%);
+    filter: drop-shadow(0 8px 24px rgba(240, 193, 75, 0.3));
+  }
+  .services-journey-lotus-frame {
+    position: absolute;
+    inset: 0;
+    background-image: url('/evogency-logo-bloom.png');
+    background-repeat: no-repeat;
+    background-size: 3168px 109px;
+    background-position: -3036px 0;
+  }
+  .services-journey-points {
+    position: absolute;
+    inset: 0;
+    animation: services-orbit-drift 30s ease-in-out infinite;
+    animation-play-state: paused;
+  }
+  .services-journey-point {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    margin-top: -3px;
+    border-radius: 9999px;
+    background: #f0c14b;
+    opacity: 0;
+    box-shadow: 0 0 10px 2px rgba(240, 193, 75, 0.5);
+  }
+
   /* EVOLVE / ELEVATE / GROW — a scroll-scrubbed brand moment, not an
      autoplay animation. Progress and every opacity/transform value below
      are set directly from JS on scroll (see evolve-journey.tsx), so there
@@ -322,8 +386,18 @@ body::after {
   }
 }
 
+@keyframes services-orbit-drift {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track {
+  .marquee-track,
+  .services-journey-points {
     animation: none;
   }
 }

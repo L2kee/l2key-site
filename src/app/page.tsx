@@ -3,11 +3,11 @@ import { ArrowRight } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { StatPills } from "@/components/stat-pills";
 import { SectionHeading } from "@/components/section-heading";
-import { CtaBand } from "@/components/cta-band";
 import { Marquee } from "@/components/marquee";
 import { WorkCard } from "@/components/work-card";
 import { EvolveJourney } from "@/components/evolve-journey";
-import { SERVICES, WORK } from "@/lib/content";
+import { ServicesJourney } from "@/components/services-journey";
+import { WORK } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -54,23 +54,7 @@ export default function Home() {
 
       <EvolveJourney />
 
-      {/* Services preview — horizontal scroll strip */}
-      <section className="py-16">
-        <SectionHeading eyebrow="What we do" title="Services built to grow your business" />
-        <div className="mt-10 flex gap-5 overflow-x-auto px-6 pb-4 sm:justify-center [scrollbar-width:thin]">
-          {SERVICES.map((s) => (
-            <div
-              key={s.title}
-              className="glass w-72 shrink-0 rounded-2xl p-6 sm:w-80"
-            >
-              <s.icon size={28} style={{ color: "#f0c14b" }} />
-              <h3 className="mt-4 text-lg font-semibold text-white">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">{s.body}</p>
-            </div>
-          ))}
-        </div>
-        <CtaBand text="Get a Free Proposal" />
-      </section>
+      <ServicesJourney />
 
       <Marquee />
 
