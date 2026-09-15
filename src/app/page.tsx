@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
 import { Marquee } from "@/components/marquee";
 import { WorkCard } from "@/components/work-card";
+import { EvolveJourney } from "@/components/evolve-journey";
 import { SERVICES, WORK } from "@/lib/content";
 
 export default function Home() {
@@ -50,6 +51,8 @@ export default function Home() {
 
         <StatPills />
       </section>
+
+      <EvolveJourney />
 
       {/* Services preview — horizontal scroll strip */}
       <section className="py-16">
