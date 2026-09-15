@@ -31,18 +31,20 @@ export default function Home() {
           <span className="gradient-text">Designed to be trusted.</span>
         </h1>
 
-        <p className="mt-6 max-w-2xl text-balance text-white/70 sm:text-lg">
-          We help local businesses build a real online presence: professional
-          websites, stronger Google reviews, and SEO that actually gets
-          found, so more of the right people walk through the door.
+        <p className="mt-6 text-balance text-xl font-semibold text-white sm:text-2xl">
+          Your business deserves to be seen.
+        </p>
+        <p className="mt-3 max-w-2xl text-balance text-white/70 sm:text-lg">
+          EVOGENCY builds the websites, search presence, and digital systems
+          that turn attention into customers.
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <Link href="/contact" className="btn-solid">
-            Get a free site audit <ArrowRight size={16} />
-          </Link>
-          <Link href="/works" className="btn-glass text-white">
-            See our work
+        <div className="mt-10">
+          <Link
+            href="/contact"
+            className="btn-solid !px-8 !py-4 text-base sm:text-lg"
+          >
+            Get Your Free Audit <ArrowRight size={18} />
           </Link>
         </div>
 
