@@ -6,6 +6,9 @@ import { CtaBand } from "@/components/cta-band";
 
 export const metadata: Metadata = {
   title: "About | EVOGENCY",
+  description:
+    "Meet Mohamed Eltoukhy, founder of EVOGENCY. Based in Orlando, FL and serving clients worldwide, building real websites and digital systems for local businesses.",
+  alternates: { canonical: "/about" },
 };
 
 const PRINCIPLES = [

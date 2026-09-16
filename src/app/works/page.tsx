@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Work | EVOGENCY",
   description:
     "Real products, actually shipped: a live CRM platform, a professional desktop tool, and real client work.",
+  alternates: { canonical: "/works" },
 };
 
 export default function WorksPage() {

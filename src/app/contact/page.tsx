@@ -4,6 +4,9 @@ import { TiltCard } from "@/components/tilt-card";
 
 export const metadata: Metadata = {
   title: "Contact | EVOGENCY",
+  description:
+    "Get a free website and Google presence audit from EVOGENCY. Based in Orlando, FL and working with clients worldwide.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

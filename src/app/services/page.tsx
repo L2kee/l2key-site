@@ -6,6 +6,9 @@ import { SERVICES, SKILLS } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Services | EVOGENCY",
+  description:
+    "Websites, SEO, and digital systems built to grow your business. EVOGENCY serves Orlando, FL locally and clients worldwide.",
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {
