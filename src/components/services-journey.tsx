@@ -43,7 +43,7 @@ export function ServicesJourney() {
             <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-white/10">
               <Image
                 src={s.image}
-                alt={`${s.title} — ${s.kicker}`}
+                alt={`${s.title}: ${s.kicker}`}
                 fill
                 sizes="(max-width: 640px) 100vw, 33vw"
                 className="object-cover"

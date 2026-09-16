@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/services", label: "Services" },
   { href: "/works", label: "Work" },
   { href: "/contact", label: "Contact" },
+  { href: "/agency-os", label: "Client Portal" },
 ];
 
 export function Navbar() {

@@ -4,14 +4,30 @@ import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
 import { SERVICES, SKILLS } from "@/lib/content";
 
+const TITLE = "Web Design, SEO & Reputation Services | EVOGENCY Orlando";
+const DESCRIPTION =
+  "Websites that convert, SEO that gets found, and Google review systems that turn happy customers into new business. Built for local businesses in Orlando, FL.";
+
 export const metadata: Metadata = {
-  title: "Services | EVOGENCY",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/services" },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/services",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function ServicesPage() {
   return (
     <div className="mx-auto max-w-5xl px-6 pt-28 pb-20">
-      <SectionHeading eyebrow="What we do" title="Services built to grow your business" />
+      <SectionHeading as="h1" eyebrow="What we do" title="Services built to grow your business" />
 
       <div className="mt-12 grid gap-6 sm:grid-cols-3">
         {SERVICES.map((s) => (

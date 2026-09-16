@@ -2,8 +2,24 @@ import type { Metadata } from "next";
 import { Phone, CalendarClock, Mail, ExternalLink } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 
+const TITLE = "Contact EVOGENCY | Free Website & SEO Audit, Orlando FL";
+const DESCRIPTION =
+  "Get a free audit of your website and Google presence. Call, email, or book a time with EVOGENCY, based in Orlando, FL and remote friendly.";
+
 export const metadata: Metadata = {
-  title: "Contact | EVOGENCY",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/contact",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 export default function ContactPage() {
@@ -13,6 +29,7 @@ export default function ContactPage() {
         <h1 className="text-2xl font-bold text-white sm:text-3xl">
           Let&apos;s get your business found online
         </h1>
+        <h2 className="sr-only">Ways to reach EVOGENCY</h2>
         <p className="mx-auto mt-3 max-w-md text-white/65">
           Free, no pressure audit of your current site and Google presence.
           We&apos;ll tell you exactly what&apos;s costing you customers.

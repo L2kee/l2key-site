@@ -4,8 +4,24 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
 
+const TITLE = "About EVOGENCY | Orlando Web Design & SEO Agency";
+const DESCRIPTION =
+  "Meet Mohamed Eltoukhy, the founder and builder behind EVOGENCY. Real software shipped for local businesses in Orlando, FL, not templates and outsourced work.";
+
 export const metadata: Metadata = {
-  title: "About | EVOGENCY",
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    url: "/about",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+  },
 };
 
 const PRINCIPLES = [
@@ -26,7 +42,7 @@ const PRINCIPLES = [
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
-      <SectionHeading eyebrow="Who's behind it" title="Founder" />
+      <SectionHeading as="h1" eyebrow="Who's behind it" title="Founder" />
 
       <div className="mt-12">
         <TiltCard className="glass-strong flex flex-col items-center gap-6 rounded-3xl p-10 text-center sm:flex-row sm:text-left">
