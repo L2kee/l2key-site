@@ -160,7 +160,7 @@ body::after {
      steps(24) would overshoot past the last real frame into blank space. */
   .logo-bloom-wrap {
     width: 155px;
-    height: 128px;
+    height: 155px;
   }
   .logo-bloom-viewport {
     position: relative;
@@ -179,18 +179,18 @@ body::after {
     height: 100%;
     background-image: url('/evogency-logo-bloom.png');
     background-repeat: no-repeat;
-    background-size: 3720px 128px;
+    background-size: 3720px 155px;
     animation: logo-bloom-frames-mobile 2.2s steps(23) 1 forwards;
     will-change: transform;
   }
   @media (min-width: 640px) {
     .logo-bloom-wrap {
       width: 193px;
-      height: 160px;
+      height: 193px;
     }
     .logo-bloom-sprite {
       width: 4632px;
-      background-size: 4632px 160px;
+      background-size: 4632px 193px;
       animation: logo-bloom-frames-sm 2.2s steps(23) 1 forwards;
     }
   }
@@ -243,7 +243,7 @@ body::after {
      behind the scroll position instead of tracking it exactly. */
   .evolve-journey-lotus-wrap {
     width: 155px;
-    height: 128px;
+    height: 155px;
   }
   .evolve-journey-lotus-viewport {
     position: relative;
@@ -262,7 +262,7 @@ body::after {
     height: 100%;
     background-image: url('/evogency-logo-bloom.png');
     background-repeat: no-repeat;
-    background-size: 3720px 128px;
+    background-size: 3720px 155px;
     will-change: transform;
   }
   .evolve-journey-word-stage {
@@ -291,11 +291,11 @@ body::after {
   @media (min-width: 640px) {
     .evolve-journey-lotus-wrap {
       width: 193px;
-      height: 160px;
+      height: 193px;
     }
     .evolve-journey-lotus-frame {
       width: 4632px;
-      background-size: 4632px 160px;
+      background-size: 4632px 193px;
     }
     .evolve-journey-word {
       font-size: 4.5rem;

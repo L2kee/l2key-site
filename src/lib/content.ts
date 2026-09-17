@@ -1,7 +1,14 @@
 import { Globe2, Star, Search, Code2, Smartphone, Bot } from "lucide-react";
 import type { WorkItem } from "@/components/work-card";
 
-export const SERVICES = [
+type Service = {
+  icon: typeof Globe2;
+  title: string;
+  body: string;
+  href?: string;
+};
+
+export const SERVICES: Service[] = [
   {
     icon: Globe2,
     title: "Websites That Convert",
@@ -11,6 +18,7 @@ export const SERVICES = [
     icon: Search,
     title: "SEO That Gets Found",
     body: "Search engine optimization, local search tuning, and technical fixes so your business shows up when people are actually looking.",
+    href: "/seo-agency-orlando",
   },
   {
     icon: Star,
@@ -43,13 +51,13 @@ export const WORK: WorkItem[] = [
       "/agency-dashboard.png",
       "/agency-pipeline.png",
       "/agency-leads.png",
-      "/agency-prospecting.png",
       "/agency-playbook.png",
       "/agency-settings.png",
     ],
+    imagePosition: "left-top",
     body: "A full CRM and prospecting platform built from the ground up: pipeline management, local business prospecting, outreach sequences, a cold calling playbook, and role based access. Live in production today.",
     stack: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-    links: [{ label: "View live app", href: "https://agency-os-v2-sage.vercel.app" }],
+    links: [{ label: "View live app", href: "https://www.evogencyglobal.com/agency-os" }],
   },
   {
     title: "ElectricalAI Pro",

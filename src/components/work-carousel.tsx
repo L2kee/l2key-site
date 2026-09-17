@@ -3,7 +3,15 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-export function WorkCarousel({ images, alt }: { images: string[]; alt: string }) {
+export function WorkCarousel({
+  images,
+  alt,
+  objectPosition = "top",
+}: {
+  images: string[];
+  alt: string;
+  objectPosition?: "top" | "left-top";
+}) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -26,7 +34,9 @@ export function WorkCarousel({ images, alt }: { images: string[]; alt: string })
           alt={`${alt} screenshot ${i + 1}`}
           fill
           sizes="(max-width: 640px) 100vw, 50vw"
-          className="object-cover object-top opacity-90 saturate-[0.9] transition-opacity duration-500"
+          className={`object-cover opacity-90 saturate-[0.9] transition-opacity duration-500 ${
+            objectPosition === "left-top" ? "object-left-top" : "object-top"
+          }`}
           style={{ opacity: i === index ? 0.9 : 0 }}
           priority={i === 0}
         />

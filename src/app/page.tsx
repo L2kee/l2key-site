@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
-import { StatPills } from "@/components/stat-pills";
 import { SectionHeading } from "@/components/section-heading";
 import { Marquee } from "@/components/marquee";
 import { WorkCard } from "@/components/work-card";
@@ -48,8 +47,6 @@ export default function Home() {
             Get Your Free Audit <ArrowRight size={18} />
           </Link>
         </div>
-
-        <StatPills />
       </section>
 
       <EvolveJourney />

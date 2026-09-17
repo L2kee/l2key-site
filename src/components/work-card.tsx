@@ -13,6 +13,7 @@ export type WorkItem = {
   tag?: string;
   image?: string;
   images?: string[];
+  imagePosition?: "top" | "left-top";
   fit?: string;
   icon: keyof typeof ICONS;
   stack: string[];
@@ -25,7 +26,7 @@ export function WorkCard({ item }: { item: WorkItem }) {
     <TiltCard className="glass-strong flex h-full flex-col overflow-hidden rounded-2xl">
       <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#f0c14b]/15 via-[#c9922c]/5 to-transparent">
         {item.images && item.images.length > 0 ? (
-          <WorkCarousel images={item.images} alt={item.title} />
+          <WorkCarousel images={item.images} alt={item.title} objectPosition={item.imagePosition} />
         ) : item.image ? (
           <Image
             src={item.image}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { BackgroundScene } from "@/components/background-scene";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     url: "/",
     siteName: "EVOGENCY",
-    images: [{ url: "/evogency-logo.png", width: 1024, height: 1024, alt: "EVOGENCY" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "EVOGENCY: Evolve. Elevate. Grow." }],
     locale: "en_US",
     type: "website",
   },
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
-    images: ["/evogency-logo.png"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -82,6 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-P0SVMCCT5Y" />
     </html>
   );
 }

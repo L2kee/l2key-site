@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 
 const TOTAL_FRAMES = 24;
-const MOBILE = { w: 155, h: 128 };
-const SM = { w: 193, h: 160 };
+const MOBILE = { w: 155, h: 155 };
+const SM = { w: 193, h: 193 };
 
 function clamp(v: number, a: number, b: number) {
   return Math.min(b, Math.max(a, v));
