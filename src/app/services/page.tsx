@@ -33,10 +33,10 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="mx-auto max-w-5xl px-6 pt-28 pb-20">
+    <div className="mx-auto max-w-6xl px-6 pt-28 pb-20">
       <SectionHeading as="h1" eyebrow="What we do" title="Services built to grow your business" />
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-3">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {SERVICES.map((s) => (
           <TiltCard key={s.title} className="glass h-full rounded-2xl p-6">
             <s.icon size={28} style={{ color: "#f0c14b" }} />
