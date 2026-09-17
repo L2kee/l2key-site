@@ -6,10 +6,12 @@ import Image from "next/image";
 export function WorkCarousel({
   images,
   alt,
+  alts,
   objectPosition = "top",
 }: {
   images: string[];
   alt: string;
+  alts?: string[];
   objectPosition?: "top" | "left-top";
 }) {
   const [index, setIndex] = useState(0);
@@ -31,7 +33,7 @@ export function WorkCarousel({
         <Image
           key={src}
           src={src}
-          alt={`${alt} screenshot ${i + 1}`}
+          alt={alts?.[i] ?? `${alt} screenshot ${i + 1}`}
           fill
           sizes="(max-width: 640px) 100vw, 50vw"
           className={`object-cover opacity-90 saturate-[0.9] transition-opacity duration-500 ${

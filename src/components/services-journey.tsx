@@ -8,6 +8,7 @@ const STAGES = [
     title: "Websites",
     body: "Websites engineered to turn visitors into customers.",
     image: "/services-build.png",
+    imageAlt: "Conceptual illustration of a glass building framework under a crane, representing custom website design and development",
   },
   {
     index: "02",
@@ -15,6 +16,7 @@ const STAGES = [
     title: "SEO",
     body: "Get discovered when customers are searching.",
     image: "/services-discover.png",
+    imageAlt: "Conceptual illustration of a glowing globe and search bar surrounded by local search suggestions and rising traffic graphics, representing search engine optimization",
   },
   {
     index: "03",
@@ -22,6 +24,7 @@ const STAGES = [
     title: "Reputation",
     body: "Turn happy customers into your strongest sales team.",
     image: "/services-trust.png",
+    imageAlt: "Conceptual illustration of five star customer review cards surrounding a trust shield, representing Google reviews and reputation management",
   },
 ] as const;
 
@@ -43,7 +46,7 @@ export function ServicesJourney() {
             <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-white/10">
               <Image
                 src={s.image}
-                alt={`${s.title}: ${s.kicker}`}
+                alt={s.imageAlt}
                 fill
                 sizes="(max-width: 640px) 100vw, 33vw"
                 className="object-cover"

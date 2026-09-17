@@ -42,7 +42,7 @@ export function Navbar() {
       >
         <nav className="glass-nav flex w-full max-w-5xl items-center justify-between rounded-2xl px-4 py-2.5">
           <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-            <Image src="/evogency-logo.png" alt="EVOGENCY" width={36} height={36} className="h-9 w-9 object-contain" />
+            <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={36} height={36} className="h-9 w-9 object-contain" />
             <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
           </Link>
 
@@ -76,7 +76,7 @@ export function Navbar() {
         <div className="fixed inset-0 z-[60] flex flex-col bg-[#0a0805]/98 backdrop-blur-xl sm:hidden">
           <div className="flex items-center justify-between px-6 pt-7">
             <span className="flex items-center gap-2.5">
-              <Image src="/evogency-logo.png" alt="EVOGENCY" width={32} height={32} className="h-8 w-8 object-contain" />
+              <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={32} height={32} className="h-8 w-8 object-contain" />
               <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
             </span>
             <button

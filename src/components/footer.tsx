@@ -18,7 +18,7 @@ export function Footer() {
             <span className="flex items-center gap-2.5">
               <Image
                 src="/evogency-logo.png"
-                alt="EVOGENCY"
+                alt="EVOGENCY logo"
                 width={40}
                 height={40}
                 className="h-10 w-10 object-contain"

@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="h-28 w-28 shrink-0 overflow-hidden rounded-full ring-2 ring-white/10 shadow-[0_20px_50px_-15px_rgba(240,193,75,0.5)]">
             <Image
               src="/moe-avatar.png"
-              alt="Mohamed Eltoukhy"
+              alt="Illustrated headshot portrait of Mohamed Eltoukhy, founder of EVOGENCY"
               width={112}
               height={112}
               className="h-full w-full object-cover"
