@@ -13,6 +13,7 @@ export const SERVICES: Service[] = [
     icon: Globe2,
     title: "Websites That Convert",
     body: "Fast websites built mobile first, designed to turn visitors into calls and bookings, not just look nice sitting there.",
+    href: "/web-design-agency-orlando",
   },
   {
     icon: Search,
@@ -24,6 +25,7 @@ export const SERVICES: Service[] = [
     icon: Star,
     title: "Google Reviews & Presence",
     body: "Google Business Profile setup and systems that generate more reviews, turning happy customers into five star social proof.",
+    href: "/google-reviews-orlando",
   },
   {
     icon: Sparkles,
