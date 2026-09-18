@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { faqSchema } from "@/lib/faq-schema";
 
 const TITLE = "Web Design Agency Orlando | EVOGENCY";
 const DESCRIPTION =
@@ -95,11 +96,31 @@ const FAQ = [
     q: "Do you guarantee more customers from a new website?",
     a: "No, and you should be skeptical of anyone who guarantees a specific number of customers from a website alone. What we guarantee is a site that's fast, easy to use, and built to convert the traffic you already have or start driving.",
   },
+  {
+    q: "How much does a website cost in Orlando?",
+    a: "It depends on the number of pages and features you need. A single clean landing page costs far less than a full multi page site with a booking system built in. We give you a real number after understanding what you actually need, not a generic package price.",
+  },
+  {
+    q: "What should I look for in a web design agency near me?",
+    a: "Real past work you can click through and use yourself, not just polished screenshots. Ask to see a live site they built, not a mockup.",
+  },
+  {
+    q: "Do I need a custom website or is a template enough?",
+    a: "A template can work for a very simple, low traffic site. Once your website is actually driving business, a custom build built around your specific customers usually converts better and is easier to grow.",
+  },
+  {
+    q: "I need website design help but don't know where to start.",
+    a: "Start with what a visitor needs to see in the first five seconds to trust you and take action. Everything else on the site gets built around that.",
+  },
 ];
 
 export default function WebDesignAgencyOrlandoPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQ)) }}
+      />
       <SectionHeading
         as="h1"
         eyebrow="Web Design in Orlando, FL"

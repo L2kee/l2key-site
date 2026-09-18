@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { faqSchema } from "@/lib/faq-schema";
 
 const TITLE = "AI Automation Orlando | EVOGENCY";
 const DESCRIPTION =
@@ -110,11 +111,27 @@ const FAQ = [
     q: "Can you guarantee this will save us a specific amount of time or money?",
     a: "No, and you should be skeptical of anyone who gives you an exact number before looking at your business. What we can tell you honestly after the audit is exactly where the leaks are and what closing them is worth.",
   },
+  {
+    q: "What is AI automation for a small business?",
+    a: "It's using software and AI agents to handle the repetitive parts of running a business, answering common questions, moving leads through your pipeline, following up on quotes, so your team spends time on the work that actually needs a person.",
+  },
+  {
+    q: "How much does business automation cost?",
+    a: "It depends on how many workflows need to be built and how many systems they connect to. A workflow audit gives you a real number instead of a guess.",
+  },
+  {
+    q: "Is there an AI automation agency near me in Orlando?",
+    a: "Yes. EVOGENCY is based in Orlando and builds AI agents and automation for local businesses directly, not through an offshore team.",
+  },
 ];
 
 export default function AiAutomationOrlandoPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQ)) }}
+      />
       <SectionHeading
         as="h1"
         eyebrow="AI Agents & Automation in Orlando, FL"

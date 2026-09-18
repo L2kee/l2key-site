@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { faqSchema } from "@/lib/faq-schema";
 
 const TITLE = "Generative Engine Optimization Orlando | EVOGENCY";
 const DESCRIPTION =
@@ -82,11 +83,23 @@ const FAQ = [
     q: "Is this actually worth doing yet?",
     a: "It's early, but growing fast, and right now almost nobody in Orlando is actively competing for this. Being early here costs a lot less than trying to catch up once it's crowded.",
   },
+  {
+    q: "How do I get my business mentioned in ChatGPT or AI search results?",
+    a: "By making sure your business information is structured, accurate, and consistent everywhere it appears online. That's exactly what generative engine optimization does.",
+  },
+  {
+    q: "Is there a generative engine optimization agency near me?",
+    a: "Yes. EVOGENCY is based in Orlando and builds this work directly for local businesses, not as an afterthought bolted onto traditional SEO.",
+  },
 ];
 
 export default function GenerativeEngineOptimizationOrlandoPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQ)) }}
+      />
       <SectionHeading
         as="h1"
         eyebrow="AI Search in Orlando, FL"

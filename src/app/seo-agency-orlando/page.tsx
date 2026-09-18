@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { faqSchema } from "@/lib/faq-schema";
 
 const TITLE = "SEO Agency Orlando | EVOGENCY";
 const DESCRIPTION =
@@ -82,11 +83,35 @@ const FAQ = [
     q: "What kind of businesses is this for?",
     a: "Local service businesses that live and die by whether customers can find them: plumbers, roofers, contractors, and similar trades doing business in and around Orlando.",
   },
+  {
+    q: "What is SEO?",
+    a: "SEO stands for search engine optimization. It's the practice of making a website easier for Google to find, understand, and trust, so it shows up when people search for what your business offers.",
+  },
+  {
+    q: "What should I look for in the best SEO agency in Orlando?",
+    a: "Someone who audits before they pitch, shows you the real technical and content work instead of vague promises, and never guarantees a specific ranking. If an agency won't show you exactly what they're doing to your site, that's a red flag.",
+  },
+  {
+    q: "Is it better to hire an SEO agency near me or a national company?",
+    a: "A local Orlando agency understands the map pack, the local competition, and the neighborhoods your customers actually search from. That local context is hard to fake from a call center in another state.",
+  },
+  {
+    q: "How much does SEO cost in Orlando?",
+    a: "It depends on how much work your site actually needs. A free audit tells you exactly what's broken and what a real plan costs, instead of guessing at a number up front.",
+  },
+  {
+    q: "I just need general SEO help, where do I even start?",
+    a: "Start with a free audit. It shows you exactly what's costing you visibility right now, technical issues, local listing gaps, or missing content, before you spend a dollar fixing anything.",
+  },
 ];
 
 export default function SeoAgencyOrlandoPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQ)) }}
+      />
       <SectionHeading
         as="h1"
         eyebrow="SEO in Orlando, FL"

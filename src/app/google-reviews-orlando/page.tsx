@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { faqSchema } from "@/lib/faq-schema";
 
 const TITLE = "Google Reviews & Reputation Management Orlando | EVOGENCY";
 const DESCRIPTION =
@@ -95,11 +96,27 @@ const FAQ = [
     q: "Can you guarantee a five star rating?",
     a: "No, and you should be skeptical of anyone who says they can control what a customer writes. What we guarantee is a real process for asking, and honest responses when they do.",
   },
+  {
+    q: "Why are Google reviews important for a local business?",
+    a: "Most customers check reviews before they call. A strong, active set of real reviews is often the deciding factor between you and the competitor sitting right next to you in the map pack.",
+  },
+  {
+    q: "How do I get more Google reviews?",
+    a: "Ask at the right moment, right after a job is finished or a customer says something positive, and make it as easy as one click. Most businesses lose reviews simply because they forget to ask.",
+  },
+  {
+    q: "What does reputation management actually mean?",
+    a: "It means actively managing your Google Business Profile, responding to reviews, and building a real system for asking happy customers to leave one, instead of hoping it happens on its own.",
+  },
 ];
 
 export default function GoogleReviewsOrlandoPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQ)) }}
+      />
       <SectionHeading
         as="h1"
         eyebrow="Google Reviews & Reputation in Orlando, FL"
