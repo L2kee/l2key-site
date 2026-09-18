@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, CalendarClock, ExternalLink } from "lucide-react";
 
 const PAGES = [
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
+  { href: "/services", label: "Our Craft" },
   { href: "/works", label: "Work" },
   { href: "/contact", label: "Contact" },
 ];
