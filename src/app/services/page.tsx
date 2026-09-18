@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
-import { SERVICES, SKILLS } from "@/lib/content";
+import { SERVICES } from "@/lib/content";
 
 const TITLE = "Web Design, SEO & Reputation Services | EVOGENCY Orlando";
 const DESCRIPTION =
@@ -55,28 +55,6 @@ export default function ServicesPage() {
       </div>
 
       <CtaBand text="Get a Free Proposal" />
-
-      <div className="mt-16">
-        <SectionHeading eyebrow="What we build with" title="The toolkit behind the work" />
-        <div className="mt-10 grid gap-6 sm:grid-cols-3">
-          {SKILLS.map((s) => (
-            <TiltCard key={s.title} className="glass h-full rounded-2xl p-6">
-              <s.icon size={28} style={{ color: "#c9922c" }} />
-              <h3 className="mt-4 text-lg font-semibold text-white">{s.title}</h3>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {s.tags.map((t) => (
-                  <span
-                    key={t}
-                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-white/70"
-                  >
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </TiltCard>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }

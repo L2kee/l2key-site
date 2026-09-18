@@ -1,4 +1,4 @@
-import { Globe2, Star, Search, Code2, Smartphone, Bot, Sparkles, Database } from "lucide-react";
+import { Globe2, Star, Search, Smartphone, Sparkles, Database } from "lucide-react";
 import type { WorkItem } from "@/components/work-card";
 
 type Service = {
@@ -103,23 +103,5 @@ export const WORK: WorkItem[] = [
     body: "An AI powered Windows desktop app built for electricians: an AI electrical assistant, six professional electrical calculators, and a FastAPI/Python backend, built with Flutter and Dart.",
     stack: ["Flutter", "Dart", "FastAPI", "Python"],
     links: [{ label: "View on GitHub", href: "https://github.com/L2kee/ElectricalAI-Pro" }],
-  },
-];
-
-export const SKILLS = [
-  {
-    icon: Code2,
-    title: "Web Development",
-    tags: ["TypeScript", "Next.js", "React", "Tailwind CSS"],
-  },
-  {
-    icon: Bot,
-    title: "Automation & AI Tooling",
-    tags: ["Python", "AI Agents", "Workflow Automation", "APIs"],
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Apps",
-    tags: ["Dart", "Flutter", "Cross platform"],
   },
 ];
