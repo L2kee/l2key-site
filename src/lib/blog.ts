@@ -1,3 +1,5 @@
+import { BLOG_BACKLOG } from "./blog-backlog";
+
 export type BlogSection = {
   heading?: string;
   paragraphs: string[];
@@ -15,7 +17,7 @@ export type BlogPost = {
   relatedLabel?: string;
 };
 
-export const BLOG_POSTS: BlogPost[] = [
+const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "how-to-choose-an-seo-agency-in-orlando",
     title: "How to Choose an SEO Agency in Orlando",
@@ -504,6 +506,29 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+];
+
+/**
+ * Drip-publish batch 1 of the 100-post backlog (src/lib/blog-backlog.ts).
+ * Add more slugs here in future sessions rather than publishing the whole
+ * backlog at once — see the EVOGENCY Website vault note for the cadence.
+ */
+const PUBLISHED_BACKLOG_SLUGS = [
+  "seo-for-plumbers",
+  "seo-for-roofers",
+  "website-design-for-plumbers",
+  "google-reviews-for-plumbers",
+  "ai-automation-for-plumbers",
+  "keyword-research-basics-for-small-business",
+  "what-makes-a-website-convert",
+  "review-count-and-rating-and-the-map-pack",
+  "does-your-business-need-an-app-or-just-a-website",
+  "seo-vs-ppc-for-a-local-business",
+];
+
+export const BLOG_POSTS: BlogPost[] = [
+  ...ORIGINAL_POSTS,
+  ...BLOG_BACKLOG.filter((p) => PUBLISHED_BACKLOG_SLUGS.includes(p.slug)),
 ];
 
 export function getBlogPost(slug: string) {
