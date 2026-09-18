@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { BLOG_POSTS } from "@/lib/blog";
+import { getTotalPages } from "@/lib/blog-pagination";
 
 const BASE_URL = "https://www.evogencyglobal.com";
 
@@ -34,5 +35,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...blogEntries];
+  const totalPages = getTotalPages();
+  const blogPageEntries = [];
+  for (let p = 2; p <= totalPages; p++) {
+    blogPageEntries.push({
+      url: `${BASE_URL}/blog/page/${p}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+    });
+  }
+
+  return [...staticEntries, ...blogEntries, ...blogPageEntries];
 }
