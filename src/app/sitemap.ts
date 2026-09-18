@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/ai-automation-orlando",
     "/web-design-agency-orlando",
     "/google-reviews-orlando",
+    "/custom-crm-development-orlando",
   ];
 
   return routes.map((route) => ({

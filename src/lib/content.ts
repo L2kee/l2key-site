@@ -1,4 +1,4 @@
-import { Globe2, Star, Search, Code2, Smartphone, Bot, Sparkles } from "lucide-react";
+import { Globe2, Star, Search, Code2, Smartphone, Bot, Sparkles, Database } from "lucide-react";
 import type { WorkItem } from "@/components/work-card";
 
 type Service = {
@@ -32,6 +32,12 @@ export const SERVICES: Service[] = [
     title: "AI Automation & Agents",
     body: "AI agents and workflow automation connected to the tools you already use, so leads get answered fast and nothing falls through the cracks.",
     href: "/ai-automation-orlando",
+  },
+  {
+    icon: Database,
+    title: "Custom CRM Development",
+    body: "Real pipeline management, lead tracking, and role based access built around how your business actually works, not a generic template.",
+    href: "/custom-crm-development-orlando",
   },
 ];
 
