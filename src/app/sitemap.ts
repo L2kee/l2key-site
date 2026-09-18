@@ -23,7 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticEntries = routes.map((route) => ({
     url: `${BASE_URL}${route}`,
-    lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: route === "" ? 1 : 0.8,
   }));
@@ -40,7 +39,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (let p = 2; p <= totalPages; p++) {
     blogPageEntries.push({
       url: `${BASE_URL}/blog/page/${p}`,
-      lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.5,
     });
