@@ -6,12 +6,12 @@ import Image from "next/image";
 import { Menu, X, Phone, Mail, CalendarClock } from "lucide-react";
 
 const LINKS = [
-  { href: "/about", label: "About" },
   { href: "/services", label: "Our Craft" },
   { href: "/works", label: "Work" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
   { href: "/agency-os", label: "Client Portal" },
+  { href: "/about", label: "About" },
 ];
 
 export function Navbar() {
