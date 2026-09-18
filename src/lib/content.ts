@@ -39,6 +39,12 @@ export const SERVICES: Service[] = [
     body: "Real pipeline management, lead tracking, and role based access built around how your business actually works, not a generic template.",
     href: "/custom-crm-development-orlando",
   },
+  {
+    icon: Smartphone,
+    title: "Mobile App Development",
+    body: "Cross platform mobile and desktop apps built with Flutter, backed by real shipped software, not just mockups.",
+    href: "/mobile-app-development-orlando",
+  },
 ];
 
 export const WORK_CATEGORIES = ["All", "Websites", "Mobile Apps", "Web Apps", "Desktop Apps"];
