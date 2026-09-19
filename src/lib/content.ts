@@ -1,4 +1,4 @@
-import { Globe2, Star, Search, Smartphone, Sparkles, Database } from "lucide-react";
+import { Globe2, Star, Search, Smartphone, Sparkles, Database, ShoppingBag } from "lucide-react";
 import type { WorkItem } from "@/components/work-card";
 
 type Service = {
@@ -44,6 +44,12 @@ export const SERVICES: Service[] = [
     title: "Mobile App Development",
     body: "Cross platform mobile and desktop apps built with Flutter, backed by real shipped software, not just mockups.",
     href: "/mobile-app-development-orlando",
+  },
+  {
+    icon: ShoppingBag,
+    title: "Shopify Store Build",
+    body: "Custom Shopify storefronts with a catalog, checkout, and design built around your brand, not a generic theme.",
+    href: "/shopify-store-build-orlando",
   },
 ];
 
