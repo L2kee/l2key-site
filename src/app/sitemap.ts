@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/google-reviews-orlando",
     "/custom-crm-development-orlando",
     "/mobile-app-development-orlando",
+    "/shopify-store-build-orlando",
   ];
 
   const staticEntries = routes.map((route) => ({
