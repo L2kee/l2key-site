@@ -11,6 +11,7 @@ const LINKS = [
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
   { href: "/agency-os", label: "Client Portal" },
+  { href: "/electricalai-pro", label: "ElectricalAI Pro" },
   { href: "/about", label: "About" },
 ];
 
