@@ -8,6 +8,7 @@ const PAGES = [
   { href: "/works", label: "Work" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+  { href: "/electricalai-pro", label: "ElectricalAI Pro" },
 ];
 
 export function Footer() {
