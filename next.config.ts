@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
         source: "/agency-os/:path*",
         destination: "https://agency-os-v2-sage.vercel.app/agency-os/:path*",
       },
+      {
+        source: "/electricalai-pro",
+        destination: "/electricalai-pro/index.html",
+      },
     ];
   },
 };
