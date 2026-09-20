@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/agency-os",
     },
-    sitemap: "https://www.evogencyglobal.com/sitemap.xml",
+    sitemap: "https://evogencyglobal.com/sitemap.xml",
   };
 }

@@ -21,7 +21,7 @@ const SITE_DESCRIPTION =
   "EVOGENCY, founded by Mohamed Eltoukhy, helps Orlando area local businesses build a real online presence: professional websites, stronger Google reviews, and SEO that gets found.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.evogencyglobal.com"),
+  metadataBase: new URL("https://evogencyglobal.com"),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   icons: { icon: "/evogency-logo.png" },
@@ -47,9 +47,9 @@ const ORGANIZATION_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "EVOGENCY",
-  image: "https://www.evogencyglobal.com/evogency-logo.png",
-  url: "https://www.evogencyglobal.com",
-  logo: "https://www.evogencyglobal.com/evogency-logo.png",
+  image: "https://evogencyglobal.com/evogency-logo.png",
+  url: "https://evogencyglobal.com",
+  logo: "https://evogencyglobal.com/evogency-logo.png",
   description: SITE_DESCRIPTION,
   email: "hello@evogencyglobal.com",
   telephone: "+1-813-897-1954",

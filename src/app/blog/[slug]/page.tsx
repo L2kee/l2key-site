@@ -58,7 +58,7 @@ function articleSchema(post: NonNullable<ReturnType<typeof getBlogPost>>) {
       "@type": "Organization",
       name: "EVOGENCY",
     },
-    mainEntityOfPage: `https://www.evogencyglobal.com/blog/${post.slug}`,
+    mainEntityOfPage: `https://evogencyglobal.com/blog/${post.slug}`,
   };
 }
 

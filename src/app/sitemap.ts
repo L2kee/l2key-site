@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { BLOG_POSTS } from "@/lib/blog";
 import { getTotalPages } from "@/lib/blog-pagination";
 
-const BASE_URL = "https://www.evogencyglobal.com";
+const BASE_URL = "https://evogencyglobal.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
