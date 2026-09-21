@@ -524,6 +524,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "review-count-and-rating-and-the-map-pack",
   "does-your-business-need-an-app-or-just-a-website",
   "seo-vs-ppc-for-a-local-business",
+  "website-design-for-roofers",
+  "google-reviews-for-roofers",
+  "ai-automation-for-roofers",
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
