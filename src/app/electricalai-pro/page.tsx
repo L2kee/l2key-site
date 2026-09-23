@@ -107,7 +107,7 @@ export default function ElectricalAIProPage() {
         </div>
       </div>
 
-      <main id="top-eap" className="relative">
+      <div id="top-eap" className="relative">
         {/* Hero */}
         <section className="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-6 md:pt-24">
           <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_1fr]">
@@ -336,7 +336,7 @@ export default function ElectricalAIProPage() {
             </p>
           </div>
         </section>
-      </main>
+      </div>
     </div>
   );
 }

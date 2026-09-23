@@ -1,6 +1,18 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async headers() {
+    return [
+      {
+        // The vendored Flutter index.html is regenerated on every rebuild,
+        // so its canonical is declared here instead of inside the file.
+        source: "/electricalai-pro/app",
+        headers: [
+          { key: "Link", value: '<https://evogencyglobal.com/electricalai-pro/app>; rel="canonical"' },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [{ source: "/work", destination: "/works", permanent: true }];
   },

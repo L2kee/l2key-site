@@ -26,9 +26,8 @@ export async function generateMetadata({
   const page = parsePageNum(num);
   if (!page) return {};
 
-  const TITLE = `Blog: Page ${page} | EVOGENCY Orlando`;
-  const DESCRIPTION =
-    "Honest, practical guides on SEO, web design, Google reviews, AI automation, custom CRMs, and app development for Orlando businesses, from the people who actually build it.";
+  const TITLE = `Marketing Guides, Page ${page} | EVOGENCY Blog`;
+  const DESCRIPTION = `Page ${page} of the EVOGENCY blog: more plain language guides on SEO, websites, Google reviews, and automation for Orlando business owners.`;
   const url = `/blog/page/${page}`;
 
   return {

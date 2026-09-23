@@ -20,12 +20,13 @@ export async function generateMetadata({
   if (!post) return {};
 
   const url = `/blog/${post.slug}`;
+  const title = post.seoTitle ?? `${post.title} | EVOGENCY`;
   return {
-    title: `${post.title} | EVOGENCY`,
+    title,
     description: post.description,
     alternates: { canonical: url },
     openGraph: {
-      title: `${post.title} | EVOGENCY`,
+      title,
       description: post.description,
       url,
       siteName: "EVOGENCY",
@@ -35,11 +36,19 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} | EVOGENCY`,
+      title,
       description: post.description,
       images: ["/og-image.png"],
     },
   };
+}
+
+function formatDate(iso: string) {
+  return new Date(`${iso}T12:00:00`).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
 }
 
 function articleSchema(post: NonNullable<ReturnType<typeof getBlogPost>>) {
@@ -48,15 +57,23 @@ function articleSchema(post: NonNullable<ReturnType<typeof getBlogPost>>) {
     "@type": "Article",
     headline: post.title,
     description: post.description,
+    image: "https://evogencyglobal.com/og-image.png",
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     author: {
-      "@type": "Organization",
-      name: "EVOGENCY",
+      "@type": "Person",
+      name: "Mohamed Eltoukhy",
+      jobTitle: "Founder, EVOGENCY",
+      url: "https://evogencyglobal.com/about",
     },
     publisher: {
       "@type": "Organization",
       name: "EVOGENCY",
+      url: "https://evogencyglobal.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://evogencyglobal.com/evogency-logo-512.png",
+      },
     },
     mainEntityOfPage: `https://evogencyglobal.com/blog/${post.slug}`,
   };
@@ -78,6 +95,18 @@ export default async function BlogPostPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema(post)) }}
       />
       <SectionHeading as="h1" eyebrow={post.tag} title={post.title} />
+      <p className="mt-4 text-center text-xs text-white/60">
+        By{" "}
+        <Link href="/about" className="font-medium text-white/80 hover:text-white">
+          Mohamed Eltoukhy
+        </Link>
+        , founder of EVOGENCY · <time dateTime={post.date}>{formatDate(post.date)}</time>
+        {post.updated && (
+          <>
+            {" "}· Updated <time dateTime={post.updated}>{formatDate(post.updated)}</time>
+          </>
+        )}
+      </p>
 
       <div className="mt-10 space-y-8">
         {post.sections.map((section, i) => (

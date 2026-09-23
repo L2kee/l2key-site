@@ -47,7 +47,7 @@ const PRINCIPLES = [
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
-      <SectionHeading as="h1" eyebrow="Not an agency. An engineer." title="Founder" />
+      <SectionHeading as="h1" eyebrow="Not an agency. An engineer." title="The Orlando engineer behind EVOGENCY" />
 
       <div className="mt-12">
         <TiltCard className="glass-strong flex flex-col items-center gap-6 rounded-3xl p-10 text-center sm:flex-row sm:text-left">
@@ -61,7 +61,7 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-white">Mohamed Eltoukhy</h3>
+            <h2 className="text-xl font-semibold text-white">Mohamed Eltoukhy</h2>
             <p className="text-sm font-medium text-[#f0c14b]">Founder, EVOGENCY</p>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
               Mohamed built EVOGENCY on a simple premise: agencies should ship

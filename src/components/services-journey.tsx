@@ -32,9 +32,9 @@ export function ServicesJourney() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl text-center">
-        <div className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f0c14b]">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f0c14b]">
           The EVOGENCY system
-        </div>
+        </h2>
       </div>
 
       <div className="mt-14 grid gap-6 sm:grid-cols-3">

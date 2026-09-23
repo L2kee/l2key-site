@@ -8,9 +8,13 @@ export type BlogSection = {
 export type BlogPost = {
   slug: string;
   title: string;
+  /** Shorter search title when "title | EVOGENCY" runs past ~60 characters. */
+  seoTitle?: string;
   description: string;
   excerpt: string;
   date: string;
+  /** Set only when the post's content was substantially rewritten. */
+  updated?: string;
   tag: string;
   sections: BlogSection[];
   relatedHref?: string;
@@ -65,6 +69,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "what-is-local-seo",
     title: "What Is Local SEO and Why It Matters for Orlando Businesses",
+    seoTitle: "What Is Local SEO? A Guide for Orlando Businesses",
     description:
       "Local SEO explained in plain language: what it actually is, how it's different from regular SEO, and why it matters most for Orlando businesses that depend on nearby customers.",
     excerpt:
@@ -103,6 +108,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "how-much-should-a-small-business-website-cost",
     title: "How Much Should a Small Business Website Actually Cost",
+    seoTitle: "Small Business Website Cost: A Real Breakdown | EVOGENCY",
     description:
       "A real breakdown of small business website pricing: what changes the cost, why templates and custom builds are priced so differently, and how to avoid overpaying or underbuilding.",
     excerpt:
@@ -189,6 +195,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "how-to-get-more-google-reviews",
     title: "How to Get More Google Reviews Without Breaking the Rules",
+    seoTitle: "How to Get More Google Reviews the Right Way | EVOGENCY",
     description:
       "A practical, honest guide to getting more Google reviews for your business the right way, without fake reviews or tactics that put your Google Business Profile at risk.",
     excerpt:
@@ -232,6 +239,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "do-you-need-a-custom-crm",
     title: "Do You Actually Need a Custom CRM, or Will a Template Work",
+    seoTitle: "Custom CRM vs Off the Shelf: Which Fits? | EVOGENCY",
     description:
       "How to decide between an off the shelf CRM like HubSpot or Salesforce and a custom built CRM, based on how your business actually sells and tracks customers.",
     excerpt:
@@ -275,6 +283,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "what-is-generative-engine-optimization",
     title: "What Generative Engine Optimization Means for Your Business",
+    seoTitle: "What Is Generative Engine Optimization? | EVOGENCY",
     description:
       "A plain language explanation of generative engine optimization, or GEO: what it is, how it differs from regular SEO, and why it's worth thinking about now while almost nobody else is.",
     excerpt:
@@ -312,6 +321,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "ai-automation-ideas-for-local-businesses",
     title: "AI Automation Ideas Every Local Service Business Should Consider",
+    seoTitle: "AI Automation Ideas for Local Businesses | EVOGENCY",
     description:
       "Practical AI automation ideas for local service businesses like plumbers, roofers, and contractors: real workflows worth automating and what to leave alone.",
     excerpt:
@@ -355,6 +365,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "cross-platform-vs-native-app-development",
     title: "Cross Platform vs Native: How to Choose the Right Approach for Your App",
+    seoTitle: "Cross Platform vs Native Apps: How to Choose | EVOGENCY",
     description:
       "A clear breakdown of cross platform app development with Flutter versus native iOS and Android development, and how to decide which one actually fits your app idea.",
     excerpt:
@@ -392,6 +403,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "google-business-profile-checklist",
     title: "The Google Business Profile Checklist Every Local Business Should Run Through",
+    seoTitle: "Google Business Profile Checklist | EVOGENCY",
     description:
       "A complete checklist for optimizing your Google Business Profile, covering the fields most local businesses skip and the details that actually affect map pack visibility.",
     excerpt:
@@ -472,6 +484,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
   {
     slug: "does-your-website-need-a-redesign-or-just-a-refresh",
     title: "How to Know If Your Website Needs a Redesign or Just a Refresh",
+    seoTitle: "Website Redesign or Refresh? How to Tell | EVOGENCY",
     description:
       "How to tell whether your website needs a full redesign or just a targeted refresh, so you spend money on the fix that actually matches the problem.",
     excerpt:
