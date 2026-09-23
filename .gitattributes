@@ -1,0 +1,4 @@
+# The Flutter web build is vendored as-is; never rewrite its line endings.
+# Without this, core.autocrlf turns its text files into CRLF on checkout,
+# Vercel uploads those, and the deployed files stop matching the build.
+public/electricalai-pro/** -text

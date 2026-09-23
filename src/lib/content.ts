@@ -95,12 +95,12 @@ export const WORK: WorkItem[] = [
     title: "ElectricalAI Pro",
     category: "Desktop Apps",
     year: "2026",
-    tag: "v1.0.0 shipped",
+    tag: "Live on the web",
     image: "/electricalai-shot.png",
     imageAlt:
-      "ElectricalAI Pro app screen showing quick action tools like Ohm's Law and Voltage Drop calculators, plus AI Assistant and Material List features",
+      "ElectricalAI Pro dashboard in its dark Kinetic glass theme, with the headline Electrical math, jobsite ready, module and code basis stats, and numbered calculator cards for Ohm's Law, voltage drop, and wire ampacity",
     icon: "bolt",
-    body: "An AI powered Windows desktop app built for electricians: an AI electrical assistant, six professional electrical calculators, and a FastAPI/Python backend, built with Flutter and Dart.",
+    body: "An AI powered app for electricians, live on the web and on Windows: 11 calculator modules built on NEC tables, an AI electrical assistant, and two switchable themes. Flutter and Dart up front, a FastAPI and Python backend behind it.",
     stack: ["Flutter", "Dart", "FastAPI", "Python"],
     links: [
       { label: "Try it live", href: "/electricalai-pro/app" },

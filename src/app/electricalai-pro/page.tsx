@@ -10,6 +10,8 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 const inter = Inter({ subsets: ["latin"], variable: "--font-eap-sans" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-eap-mono" });
 
+// Plain <a>, not next/link: the app is a static Flutter build, not a Next
+// route, so a <Link> prefetch of it 404s.
 const APP_HREF = "/electricalai-pro/app";
 
 const TITLE = "ElectricalAI Pro | Electrical Calculators and AI Assistant";
@@ -96,12 +98,12 @@ export default function ElectricalAIProPage() {
             <a href="#assistant" className="transition-colors hover:text-white">AI Assistant</a>
             <a href="#tables" className="transition-colors hover:text-white">Code tables</a>
           </nav>
-          <Link
+          <a
             href={APP_HREF}
             className="rounded-full bg-[#00d3e3] px-4 py-1.5 text-sm font-semibold text-[#041016] transition-colors hover:bg-[#5ee8f2]"
           >
             Open the app
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -122,12 +124,12 @@ export default function ElectricalAIProPage() {
                 on your device, built on the same tables you&apos;d check in the codebook.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link
+                <a
                   href={APP_HREF}
                   className="rounded-full bg-[#00d3e3] px-6 py-3 text-sm font-semibold text-[#041016] transition-colors hover:bg-[#5ee8f2]"
                 >
                   Start calculating
-                </Link>
+                </a>
                 <a
                   href="#assistant"
                   className="rounded-full border border-[#1c2735] bg-[#0a111d]/40 px-6 py-3 text-sm font-medium transition-colors hover:border-[#5e6b7d]"
@@ -210,7 +212,7 @@ export default function ElectricalAIProPage() {
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {MODULES.map((m) => (
-              <Link
+              <a
                 key={m.n}
                 href={APP_HREF}
                 className="group rounded-2xl border border-[#1c2735] bg-[#0a111d]/50 p-5 transition-colors hover:border-[#00d3e3]/40"
@@ -225,9 +227,9 @@ export default function ElectricalAIProPage() {
                   <Mono className="text-xs text-[#5e6b7d]">{m.foot}</Mono>
                   <span className="text-[#00d3e3] transition-transform group-hover:translate-x-1">→</span>
                 </div>
-              </Link>
+              </a>
             ))}
-            <Link
+            <a
               href={APP_HREF}
               className="group rounded-2xl border border-[#00d3e3]/30 bg-[#00d3e3]/5 p-5 transition-colors hover:border-[#00d3e3]/60"
             >
@@ -241,7 +243,7 @@ export default function ElectricalAIProPage() {
                 <Mono className="text-xs text-[#00d3e3]">Explore the suite</Mono>
                 <span className="text-[#00d3e3] transition-transform group-hover:translate-x-1">→</span>
               </div>
-            </Link>
+            </a>
           </div>
         </section>
 
@@ -320,12 +322,12 @@ export default function ElectricalAIProPage() {
             <p className="mx-auto mt-4 max-w-[46ch] text-[#94a0b2]">
               Free, no signup. Runs in your browser and installs to your phone&apos;s home screen in one tap.
             </p>
-            <Link
+            <a
               href={APP_HREF}
               className="mt-8 inline-flex rounded-full bg-[#00d3e3] px-7 py-3 text-sm font-semibold text-[#041016] transition-colors hover:bg-[#5ee8f2]"
             >
               Open ElectricalAI Pro
-            </Link>
+            </a>
             <p className="mt-8 text-sm text-[#5e6b7d]">
               Want an app like this for your business?{" "}
               <Link href="/mobile-app-development-orlando" className="text-[#94a0b2] underline decoration-[#1c2735] underline-offset-4 hover:text-white">
