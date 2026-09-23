@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { BackgroundScene } from "@/components/background-scene";
+import { LazyBackgroundScene } from "@/components/lazy-background-scene";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import "./globals.css";
@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_TITLE = "EVOGENCY | Websites, SEO & Google Reviews for Orlando Businesses";
+const SITE_TITLE = "EVOGENCY | Web Design, SEO & Google Reviews in Orlando";
 const SITE_DESCRIPTION =
   "EVOGENCY, founded by Mohamed Eltoukhy, helps Orlando area local businesses build a real online presence: professional websites, stronger Google reviews, and SEO that gets found.";
 
@@ -24,7 +24,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://evogencyglobal.com"),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
-  icons: { icon: "/evogency-logo.png" },
+  icons: {
+    icon: [{ url: "/icon-64.png", sizes: "64x64", type: "image/png" }],
+    apple: "/apple-icon.png",
+  },
   alternates: { canonical: "/" },
   openGraph: {
     title: SITE_TITLE,
@@ -47,9 +50,9 @@ const ORGANIZATION_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "EVOGENCY",
-  image: "https://evogencyglobal.com/evogency-logo.png",
+  image: "https://evogencyglobal.com/evogency-logo-512.png",
   url: "https://evogencyglobal.com",
-  logo: "https://evogencyglobal.com/evogency-logo.png",
+  logo: "https://evogencyglobal.com/evogency-logo-512.png",
   description: SITE_DESCRIPTION,
   email: "hello@evogencyglobal.com",
   telephone: "+1-813-897-1954",
@@ -78,9 +81,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }}
         />
-        <BackgroundScene />
+        <LazyBackgroundScene />
         <Navbar />
-        {children}
+        <main className="flex flex-col">{children}</main>
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-P0SVMCCT5Y" />

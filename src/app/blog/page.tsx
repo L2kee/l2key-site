@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { BlogList } from "@/components/blog-list";
 
-const TITLE = "Blog | EVOGENCY Orlando";
+const TITLE = "Marketing Guides for Orlando Businesses | EVOGENCY Blog";
 const DESCRIPTION =
   "Honest, practical guides on SEO, web design, Google reviews, AI automation, custom CRMs, and app development for Orlando businesses, from the people who actually build it.";
 

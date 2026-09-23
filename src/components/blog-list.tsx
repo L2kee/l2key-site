@@ -14,7 +14,11 @@ export function BlogList({ page }: { page: number }) {
       <SectionHeading
         as="h1"
         eyebrow="From EVOGENCY"
-        title={page === 1 ? "Blog" : `Blog: Page ${page}`}
+        title={
+          page === 1
+            ? "Marketing guides for Orlando businesses"
+            : `Marketing guides for Orlando businesses, page ${page}`
+        }
       />
       <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
         Honest, practical guides on SEO, web design, Google reviews, AI
