@@ -15,8 +15,10 @@ const nextConfig: NextConfig = {
         destination: "https://agency-os-v2-sage.vercel.app/agency-os/:path*",
       },
       {
-        source: "/electricalai-pro",
-        destination: "/electricalai-pro/index.html",
+        // The Flutter web build lives in public/electricalai-pro/app/;
+        // /electricalai-pro itself is the product page in src/app.
+        source: "/electricalai-pro/app",
+        destination: "/electricalai-pro/app/index.html",
       },
     ];
   },

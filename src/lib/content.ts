@@ -103,7 +103,7 @@ export const WORK: WorkItem[] = [
     body: "An AI powered Windows desktop app built for electricians: an AI electrical assistant, six professional electrical calculators, and a FastAPI/Python backend, built with Flutter and Dart.",
     stack: ["Flutter", "Dart", "FastAPI", "Python"],
     links: [
-      { label: "Try it live", href: "/electricalai-pro" },
+      { label: "Try it live", href: "/electricalai-pro/app" },
       { label: "View on GitHub", href: "https://github.com/L2kee/ElectricalAI-Pro" },
     ],
   },
