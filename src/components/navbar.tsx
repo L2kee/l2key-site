@@ -14,6 +14,35 @@ const LINKS = [
   { href: "/about", label: "About" },
 ];
 
+// Routes served outside this Next app (proxied or static). A next/link
+// prefetch of them 404s, so they get a plain anchor and a full page load.
+const EXTERNAL_ROUTES = new Set(["/agency-os"]);
+
+function NavLink({
+  href,
+  className,
+  onClick,
+  children,
+}: {
+  href: string;
+  className: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+}) {
+  if (EXTERNAL_ROUTES.has(href)) {
+    return (
+      <a href={href} className={className} onClick={onClick}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={className} onClick={onClick}>
+      {children}
+    </Link>
+  );
+}
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
@@ -49,13 +78,13 @@ export function Navbar() {
 
           <div className="hidden items-center gap-6 sm:flex">
             {LINKS.map((l) => (
-              <Link
+              <NavLink
                 key={l.href}
                 href={l.href}
                 className="text-sm font-medium text-white/70 transition hover:text-white"
               >
                 {l.label}
-              </Link>
+              </NavLink>
             ))}
           </div>
 
@@ -91,14 +120,14 @@ export function Navbar() {
 
           <nav className="flex flex-1 flex-col justify-center gap-2 px-8">
             {LINKS.map((l) => (
-              <Link
+              <NavLink
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
                 className="border-b border-white/10 py-4 text-3xl font-semibold text-white transition hover:text-[#f0c14b]"
               >
                 {l.label}
-              </Link>
+              </NavLink>
             ))}
           </nav>
 
