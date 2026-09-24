@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
-import { faqSchema } from "@/lib/faq-schema";
+import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Web Design Agency Orlando | EVOGENCY";
 const DESCRIPTION =
@@ -119,7 +119,7 @@ export default function WebDesignAgencyOrlandoPage() {
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQ)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicePageGraph("/web-design-agency-orlando", DESCRIPTION, FAQ)) }}
       />
       <SectionHeading
         as="h1"

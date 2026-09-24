@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { LazyBackgroundScene } from "@/components/lazy-background-scene";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ORG_DESCRIPTION, siteGraph } from "@/lib/schema";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,8 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_TITLE = "EVOGENCY | Web Design, SEO & Google Reviews in Orlando";
-const SITE_DESCRIPTION =
-  "EVOGENCY, founded by Mohamed Eltoukhy, helps Orlando area local businesses build a real online presence: professional websites, stronger Google reviews, and SEO that gets found.";
+const SITE_DESCRIPTION = ORG_DESCRIPTION;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://evogencyglobal.com"),
@@ -46,29 +46,6 @@ export const metadata: Metadata = {
   },
 };
 
-const ORGANIZATION_JSON_LD = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "EVOGENCY",
-  image: "https://evogencyglobal.com/evogency-logo-512.png",
-  url: "https://evogencyglobal.com",
-  logo: "https://evogencyglobal.com/evogency-logo-512.png",
-  description: SITE_DESCRIPTION,
-  email: "hello@evogencyglobal.com",
-  telephone: "+1-813-897-1954",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Orlando",
-    addressRegion: "FL",
-    addressCountry: "US",
-  },
-  areaServed: "Orlando, FL",
-  founder: {
-    "@type": "Person",
-    name: "Mohamed Eltoukhy",
-  },
-  sameAs: ["https://github.com/L2kee"],
-};
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -79,7 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph()) }}
         />
         <LazyBackgroundScene />
         <Navbar />

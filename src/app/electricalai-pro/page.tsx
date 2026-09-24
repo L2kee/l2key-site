@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { ORG_ID, SITE_URL, breadcrumbs } from "@/lib/schema";
 
 // Product page for ElectricalAI Pro, styled in the app's own "kinetic
 // glass" look (ink, hairline glass panels, one cyan signal color) rather
@@ -53,6 +54,29 @@ const TABLES = [
   { code: "BOX", title: "Box fill", ref: "314.16 allowances" },
   { code: "MTR", title: "Motor full load current", ref: "430.248 · 430.250 basis" },
 ];
+
+// Only what this page visibly says: free, no signup, runs in the browser.
+const APP_SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": `${SITE_URL}/electricalai-pro#app`,
+      name: "ElectricalAI Pro",
+      description: DESCRIPTION,
+      url: `${SITE_URL}/electricalai-pro`,
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web browser",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      creator: { "@id": ORG_ID },
+      publisher: { "@id": ORG_ID },
+    },
+    breadcrumbs([
+      { name: "Home", path: "" },
+      { name: "ElectricalAI Pro", path: "/electricalai-pro" },
+    ]),
+  ],
+};
 
 function Mono({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return <span className={`font-[family-name:var(--font-eap-mono)] ${className}`}>{children}</span>;
@@ -107,6 +131,10 @@ export default function ElectricalAIProPage() {
         </div>
       </div>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(APP_SCHEMA) }}
+      />
       <div id="top-eap" className="relative">
         {/* Hero */}
         <section className="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-6 md:pt-24">

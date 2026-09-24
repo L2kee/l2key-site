@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
 import { BLOG_POSTS, getBlogPost } from "@/lib/blog";
+import { FOUNDER_ID, ORG_ID, SITE_URL, WEBSITE_ID, breadcrumbs } from "@/lib/schema";
 
 export function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
@@ -52,30 +53,29 @@ function formatDate(iso: string) {
 }
 
 function articleSchema(post: NonNullable<ReturnType<typeof getBlogPost>>) {
+  const url = `${SITE_URL}/blog/${post.slug}`;
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: post.title,
-    description: post.description,
-    image: "https://evogencyglobal.com/og-image.png",
-    datePublished: post.date,
-    dateModified: post.updated ?? post.date,
-    author: {
-      "@type": "Person",
-      name: "Mohamed Eltoukhy",
-      jobTitle: "Founder, EVOGENCY",
-      url: "https://evogencyglobal.com/about",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "EVOGENCY",
-      url: "https://evogencyglobal.com",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://evogencyglobal.com/evogency-logo-512.png",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${url}#article`,
+        headline: post.title,
+        description: post.description,
+        image: `${SITE_URL}/og-image.png`,
+        datePublished: post.date,
+        dateModified: post.updated ?? post.date,
+        author: { "@id": FOUNDER_ID, "@type": "Person", name: "Mohamed Eltoukhy" },
+        publisher: { "@id": ORG_ID },
+        isPartOf: { "@id": WEBSITE_ID },
+        mainEntityOfPage: url,
       },
-    },
-    mainEntityOfPage: `https://evogencyglobal.com/blog/${post.slug}`,
+      breadcrumbs([
+        { name: "Home", path: "" },
+        { name: "Blog", path: "/blog" },
+        { name: post.title, path: `/blog/${post.slug}` },
+      ]),
+    ],
   };
 }
 

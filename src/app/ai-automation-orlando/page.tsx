@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
-import { faqSchema } from "@/lib/faq-schema";
+import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "AI Automation Orlando | EVOGENCY";
 const DESCRIPTION =
@@ -130,7 +130,7 @@ export default function AiAutomationOrlandoPage() {
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQ)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicePageGraph("/ai-automation-orlando", DESCRIPTION, FAQ)) }}
       />
       <SectionHeading
         as="h1"
