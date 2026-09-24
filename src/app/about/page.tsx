@@ -53,8 +53,8 @@ export default function AboutPage() {
         <TiltCard className="glass-strong flex flex-col items-center gap-6 rounded-3xl p-10 text-center sm:flex-row sm:text-left">
           <div className="h-28 w-28 shrink-0 overflow-hidden rounded-full ring-2 ring-white/10 shadow-[0_20px_50px_-15px_rgba(240,193,75,0.5)]">
             <Image
-              src="/moe-avatar.png"
-              alt="Illustrated headshot portrait of Mohamed Eltoukhy, founder of EVOGENCY"
+              src="/moe-founder.webp"
+              alt="Mohamed Eltoukhy, founder of EVOGENCY, in a navy suit in his office"
               width={112}
               height={112}
               className="h-full w-full object-cover"
