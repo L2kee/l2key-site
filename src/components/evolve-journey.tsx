@@ -64,7 +64,12 @@ export function EvolveJourney() {
         const rect = section.getBoundingClientRect();
         setSceneCovered(rect.top <= 0 && rect.bottom >= window.innerHeight);
         const scrollable = section.offsetHeight - window.innerHeight;
-        const raw = scrollable > 0 ? -rect.top / scrollable : 0;
+        // On phones, start while the section is still sliding in (its top
+        // 35% of a screen from the top, when the lotus is already in view)
+        // instead of waiting for the pin, so there's no still stretch of a
+        // closed bud on black. The end point is unchanged.
+        const lead = mobileMq.matches ? window.innerHeight * 0.35 : 0;
+        const raw = scrollable + lead > 0 ? (lead - rect.top) / (scrollable + lead) : 0;
         const progress = clamp(raw, 0, 1);
 
         // Lotus bloom completes by the end of the GROW band, then holds.
