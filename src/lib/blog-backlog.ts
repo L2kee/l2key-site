@@ -136,7 +136,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How HVAC companies can build SEO that holds up across seasons instead of living and dying by summer AC repair searches.",
     excerpt: "How to build SEO that holds up across seasons instead of living and dying by summer AC repair searches.",
-    date: "2026-09-18",
+    date: "2026-09-23",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -198,7 +198,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for electrical contractors, focused on the safety and trust signals that matter most when someone is choosing who works on their home's wiring.",
     excerpt: "The safety and trust signals that matter most when someone is choosing an electrician.",
-    date: "2026-09-18",
+    date: "2026-09-23",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -260,7 +260,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for landscaping and lawn care businesses, covering why splitting services into their own pages captures more of the specific searches people actually make.",
     excerpt: "Why splitting your services into their own pages captures more of the specific searches people make.",
-    date: "2026-09-18",
+    date: "2026-09-23",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",

@@ -540,12 +540,17 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "website-design-for-roofers",
   "google-reviews-for-roofers",
   "ai-automation-for-roofers",
+  "seo-for-hvac-companies",
+  "seo-for-electricians",
+  "seo-for-landscapers",
 ];
 
+// Newest first, so each drip publish shows up at the top of /blog. The sort
+// is stable, so posts sharing a date keep their original order.
 export const BLOG_POSTS: BlogPost[] = [
   ...ORIGINAL_POSTS,
   ...BLOG_BACKLOG.filter((p) => PUBLISHED_BACKLOG_SLUGS.includes(p.slug)),
-];
+].sort((a, b) => b.date.localeCompare(a.date));
 
 export function getBlogPost(slug: string) {
   return BLOG_POSTS.find((p) => p.slug === slug);
