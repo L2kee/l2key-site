@@ -126,7 +126,11 @@ export default function WebDesignAgencyOrlandoPage() {
         eyebrow="Web Design in Orlando, FL"
         title="Web Design Agency Orlando"
       />
-      <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
+      {/* Plain, quotable definition first, for readers and AI answer engines. */}
+      <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
+        {"EVOGENCY is an Orlando web design agency that builds fast, mobile first websites for local businesses, designed to turn visitors into calls and booked jobs."}
+      </p>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Your website is often the first impression a customer gets of your
         business. EVOGENCY builds fast, mobile first websites that load
         quickly, look sharp, and are built to turn a visitor into a call or a

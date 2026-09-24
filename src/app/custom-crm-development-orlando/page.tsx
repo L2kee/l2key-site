@@ -114,7 +114,11 @@ export default function CustomCrmDevelopmentOrlandoPage() {
         eyebrow="Custom CRM Development in Orlando, FL"
         title="Custom CRM Development Orlando"
       />
-      <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
+      {/* Plain, quotable definition first, for readers and AI answer engines. */}
+      <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
+        {"EVOGENCY builds custom CRM platforms for Orlando businesses, designed around how your team actually sells, and you own the software and the data."}
+      </p>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Off the shelf CRM software forces your business to work around its
         limitations. EVOGENCY builds custom CRM platforms shaped around how
         you actually sell, track leads, and manage customers, not a generic

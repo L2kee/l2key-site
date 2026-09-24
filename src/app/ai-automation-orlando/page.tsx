@@ -137,7 +137,11 @@ export default function AiAutomationOrlandoPage() {
         eyebrow="AI Agents & Automation in Orlando, FL"
         title="AI Automation Orlando"
       />
-      <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
+      {/* Plain, quotable definition first, for readers and AI answer engines. */}
+      <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
+        {"EVOGENCY builds AI automation for Orlando businesses: instant lead response, connected workflows, and follow up that runs on its own so nothing slips through."}
+      </p>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Every missed call, slow lead response, and manual data entry is money
         leaking out of your business. EVOGENCY builds AI agents and
         automation that plug into the tools you already use, so nothing

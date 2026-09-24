@@ -114,7 +114,11 @@ export default function MobileAppDevelopmentOrlandoPage() {
         eyebrow="Mobile App Development in Orlando, FL"
         title="Mobile App Development Orlando"
       />
-      <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
+      {/* Plain, quotable definition first, for readers and AI answer engines. */}
+      <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
+        {"EVOGENCY builds cross platform mobile apps for Orlando businesses with Flutter and a real Python backend, backed by software we've actually shipped."}
+      </p>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Most agencies talk about apps. EVOGENCY ships them. ElectricalAI Pro,
         a real AI powered app for electricians, is live today, built the
         same way your app would be, from a real business need to a real

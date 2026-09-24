@@ -117,7 +117,11 @@ export default function SeoAgencyOrlandoPage() {
         eyebrow="SEO in Orlando, FL"
         title="SEO Agency Orlando"
       />
-      <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
+      {/* Plain, quotable definition first, for readers and AI answer engines. */}
+      <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
+        {"EVOGENCY is an Orlando SEO agency that helps local businesses show up on Google and in the map pack through technical fixes, local SEO, and content built around real searches."}
+      </p>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Your customers are already searching. EVOGENCY builds the technical
         foundation, local presence, and content that make sure they find you
         first, not the competitor three spots above you on Google.

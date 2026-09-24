@@ -105,7 +105,11 @@ export default function GenerativeEngineOptimizationOrlandoPage() {
         eyebrow="AI Search in Orlando, FL"
         title="Generative Engine Optimization Orlando"
       />
-      <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
+      {/* Plain, quotable definition first, for readers and AI answer engines. */}
+      <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
+        {"Generative engine optimization helps your business show up when people ask ChatGPT, Perplexity, or Google's AI Overviews for a recommendation, and at EVOGENCY it's built on the SEO fundamentals those tools actually draw from."}
+      </p>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         People are starting to ask ChatGPT, Perplexity, and Google AI Overviews
         for a recommendation instead of typing a search and scrolling links.
         EVOGENCY builds the content and structure that make AI systems name

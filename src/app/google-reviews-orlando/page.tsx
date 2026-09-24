@@ -122,7 +122,11 @@ export default function GoogleReviewsOrlandoPage() {
         eyebrow="Google Reviews & Reputation in Orlando, FL"
         title="Google Reviews & Reputation Orlando"
       />
-      <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
+      {/* Plain, quotable definition first, for readers and AI answer engines. */}
+      <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
+        {"EVOGENCY helps Orlando businesses earn more genuine Google reviews and manage their reputation with a simple request system and honest reporting. No fake reviews, ever."}
+      </p>
+      <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Most customers check your reviews before they ever call. EVOGENCY
         sets up your Google Business Profile the right way and builds a
         simple system for asking happy customers to leave a review, so your

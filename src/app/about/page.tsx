@@ -29,6 +29,23 @@ export const metadata: Metadata = {
   },
 };
 
+const FACTS: { label: string; value: React.ReactNode }[] = [
+  { label: "What", value: "A web design, SEO, and custom software studio based in Orlando, Florida." },
+  { label: "Who runs it", value: "Founded by Mohamed Eltoukhy, who designs and builds every project himself." },
+  { label: "Services", value: "Websites, SEO, Google review systems, AI automation, custom CRMs, and mobile apps." },
+  { label: "Built in house", value: "Agency OS, the CRM EVOGENCY runs on, and ElectricalAI Pro, free electrical calculators for the trades." },
+  {
+    label: "Contact",
+    value: (
+      <>
+        <a href="tel:+18138971954" className="hover:text-white">(813) 897-1954</a>
+        {" · "}
+        <a href="mailto:hello@evogencyglobal.com" className="hover:text-white">hello@evogencyglobal.com</a>
+      </>
+    ),
+  },
+];
+
 const PRINCIPLES = [
   {
     title: "Ship real things, not mockups",
@@ -73,6 +90,22 @@ export default function AboutPage() {
           </div>
         </TiltCard>
       </div>
+
+      {/* Plain facts, stated once, for visitors and for AI answer engines
+          that need to tell this EVOGENCY apart from similarly named ones. */}
+      <section className="mt-10">
+        <div className="glass rounded-3xl p-8">
+          <h2 className="text-lg font-semibold text-white">EVOGENCY at a glance</h2>
+          <dl className="mt-5 space-y-3 text-sm leading-relaxed">
+            {FACTS.map((f) => (
+              <div key={f.label} className="sm:flex sm:gap-4">
+                <dt className="shrink-0 font-semibold text-[#f0c14b] sm:w-32">{f.label}</dt>
+                <dd className="text-white/70">{f.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
 
       {/* How we work */}
       <section className="mt-24">
