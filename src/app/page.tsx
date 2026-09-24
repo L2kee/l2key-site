@@ -6,6 +6,7 @@ import { Marquee } from "@/components/marquee";
 import { WorkCard } from "@/components/work-card";
 import { EvolveJourney } from "@/components/evolve-journey";
 import { ServicesJourney } from "@/components/services-journey";
+import { LogoBloom } from "@/components/logo-bloom";
 import { WORK } from "@/lib/content";
 
 export default function Home() {
@@ -18,12 +19,7 @@ export default function Home() {
           Available for new projects
         </div>
 
-        <div className="logo-bloom-wrap relative mt-8">
-          <div className="absolute inset-0 rounded-full bg-[#f0c14b]/20 blur-3xl" />
-          <div role="img" aria-label="EVOGENCY" className="logo-bloom-viewport">
-            <div className="logo-bloom-sprite" />
-          </div>
-        </div>
+        <LogoBloom />
 
         <h1 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">
           Built to be found.

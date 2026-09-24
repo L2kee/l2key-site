@@ -194,6 +194,14 @@ body::after {
       animation: logo-bloom-frames-sm 2.2s steps(23) 1 forwards;
     }
   }
+  /* Hold on the closed bud until the sprite has actually loaded (LogoBloom
+     adds .logo-bloom-ready). Otherwise the 2.2s clock can run out before the
+     image arrives on a phone, and all anyone sees is the final open frame.
+     The extra specificity beats the animation shorthand above, which would
+     otherwise reset the play state. */
+  .logo-bloom-wrap:not(.logo-bloom-ready) .logo-bloom-sprite {
+    animation-play-state: paused;
+  }
   @media (prefers-reduced-motion: reduce) {
     .logo-bloom-sprite {
       animation: none;
@@ -244,15 +252,26 @@ body::after {
   .evolve-journey-lotus-wrap {
     width: 155px;
     height: 155px;
+    will-change: transform;
+  }
+  /* The glow is a painted gradient behind the lotus, not a drop-shadow
+     filter plus mask: this wrap is rescaled on every scroll frame, and iOS
+     re-rasterizes filters and masks each time, which made the section
+     crawl on iPhones. The old circular mask is baked into this section's
+     sprite instead (evogency-logo-bloom-faded.webp: the same 55% to 80%
+     radial fade, as real transparency), so no mask is needed. */
+  .evolve-journey-lotus-wrap::before {
+    content: "";
+    position: absolute;
+    inset: -30%;
+    background: radial-gradient(circle at 50% 58%, rgba(240, 193, 75, 0.2), transparent 60%);
+    pointer-events: none;
   }
   .evolve-journey-lotus-viewport {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    mask-image: radial-gradient(circle, #000 55%, transparent 80%);
-    -webkit-mask-image: radial-gradient(circle, #000 55%, transparent 80%);
-    filter: drop-shadow(0 10px 32px rgba(240, 193, 75, 0.32));
   }
   .evolve-journey-lotus-frame {
     position: absolute;
@@ -260,7 +279,7 @@ body::after {
     left: 0;
     width: 3720px;
     height: 100%;
-    background-image: url('/evogency-logo-bloom.webp');
+    background-image: url('/evogency-logo-bloom-faded.webp');
     background-repeat: no-repeat;
     background-size: 3720px 155px;
     will-change: transform;

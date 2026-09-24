@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { setSceneCovered } from "@/lib/scene-covered";
 
 const TOTAL_FRAMES = 24;
 const MOBILE = { w: 155, h: 155 };
@@ -61,6 +62,7 @@ export function EvolveJourney() {
         if (!section) return;
 
         const rect = section.getBoundingClientRect();
+        setSceneCovered(rect.top <= 0 && rect.bottom >= window.innerHeight);
         const scrollable = section.offsetHeight - window.innerHeight;
         const raw = scrollable > 0 ? -rect.top / scrollable : 0;
         const progress = clamp(raw, 0, 1);
@@ -100,6 +102,7 @@ export function EvolveJourney() {
     onScroll();
     return () => {
       window.removeEventListener("scroll", onScroll);
+      setSceneCovered(false);
       smMq.removeEventListener("change", onMqChange);
       mobileMq.removeEventListener("change", onMqChange);
     };
@@ -127,8 +130,11 @@ export function EvolveJourney() {
   }
 
   return (
-    <section ref={sectionRef} className="evolve-journey relative bg-black" style={{ height: "400vh" }}>
-      <div className="sticky top-0 flex h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
+    // Shorter on phones (2.5 screens instead of 4) so the moment doesn't
+    // drag under a thumb. svh units ignore Safari's collapsing toolbar, so
+    // the section isn't re-laid out mid-scroll when the address bar hides.
+    <section ref={sectionRef} className="evolve-journey relative h-[250svh] bg-black sm:h-[400vh]">
+      <div className="sticky top-0 flex h-svh flex-col items-center justify-center overflow-hidden px-6 text-center">
         <div ref={lotusScaleRef} className="evolve-journey-lotus-wrap relative mx-auto">
           <div className="evolve-journey-lotus-viewport">
             <div ref={lotusFrameRef} className="evolve-journey-lotus-frame" />

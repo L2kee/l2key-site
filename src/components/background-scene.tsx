@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
+import { isSceneCovered, onSceneCoveredChange } from "@/lib/scene-covered";
 
 type Geo = "icosahedron" | "octahedron" | "tetrahedron" | "dodecahedron";
 
@@ -94,6 +95,21 @@ function useMouseParallax(enabled: boolean) {
   }, [enabled]);
 
   return mouseRef;
+}
+
+/** Stops rendering while an opaque section (the Evolve journey) covers the
+    whole screen: the scene is invisible then, and on iPhones redrawing it
+    every frame competed with the scroll animation for the GPU. */
+function PauseWhenCovered() {
+  const setFrameloop = useThree((s) => s.setFrameloop);
+
+  useEffect(() => {
+    const apply = () => setFrameloop(isSceneCovered() ? "never" : "always");
+    apply();
+    return onSceneCoveredChange(apply);
+  }, [setFrameloop]);
+
+  return null;
 }
 
 function CameraRig({ fracRef }: { fracRef: React.RefObject<number> }) {
@@ -273,6 +289,7 @@ export function BackgroundScene() {
         dpr={[1, 1.5]}
         gl={{ alpha: true, antialias: true }}
       >
+        <PauseWhenCovered />
         <Scene
           fracRef={fracRef}
           mouseRef={mouseRef}
