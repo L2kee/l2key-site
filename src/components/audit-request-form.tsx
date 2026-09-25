@@ -105,11 +105,27 @@ export function AuditRequestForm() {
         <FieldError message={errors.website} />
       </div>
 
-      <label className="block text-sm font-medium text-white/80">
-        Phone number
-        <input name="phone" defaultValue={values?.phone} type="tel" autoComplete="tel" required className={inputClass} placeholder="(407) 555 0123" />
-        <FieldError message={errors.phone} />
-      </label>
+      <div className="grid gap-5 sm:grid-cols-2">
+        <label className="block text-sm font-medium text-white/80">
+          Phone number
+          <input name="phone" defaultValue={values?.phone} type="tel" autoComplete="tel" required className={inputClass} placeholder="(407) 555 0123" />
+          <FieldError message={errors.phone} />
+        </label>
+        <label className="block text-sm font-medium text-white/80">
+          Email{" "}
+          {contact !== "email" && <span className="font-normal text-white/45">(if you have one)</span>}
+          <input
+            name="email"
+            defaultValue={values?.email}
+            type="email"
+            autoComplete="email"
+            required={contact === "email"}
+            className={inputClass}
+            placeholder="jane@smithplumbing.com"
+          />
+          <FieldError message={errors.email} />
+        </label>
+      </div>
 
       <fieldset>
         <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
@@ -137,14 +153,6 @@ export function AuditRequestForm() {
         </div>
         <FieldError message={errors.contact} />
       </fieldset>
-
-      {contact === "email" && (
-        <label className="block text-sm font-medium text-white/80">
-          Email
-          <input name="email" defaultValue={values?.email} type="email" autoComplete="email" required className={inputClass} placeholder="jane@smithplumbing.com" />
-          <FieldError message={errors.email} />
-        </label>
-      )}
 
       {state.status === "error" && state.message && (
         <p className="text-sm text-rose-300" aria-live="polite">

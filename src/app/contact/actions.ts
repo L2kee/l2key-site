@@ -112,7 +112,11 @@ export async function submitAuditRequest(
   const phoneDigits = phone.replace(/\D/g, "");
   if (phoneDigits.length < 10 || phoneDigits.length > 15) fieldErrors.phone = "Please enter a valid phone number.";
   if (!(contact in CONTACT_METHODS)) fieldErrors.contact = "Pick the best way to reach you.";
-  if (contact === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  // Email is optional, but required when it's their preferred contact, and a
+  // typo is flagged either way rather than silently dropped.
+  if (contact === "email" && !email) {
+    fieldErrors.email = "Please enter your email so we can reach you there.";
+  } else if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     fieldErrors.email = "Please enter a valid email address.";
   }
   const website = noWebsite ? null : normalizeWebsite(websiteRaw);
