@@ -46,8 +46,10 @@ export function siteGraph() {
         telephone: "+1-813-897-1954",
         address: {
           "@type": "PostalAddress",
+          streetAddress: "100 E Pine St, Suite 110",
           addressLocality: "Orlando",
           addressRegion: "FL",
+          postalCode: "32801",
           addressCountry: "US",
         },
         areaServed: ORLANDO,

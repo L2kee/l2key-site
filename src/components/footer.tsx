@@ -38,7 +38,11 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-white/60">
               <li className="flex items-start gap-2.5">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-white/35" />
-                Orlando, FL, remote friendly
+                <address className="not-italic">
+                  100 E Pine St, Suite 110
+                  <br />
+                  Orlando, FL 32801
+                </address>
               </li>
               <li>
                 <a href="tel:+18138971954" className="flex items-center gap-2.5 transition hover:text-white">
