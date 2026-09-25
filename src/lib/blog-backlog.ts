@@ -322,7 +322,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for restaurants, covering the specific local signals, menu visibility, and review management that decide where someone eats tonight.",
     excerpt: "The local signals, menu visibility, and review management that decide where someone eats tonight.",
-    date: "2026-09-18",
+    date: "2026-09-24",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -384,7 +384,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for dental practices, focused on the trust and credential signals that matter most when someone is choosing a new dentist.",
     excerpt: "The trust and credential signals that matter most when someone is choosing a new dentist.",
-    date: "2026-09-18",
+    date: "2026-09-24",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -445,7 +445,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for independent auto repair shops competing against national chains, focused on trust, transparency, and the searches that actually convert.",
     excerpt: "How independent shops compete against national chains for the searches that actually convert.",
-    date: "2026-09-18",
+    date: "2026-09-24",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",

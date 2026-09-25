@@ -543,6 +543,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "seo-for-hvac-companies",
   "seo-for-electricians",
   "seo-for-landscapers",
+  "seo-for-restaurants",
+  "seo-for-dentists",
+  "seo-for-auto-repair-shops",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
