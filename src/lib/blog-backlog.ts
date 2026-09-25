@@ -506,7 +506,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for small and solo law firms, focused on practice area pages, local trust signals, and realistic expectations in a competitive legal search market.",
     excerpt: "Practice area pages, local trust signals, and realistic expectations in a competitive market.",
-    date: "2026-09-18",
+    date: "2026-09-25",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -568,7 +568,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for individual real estate agents, focused on local content, neighborhood pages, and why competing with Zillow directly is the wrong strategy.",
     excerpt: "Local content, neighborhood pages, and why competing with Zillow directly is the wrong strategy.",
-    date: "2026-09-18",
+    date: "2026-09-25",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -630,7 +630,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for salons and spas, focused on service specific pages, online booking visibility, and the visual proof that convinces someone to book.",
     excerpt: "Service specific pages, online booking visibility, and the visual proof that convinces someone to book.",
-    date: "2026-09-18",
+    date: "2026-09-25",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
