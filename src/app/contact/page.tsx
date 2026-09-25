@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Phone, CalendarClock, Mail, ExternalLink } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
+import { AuditRequestForm } from "@/components/audit-request-form";
 
 const TITLE = "Contact EVOGENCY | Free Website & SEO Audit, Orlando FL";
 const DESCRIPTION =
@@ -29,17 +30,29 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
+    <div className="mx-auto max-w-3xl space-y-8 px-6 pt-28 pb-20">
+      <div className="glass-strong rounded-3xl p-6 sm:p-10">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-white sm:text-3xl">
+            Let&apos;s get your business found online
+          </h1>
+          <p className="mx-auto mt-3 max-w-md text-white/65">
+            Free, no pressure audit of your current site and Google presence.
+            We&apos;ll tell you exactly what&apos;s costing you customers.
+          </p>
+          <h2 className="mt-8 text-lg font-semibold text-[#f0c14b]">Request your free audit</h2>
+        </div>
+        <div className="mt-6">
+          <AuditRequestForm />
+        </div>
+      </div>
+
       <TiltCard className="glass-strong rounded-3xl p-10 text-center">
-        <h1 className="text-2xl font-bold text-white sm:text-3xl">
-          Let&apos;s get your business found online
-        </h1>
-        <h2 className="sr-only">Ways to reach EVOGENCY</h2>
-        <p className="mx-auto mt-3 max-w-md text-white/65">
-          Free, no pressure audit of your current site and Google presence.
-          We&apos;ll tell you exactly what&apos;s costing you customers.
+        <h2 className="text-lg font-semibold text-white">Rather talk now?</h2>
+        <p className="mx-auto mt-2 max-w-md text-white/65">
+          Call, book a time, or send us an email. Whatever works for you.
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
           <a href="tel:+18138971954" className="btn-solid">
             <Phone size={16} /> Call (813) 897-1954
           </a>
