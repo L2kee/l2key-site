@@ -6,6 +6,15 @@ export type NoteKind = "note" | "important" | "question" | "todo";
 export type TranscriptLine = { id: string; t: number; text: string };
 export type Note = { id: string; t: number; text: string; kind: NoteKind };
 
+export type StudyGuide = {
+  overview: string;
+  keyPoints: { point: string; time: string }[];
+  terms: { term: string; definition: string }[];
+  assignments: string[];
+  practiceQuestions: { question: string; answer: string }[];
+  createdAt: number;
+};
+
 export type Session = {
   id: string;
   title: string;
@@ -15,6 +24,7 @@ export type Session = {
   transcript: TranscriptLine[];
   notes: Note[];
   audioType?: string;
+  guide?: StudyGuide;
 };
 
 export const NOTE_KINDS: Record<NoteKind, { label: string; prefix: string }> = {
@@ -102,15 +112,38 @@ export function sessionToMarkdown(s: Session) {
     "",
     [s.course, formatDate(s.createdAt), `Length ${formatClock(s.durationMs)}`].filter(Boolean).join(" · "),
     "",
-    "## My notes",
-    "",
   ];
+  const g = s.guide;
+  if (g) {
+    lines.push("## Study guide", "", g.overview, "", "### Key points", "");
+    for (const k of g.keyPoints) lines.push(`- ${k.time ? `[${k.time}] ` : ""}${k.point}`);
+    if (g.terms.length) {
+      lines.push("", "### Terms", "");
+      for (const t of g.terms) lines.push(`- **${t.term}**: ${t.definition}`);
+    }
+    if (g.assignments.length) {
+      lines.push("", "### Homework and deadlines", "");
+      for (const a of g.assignments) lines.push(`- ${a}`);
+    }
+    if (g.practiceQuestions.length) {
+      lines.push("", "### Practice questions", "");
+      g.practiceQuestions.forEach((q, i) => lines.push(`${i + 1}. ${q.question}`, `   - Answer: ${q.answer}`));
+    }
+    lines.push("");
+  }
+  lines.push("## My notes", "");
   if (s.notes.length === 0) lines.push("_No notes taken._");
   for (const n of s.notes) lines.push(`- [${formatClock(n.t)}] ${NOTE_KINDS[n.kind].prefix}${n.text}`);
   lines.push("", "## Transcript", "");
   if (s.transcript.length === 0) lines.push("_No transcript captured._");
   for (const l of s.transcript) lines.push(`[${formatClock(l.t)}] ${l.text}`, "");
   return lines.join("\n");
+}
+
+/** "mm:ss" or "h:mm:ss" back to milliseconds; null if it isn't a time. */
+export function parseClock(value: string): number | null {
+  if (!/^\d+(:\d{1,2}){1,2}$/.test(value.trim())) return null;
+  return value.trim().split(":").reduce((acc, part) => acc * 60 + Number(part), 0) * 1000;
 }
 
 export function fileSlug(s: Session) {

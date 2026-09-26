@@ -35,6 +35,7 @@ import {
 } from "@/lib/class-notes";
 import { useRecorder, type AudioSource } from "./use-recorder";
 import { NoteComposer, NotesList, TranscriptPane, inputClass } from "./panes";
+import { StudyGuide } from "./study-guide";
 
 const LANGUAGES = [
   ["en-US", "English (US)"],
@@ -90,6 +91,22 @@ export function ClassNotesApp() {
   useEffect(() => {
     refresh();
   }, [refresh]);
+
+  const sessionsRef = useRef(sessions);
+  useEffect(() => {
+    sessionsRef.current = sessions;
+  });
+
+  // Patches apply to the latest copy, so a slow AI summary can't undo edits
+  // made while it was running.
+  const patchSession = useCallback(async (id: string, patch: Partial<Session>) => {
+    const base = sessionsRef.current.find((s) => s.id === id);
+    if (!base) return;
+    const next = { ...base, ...patch };
+    sessionsRef.current = sessionsRef.current.map((s) => (s.id === id ? next : s));
+    setSessions(sessionsRef.current);
+    await saveSession(next);
+  }, []);
 
   const current = view.kind === "session" ? sessions.find((s) => s.id === view.id) : undefined;
 
@@ -149,10 +166,7 @@ export function ClassNotesApp() {
             key={current.id}
             session={current}
             onBack={() => setView({ kind: "library" })}
-            onChange={async (s) => {
-              setSessions((all) => all.map((x) => (x.id === s.id ? s : x)));
-              await saveSession(s);
-            }}
+            onPatch={(patch) => patchSession(current.id, patch)}
             onDelete={async () => {
               await deleteSession(current.id);
               await refresh();
@@ -527,12 +541,12 @@ function Library({ sessions, onOpen }: { sessions: Session[]; onOpen: (id: strin
 function SessionView({
   session,
   onBack,
-  onChange,
+  onPatch,
   onDelete,
 }: {
   session: Session;
   onBack: () => void;
-  onChange: (s: Session) => void;
+  onPatch: (patch: Partial<Session>) => void;
   onDelete: () => void;
 }) {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -564,7 +578,7 @@ function SessionView({
     a.play().catch(() => {});
   };
 
-  const update = (patch: Partial<Session>) => onChange({ ...session, ...patch });
+  const update = onPatch;
   const addNote = (text: string, kind: NoteKind) => {
     const note: Note = { id: newId(), t: now, text, kind };
     update({ notes: [...session.notes, note] });
@@ -658,6 +672,8 @@ function SessionView({
           </button>
         </div>
       </section>
+
+      <StudyGuide session={session} onGuide={(guide) => update({ guide })} onSeek={audioUrl ? seek : undefined} />
 
       <div className="grid gap-6 lg:grid-cols-[3fr_2fr]">
         <Panel
