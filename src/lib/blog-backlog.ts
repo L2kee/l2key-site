@@ -1005,7 +1005,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Website design considerations for HVAC companies, covering how to design for both emergency repair visitors and long term maintenance plan customers.",
     excerpt: "Designing for both emergency repair visitors and long term maintenance plan customers.",
-    date: "2026-09-18",
+    date: "2026-09-27",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -1067,7 +1067,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How website design choices, from licensing badges to project photos, build the trust an electrical contractor needs to win the call.",
     excerpt: "How design choices, from licensing badges to project photos, build the trust electricians need.",
-    date: "2026-09-18",
+    date: "2026-09-27",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -1129,7 +1129,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "What visitors actually look for on a restaurant website: the menu, hours, and location, and why burying them behind flashy design costs business.",
     excerpt: "What visitors actually look for: the menu, hours, and location, and why burying them costs business.",
-    date: "2026-09-18",
+    date: "2026-09-27",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
