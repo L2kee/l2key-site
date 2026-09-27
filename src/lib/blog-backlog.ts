@@ -692,7 +692,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for gyms and boutique fitness studios, focused on class specific pages, trial offers, and local competition against national chains.",
     excerpt: "Class specific pages, trial offers, and competing locally against national gym chains.",
-    date: "2026-09-18",
+    date: "2026-09-26",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -754,7 +754,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for cleaning companies, covering why residential and commercial cleaning need entirely separate pages and how trust signals differ between them.",
     excerpt: "Why residential and commercial cleaning need entirely separate pages, and how trust differs between them.",
-    date: "2026-09-18",
+    date: "2026-09-26",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -816,7 +816,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "SEO for pest control businesses, covering the mix of urgent, embarrassing searches and planned prevention searches, and how to serve both.",
     excerpt: "The mix of urgent searches and planned prevention searches, and how to serve both well.",
-    date: "2026-09-18",
+    date: "2026-09-26",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
