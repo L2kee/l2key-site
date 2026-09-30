@@ -216,7 +216,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
       {
         heading: "Ask at the right moment",
         paragraphs: [
-          "The best time to ask for a review is right after a customer says something positive, whether that's out loud after a job or in a follow up message once a service is finished. Waiting a week and sending a generic email to everyone in your database gets a fraction of the response of asking in the moment.",
+          "The best time to ask for a review is right after the job is finished, whether that's in person before you leave or in a follow up message once a service is finished. Waiting a week and sending a generic email to everyone in your database gets a fraction of the response of asking in the moment.",
         ],
       },
       {

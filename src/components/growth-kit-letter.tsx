@@ -75,7 +75,7 @@ export function GrowthKitLetter() {
             the shops that win aren&apos;t always the best at the trade. They&apos;re the best at not letting customers
             slip away.
           </strong>{" "}
-          They text back every missed call in seconds. They ask every happy customer for a review. They follow up on every
+          They text back every missed call in seconds. They ask every customer for a review. They follow up on every
           quote.
         </p>
         <p>

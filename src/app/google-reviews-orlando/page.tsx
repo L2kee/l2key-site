@@ -37,7 +37,7 @@ const INCLUDED = [
   },
   {
     title: "A real system for asking",
-    body: "A simple, repeatable way to ask happy customers for a review right after the job is done, when they're most likely to actually leave one.",
+    body: "A simple, repeatable way to ask every customer for a review right after the job is done, when they're most likely to actually leave one.",
   },
   {
     title: "Monitoring and responses",
@@ -103,11 +103,11 @@ const FAQ = [
   },
   {
     q: "How do I get more Google reviews?",
-    a: "Ask at the right moment, right after a job is finished or a customer says something positive, and make it as easy as one click. Most businesses lose reviews simply because they forget to ask.",
+    a: "Ask at the right moment, right after a job is finished, asking every customer the same way, and make it as easy as one click. Most businesses lose reviews simply because they forget to ask.",
   },
   {
     q: "What does reputation management actually mean?",
-    a: "It means actively managing your Google Business Profile, responding to reviews, and building a real system for asking happy customers to leave one, instead of hoping it happens on its own.",
+    a: "It means actively managing your Google Business Profile, responding to reviews, and building a real system for asking every customer to leave one, instead of hoping it happens on its own.",
   },
 ];
 
@@ -130,7 +130,7 @@ export default function GoogleReviewsOrlandoPage() {
       <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Most customers check your reviews before they ever call. EVOGENCY
         sets up your Google Business Profile the right way and builds a
-        simple system for asking happy customers to leave a review, so your
+        simple system for asking every customer to leave a review, so your
         reputation does the selling before you ever pick up the phone.
       </p>
 

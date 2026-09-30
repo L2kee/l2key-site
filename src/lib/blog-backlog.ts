@@ -66,7 +66,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
       },
       {
         heading: "Where to start this week", paragraphs: [
-          "If you only do three things, do these: finish every field in your Google Business Profile, start asking every happy customer for a review before you leave the driveway, and make sure your phone number is one tap away on every page of your site. Those three cover the urgent searches that pay the bills.",
+          "If you only do three things, do these: finish every field in your Google Business Profile, start asking every customer for a review before you leave the driveway, and make sure your phone number is one tap away on every page of your site. Those three cover the urgent searches that pay the bills.",
           "After that, build out one strong page for each service you most want more of. SEO is slow compared to ads, but the calls it brings in keep coming without a per click bill attached. If you'd like a second set of eyes on where your site stands today, a free audit is the fastest way to find out.",
         ],
       },
@@ -487,7 +487,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
       {
         heading: "Reviews close the deal",
         paragraphs: [
-          "Ask every happy customer for a Google review when they pick up their car. A text with a direct link works well. Reply to every review, and handle complaints calmly. Customers read how you handle problems as closely as the praise.",
+          "Ask every customer for a Google review when they pick up their car. A text with a direct link works well. Reply to every review, and handle complaints calmly. Customers read how you handle problems as closely as the praise.",
         ],
       },
       {
@@ -796,7 +796,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
       {
         heading: "Reviews and local presence",
         paragraphs: [
-          "Ask every happy client for a review, especially after a first clean or a big move out job. Keep your Google Business Profile complete with your service areas, hours, and real photos of your team.",
+          "Ask every client for a review, especially after a first clean or a big move out job. Keep your Google Business Profile complete with your service areas, hours, and real photos of your team.",
           "Reply to every review, and resolve complaints quickly and privately.",
         ],
       },
@@ -4163,7 +4163,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
       {
         heading: "Ask your first customers directly and personally",
         paragraphs: [
-          "Early on, a personal, direct request to happy customers, rather than an automated system, often gets the highest response rate and helps build the first meaningful batch of reviews.",
+          "Early on, a personal, direct request to each customer, rather than an automated system, often gets the highest response rate and helps build the first meaningful batch of reviews.",
           "Tell them the truth: you're a new business and their review genuinely helps. People like supporting a local business getting started. Send the direct review link so it takes them a minute, not ten.",
         ],
       },
@@ -6417,7 +6417,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
       {
         heading: "Not asking for reviews",
         paragraphs: [
-          "Many new owners feel awkward asking, so they don't. That leaves the business looking untested for months longer than necessary. Ask every happy customer from day one.",
+          "Many new owners feel awkward asking, so they don't. That leaves the business looking untested for months longer than necessary. Ask every customer from day one.",
         ],
       },
       {
@@ -6473,7 +6473,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
         ],
       },
       {
-        heading: "Ask every happy customer for a review",
+        heading: "Ask every customer for a review",
         paragraphs: [
           "A consistent habit of asking, at zero cost, builds the kind of social proof that eventually does real marketing work on its own, long after the business could afford paid advertising.",
           "Use your profile's direct review link so leaving one takes a minute. Reply to every review.",
