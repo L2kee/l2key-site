@@ -19,6 +19,8 @@ export type BlogPost = {
   sections: BlogSection[];
   relatedHref?: string;
   relatedLabel?: string;
+  /** Also show the free review kit box right after this section index. */
+  kitCalloutAfterSection?: number;
 };
 
 const ORIGINAL_POSTS: BlogPost[] = [
@@ -204,6 +206,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
+    kitCalloutAfterSection: 2,
     sections: [
       {
         paragraphs: [

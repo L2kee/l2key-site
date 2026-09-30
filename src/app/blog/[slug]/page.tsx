@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { ReviewKitCallout } from "@/components/review-kit-callout";
 import { BLOG_POSTS, getBlogPost } from "@/lib/blog";
 import { FOUNDER_ID, ORG_ID, SITE_URL, WEBSITE_ID, breadcrumbs } from "@/lib/schema";
 
@@ -121,6 +122,12 @@ export default async function BlogPostPage({
                 </p>
               ))}
             </div>
+            {i === post.kitCalloutAfterSection && (
+              <ReviewKitCallout
+                title="Want the Exact Texts?"
+                body="Grab 7 copy and paste review requests, timed and ready to send. Free, and it takes 2 minutes to set up."
+              />
+            )}
           </div>
         ))}
       </div>
@@ -133,6 +140,8 @@ export default async function BlogPostPage({
           {post.relatedLabel} <ArrowRight size={14} />
         </Link>
       )}
+
+      <ReviewKitCallout />
 
       <CtaBand text="Get Your Free Audit" />
 

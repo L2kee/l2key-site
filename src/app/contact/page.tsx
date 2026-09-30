@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Phone, CalendarClock, Mail, ExternalLink } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { AuditRequestForm } from "@/components/audit-request-form";
+import { ReviewKitCallout } from "@/components/review-kit-callout";
 
 const TITLE = "Contact EVOGENCY | Free Website & SEO Audit, Orlando FL";
 const DESCRIPTION =
@@ -46,6 +47,11 @@ export default function ContactPage() {
           <AuditRequestForm />
         </div>
       </div>
+
+      <ReviewKitCallout
+        title="Not Ready for an Audit Yet?"
+        body="Start with the free 5 Star Review Kit: 7 copy and paste texts that turn happy customers into Google reviews."
+      />
 
       <TiltCard className="glass-strong rounded-3xl p-10 text-center">
         <h2 className="text-lg font-semibold text-white">Rather talk now?</h2>

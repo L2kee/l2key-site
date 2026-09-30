@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { ReviewKitCallout } from "@/components/review-kit-callout";
 import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Google Reviews & Reputation Management Orlando | EVOGENCY";
@@ -161,6 +162,11 @@ export default function GoogleReviewsOrlandoPage() {
       </div>
 
       <CtaBand text="Get Your Free Audit" />
+
+      <ReviewKitCallout
+        title="Want to Try It Yourself First?"
+        body="Grab the 7 texts that turn happy customers into Google reviews. Free, and it takes 2 minutes to set up."
+      />
 
       <div className="mt-20">
         <SectionHeading eyebrow="Frequently asked" title="Google reviews Orlando: the honest answers" />
