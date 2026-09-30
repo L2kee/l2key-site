@@ -672,7 +672,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
       {
         heading: "Reviews keep the chair full",
         paragraphs: [
-          "Ask happy clients for a review at checkout while they love their new look. A quick text with a direct link works well. Reviews that mention a specific service or stylist are especially helpful to future clients.",
+          "Ask every client for a review at checkout, while the visit is fresh. A quick text with a direct link works well. Reviews that mention a specific service or stylist are especially helpful to future clients.",
           "Reply to every review, and handle unhappy clients privately and graciously.",
         ],
       },
