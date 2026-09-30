@@ -2,8 +2,10 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Menu, X, Phone, Mail, CalendarClock } from "lucide-react";
+import { isFunnelPath } from "@/lib/funnel-paths";
 
 const LINKS = [
   { href: "/services", label: "Our Craft" },
@@ -64,6 +66,19 @@ export function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [open]);
+
+  const pathname = usePathname();
+  if (isFunnelPath(pathname)) {
+    // Funnel pages keep the brand but offer no way out except the page's own button.
+    return (
+      <header className="flex justify-center px-4 pt-4">
+        <span className="glass-nav flex items-center gap-2.5 rounded-2xl px-4 py-2.5">
+          <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={36} height={36} className="h-9 w-9 object-contain" />
+          <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
+        </span>
+      </header>
+    );
+  }
 
   return (
     <>

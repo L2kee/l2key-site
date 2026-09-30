@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // The paid kit files are read from disk by the download route, not served from public/.
+  outputFileTracingIncludes: {
+    "/api/kit/download": ["./private/growth-kit/**/*"],
+  },
   async headers() {
     return [
       {

@@ -20,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/custom-crm-development-orlando",
     "/mobile-app-development-orlando",
     "/electricalai-pro",
+    "/free-review-kit",
+    "/growth-kit",
   ];
 
   const staticEntries = routes.map((route) => ({

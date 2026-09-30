@@ -9,6 +9,7 @@ const PAGES = [
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
   { href: "/electricalai-pro", label: "ElectricalAI Pro" },
+  { href: "/free-review-kit", label: "Free Review Kit" },
 ];
 
 export function Footer() {

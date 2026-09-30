@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/agency-os",
+      disallow: ["/agency-os", "/downloads/", "/api/"],
     },
     sitemap: "https://evogencyglobal.com/sitemap.xml",
   };

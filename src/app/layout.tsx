@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { LazyBackgroundScene } from "@/components/lazy-background-scene";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { HideOnFunnel } from "@/components/hide-on-funnel";
 import { ORG_DESCRIPTION, siteGraph } from "@/lib/schema";
 import "./globals.css";
 
@@ -61,7 +62,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <LazyBackgroundScene />
         <Navbar />
         <main className="flex flex-col">{children}</main>
-        <Footer />
+        <HideOnFunnel>
+          <Footer />
+        </HideOnFunnel>
       </body>
       <GoogleAnalytics gaId="G-P0SVMCCT5Y" />
     </html>
