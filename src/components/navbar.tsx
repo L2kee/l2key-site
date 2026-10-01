@@ -118,7 +118,7 @@ export function Navbar() {
       </header>
 
       {open && (
-        <div className="fixed inset-0 z-[60] flex flex-col bg-[#0a0805]/98 backdrop-blur-xl sm:hidden">
+        <div className="fixed inset-0 z-[60] flex flex-col bg-black/98 backdrop-blur-xl sm:hidden">
           <div className="flex items-center justify-between px-6 pt-7">
             <span className="flex items-center gap-2.5">
               <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={32} height={32} className="h-8 w-8 object-contain" />

@@ -23,32 +23,8 @@ div#top {
 body {
   position: relative;
   overflow-x: hidden;
-  background: #0a0805;
+  background: #000;
   color: #f3ede0;
-}
-
-/* Soft ambient color wash, sitting BEHIND the 3D wireframe scene
-   (that one lives at z-index -1) so the wireframe reads clearly on top. */
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  z-index: -2;
-  width: 46rem;
-  height: 46rem;
-  border-radius: 9999px;
-  filter: blur(130px);
-  pointer-events: none;
-}
-body::before {
-  top: -14rem;
-  left: -14rem;
-  background: radial-gradient(circle, rgba(240, 193, 75, 0.16), transparent 70%);
-}
-body::after {
-  bottom: -16rem;
-  right: -14rem;
-  background: radial-gradient(circle, rgba(201, 146, 44, 0.14), transparent 70%);
 }
 
 @layer components {
