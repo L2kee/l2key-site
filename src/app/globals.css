@@ -48,14 +48,14 @@ body {
      carry the class without positioning side effects. */
   .glass {
     background:
-      linear-gradient(115deg, transparent 32%, rgb(255 255 255 / 0.09) 44%, transparent 56%),
-      linear-gradient(145deg, rgb(240 193 75 / 0.05), rgb(255 255 255 / 0.07) 45%, rgb(63 200 216 / 0.06));
+      linear-gradient(115deg, transparent 32%, rgb(255 255 255 / 0.04) 44%, transparent 56%),
+      linear-gradient(145deg, rgb(240 193 75 / 0.05), rgb(255 255 255 / 0.02) 45%, rgb(63 200 216 / 0.06));
     -webkit-backdrop-filter: blur(20px) saturate(120%);
     backdrop-filter: blur(20px) saturate(120%);
-    border: 1px solid rgb(255 255 255 / 0.22);
-    border-top-color: rgb(255 255 255 / 0.4);
+    border: 1px solid rgb(255 255 255 / 0.10);
+    border-top-color: rgb(255 255 255 / 0.2);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.18) inset,
+      0 1px 0 rgba(255, 255, 255, 0.08) inset,
       0 0 24px rgba(63, 200, 216, 0.03) inset,
       0 30px 60px -30px rgba(0, 0, 0, 0.7),
       0 0 40px -20px rgba(240, 193, 75, 0.12);
@@ -76,14 +76,14 @@ body {
 
   .glass-strong {
     background:
-      linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.12) 43%, transparent 57%),
-      linear-gradient(145deg, rgb(240 193 75 / 0.06), rgb(255 255 255 / 0.10) 45%, rgb(63 200 216 / 0.08));
+      linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.05) 43%, transparent 57%),
+      linear-gradient(145deg, rgb(240 193 75 / 0.06), rgb(255 255 255 / 0.03) 45%, rgb(63 200 216 / 0.08));
     -webkit-backdrop-filter: blur(24px) saturate(120%);
     backdrop-filter: blur(24px) saturate(120%);
-    border: 1px solid rgb(255 255 255 / 0.26);
-    border-top-color: rgb(255 255 255 / 0.45);
+    border: 1px solid rgb(255 255 255 / 0.12);
+    border-top-color: rgb(255 255 255 / 0.22);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.22) inset,
+      0 1px 0 rgba(255, 255, 255, 0.10) inset,
       0 -1px 0 rgba(255, 255, 255, 0.04) inset,
       0 0 30px rgba(63, 200, 216, 0.04) inset,
       0 40px 80px -30px rgba(0, 0, 0, 0.75),
