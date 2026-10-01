@@ -5,22 +5,17 @@ import { SectionHeading } from "@/components/section-heading";
 import { Marquee } from "@/components/marquee";
 import { WorkCard } from "@/components/work-card";
 import { ServicesJourney } from "@/components/services-journey";
-import { LogoBloom } from "@/components/logo-bloom";
+import { HeroVideo } from "@/components/hero-video";
 import { WORK } from "@/lib/content";
 
 export default function Home() {
   return (
     <div id="top">
+      <HeroVideo />
+
       {/* Hero */}
-      <section className="mx-auto flex max-w-5xl flex-col items-center px-6 pt-20 pb-16 text-center sm:pt-28">
-        <div className="glass-strong flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium tracking-wide text-white/80">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#f0c14b]" />
-          Available for new projects
-        </div>
-
-        <LogoBloom />
-
-        <h1 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+      <section className="mx-auto flex max-w-5xl flex-col items-center px-6 pt-8 pb-16 text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
           Built to be found.
           <br />
           <span className="gradient-text">Designed to be trusted.</span>
