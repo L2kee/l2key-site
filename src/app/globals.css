@@ -41,15 +41,24 @@ body {
   }
 
   /* Glass surfaces with a real shadow, not a flat border. */
+  /* Tinted glass: a faint gold to teal body (the hero video's palette), a
+     diagonal reflection streak, a bright rim along the top edge where light
+     catches it, and saturate() so the shapes seen through it keep their
+     color. All background layers, no pseudo elements, so any element can
+     carry the class without positioning side effects. */
   .glass {
-    background: linear-gradient(160deg, rgb(255 255 255 / 0.07), rgb(255 255 255 / 0.015));
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgb(255 255 255 / 0.1);
+    background:
+      linear-gradient(115deg, transparent 32%, rgb(255 255 255 / 0.05) 44%, transparent 56%),
+      linear-gradient(145deg, rgb(240 193 75 / 0.07), rgb(255 255 255 / 0.02) 45%, rgb(63 200 216 / 0.06));
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgb(255 255 255 / 0.12);
+    border-top-color: rgb(255 255 255 / 0.24);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.06) inset,
+      0 1px 0 rgba(255, 255, 255, 0.18) inset,
+      0 0 24px rgba(63, 200, 216, 0.05) inset,
       0 30px 60px -30px rgba(0, 0, 0, 0.7),
-      0 0 40px -20px rgba(240, 193, 75, 0.16);
+      0 0 40px -20px rgba(240, 193, 75, 0.2);
   }
 
   /* The sticky nav needs to stay legible over WHATEVER scrolls behind
@@ -57,8 +66,8 @@ body {
      backing than the decorative .glass cards. */
   .glass-nav {
     background: linear-gradient(160deg, rgba(12, 9, 5, 0.98), rgba(12, 9, 5, 0.95));
-    backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
     border: 1px solid rgb(255 255 255 / 0.1);
     box-shadow:
       0 1px 0 rgba(255, 255, 255, 0.06) inset,
@@ -66,14 +75,19 @@ body {
   }
 
   .glass-strong {
-    background: linear-gradient(160deg, rgb(255 255 255 / 0.1), rgb(255 255 255 / 0.03));
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    background:
+      linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.07) 43%, transparent 57%),
+      linear-gradient(145deg, rgb(240 193 75 / 0.10), rgb(255 255 255 / 0.03) 45%, rgb(63 200 216 / 0.09));
+    -webkit-backdrop-filter: blur(24px) saturate(170%);
+    backdrop-filter: blur(24px) saturate(170%);
     border: 1px solid rgb(255 255 255 / 0.14);
+    border-top-color: rgb(255 255 255 / 0.3);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.08) inset,
+      0 1px 0 rgba(255, 255, 255, 0.22) inset,
+      0 -1px 0 rgba(255, 255, 255, 0.04) inset,
+      0 0 30px rgba(63, 200, 216, 0.06) inset,
       0 40px 80px -30px rgba(0, 0, 0, 0.75),
-      0 0 60px -20px rgba(201, 146, 44, 0.2);
+      0 0 60px -20px rgba(240, 193, 75, 0.25);
   }
 
   /* Glass button — the "made of glass" ask. */
@@ -85,8 +99,8 @@ body {
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     background: linear-gradient(160deg, rgb(255 255 255 / 0.14), rgb(255 255 255 / 0.04));
-    backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
     border: 1px solid rgb(255 255 255 / 0.18);
     box-shadow:
       0 1px 0 rgba(255, 255, 255, 0.15) inset,
@@ -192,8 +206,10 @@ body {
   .tilt-wrap {
     perspective: 1200px;
   }
+  /* No transform-style: preserve-3d here: nothing inside the card moves in
+     3D, and preserve-3d switches off backdrop-filter, which stopped the
+     glass cards from frosting the shapes behind them. */
   .tilt-card {
-    transform-style: preserve-3d;
     transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 400ms ease;
     will-change: transform;
   }
