@@ -4,7 +4,6 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { Marquee } from "@/components/marquee";
 import { WorkCard } from "@/components/work-card";
-import { EvolveJourney } from "@/components/evolve-journey";
 import { ServicesJourney } from "@/components/services-journey";
 import { LogoBloom } from "@/components/logo-bloom";
 import { WORK } from "@/lib/content";
@@ -44,8 +43,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      <EvolveJourney />
 
       <ServicesJourney />
 

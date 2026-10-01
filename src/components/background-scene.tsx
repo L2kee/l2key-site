@@ -1,9 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
-import { isSceneCovered, onSceneCoveredChange } from "@/lib/scene-covered";
 
 type Geo = "icosahedron" | "octahedron" | "tetrahedron" | "dodecahedron";
 
@@ -95,21 +94,6 @@ function useMouseParallax(enabled: boolean) {
   }, [enabled]);
 
   return mouseRef;
-}
-
-/** Stops rendering while an opaque section (the Evolve journey) covers the
-    whole screen: the scene is invisible then, and on iPhones redrawing it
-    every frame competed with the scroll animation for the GPU. */
-function PauseWhenCovered() {
-  const setFrameloop = useThree((s) => s.setFrameloop);
-
-  useEffect(() => {
-    const apply = () => setFrameloop(isSceneCovered() ? "never" : "always");
-    apply();
-    return onSceneCoveredChange(apply);
-  }, [setFrameloop]);
-
-  return null;
 }
 
 function CameraRig({ fracRef }: { fracRef: React.RefObject<number> }) {
@@ -205,26 +189,6 @@ function Particle({ node, animate }: { node: ParticleDef; animate: boolean }) {
   );
 }
 
-/** One clean path linking each shape to the next — a line, not a web. */
-function ConnectionPath() {
-  const positions = useMemo(() => {
-    const pts: number[] = [];
-    for (let i = 0; i < NODES.length - 1; i++) {
-      pts.push(...NODES[i].position, ...NODES[i + 1].position);
-    }
-    return new Float32Array(pts);
-  }, []);
-
-  return (
-    <lineSegments>
-      <bufferGeometry>
-        <bufferAttribute attach="attributes-position" args={[positions, 3]} />
-      </bufferGeometry>
-      <lineBasicMaterial color="#f0c14b" transparent opacity={0.14} />
-    </lineSegments>
-  );
-}
-
 function Scene({
   fracRef,
   mouseRef,
@@ -240,7 +204,6 @@ function Scene({
     <>
       <CameraRig fracRef={fracRef} />
       <ParallaxGroup mouseRef={mouseRef} animate={animate}>
-        <ConnectionPath />
         {NODES.map((n, i) => (
           <Shape key={i} node={n} animate={animate} />
         ))}
@@ -289,7 +252,6 @@ export function BackgroundScene() {
         dpr={[1, 1.5]}
         gl={{ alpha: true, antialias: true }}
       >
-        <PauseWhenCovered />
         <Scene
           fracRef={fracRef}
           mouseRef={mouseRef}
