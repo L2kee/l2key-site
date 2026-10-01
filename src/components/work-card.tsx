@@ -107,9 +107,8 @@ const MEDIA_BG =
   "relative overflow-hidden bg-gradient-to-br from-[#f0c14b]/15 via-[#c9922c]/5 to-transparent";
 
 /** "stacked" is the tilting image over details grid card (Works page).
-    "split" (homepage) is two separate glass cards, image and details, joined
-    by a short gold line: side by side from md up, stacked on phones. No tilt
-    here, since two independently tilting cards would swing off the line. */
+    "split" (homepage) is two separate glass cards, image and details, each
+    tilting on its own: side by side from md up, stacked on phones. */
 export function WorkCard({
   item,
   layout = "stacked",
@@ -119,13 +118,16 @@ export function WorkCard({
 }) {
   if (layout === "split") {
     return (
-      <div className="flex flex-col items-stretch md:flex-row md:items-center">
-        <div className={`glass-strong aspect-[16/10] w-full rounded-2xl md:w-[52%] md:shrink-0 ${MEDIA_BG}`}>
-          <WorkMedia item={item} />
+      <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
+        <div className="md:w-[52%] md:shrink-0">
+          <TiltCard className={`glass-strong aspect-[16/10] w-full rounded-2xl ${MEDIA_BG}`}>
+            <WorkMedia item={item} />
+          </TiltCard>
         </div>
-        <div aria-hidden className="mx-auto h-8 w-px bg-[#f0c14b]/50 md:mx-0 md:h-px md:w-10 md:shrink-0" />
-        <div className="glass-strong flex-1 rounded-2xl p-6 md:p-8">
-          <WorkDetails item={item} />
+        <div className="flex-1">
+          <TiltCard className="glass-strong rounded-2xl p-6 md:p-8">
+            <WorkDetails item={item} />
+          </TiltCard>
         </div>
       </div>
     );
