@@ -51,9 +51,9 @@ export default function Home() {
       {/* Work preview */}
       <section className="mx-auto max-w-5xl px-6 py-16">
         <SectionHeading eyebrow="Proof, not promises" title="Featured work" />
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {WORK.slice(0, 2).map((w) => (
-            <WorkCard key={w.title} item={w} />
+        <div className="mt-10 flex flex-col gap-6">
+          {WORK.map((w) => (
+            <WorkCard key={w.title} item={w} layout="row" />
           ))}
         </div>
         <div className="mt-8 text-center">

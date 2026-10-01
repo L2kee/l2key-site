@@ -22,11 +22,26 @@ export type WorkItem = {
   links: { label: string; href: string }[];
 };
 
-export function WorkCard({ item }: { item: WorkItem }) {
+/** "stacked" is the image over details grid card. "row" puts the image on
+    the left and the details on the right from md up, and stacks on phones. */
+export function WorkCard({
+  item,
+  layout = "stacked",
+}: {
+  item: WorkItem;
+  layout?: "stacked" | "row";
+}) {
   const Icon = ICONS[item.icon];
+  const row = layout === "row";
   return (
-    <TiltCard className="glass-strong flex h-full flex-col overflow-hidden rounded-2xl">
-      <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#f0c14b]/15 via-[#c9922c]/5 to-transparent">
+    <TiltCard
+      className={`glass-strong flex h-full flex-col overflow-hidden rounded-2xl ${row ? "md:flex-row" : ""}`}
+    >
+      <div
+        className={`relative aspect-[16/10] w-full overflow-hidden border-b border-white/10 bg-gradient-to-br from-[#f0c14b]/15 via-[#c9922c]/5 to-transparent ${
+          row ? "md:aspect-auto md:min-h-[320px] md:w-[55%] md:shrink-0 md:border-b-0 md:border-r" : ""
+        }`}
+      >
         {item.images && item.images.length > 0 ? (
           <WorkCarousel
             images={item.images}
@@ -60,7 +75,7 @@ export function WorkCard({ item }: { item: WorkItem }) {
         )}
       </div>
 
-      <div className="flex flex-1 flex-col p-6">
+      <div className={`flex flex-1 flex-col p-6 ${row ? "md:justify-center md:p-8" : ""}`}>
         <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-white/45">
           <span>{item.category}</span>
           <span className="h-1 w-1 rounded-full bg-white/30" />

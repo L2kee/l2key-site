@@ -51,20 +51,20 @@ export const WORK_CATEGORIES = ["All", "Websites", "Mobile Apps", "Web Apps", "D
 
 export const WORK: WorkItem[] = [
   {
-    title: "Orlando Suits",
-    category: "Websites",
+    title: "ElectricalAI Pro",
+    category: "Desktop Apps",
     year: "2026",
-    tag: "Design concept",
-    icon: "globe",
-    images: ["/orlando-hero.png", "/orlando-reviews.png", "/orlando-grid.png"],
-    imageAlts: [
-      "Orlando Suits homepage hero showing a tailor fitting a customer's suit jacket, headlined \"Nobody remembers the guy in the rental\"",
-      "Orlando Suits page section showing five star customer review quotes under the headline \"The room notices. So do the reviews.\"",
-      "Orlando Suits product grid showing suits, shirts, shoes, ties and accessories, hats, and cologne",
+    tag: "Live on the web",
+    image: "/electricalai-shot.png",
+    imageAlt:
+      "ElectricalAI Pro dashboard in its dark Kinetic glass theme, with the headline Electrical math, jobsite ready, module and code basis stats, and numbered calculator cards for Ohm's Law, voltage drop, and wire ampacity",
+    icon: "bolt",
+    body: "An AI powered app for electricians, live on the web and on Windows: 11 calculator modules built on NEC tables, an AI electrical assistant, and two switchable themes. Flutter and Dart up front, a FastAPI and Python backend behind it.",
+    stack: ["Flutter", "Dart", "FastAPI", "Python"],
+    links: [
+      { label: "Try it live", href: "/electricalai-pro/app" },
+      { label: "View on GitHub", href: "https://github.com/L2kee/ElectricalAI-Pro" },
     ],
-    body: "A pitch concept for a downtown Orlando menswear and tailoring shop, built with real product photography to show the client what the brand could look like online before any commitment. Full landing page, review driven, built to get a man through the door for a fitting.",
-    stack: ["HTML", "CSS", "Design"],
-    links: [],
   },
   {
     title: "Agency OS",
@@ -92,19 +92,19 @@ export const WORK: WorkItem[] = [
     links: [{ label: "View live app", href: "https://evogencyglobal.com/agency-os" }],
   },
   {
-    title: "ElectricalAI Pro",
-    category: "Desktop Apps",
+    title: "Orlando Suits",
+    category: "Websites",
     year: "2026",
-    tag: "Live on the web",
-    image: "/electricalai-shot.png",
-    imageAlt:
-      "ElectricalAI Pro dashboard in its dark Kinetic glass theme, with the headline Electrical math, jobsite ready, module and code basis stats, and numbered calculator cards for Ohm's Law, voltage drop, and wire ampacity",
-    icon: "bolt",
-    body: "An AI powered app for electricians, live on the web and on Windows: 11 calculator modules built on NEC tables, an AI electrical assistant, and two switchable themes. Flutter and Dart up front, a FastAPI and Python backend behind it.",
-    stack: ["Flutter", "Dart", "FastAPI", "Python"],
-    links: [
-      { label: "Try it live", href: "/electricalai-pro/app" },
-      { label: "View on GitHub", href: "https://github.com/L2kee/ElectricalAI-Pro" },
+    tag: "Design concept",
+    icon: "globe",
+    images: ["/orlando-hero.png", "/orlando-reviews.png", "/orlando-grid.png"],
+    imageAlts: [
+      "Orlando Suits homepage hero showing a tailor fitting a customer's suit jacket, headlined \"Nobody remembers the guy in the rental\"",
+      "Orlando Suits page section showing five star customer review quotes under the headline \"The room notices. So do the reviews.\"",
+      "Orlando Suits product grid showing suits, shirts, shoes, ties and accessories, hats, and cologne",
     ],
+    body: "A pitch concept for a downtown Orlando menswear and tailoring shop, built with real product photography to show the client what the brand could look like online before any commitment. Full landing page, review driven, built to get a man through the door for a fitting.",
+    stack: ["HTML", "CSS", "Design"],
+    links: [],
   },
 ];
