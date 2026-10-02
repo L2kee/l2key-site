@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, MapPin, CalendarClock, ExternalLink } from "lucide-react";
+import { Phone, Mail, MapPin, CalendarClock } from "lucide-react";
 
 const PAGES = [
   { href: "/about", label: "About" },
@@ -88,21 +88,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-[#f0c14b]">Elsewhere</h3>
-            <ul className="mt-4 space-y-3 text-sm text-white/60">
-              <li>
-                <a
-                  href="https://github.com/L2kee"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 transition hover:text-white"
-                >
-                  <ExternalLink size={16} className="shrink-0 text-white/35" />
-                  GitHub
-                </a>
-              </li>
-            </ul>
-            <Link href="/contact" className="btn-solid mt-6 !px-5 !py-2.5 text-sm">
+            <Link href="/contact" className="btn-solid !px-5 !py-2.5 text-sm">
               Get a Free Audit
             </Link>
           </div>

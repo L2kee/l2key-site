@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, CalendarClock, Mail, ExternalLink } from "lucide-react";
+import { Phone, CalendarClock, Mail } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { AuditRequestForm } from "@/components/audit-request-form";
 import { ReviewKitCallout } from "@/components/review-kit-callout";
@@ -72,14 +72,6 @@ export default function ContactPage() {
           </a>
           <a href="mailto:hello@evogencyglobal.com" className="btn-glass text-white">
             <Mail size={16} /> Email us
-          </a>
-          <a
-            href="https://github.com/L2kee"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-glass text-white"
-          >
-            <ExternalLink size={16} /> GitHub
           </a>
         </div>
       </TiltCard>

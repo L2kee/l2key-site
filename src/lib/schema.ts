@@ -54,7 +54,6 @@ export function siteGraph() {
         },
         areaServed: ORLANDO,
         founder: { "@id": FOUNDER_ID, "@type": "Person", name: "Mohamed Eltoukhy" },
-        sameAs: ["https://github.com/L2kee"],
         knowsAbout: Object.values(SERVICE_PAGES).map((s) => s.serviceType),
         hasOfferCatalog: {
           "@type": "OfferCatalog",
@@ -73,7 +72,6 @@ export function siteGraph() {
         worksFor: { "@id": ORG_ID },
         image: `${SITE_URL}/moe-founder.webp`,
         url: `${SITE_URL}/about`,
-        sameAs: ["https://github.com/L2kee"],
       },
       {
         "@type": "WebSite",

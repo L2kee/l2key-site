@@ -74,7 +74,7 @@ const PROCESS = [
 const FAQ = [
   {
     q: "Do you have real apps you've actually shipped?",
-    a: "Yes. ElectricalAI Pro is a live v1.0.0 Windows app built for electricians, with an AI assistant, professional calculators, and a Python backend. You can see it on the Work page and on GitHub.",
+    a: "Yes. ElectricalAI Pro is a live v1.0.0 Windows app built for electricians, with an AI assistant, professional calculators, and a Python backend. You can see it on the Work page.",
   },
   {
     q: "What is cross platform app development?",

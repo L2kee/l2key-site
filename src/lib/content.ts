@@ -70,10 +70,7 @@ export const WORK: WorkItem[] = [
     icon: "bolt",
     body: "An AI powered app for electricians, live on the web and on Windows: 11 calculator modules built on NEC tables, an AI electrical assistant, and two switchable themes. Flutter and Dart up front, a FastAPI and Python backend behind it.",
     stack: ["Flutter", "Dart", "FastAPI", "Python"],
-    links: [
-      { label: "Try it live", href: "/electricalai-pro/app" },
-      { label: "View on GitHub", href: "https://github.com/L2kee/ElectricalAI-Pro" },
-    ],
+    links: [{ label: "Try it live", href: "/electricalai-pro/app" }],
   },
   {
     title: "Agency OS",
