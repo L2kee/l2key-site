@@ -558,6 +558,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "website-design-for-hvac-companies",
   "website-design-for-electricians",
   "website-design-for-restaurants",
+  "website-design-for-dentists",
+  "website-design-for-real-estate-agents",
+  "website-design-for-contractors",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

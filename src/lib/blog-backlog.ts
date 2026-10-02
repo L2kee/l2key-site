@@ -1191,7 +1191,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How thoughtful website design can reduce dental anxiety and make a new patient more comfortable booking their first appointment.",
     excerpt: "How thoughtful design can reduce dental anxiety and make booking a first appointment easier.",
-    date: "2026-09-18",
+    date: "2026-09-28",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -1253,7 +1253,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Website design priorities for individual real estate agents, focused on personal brand, local expertise, and lead capture that actually works.",
     excerpt: "Focused on personal brand, local expertise, and lead capture that actually works.",
-    date: "2026-09-18",
+    date: "2026-09-28",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -1314,7 +1314,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Website design for general contractors and home remodelers, focused on the trust signals that overcome the industry's reputation problem.",
     excerpt: "The trust signals that overcome the general contracting industry's reputation problem.",
-    date: "2026-09-18",
+    date: "2026-09-28",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
