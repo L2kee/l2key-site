@@ -23,8 +23,8 @@ const STAGES = [
     kicker: "Trust",
     title: "Reputation",
     body: "Turn happy customers into your strongest sales team.",
-    image: "/services-trust.png",
-    imageAlt: "Conceptual illustration of five star customer review cards surrounding a trust shield, representing Google reviews and reputation management",
+    image: "/services-trust.jpg",
+    imageAlt: "Conceptual illustration of a glowing glass shield with a checkmark on a pedestal, surrounded by five star customer review cards, representing Google reviews and reputation management",
   },
 ] as const;
 
