@@ -2227,7 +2227,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How individual real estate agents can use AI automation to follow up on leads faster and stay organized without hiring an assistant.",
     excerpt: "How to follow up on leads faster and stay organized without hiring a full time assistant.",
-    date: "2026-09-18",
+    date: "2026-10-02",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -2292,7 +2292,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Where AI automation fits into a small law firm's intake and client communication process without touching the actual legal work.",
     excerpt: "Where automation fits into intake and client communication, without touching the actual legal work.",
-    date: "2026-09-18",
+    date: "2026-10-02",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -2357,7 +2357,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "AI automation opportunities for HVAC businesses, covering seasonal maintenance reminders, dispatch, and following up on estimates.",
     excerpt: "Seasonal maintenance reminders, dispatch, and following up on estimates automatically.",
-    date: "2026-09-18",
+    date: "2026-10-02",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
