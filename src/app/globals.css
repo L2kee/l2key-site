@@ -27,6 +27,31 @@ body {
   color: #f3ede0;
 }
 
+/* Gold lotus backdrop (site-background.tsx), one layer below the 3D shapes
+   canvas (z-index -1). Phones push the lotus into the bottom right corner
+   and fade it, because a portrait crop otherwise puts it behind the text.
+   .is-hidden comes after the phone rule so it wins on the homepage hero. */
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background: #000 url("/site-bg.jpg") no-repeat center / cover;
+  transition: opacity 0.8s ease;
+}
+@media (max-width: 639px) {
+  .site-bg {
+    background-position: 70% 100%;
+    opacity: 0.4;
+  }
+}
+.site-bg.is-hidden {
+  opacity: 0;
+}
+.site-bg.no-fade {
+  transition: none;
+}
+
 @layer components {
   /* Extremely faint film-grain texture over the whole background scene, so
      the black reads as a material rather than a flat digital fill. Single

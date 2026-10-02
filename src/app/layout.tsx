@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { LazyBackgroundScene } from "@/components/lazy-background-scene";
+import { SiteBackground } from "@/components/site-background";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { HideOnFunnel } from "@/components/hide-on-funnel";
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph()) }}
         />
+        <SiteBackground />
         <LazyBackgroundScene />
         <Navbar />
         <main className="flex flex-col">{children}</main>
