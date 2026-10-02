@@ -1382,7 +1382,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Website design for independent auto repair shops, focused on the transparency and simplicity that overcomes customer skepticism about mechanics.",
     excerpt: "The transparency and simplicity that overcomes customer skepticism about mechanics.",
-    date: "2026-09-18",
+    date: "2026-09-29",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -1450,7 +1450,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Website design priorities for salons and spas, focused on visual portfolio pages and removing every point of friction before a booking.",
     excerpt: "Visual portfolio pages and removing every point of friction before a booking.",
-    date: "2026-09-18",
+    date: "2026-09-29",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -1645,7 +1645,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How restaurants should think about managing reviews across multiple platforms, and which one to actually prioritize.",
     excerpt: "How to think about managing reviews across multiple platforms, and which one to prioritize.",
-    date: "2026-09-18",
+    date: "2026-09-29",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
