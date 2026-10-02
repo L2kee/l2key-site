@@ -1903,7 +1903,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical review system for home service contractors, covering timing, follow up, and how to keep the process consistent as the business grows.",
     excerpt: "A practical review system covering timing, follow up, and staying consistent as the business grows.",
-    date: "2026-09-18",
+    date: "2026-10-01",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -1971,7 +1971,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How salons and spas can turn their existing loyal, repeat clientele into a consistent source of new Google reviews.",
     excerpt: "How to turn an existing loyal, repeat clientele into a consistent source of new reviews.",
-    date: "2026-09-18",
+    date: "2026-10-01",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -2161,7 +2161,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical AI automation for restaurants, covering reservation confirmations, review requests, and reducing manual front of house work.",
     excerpt: "Reservation confirmations, review requests, and reducing manual front of house work.",
-    date: "2026-09-18",
+    date: "2026-10-01",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
