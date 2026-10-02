@@ -1706,7 +1706,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why review management matters more for dental practices than most local businesses, given how much research patients do before booking.",
     excerpt: "Why review management matters more for dental practices, given how much research patients do first.",
-    date: "2026-09-18",
+    date: "2026-09-30",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -1771,7 +1771,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How a strong flow of real reviews directly counters the general public's skepticism toward auto repair shops and mechanics.",
     excerpt: "How a strong flow of real reviews directly counters skepticism toward auto repair shops.",
-    date: "2026-09-18",
+    date: "2026-09-30",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -1836,7 +1836,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why client reviews function as an individual real estate agent's most important credential, and how to build a strong review history over time.",
     excerpt: "Why reviews function as an agent's most important credential, and how to build a strong history.",
-    date: "2026-09-18",
+    date: "2026-09-30",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",

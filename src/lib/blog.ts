@@ -564,6 +564,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "website-design-for-auto-repair-shops",
   "website-design-for-salons",
   "google-reviews-for-restaurants",
+  "google-reviews-for-dentists",
+  "google-reviews-for-auto-repair-shops",
+  "google-reviews-for-real-estate-agents",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
