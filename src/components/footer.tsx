@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { LinkedInIcon } from "@/components/linkedin-icon";
+import { FOUNDER_LINKEDIN } from "@/lib/schema";
 import { Phone, Mail, MapPin, CalendarClock } from "lucide-react";
 
 const PAGES = [
@@ -88,7 +90,21 @@ export function Footer() {
           </div>
 
           <div>
-            <Link href="/contact" className="btn-solid !px-5 !py-2.5 text-sm">
+            <h3 className="text-sm font-semibold text-[#f0c14b]">Elsewhere</h3>
+            <ul className="mt-4 space-y-3 text-sm text-white/60">
+              <li>
+                <a
+                  href={FOUNDER_LINKEDIN}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5 transition hover:text-white"
+                >
+                  <LinkedInIcon size={16} className="shrink-0 text-white/35" />
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+            <Link href="/contact" className="btn-solid mt-6 !px-5 !py-2.5 text-sm">
               Get a Free Audit
             </Link>
           </div>

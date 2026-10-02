@@ -3,6 +3,8 @@ import Image from "next/image";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { LinkedInIcon } from "@/components/linkedin-icon";
+import { FOUNDER_LINKEDIN } from "@/lib/schema";
 
 const TITLE = "About EVOGENCY | Orlando Web Design & SEO Agency";
 const DESCRIPTION =
@@ -87,6 +89,14 @@ export default function AboutPage() {
               a background in electronics and systems work with hands on
               software development.
             </p>
+            <a
+              href={FOUNDER_LINKEDIN}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-glass mt-5 !px-4 !py-2 text-sm text-white"
+            >
+              <LinkedInIcon size={15} /> Connect on LinkedIn
+            </a>
           </div>
         </TiltCard>
       </div>

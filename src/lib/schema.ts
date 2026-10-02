@@ -12,6 +12,7 @@ export const SITE_URL = "https://evogencyglobal.com";
 export const ORG_ID = `${SITE_URL}/#organization`;
 export const FOUNDER_ID = `${SITE_URL}/#founder`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
+export const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/mohamed-eltoukhy-6b0785412/";
 
 export const ORG_DESCRIPTION =
   "EVOGENCY, founded by Mohamed Eltoukhy, helps Orlando area local businesses build a real online presence: professional websites, stronger Google reviews, and SEO that gets found.";
@@ -72,6 +73,7 @@ export function siteGraph() {
         worksFor: { "@id": ORG_ID },
         image: `${SITE_URL}/moe-founder.webp`,
         url: `${SITE_URL}/about`,
+        sameAs: [FOUNDER_LINKEDIN],
       },
       {
         "@type": "WebSite",
