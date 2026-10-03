@@ -71,7 +71,7 @@ export function siteGraph() {
         name: "Mohamed Eltoukhy",
         jobTitle: "Founder",
         worksFor: { "@id": ORG_ID },
-        image: `${SITE_URL}/moe-founder.webp`,
+        image: `${SITE_URL}/moe-founder-v2.webp`,
         url: `${SITE_URL}/about`,
         sameAs: [FOUNDER_LINKEDIN],
       },
