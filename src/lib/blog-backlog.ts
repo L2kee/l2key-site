@@ -2422,7 +2422,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How electrical contractors can use automation for lead response, scheduling, and estimate follow up without adding office staff.",
     excerpt: "Automation for lead response, scheduling, and estimate follow up, without adding office staff.",
-    date: "2026-09-18",
+    date: "2026-10-03",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -2487,7 +2487,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "AI automation opportunities for auto repair shops, from appointment reminders to keeping customers updated during a repair.",
     excerpt: "From appointment reminders to keeping customers updated automatically during a repair.",
-    date: "2026-09-18",
+    date: "2026-10-03",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -2624,7 +2624,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical on page SEO checklist covering titles, headings, and content structure that every business website page should meet.",
     excerpt: "Titles, headings, and content structure that every business website page should meet.",
-    date: "2026-09-18",
+    date: "2026-10-03",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",

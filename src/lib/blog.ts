@@ -573,6 +573,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "ai-automation-for-real-estate-agents",
   "ai-automation-for-law-firms",
   "ai-automation-for-hvac-companies",
+  "ai-automation-for-electricians",
+  "ai-automation-for-auto-repair-shops",
+  "on-page-seo-checklist",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
