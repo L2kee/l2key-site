@@ -1,5 +1,4 @@
 {
-  "2026-10-11|6ac29f8e6a5c39ccb6139c75": "6ac2a591d467abe8cfc419cd",
   "2026-10-05|6ac29f8e6a5c39ccb6139c75": {
     "buffer": "6ac2a87ed467abe8cfc4764a",
     "post": "2026-10-05-ai-email-replies"
@@ -23,5 +22,9 @@
   "2026-10-10|6ac29f8e6a5c39ccb6139c75": {
     "buffer": "6ac2a882fe1389e4133e5b62",
     "post": "2026-10-10-small-following"
+  },
+  "2026-10-11|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ac2a9908f73649f4618466b",
+    "post": "2026-10-11-free-audit"
   }
 }
