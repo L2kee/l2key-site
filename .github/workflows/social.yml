@@ -1,19 +1,22 @@
 name: Social posts
 
-# Turns a week file (social/<week>.json) into carousel slides served from evogencyglobal.com/social/
-# and schedules them in Buffer (Instagram, Facebook, TikTok). No AI involved.
-# Runs when a week file is pushed, or by hand: mode "channels" only lists the Buffer channels.
+# Turns week files (social/<week>.json) into carousel slides served from evogencyglobal.com/social/
+# and keeps the soonest posts booked in Buffer (Instagram, Facebook, TikTok). No AI involved.
+# Buffer's free plan only holds 10 scheduled posts, so a twice daily sync refills it as posts go out.
+# GitHub can start scheduled runs hours late; that's fine here, the posts are booked well ahead.
 on:
   push:
     branches: [master]
     paths: ["social/*.json"]
+  schedule:
+    - cron: "17 4,16 * * *"
   workflow_dispatch:
     inputs:
       mode:
-        description: "channels (list only), schedule, or inspect (read one post, id in week)"
-        default: channels
-      week:
-        description: "Week file for schedule mode, e.g. social/2026-10-05.json"
+        description: "sync (book posts), channels (list only), or inspect (read one post, id below)"
+        default: sync
+      post:
+        description: "Buffer post id, for inspect only"
         default: ""
 
 concurrency:
@@ -29,66 +32,51 @@ jobs:
     timeout-minutes: 40
     env:
       BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'sync' }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: master
-          fetch-depth: 2
 
       - name: List Buffer channels
-        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'channels'
+        if: env.MODE == 'channels'
         run: python3 social/schedule.py channels
 
-      - name: Inspect one Buffer post (read only, put the post id in "week")
-        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'inspect'
-        run: python3 social/schedule.py inspect "${{ inputs.week }}"
-
-      - name: Pick the week files
-        id: weeks
-        if: github.event_name == 'push' || inputs.mode == 'schedule'
-        run: |
-          if [ "${{ github.event_name }}" = "push" ]; then
-            files=$(git diff --name-only HEAD~1 HEAD -- 'social/*.json' | grep -v '^social/state/' || true)
-          else
-            files="${{ inputs.week }}"
-          fi
-          echo "files=$(echo $files)" >> "$GITHUB_OUTPUT"
-          echo "Week files: $files"
+      - name: Inspect one Buffer post
+        if: env.MODE == 'inspect'
+        run: python3 social/schedule.py inspect "${{ inputs.post }}"
 
       - name: Render slides
-        if: steps.weeks.outputs.files != ''
+        if: env.MODE == 'sync'
         run: |
           npm install --prefix /tmp/pw playwright@1 >/dev/null
           (cd /tmp/pw && npx playwright install --with-deps chromium >/dev/null)
-          for f in ${{ steps.weeks.outputs.files }}; do NODE_PATH=/tmp/pw/node_modules node social/render.js "$f"; done
+          for f in social/*.json; do NODE_PATH=/tmp/pw/node_modules node social/render.js "$f"; done
 
-      - name: Publish slides to the site
-        if: steps.weeks.outputs.files != ''
+      - name: Publish new slides to the site
+        if: env.MODE == 'sync'
         run: |
           git config user.name "Social Posts"
           git config user.email "actions@users.noreply.github.com"
           git add public/social
           git diff --cached --quiet && exit 0
-          git commit -m "Social slides for ${{ steps.weeks.outputs.files }}"
+          git commit -m "Social slides"
           for i in 1 2 3 4; do
             { git pull --rebase origin master || { git rebase --abort; exit 1; }; } && git push origin HEAD:master && exit 0
             sleep $((i * 5))
           done
           exit 1
 
-      - name: Schedule in Buffer
-        if: steps.weeks.outputs.files != ''
-        run: |
-          rc=0
-          for f in ${{ steps.weeks.outputs.files }}; do python3 social/schedule.py schedule "$f" || rc=1; done
-          exit $rc
+      - name: Book posts in Buffer
+        if: env.MODE == 'sync'
+        run: python3 social/schedule.py sync
 
       - name: Save Buffer post ids
-        if: always() && steps.weeks.outputs.files != ''
+        if: always() && env.MODE == 'sync'
         run: |
           git add social/state 2>/dev/null || exit 0
           git diff --cached --quiet && exit 0
-          git commit -m "Social: Buffer post ids for ${{ steps.weeks.outputs.files }}"
+          git commit -m "Social: Buffer post ids"
           for i in 1 2 3 4; do
             { git pull --rebase origin master || { git rebase --abort; exit 1; }; } && git push origin HEAD:master && exit 0
             sleep $((i * 5))

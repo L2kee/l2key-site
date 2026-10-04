@@ -1,27 +1,40 @@
-"""Schedules a week of EVOGENCY carousel posts in Buffer (Instagram, Facebook, TikTok).
+"""Keeps EVOGENCY's carousel posts booked in Buffer (Instagram, Facebook, TikTok).
 
 Usage:
-  python social/schedule.py channels                 list connected Buffer channels (no changes)
-  python social/schedule.py schedule social/<week>.json
+  python social/schedule.py channels        list connected Buffer channels and plan limits (no changes)
+  python social/schedule.py inspect <id>    read one Buffer post (no changes)
+  python social/schedule.py sync            book the soonest posts from every social/<week>.json
 
-Needs BUFFER_API_KEY (a GitHub Actions secret, never printed). Slides must already be live at
-https://evogencyglobal.com/social/<post id>/slide-N.png. Every scheduled post's Buffer id is saved in
-social/state/<week>.json, so a rerun only retries what failed and never double posts. If a day's post id
-changes (the post was rewritten), the old Buffer post is deleted before the new one is scheduled.
+Buffer's free plan only holds a few scheduled posts at once (10 on this account), so sync is a refill:
+it books the soonest upcoming posts until the plan's cap is reached, and runs again every day to top up
+as posts go out. Posts further out wait for a later sync.
+
+Every post this script books is recorded in social/state/<week>.json, keyed by "<date> <time>|<channel>".
+- A post deleted by hand in Buffer stays recorded, so it is never booked again (that's how Moe kills one).
+- If a slot's post was rewritten (new "id") or moved (new time), the old Buffer post is deleted and the new
+  one booked. An old post that already went out is left alone.
+- To make room for a sooner post, a later post this script booked can be unbooked; it gets rebooked later.
+
+Needs BUFFER_API_KEY (a GitHub Actions secret, never printed). Slides must be live at
+https://evogencyglobal.com/social/<post id>/slide-N.png before a post is booked.
 """
+import glob
 import json
 import os
 import sys
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 API = "https://api.buffer.com"
 SITE = "https://evogencyglobal.com"
 ET = ZoneInfo("America/New_York")
 SERVICES = ("instagram", "facebook", "tiktok")
+SOCIAL = os.path.dirname(os.path.abspath(__file__))
+# Facebook pages get hidden when they post too often, so Facebook only takes each day's first post.
+FIRST_OF_DAY_ONLY = ("facebook",)
 
 
 def gql(query, variables=None):
@@ -40,16 +53,37 @@ def gql(query, variables=None):
     return out["data"]
 
 
-def channels():
-    orgs = gql("{ account { organizations { id name limits { channels scheduledPosts } } } }")["account"]["organizations"]
+def organizations():
+    return gql("{ account { organizations { id name limits { channels scheduledPosts } } } }")["account"]["organizations"]
+
+
+def channels(orgs=None):
     found = []
-    for org in orgs:
+    for org in orgs or organizations():
         print(f"{org['name']} | plan limits: {org['limits']['channels']} channels, {org['limits']['scheduledPosts']} scheduled posts")
         q = "query($id: OrganizationId!) { channels(input: {organizationId: $id}) { id name service isQueuePaused } }"
         for c in gql(q, {"id": org["id"]})["channels"]:
+            c["org"] = org["id"]
             found.append(c)
             print(f"{org['name']} | {c['service']} | {c['name']} | {c['id']}{' | QUEUE PAUSED' if c['isQueuePaused'] else ''}")
     return found
+
+
+def scheduled_ids(org_id):
+    q = """query($id: OrganizationId!, $after: String) {
+      posts(first: 100, after: $after, input: {organizationId: $id, filter: {status: [scheduled]}}) {
+        edges { node { id } } pageInfo { hasNextPage endCursor } } }"""
+    ids, after = set(), None
+    while True:
+        page = gql(q, {"id": org_id, "after": after})["posts"]
+        ids |= {e["node"]["id"] for e in page["edges"]}
+        if not page["pageInfo"]["hasNextPage"]:
+            return ids
+        after = page["pageInfo"]["endCursor"]
+
+
+def pid(p):
+    return p.get("id") or p["date"]
 
 
 def live(url):
@@ -60,33 +94,25 @@ def live(url):
         return False
 
 
-def pid(p):
-    return p.get("id") or p["date"]
-
-
-def wait_for_slides(week):
-    urls = [f"{SITE}/social/{pid(p)}/slide-{k}.png" for p in week["posts"] for k in range(1, 7)]
+def wait_for_slides(posts):
+    urls = [f"{SITE}/social/{pid(p)}/slide-{k}.png" for p in posts for k in range(1, 7)]
     for _ in range(40):  # up to 20 minutes for the Vercel deploy
         missing = [u for u in urls if not live(u)]
         if not missing:
             return
         print(f"waiting for {len(missing)} slides to go live, e.g. {missing[0]}")
         time.sleep(30)
-    sys.exit("Slides never went live, nothing scheduled.")
+    sys.exit("Slides never went live, nothing booked.")
 
 
 def alt(p, k):
     return [p["hook"], p["why"], *p["steps"], p["take"] + " Free audit at evogencyglobal.com/contact"][k - 1]
 
 
-MUTATION = """mutation($input: CreatePostInput!) { createPost(input: $input) {
+CREATE = """mutation($input: CreatePostInput!) { createPost(input: $input) {
   __typename ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }"""
-
-STATUS = "query($id: PostId!) { post(input: {id: $id}) { status } }"
-
 DELETE = """mutation($input: DeletePostInput!) { deletePost(input: $input) {
   __typename ... on DeletePostSuccess { id } ... on VoidMutationError { message } } }"""
-
 META = {
     "instagram": lambda p: {"instagram": {"type": "post", "shouldShareToFeed": True}},
     "facebook": lambda p: {"facebook": {"type": "post"}},
@@ -94,69 +120,135 @@ META = {
 }
 
 
-def save(state_path, state):
-    os.makedirs(os.path.dirname(state_path), exist_ok=True)
-    with open(state_path, "w", encoding="utf-8") as f:
+def save(path, state):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
 
 
-def schedule(path):
-    week = json.load(open(path, encoding="utf-8"))
-    state_path = os.path.join(os.path.dirname(path), "state", os.path.basename(path))
-    state = json.load(open(state_path, encoding="utf-8")) if os.path.exists(state_path) else {}
-    targets = [c for c in channels() if c["service"] in SERVICES]
+def delete(buffer_id):
+    res = gql(DELETE, {"input": {"id": buffer_id}})["deletePost"]
+    return res["__typename"] == "DeletePostSuccess", res.get("message")
+
+
+def sync():
+    orgs = organizations()
+    targets = [c for c in channels(orgs) if c["service"] in SERVICES]
     if not targets:
         sys.exit("No Instagram, Facebook, or TikTok channel is connected in Buffer.")
-    wait_for_slides(week)
-    hh, mm = map(int, week["time"].split(":"))
+    now = datetime.now(ET)
     failed = 0
-    for p in week["posts"]:
-        due = datetime.fromisoformat(p["date"]).replace(hour=hh, minute=mm, tzinfo=ET)
-        if due <= datetime.now(ET):
-            print(f"{p['date']}: time already passed, skipped")
-            continue
-        assets = [{"image": {"url": f"{SITE}/social/{pid(p)}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
-                  for k in range(1, 7)]
-        for c in targets:
-            key = f"{p['date']}|{c['id']}"
-            old = state.get(key)
-            if isinstance(old, dict) and old.get("post") == pid(p):
-                continue  # already scheduled with this content
-            if old:  # the post for this day was rewritten: remove the old Buffer post first
-                old_id = old if isinstance(old, str) else old["buffer"]
-                if gql(STATUS, {"id": old_id})["post"]["status"] == "sent":
-                    # Already published (e.g. "publish now" in Buffer), so it can't be deleted; just book the new one.
-                    print(f"{p['date']} {c['service']}: old post {old_id} was already published, scheduling the new one")
-                else:
-                    res = gql(DELETE, {"input": {"id": old_id}})["deletePost"]
-                    if res["__typename"] != "DeletePostSuccess":
-                        failed += 1
-                        print(f"{p['date']} {c['service']}: could not delete old post {old_id} ({res.get('message')}), new one NOT scheduled")
+
+    # Every post in every week file, with its state file.
+    weeks = {}
+    for path in sorted(glob.glob(os.path.join(SOCIAL, "*.json"))):
+        state_path = os.path.join(SOCIAL, "state", os.path.basename(path))
+        week = json.load(open(path, encoding="utf-8"))
+        state = json.load(open(state_path, encoding="utf-8")) if os.path.exists(state_path) else {}
+        weeks[path] = (week, state, state_path)
+
+    for org in orgs:
+        cap = org["limits"]["scheduledPosts"]
+        org_targets = [c for c in targets if c["org"] == org["id"]]
+        booked = scheduled_ids(org["id"])
+        mine = {e["buffer"] for _, st, _ in weeks.values() for e in st.values() if isinstance(e, dict)}
+        mine |= {e for _, st, _ in weeks.values() for e in st.values() if isinstance(e, str)}
+        others = len(booked - mine)  # posts Moe scheduled by hand count against the cap too
+
+        # Every upcoming (post, channel) slot, soonest first.
+        slots = []
+        for path, (week, state, state_path) in weeks.items():
+            firsts = {}
+            for p in week["posts"]:
+                t = p.get("time") or week.get("time", "11:15")
+                firsts.setdefault(p["date"], t)
+                firsts[p["date"]] = min(firsts[p["date"]], t)
+            for p in week["posts"]:
+                t = p.get("time") or week.get("time", "11:15")
+                due = datetime.fromisoformat(f"{p['date']}T{t}").replace(tzinfo=ET)
+                if due <= now + timedelta(minutes=10):
+                    continue
+                for c in org_targets:
+                    if c["service"] in FIRST_OF_DAY_ONLY and t != firsts[p["date"]]:
                         continue
-                    print(f"{p['date']} {c['service']}: deleted old post {old_id}")
+                    slots.append((due, p, c, path, f"{p['date']} {t}|{c['id']}"))
+        slots.sort(key=lambda s: s[0])
+
+        # Stale entries: old key format, or a slot whose post was rewritten or moved. Delete if still booked.
+        wanted = {key: (pid(p), due.isoformat()) for due, p, c, path, key in slots}
+        for path, (week, state, state_path) in weeks.items():
+            for key, entry in list(state.items()):
+                bid = entry if isinstance(entry, str) else entry["buffer"]
+                fresh = isinstance(entry, dict) and wanted.get(key) == (entry.get("post"), entry.get("due"))
+                if fresh or bid not in booked:
+                    continue  # current, or already sent, or killed by hand (kept so it's never rebooked)
+                ok, msg = delete(bid)
+                if not ok:
+                    failed += 1
+                    print(f"{key}: could not delete outdated post {bid} ({msg})")
+                    continue
+                print(f"{key}: deleted outdated post {bid}")
+                booked.discard(bid)
                 del state[key]
                 save(state_path, state)
+
+        # The soonest slots that fit under the cap should be booked; later ones booked by us get unbooked.
+        room = cap - others
+        keep = []
+        for slot in slots:
+            due, p, c, path, key = slot
+            entry = weeks[path][1].get(key)
+            if entry and entry["buffer"] not in booked:
+                continue  # sent or killed by hand: never rebook
+            keep.append(slot)
+        keep, extra = keep[:max(room, 0)], keep[max(room, 0):]
+        for due, p, c, path, key in extra:
+            week, state, state_path = weeks[path]
+            entry = state.get(key)
+            if entry and entry["buffer"] in booked:
+                ok, msg = delete(entry["buffer"])
+                if ok:
+                    print(f"{key}: unbooked to make room for sooner posts (rebooked later)")
+                    booked.discard(entry["buffer"])
+                    del state[key]
+                    save(state_path, state)
+                else:
+                    failed += 1
+                    print(f"{key}: could not unbook {entry['buffer']} ({msg})")
+
+        todo = [s for s in keep if s[4] not in weeks[s[3]][1]]
+        if todo:
+            wait_for_slides([p for _, p, _, _, _ in todo])
+        for due, p, c, path, key in todo:
+            week, state, state_path = weeks[path]
+            if len(booked) >= cap:
+                print(f"{key}: Buffer is full ({cap}), waiting for the next sync")
+                continue
+            assets = [{"image": {"url": f"{SITE}/social/{pid(p)}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
+                      for k in range(1, 7)]
             inp = {"channelId": c["id"], "text": p["captions"][c["service"]], "assets": assets,
                    "metadata": META[c["service"]](p), "schedulingType": "automatic",
                    "mode": "customScheduled", "dueAt": due.isoformat()}
-            res = gql(MUTATION, {"input": inp})["createPost"]
+            res = gql(CREATE, {"input": inp})["createPost"]
             if res["__typename"] == "PostActionSuccess":
-                state[key] = {"buffer": res["post"]["id"], "post": pid(p)}
-                print(f"{p['date']} {c['service']}: scheduled for {res['post']['dueAt']} (post {res['post']['id']})")
+                booked.add(res["post"]["id"])
+                state[key] = {"buffer": res["post"]["id"], "post": pid(p), "due": due.isoformat()}
                 save(state_path, state)
+                print(f"{key} {c['service']}: booked {pid(p)} (post {res['post']['id']})")
             else:
                 failed += 1
-                print(f"{p['date']} {c['service']}: FAILED, {res.get('message')}")
+                print(f"{key} {c['service']}: FAILED, {res.get('message')}")
+        print(f"{org['name']}: {len(booked)} of {cap} scheduled posts in use")
     return 1 if failed else 0
 
 
 if __name__ == "__main__":
     if sys.argv[1:2] == ["channels"]:
         channels()
-    elif sys.argv[1:2] == ["inspect"] and len(sys.argv) == 3:  # read only: what Buffer says about one post
+    elif sys.argv[1:2] == ["inspect"] and len(sys.argv) == 3:
         q = "query($id: PostId!) { post(input: {id: $id}) { id status dueAt sentAt via allowedActions } }"
         print(json.dumps(gql(q, {"id": sys.argv[2]})["post"], indent=2))
-    elif sys.argv[1:2] == ["schedule"] and len(sys.argv) == 3:
-        sys.exit(schedule(sys.argv[2]))
+    elif sys.argv[1:2] == ["sync"]:
+        sys.exit(sync())
     else:
         sys.exit(__doc__)
