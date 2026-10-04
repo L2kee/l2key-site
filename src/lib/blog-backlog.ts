@@ -2689,7 +2689,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A plain language explanation of technical SEO: what it actually covers and why it matters even if your content is already great.",
     excerpt: "A plain language explanation of what technical SEO actually covers and why it matters.",
-    date: "2026-09-18",
+    date: "2026-10-04",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -2755,7 +2755,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "An honest look at link building for local businesses: what actually works, what's a waste of money, and what to avoid entirely.",
     excerpt: "What actually works, what's a waste of money, and what to avoid entirely.",
-    date: "2026-09-18",
+    date: "2026-10-04",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -2820,7 +2820,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A clear explanation of the three main factors Google uses to rank local businesses in search and the map pack: relevance, distance, and prominence.",
     excerpt: "The three main factors Google uses to rank local businesses: relevance, distance, and prominence.",
-    date: "2026-09-18",
+    date: "2026-10-04",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
