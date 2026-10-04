@@ -5,8 +5,9 @@ Usage:
   python social/schedule.py schedule social/<week>.json
 
 Needs BUFFER_API_KEY (a GitHub Actions secret, never printed). Slides must already be live at
-https://evogencyglobal.com/social/<date>/slide-N.png. Every scheduled post's Buffer id is saved in
-social/state/<week>.json, so a rerun only retries what failed and never double posts.
+https://evogencyglobal.com/social/<post id>/slide-N.png. Every scheduled post's Buffer id is saved in
+social/state/<week>.json, so a rerun only retries what failed and never double posts. If a day's post id
+changes (the post was rewritten), the old Buffer post is deleted before the new one is scheduled.
 """
 import json
 import os
@@ -58,8 +59,12 @@ def live(url):
         return False
 
 
+def pid(p):
+    return p.get("id") or p["date"]
+
+
 def wait_for_slides(week):
-    urls = [f"{SITE}/social/{p['date']}/slide-{k}.png" for p in week["posts"] for k in range(1, 7)]
+    urls = [f"{SITE}/social/{pid(p)}/slide-{k}.png" for p in week["posts"] for k in range(1, 7)]
     for _ in range(40):  # up to 20 minutes for the Vercel deploy
         missing = [u for u in urls if not live(u)]
         if not missing:
@@ -76,11 +81,20 @@ def alt(p, k):
 MUTATION = """mutation($input: CreatePostInput!) { createPost(input: $input) {
   __typename ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }"""
 
+DELETE = """mutation($input: DeletePostInput!) { deletePost(input: $input) {
+  __typename ... on DeletePostSuccess { id } ... on VoidMutationError { message } } }"""
+
 META = {
     "instagram": lambda p: {"instagram": {"type": "post", "shouldShareToFeed": True}},
     "facebook": lambda p: {"facebook": {"type": "post"}},
     "tiktok": lambda p: {"tiktok": {"title": p["hook"][:90]}},
 }
+
+
+def save(state_path, state):
+    os.makedirs(os.path.dirname(state_path), exist_ok=True)
+    with open(state_path, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
 
 
 def schedule(path):
@@ -98,22 +112,31 @@ def schedule(path):
         if due <= datetime.now(ET):
             print(f"{p['date']}: time already passed, skipped")
             continue
-        assets = [{"image": {"url": f"{SITE}/social/{p['date']}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
+        assets = [{"image": {"url": f"{SITE}/social/{pid(p)}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
                   for k in range(1, 7)]
         for c in targets:
             key = f"{p['date']}|{c['id']}"
-            if key in state:
-                continue
+            old = state.get(key)
+            if isinstance(old, dict) and old.get("post") == pid(p):
+                continue  # already scheduled with this content
+            if old:  # the post for this day was rewritten: remove the old Buffer post first
+                old_id = old if isinstance(old, str) else old["buffer"]
+                res = gql(DELETE, {"input": {"id": old_id}})["deletePost"]
+                if res["__typename"] != "DeletePostSuccess":
+                    failed += 1
+                    print(f"{p['date']} {c['service']}: could not delete old post {old_id} ({res.get('message')}), new one NOT scheduled")
+                    continue
+                print(f"{p['date']} {c['service']}: deleted old post {old_id}")
+                del state[key]
+                save(state_path, state)
             inp = {"channelId": c["id"], "text": p["captions"][c["service"]], "assets": assets,
                    "metadata": META[c["service"]](p), "schedulingType": "automatic",
                    "mode": "customScheduled", "dueAt": due.isoformat()}
             res = gql(MUTATION, {"input": inp})["createPost"]
             if res["__typename"] == "PostActionSuccess":
-                state[key] = res["post"]["id"]
+                state[key] = {"buffer": res["post"]["id"], "post": pid(p)}
                 print(f"{p['date']} {c['service']}: scheduled for {res['post']['dueAt']} (post {res['post']['id']})")
-                os.makedirs(os.path.dirname(state_path), exist_ok=True)
-                with open(state_path, "w", encoding="utf-8") as f:
-                    json.dump(state, f, indent=2)
+                save(state_path, state)
             else:
                 failed += 1
                 print(f"{p['date']} {c['service']}: FAILED, {res.get('message')}")
