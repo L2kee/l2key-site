@@ -146,6 +146,9 @@ def schedule(path):
 if __name__ == "__main__":
     if sys.argv[1:2] == ["channels"]:
         channels()
+    elif sys.argv[1:2] == ["inspect"] and len(sys.argv) == 3:  # read only: what Buffer says about one post
+        q = "query($id: PostId!) { post(input: {id: $id}) { id status dueAt sentAt via allowedActions } }"
+        print(json.dumps(gql(q, {"id": sys.argv[2]})["post"], indent=2))
     elif sys.argv[1:2] == ["schedule"] and len(sys.argv) == 3:
         sys.exit(schedule(sys.argv[2]))
     else:

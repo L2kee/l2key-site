@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "channels (list only) or schedule"
+        description: "channels (list only), schedule, or inspect (read one post, id in week)"
         default: channels
       week:
         description: "Week file for schedule mode, e.g. social/2026-10-05.json"
@@ -38,6 +38,10 @@ jobs:
       - name: List Buffer channels
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'channels'
         run: python3 social/schedule.py channels
+
+      - name: Inspect one Buffer post (read only, put the post id in "week")
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'inspect'
+        run: python3 social/schedule.py inspect "${{ inputs.week }}"
 
       - name: Pick the week files
         id: weeks
