@@ -81,6 +81,8 @@ def alt(p, k):
 MUTATION = """mutation($input: CreatePostInput!) { createPost(input: $input) {
   __typename ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }"""
 
+STATUS = "query($id: PostId!) { post(input: {id: $id}) { status } }"
+
 DELETE = """mutation($input: DeletePostInput!) { deletePost(input: $input) {
   __typename ... on DeletePostSuccess { id } ... on VoidMutationError { message } } }"""
 
@@ -121,12 +123,16 @@ def schedule(path):
                 continue  # already scheduled with this content
             if old:  # the post for this day was rewritten: remove the old Buffer post first
                 old_id = old if isinstance(old, str) else old["buffer"]
-                res = gql(DELETE, {"input": {"id": old_id}})["deletePost"]
-                if res["__typename"] != "DeletePostSuccess":
-                    failed += 1
-                    print(f"{p['date']} {c['service']}: could not delete old post {old_id} ({res.get('message')}), new one NOT scheduled")
-                    continue
-                print(f"{p['date']} {c['service']}: deleted old post {old_id}")
+                if gql(STATUS, {"id": old_id})["post"]["status"] == "sent":
+                    # Already published (e.g. "publish now" in Buffer), so it can't be deleted; just book the new one.
+                    print(f"{p['date']} {c['service']}: old post {old_id} was already published, scheduling the new one")
+                else:
+                    res = gql(DELETE, {"input": {"id": old_id}})["deletePost"]
+                    if res["__typename"] != "DeletePostSuccess":
+                        failed += 1
+                        print(f"{p['date']} {c['service']}: could not delete old post {old_id} ({res.get('message')}), new one NOT scheduled")
+                        continue
+                    print(f"{p['date']} {c['service']}: deleted old post {old_id}")
                 del state[key]
                 save(state_path, state)
             inp = {"channelId": c["id"], "text": p["captions"][c["service"]], "assets": assets,
