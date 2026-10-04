@@ -41,9 +41,10 @@ def gql(query, variables=None):
 
 
 def channels():
-    orgs = gql("{ account { organizations { id name } } }")["account"]["organizations"]
+    orgs = gql("{ account { organizations { id name limits { channels scheduledPosts } } } }")["account"]["organizations"]
     found = []
     for org in orgs:
+        print(f"{org['name']} | plan limits: {org['limits']['channels']} channels, {org['limits']['scheduledPosts']} scheduled posts")
         q = "query($id: OrganizationId!) { channels(input: {organizationId: $id}) { id name service isQueuePaused } }"
         for c in gql(q, {"id": org["id"]})["channels"]:
             found.append(c)
