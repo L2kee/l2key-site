@@ -255,22 +255,22 @@
     },
     {
       "date": "2026-10-09",
-      "id": "2026-10-09-two-minute-rule",
+      "id": "2026-10-09-batch-tasks",
       "kind": "value",
       "topic": "Time and productivity",
-      "hook": "The 2 minute rule that keeps your to do list from eating you alive.",
-      "why": "If a task takes less than 2 minutes, doing it now is faster than writing it down, remembering it, and coming back later. It comes from David Allen's Getting Things Done.",
-      "src": "David Allen, Getting Things Done",
+      "hook": "Do all your similar tasks in one batch. Your brain will thank you.",
+      "why": "Bouncing between calls, quotes, and invoices all day wears you out. Grouping the same kind of work keeps you in one gear.",
+      "src": "",
       "steps": [
-        "Today, every time something lands that takes under 2 minutes, do it right then.",
-        "Anything longer goes on one list. Not in your head, not on 5 sticky notes.",
-        "Block 30 minutes tomorrow morning for the hardest thing on that list, before you open your email."
+        "Pick one block for callbacks, one for quotes, and one for invoices and paperwork.",
+        "Put those blocks on your calendar at the same time every day.",
+        "Let messages wait for the next block unless something is truly urgent."
       ],
-      "take": "Small stuff done now. Big stuff done first. That's the whole system.",
+      "take": "Same kind of work, same time, every day. That's how the busywork shrinks.",
       "captions": {
-        "facebook": "The 2 minute rule that keeps your to do list from eating you alive.\n\nIf a task takes less than 2 minutes, doing it now is faster than writing it down, remembering it, and coming back later. It comes from David Allen's Getting Things Done.\n\n3 things you can do today.\n1. Today, every time something lands that takes under 2 minutes, do it right then.\n2. Anything longer goes on one list. Not in your head, not on 5 sticky notes.\n3. Block 30 minutes tomorrow morning for the hardest thing on that list, before you open your email.\n\nSmall stuff done now. Big stuff done first. That's the whole system.\n\nFollow EVOGENCY for one useful thing for your business, every day. Facebook won't show you our next one unless you do. Save this so you have it when you need it.\n\n#Productivity #TimeManagement #SmallBusinessOwner #Entrepreneur",
-        "instagram": "The 2 minute rule that keeps your to do list from eating you alive.\n\nIf a task takes less than 2 minutes, doing it now is faster than writing it down, remembering it, and coming back later. It comes from David Allen's Getting Things Done.\n\n3 things you can do today.\n1. Today, every time something lands that takes under 2 minutes, do it right then.\n2. Anything longer goes on one list. Not in your head, not on 5 sticky notes.\n3. Block 30 minutes tomorrow morning for the hardest thing on that list, before you open your email.\n\nSmall stuff done now. Big stuff done first. That's the whole system.\n\nFollow @evogencyglobal for one useful thing for your business, every day. Instagram won't show you our next one unless you do. Save this so you have it when you need it.\n\n#Productivity #TimeManagement #SmallBusinessOwner #Entrepreneur",
-        "tiktok": "The 2 minute rule that keeps your to do list from eating you alive.\n\nSwipe for 3 things you can do today.\n\nFollow for one useful business tip every day. TikTok won't show you the next one unless you do.\n\n#Productivity #TimeManagement #SmallBusinessOwner #Entrepreneur"
+        "facebook": "Do all your similar tasks in one batch. Your brain will thank you.\n\nBouncing between calls, quotes, and invoices all day wears you out. Grouping the same kind of work keeps you in one gear.\n\n3 things you can do today.\n1. Pick one block for callbacks, one for quotes, and one for invoices and paperwork.\n2. Put those blocks on your calendar at the same time every day.\n3. Let messages wait for the next block unless something is truly urgent.\n\nSame kind of work, same time, every day. That's how the busywork shrinks.\n\nFollow EVOGENCY for one useful thing for your business, every day. Facebook won't show you our next one unless you do. Save this so you have it when you need it.\n\n#Productivity #TimeManagement #SmallBusinessOwner #Entrepreneur",
+        "instagram": "Do all your similar tasks in one batch. Your brain will thank you.\n\nBouncing between calls, quotes, and invoices all day wears you out. Grouping the same kind of work keeps you in one gear.\n\n3 things you can do today.\n1. Pick one block for callbacks, one for quotes, and one for invoices and paperwork.\n2. Put those blocks on your calendar at the same time every day.\n3. Let messages wait for the next block unless something is truly urgent.\n\nSame kind of work, same time, every day. That's how the busywork shrinks.\n\nFollow @evogencyglobal for one useful thing for your business, every day. Instagram won't show you our next one unless you do. Save this so you have it when you need it.\n\n#Productivity #TimeManagement #SmallBusinessOwner #Entrepreneur",
+        "tiktok": "Do all your similar tasks in one batch. Your brain will thank you.\n\nSwipe for 3 things you can do today.\n\nFollow for one useful business tip every day. TikTok won't show you the next one unless you do.\n\n#Productivity #TimeManagement #SmallBusinessOwner #Entrepreneur"
       },
       "time": "08:00"
     },
