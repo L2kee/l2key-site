@@ -2887,7 +2887,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Common SEO myths that lead small business owners to waste money, from meta keyword tags to buying backlinks.",
     excerpt: "Common SEO myths that lead small business owners to waste money on the wrong things.",
-    date: "2026-09-18",
+    date: "2026-10-05",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -2956,7 +2956,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A realistic, honest timeline for how long SEO actually takes to show results, and why anyone promising instant rankings is misleading you.",
     excerpt: "A realistic timeline for SEO results, and why anyone promising instant rankings is misleading you.",
-    date: "2026-09-18",
+    date: "2026-10-05",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -3021,7 +3021,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A guide to which SEO metrics actually matter for a small business, cutting through vanity numbers that look impressive but mean nothing.",
     excerpt: "Which SEO metrics actually matter for a small business, cutting through vanity numbers.",
-    date: "2026-09-18",
+    date: "2026-10-05",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
