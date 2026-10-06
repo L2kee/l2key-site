@@ -3,7 +3,6 @@ import { TiltCard } from "@/components/tilt-card";
 
 const STAGES = [
   {
-    index: "01",
     kicker: "Build",
     title: "Websites",
     body: "Websites engineered to turn visitors into customers.",
@@ -11,20 +10,18 @@ const STAGES = [
     imageAlt: "Conceptual illustration of a glass building framework under a crane, representing custom website design and development",
   },
   {
-    index: "02",
+    kicker: "Brand",
+    title: "Brand Design",
+    body: "Brands that look as premium as the work behind them.",
+    image: "/services-brand.jpg",
+    imageAlt: "Conceptual illustration of three gold edged glass panels on a black pedestal showing an abstract gold emblem, a black gold and cream color palette, and a gold monogram curve, representing luxury brand identity design",
+  },
+  {
     kicker: "Discover",
     title: "SEO",
     body: "Get discovered when customers are searching.",
     image: "/services-discover.png",
     imageAlt: "Conceptual illustration of a glowing globe and search bar surrounded by local search suggestions and rising traffic graphics, representing search engine optimization",
-  },
-  {
-    index: "03",
-    kicker: "Trust",
-    title: "Reputation",
-    body: "Turn happy customers into your strongest sales team.",
-    image: "/services-trust.jpg",
-    imageAlt: "Conceptual illustration of a glowing glass shield with a checkmark on a pedestal, surrounded by five star customer review cards, representing Google reviews and reputation management",
   },
 ] as const;
 
@@ -40,7 +37,7 @@ export function ServicesJourney() {
       <div className="mt-14 grid gap-6 sm:grid-cols-3">
         {STAGES.map((s) => (
           <TiltCard
-            key={s.index}
+            key={s.kicker}
             className="glass-strong flex h-full flex-col overflow-hidden rounded-2xl"
           >
             <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-white/10">
@@ -56,7 +53,7 @@ export function ServicesJourney() {
 
             <div className="flex flex-1 flex-col p-6 text-center sm:text-left">
               <span className="text-xs font-semibold tracking-[0.15em] text-[#f0c14b]">
-                {s.index} {s.kicker.toUpperCase()}
+                {s.kicker.toUpperCase()}
               </span>
               <h3 className="mt-1 text-lg font-bold text-white">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/60">{s.body}</p>

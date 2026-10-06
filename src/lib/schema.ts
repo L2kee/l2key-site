@@ -18,7 +18,8 @@ export const ORG_DESCRIPTION =
   "EVOGENCY, founded by Mohamed Eltoukhy, helps Orlando area local businesses build a real online presence: professional websites, stronger Google reviews, and SEO that gets found.";
 
 /** The service landing pages, in the order they appear on /services. */
-export const SERVICE_PAGES: Record<string, { name: string; serviceType: string }> = {
+export const SERVICE_PAGES: Record<string, { name: string; serviceType: string; anywhere?: boolean }> = {
+  "/brand-design": { name: "Luxury Brand Identity and Rebranding", serviceType: "Brand identity design", anywhere: true },
   "/web-design-agency-orlando": { name: "Web Design in Orlando", serviceType: "Web design" },
   "/seo-agency-orlando": { name: "SEO in Orlando", serviceType: "Search engine optimization" },
   "/google-reviews-orlando": { name: "Google Reviews and Reputation Management in Orlando", serviceType: "Reputation management" },
@@ -119,7 +120,7 @@ export function servicePageGraph(
         description,
         url,
         provider: { "@id": ORG_ID },
-        areaServed: ORLANDO,
+        areaServed: svc.anywhere ? undefined : ORLANDO,
       },
       breadcrumbs([
         { name: "Home", path: "" },

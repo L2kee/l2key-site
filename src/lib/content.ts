@@ -1,4 +1,4 @@
-import { Globe2, Star, Search, Smartphone, Sparkles, Database } from "lucide-react";
+import { Globe2, Star, Search, Smartphone, Sparkles, Database, Gem } from "lucide-react";
 import type { WorkItem } from "@/components/work-card";
 
 type Service = {
@@ -9,6 +9,12 @@ type Service = {
 };
 
 export const SERVICES: Service[] = [
+  {
+    icon: Gem,
+    title: "Luxury Brand Design & Rebrands",
+    body: "Logos, color, type, and full brand identities for premium brands launching or repositioning, designed so your look matches the price you charge.",
+    href: "/brand-design",
+  },
   {
     icon: Globe2,
     title: "Websites That Convert",
