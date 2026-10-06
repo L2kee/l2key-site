@@ -582,6 +582,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "seo-myths-that-waste-money",
   "how-long-does-seo-really-take",
   "seo-reporting-what-metrics-actually-matter",
+  "voice-search-and-local-seo",
+  "image-seo-and-alt-text-explained",
+  "why-website-speed-actually-matters",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

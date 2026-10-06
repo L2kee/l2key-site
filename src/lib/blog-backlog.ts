@@ -3087,7 +3087,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How voice search actually affects local SEO, and what practical steps, if any, a small business should take to prepare for it.",
     excerpt: "How voice search actually affects local SEO, and what a small business should realistically do about it.",
-    date: "2026-09-18",
+    date: "2026-10-06",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -3152,7 +3152,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A clear explanation of how image SEO and alt text actually work, and why writing them well helps both accessibility and search visibility.",
     excerpt: "How image SEO and alt text actually work, and why writing them well helps two things at once.",
-    date: "2026-09-18",
+    date: "2026-10-06",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -3288,7 +3288,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why website loading speed affects both visitor behavior and search rankings, and what actually causes most small business sites to load slowly.",
     excerpt: "Why loading speed affects both visitor behavior and search rankings, and what usually causes it.",
-    date: "2026-09-18",
+    date: "2026-10-06",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
