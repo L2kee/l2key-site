@@ -3354,7 +3354,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "An honest comparison of WordPress versus a custom built website, covering the real tradeoffs in cost, flexibility, and long term maintenance.",
     excerpt: "The real tradeoffs in cost, flexibility, and long term maintenance between the two approaches.",
-    date: "2026-09-18",
+    date: "2026-10-07",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -3421,7 +3421,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical introduction to website accessibility for small business owners, covering the basics that help real visitors and reduce legal risk.",
     excerpt: "A practical introduction covering the basics that help real visitors and reduce legal risk.",
-    date: "2026-09-18",
+    date: "2026-10-07",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -3486,7 +3486,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical answer to how many pages a small business website actually needs, based on what visitors are actually looking for.",
     excerpt: "A practical answer based on what visitors are actually looking for, not an arbitrary page count.",
-    date: "2026-09-18",
+    date: "2026-10-07",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
