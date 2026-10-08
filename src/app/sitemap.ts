@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/electricalai-pro",
     "/free-review-kit",
     "/growth-kit",
+    "/job-site-studio",
   ];
 
   const staticEntries = routes.map((route) => ({
