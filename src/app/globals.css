@@ -36,7 +36,7 @@ body {
    otherwise puts it behind the text. .is-hidden comes after the phone rule
    so it wins on the homepage hero. */
 .site-bg {
-  --bg-dim: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5));
+  --bg-dim: linear-gradient(rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7));
   position: fixed;
   inset: 0;
   z-index: -2;
@@ -74,7 +74,7 @@ body {
 .site-bg-layer--about,
 .site-bg-layer--contact,
 .site-bg-layer--services {
-  --bg-dim: linear-gradient(rgb(0 0 0 / 0.62), rgb(0 0 0 / 0.62));
+  --bg-dim: linear-gradient(rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8));
 }
 .site-bg-layer--about { background-image: var(--bg-dim), url("/bg/about.webp"); }
 .site-bg-layer--contact { background-image: var(--bg-dim), url("/bg/contact.webp"); }
