@@ -588,6 +588,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "wordpress-vs-custom-website",
   "website-accessibility-basics",
   "how-many-pages-does-a-small-business-website-need",
+  "website-security-basics-for-business-owners",
+  "the-real-cost-of-a-bad-website",
+  "what-a-website-audit-actually-checks",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

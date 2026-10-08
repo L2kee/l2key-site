@@ -3546,7 +3546,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A plain language introduction to website security for non technical business owners, covering the basics that actually reduce real risk.",
     excerpt: "A plain language introduction covering the basics that actually reduce real risk for a business owner.",
-    date: "2026-09-18",
+    date: "2026-10-08",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -3618,7 +3618,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why a bad website costs a business far more than the price of building one, through lost leads, wasted ad spend, and damaged trust.",
     excerpt: "Why a bad website costs more than the price of building one, through lost leads and wasted trust.",
-    date: "2026-09-18",
+    date: "2026-10-08",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -3683,7 +3683,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A breakdown of what a genuine website audit actually looks at, so a business owner knows what a real one should cover before paying for one.",
     excerpt: "What a genuine audit actually looks at, so you know what you should be getting before paying for one.",
-    date: "2026-09-18",
+    date: "2026-10-08",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
