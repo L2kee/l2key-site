@@ -15,9 +15,10 @@ export const CLIPS_BUCKET = "job-site-clips";
 export const MAX_CLIPS = 3;
 export const MAX_CLIP_MB = 50;
 
-// Stripe Payment Link for the founding offer. Empty until it exists in Stripe,
-// and the buy buttons fall back to the free clip offer while it's empty.
-export const FOUNDING_PAYMENT_LINK = "";
+// Stripe Payment Link for the founding offer ($29/mo, live product
+// job_site_studio_founding, redirects to /welcome). If it's ever emptied, the
+// buy buttons fall back to the free clip offer.
+export const FOUNDING_PAYMENT_LINK = "https://buy.stripe.com/14A00k2K2cPWbzg28ZbjW00";
 export const FOUNDING_PRICE = 29;
 export const REGULAR_PRICE = 49;
 // The founding offer closes at the end of this day (Eastern). It's a real deadline.
