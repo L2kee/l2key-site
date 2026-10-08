@@ -86,11 +86,11 @@ body {
   /* The original backdrop has no scrim, so it keeps its old 0.4 on phones. */
   .site-bg-layer--default.is-active { opacity: 0.67; }
   .site-bg-layer--default { background-position: 70% 100%; }
-  .site-bg-layer--home { background-position: 75% 60%; }
+  .site-bg-layer--home { background-position: 70% 58%; }
   .site-bg-layer--craft,
-  .site-bg-layer--work { background-position: 70% 60%; }
-  .site-bg-layer--blog { background-position: 20% 60%; }
-  .site-bg-layer--brand { background-position: 60% 60%; }
+  .site-bg-layer--work { background-position: 66% 58%; }
+  .site-bg-layer--blog { background-position: 26% 58%; }
+  .site-bg-layer--brand { background-position: 58% 58%; }
 }
 .site-bg.is-hidden {
   opacity: 0;
