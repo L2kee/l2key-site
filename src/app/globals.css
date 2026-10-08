@@ -27,23 +27,70 @@ body {
   color: #f3ede0;
 }
 
-/* Gold lotus backdrop (site-background.tsx), one layer below the 3D shapes
-   canvas (z-index -1). Phones push the lotus into the bottom right corner
-   and fade it, because a portrait crop otherwise puts it behind the text.
-   .is-hidden comes after the phone rule so it wins on the homepage hero. */
+/* Lotus backdrop (site-background.tsx), one layer below the 3D shapes
+   canvas (z-index -1). Each section has its own render, stacked as layers
+   that crossfade on navigation. The new renders are much brighter than the
+   original site-bg.jpg, so each carries a dark scrim (--bg-dim) baked into
+   its background stack to keep body copy readable. Phones fade the whole
+   backdrop and aim each crop at its flower, because a portrait crop
+   otherwise puts it behind the text. .is-hidden comes after the phone rule
+   so it wins on the homepage hero. */
 .site-bg {
+  --bg-dim: linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5));
   position: fixed;
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  background: #000 url("/site-bg.jpg") no-repeat center / cover;
+  background: #000;
   transition: opacity 0.8s ease;
 }
+.site-bg-layer {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.site-bg-layer.is-active {
+  opacity: 1;
+}
+/* A layer mounted on navigation starts transparent, so it fades in over
+   the outgoing one instead of popping. */
+@starting-style {
+  .site-bg-layer.is-active {
+    opacity: 0;
+  }
+}
+.site-bg-layer--default { background-image: url("/site-bg.jpg"); }
+.site-bg-layer--home { background-image: var(--bg-dim), url("/bg/home.webp"); }
+.site-bg-layer--craft { background-image: var(--bg-dim), url("/bg/craft.webp"); }
+.site-bg-layer--work { background-image: var(--bg-dim), url("/bg/work.webp"); }
+.site-bg-layer--blog { background-image: var(--bg-dim), url("/bg/blog.webp"); }
+.site-bg-layer--brand { background-image: var(--bg-dim), url("/bg/brand.webp"); }
+/* The top down renders fill the whole frame with petals, so they sit
+   behind body copy and get a heavier scrim. */
+.site-bg-layer--about,
+.site-bg-layer--contact,
+.site-bg-layer--services {
+  --bg-dim: linear-gradient(rgb(0 0 0 / 0.62), rgb(0 0 0 / 0.62));
+}
+.site-bg-layer--about { background-image: var(--bg-dim), url("/bg/about.webp"); }
+.site-bg-layer--contact { background-image: var(--bg-dim), url("/bg/contact.webp"); }
+.site-bg-layer--services { background-image: var(--bg-dim), url("/bg/services.webp"); }
 @media (max-width: 639px) {
   .site-bg {
-    background-position: 70% 100%;
-    opacity: 0.4;
+    opacity: 0.6;
   }
+  /* The original backdrop has no scrim, so it keeps its old 0.4 on phones. */
+  .site-bg-layer--default.is-active { opacity: 0.67; }
+  .site-bg-layer--default { background-position: 70% 100%; }
+  .site-bg-layer--home { background-position: 75% 60%; }
+  .site-bg-layer--craft,
+  .site-bg-layer--work { background-position: 70% 60%; }
+  .site-bg-layer--blog { background-position: 20% 60%; }
+  .site-bg-layer--brand { background-position: 60% 60%; }
 }
 .site-bg.is-hidden {
   opacity: 0;
