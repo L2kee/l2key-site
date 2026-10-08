@@ -89,6 +89,7 @@ body {
   .site-bg-layer--craft,
   .site-bg-layer--work { background-position: 66% 58%; }
   .site-bg-layer--contact { background-position: 62% 58%; }
+  .site-bg-layer--brand { background-position: 57% 58%; }
 }
 .site-bg.is-hidden {
   opacity: 0;
