@@ -67,17 +67,15 @@ body {
 .site-bg-layer--home { background-image: var(--bg-dim), url("/bg/home.webp"); }
 .site-bg-layer--craft { background-image: var(--bg-dim), url("/bg/craft.webp"); }
 .site-bg-layer--work { background-image: var(--bg-dim), url("/bg/work.webp"); }
-.site-bg-layer--blog { background-image: var(--bg-dim), url("/bg/blog.webp"); }
-.site-bg-layer--brand { background-image: var(--bg-dim), url("/bg/brand.webp"); }
+.site-bg-layer--about { background-image: var(--bg-dim), url("/bg/about.webp"); }
+.site-bg-layer--contact { background-image: var(--bg-dim), url("/bg/contact.webp"); }
 /* The top down renders fill the whole frame with petals, so they sit
    behind body copy and get a heavier scrim. */
-.site-bg-layer--about,
-.site-bg-layer--contact,
+.site-bg-layer--brand,
 .site-bg-layer--services {
   --bg-dim: linear-gradient(rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8));
 }
-.site-bg-layer--about { background-image: var(--bg-dim), url("/bg/about.webp"); }
-.site-bg-layer--contact { background-image: var(--bg-dim), url("/bg/contact.webp"); }
+.site-bg-layer--brand { background-image: var(--bg-dim), url("/bg/brand.webp"); }
 .site-bg-layer--services { background-image: var(--bg-dim), url("/bg/services.webp"); }
 @media (max-width: 639px) {
   .site-bg {
@@ -86,11 +84,11 @@ body {
   /* The original backdrop has no scrim, so it keeps its old 0.4 on phones. */
   .site-bg-layer--default.is-active { opacity: 0.67; }
   .site-bg-layer--default { background-position: 70% 100%; }
-  .site-bg-layer--home { background-position: 70% 58%; }
+  .site-bg-layer--home { background-position: 34% 58%; }
+  .site-bg-layer--about { background-position: 72% 58%; }
   .site-bg-layer--craft,
   .site-bg-layer--work { background-position: 66% 58%; }
-  .site-bg-layer--blog { background-position: 26% 58%; }
-  .site-bg-layer--brand { background-position: 58% 58%; }
+  .site-bg-layer--contact { background-position: 62% 58%; }
 }
 .site-bg.is-hidden {
   opacity: 0;
