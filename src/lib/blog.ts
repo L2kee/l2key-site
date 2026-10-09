@@ -591,6 +591,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "website-security-basics-for-business-owners",
   "the-real-cost-of-a-bad-website",
   "what-a-website-audit-actually-checks",
+  "what-a-professional-redesign-actually-changes",
+  "how-often-should-a-website-be-updated",
+  "managing-reviews-across-multiple-platforms",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

@@ -3744,7 +3744,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "What genuinely changes in a professional website redesign beyond the visual refresh, including structure, speed, and conversion focused decisions.",
     excerpt: "What genuinely changes beyond the visual refresh, including structure, speed, and conversion.",
-    date: "2026-09-18",
+    date: "2026-10-09",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -3815,7 +3815,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical guide to how often different parts of a business website should be updated, from content to a full redesign.",
     excerpt: "How often different parts of a website should actually be updated, from content to a full redesign.",
-    date: "2026-09-18",
+    date: "2026-10-09",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -3947,7 +3947,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical approach to managing business reviews across multiple platforms without spending every day checking each one manually.",
     excerpt: "A practical approach to managing reviews across platforms without checking each one every day.",
-    date: "2026-09-18",
+    date: "2026-10-09",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
