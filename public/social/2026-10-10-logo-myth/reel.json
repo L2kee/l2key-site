@@ -1,0 +1,14 @@
+{
+  "seconds": 38.42,
+  "cover_ms": 3400,
+  "look": "cream",
+  "motion": {
+    "hook": "wipe",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "rise",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "particles"
+  }
+}

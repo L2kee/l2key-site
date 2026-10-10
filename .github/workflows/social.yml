@@ -1,7 +1,8 @@
 name: Social posts
 
-# Turns week files (social/<week>.json) into carousel slides served from evogencyglobal.com/social/
-# and keeps the soonest posts booked in Buffer (Instagram, Facebook, TikTok). No AI involved.
+# Turns week files (social/<week>.json) into carousel slides and reels with motion served from
+# evogencyglobal.com/social/, and keeps the soonest posts booked in Buffer (Instagram and TikTok get the reel,
+# Facebook the carousel). No AI involved.
 # Buffer's free plan only holds 10 scheduled posts, so a twice daily sync refills it as posts go out.
 # GitHub can start scheduled runs hours late; that's fine here, the posts are booked well ahead.
 on:
@@ -13,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "sync (book posts), channels (list only), or inspect (read one post, id below)"
+        description: "sync (book posts), channels (list only), inspect (read one post, id below), or cleanup (delete posted media now)"
         default: sync
       post:
         description: "Buffer post id, for inspect only"
@@ -29,7 +30,7 @@ permissions:
 jobs:
   social:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 80
     env:
       BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
       MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'sync' }}
@@ -46,6 +47,13 @@ jobs:
         if: env.MODE == 'inspect'
         run: python3 social/schedule.py inspect "${{ inputs.post }}"
 
+      # Mondays (and on demand), delete the media of posts that already went out. The networks keep their own copy.
+      - name: Weekly cleanup of posted media
+        if: env.MODE == 'cleanup' || (env.MODE == 'sync' && github.event_name == 'schedule')
+        run: |
+          [ "$MODE" = cleanup ] || [ "$(TZ=America/New_York date +%u)" = 1 ] || exit 0
+          python3 social/schedule.py cleanup
+
       - name: Render slides
         if: env.MODE == 'sync'
         run: |
@@ -53,14 +61,21 @@ jobs:
           (cd /tmp/pw && npx playwright install --with-deps chromium >/dev/null)
           for f in social/*.json; do NODE_PATH=/tmp/pw/node_modules node social/render.js "$f"; done
 
-      - name: Publish new slides to the site
+      # About 2 minutes a reel, soonest posts first. Whatever doesn't fit in the budget renders on the next run.
+      - name: Render reels
         if: env.MODE == 'sync'
+        run: |
+          command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null; }
+          NODE_PATH=/tmp/pw/node_modules node social/reel.js social/*.json --budget 35
+
+      - name: Publish new slides to the site
+        if: env.MODE == 'sync' || env.MODE == 'cleanup'
         run: |
           git config user.name "Social Posts"
           git config user.email "actions@users.noreply.github.com"
-          git add public/social
+          git add -A public/social
           git diff --cached --quiet && exit 0
-          git commit -m "Social slides"
+          git commit -m "Social media files"
           for i in 1 2 3 4; do
             { git pull --rebase origin master || { git rebase --abort; exit 1; }; } && git push origin HEAD:master && exit 0
             sleep $((i * 5))

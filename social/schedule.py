@@ -4,6 +4,7 @@ Usage:
   python social/schedule.py channels        list connected Buffer channels and plan limits (no changes)
   python social/schedule.py inspect <id>    read one Buffer post (no changes)
   python social/schedule.py sync            book the soonest posts from every social/<week>.json
+  python social/schedule.py cleanup         delete the slides and reels of posts that already went out
 
 Buffer's free plan only holds a few scheduled posts at once (10 on this account), so sync is a refill:
 it books the soonest upcoming posts until the plan's cap is reached, and runs again every day to top up
@@ -15,12 +16,22 @@ Every post this script books is recorded in social/state/<week>.json, keyed by "
   one booked. An old post that already went out is left alone.
 - To make room for a sooner post, a later post this script booked can be unbooked; it gets rebooked later.
 
-Needs BUFFER_API_KEY (a GitHub Actions secret, never printed). Slides must be live at
-https://evogencyglobal.com/social/<post id>/slide-N.png before a post is booked.
+Instagram and TikTok get each post as a reel with motion (social/reel.js renders public/social/<post id>/reel.mp4).
+A post whose reel isn't rendered yet waits for a later run, unless it's due within FALLBACK_HOURS, when it goes out
+as the image carousel instead. A booked carousel is swapped for the reel once the reel exists ("fmt" in the state).
+If Buffer refuses a reel, the carousel is booked in its place and the run fails, so GitHub emails Moe.
+
+Weekly cleanup: once a post is published, Instagram, Facebook, and TikTok keep their own copy of the media, so its
+folder in public/social is dead weight. cleanup deletes every post folder dated 2 or more days ago (folders are named
+<date>-<slug>). Git history still holds the old files, but the site, the deploys, and every checkout stay small.
+
+Needs BUFFER_API_KEY for channels, inspect, and sync (a GitHub Actions secret, never printed). Slides must be live at
+https://evogencyglobal.com/social/<post id>/slide-N.png (and reels at .../reel.mp4) before a post is booked.
 """
 import glob
 import json
 import os
+import shutil
 import sys
 import time
 import urllib.error
@@ -35,6 +46,9 @@ SERVICES = ("instagram", "facebook", "tiktok")
 SOCIAL = os.path.dirname(os.path.abspath(__file__))
 # Facebook pages get hidden when they post too often, so Facebook only takes each day's first post.
 FIRST_OF_DAY_ONLY = ("facebook",)
+# Channels that get the reel with motion instead of the still carousel.
+REEL_SERVICES = ("instagram", "tiktok")
+FALLBACK_HOURS = 12
 
 
 def gql(query, variables=None):
@@ -89,13 +103,24 @@ def pid(p):
 def live(url):
     try:
         with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=30) as r:
-            return r.status == 200 and r.headers.get("Content-Type", "").startswith("image/")
+            return r.status == 200 and r.headers.get("Content-Type", "").startswith(("image/", "video/"))
     except Exception:
         return False
 
 
-def wait_for_slides(posts):
+def has_reel(p):
+    """The reel is in this checkout (rendered by reel.js), so it's live once the site deploys."""
+    return os.path.exists(os.path.join(SOCIAL, "..", "public", "social", pid(p), "reel.mp4"))
+
+
+def reel_info(p):
+    with open(os.path.join(SOCIAL, "..", "public", "social", pid(p), "reel.json"), encoding="utf-8") as f:
+        return json.load(f)
+
+
+def wait_for_slides(posts, reels=()):
     urls = [f"{SITE}/social/{pid(p)}/slide-{k}.png" for p in posts for k in range(1, 7)]
+    urls += [f"{SITE}/social/{pid(p)}/reel.mp4" for p in reels]
     for _ in range(40):  # up to 20 minutes for the Vercel deploy
         missing = [u for u in urls if not live(u)]
         if not missing:
@@ -115,6 +140,7 @@ DELETE = """mutation($input: DeletePostInput!) { deletePost(input: $input) {
   __typename ... on DeletePostSuccess { id } ... on VoidMutationError { message } } }"""
 META = {
     "instagram": lambda p: {"instagram": {"type": "post", "shouldShareToFeed": True}},
+    "instagram_reel": lambda p: {"instagram": {"type": "reel", "shouldShareToFeed": True}},
     "facebook": lambda p: {"facebook": {"type": "post"}},
     "tiktok": lambda p: {"tiktok": {"title": p["hook"][:90]}},
 }
@@ -174,12 +200,23 @@ def sync():
                     slots.append((due, p, c, path, f"{p['date']} {t}|{c['id']}"))
         slots.sort(key=lambda s: s[0])
 
-        # Stale entries: old key format, or a slot whose post was rewritten or moved. Delete if still booked.
-        wanted = {key: (pid(p), due.isoformat()) for due, p, c, path, key in slots}
+        # Reel channels get the reel once it exists. Until then a post waits, unless it's due soon or already
+        # booked as a carousel, in which case the carousel stands.
+        def fmt(p, c):
+            return "reel" if c["service"] in REEL_SERVICES and has_reel(p) else "image"
+        slots = [
+            s for s in slots
+            if s[2]["service"] not in REEL_SERVICES or fmt(s[1], s[2]) == "reel"
+            or s[0] <= now + timedelta(hours=FALLBACK_HOURS) or s[4] in weeks[s[3]][1]]
+
+        # Stale entries: old key format, or a slot whose post was rewritten, moved, or now has a reel.
+        # Delete if still booked.
+        wanted = {key: (pid(p), due.isoformat(), fmt(p, c)) for due, p, c, path, key in slots}
         for path, (week, state, state_path) in weeks.items():
             for key, entry in list(state.items()):
                 bid = entry if isinstance(entry, str) else entry["buffer"]
-                fresh = isinstance(entry, dict) and wanted.get(key) == (entry.get("post"), entry.get("due"))
+                fresh = isinstance(entry, dict) and wanted.get(key) == (
+                    entry.get("post"), entry.get("due"), entry.get("fmt", "image"))
                 if fresh or bid not in booked:
                     continue  # current, or already sent, or killed by hand (kept so it's never rebooked)
                 ok, msg = delete(bid)
@@ -218,28 +255,45 @@ def sync():
 
         todo = [s for s in keep if s[4] not in weeks[s[3]][1]]
         if todo:
-            wait_for_slides([p for _, p, _, _, _ in todo])
+            wait_for_slides([p for _, p, _, _, _ in todo], [p for _, p, c, _, _ in todo if fmt(p, c) == "reel"])
         for due, p, c, path, key in todo:
             week, state, state_path = weeks[path]
             if len(booked) >= cap:
                 print(f"{key}: Buffer is full ({cap}), waiting for the next sync")
                 continue
-            assets = [{"image": {"url": f"{SITE}/social/{pid(p)}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
-                      for k in range(1, 7)]
-            inp = {"channelId": c["id"], "text": p["captions"][c["service"]], "assets": assets,
-                   "metadata": META[c["service"]](p), "schedulingType": "automatic",
-                   "mode": "customScheduled", "dueAt": due.isoformat()}
-            res = gql(CREATE, {"input": inp})["createPost"]
-            if res["__typename"] == "PostActionSuccess":
-                booked.add(res["post"]["id"])
-                state[key] = {"buffer": res["post"]["id"], "post": pid(p), "due": due.isoformat()}
-                save(state_path, state)
-                print(f"{key} {c['service']}: booked {pid(p)} (post {res['post']['id']})")
-            else:
+            carousel = [{"image": {"url": f"{SITE}/social/{pid(p)}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
+                        for k in range(1, 7)]
+            tries = [("image", carousel, META[c["service"]](p))]
+            if fmt(p, c) == "reel":
+                reel = [{"video": {"url": f"{SITE}/social/{pid(p)}/reel.mp4",
+                                   "metadata": {"thumbnailOffset": reel_info(p)["cover_ms"]}}}]
+                tries.insert(0, ("reel", reel, META.get(c["service"] + "_reel", META[c["service"]])(p)))
+            for kind, assets, meta in tries:
+                inp = {"channelId": c["id"], "text": p["captions"][c["service"]], "assets": assets,
+                       "metadata": meta, "schedulingType": "automatic",
+                       "mode": "customScheduled", "dueAt": due.isoformat()}
+                res = gql(CREATE, {"input": inp})["createPost"]
+                if res["__typename"] == "PostActionSuccess":
+                    booked.add(res["post"]["id"])
+                    state[key] = {"buffer": res["post"]["id"], "post": pid(p), "due": due.isoformat(), "fmt": kind}
+                    save(state_path, state)
+                    print(f"{key} {c['service']}: booked {pid(p)} as {kind} (post {res['post']['id']})")
+                    break
                 failed += 1
-                print(f"{key} {c['service']}: FAILED, {res.get('message')}")
+                print(f"{key} {c['service']}: {kind} FAILED, {res.get('message')}")
         print(f"{org['name']}: {len(booked)} of {cap} scheduled posts in use")
     return 1 if failed else 0
+
+
+def cleanup():
+    media = os.path.join(SOCIAL, "..", "public", "social")
+    cutoff = (datetime.now(ET) - timedelta(days=2)).date().isoformat()
+    gone = 0
+    for name in sorted(os.listdir(media)):
+        if os.path.isdir(os.path.join(media, name)) and name[:10] < cutoff:
+            shutil.rmtree(os.path.join(media, name))
+            gone += 1
+    print(f"cleanup: removed {gone} post folders dated before {cutoff}")
 
 
 if __name__ == "__main__":
@@ -248,6 +302,8 @@ if __name__ == "__main__":
     elif sys.argv[1:2] == ["inspect"] and len(sys.argv) == 3:
         q = "query($id: PostId!) { post(input: {id: $id}) { id status dueAt sentAt via allowedActions } }"
         print(json.dumps(gql(q, {"id": sys.argv[2]})["post"], indent=2))
+    elif sys.argv[1:2] == ["cleanup"]:
+        cleanup()
     elif sys.argv[1:2] == ["sync"]:
         sys.exit(sync())
     else:
