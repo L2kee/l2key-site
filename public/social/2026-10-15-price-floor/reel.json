@@ -1,0 +1,14 @@
+{
+  "seconds": 38.36,
+  "cover_ms": 3400,
+  "look": "editorial",
+  "motion": {
+    "hook": "mark",
+    "why": "wipe",
+    "num": "pop",
+    "step": "rise",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "glow"
+  }
+}

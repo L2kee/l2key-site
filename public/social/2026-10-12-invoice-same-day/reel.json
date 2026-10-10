@@ -1,0 +1,14 @@
+{
+  "seconds": 43.64,
+  "cover_ms": 3400,
+  "look": "gold",
+  "motion": {
+    "hook": "words",
+    "why": "rise",
+    "num": "stamp",
+    "step": "lightup",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "particles"
+  }
+}

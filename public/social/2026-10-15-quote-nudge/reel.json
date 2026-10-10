@@ -1,0 +1,14 @@
+{
+  "seconds": 40.9,
+  "cover_ms": 3400,
+  "look": "teal",
+  "motion": {
+    "hook": "words",
+    "why": "rise",
+    "num": "stamp",
+    "step": "words",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "aurora"
+  }
+}

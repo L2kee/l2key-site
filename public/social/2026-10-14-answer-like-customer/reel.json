@@ -1,0 +1,14 @@
+{
+  "seconds": 40.82,
+  "cover_ms": 3400,
+  "look": "noir",
+  "motion": {
+    "hook": "curtain",
+    "why": "wipe",
+    "num": "pop",
+    "step": "lightup",
+    "cta": "shine",
+    "change": "slide",
+    "scene": "particles"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "seconds": 37.82,
+  "cover_ms": 3400,
+  "look": "spotlight",
+  "motion": {
+    "hook": "curtain",
+    "why": "wipe",
+    "num": "pop",
+    "step": "rise",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "glow"
+  }
+}

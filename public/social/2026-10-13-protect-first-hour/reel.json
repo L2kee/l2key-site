@@ -1,0 +1,14 @@
+{
+  "seconds": 38.94,
+  "cover_ms": 3400,
+  "look": "editorial",
+  "motion": {
+    "hook": "wipe",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "lightup",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "particles"
+  }
+}

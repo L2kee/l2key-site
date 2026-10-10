@@ -1,0 +1,14 @@
+{
+  "seconds": 45.9,
+  "cover_ms": 3400,
+  "look": "noir",
+  "motion": {
+    "hook": "rise",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "words",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "aurora"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "seconds": 37.3,
+  "cover_ms": 3400,
+  "look": "blueprint",
+  "motion": {
+    "hook": "decode",
+    "why": "mark",
+    "num": "spring",
+    "step": "lightup",
+    "cta": "orbit",
+    "change": "up",
+    "scene": "particles"
+  }
+}

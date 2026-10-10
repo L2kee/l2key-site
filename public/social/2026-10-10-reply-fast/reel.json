@@ -1,0 +1,14 @@
+{
+  "seconds": 37.5,
+  "cover_ms": 3400,
+  "look": "teal",
+  "motion": {
+    "hook": "mark",
+    "why": "wipe",
+    "num": "pop",
+    "step": "lightup",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "particles"
+  }
+}

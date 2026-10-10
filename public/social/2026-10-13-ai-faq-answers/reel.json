@@ -1,0 +1,14 @@
+{
+  "seconds": 38.42,
+  "cover_ms": 3400,
+  "look": "blueprint",
+  "motion": {
+    "hook": "letters",
+    "why": "rise",
+    "num": "stamp",
+    "step": "rise",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "glow"
+  }
+}

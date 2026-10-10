@@ -1,0 +1,14 @@
+{
+  "seconds": 44.34,
+  "cover_ms": 3400,
+  "look": "spotlight",
+  "motion": {
+    "hook": "decode",
+    "why": "mark",
+    "num": "spring",
+    "step": "words",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "aurora"
+  }
+}

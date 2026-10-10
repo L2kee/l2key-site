@@ -1,0 +1,14 @@
+{
+  "seconds": 35.94,
+  "cover_ms": 3400,
+  "look": "gold",
+  "motion": {
+    "hook": "curtain",
+    "why": "wipe",
+    "num": "pop",
+    "step": "words",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "particles"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "seconds": 38.22,
+  "cover_ms": 3400,
+  "look": "gold",
+  "motion": {
+    "hook": "rise",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "rise",
+    "cta": "orbit",
+    "change": "up",
+    "scene": "particles"
+  }
+}

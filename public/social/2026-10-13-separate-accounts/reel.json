@@ -1,0 +1,14 @@
+{
+  "seconds": 41.36,
+  "cover_ms": 3400,
+  "look": "cream",
+  "motion": {
+    "hook": "mark",
+    "why": "wipe",
+    "num": "pop",
+    "step": "words",
+    "cta": "orbit",
+    "change": "up",
+    "scene": "particles"
+  }
+}

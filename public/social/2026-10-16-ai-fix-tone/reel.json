@@ -1,0 +1,14 @@
+{
+  "seconds": 37.84,
+  "cover_ms": 3400,
+  "look": "spotlight",
+  "motion": {
+    "hook": "letters",
+    "why": "rise",
+    "num": "stamp",
+    "step": "lightup",
+    "cta": "orbit",
+    "change": "up",
+    "scene": "particles"
+  }
+}

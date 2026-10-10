@@ -1,0 +1,14 @@
+{
+  "seconds": 39.98,
+  "cover_ms": 5280,
+  "look": "cream",
+  "motion": {
+    "hook": "type",
+    "why": "mark",
+    "num": "spring",
+    "step": "lightup",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "particles"
+  }
+}

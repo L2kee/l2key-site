@@ -1,0 +1,14 @@
+{
+  "seconds": 42.56,
+  "cover_ms": 4560,
+  "look": "gold",
+  "motion": {
+    "hook": "type",
+    "why": "mark",
+    "num": "spring",
+    "step": "words",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "particles"
+  }
+}

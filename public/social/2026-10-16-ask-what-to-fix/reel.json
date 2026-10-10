@@ -1,0 +1,14 @@
+{
+  "seconds": 34.34,
+  "cover_ms": 3400,
+  "look": "noir",
+  "motion": {
+    "hook": "decode",
+    "why": "mark",
+    "num": "spring",
+    "step": "rise",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "glow"
+  }
+}
