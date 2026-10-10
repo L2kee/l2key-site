@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 import { LazyBackgroundScene } from "@/components/lazy-background-scene";
 import { SiteBackground } from "@/components/site-background";
 import { Navbar } from "@/components/navbar";
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <HideOnFunnel>
           <Footer />
         </HideOnFunnel>
+        <Analytics />
       </body>
       <GoogleAnalytics gaId="G-P0SVMCCT5Y" />
     </html>
