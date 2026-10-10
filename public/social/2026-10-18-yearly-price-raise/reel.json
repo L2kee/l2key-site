@@ -1,0 +1,14 @@
+{
+  "seconds": 36.86,
+  "cover_ms": 3400,
+  "look": "blueprint",
+  "motion": {
+    "hook": "mark",
+    "why": "wipe",
+    "num": "pop",
+    "step": "lightup",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "particles"
+  }
+}

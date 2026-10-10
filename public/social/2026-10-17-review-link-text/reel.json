@@ -1,0 +1,14 @@
+{
+  "seconds": 38.44,
+  "cover_ms": 3400,
+  "look": "teal",
+  "motion": {
+    "hook": "rise",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "lightup",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "particles"
+  }
+}
