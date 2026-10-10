@@ -594,6 +594,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "what-a-professional-redesign-actually-changes",
   "how-often-should-a-website-be-updated",
   "managing-reviews-across-multiple-platforms",
+  "review-response-templates-that-dont-sound-robotic",
+  "what-to-do-about-a-fake-or-unfair-review",
+  "building-reputation-before-you-have-many-reviews",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

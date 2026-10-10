@@ -4019,7 +4019,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to respond to customer reviews in a way that sounds genuine and specific instead of a copy pasted, robotic template.",
     excerpt: "How to respond to reviews in a way that sounds genuine and specific, not copy pasted.",
-    date: "2026-09-18",
+    date: "2026-10-10",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -4084,7 +4084,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "The real steps to take when a business receives a fake or clearly unfair review, including how and when to flag it to Google.",
     excerpt: "The real steps to take when a business receives a fake or clearly unfair review.",
-    date: "2026-09-18",
+    date: "2026-10-10",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -4149,7 +4149,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How a new or newly online business can build trust and credibility before accumulating a large number of Google reviews.",
     excerpt: "How a new or newly online business can build trust before accumulating a large number of reviews.",
-    date: "2026-09-18",
+    date: "2026-10-10",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
