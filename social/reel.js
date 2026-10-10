@@ -290,7 +290,7 @@ function ffmpeg(file) {
 (async () => {
   const t0 = Date.now();
   // Every post from every week file given, soonest first, skipping ones that already went out.
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+  const now = new Date().toLocaleString('sv-SE', { timeZone: 'America/New_York' }).slice(0, 16); // "YYYY-MM-DD HH:MM"
   const posts = [];
   for (const f of args) {
     const week = JSON.parse(fs.readFileSync(f, 'utf8'));
@@ -304,9 +304,9 @@ function ffmpeg(file) {
   posts.sort((a, b) => a.when.localeCompare(b.when));
   const browser = await chromium.launch();
   const tab = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
-  for (const { p, slot } of posts) {
+  for (const { p, slot, when } of posts) {
     const id = p.id || p.date;
-    if (only ? id !== only : p.date < today) continue;
+    if (only ? id !== only : when <= now) continue;
     const dir = path.join(ROOT, 'public/social', id);
     const file = path.join(dir, 'reel.mp4');
     if (fs.existsSync(file)) continue;
