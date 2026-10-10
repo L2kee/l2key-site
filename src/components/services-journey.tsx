@@ -34,19 +34,19 @@ export function ServicesJourney() {
         </h2>
       </div>
 
-      <div className="mt-14 grid gap-6 sm:grid-cols-3">
+      <div className="journey-grid mt-14 grid gap-6 sm:grid-cols-3">
         {STAGES.map((s) => (
           <TiltCard
             key={s.kicker}
-            className="glass-strong flex h-full flex-col overflow-hidden rounded-2xl"
+            className="glass-strong flex h-full flex-col overflow-clip rounded-2xl"
           >
-            <div className="relative aspect-[4/3] w-full overflow-hidden border-b border-white/10">
+            <div className="relative aspect-[4/3] w-full overflow-clip border-b border-white/10">
               <Image
                 src={s.image}
                 alt={s.imageAlt}
                 fill
                 sizes="(max-width: 640px) 100vw, 33vw"
-                className="object-cover"
+                className="journey-drift object-cover"
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
             </div>

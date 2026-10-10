@@ -17,6 +17,9 @@ export type WorkItem = {
   imageAlts?: string[];
   imagePosition?: "top" | "left-top";
   fit?: string;
+  /** Full length capture of the page, scrolled top to bottom inside the
+      frame on hover (desktop) or with the page scroll (touch). */
+  fullPage?: { src: string; width: number; height: number; alt: string };
   icon: keyof typeof ICONS;
   stack: string[];
   links: { label: string; href: string }[];
@@ -48,6 +51,23 @@ function WorkMedia({ item }: { item: WorkItem }) {
       ) : (
         <div className="flex h-full w-full items-center justify-center">
           <Icon size={64} strokeWidth={1.25} style={{ color: "#f0c14b" }} />
+        </div>
+      )}
+      {item.fullPage && (
+        // Sits over the carousel, see .work-scroll-* in globals.css. The
+        // scroll time grows with the page length.
+        <div
+          className="work-scroll-frame"
+          style={{ "--scroll-dur": `${((item.fullPage.height / item.fullPage.width) * 2.2).toFixed(1)}s` } as React.CSSProperties}
+        >
+          <Image
+            src={item.fullPage.src}
+            alt={item.fullPage.alt}
+            width={item.fullPage.width}
+            height={item.fullPage.height}
+            sizes="(max-width: 768px) 100vw, 52vw"
+            className="work-scroll-img"
+          />
         </div>
       )}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/20" />
@@ -104,7 +124,7 @@ function WorkDetails({ item }: { item: WorkItem }) {
 }
 
 const MEDIA_BG =
-  "relative overflow-hidden bg-gradient-to-br from-[#f0c14b]/15 via-[#c9922c]/5 to-transparent";
+  "relative overflow-clip bg-gradient-to-br from-[#f0c14b]/15 via-[#c9922c]/5 to-transparent";
 
 /** "stacked" is the tilting image over details grid card (Works page).
     "split" (homepage) is two separate glass cards, image and details, each
@@ -119,12 +139,13 @@ export function WorkCard({
   if (layout === "split") {
     return (
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
-        <div className="md:w-[52%] md:shrink-0">
+        {/* work-in-*: the pair slides in from opposite sides on scroll. */}
+        <div className="work-in work-in-media md:w-[52%] md:shrink-0">
           <TiltCard className={`glass-strong aspect-[16/10] w-full rounded-2xl ${MEDIA_BG}`}>
             <WorkMedia item={item} />
           </TiltCard>
         </div>
-        <div className="flex-1">
+        <div className="work-in work-in-details flex-1">
           <TiltCard className="glass-strong rounded-2xl p-6 md:p-8">
             <WorkDetails item={item} />
           </TiltCard>
@@ -134,7 +155,7 @@ export function WorkCard({
   }
 
   return (
-    <TiltCard className="glass-strong flex h-full flex-col overflow-hidden rounded-2xl">
+    <TiltCard className="glass-strong flex h-full flex-col overflow-clip rounded-2xl">
       <div className={`aspect-[16/10] w-full border-b border-white/10 ${MEDIA_BG}`}>
         <WorkMedia item={item} />
       </div>

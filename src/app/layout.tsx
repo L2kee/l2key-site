@@ -1,3 +1,4 @@
+import { ViewTransition } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -64,7 +65,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteBackground />
         <LazyBackgroundScene />
         <Navbar />
-        <main className="flex flex-col">{children}</main>
+        {/* Page to page fade on client navigation, see ::view-transition
+            rules in globals.css. Browsers without view transitions just
+            swap pages as before. */}
+        <ViewTransition name="page">
+          <main className="flex flex-col">{children}</main>
+        </ViewTransition>
         <HideOnFunnel>
           <Footer />
         </HideOnFunnel>

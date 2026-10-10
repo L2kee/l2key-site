@@ -6,6 +6,8 @@ import { Marquee } from "@/components/marquee";
 import { WorkCard } from "@/components/work-card";
 import { ServicesJourney } from "@/components/services-journey";
 import { HeroVideo } from "@/components/hero-video";
+import { HeroReveal } from "@/components/hero-reveal";
+import { CtaTrace } from "@/components/cta-trace";
 import { WORK } from "@/lib/content";
 
 export default function Home() {
@@ -14,30 +16,33 @@ export default function Home() {
       <HeroVideo />
 
       {/* Hero */}
-      <section className="mx-auto flex max-w-5xl flex-col items-center px-6 pt-8 pb-16 text-center">
+      <HeroReveal className="mx-auto flex max-w-5xl flex-col items-center px-6 pt-8 pb-16 text-center">
+        {/* Each hero-in line plays in after the one before it, --i sets
+            its place in the order (see .hero-in in globals.css). */}
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          Built to be found.
-          <br />
-          <span className="gradient-text">Designed to be trusted.</span>
+          <span className="hero-in block [--i:0]">Built to be found.</span>
+          <span className="hero-in block [--i:1]">
+            <span className="gradient-text hero-shimmer">Designed to be trusted.</span>
+          </span>
         </h1>
 
-        <p className="mt-6 text-balance text-xl font-semibold text-white sm:text-2xl">
+        <p className="hero-in mt-6 text-balance text-xl font-semibold text-white [--i:2] sm:text-2xl">
           Your business deserves to be seen.
         </p>
-        <p className="mt-3 max-w-2xl text-balance text-white/70 sm:text-lg">
+        <p className="hero-in mt-3 max-w-2xl text-balance text-white/70 [--i:3] sm:text-lg">
           EVOGENCY builds the websites, search presence, and digital systems
           that turn attention into customers.
         </p>
 
-        <div className="mt-10">
+        <div className="hero-in mt-10 [--i:4]">
           <Link
             href="/contact"
-            className="btn-solid !px-8 !py-4 text-base sm:text-lg"
+            className="btn-solid hero-cta !px-8 !py-4 text-base sm:text-lg"
           >
             Get Your Free Audit <ArrowRight size={18} />
           </Link>
         </div>
-      </section>
+      </HeroReveal>
 
       <ServicesJourney />
 
@@ -81,7 +86,8 @@ export default function Home() {
 
       {/* Closing CTA */}
       <section className="mx-auto max-w-3xl px-6 py-16">
-        <TiltCard className="glass-strong rounded-3xl p-10 text-center">
+        <TiltCard className="glass-strong relative rounded-3xl p-10 text-center">
+          <CtaTrace radius={24} />
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Let&apos;s get your business found online
           </h2>

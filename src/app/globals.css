@@ -20,9 +20,12 @@ div#top {
   scroll-margin-top: 6rem;
 }
 
+/* clip, not hidden: hidden makes body a scroll container in Chrome, which
+   froze the services cards' scroll driven stagger at 0 opacity. Every
+   browser Tailwind v4 supports has clip. */
 body {
   position: relative;
-  overflow-x: hidden;
+  overflow-x: clip;
   background: #000;
   color: #f3ede0;
 }
@@ -296,5 +299,318 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
     animation: none;
+  }
+}
+
+/* Homepage motion. Everything that moves sits behind no-preference, so
+   reduced motion visitors get the static page. The hero lines rise and
+   sharpen out of a blur in order (--i, set in page.tsx), the headline
+   starting at 0ms so the largest paint isn't held back. The entrance runs
+   on the CTA's wrapper, not the button: a transform held by an animation
+   would beat .btn-solid:hover and kill the hover lift. */
+
+/* Static base for the work card full page scroll (work-card.tsx). Hidden
+   until a hover (desktop) or the touch rules below show it. container-type
+   lets the image scroll exactly one frame short of its own height (cqh). */
+.work-scroll-frame {
+  position: absolute;
+  inset: 0;
+  overflow: clip;
+  container-type: size;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+.work-scroll-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Closing CTA border trace (cta-trace.tsx). The svg sits on the card's
+   1px border; pathLength 1 keeps the dash math at 0 to 1. */
+.cta-trace {
+  position: absolute;
+  inset: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  overflow: visible;
+  pointer-events: none;
+  filter: drop-shadow(0 0 4px rgba(240, 193, 75, 0.6));
+}
+.cta-trace rect {
+  width: calc(100% - 1.5px);
+  height: calc(100% - 1.5px);
+  fill: none;
+  stroke: #f0c14b;
+  stroke-width: 1.5;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-in {
+    animation: hero-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--i, 0) * 120ms);
+  }
+
+  /* hero-reveal.tsx puts .hero-wait on the hero while it is below the
+     fold. animation: none (not paused) so removing the class restarts the
+     whole sequence from the first line, both glints included. */
+  .hero-wait .hero-in {
+    animation: none;
+    opacity: 0;
+  }
+  .hero-wait .hero-cta::after,
+  .hero-wait .hero-shimmer {
+    animation: none;
+  }
+
+  /* One light sweep across the gold headline line once it lands, then the
+     same on the CTA, so the eye travels down to the button. The sweep is a
+     second background layer under the same text clip as .gradient-text. */
+  .hero-shimmer {
+    background-image:
+      linear-gradient(110deg, transparent 42%, rgba(255, 247, 222, 0.95) 50%, transparent 58%),
+      linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+    background-size: 300% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 0, 0 0;
+    animation: hero-shimmer 900ms ease-in-out 900ms both;
+  }
+
+  .hero-cta {
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-cta::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(100deg, transparent 30%, rgba(255, 248, 225, 0.75) 50%, transparent 70%);
+    transform: translateX(-120%);
+    pointer-events: none;
+    animation: hero-cta-shine 900ms ease-in-out 1800ms both;
+  }
+
+  /* Closing CTA: the gold line runs once around the card, then settles to
+     a faint border. */
+  .cta-trace.is-drawn rect {
+    animation: cta-trace 2200ms cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  /* Work cards with a full page capture: hover scrolls the page top to
+     bottom inside the frame (time set per page in --scroll-dur), leaving
+     scrolls it back up fast. */
+  @media (hover: hover) {
+    .work-scroll-frame {
+      pointer-events: auto;
+    }
+    .work-scroll-frame:hover {
+      opacity: 1;
+    }
+    .work-scroll-frame:hover .work-scroll-img {
+      transform: translateY(calc(-100% + 100cqh));
+      transition: transform var(--scroll-dur, 6s) cubic-bezier(0.45, 0, 0.55, 1) 250ms;
+    }
+  }
+
+  /* Scroll driven pieces. No JS. Browsers without view timelines show
+     everything as is. Anything with one of these inside must crop with
+     overflow: clip, never hidden: hidden makes the box a scroll container
+     that never scrolls, and the timeline freezes on it. */
+  @supports (animation-timeline: view()) {
+    /* Services cards stagger in, on the tilt wrapper because TiltCard
+       writes the inner card's transform inline. */
+    .journey-grid > .tilt-wrap {
+      animation: journey-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 80%;
+    }
+    @media (min-width: 640px) {
+      .journey-grid > .tilt-wrap:nth-child(2) {
+        animation-range: entry 15% entry 95%;
+      }
+      .journey-grid > .tilt-wrap:nth-child(3) {
+        animation-range: entry 30% entry 100%;
+      }
+    }
+
+    /* Service pictures drift slowly inside their frames while the card
+       crosses the screen. Scaled up so the drift never shows an edge. */
+    .journey-drift {
+      animation: journey-drift linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+    }
+
+    /* Featured work: screenshot card in from the left, details from the
+       right (md up). Stacked on phones, so both just rise. */
+    .work-in {
+      animation: work-in-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 90%;
+    }
+    @media (min-width: 768px) {
+      .work-in-media {
+        animation-name: work-in-left;
+      }
+      .work-in-details {
+        animation-name: work-in-right;
+      }
+    }
+
+    /* Touch screens have no hover, so the full page capture replaces the
+       carousel and scrolls with the page instead. */
+    @media (hover: none) {
+      .work-scroll-frame {
+        opacity: 1;
+        view-timeline-name: --work-frame;
+      }
+      .work-scroll-img {
+        transition: none;
+        animation: work-drift linear both;
+        animation-timeline: --work-frame;
+        animation-range: cover 20% cover 80%;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-trace rect {
+    stroke-dashoffset: 0;
+    opacity: 0.45;
+  }
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}
+
+/* Page to page fade (the ViewTransition in layout.tsx). The old page's
+   content drops out at once and the new one fades up, while the navbar,
+   footer, and background crossfade underneath as the root. The group is
+   not animated, so pages of different heights never stretch or slide. */
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-group(page) {
+  animation: none;
+}
+::view-transition-old(page) {
+  display: none;
+}
+::view-transition-new(page) {
+  animation: page-in 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+@keyframes hero-shimmer {
+  to {
+    background-position: 0% 0, 0 0;
+  }
+}
+
+@keyframes hero-cta-shine {
+  to {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes cta-trace {
+  0% {
+    stroke-dashoffset: 1;
+    opacity: 1;
+  }
+  80% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.45;
+  }
+}
+
+@keyframes journey-in {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes journey-drift {
+  from {
+    transform: scale(1.14) translateY(-5%);
+  }
+  to {
+    transform: scale(1.14) translateY(5%);
+  }
+}
+
+@keyframes work-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes work-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-56px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes work-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(56px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes work-drift {
+  to {
+    transform: translateY(calc(-100% + 100cqh));
+  }
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
 }
