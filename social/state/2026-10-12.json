@@ -1,22 +1,38 @@
 {
   "2026-10-12 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ac91655cb5a8140da216620",
+    "buffer": "6acaa444b07d37ac9786bc3f",
     "post": "2026-10-12-ai-meeting-notes",
-    "due": "2026-10-12T08:00:00-04:00"
+    "due": "2026-10-12T08:00:00-04:00",
+    "fmt": "reel"
   },
   "2026-10-12 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ac91656ea458ceb9a53a102",
+    "buffer": "6acaa444c4de2d2b123d4154",
     "post": "2026-10-12-invoice-same-day",
-    "due": "2026-10-12T12:30:00-04:00"
+    "due": "2026-10-12T12:30:00-04:00",
+    "fmt": "reel"
   },
   "2026-10-12 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ac9165657c4b87d9cfb4b5f",
+    "buffer": "6acaa445ed92ed8fa5dff583",
     "post": "2026-10-12-thank-you-note",
-    "due": "2026-10-12T19:00:00-04:00"
+    "due": "2026-10-12T19:00:00-04:00",
+    "fmt": "reel"
   },
   "2026-10-13 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6aca1631d9cab260a7bed4d4",
+    "buffer": "6acaa446f91f772d45a756a9",
     "post": "2026-10-13-separate-accounts",
-    "due": "2026-10-13T08:00:00-04:00"
+    "due": "2026-10-13T08:00:00-04:00",
+    "fmt": "reel"
+  },
+  "2026-10-13 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6acaa447ed92ed8fa5dff5ae",
+    "post": "2026-10-13-protect-first-hour",
+    "due": "2026-10-13T12:30:00-04:00",
+    "fmt": "reel"
+  },
+  "2026-10-13 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6acaa448ed92ed8fa5dff5d8",
+    "post": "2026-10-13-ai-faq-answers",
+    "due": "2026-10-13T19:00:00-04:00",
+    "fmt": "reel"
   }
 }
