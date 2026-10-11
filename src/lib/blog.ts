@@ -597,6 +597,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "review-response-templates-that-dont-sound-robotic",
   "what-to-do-about-a-fake-or-unfair-review",
   "building-reputation-before-you-have-many-reviews",
+  "review-generation-software-explained",
+  "psychology-of-why-customers-trust-reviews",
+  "turning-reviews-into-marketing-content",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
