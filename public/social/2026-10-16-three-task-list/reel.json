@@ -1,5 +1,5 @@
 {
-  "seconds": 33.14,
+  "seconds": 34.28,
   "cover_ms": 3400,
   "look": "blueprint",
   "motion": {
@@ -10,5 +10,6 @@
     "cta": "shine",
     "change": "slide",
     "scene": "aurora"
-  }
+  },
+  "voice": "am_onyx"
 }

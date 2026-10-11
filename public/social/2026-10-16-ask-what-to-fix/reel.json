@@ -1,5 +1,5 @@
 {
-  "seconds": 34.34,
+  "seconds": 35.63,
   "cover_ms": 3400,
   "look": "noir",
   "motion": {
@@ -10,5 +10,6 @@
     "cta": "pulse",
     "change": "blur",
     "scene": "glow"
-  }
+  },
+  "voice": "am_onyx"
 }

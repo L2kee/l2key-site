@@ -1,5 +1,5 @@
 {
-  "seconds": 44.34,
+  "seconds": 45.63,
   "cover_ms": 3400,
   "look": "spotlight",
   "motion": {
@@ -10,5 +10,6 @@
     "cta": "trace",
     "change": "fade",
     "scene": "aurora"
-  }
+  },
+  "voice": "am_onyx"
 }

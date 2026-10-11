@@ -1,5 +1,5 @@
 {
-  "seconds": 45.9,
+  "seconds": 47.19,
   "cover_ms": 3400,
   "look": "noir",
   "motion": {
@@ -10,5 +10,6 @@
     "cta": "nudge",
     "change": "zoom",
     "scene": "aurora"
-  }
+  },
+  "voice": "am_onyx"
 }

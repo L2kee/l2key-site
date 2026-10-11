@@ -1,5 +1,5 @@
 {
-  "seconds": 41.36,
+  "seconds": 42.48,
   "cover_ms": 3400,
   "look": "cream",
   "motion": {
@@ -10,5 +10,6 @@
     "cta": "orbit",
     "change": "up",
     "scene": "particles"
-  }
+  },
+  "voice": "am_onyx"
 }
