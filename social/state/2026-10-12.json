@@ -1,44 +1,56 @@
 {
   "2026-10-12 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acaa444b07d37ac9786bc3f",
+    "buffer": "6acbd9dd7db619a291441278",
     "post": "2026-10-12-ai-meeting-notes",
     "due": "2026-10-12T08:00:00-04:00",
-    "fmt": "reel"
+    "fmt": "reel_vo"
   },
   "2026-10-12 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acaa444c4de2d2b123d4154",
+    "buffer": "6acbd9ddea568e911a39fccb",
     "post": "2026-10-12-invoice-same-day",
     "due": "2026-10-12T12:30:00-04:00",
-    "fmt": "reel"
+    "fmt": "reel_vo"
   },
   "2026-10-12 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acaa445ed92ed8fa5dff583",
+    "buffer": "6acbd9de63ff33d8c991ab74",
     "post": "2026-10-12-thank-you-note",
     "due": "2026-10-12T19:00:00-04:00",
-    "fmt": "reel"
+    "fmt": "reel_vo"
   },
   "2026-10-13 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acaa446f91f772d45a756a9",
+    "buffer": "6acbd9df7db619a2914412c2",
     "post": "2026-10-13-separate-accounts",
     "due": "2026-10-13T08:00:00-04:00",
-    "fmt": "reel"
+    "fmt": "reel_vo"
   },
   "2026-10-13 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acaa447ed92ed8fa5dff5ae",
+    "buffer": "6acbd9df8e8dd50ffc51817c",
     "post": "2026-10-13-protect-first-hour",
     "due": "2026-10-13T12:30:00-04:00",
-    "fmt": "reel"
+    "fmt": "reel_vo"
   },
   "2026-10-13 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acaa448ed92ed8fa5dff5d8",
+    "buffer": "6acbd9e07db619a291441329",
     "post": "2026-10-13-ai-faq-answers",
     "due": "2026-10-13T19:00:00-04:00",
-    "fmt": "reel"
+    "fmt": "reel_vo"
   },
   "2026-10-14 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acb6ab4b07d37ac97a2d872",
+    "buffer": "6acbd9e0ea568e911a39fd28",
     "post": "2026-10-14-three-second-rule",
     "due": "2026-10-14T08:00:00-04:00",
-    "fmt": "reel"
+    "fmt": "reel_vo"
+  },
+  "2026-10-14 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6acbd9e1a9411fbcc5569b4f",
+    "post": "2026-10-14-answer-like-customer",
+    "due": "2026-10-14T12:30:00-04:00",
+    "fmt": "reel_vo"
+  },
+  "2026-10-14 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6acbd9e2fa026cfb811054c8",
+    "post": "2026-10-14-myth-every-platform",
+    "due": "2026-10-14T19:00:00-04:00",
+    "fmt": "reel_vo"
   }
 }
