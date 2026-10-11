@@ -71,12 +71,33 @@ jobs:
           (cd /tmp/pw && npx playwright install --with-deps chromium >/dev/null)
           for f in social/*.json; do NODE_PATH=/tmp/pw/node_modules node social/render.js "$f"; done
 
+      # Narration, the Job Site Studio voice (Kokoro, am_onyx), on the CPU. Kokoro needs Python 3.12 or older.
+      # If it fails, reels still render, silent, and the next run narrates and swaps them.
+      - uses: actions/setup-python@v5
+        if: env.MODE == 'sync'
+        with:
+          python-version: "3.12"
+      - uses: actions/cache@v4
+        if: env.MODE == 'sync'
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: kokoro-voice-v1
+      - name: Narrate reels
+        if: env.MODE == 'sync'
+        continue-on-error: true
+        run: |
+          pip install -q torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "kokoro>=0.9.4" soundfile
+          python social/voice.py social/*.json --out /tmp/voice --limit 16
+
       # About 2 minutes a reel, soonest posts first. Whatever doesn't fit in the budget renders on the next run.
       - name: Render reels
         if: env.MODE == 'sync'
         run: |
           command -v ffmpeg >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null; }
-          NODE_PATH=/tmp/pw/node_modules node social/reel.js social/*.json --budget 35
+          VOICE_DIR=/tmp/voice NODE_PATH=/tmp/pw/node_modules node social/reel.js social/*.json --budget 35
 
       - name: Publish new slides to the site
         if: env.MODE == 'sync' || env.MODE == 'cleanup'

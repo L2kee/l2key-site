@@ -46,7 +46,18 @@ function plan(post, slot) {
   return pick;
 }
 
-function page(p, pick, look) {
+// Narration from social/voice.py (Kokoro, the Job Site Studio voice), if it was made for this post.
+const VOICE_DIR = process.env.VOICE_DIR || '/tmp/voice';
+// When each slide's line starts, counted from the start of that slide: after the hook lands, or after the slide change.
+const VO_LEAD = [0.4, 0.5, 0.7, 0.7, 0.7, 0.5];
+function voiceOf(id) {
+  const f = path.join(VOICE_DIR, id, 'voice.json');
+  if (!fs.existsSync(f)) return null;
+  const v = JSON.parse(fs.readFileSync(f, 'utf8'));
+  return { ...v, files: v.seconds.map((_, i) => path.join(VOICE_DIR, id, `${i}.wav`)) };
+}
+
+function page(p, pick, look, vo) {
   const promo = p.kind === 'promo';
   const wc = s => s.split(/\s+/).filter(Boolean).length;
   // Seconds on screen: the change in, the entrance, then reading time at a relaxed pace.
@@ -59,6 +70,8 @@ function page(p, pick, look) {
     ...p.steps.map(s => 0.6 + 1.2 + read(wc(s))),
     0.6 + 1.4 + read(wc(p.take)) + 2.4,
   ];
+  // With narration, every slide stays up until its line is said, plus a breath (a longer one on the last card).
+  if (vo) vo.seconds.forEach((s, i) => { dur[i] = Math.max(dur[i], VO_LEAD[i] + s + (i === dur.length - 1 ? 1.4 : 0.15)); });
   const slides = [
     `<div class="mid"><div class="kicker">${esc(p.topic)}</div><div class="hook">${wordsHtml(p.hook)}</div><div class="bar"></div></div>
      <div class="foot"><span>${promo ? '3 things we check' : 'Save this for later'}</span><span></span></div>`,
@@ -275,14 +288,25 @@ function setup({ dur, typing, pick, seed }) {
   return { total, cover: Math.min(dur[0] - 0.4, 3.4 + typing) };
 }
 
-function ffmpeg(file) {
+function ffmpeg(file, vo, dur) {
   const bin = process.env.FFMPEG || 'ffmpeg';
+  // Narration: each slide's clip delayed to where its slide starts, mixed, loudness normalized for phones,
+  // and padded with silence to the end of the video. No narration: a silent track, as before.
+  let audio = ['-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo'], map = [];
+  if (vo) {
+    const starts = dur.reduce((a, d) => (a.push(a[a.length - 1] + d), a), [0]);
+    audio = vo.files.flatMap(f => ['-i', f]);
+    const parts = vo.files.map((_, i) => `[${i + 1}:a]adelay=${Math.round((starts[i] + VO_LEAD[i]) * 1000)}:all=1[a${i}]`);
+    const mix = `${vo.files.map((_, i) => `[a${i}]`).join('')}amix=inputs=${vo.files.length}:normalize=0:dropout_transition=0,`
+      + 'loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100,aformat=channel_layouts=stereo,apad[aout]';
+    map = ['-filter_complex', [...parts, mix].join(';'), '-map', '0:v', '-map', '[aout]'];
+  }
   const p = spawn(bin, ['-loglevel', 'error', '-y', '-f', 'image2pipe', '-c:v', 'mjpeg', '-framerate', String(FPS), '-i', '-',
-    '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo', '-shortest',
+    ...audio, ...map, '-shortest',
     // Screenshots are full range JPEGs; Instagram expects TV range H.264, or blacks and golds wash out.
     '-vf', 'scale=in_range=pc:out_range=tv,format=yuv420p', '-color_range', 'tv',
     '-c:v', 'libx264', '-preset', 'slow', '-tune', 'stillimage', '-crf', '26', '-profile:v', 'high', '-r', String(FPS),
-    '-c:a', 'aac', '-b:a', '64k', '-movflags', '+faststart', file], { stdio: ['pipe', 'inherit', 'inherit'] });
+    '-c:a', 'aac', '-b:a', vo ? '128k' : '64k', '-movflags', '+faststart', file], { stdio: ['pipe', 'inherit', 'inherit'] });
   const done = new Promise((res, rej) => p.on('close', code => code ? rej(new Error('ffmpeg exited ' + code)) : res()));
   return { write: buf => new Promise(r => p.stdin.write(buf) ? r() : p.stdin.once('drain', r)), end: () => (p.stdin.end(), done) };
 }
@@ -309,20 +333,25 @@ function ffmpeg(file) {
     if (only ? id !== only : when <= now) continue;
     const dir = path.join(ROOT, 'public/social', id);
     const file = path.join(dir, 'reel.mp4');
-    if (fs.existsSync(file)) continue;
+    const vo = voiceOf(id);
+    // A reel that exists is skipped, unless it is silent and narration is now ready for it (then it is re-rendered).
+    if (fs.existsSync(file)) {
+      const info = JSON.parse(fs.readFileSync(path.join(dir, 'reel.json'), 'utf8'));
+      if (info.voice || !vo) continue;
+    }
     if (budget && Date.now() - t0 > budget) { console.log('time budget used, the rest render on the next run'); break; }
     fs.mkdirSync(dir, { recursive: true });
     const pick = plan(p, slot);
     const look = themeOf(p, slot);
     // Soft glows band into visible rings on the light looks once compressed, so those get the particles.
     if (look === 'cream' || look === 'gold') pick.scene = 'particles';
-    const { dur, typing, html } = page(p, pick, look);
+    const { dur, typing, html } = page(p, pick, look, vo);
     await tab.setContent(html, { waitUntil: 'networkidle' });
     await tab.evaluate(() => document.fonts.ready);
     const seed = [...id].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7);
     const { total, cover } = await tab.evaluate(`(${setup})(${JSON.stringify({ dur, typing, pick, seed })})`);
     const tmp = file + '.part.mp4';
-    const enc = ffmpeg(tmp);
+    const enc = ffmpeg(tmp, vo, dur);
     for (let f = 0; f < Math.ceil(total * FPS); f++) {
       await tab.evaluate(t => window.frame(t), f / FPS);
       await enc.write(await tab.screenshot({ type: 'jpeg', quality: 92 }));
@@ -331,8 +360,8 @@ function ffmpeg(file) {
     fs.renameSync(tmp, file);
     await tab.evaluate(t => window.frame(t), cover);
     await tab.screenshot({ path: path.join(dir, 'cover.jpg'), type: 'jpeg', quality: 90 });
-    fs.writeFileSync(path.join(dir, 'reel.json'), JSON.stringify({ seconds: +total.toFixed(2), cover_ms: Math.round(cover * 1000), look, motion: pick }, null, 2) + '\n');
-    console.log(`reel ${id} (${total.toFixed(1)}s) look=${look} ${Object.entries(pick).map(([k, v]) => `${k}=${v}`).join(' ')}`);
+    fs.writeFileSync(path.join(dir, 'reel.json'), JSON.stringify({ seconds: +total.toFixed(2), cover_ms: Math.round(cover * 1000), look, motion: pick, voice: vo ? vo.voice : null }, null, 2) + '\n');
+    console.log(`reel ${id} (${total.toFixed(1)}s) look=${look} voice=${vo ? vo.voice : 'none'} ${Object.entries(pick).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
   await browser.close();
 })().catch(e => { console.error(e); process.exit(1); });

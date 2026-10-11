@@ -17,7 +17,8 @@ Every post this script books is recorded in social/state/<week>.json, keyed by "
   one booked. An old post that already went out is left alone.
 - To make room for a sooner post, a later post this script booked can be unbooked; it gets rebooked later.
 
-Instagram and TikTok get each post as a reel with motion (social/reel.js renders public/social/<post id>/reel.mp4).
+Instagram and TikTok get each post as a reel with motion (social/reel.js renders public/social/<post id>/reel.mp4),
+narrated since 2026-10-11 (social/voice.py, Kokoro). A narrated reel books as "reel_vo", so a silent one gets swapped.
 A post whose reel isn't rendered yet waits for a later run, unless it's due within FALLBACK_HOURS, when it goes out
 as the image carousel instead. A booked carousel is swapped for the reel once the reel exists ("fmt" in the state).
 If Buffer refuses a reel, the carousel is booked in its place and the run fails, so GitHub emails Moe.
@@ -207,11 +208,14 @@ def sync():
 
         # Reel channels get the reel once it exists. Until then a post waits, unless it's due soon or already
         # booked as a carousel, in which case the carousel stands.
+        # A narrated reel is its own format, so a silent reel already booked gets swapped for the narrated one.
         def fmt(p, c):
-            return "reel" if c["service"] in REEL_SERVICES and has_reel(p) else "image"
+            if c["service"] in REEL_SERVICES and has_reel(p):
+                return "reel_vo" if reel_info(p).get("voice") else "reel"
+            return "image"
         slots = [
             s for s in slots
-            if s[2]["service"] not in REEL_SERVICES or fmt(s[1], s[2]) == "reel"
+            if s[2]["service"] not in REEL_SERVICES or fmt(s[1], s[2]).startswith("reel")
             or s[0] <= now + timedelta(hours=FALLBACK_HOURS) or s[4] in weeks[s[3]][1]]
 
         # Stale entries: old key format, or a slot whose post was rewritten, moved, or now has a reel.
@@ -260,7 +264,7 @@ def sync():
 
         todo = [s for s in keep if s[4] not in weeks[s[3]][1]]
         if todo:
-            wait_for_slides([p for _, p, _, _, _ in todo], [p for _, p, c, _, _ in todo if fmt(p, c) == "reel"])
+            wait_for_slides([p for _, p, _, _, _ in todo], [p for _, p, c, _, _ in todo if fmt(p, c).startswith("reel")])
         for due, p, c, path, key in todo:
             week, state, state_path = weeks[path]
             if len(booked) >= cap:
@@ -269,10 +273,10 @@ def sync():
             carousel = [{"image": {"url": f"{SITE}/social/{pid(p)}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
                         for k in range(1, 7)]
             tries = [("image", carousel, META[c["service"]](p))]
-            if fmt(p, c) == "reel":
+            if fmt(p, c).startswith("reel"):
                 reel = [{"video": {"url": f"{SITE}/social/{pid(p)}/reel.mp4",
                                    "metadata": {"thumbnailOffset": reel_info(p)["cover_ms"]}}}]
-                tries.insert(0, ("reel", reel, META.get(c["service"] + "_reel", META[c["service"]])(p)))
+                tries.insert(0, (fmt(p, c), reel, META.get(c["service"] + "_reel", META[c["service"]])(p)))
             for kind, assets, meta in tries:
                 inp = {"channelId": c["id"], "text": p["captions"][c["service"]], "assets": assets,
                        "metadata": meta, "schedulingType": "automatic",
