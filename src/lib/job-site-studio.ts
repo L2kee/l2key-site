@@ -22,7 +22,7 @@ export const FOUNDING_PAYMENT_LINK = "https://buy.stripe.com/14A00k2K2cPWbzg28Zb
 export const FOUNDING_PRICE = 29;
 export const REGULAR_PRICE = 49;
 // The founding offer closes at the end of this day (Eastern). It's a real deadline.
-export const FOUNDING_CLOSES = "Wednesday, October 14";
+export const FOUNDING_CLOSES = "Monday, October 19";
 
 // A clip path is "<request uuid>/<1..3>.<ext>". The server only accepts that shape.
 export const CLIP_PATH_PATTERN =
