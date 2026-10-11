@@ -5,6 +5,7 @@ Usage:
   python social/schedule.py inspect <id>    read one Buffer post (no changes)
   python social/schedule.py sync            book the soonest posts from every social/<week>.json
   python social/schedule.py cleanup         delete the slides and reels of posts that already went out
+  python social/schedule.py metrics         save the numbers of every sent post to social/metrics/<today>.json
 
 Buffer's free plan only holds a few scheduled posts at once (10 on this account), so sync is a refill:
 it books the soonest upcoming posts until the plan's cap is reached, and runs again every day to top up
@@ -25,7 +26,11 @@ Weekly cleanup: once a post is published, Instagram, Facebook, and TikTok keep t
 folder in public/social is dead weight. cleanup deletes every post folder dated 2 or more days ago (folders are named
 <date>-<slug>). Git history still holds the old files, but the site, the deploys, and every checkout stay small.
 
-Needs BUFFER_API_KEY for channels, inspect, and sync (a GitHub Actions secret, never printed). Slides must be live at
+Weekly metrics (for the Performance Bot): Mondays, metrics reads every sent post with Buffer's post metrics (likes,
+reach, views, whatever Buffer reports per channel) and saves one snapshot file, tying each post back to its week file
+post id through social/state. Nothing in Buffer changes.
+
+Needs BUFFER_API_KEY for channels, inspect, sync, and metrics (a GitHub Actions secret, never printed). Slides must be live at
 https://evogencyglobal.com/social/<post id>/slide-N.png (and reels at .../reel.mp4) before a post is booked.
 """
 import glob
@@ -296,6 +301,47 @@ def cleanup():
     print(f"cleanup: removed {gone} post folders dated before {cutoff}")
 
 
+def metrics():
+    posts_by_buffer = {}
+    for path in glob.glob(os.path.join(SOCIAL, "state", "*.json")):
+        for key, entry in json.load(open(path, encoding="utf-8")).items():
+            if isinstance(entry, dict):
+                posts_by_buffer[entry["buffer"]] = {"post": entry.get("post"), "fmt": entry.get("fmt", "image"), "slot": key}
+    q = """query($id: OrganizationId!, $after: String) {
+      posts(first: 50, after: $after, input: {organizationId: $id, filter: {status: [sent]}}) {
+        edges { node { id text channelId dueAt sentAt metrics { type name value unit } metricsUpdatedAt } }
+        pageInfo { hasNextPage endCursor } } }"""
+    orgs = organizations()
+    chans = {c["id"]: c for c in channels(orgs)}
+    out = []
+    for org in orgs:
+        after = None
+        while True:
+            page = gql(q, {"id": org["id"], "after": after})["posts"]
+            for e in page["edges"]:
+                n = e["node"]
+                ours = posts_by_buffer.get(n["id"], {})
+                out.append({
+                    "buffer": n["id"], "post": ours.get("post"), "fmt": ours.get("fmt"),
+                    "service": chans.get(n["channelId"], {}).get("service"), "channel": n["channelId"],
+                    "due": n["dueAt"], "sent": n["sentAt"],
+                    "first_line": (n["text"] or "").strip().splitlines()[0][:160] if (n["text"] or "").strip() else "",
+                    "metrics": {m["name"]: m["value"] for m in n.get("metrics") or []},
+                    "metric_units": {m["name"]: m["unit"] for m in n.get("metrics") or []},
+                    "metrics_updated": n.get("metricsUpdatedAt"),
+                })
+            if not page["pageInfo"]["hasNextPage"]:
+                break
+            after = page["pageInfo"]["endCursor"]
+    today = datetime.now(ET).date().isoformat()
+    path = os.path.join(SOCIAL, "metrics", today + ".json")
+    save(path, {"taken": datetime.now(ET).isoformat(timespec="minutes"), "posts": out})
+    with_numbers = sum(1 for p in out if p["metrics"])
+    print(f"metrics: {len(out)} sent posts, {with_numbers} with numbers, saved to social/metrics/{today}.json")
+    if out and not with_numbers:
+        sys.exit("Buffer returned sent posts but no metrics (plan limit or not collected yet).")
+
+
 if __name__ == "__main__":
     if sys.argv[1:2] == ["channels"]:
         channels()
@@ -304,6 +350,8 @@ if __name__ == "__main__":
         print(json.dumps(gql(q, {"id": sys.argv[2]})["post"], indent=2))
     elif sys.argv[1:2] == ["cleanup"]:
         cleanup()
+    elif sys.argv[1:2] == ["metrics"]:
+        metrics()
     elif sys.argv[1:2] == ["sync"]:
         sys.exit(sync())
     else:

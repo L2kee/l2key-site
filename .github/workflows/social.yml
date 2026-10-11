@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "sync (book posts), channels (list only), inspect (read one post, id below), or cleanup (delete posted media now)"
+        description: "sync (book posts), channels (list only), inspect (read one post, id below), cleanup (delete posted media now), or metrics (save sent post numbers now)"
         default: sync
       post:
         description: "Buffer post id, for inspect only"
@@ -54,6 +54,16 @@ jobs:
           [ "$MODE" = cleanup ] || [ "$(TZ=America/New_York date +%u)" = 1 ] || exit 0
           python3 social/schedule.py cleanup
 
+      # Mondays (and on demand), save the numbers of every sent post for the Performance Bot. A metrics failure
+      # never blocks booking.
+      - name: Weekly post metrics
+        if: env.MODE == 'metrics' || (env.MODE == 'sync' && github.event_name == 'schedule')
+        continue-on-error: true
+        run: |
+          [ "$MODE" = metrics ] || [ "$(TZ=America/New_York date +%u)" = 1 ] || exit 0
+          [ "$MODE" = metrics ] || [ ! -e "social/metrics/$(TZ=America/New_York date +%F).json" ] || exit 0
+          python3 social/schedule.py metrics
+
       - name: Render slides
         if: env.MODE == 'sync'
         run: |
@@ -86,12 +96,14 @@ jobs:
         if: env.MODE == 'sync'
         run: python3 social/schedule.py sync
 
-      - name: Save Buffer post ids
-        if: always() && env.MODE == 'sync'
+      - name: Save Buffer post ids and metrics
+        if: always() && (env.MODE == 'sync' || env.MODE == 'metrics')
         run: |
-          git add social/state 2>/dev/null || exit 0
+          git config user.name "Social Posts"
+          git config user.email "actions@users.noreply.github.com"
+          for d in social/state social/metrics; do [ -d "$d" ] && git add "$d"; done; true
           git diff --cached --quiet && exit 0
-          git commit -m "Social: Buffer post ids"
+          git commit -m "Social: Buffer post ids and metrics"
           for i in 1 2 3 4; do
             { git pull --rebase origin master || { git rebase --abort; exit 1; }; } && git push origin HEAD:master && exit 0
             sleep $((i * 5))
