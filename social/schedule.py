@@ -18,7 +18,8 @@ Every post this script books is recorded in social/state/<week>.json, keyed by "
 - To make room for a sooner post, a later post this script booked can be unbooked; it gets rebooked later.
 
 Instagram and TikTok get each post as a reel with motion (social/reel.js renders public/social/<post id>/reel.mp4),
-narrated since 2026-10-11 (social/voice.py, Kokoro). A narrated reel books as "reel_vo", so a silent one gets swapped.
+narrated since 2026-10-11 (social/voice.py, Kokoro). A narrated reel books as "reel_vo" plus its voice (plain "reel_vo"
+for the first voice, am_onyx), so a silent reel, or one in an old voice, gets swapped once the new one is live.
 A post whose reel isn't rendered yet waits for a later run, unless it's due within FALLBACK_HOURS, when it goes out
 as the image carousel instead. A booked carousel is swapped for the reel once the reel exists ("fmt" in the state).
 If Buffer refuses a reel, the carousel is booked in its place and the run fails, so GitHub emails Moe.
@@ -106,10 +107,12 @@ def pid(p):
     return p.get("id") or p["date"]
 
 
-def live(url):
+def live(url, size=None):
+    """The file is served. With size, it must be this exact file, not an older one still at the same URL."""
     try:
         with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=30) as r:
-            return r.status == 200 and r.headers.get("Content-Type", "").startswith(("image/", "video/"))
+            return (r.status == 200 and r.headers.get("Content-Type", "").startswith(("image/", "video/"))
+                    and (size is None or r.headers.get("Content-Length") == str(size)))
     except Exception:
         return False
 
@@ -125,10 +128,12 @@ def reel_info(p):
 
 
 def wait_for_slides(posts, reels=()):
-    urls = [f"{SITE}/social/{pid(p)}/slide-{k}.png" for p in posts for k in range(1, 7)]
-    urls += [f"{SITE}/social/{pid(p)}/reel.mp4" for p in reels]
+    urls = [(f"{SITE}/social/{pid(p)}/slide-{k}.png", None) for p in posts for k in range(1, 7)]
+    # A re-rendered reel replaces one at the same URL, so wait for this exact file, or Buffer gets the old video.
+    urls += [(f"{SITE}/social/{pid(p)}/reel.mp4",
+              os.path.getsize(os.path.join(SOCIAL, "..", "public", "social", pid(p), "reel.mp4"))) for p in reels]
     for _ in range(40):  # up to 20 minutes for the Vercel deploy
-        missing = [u for u in urls if not live(u)]
+        missing = [u for u, size in urls if not live(u, size)]
         if not missing:
             return
         print(f"waiting for {len(missing)} slides to go live, e.g. {missing[0]}")
@@ -208,10 +213,11 @@ def sync():
 
         # Reel channels get the reel once it exists. Until then a post waits, unless it's due soon or already
         # booked as a carousel, in which case the carousel stands.
-        # A narrated reel is its own format, so a silent reel already booked gets swapped for the narrated one.
+        # A narrated reel is its own format per voice, so a silent reel, or one in an old voice, gets swapped.
         def fmt(p, c):
             if c["service"] in REEL_SERVICES and has_reel(p):
-                return "reel_vo" if reel_info(p).get("voice") else "reel"
+                voice = reel_info(p).get("voice")
+                return "reel" if not voice else "reel_vo" if voice == "am_onyx" else f"reel_vo_{voice}"
             return "image"
         slots = [
             s for s in slots

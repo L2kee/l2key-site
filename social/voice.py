@@ -1,8 +1,9 @@
 """Narrates each upcoming Reel with Kokoro, the same voice engine as the Job Site Studio pipeline.
+Every Reel is narrated in a British accent (bf_emma), Moe's standing rule since 2026-10-11.
 
-Usage:  python social/voice.py social/<week>.json [more week files] [--out <dir>] [--voice am_onyx] [--only <post id>] [--limit N]
+Usage:  python social/voice.py social/<week>.json [more week files] [--out <dir>] [--voice bf_emma] [--only <post id>] [--limit N]
 
-For every post that is still upcoming and has no narrated reel yet, writes one wav per slide plus voice.json
+For every post that is still upcoming and has no reel narrated in this voice yet, writes one wav per slide plus voice.json
 (<out>/<post id>/0.wav ... 5.wav, and the length of each) for social/reel.js. reel.js holds each slide until its
 line is said and mixes the clips into the Reel. Posts with no voice files render silent, as before.
 
@@ -43,7 +44,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("weeks", nargs="+")
     ap.add_argument("--out", default=os.environ.get("VOICE_DIR", "/tmp/voice"))
-    ap.add_argument("--voice", default="am_onyx")
+    ap.add_argument("--voice", default="bf_emma")
     ap.add_argument("--speed", type=float, default=1.0)
     ap.add_argument("--only")
     ap.add_argument("--limit", type=int, default=0, help="narrate at most this many posts, soonest first")
@@ -65,8 +66,8 @@ def main():
             if not a.only and when <= now:
                 continue
             info = os.path.join(ROOT, "public", "social", pid, "reel.json")
-            if os.path.exists(info) and json.load(open(info, encoding="utf-8")).get("voice"):
-                continue  # already narrated
+            if os.path.exists(info) and json.load(open(info, encoding="utf-8")).get("voice") == a.voice:
+                continue  # already narrated in this voice (a reel in another voice gets narrated again)
             if os.path.exists(os.path.join(a.out, pid, "voice.json")):
                 continue
             todo.append((when, pid, p))

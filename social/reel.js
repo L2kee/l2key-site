@@ -334,10 +334,10 @@ function ffmpeg(file, vo, dur) {
     const dir = path.join(ROOT, 'public/social', id);
     const file = path.join(dir, 'reel.mp4');
     const vo = voiceOf(id);
-    // A reel that exists is skipped, unless it is silent and narration is now ready for it (then it is re-rendered).
+    // A reel that exists is skipped, unless new narration is ready for it (it was silent, or voiced in another voice).
     if (fs.existsSync(file)) {
       const info = JSON.parse(fs.readFileSync(path.join(dir, 'reel.json'), 'utf8'));
-      if (info.voice || !vo) continue;
+      if (!vo || info.voice === vo.voice) continue;
     }
     if (budget && Date.now() - t0 > budget) { console.log('time budget used, the rest render on the next run'); break; }
     fs.mkdirSync(dir, { recursive: true });
