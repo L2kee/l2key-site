@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowRight, Check, ShieldCheck } from "lucide-react";
 import { ClipRequestForm } from "@/components/clip-request-form";
+import { SampleReel } from "@/components/sample-reel";
 import {
   BASE_PATH,
   FOUNDING_CLOSES,
@@ -29,6 +30,16 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/og-image.png"] },
 };
+
+// Sample edits from stock footage (Pexels, free for commercial use), each
+// marked SAMPLE in the corner. Source renders live in D:\Job Site Studio\Samples.
+const SAMPLES = [
+  { slug: "1-plumbing-drip-tip", trade: "Plumbing", hook: "That drip is costing you" },
+  { slug: "2-roofing-storm-ready", trade: "Roofing", hook: "Hurricane season isn't over" },
+  { slug: "5-pressure-washing-not-dirt", trade: "Pressure washing", hook: "Those black spots aren't dirt" },
+  { slug: "3-detailing-foam-bath", trade: "Detailing", hook: "The foam bath your car deserves" },
+  { slug: "4-lawn-mowing-height", trade: "Lawn care", hook: "Stop scalping your lawn" },
+].map(({ slug, ...s }) => ({ ...s, src: `/job-site-studio/${slug}.mp4`, poster: `/job-site-studio/${slug}.jpg` }));
 
 const STEPS = [
   {
@@ -137,6 +148,17 @@ export default function JobSiteStudioPage() {
             Send 3 Clips, Get 3 Free Videos <ArrowRight size={20} />
           </a>
         </header>
+
+        <section aria-labelledby="samples-heading" className="mt-14">
+          <h2 id="samples-heading" className="text-center text-2xl font-bold text-[#f0c14b] sm:text-3xl">
+            See what you get back
+          </h2>
+          <p className="mx-auto mt-3 mb-6 max-w-2xl text-center text-base text-white/60">
+            Real edits from our system, made from stock footage because these aren&apos;t your jobs yet. Yours will
+            look even better, since real work always beats stock.
+          </p>
+          <SampleReel samples={SAMPLES} />
+        </section>
 
         <div className="mx-auto mt-12 max-w-2xl space-y-5">
           <p>Hey,</p>
