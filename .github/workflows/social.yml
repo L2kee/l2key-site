@@ -54,13 +54,13 @@ jobs:
           [ "$MODE" = cleanup ] || [ "$(TZ=America/New_York date +%u)" = 1 ] || exit 0
           python3 social/schedule.py cleanup
 
-      # Mondays (and on demand), save the numbers of every sent post for the Performance Bot. A metrics failure
-      # never blocks booking.
+      # Sundays (and on demand), save the numbers of every sent post, so the Performance Bot has them Monday morning.
+      # A metrics failure never blocks booking.
       - name: Weekly post metrics
         if: env.MODE == 'metrics' || (env.MODE == 'sync' && github.event_name == 'schedule')
         continue-on-error: true
         run: |
-          [ "$MODE" = metrics ] || [ "$(TZ=America/New_York date +%u)" = 1 ] || exit 0
+          [ "$MODE" = metrics ] || [ "$(TZ=America/New_York date +%u)" = 7 ] || exit 0
           [ "$MODE" = metrics ] || [ ! -e "social/metrics/$(TZ=America/New_York date +%F).json" ] || exit 0
           python3 social/schedule.py metrics
 

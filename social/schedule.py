@@ -26,7 +26,7 @@ Weekly cleanup: once a post is published, Instagram, Facebook, and TikTok keep t
 folder in public/social is dead weight. cleanup deletes every post folder dated 2 or more days ago (folders are named
 <date>-<slug>). Git history still holds the old files, but the site, the deploys, and every checkout stay small.
 
-Weekly metrics (for the Performance Bot): Mondays, metrics reads every sent post with Buffer's post metrics (likes,
+Weekly metrics (for the Performance Bot): Sundays, metrics reads every sent post with Buffer's post metrics (likes,
 reach, views, whatever Buffer reports per channel) and saves one snapshot file, tying each post back to its week file
 post id through social/state. Nothing in Buffer changes.
 
