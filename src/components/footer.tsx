@@ -81,7 +81,7 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-white/60">
               {PAGES.map((p) => (
                 <li key={p.href}>
-                  <Link href={p.href} className="transition hover:text-white">
+                  <Link href={p.href} className="link-grow transition hover:text-white">
                     {p.label}
                   </Link>
                 </li>

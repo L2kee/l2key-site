@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Menu, X, Phone, Mail, CalendarClock } from "lucide-react";
+import { Phone, Mail, CalendarClock } from "lucide-react";
 import { isFunnelPath } from "@/lib/funnel-paths";
 
 const LINKS = [
@@ -24,22 +24,24 @@ function NavLink({
   href,
   className,
   onClick,
+  style,
   children,
 }: {
   href: string;
   className: string;
   onClick?: () => void;
+  style?: React.CSSProperties;
   children: React.ReactNode;
 }) {
   if (EXTERNAL_ROUTES.has(href)) {
     return (
-      <a href={href} className={className} onClick={onClick}>
+      <a href={href} className={className} onClick={onClick} style={style}>
         {children}
       </a>
     );
   }
   return (
-    <Link href={href} className={className} onClick={onClick}>
+    <Link href={href} className={className} onClick={onClick} style={style}>
       {children}
     </Link>
   );
@@ -47,7 +49,14 @@ function NavLink({
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  // A tapped menu link closes the menu without animating, so it never
+  // fights the page crossfade (.menu-instant in globals.css).
+  const [instant, setInstant] = useState(false);
   const [hidden, setHidden] = useState(false);
+  const closeForNav = () => {
+    setInstant(true);
+    setOpen(false);
+  };
   const lastY = useRef(0);
 
   useEffect(() => {
@@ -96,7 +105,7 @@ export function Navbar() {
               <NavLink
                 key={l.href}
                 href={l.href}
-                className="text-sm font-medium text-white/70 transition hover:text-white"
+                className="link-grow text-sm font-medium text-white/70 transition hover:text-white"
               >
                 {l.label}
               </NavLink>
@@ -108,67 +117,77 @@ export function Navbar() {
           </Link>
 
           <button
-            onClick={() => setOpen(true)}
+            onClick={() => {
+              setInstant(false);
+              setOpen(true);
+            }}
             aria-label="Open menu"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#f0c14b]/50 hover:text-[#f0c14b] sm:hidden"
+            aria-expanded={open}
+            className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#f0c14b]/50 hover:text-[#f0c14b] sm:hidden"
           >
-            <Menu size={20} />
+            <i /><i /><i />
           </button>
         </nav>
       </header>
 
-      {open && (
-        <div className="fixed inset-0 z-[60] flex flex-col bg-black/98 backdrop-blur-xl sm:hidden">
-          <div className="flex items-center justify-between px-6 pt-7">
-            <span className="flex items-center gap-2.5">
-              <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={32} height={32} className="h-8 w-8 object-contain" />
-              <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
-            </span>
-            <button
-              onClick={() => setOpen(false)}
-              aria-label="Close menu"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white"
+      {/* Always mounted so it can spread out from the menu button and fold
+          back into it (.menu-overlay in globals.css). The top row sits exactly
+          where the navbar's logo and button are, so the button's three lines
+          fold into the X in place. */}
+      <div
+        inert={!open}
+        className={`menu-overlay fixed inset-0 z-[60] flex flex-col bg-black sm:hidden ${open ? "is-open" : ""} ${instant ? "menu-instant" : ""}`}
+      >
+        <div className="flex items-center justify-between px-[33px] pt-[27px]">
+          <span className="flex items-center gap-2.5">
+            <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={36} height={36} className="h-9 w-9 object-contain" />
+            <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
+          </span>
+          <button
+            onClick={() => setOpen(false)}
+            aria-label="Close menu"
+            className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white"
+          >
+            <i /><i /><i />
+          </button>
+        </div>
+
+        <nav className="flex flex-1 flex-col justify-center gap-2 px-8">
+          {LINKS.map((l, i) => (
+            <NavLink
+              key={l.href}
+              href={l.href}
+              onClick={closeForNav}
+              style={{ "--m": i } as React.CSSProperties}
+              className="menu-item border-b border-white/10 py-4 text-3xl font-semibold text-white hover:text-[#f0c14b]"
             >
-              <X size={20} />
-            </button>
-          </div>
+              {l.label}
+            </NavLink>
+          ))}
+        </nav>
 
-          <nav className="flex flex-1 flex-col justify-center gap-2 px-8">
-            {LINKS.map((l) => (
-              <NavLink
-                key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="border-b border-white/10 py-4 text-3xl font-semibold text-white transition hover:text-[#f0c14b]"
-              >
-                {l.label}
-              </NavLink>
-            ))}
-          </nav>
-
-          <div className="px-8 pb-10">
-            <Link href="/contact" onClick={() => setOpen(false)} className="btn-solid w-full justify-center">
-              Get a Free Audit
-            </Link>
-            <div className="mt-6 flex flex-col gap-3 text-sm text-white/60">
-              <a href="tel:+18138971954" className="flex items-center gap-3 transition hover:text-white">
-                <Phone size={16} style={{ color: "#f0c14b" }} /> (813) 897-1954
-              </a>
-              <a href="mailto:hello@evogencyglobal.com" className="flex items-center gap-3 transition hover:text-white">
-                <Mail size={16} style={{ color: "#f0c14b" }} /> hello@evogencyglobal.com
-              </a>
-              <a
-                href="https://calendly.com/mohamed-eltoukhy011/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 transition hover:text-white"
-              >
-                <CalendarClock size={16} style={{ color: "#f0c14b" }} /> Book a call
-              </a>
-            </div>
+        <div className="menu-item px-8 pb-10" style={{ "--m": LINKS.length } as React.CSSProperties}>
+          <Link href="/contact" onClick={closeForNav} className="btn-solid w-full justify-center">
+            Get a Free Audit
+          </Link>
+          <div className="mt-6 flex flex-col gap-3 text-sm text-white/60">
+            <a href="tel:+18138971954" className="flex items-center gap-3 transition hover:text-white">
+              <Phone size={16} style={{ color: "#f0c14b" }} /> (813) 897-1954
+            </a>
+            <a href="mailto:hello@evogencyglobal.com" className="flex items-center gap-3 transition hover:text-white">
+              <Mail size={16} style={{ color: "#f0c14b" }} /> hello@evogencyglobal.com
+            </a>
+            <a
+              href="https://calendly.com/mohamed-eltoukhy011/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 transition hover:text-white"
+            >
+              <CalendarClock size={16} style={{ color: "#f0c14b" }} /> Book a call
+            </a>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 }

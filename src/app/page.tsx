@@ -91,9 +91,10 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
             Let&apos;s get your business found online
           </h2>
-          <p className="mx-auto mt-3 max-w-md text-white/65">
+          <p className="mark-scope mx-auto mt-3 max-w-md text-white/65">
             Free, no pressure audit of your current site and Google presence.
-            We&apos;ll tell you exactly what&apos;s costing you customers.
+            We&apos;ll tell you{" "}
+            <mark className="mark-sweep">exactly what&apos;s costing you customers.</mark>
           </p>
           <div className="mt-8 flex justify-center">
             <Link href="/contact" className="btn-solid">

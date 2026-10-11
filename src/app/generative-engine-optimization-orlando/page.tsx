@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
+import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
 import { servicePageGraph } from "@/lib/schema";
 
@@ -147,14 +148,7 @@ export default function GenerativeEngineOptimizationOrlandoPage() {
 
       <div className="mt-20">
         <SectionHeading eyebrow="Frequently asked" title="Generative engine optimization: the honest answers" />
-        <div className="mt-10 space-y-6">
-          {FAQ.map((item) => (
-            <TiltCard key={item.q} className="glass rounded-2xl p-6">
-              <h3 className="text-base font-semibold text-white">{item.q}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">{item.a}</p>
-            </TiltCard>
-          ))}
-        </div>
+        <FaqList items={FAQ} />
       </div>
     </div>
   );

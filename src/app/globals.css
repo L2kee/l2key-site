@@ -614,3 +614,317 @@ body {
     transform: translateY(10px);
   }
 }
+
+/* ===== Light motion pass 2 (2026-10-10). Pure CSS. Anything decorative
+   sits behind no-preference, so reduced motion visitors get the same
+   content with no movement. ===== */
+
+/* FAQ drawers (faq-list.tsx). Browsers with ::details-content and
+   interpolate-size glide the answer open, the rest open instantly. */
+.faq > summary {
+  list-style: none;
+}
+.faq > summary::-webkit-details-marker {
+  display: none;
+}
+.faq[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* Floating labels (float-field.tsx). top is fixed px, not %, so an error
+   line under the box never moves the label. */
+.float-field {
+  position: relative;
+  display: block;
+}
+.float-label {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  top: 29px;
+  transform: translateY(-50%);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  color: rgb(255 255 255 / 0.5);
+  pointer-events: none;
+}
+.float-field:has(input:not(:placeholder-shown)) .float-label,
+.float-field:has(select) .float-label {
+  top: 15px;
+  font-size: 0.75rem;
+  color: rgb(255 255 255 / 0.6);
+}
+.float-field:has(input:-webkit-autofill) .float-label {
+  top: 15px;
+  font-size: 0.75rem;
+}
+.float-field:focus-within .float-label {
+  top: 15px;
+  font-size: 0.75rem;
+  color: #f0c14b;
+}
+.float-field:has(:disabled) .float-label {
+  opacity: 0.4;
+}
+
+/* Success check (drawn-check.tsx). Drawn by default. */
+.drawn-check circle,
+.drawn-check path {
+  fill: none;
+  stroke: #f0c14b;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+}
+
+/* Highlighter on the one phrase that sells (homepage closing CTA). Shown in
+   full by default, swept in where view timelines exist. The timeline lives
+   on the paragraph because an inline box is a shaky timeline subject. */
+.mark-sweep {
+  color: #fff;
+  padding: 0 0.1em;
+  background: linear-gradient(rgb(240 193 75 / 0.38), rgb(240 193 75 / 0.38)) no-repeat 0 88% / 100% 0.45em;
+}
+.mark-scope {
+  view-timeline-name: --mark;
+}
+
+/* Mobile menu (navbar.tsx). Always mounted so it can animate both ways,
+   hidden and inert while closed. */
+.menu-overlay {
+  visibility: hidden;
+}
+.menu-overlay.is-open {
+  visibility: visible;
+}
+/* Tapping a link closes the menu at once, so it never fights the page
+   crossfade on the way out. */
+.menu-overlay.menu-instant,
+.menu-overlay.menu-instant .menu-item,
+.menu-overlay.menu-instant .burger i {
+  transition: none !important;
+}
+.burger {
+  position: relative;
+}
+.burger i {
+  position: absolute;
+  left: 11px;
+  right: 11px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+.burger i:nth-child(1) { top: 13px; }
+.burger i:nth-child(2) { top: 18px; }
+.burger i:nth-child(3) { top: 23px; }
+.is-open .burger i:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+.is-open .burger i:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.is-open .burger i:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+
+/* Growing underline on text links (desktop nav, footer pages). */
+.link-grow {
+  padding-bottom: 2px;
+  background: linear-gradient(#f0c14b, #f0c14b) no-repeat right bottom / 0% 1px;
+}
+.link-grow:hover,
+.link-grow:focus-visible {
+  background-position: left bottom;
+  background-size: 100% 1px;
+}
+
+/* Glass buttons fill with gold from the left on hover. Unlayered, so it
+   beats the text-white utility on the buttons. */
+.btn-glass {
+  isolation: isolate;
+  overflow: clip;
+}
+.btn-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #f0c14b, #c9922c);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+@media (hover: hover) {
+  .btn-glass:hover {
+    color: #241a05;
+  }
+  .btn-glass:hover::before {
+    transform: none;
+  }
+  .btn-glass:hover > svg:last-child,
+  .btn-solid:hover > svg:last-child {
+    transform: translateX(4px);
+  }
+}
+
+/* Masked line rise (section-heading.tsx, reveal). Each line rises out of
+   its own clip. The padding keeps descenders out of the clip, the negative
+   margin keeps the spacing as it was. */
+.mask-line {
+  display: block;
+  overflow: clip;
+  padding-bottom: 0.12em;
+  margin-bottom: -0.12em;
+}
+.mask-line > span {
+  display: block;
+}
+
+/* Blog reading progress. Scroll feedback, not decoration, so it shows for
+   everyone in browsers with scroll timelines and stays off elsewhere. */
+.read-progress {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 55;
+  height: 3px;
+  background: linear-gradient(90deg, #f0c14b, #3fc8d8);
+  transform-origin: left;
+  transform: scaleX(0);
+  pointer-events: none;
+}
+@supports (animation-timeline: scroll()) {
+  .read-progress {
+    display: block;
+    animation: read-progress linear both;
+    animation-timeline: scroll(root);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Only where interpolate-size exists. Safari has ::details-content
+     without it, and that pair leaves the answer stuck at zero height. */
+  @supports (interpolate-size: allow-keywords) {
+    .faq {
+      interpolate-size: allow-keywords;
+    }
+    .faq::details-content {
+      block-size: 0;
+      overflow: clip;
+      transition: block-size 450ms cubic-bezier(0.22, 1, 0.36, 1), content-visibility 450ms allow-discrete;
+    }
+    .faq[open]::details-content {
+      block-size: auto;
+    }
+  }
+  .faq-icon {
+    transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .float-label {
+    transition: top 200ms cubic-bezier(0.22, 1, 0.36, 1), font-size 200ms ease, color 200ms ease;
+  }
+
+  .drawn-check circle {
+    animation: check-draw 700ms cubic-bezier(0.65, 0, 0.35, 1) both;
+  }
+  .drawn-check path {
+    animation: check-draw 450ms cubic-bezier(0.65, 0, 0.35, 1) 600ms both;
+  }
+  .drawn-check {
+    animation: check-pop 400ms cubic-bezier(0.34, 1.56, 0.64, 1) 1000ms;
+  }
+
+  /* The menu spreads out in a circle from the menu button, the links
+     slide in one by one, and the icon folds into an X. */
+  .menu-overlay {
+    clip-path: circle(0px at calc(100% - 53px) 47px);
+    transition: clip-path 550ms cubic-bezier(0.65, 0, 0.35, 1), visibility 0s linear 550ms;
+  }
+  .menu-overlay.is-open {
+    clip-path: circle(150vmax at calc(100% - 53px) 47px);
+    transition: clip-path 550ms cubic-bezier(0.65, 0, 0.35, 1), visibility 0s;
+  }
+  .menu-item {
+    opacity: 0;
+    transform: translateX(-18px);
+    transition: opacity 250ms ease, transform 350ms cubic-bezier(0.22, 1, 0.36, 1), color 150ms ease;
+  }
+  .menu-overlay.is-open .menu-item {
+    opacity: 1;
+    transform: none;
+    transition-delay: calc(180ms + var(--m, 0) * 55ms), calc(180ms + var(--m, 0) * 55ms), 0s;
+  }
+  .burger i {
+    transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1) 150ms, opacity 200ms ease 150ms;
+  }
+
+  .link-grow {
+    transition: background-size 350ms cubic-bezier(0.22, 1, 0.36, 1), color 150ms ease;
+  }
+
+  .btn-glass::before {
+    transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .btn-glass {
+    transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease, color 300ms ease;
+  }
+  .btn-glass > svg:last-child,
+  .btn-solid > svg:last-child {
+    transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .mask-rise-load .mask-line > span {
+    animation: mask-rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--i, 0) * 140ms);
+  }
+
+  @supports (animation-timeline: view()) {
+    .mark-sweep {
+      animation: mark-sweep linear both;
+      animation-timeline: --mark;
+      animation-range: entry 100% cover 55%;
+    }
+    .mask-rise-view .mask-line {
+      view-timeline-name: --mask;
+    }
+    .mask-rise-view .mask-line > span {
+      animation: mask-rise linear both;
+      animation-timeline: --mask;
+      animation-range: entry 20% entry 100%;
+    }
+  }
+}
+
+@keyframes check-draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes check-pop {
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes mark-sweep {
+  from {
+    background-size: 0% 0.45em;
+  }
+}
+
+@keyframes mask-rise {
+  from {
+    transform: translateY(105%);
+  }
+}
+
+@keyframes read-progress {
+  to {
+    transform: scaleX(1);
+  }
+}

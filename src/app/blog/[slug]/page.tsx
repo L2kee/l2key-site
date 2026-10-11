@@ -91,6 +91,7 @@ export default async function BlogPostPage({
 
   return (
     <div className="mx-auto max-w-2xl px-6 pt-28 pb-20">
+      <div className="read-progress" aria-hidden="true" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema(post)) }}

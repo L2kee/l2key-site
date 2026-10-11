@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CheckCircle2 } from "lucide-react";
+import { DrawnCheck } from "@/components/drawn-check";
 import { BASE_PATH } from "@/lib/job-site-studio";
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export default function FoundingWelcomePage() {
   return (
     <div className="mx-auto max-w-2xl px-4 pt-8 pb-20 sm:px-6">
       <div className="glass-strong rounded-3xl p-8 text-center sm:p-10">
-        <CheckCircle2 size={44} className="mx-auto text-[#f0c14b]" />
+        <DrawnCheck />
         <h1 className="mt-4 text-3xl font-bold text-white">You&apos;re a founding member.</h1>
         <p className="mx-auto mt-3 max-w-lg text-white/70">
           Your price is locked in for life. Here&apos;s what happens next.

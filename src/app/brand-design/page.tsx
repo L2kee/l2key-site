@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
+import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
 import { servicePageGraph } from "@/lib/schema";
 
@@ -133,7 +134,8 @@ export default function BrandDesignPage() {
       <SectionHeading
         as="h1"
         eyebrow="Brand design and rebrands"
-        title="A brand that looks like what you charge"
+        title={"A brand that looks\nlike what you charge"}
+        reveal
       />
       {/* Plain, quotable definition first, for readers and AI answer engines. */}
       <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
@@ -151,7 +153,7 @@ export default function BrandDesignPage() {
       </div>
 
       <div className="mt-20">
-        <SectionHeading eyebrow="What you get" title="Everything a premium brand needs to look the part" />
+        <SectionHeading eyebrow="What you get" title="Everything a premium brand needs to look the part" reveal />
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {INCLUDED.map((item) => (
             <TiltCard key={item.title} className="glass h-full rounded-2xl p-6">
@@ -163,7 +165,7 @@ export default function BrandDesignPage() {
       </div>
 
       <div className="mt-20">
-        <SectionHeading eyebrow="Who it is for" title="Three moments when a brand needs to level up" />
+        <SectionHeading eyebrow="Who it is for" title="Three moments when a brand needs to level up" reveal />
         <div className="mt-10 grid gap-6 sm:grid-cols-3">
           {WHO.map((item) => (
             <TiltCard key={item.title} className="glass h-full rounded-2xl p-6">
@@ -175,7 +177,7 @@ export default function BrandDesignPage() {
       </div>
 
       <div className="mt-20">
-        <SectionHeading eyebrow="How it works" title="A clear path from first call to final files" />
+        <SectionHeading eyebrow="How it works" title="A clear path from first call to final files" reveal />
         <div className="mt-10 space-y-8">
           {PROCESS.map((p) => (
             <div key={p.step} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
@@ -190,7 +192,7 @@ export default function BrandDesignPage() {
       </div>
 
       <div className="mt-20">
-        <SectionHeading eyebrow="Beyond the logo" title="A new brand deserves a website and search presence to match" />
+        <SectionHeading eyebrow="Beyond the logo" title="A new brand deserves a website and search presence to match" reveal />
         <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
           A beautiful identity on an outdated website is money left on the
           table. After the brand is done, we can build the{" "}
@@ -207,15 +209,8 @@ export default function BrandDesignPage() {
       </div>
 
       <div className="mt-20">
-        <SectionHeading eyebrow="Frequently asked" title="Brand design and rebranding, the honest answers" />
-        <div className="mt-10 space-y-6">
-          {FAQ.map((item) => (
-            <TiltCard key={item.q} className="glass rounded-2xl p-6">
-              <h3 className="text-base font-semibold text-white">{item.q}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">{item.a}</p>
-            </TiltCard>
-          ))}
-        </div>
+        <SectionHeading eyebrow="Frequently asked" title="Brand design and rebranding, the honest answers" reveal />
+        <FaqList items={FAQ} />
       </div>
     </div>
   );

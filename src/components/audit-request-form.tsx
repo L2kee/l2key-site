@@ -1,7 +1,9 @@
 "use client";
 
 import { useActionState, useState } from "react";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { FloatInput } from "@/components/float-field";
+import { DrawnCheck } from "@/components/drawn-check";
 import { submitAuditRequest, type AuditFormState } from "@/app/contact/actions";
 
 const initialState: AuditFormState = { status: "idle" };
@@ -11,9 +13,6 @@ const METHOD_PHRASE: Record<string, string> = {
   text: "by text",
   email: "by email",
 };
-
-const inputClass =
-  "mt-1.5 w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-white placeholder:text-white/35 outline-none transition focus:border-[#f0c14b]/70 focus:ring-2 focus:ring-[#f0c14b]/25 disabled:opacity-40";
 
 function FieldError({ message }: { message?: string }) {
   if (!message) return null;
@@ -30,7 +29,7 @@ export function AuditRequestForm() {
   if (state.status === "success") {
     return (
       <div className="py-6 text-center" role="status">
-        <CheckCircle2 size={40} className="mx-auto text-[#f0c14b]" />
+        <DrawnCheck size={44} />
         <p className="mt-4 text-xl font-semibold text-white">
           Got it{state.firstName ? `, ${state.firstName}` : ""}!
         </p>
@@ -59,40 +58,29 @@ export function AuditRequestForm() {
       {noWebsite && <input type="hidden" name="no_website" value="on" />}
 
       <div className="grid gap-5 sm:grid-cols-2">
-        <label className="block text-sm font-medium text-white/80">
-          Your name
-          <input name="name" defaultValue={values?.name} type="text" autoComplete="name" required className={inputClass} placeholder="Jane Smith" />
-          <FieldError message={errors.name} />
-        </label>
-        <label className="block text-sm font-medium text-white/80">
-          Business name
-          <input
-            name="business"
-            defaultValue={values?.business}
-            type="text"
-            autoComplete="organization"
-            required
-            className={inputClass}
-            placeholder="Smith Plumbing"
-          />
-          <FieldError message={errors.business} />
-        </label>
+        <FloatInput label="Your name" name="name" defaultValue={values?.name} type="text" autoComplete="name" required error={errors.name} />
+        <FloatInput
+          label="Business name"
+          name="business"
+          defaultValue={values?.business}
+          type="text"
+          autoComplete="organization"
+          required
+          error={errors.business}
+        />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-white/80">
-          Website <span className="font-normal text-white/45">(if you have one)</span>
-          <input
-            name="website"
-            defaultValue={values?.website}
-            type="text"
-            inputMode="url"
-            autoComplete="url"
-            disabled={noWebsite}
-            className={inputClass}
-            placeholder="yourbusiness.com"
-          />
-        </label>
+        <FloatInput
+          label="Website"
+          hint="(if you have one)"
+          name="website"
+          defaultValue={values?.website}
+          type="text"
+          inputMode="url"
+          autoComplete="url"
+          disabled={noWebsite}
+        />
         <label className="mt-2 inline-flex items-center gap-2 text-sm text-white/65">
           <input
             type="checkbox"
@@ -106,25 +94,17 @@ export function AuditRequestForm() {
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
-        <label className="block text-sm font-medium text-white/80">
-          Phone number
-          <input name="phone" defaultValue={values?.phone} type="tel" autoComplete="tel" required className={inputClass} placeholder="(407) 555 0123" />
-          <FieldError message={errors.phone} />
-        </label>
-        <label className="block text-sm font-medium text-white/80">
-          Email{" "}
-          {contact !== "email" && <span className="font-normal text-white/45">(if you have one)</span>}
-          <input
-            name="email"
-            defaultValue={values?.email}
-            type="email"
-            autoComplete="email"
-            required={contact === "email"}
-            className={inputClass}
-            placeholder="jane@smithplumbing.com"
-          />
-          <FieldError message={errors.email} />
-        </label>
+        <FloatInput label="Phone number" name="phone" defaultValue={values?.phone} type="tel" autoComplete="tel" required error={errors.phone} />
+        <FloatInput
+          label="Email"
+          hint={contact !== "email" ? "(if you have one)" : undefined}
+          name="email"
+          defaultValue={values?.email}
+          type="email"
+          autoComplete="email"
+          required={contact === "email"}
+          error={errors.email}
+        />
       </div>
 
       <fieldset>

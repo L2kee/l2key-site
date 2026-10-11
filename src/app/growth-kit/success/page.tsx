@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { CalendarClock, CheckCircle2, FileText, FileType } from "lucide-react";
+import { CalendarClock, FileText, FileType } from "lucide-react";
+import { DrawnCheck } from "@/components/drawn-check";
 import { getCheckoutSession, isFulfillable } from "@/lib/stripe";
 import { BOOKING_URL, KIT_PRODUCT_KEY } from "@/lib/growth-kit";
 
@@ -44,7 +45,7 @@ export default async function GrowthKitSuccessPage({ searchParams }: PageProps<"
   return (
     <div className="mx-auto max-w-3xl space-y-6 px-4 pt-8 pb-20 sm:px-6">
       <div className="glass-strong rounded-3xl p-8 text-center sm:p-10">
-        <CheckCircle2 size={44} className="mx-auto text-[#f0c14b]" />
+        <DrawnCheck />
         <h1 className="mt-4 text-3xl font-bold text-white">You&apos;re in{firstName ? `, ${firstName}` : ""}!</h1>
         <p className="mx-auto mt-3 max-w-lg text-white/70">
           Here&apos;s your Home Service Growth Kit. We also emailed you these links so you can grab them anytime.

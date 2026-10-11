@@ -13,11 +13,9 @@ import {
   MAX_CLIPS,
 } from "@/lib/job-site-studio";
 import { TRADES } from "@/lib/trades";
+import { FloatInput, FloatSelect } from "@/components/float-field";
 
 type Field = "firstName" | "business" | "trade" | "phone" | "email" | "city" | "clips";
-
-const inputClass =
-  "mt-1.5 w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-white placeholder:text-white/35 outline-none transition focus:border-[#f0c14b]/70 focus:ring-2 focus:ring-[#f0c14b]/25";
 
 const EXTENSIONS: Record<string, string> = {
   "video/mp4": "mp4",
@@ -209,21 +207,11 @@ export function ClipRequestForm() {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <label className="block text-sm font-medium text-white/80">
-          First name
-          <input name="firstName" autoComplete="given-name" className={inputClass} placeholder="Mike" disabled={busy} />
-          <FieldError message={errors.firstName} />
-        </label>
-        <label className="block text-sm font-medium text-white/80">
-          Business name
-          <input name="business" autoComplete="organization" className={inputClass} placeholder="Smith Plumbing" disabled={busy} />
-          <FieldError message={errors.business} />
-        </label>
+        <FloatInput label="First name" name="firstName" autoComplete="given-name" disabled={busy} error={errors.firstName} />
+        <FloatInput label="Business name" name="business" autoComplete="organization" disabled={busy} error={errors.business} />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <label className="block text-sm font-medium text-white/80">
-          Your trade
-          <select name="trade" defaultValue="" className={inputClass} disabled={busy}>
+        <FloatSelect label="Your trade" name="trade" defaultValue="" disabled={busy} error={errors.trade}>
             <option value="" disabled>
               Pick one
             </option>
@@ -232,25 +220,12 @@ export function ClipRequestForm() {
                 {t}
               </option>
             ))}
-          </select>
-          <FieldError message={errors.trade} />
-        </label>
-        <label className="block text-sm font-medium text-white/80">
-          City you serve
-          <input name="city" autoComplete="address-level2" className={inputClass} placeholder="Orlando" disabled={busy} />
-        </label>
+        </FloatSelect>
+        <FloatInput label="City you serve" name="city" autoComplete="address-level2" disabled={busy} />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <label className="block text-sm font-medium text-white/80">
-          Cell phone
-          <input name="phone" type="tel" autoComplete="tel" className={inputClass} placeholder="(407) 555 0123" disabled={busy} />
-          <FieldError message={errors.phone} />
-        </label>
-        <label className="block text-sm font-medium text-white/80">
-          Email (your videos go here)
-          <input name="email" type="email" autoComplete="email" className={inputClass} placeholder="mike@smithplumbing.com" disabled={busy} />
-          <FieldError message={errors.email} />
-        </label>
+        <FloatInput label="Cell phone" name="phone" type="tel" autoComplete="tel" disabled={busy} error={errors.phone} />
+        <FloatInput label="Email" hint="(your videos go here)" name="email" type="email" autoComplete="email" disabled={busy} error={errors.email} />
       </div>
 
       {message && (
