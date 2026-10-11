@@ -303,11 +303,22 @@ body {
 }
 
 /* Homepage motion. Everything that moves sits behind no-preference, so
-   reduced motion visitors get the static page. The hero lines rise and
-   sharpen out of a blur in order (--i, set in page.tsx), the headline
-   starting at 0ms so the largest paint isn't held back. The entrance runs
-   on the CTA's wrapper, not the button: a transform held by an animation
-   would beat .btn-solid:hover and kill the hover lift. */
+   reduced motion visitors get the static page. The headline drops in
+   letter by letter with a bounce (drop-letters.tsx, --l), then the lines
+   under it rise and sharpen out of a blur in order (--i, set in page.tsx)
+   from --hero-delay on. The hero video is the largest paint, not the
+   headline, so the letters don't hold it back (measured 2026-10-11). The
+   entrance runs on the CTA's wrapper, not the button: a transform held by
+   an animation would beat .btn-solid:hover and kill the hover lift. */
+
+/* The gold line's letters each carry the gradient, because a gradient
+   clipped to the whole line breaks once its letters move on their own. */
+.hero-gold {
+  background-image: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 /* Static base for the work card full page scroll (work-card.tsx). Hidden
    until a hover (desktop) or the touch rules below show it. container-type
@@ -351,34 +362,41 @@ body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .hero-letter {
+    display: inline-block;
+    animation: hero-letter 700ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    animation-delay: calc(var(--l, 0) * 38ms);
+  }
+
+  /* Once the last letter lands, a glint runs across the gold line one
+     letter after another (its letters are --l 15 to 34). */
+  .hero-gold {
+    background-image:
+      linear-gradient(110deg, transparent 30%, rgba(255, 247, 222, 0.95) 50%, transparent 70%),
+      linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+    background-size: 300% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 0, 0 0;
+    animation:
+      hero-letter 700ms cubic-bezier(0.34, 1.56, 0.64, 1) calc(var(--l, 0) * 38ms) both,
+      hero-glint 450ms ease-in-out calc(var(--hero-delay, 0ms) + (var(--l, 0) - 15) * 30ms) both;
+  }
+
   .hero-in {
     animation: hero-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
-    animation-delay: calc(var(--i, 0) * 120ms);
+    animation-delay: calc(var(--hero-delay, 0ms) + var(--i, 0) * 120ms);
   }
 
   /* hero-reveal.tsx puts .hero-wait on the hero while it is below the
      fold. animation: none (not paused) so removing the class restarts the
      whole sequence from the first line, both glints included. */
-  .hero-wait .hero-in {
+  .hero-wait .hero-in,
+  .hero-wait .hero-letter {
     animation: none;
     opacity: 0;
   }
-  .hero-wait .hero-cta::after,
-  .hero-wait .hero-shimmer {
+  .hero-wait .hero-cta::after {
     animation: none;
-  }
-
-  /* One light sweep across the gold headline line once it lands, then the
-     same on the CTA, so the eye travels down to the button. The sweep is a
-     second background layer under the same text clip as .gradient-text. */
-  .hero-shimmer {
-    background-image:
-      linear-gradient(110deg, transparent 42%, rgba(255, 247, 222, 0.95) 50%, transparent 58%),
-      linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
-    background-size: 300% 100%, 100% 100%;
-    background-repeat: no-repeat;
-    background-position: 100% 0, 0 0;
-    animation: hero-shimmer 900ms ease-in-out 900ms both;
   }
 
   .hero-cta {
@@ -392,7 +410,7 @@ body {
     background: linear-gradient(100deg, transparent 30%, rgba(255, 248, 225, 0.75) 50%, transparent 70%);
     transform: translateX(-120%);
     pointer-events: none;
-    animation: hero-cta-shine 900ms ease-in-out 1800ms both;
+    animation: hero-cta-shine 900ms ease-in-out calc(var(--hero-delay, 0ms) + 1800ms) both;
   }
 
   /* Closing CTA: the gold line runs once around the card, then settles to
@@ -522,7 +540,18 @@ body {
   }
 }
 
-@keyframes hero-shimmer {
+@keyframes hero-letter {
+  from {
+    opacity: 0;
+    transform: translateY(-0.7em) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-glint {
   to {
     background-position: 0% 0, 0 0;
   }

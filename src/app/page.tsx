@@ -8,6 +8,7 @@ import { ServicesJourney } from "@/components/services-journey";
 import { HeroVideo } from "@/components/hero-video";
 import { HeroReveal } from "@/components/hero-reveal";
 import { CtaTrace } from "@/components/cta-trace";
+import { DropLetters } from "@/components/drop-letters";
 import { WORK } from "@/lib/content";
 
 export default function Home() {
@@ -16,13 +17,20 @@ export default function Home() {
       <HeroVideo />
 
       {/* Hero */}
-      <HeroReveal className="mx-auto flex max-w-5xl flex-col items-center px-6 pt-8 pb-16 text-center">
-        {/* Each hero-in line plays in after the one before it, --i sets
-            its place in the order (see .hero-in in globals.css). */}
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          <span className="hero-in block [--i:0]">Built to be found.</span>
-          <span className="hero-in block [--i:1]">
-            <span className="gradient-text hero-shimmer">Designed to be trusted.</span>
+      <HeroReveal className="mx-auto flex max-w-5xl flex-col items-center px-6 pt-8 pb-16 text-center [--hero-delay:2000ms]">
+        {/* The headline drops in letter by letter (35 letters, the last one
+            lands at about 2s), then each hero-in line rises after the one
+            before it, starting at --hero-delay. --i sets its place in the
+            order (see .hero-letter and .hero-in in globals.css). */}
+        <h1
+          aria-label="Built to be found. Designed to be trusted."
+          className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+        >
+          <span className="block">
+            <DropLetters text="Built to be found." />
+          </span>
+          <span className="block">
+            <DropLetters text="Designed to be trusted." start={15} letterClass="hero-gold" />
           </span>
         </h1>
 
