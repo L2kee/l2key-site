@@ -4215,7 +4215,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "What review generation software actually does, and an honest look at when a business genuinely needs it versus a simple manual system.",
     excerpt: "What review generation software actually does, and when a business genuinely needs it.",
-    date: "2026-09-18",
+    date: "2026-10-11",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -4280,7 +4280,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why customers generally trust reviews from strangers more than a business's own advertising, and what that means for how a business should invest.",
     excerpt: "Why customers trust strangers' reviews more than a business's own advertising, and what that means.",
-    date: "2026-09-18",
+    date: "2026-10-11",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -4346,7 +4346,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to ethically reuse genuine customer reviews as marketing content on a website, in ads, and on social media.",
     excerpt: "How to ethically reuse genuine customer reviews as content on a website, in ads, and on social.",
-    date: "2026-09-18",
+    date: "2026-10-11",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
