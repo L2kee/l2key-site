@@ -600,6 +600,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "review-generation-software-explained",
   "psychology-of-why-customers-trust-reviews",
   "turning-reviews-into-marketing-content",
+  "signs-your-business-has-outgrown-spreadsheets",
+  "crm-features-that-actually-matter-for-small-business",
+  "migrating-crms-without-losing-data",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

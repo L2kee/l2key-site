@@ -4414,7 +4414,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "The real signs that a business has outgrown spreadsheets and sticky notes for tracking leads and customers, and needs a real CRM.",
     excerpt: "The real signs a business has outgrown spreadsheets for tracking leads and customers.",
-    date: "2026-09-18",
+    date: "2026-10-12",
     tag: "CRM",
     relatedHref: "/custom-crm-development-orlando",
     relatedLabel: "See our CRM development service",
@@ -4485,7 +4485,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A breakdown of which CRM features genuinely matter for a small business, cutting through the long feature lists that sound impressive but go unused.",
     excerpt: "Which CRM features genuinely matter, cutting through long feature lists that sound impressive but go unused.",
-    date: "2026-09-18",
+    date: "2026-10-12",
     tag: "CRM",
     relatedHref: "/custom-crm-development-orlando",
     relatedLabel: "See our CRM development service",
@@ -4556,7 +4556,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical guide to migrating from one CRM to another without losing customer history, notes, or pipeline data in the process.",
     excerpt: "A practical guide to migrating CRMs without losing customer history, notes, or pipeline data.",
-    date: "2026-09-18",
+    date: "2026-10-12",
     tag: "CRM",
     relatedHref: "/custom-crm-development-orlando",
     relatedLabel: "See our CRM development service",
