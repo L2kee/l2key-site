@@ -1,5 +1,5 @@
 {
-  "seconds": 34.28,
+  "seconds": 34.68,
   "cover_ms": 3400,
   "look": "blueprint",
   "motion": {
@@ -11,5 +11,5 @@
     "change": "slide",
     "scene": "aurora"
   },
-  "voice": "am_onyx"
+  "voice": "bf_emma"
 }

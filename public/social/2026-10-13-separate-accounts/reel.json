@@ -1,5 +1,5 @@
 {
-  "seconds": 42.48,
+  "seconds": 43.38,
   "cover_ms": 3400,
   "look": "cream",
   "motion": {
@@ -11,5 +11,5 @@
     "change": "up",
     "scene": "particles"
   },
-  "voice": "am_onyx"
+  "voice": "bf_emma"
 }

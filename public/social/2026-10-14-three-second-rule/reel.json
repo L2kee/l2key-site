@@ -1,5 +1,5 @@
 {
-  "seconds": 45.63,
+  "seconds": 46.08,
   "cover_ms": 3400,
   "look": "spotlight",
   "motion": {
@@ -11,5 +11,5 @@
     "change": "fade",
     "scene": "aurora"
   },
-  "voice": "am_onyx"
+  "voice": "bf_emma"
 }

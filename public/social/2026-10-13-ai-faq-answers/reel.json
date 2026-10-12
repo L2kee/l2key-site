@@ -1,5 +1,5 @@
 {
-  "seconds": 39.69,
+  "seconds": 40.38,
   "cover_ms": 3400,
   "look": "blueprint",
   "motion": {
@@ -11,5 +11,5 @@
     "change": "zoom",
     "scene": "glow"
   },
-  "voice": "am_onyx"
+  "voice": "bf_emma"
 }
