@@ -1,5 +1,5 @@
 {
-  "seconds": 39.34,
+  "seconds": 39.58,
   "cover_ms": 3400,
   "look": "teal",
   "motion": {
@@ -11,5 +11,5 @@
     "change": "fade",
     "scene": "particles"
   },
-  "voice": "am_onyx"
+  "voice": "bf_emma"
 }
