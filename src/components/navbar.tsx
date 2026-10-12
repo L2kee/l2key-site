@@ -47,6 +47,86 @@ function NavLink({
   );
 }
 
+// Desktop links share one indicator (.nav-morph in globals.css). At rest it
+// is a faint line under the links. Hovering or focusing a link shrinks it to
+// an underline under that link, then it swells into a gold pill behind it.
+// Moving along glides the pill, and leaving melts it back into the line.
+function DesktopLinks() {
+  const group = useRef<HTMLDivElement>(null);
+  const ind = useRef<HTMLSpanElement>(null);
+  const state = useRef<"rest" | "line" | "pill">("rest");
+  const cur = useRef<HTMLElement | null>(null);
+  const timer = useRef<number | undefined>(undefined);
+
+  useEffect(() => () => window.clearTimeout(timer.current), []);
+
+  const place = (a: HTMLElement, mode: "line" | "pill") => {
+    const g = group.current, el = ind.current;
+    if (!g || !el) return;
+    state.current = mode;
+    el.className = `nav-morph-ind is-${mode}`;
+    el.style.left = `${a.offsetLeft}px`;
+    el.style.width = `${a.offsetWidth}px`;
+    el.style.top = mode === "pill" ? `${a.offsetTop}px` : `${g.clientHeight - 2}px`;
+    el.style.height = mode === "pill" ? `${a.offsetHeight}px` : "2px";
+    g.querySelectorAll("a").forEach((o) => o.classList.toggle("is-lit", mode === "pill" && o === a));
+  };
+
+  const go = (a: HTMLElement) => {
+    if (cur.current === a) return;
+    window.clearTimeout(timer.current);
+    cur.current = a;
+    if (state.current === "pill") return place(a, "pill");
+    place(a, "line");
+    timer.current = window.setTimeout(() => place(a, "pill"), 260);
+  };
+
+  const leave = () => {
+    window.clearTimeout(timer.current);
+    const a = cur.current, el = ind.current;
+    cur.current = null;
+    if (!a || !el || state.current === "rest") return;
+    place(a, "line");
+    timer.current = window.setTimeout(() => {
+      state.current = "rest";
+      el.className = "nav-morph-ind";
+      el.removeAttribute("style");
+    }, 280);
+  };
+
+  return (
+    <div
+      ref={group}
+      className="nav-morph relative hidden items-center gap-2 sm:flex"
+      onPointerOver={(e) => {
+        const a = (e.target as HTMLElement).closest("a");
+        if (e.pointerType === "mouse" && a) go(a);
+      }}
+      onPointerLeave={(e) => {
+        if (e.pointerType === "mouse") leave();
+      }}
+      onFocus={(e) => {
+        const a = (e.target as HTMLElement).closest("a");
+        if (a?.matches(":focus-visible")) go(a);
+      }}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) leave();
+      }}
+    >
+      <span ref={ind} className="nav-morph-ind" aria-hidden="true" />
+      {LINKS.map((l) => (
+        <NavLink
+          key={l.href}
+          href={l.href}
+          className="relative z-[1] rounded-full px-2 py-1.5 text-sm font-medium text-white/70 transition-colors hover:text-white"
+        >
+          {l.label}
+        </NavLink>
+      ))}
+    </div>
+  );
+}
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
   // A tapped menu link closes the menu without animating, so it never
@@ -100,17 +180,7 @@ export function Navbar() {
             <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
           </Link>
 
-          <div className="hidden items-center gap-6 sm:flex">
-            {LINKS.map((l) => (
-              <NavLink
-                key={l.href}
-                href={l.href}
-                className="link-grow text-sm font-medium text-white/70 transition hover:text-white"
-              >
-                {l.label}
-              </NavLink>
-            ))}
-          </div>
+          <DesktopLinks />
 
           <Link href="/contact" className="btn-solid hidden !px-4 !py-2 text-sm sm:inline-flex">
             Get a Free Audit
