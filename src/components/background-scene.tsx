@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
@@ -16,22 +17,16 @@ type NodeDef = {
 };
 
 // Spaced out along Z so each one owns its own stretch of the page instead
-// of all nine crowding the same screen at once. The camera dollies through
+// of crowding the same screen at once. Cut from 14 to 6 on 2026-10-12 (Moe
+// said the shapes were too many and got in the way of the page). They still
+// alternate left and right and keep all four shape types. The camera dollies through
 // this line as you scroll (see CameraRig), so scrolling reveals a new
 // shape rather than just re-spinning the ones already on screen.
 const NODES: NodeDef[] = [
   { position: [-6.9, -1.5, -3.0], geometry: "icosahedron", scale: 0.96, color: "#f0c14b", spin: -0.17, opacity: 0.34 },
-  { position: [7.9, 0.4, -7.3], geometry: "octahedron", scale: 1.06, color: "#3fc8d8", spin: -0.1, opacity: 0.33 },
-  { position: [-9.6, -1.9, -11.6], geometry: "tetrahedron", scale: 0.74, color: "#c9922c", spin: 0.1, opacity: 0.32 },
   { position: [11.0, 2.0, -15.9], geometry: "dodecahedron", scale: 0.95, color: "#f0c14b", spin: -0.15, opacity: 0.3 },
-  { position: [-12.1, 2.1, -20.2], geometry: "icosahedron", scale: 0.72, color: "#3fc8d8", spin: -0.12, opacity: 0.29 },
-  { position: [13.1, -1.7, -24.5], geometry: "octahedron", scale: 0.82, color: "#c9922c", spin: -0.11, opacity: 0.28 },
   { position: [-14.9, -1.4, -28.8], geometry: "tetrahedron", scale: 0.74, color: "#f0c14b", spin: -0.15, opacity: 0.27 },
-  { position: [16.3, -0.0, -33.1], geometry: "dodecahedron", scale: 0.91, color: "#3fc8d8", spin: 0.14, opacity: 0.26 },
-  { position: [-17.9, -0.6, -37.4], geometry: "icosahedron", scale: 0.8, color: "#c9922c", spin: -0.16, opacity: 0.24 },
   { position: [18.4, 0.3, -41.7], geometry: "octahedron", scale: 0.91, color: "#f0c14b", spin: 0.16, opacity: 0.23 },
-  { position: [-19.7, 2.1, -46.0], geometry: "tetrahedron", scale: 0.75, color: "#3fc8d8", spin: 0.11, opacity: 0.22 },
-  { position: [21.1, 1.9, -50.3], geometry: "dodecahedron", scale: 0.87, color: "#c9922c", spin: -0.16, opacity: 0.21 },
   { position: [-22.7, 1.7, -54.6], geometry: "icosahedron", scale: 0.83, color: "#f0c14b", spin: 0.15, opacity: 0.2 },
   { position: [24.0, -0.2, -58.9], geometry: "octahedron", scale: 1.04, color: "#3fc8d8", spin: 0.14, opacity: 0.18 },
 ];
@@ -39,7 +34,8 @@ const NODES: NodeDef[] = [
 // Small, sparse fragments — a muted, more desaturated "antique gold" rather
 // than the brand gold above, so they read as atmosphere, not as more logo
 // shapes. Opacity fades with depth so the farthest ones nearly vanish into
-// black. Kept deliberately few (this is atmosphere, not a particle field).
+// black. Kept deliberately few (this is atmosphere, not a particle field),
+// cut from 16 to 6 on 2026-10-12, three on each side.
 type ParticleDef = {
   position: [number, number, number];
   geometry: Geo;
@@ -53,21 +49,11 @@ type ParticleDef = {
 
 const PARTICLES: ParticleDef[] = [
   { position: [-2.7, 1.1, -6.0], geometry: "icosahedron", scale: 0.19, color: "#a4854f", opacity: 0.24, driftAmp: 0.30, driftSpeed: 0.056, phase: 1.8 },
-  { position: [6.4, -0.9, -9.5], geometry: "octahedron", scale: 0.21, color: "#8a7550", opacity: 0.23, driftAmp: 0.24, driftSpeed: 0.050, phase: 3.1 },
-  { position: [-6.6, -2.1, -13.0], geometry: "tetrahedron", scale: 0.15, color: "#5aa7b3", opacity: 0.22, driftAmp: 0.24, driftSpeed: 0.057, phase: 0.5 },
-  { position: [5.1, -1.2, -16.5], geometry: "icosahedron", scale: 0.14, color: "#a4854f", opacity: 0.21, driftAmp: 0.24, driftSpeed: 0.049, phase: 4.4 },
   { position: [7.6, -0.7, -20.0], geometry: "octahedron", scale: 0.15, color: "#8a7550", opacity: 0.2, driftAmp: 0.21, driftSpeed: 0.039, phase: 4.1 },
   { position: [-6.6, 0.5, -23.5], geometry: "tetrahedron", scale: 0.15, color: "#5aa7b3", opacity: 0.2, driftAmp: 0.20, driftSpeed: 0.045, phase: 2.3 },
-  { position: [11.6, 1.1, -27.0], geometry: "icosahedron", scale: 0.18, color: "#a4854f", opacity: 0.19, driftAmp: 0.26, driftSpeed: 0.052, phase: 0.3 },
-  { position: [6.7, -0.6, -30.5], geometry: "octahedron", scale: 0.17, color: "#8a7550", opacity: 0.18, driftAmp: 0.24, driftSpeed: 0.040, phase: 6.1 },
-  { position: [4.4, -0.9, -34.0], geometry: "tetrahedron", scale: 0.13, color: "#5aa7b3", opacity: 0.17, driftAmp: 0.20, driftSpeed: 0.039, phase: 0.6 },
   { position: [10.3, -2.4, -37.5], geometry: "icosahedron", scale: 0.15, color: "#a4854f", opacity: 0.16, driftAmp: 0.24, driftSpeed: 0.051, phase: 5.9 },
-  { position: [9.0, -2.2, -41.0], geometry: "octahedron", scale: 0.17, color: "#8a7550", opacity: 0.15, driftAmp: 0.30, driftSpeed: 0.047, phase: 1.9 },
   { position: [-4.0, -0.9, -44.5], geometry: "tetrahedron", scale: 0.15, color: "#5aa7b3", opacity: 0.14, driftAmp: 0.28, driftSpeed: 0.039, phase: 0.1 },
-  { position: [4.8, 0.2, -48.0], geometry: "icosahedron", scale: 0.13, color: "#a4854f", opacity: 0.13, driftAmp: 0.25, driftSpeed: 0.059, phase: 5.4 },
   { position: [11.3, 2.3, -51.5], geometry: "octahedron", scale: 0.16, color: "#8a7550", opacity: 0.12, driftAmp: 0.22, driftSpeed: 0.049, phase: 3.1 },
-  { position: [-13.5, 1.6, -55.0], geometry: "tetrahedron", scale: 0.20, color: "#5aa7b3", opacity: 0.11, driftAmp: 0.22, driftSpeed: 0.041, phase: 2.5 },
-  { position: [-6.3, -0.0, -58.5], geometry: "icosahedron", scale: 0.20, color: "#a4854f", opacity: 0.11, driftAmp: 0.30, driftSpeed: 0.055, phase: 2.9 },
 ];
 
 const START_Z = 9;
@@ -263,8 +249,29 @@ export function BackgroundScene() {
 
   const mouseRef = useMouseParallax(finePointer && !reducedMotion);
 
+  // On the homepage the shapes stay hidden while the hero lotus video is on
+  // screen (same rule as the lotus backdrop in SiteBackground), then fade in
+  // once it scrolls away.
+  const isHome = usePathname() === "/";
+  const [heroVisible, setHeroVisible] = useState(true);
+  useEffect(() => {
+    if (!isHome) return;
+    const hero = document.querySelector(".hero-video-box");
+    if (!hero) {
+      setHeroVisible(false);
+      return;
+    }
+    const observer = new IntersectionObserver(([entry]) => setHeroVisible(entry.isIntersecting));
+    observer.observe(hero);
+    return () => observer.disconnect();
+  }, [isHome]);
+  const hidden = isHome && heroVisible;
+
   return (
-    <div className="pointer-events-none fixed inset-0" style={{ zIndex: -1 }}>
+    <div
+      className={`pointer-events-none fixed inset-0 transition-opacity duration-700 ${hidden ? "opacity-0" : "opacity-100"}`}
+      style={{ zIndex: -1 }}
+    >
       <Canvas
         camera={{ position: [0, 0, START_Z], fov: 50 }}
         dpr={[1, 1.5]}

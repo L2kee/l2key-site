@@ -58,30 +58,9 @@ export default function Home() {
 
       <Marquee />
 
-      {/* Brand design strip */}
-      <section className="mx-auto max-w-3xl px-6 pt-16">
-        <TiltCard className="glass-strong rounded-3xl p-10 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0c14b]">
-            Brand design and rebrands
-          </p>
-          <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
-            Is your brand as premium as your work?
-          </h2>
-          <p className="mx-auto mt-3 max-w-md text-white/65">
-            Logos and complete identities for brands launching or repositioning,
-            designed so your look matches your price.
-          </p>
-          <div className="mt-8 flex justify-center">
-            <Link href="/brand-design" className="btn-solid">
-              Explore brand design <ArrowRight size={16} />
-            </Link>
-          </div>
-        </TiltCard>
-      </section>
-
       {/* Job Site Studio strip: the sample videos as an expanding panel
           gallery, with the service summed up underneath. */}
-      <section className="mx-auto max-w-3xl px-6 pt-8">
+      <section className="mx-auto max-w-3xl px-6 pt-16">
         <TiltCard className="glass-strong rounded-3xl p-3 sm:p-6">
           {/* Three samples here, all five on the Job Site Studio page. */}
           <SamplePanels samples={SAMPLES.slice(0, 3)} />
