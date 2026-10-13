@@ -13,7 +13,7 @@ const { chromium } = require('playwright');
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { ROOT, logo, esc, font, css, ending, rotation, themeOf } = require('./style');
+const { ROOT, logo, esc, font, css, ending, stepLabel, rotation, themeOf } = require('./style');
 
 const FPS = 30;
 const MOTIONS = {
@@ -57,6 +57,17 @@ function voiceOf(id) {
   return { ...v, files: v.seconds.map((_, i) => path.join(VOICE_DIR, id, `${i}.wav`)) };
 }
 
+// Music bed under every Reel (Moe, 2026-10-12: silent Reels felt dead). CC0 tracks in social/music, one per post,
+// rotating in schedule order. A week file can force one with "music": "eat" (the file name without .mp3).
+const MUSIC_DIR = path.join(__dirname, 'music');
+const TRACKS = fs.existsSync(MUSIC_DIR) ? fs.readdirSync(MUSIC_DIR).filter(f => f.endsWith('.mp3')).sort() : [];
+function musicOf(p, slot) {
+  if (!TRACKS.length) return null;
+  const forced = p.music && TRACKS.find(f => f === p.music + '.mp3');
+  // Offset by 5 from the look rotation, so a look doesn't always come with the same track.
+  return path.join(MUSIC_DIR, forced || TRACKS[(((rotation(p, slot) + 5) % TRACKS.length) + TRACKS.length) % TRACKS.length]);
+}
+
 function page(p, pick, look, vo) {
   const promo = p.kind === 'promo';
   const wc = s => s.split(/\s+/).filter(Boolean).length;
@@ -70,18 +81,23 @@ function page(p, pick, look, vo) {
     ...p.steps.map(s => 0.6 + 1.2 + read(wc(s))),
     0.6 + 1.4 + read(wc(p.take)) + 2.4,
   ];
-  // With narration, every slide stays up until its line is said, plus a breath (a longer one on the last card).
-  if (vo) vo.seconds.forEach((s, i) => { dur[i] = Math.max(dur[i], VO_LEAD[i] + s + (i === dur.length - 1 ? 1.4 : 0.15)); });
+  // With narration, the voice sets the pace (Moe, 2026-10-12: the old reading time floor made Reels drag): every
+  // slide stays up until its line is said plus a breath (a longer one on the last card), and never less than its
+  // entrance needs (the hook's typewriter, or 2 seconds).
+  if (vo) vo.seconds.forEach((s, i) => {
+    const floor = i === 0 ? 0.6 + 1.2 + typing : 2;
+    dur[i] = Math.max(floor, VO_LEAD[i] + s + (i === dur.length - 1 ? 1.4 : 0.25));
+  });
   const slides = [
     `<div class="mid"><div class="kicker">${esc(p.topic)}</div><div class="hook">${wordsHtml(p.hook)}</div><div class="bar"></div></div>
      <div class="foot"><span>${promo ? '3 things we check' : 'Save this for later'}</span><span></span></div>`,
     `<div class="mid"><div class="kicker">Why it matters</div><div class="body why">${wordsHtml(p.why)}</div>${p.src ? `<div class="src">Source · ${esc(p.src)}</div>` : ''}</div>`,
-    ...p.steps.map((s, k) => `<div class="mid"><div class="kicker">${promo ? 'What we check' : 'Do this today'}</div>
+    ...p.steps.map((s, k) => `<div class="mid"><div class="kicker">${stepLabel(p)}</div>
       <div class="num"><span class="roll">${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, k + 1].map(d => `<b>${d}</b>`).join('')}</span></div>
       <div class="body step">${wordsHtml(s)}</div></div>`),
     `<img class="biglogo" src="${logo}"><div class="mid"><div class="take">${wordsHtml(p.take)}</div>
       <div class="cta"><div class="orb"></div><div class="clip"><div class="sh"></div></div>
-      <svg class="trace"><rect x="1.5" y="1.5" rx="27" ry="27" pathLength="1"/></svg>${ending(promo)}</div></div>`,
+      <svg class="trace"><rect x="1.5" y="1.5" rx="27" ry="27" pathLength="1"/></svg>${ending(p)}</div></div>`,
   ];
   return { dur, typing, html: `<!doctype html><html><head><meta charset="utf-8">${font}<style>${css}
 html,body{width:1080px;height:1920px;overflow:hidden}
@@ -288,25 +304,41 @@ function setup({ dur, typing, pick, seed }) {
   return { total, cover: Math.min(dur[0] - 0.4, 3.4 + typing) };
 }
 
-function ffmpeg(file, vo, dur) {
+function ffmpeg(file, vo, dur, music) {
   const bin = process.env.FFMPEG || 'ffmpeg';
-  // Narration: each slide's clip delayed to where its slide starts, mixed, loudness normalized for phones,
-  // and padded with silence to the end of the video. No narration: a silent track, as before.
+  // Narration: each slide's clip delayed to where its slide starts and mixed. Music: the post's track looped to the
+  // video's length, faded out at the end, and ducked under the voice (sidechain) so every word stays clear. The result
+  // is loudness normalized for phones and padded to the end of the video. Neither one: a silent track, as before.
+  const total = dur.reduce((a, d) => a + d, 0);
+  const out = 'loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100,aformat=channel_layouts=stereo,apad[aout]';
   let audio = ['-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo'], map = [];
+  const bed = n => `[${n}:a]aformat=channel_layouts=stereo,atrim=0:${total.toFixed(2)},volume=0.32,`
+    + `afade=t=out:st=${Math.max(0, total - 1.8).toFixed(2)}:d=1.8`;
   if (vo) {
     const starts = dur.reduce((a, d) => (a.push(a[a.length - 1] + d), a), [0]);
     audio = vo.files.flatMap(f => ['-i', f]);
     const parts = vo.files.map((_, i) => `[${i + 1}:a]adelay=${Math.round((starts[i] + VO_LEAD[i]) * 1000)}:all=1[a${i}]`);
-    const mix = `${vo.files.map((_, i) => `[a${i}]`).join('')}amix=inputs=${vo.files.length}:normalize=0:dropout_transition=0,`
-      + 'loudnorm=I=-16:TP=-1.5:LRA=11,aresample=44100,aformat=channel_layouts=stereo,apad[aout]';
-    map = ['-filter_complex', [...parts, mix].join(';'), '-map', '0:v', '-map', '[aout]'];
+    const voice = `${vo.files.map((_, i) => `[a${i}]`).join('')}amix=inputs=${vo.files.length}:normalize=0:dropout_transition=0,`
+      + 'aformat=channel_layouts=stereo,aresample=44100';
+    let chain;
+    if (music) {
+      const n = vo.files.length + 1;
+      audio.push('-stream_loop', '-1', '-i', music);
+      chain = [`${voice},asplit=2[v1][v2]`, `${bed(n)},aresample=44100[m]`,
+        '[m][v2]sidechaincompress=threshold=0.02:ratio=6:attack=15:release=350[md]',
+        `[v1][md]amix=inputs=2:normalize=0:duration=first,${out}`];
+    } else chain = [`${voice},${out}`];
+    map = ['-filter_complex', [...parts, ...chain].join(';'), '-map', '0:v', '-map', '[aout]'];
+  } else if (music) {
+    audio = ['-stream_loop', '-1', '-i', music];
+    map = ['-filter_complex', `${bed(1)},${out}`, '-map', '0:v', '-map', '[aout]'];
   }
   const p = spawn(bin, ['-loglevel', 'error', '-y', '-f', 'image2pipe', '-c:v', 'mjpeg', '-framerate', String(FPS), '-i', '-',
     ...audio, ...map, '-shortest',
     // Screenshots are full range JPEGs; Instagram expects TV range H.264, or blacks and golds wash out.
     '-vf', 'scale=in_range=pc:out_range=tv,format=yuv420p', '-color_range', 'tv',
     '-c:v', 'libx264', '-preset', 'slow', '-tune', 'stillimage', '-crf', '26', '-profile:v', 'high', '-r', String(FPS),
-    '-c:a', 'aac', '-b:a', vo ? '128k' : '64k', '-movflags', '+faststart', file], { stdio: ['pipe', 'inherit', 'inherit'] });
+    '-c:a', 'aac', '-b:a', vo || music ? '128k' : '64k', '-movflags', '+faststart', file], { stdio: ['pipe', 'inherit', 'inherit'] });
   const done = new Promise((res, rej) => p.on('close', code => code ? rej(new Error('ffmpeg exited ' + code)) : res()));
   return { write: buf => new Promise(r => p.stdin.write(buf) ? r() : p.stdin.once('drain', r)), end: () => (p.stdin.end(), done) };
 }
@@ -351,7 +383,8 @@ function ffmpeg(file, vo, dur) {
     const seed = [...id].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7);
     const { total, cover } = await tab.evaluate(`(${setup})(${JSON.stringify({ dur, typing, pick, seed })})`);
     const tmp = file + '.part.mp4';
-    const enc = ffmpeg(tmp, vo, dur);
+    const music = musicOf(p, slot);
+    const enc = ffmpeg(tmp, vo, dur, music);
     for (let f = 0; f < Math.ceil(total * FPS); f++) {
       await tab.evaluate(t => window.frame(t), f / FPS);
       await enc.write(await tab.screenshot({ type: 'jpeg', quality: 92 }));
@@ -360,8 +393,8 @@ function ffmpeg(file, vo, dur) {
     fs.renameSync(tmp, file);
     await tab.evaluate(t => window.frame(t), cover);
     await tab.screenshot({ path: path.join(dir, 'cover.jpg'), type: 'jpeg', quality: 90 });
-    fs.writeFileSync(path.join(dir, 'reel.json'), JSON.stringify({ seconds: +total.toFixed(2), cover_ms: Math.round(cover * 1000), look, motion: pick, voice: vo ? vo.voice : null }, null, 2) + '\n');
-    console.log(`reel ${id} (${total.toFixed(1)}s) look=${look} voice=${vo ? vo.voice : 'none'} ${Object.entries(pick).map(([k, v]) => `${k}=${v}`).join(' ')}`);
+    fs.writeFileSync(path.join(dir, 'reel.json'), JSON.stringify({ seconds: +total.toFixed(2), cover_ms: Math.round(cover * 1000), look, motion: pick, voice: vo ? vo.voice : null, music: music ? path.basename(music, '.mp3') : null }, null, 2) + '\n');
+    console.log(`reel ${id} (${total.toFixed(1)}s) look=${look} voice=${vo ? vo.voice : 'none'} music=${music ? path.basename(music, '.mp3') : 'none'} ${Object.entries(pick).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
   await browser.close();
 })().catch(e => { console.error(e); process.exit(1); });

@@ -19,7 +19,8 @@ Every post this script books is recorded in social/state/<week>.json, keyed by "
 
 Instagram and TikTok get each post as a reel with motion (social/reel.js renders public/social/<post id>/reel.mp4),
 narrated since 2026-10-11 (social/voice.py, Kokoro). A narrated reel books as "reel_vo" plus its voice (plain "reel_vo"
-for the first voice, am_onyx), so a silent reel, or one in an old voice, gets swapped once the new one is live.
+for the first voice, am_onyx; since 2026-10-12 the voice includes its speed, like "reel_vo_bf_lily@1.15"), so a silent
+reel, or one in an old voice or speed, gets swapped once the new one is live.
 A post whose reel isn't rendered yet waits for a later run, unless it's due within FALLBACK_HOURS, when it goes out
 as the image carousel instead. A booked carousel is swapped for the reel once the reel exists ("fmt" in the state).
 If Buffer refuses a reel, the carousel is booked in its place and the run fails, so GitHub emails Moe.

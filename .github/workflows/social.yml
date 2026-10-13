@@ -71,7 +71,7 @@ jobs:
           (cd /tmp/pw && npx playwright install --with-deps chromium >/dev/null)
           for f in social/*.json; do NODE_PATH=/tmp/pw/node_modules node social/render.js "$f"; done
 
-      # Narration in a British accent (Kokoro, bf_emma), on the CPU. Kokoro needs Python 3.12 or older.
+      # Narration in a British accent (Kokoro, bf_lily at 1.15 speed since 2026-10-12), on the CPU. Kokoro needs Python 3.12 or older.
       # If it fails, reels still render, silent, and the next run narrates and swaps them.
       - uses: actions/setup-python@v5
         if: env.MODE == 'sync'

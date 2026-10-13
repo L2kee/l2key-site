@@ -1,14 +1,18 @@
 """Narrates each upcoming Reel with Kokoro, the same voice engine as the Job Site Studio pipeline.
-Every Reel is narrated in a British accent (bf_emma), Moe's standing rule since 2026-10-11.
+Every Reel is narrated in a British accent, Moe's standing rule since 2026-10-11. Since 2026-10-12 the voice is bf_lily
+at 1.15 speed (Moe picked it from samples, because bf_emma at normal speed sounded slow and flat).
 
-Usage:  python social/voice.py social/<week>.json [more week files] [--out <dir>] [--voice bf_emma] [--only <post id>] [--limit N]
+Usage:  python social/voice.py social/<week>.json [more week files] [--out <dir>] [--voice bf_lily] [--speed 1.15] [--only <post id>] [--limit N]
 
 For every post that is still upcoming and has no reel narrated in this voice yet, writes one wav per slide plus voice.json
 (<out>/<post id>/0.wav ... 5.wav, and the length of each) for social/reel.js. reel.js holds each slide until its
 line is said and mixes the clips into the Reel. Posts with no voice files render silent, as before.
 
-The script per slide is the slide's own text: the hook, the why, "One." plus step 1 (and so on), then the takeaway
-and the closing card's ask. Runs on the CPU (the GitHub runner has no GPU); the 82M model loads once per run.
+The script per slide is the post's "say" list when the week file has one (6 spoken lines, written to sound lively,
+not read off the slides), otherwise the slide's own text with spoken links: the hook, the why, "First," step 1, "Next,"
+step 2, "And the best one." step 3, then the takeaway. The closing ask is always added here: a post with a "keyword"
+asks people to follow and DM that word for the prompt, other value posts ask for the follow, the promo points to the audit.
+The voice is recorded as "<voice>@<speed>" (bf_lily@1.15), so changing either one re-narrates every upcoming Reel. Runs on the CPU (the GitHub runner has no GPU); the 82M model loads once per run.
 Needs: pip install kokoro soundfile (plus torch).
 """
 import argparse
@@ -22,7 +26,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 RATE = 24000
-NUMS = ["One.", "Two.", "Three."]
+LINK = ["First,", "Next,", "And the best one."]
 
 
 def say(text):
@@ -34,21 +38,29 @@ def say(text):
 
 
 def script(p):
-    promo = p.get("kind") == "promo"
-    ask = ("Want a second set of eyes? Get a free audit at evogencyglobal.com/contact." if promo
-           else "Want one of these every day? Follow EVOGENCY, and save this so you have it later.")
-    return [say(x) for x in [p["hook"], p["why"], *[f"{NUMS[k]} {s}" for k, s in enumerate(p["steps"])], f"{p['take']} {ask}"]]
+    kw = (p.get("keyword") or "").strip()
+    if p.get("kind") == "promo":
+        ask = "Want a second set of eyes? Get a free audit at evogencyglobal.com/contact."
+    elif kw:
+        ask = f"Want the exact prompt? Follow us, and DM the word {kw.capitalize()}."
+    else:
+        ask = "Follow Evogency for daily AI news and tools, and save this one."
+    lines = list(p["say"]) if len(p.get("say") or []) == 6 else [
+        p["hook"], p["why"], *[f"{LINK[k]} {s}" for k, s in enumerate(p["steps"])], p["take"]]
+    lines[-1] = f"{lines[-1]} {ask}"
+    return [say(x) for x in lines]
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("weeks", nargs="+")
     ap.add_argument("--out", default=os.environ.get("VOICE_DIR", "/tmp/voice"))
-    ap.add_argument("--voice", default="bf_emma")
-    ap.add_argument("--speed", type=float, default=1.0)
+    ap.add_argument("--voice", default="bf_lily")
+    ap.add_argument("--speed", type=float, default=1.15)
     ap.add_argument("--only")
     ap.add_argument("--limit", type=int, default=0, help="narrate at most this many posts, soonest first")
     a = ap.parse_args()
+    key = f"{a.voice}@{a.speed:g}"  # what reel.json and the Buffer format record, so a new voice or speed re-narrates
 
     try:
         now = datetime.now(ZoneInfo("America/New_York"))
@@ -66,9 +78,10 @@ def main():
             if not a.only and when <= now:
                 continue
             info = os.path.join(ROOT, "public", "social", pid, "reel.json")
-            if os.path.exists(info) and json.load(open(info, encoding="utf-8")).get("voice") == a.voice:
-                continue  # already narrated in this voice (a reel in another voice gets narrated again)
-            if os.path.exists(os.path.join(a.out, pid, "voice.json")):
+            if os.path.exists(info) and json.load(open(info, encoding="utf-8")).get("voice") == key:
+                continue  # already narrated in this voice and speed (any other gets narrated again)
+            done = os.path.join(a.out, pid, "voice.json")
+            if os.path.exists(done) and json.load(open(done, encoding="utf-8")).get("voice") == key:
                 continue
             todo.append((when, pid, p))
     todo = [(pid, p) for _, pid, p in sorted(todo, key=lambda x: x[0])]
@@ -97,7 +110,7 @@ def main():
                 audio = audio[max(0, loud[0] - pad):loud[-1] + pad]
             sf.write(os.path.join(d, f"{i}.wav"), audio, RATE)
             lens.append(round(len(audio) / RATE, 3))
-        json.dump({"voice": a.voice, "seconds": lens, "lines": script(p)}, open(os.path.join(d, "voice.json"), "w", encoding="utf-8"), indent=2)
+        json.dump({"voice": key, "seconds": lens, "lines": script(p)}, open(os.path.join(d, "voice.json"), "w", encoding="utf-8"), indent=2)
         print(f"voice {pid}: {sum(lens):.1f}s over {len(lens)} slides")
 
 

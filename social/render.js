@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-const { ROOT, logo, esc, font, css, ending, slotOf, themeOf } = require('./style');
+const { ROOT, logo, esc, font, css, ending, stepLabel, slotOf, themeOf } = require('./style');
 const week = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 
 function slide(p, i, total, inner, foot) {
@@ -35,9 +35,9 @@ ${inner}${foot ? `<div class="foot">${foot}</div>` : ''}</div></body></html>`;
       slide(p, 2, total, `<div class="mid"><div class="kicker">Why it matters</div><div class="body">${esc(p.why)}</div>${p.src ? `<div class="src">Source · ${esc(p.src)}</div>` : ''}</div>`,
         `<span></span><span class="swipe">Swipe →</span>`),
       ...p.steps.map((s, k) => slide(p, k + 3, total,
-        `<div class="mid"><div class="kicker">${promo ? 'What we check' : 'Do this today'}</div><div class="num">${k + 1}</div><div class="body">${esc(s)}</div></div>`,
+        `<div class="mid"><div class="kicker">${stepLabel(p)}</div><div class="num">${k + 1}</div><div class="body">${esc(s)}</div></div>`,
         `<span></span><span class="swipe">${k < 2 ? 'Swipe →' : ''}</span>`)),
-      slide(p, 6, total, `<img class="biglogo" src="${logo}"><div class="mid"><div class="take">${esc(p.take)}</div><div class="cta">${ending(promo)}</div></div>`, ''),
+      slide(p, 6, total, `<img class="biglogo" src="${logo}"><div class="mid"><div class="take">${esc(p.take)}</div><div class="cta">${ending(p)}</div></div>`, ''),
     ];
     for (let k = 0; k < slides.length; k++) {
       await page.setContent(slides[k], { waitUntil: 'networkidle' });

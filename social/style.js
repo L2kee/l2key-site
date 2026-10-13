@@ -80,9 +80,14 @@ body{--fg:#f3ede0;--accent:#f0c14b;--muted:#9c917a;--top:#c9b98f;--line:rgba(240
 .t-spotlight .biglogo{right:auto;left:50%;bottom:auto;top:50%;width:880px;margin:-440px 0 0 -440px;opacity:.07}
 `;
 
-// Value posts end with a follow ask; only the weekly promo post carries the free audit.
-const ending = promo => promo
+// Value posts end with a follow ask, and a post with a "keyword" asks people to follow and DM that word for the prompt
+// (Moe answers those DMs himself). Only the weekly promo post carries the free audit.
+const ending = p => p.kind === 'promo'
   ? `<div class="q">Want a second set of eyes?</div><div class="a">Get a free audit</div><div class="u">evogencyglobal.com/contact</div>`
-  : `<div class="q">Want one of these every day?</div><div class="a">Follow EVOGENCY</div><div class="u">Save this so you have it later</div>`;
+  : p.keyword
+    ? `<div class="q">Want the exact prompt?</div><div class="a">Follow and DM us “${esc(p.keyword.toUpperCase())}”</div><div class="u">@evogencyglobal</div>`
+    : `<div class="q">Daily AI news and tools</div><div class="a">Follow EVOGENCY</div><div class="u">Save this so you have it later</div>`;
+// The label over each step. A week file can set its own ("Step", "How to use it"), or the default stays.
+const stepLabel = p => p.kind === 'promo' ? 'What we check' : esc(p.label || 'Do this today');
 
-module.exports = { ROOT, logo, esc, font, css, ending, rotation, slotOf, themeOf, THEMES };
+module.exports = { ROOT, logo, esc, font, css, ending, stepLabel, rotation, slotOf, themeOf, THEMES };
