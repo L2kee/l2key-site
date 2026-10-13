@@ -18,63 +18,63 @@
     "fmt": "reel_vo_bf_emma"
   },
   "2026-10-13 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acc2f798e8dd50ffc5fa8dd",
-    "post": "2026-10-13-separate-accounts",
+    "buffer": "6acdaf2b3d6121df403f149c",
+    "post": "2026-10-13-ai-slide-deck",
     "due": "2026-10-13T08:00:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-13 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acc2f79a9411fbcc5649422",
-    "post": "2026-10-13-protect-first-hour",
+    "buffer": "6acdaf2b3d6121df403f14db",
+    "post": "2026-10-13-upscayl",
     "due": "2026-10-13T12:30:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-13 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acc2f7aea568e911a48397d",
-    "post": "2026-10-13-ai-faq-answers",
+    "buffer": "6acdaf2caec88be081f451d1",
+    "post": "2026-10-13-haiku-5-5-price",
     "due": "2026-10-13T19:00:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-14 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acc2f7a7db619a2915250d8",
-    "post": "2026-10-14-three-second-rule",
+    "buffer": "6acdaf2d9f22b96ae7f3b37c",
+    "post": "2026-10-14-ai-resume-tailor",
     "due": "2026-10-14T08:00:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-14 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acc2f7ba9411fbcc564944c",
-    "post": "2026-10-14-answer-like-customer",
+    "buffer": "6acdaf2eaec88be081f4522d",
+    "post": "2026-10-14-ollama-local-ai",
     "due": "2026-10-14T12:30:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-14 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acc2f7b8e8dd50ffc5fa930",
-    "post": "2026-10-14-myth-every-platform",
+    "buffer": "6acdaf2e3d6121df403f1541",
+    "post": "2026-10-14-microsoft-decision-1",
     "due": "2026-10-14T19:00:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-15 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acc2f7c7db619a291525170",
-    "post": "2026-10-15-quote-nudge",
+    "buffer": "6acdaf2f9f22b96ae7f3b3a7",
+    "post": "2026-10-15-ai-debug-prompt",
     "due": "2026-10-15T08:00:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-15 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acccfadbc52bd4504db42d3",
-    "post": "2026-10-15-google-hours",
+    "buffer": "6acdaf305462be2e9036015a",
+    "post": "2026-10-15-squoosh-images",
     "due": "2026-10-15T12:30:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-15 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acd678e9f22b96ae7e7208f",
-    "post": "2026-10-15-price-floor",
+    "buffer": "6acdaf303d6121df403f15b8",
+    "post": "2026-10-15-ai-write-like-you",
     "due": "2026-10-15T19:00:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-16 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acd678e5229b40e8685c64f",
-    "post": "2026-10-16-three-task-list",
+    "buffer": "6acdaf315229b40e869260ac",
+    "post": "2026-10-16-photoshop-product-shoot",
     "due": "2026-10-16T08:00:00-04:00",
-    "fmt": "reel_vo_bf_emma"
+    "fmt": "reel_vo_bf_lily@1.15"
   }
 }
