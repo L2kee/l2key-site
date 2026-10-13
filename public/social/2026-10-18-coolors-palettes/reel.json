@@ -1,6 +1,6 @@
 {
-  "seconds": 36.26,
-  "cover_ms": 3400,
+  "seconds": 33.36,
+  "cover_ms": 2742,
   "look": "blueprint",
   "motion": {
     "hook": "mark",
@@ -11,6 +11,6 @@
     "change": "blur",
     "scene": "particles"
   },
-  "voice": null,
+  "voice": "bf_lily@1.15",
   "music": "make-money"
 }

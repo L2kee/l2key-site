@@ -1,5 +1,5 @@
 {
-  "seconds": 38.8,
+  "seconds": 35.11,
   "cover_ms": 3400,
   "look": "spotlight",
   "motion": {
@@ -11,6 +11,6 @@
     "change": "zoom",
     "scene": "glow"
   },
-  "voice": null,
+  "voice": "bf_lily@1.15",
   "music": "new-shoes"
 }
