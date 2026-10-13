@@ -76,5 +76,11 @@
     "post": "2026-10-16-photopea-free-psd",
     "due": "2026-10-16T12:30:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15"
+  },
+  "2026-10-16 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6acea105d21c5193abcc4a2b",
+    "post": "2026-10-16-three-part-prompt",
+    "due": "2026-10-16T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15"
   }
 }
