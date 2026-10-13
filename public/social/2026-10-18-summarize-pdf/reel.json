@@ -1,0 +1,16 @@
+{
+  "seconds": 38.8,
+  "cover_ms": 3400,
+  "look": "spotlight",
+  "motion": {
+    "hook": "wipe",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "rise",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "glow"
+  },
+  "voice": null,
+  "music": "new-shoes"
+}

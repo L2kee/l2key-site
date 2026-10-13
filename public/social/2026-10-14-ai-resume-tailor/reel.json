@@ -1,0 +1,16 @@
+{
+  "seconds": 37.48,
+  "cover_ms": 3165,
+  "look": "spotlight",
+  "motion": {
+    "hook": "decode",
+    "why": "mark",
+    "num": "spring",
+    "step": "words",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "aurora"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "new-shoes"
+}

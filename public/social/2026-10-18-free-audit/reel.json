@@ -1,0 +1,16 @@
+{
+  "seconds": 33.88,
+  "cover_ms": 3323,
+  "look": "editorial",
+  "motion": {
+    "hook": "type",
+    "why": "mark",
+    "num": "spring",
+    "step": "words",
+    "cta": "orbit",
+    "change": "up",
+    "scene": "aurora"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "make-funk"
+}

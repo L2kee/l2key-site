@@ -1,0 +1,16 @@
+{
+  "seconds": 33.95,
+  "cover_ms": 3400,
+  "look": "cream",
+  "motion": {
+    "hook": "words",
+    "why": "rise",
+    "num": "stamp",
+    "step": "rise",
+    "cta": "shine",
+    "change": "slide",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "eat"
+}

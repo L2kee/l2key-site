@@ -1,0 +1,16 @@
+{
+  "seconds": 32.35,
+  "cover_ms": 3176,
+  "look": "noir",
+  "motion": {
+    "hook": "decode",
+    "why": "mark",
+    "num": "spring",
+    "step": "rise",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "glow"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "poor-but-happy"
+}

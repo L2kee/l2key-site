@@ -1,0 +1,16 @@
+{
+  "seconds": 36.5,
+  "cover_ms": 3329,
+  "look": "teal",
+  "motion": {
+    "hook": "rise",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "lightup",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "blue-skies"
+}
