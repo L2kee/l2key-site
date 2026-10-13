@@ -27,3 +27,13 @@ export const FOUNDING_CLOSES = "Monday, October 19";
 // A clip path is "<request uuid>/<1..3>.<ext>". The server only accepts that shape.
 export const CLIP_PATH_PATTERN =
   /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\/[1-3]\.(mp4|mov|m4v|webm|3gp)$/;
+
+// Sample edits from stock footage (Pexels, free for commercial use), each
+// marked SAMPLE in the corner. Source renders live in D:\Job Site Studio\Samples.
+export const SAMPLES = [
+  { slug: "1-plumbing-drip-tip", trade: "Plumbing", hook: "That drip is costing you" },
+  { slug: "2-roofing-storm-ready", trade: "Roofing", hook: "Hurricane season isn't over" },
+  { slug: "5-pressure-washing-not-dirt", trade: "Pressure washing", hook: "Those black spots aren't dirt" },
+  { slug: "3-detailing-foam-bath", trade: "Detailing", hook: "The foam bath your car deserves" },
+  { slug: "4-lawn-mowing-height", trade: "Lawn care", hook: "Stop scalping your lawn" },
+].map(({ slug, ...s }) => ({ ...s, src: `/job-site-studio/${slug}.mp4`, poster: `/job-site-studio/${slug}.jpg` }));

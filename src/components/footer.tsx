@@ -12,6 +12,7 @@ const PAGES = [
   { href: "/contact", label: "Contact" },
   { href: "/electricalai-pro", label: "ElectricalAI Pro" },
   { href: "/free-review-kit", label: "Free Review Kit" },
+  { href: "/job-site-studio", label: "Job Site Studio" },
 ];
 
 export function Footer() {

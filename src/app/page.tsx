@@ -9,6 +9,8 @@ import { HeroVideo } from "@/components/hero-video";
 import { HeroReveal } from "@/components/hero-reveal";
 import { CtaTrace } from "@/components/cta-trace";
 import { DropLetters } from "@/components/drop-letters";
+import { SamplePanels } from "@/components/sample-panels";
+import { SAMPLES } from "@/lib/job-site-studio";
 import { WORK } from "@/lib/content";
 
 export default function Home() {
@@ -73,6 +75,30 @@ export default function Home() {
             <Link href="/brand-design" className="btn-solid">
               Explore brand design <ArrowRight size={16} />
             </Link>
+          </div>
+        </TiltCard>
+      </section>
+
+      {/* Job Site Studio strip: the sample videos as an expanding panel
+          gallery, with the service summed up underneath. */}
+      <section className="mx-auto max-w-3xl px-6 pt-8">
+        <TiltCard className="glass-strong rounded-3xl p-3 sm:p-6">
+          {/* Three samples here, all five on the Job Site Studio page. */}
+          <SamplePanels samples={SAMPLES.slice(0, 3)} />
+          <div className="px-4 pt-8 pb-4 text-center sm:px-6">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0c14b]">
+              Job Site Studio
+            </p>
+            <p className="mx-auto mt-3 max-w-md text-white/65">
+              Send us raw clips from the job site and get back finished videos
+              for TikTok, Reels, Shorts, and Facebook. No editing, no app to
+              learn.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <Link href="/job-site-studio" className="btn-solid">
+                Try 3 free videos <ArrowRight size={16} />
+              </Link>
+            </div>
           </div>
         </TiltCard>
       </section>

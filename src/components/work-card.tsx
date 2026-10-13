@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowUpRight, Smartphone, LayoutDashboard, Zap, Globe2 } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { WorkCarousel } from "@/components/work-carousel";
+import { WorkExpand } from "@/components/work-expand";
 
 const ICONS = { phone: Smartphone, dashboard: LayoutDashboard, bolt: Zap, globe: Globe2 };
 
@@ -70,6 +71,14 @@ function WorkMedia({ item }: { item: WorkItem }) {
           />
         </div>
       )}
+      <MediaOverlays item={item} />
+    </>
+  );
+}
+
+function MediaOverlays({ item }: { item: WorkItem }) {
+  return (
+    <>
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/20" />
       {item.tag && (
         <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-[#f0c14b]/30 bg-black/60 px-3 py-1 text-xs font-medium text-[#f0c14b] backdrop-blur">
@@ -138,12 +147,26 @@ export function WorkCard({
 }) {
   if (layout === "split") {
     return (
-      <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
-        {/* work-in-*: the pair slides in from opposite sides on scroll. */}
-        <div className="work-in work-in-media md:w-[52%] md:shrink-0">
-          <TiltCard className={`glass-strong aspect-[16/10] w-full rounded-2xl ${MEDIA_BG}`}>
-            <WorkMedia item={item} />
-          </TiltCard>
+      <div data-work-row className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
+        {/* work-in-*: the pair slides in from opposite sides on scroll. On
+            hover the picture slides to the middle and grows, with arrows to
+            flip through the screenshots (see WorkExpand). */}
+        <div className="work-in work-in-media relative z-10 has-[[data-open]]:z-40 md:w-[52%] md:shrink-0">
+          {item.images && item.images.length > 0 ? (
+            <WorkExpand
+              images={item.images}
+              alt={item.title}
+              alts={item.imageAlts}
+              objectPosition={item.imagePosition}
+              className={`glass-strong aspect-[16/10] w-full rounded-2xl ${MEDIA_BG}`}
+            >
+              <MediaOverlays item={item} />
+            </WorkExpand>
+          ) : (
+            <TiltCard className={`glass-strong aspect-[16/10] w-full rounded-2xl ${MEDIA_BG}`}>
+              <WorkMedia item={item} />
+            </TiltCard>
+          )}
         </div>
         <div className="work-in work-in-details flex-1">
           <TiltCard className="glass-strong rounded-2xl p-6 md:p-8">

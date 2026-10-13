@@ -9,6 +9,7 @@ import {
   FOUNDING_PRICE,
   PRODUCT_NAME,
   REGULAR_PRICE,
+  SAMPLES,
 } from "@/lib/job-site-studio";
 
 const TITLE = "Job Site Studio | Free Videos From Your Job Site Clips | EVOGENCY";
@@ -30,16 +31,6 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/og-image.png"] },
 };
-
-// Sample edits from stock footage (Pexels, free for commercial use), each
-// marked SAMPLE in the corner. Source renders live in D:\Job Site Studio\Samples.
-const SAMPLES = [
-  { slug: "1-plumbing-drip-tip", trade: "Plumbing", hook: "That drip is costing you" },
-  { slug: "2-roofing-storm-ready", trade: "Roofing", hook: "Hurricane season isn't over" },
-  { slug: "5-pressure-washing-not-dirt", trade: "Pressure washing", hook: "Those black spots aren't dirt" },
-  { slug: "3-detailing-foam-bath", trade: "Detailing", hook: "The foam bath your car deserves" },
-  { slug: "4-lawn-mowing-height", trade: "Lawn care", hook: "Stop scalping your lawn" },
-].map(({ slug, ...s }) => ({ ...s, src: `/job-site-studio/${slug}.mp4`, poster: `/job-site-studio/${slug}.jpg` }));
 
 const STEPS = [
   {
