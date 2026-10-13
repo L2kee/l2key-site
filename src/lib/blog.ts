@@ -603,6 +603,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "signs-your-business-has-outgrown-spreadsheets",
   "crm-features-that-actually-matter-for-small-business",
   "migrating-crms-without-losing-data",
+  "automating-your-sales-pipeline-the-right-way",
+  "crm-security-and-data-ownership",
+  "measuring-roi-on-a-crm-investment",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

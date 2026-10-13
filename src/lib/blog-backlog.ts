@@ -4626,7 +4626,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to automate a sales pipeline in a CRM without losing the personal touch that actually closes deals for a small business.",
     excerpt: "How to automate without losing the personal touch that actually closes deals for a small business.",
-    date: "2026-09-18",
+    date: "2026-10-13",
     tag: "CRM",
     relatedHref: "/custom-crm-development-orlando",
     relatedLabel: "See our CRM development service",
@@ -4697,7 +4697,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "What business owners should understand about CRM data security and ownership, including the difference between renting and owning your customer data.",
     excerpt: "What business owners should understand about data security and the difference between renting and owning it.",
-    date: "2026-09-18",
+    date: "2026-10-13",
     tag: "CRM",
     relatedHref: "/custom-crm-development-orlando",
     relatedLabel: "See our CRM development service",
@@ -4767,7 +4767,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "An honest approach to measuring the return on a CRM investment, focusing on the metrics that actually reflect real business impact.",
     excerpt: "An honest approach focusing on the metrics that actually reflect real business impact.",
-    date: "2026-09-18",
+    date: "2026-10-13",
     tag: "CRM",
     relatedHref: "/custom-crm-development-orlando",
     relatedLabel: "See our CRM development service",
