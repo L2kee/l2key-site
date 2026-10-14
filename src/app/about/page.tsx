@@ -70,7 +70,7 @@ export default function AboutPage() {
 
       <div className="mt-12">
         <TiltCard className="glass-strong flex flex-col items-center gap-6 rounded-3xl p-10 text-center sm:flex-row sm:text-left">
-          <div className="h-28 w-28 shrink-0 overflow-hidden rounded-full ring-2 ring-white/10 shadow-[0_20px_50px_-15px_rgba(240,193,75,0.5)]">
+          <div className="h-28 w-28 shrink-0 overflow-hidden rounded-full ring-2 ring-white/10 shadow-[0_20px_50px_-15px_rgba(95,216,230,0.5)]">
             <Image
               src="/moe-founder-v2.webp"
               alt="Mohamed Eltoukhy, founder of EVOGENCY, in a navy suit and tie"
@@ -81,7 +81,7 @@ export default function AboutPage() {
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white">Mohamed Eltoukhy</h2>
-            <p className="text-sm font-medium text-[#f0c14b]">Founder, EVOGENCY</p>
+            <p className="text-sm font-medium text-[#5fd8e6]">Founder, EVOGENCY</p>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
               Mohamed built EVOGENCY on a simple premise: agencies should ship
               real software, not slideshows. He designs and builds the CRM
@@ -109,7 +109,7 @@ export default function AboutPage() {
           <dl className="mt-5 space-y-3 text-sm leading-relaxed">
             {FACTS.map((f) => (
               <div key={f.label} className="sm:flex sm:gap-4">
-                <dt className="shrink-0 font-semibold text-[#f0c14b] sm:w-32">{f.label}</dt>
+                <dt className="shrink-0 font-semibold text-[#5fd8e6] sm:w-32">{f.label}</dt>
                 <dd className="text-white/70">{f.value}</dd>
               </div>
             ))}
@@ -123,7 +123,7 @@ export default function AboutPage() {
         <div className="mt-12 space-y-8">
           {PRINCIPLES.map((p, i) => (
             <div key={p.title} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#f0c14b]/50">
+              <span className="shrink-0 text-2xl font-bold text-[#5fd8e6]/50">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>

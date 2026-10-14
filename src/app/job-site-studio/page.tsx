@@ -108,7 +108,7 @@ function FoundingButton() {
         Become a Founding Member <ArrowRight size={20} />
       </a>
       <p className="flex items-center gap-2 text-sm text-white/55">
-        <ShieldCheck size={16} className="text-[#f0c14b]" /> Secure checkout by Stripe. Cancel anytime. 30 day
+        <ShieldCheck size={16} className="text-[#5fd8e6]" /> Secure checkout by Stripe. Cancel anytime. 30 day
         guarantee.
       </p>
     </div>
@@ -116,7 +116,7 @@ function FoundingButton() {
 }
 
 function H2({ children }: { children: React.ReactNode }) {
-  return <h2 className="mt-12 text-2xl font-bold text-[#f0c14b] sm:text-3xl">{children}</h2>;
+  return <h2 className="mt-12 text-2xl font-bold text-[#5fd8e6] sm:text-3xl">{children}</h2>;
 }
 
 export default function JobSiteStudioPage() {
@@ -124,7 +124,7 @@ export default function JobSiteStudioPage() {
     <div className="mx-auto max-w-4xl space-y-6 px-4 pt-8 pb-20 sm:px-6">
       <article className="glass-strong rounded-3xl px-6 py-10 text-lg leading-relaxed text-white/80 sm:px-12 sm:py-14">
         <header className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f0c14b]">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">
             {PRODUCT_NAME} by EVOGENCY
           </p>
           <h1 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-5xl">
@@ -141,7 +141,7 @@ export default function JobSiteStudioPage() {
         </header>
 
         <section aria-labelledby="samples-heading" className="mt-14">
-          <h2 id="samples-heading" className="text-center text-2xl font-bold text-[#f0c14b] sm:text-3xl">
+          <h2 id="samples-heading" className="text-center text-2xl font-bold text-[#5fd8e6] sm:text-3xl">
             See what you get back
           </h2>
           <p className="mx-auto mt-3 mb-6 max-w-2xl text-center text-base text-white/60">
@@ -178,7 +178,7 @@ export default function JobSiteStudioPage() {
           <ol className="space-y-5">
             {STEPS.map((step, i) => (
               <li key={step.title} className="flex gap-4">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f0c14b] font-bold text-black">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#5fd8e6] font-bold text-black">
                   {i + 1}
                 </span>
                 <span>
@@ -193,7 +193,7 @@ export default function JobSiteStudioPage() {
           <ul className="space-y-4">
             {FORMATS.map((f) => (
               <li key={f.name} className="flex gap-3">
-                <Check size={22} className="mt-1 shrink-0 text-[#f0c14b]" />
+                <Check size={22} className="mt-1 shrink-0 text-[#5fd8e6]" />
                 <span>
                   <strong className="text-white">{f.name}.</strong> {f.detail}
                 </span>
@@ -217,7 +217,7 @@ export default function JobSiteStudioPage() {
             <ul className="space-y-3">
               {MEMBER_GETS.map((item) => (
                 <li key={item} className="flex gap-3">
-                  <Check size={22} className="mt-1 shrink-0 text-[#f0c14b]" />
+                  <Check size={22} className="mt-1 shrink-0 text-[#5fd8e6]" />
                   <span>{item}</span>
                 </li>
               ))}

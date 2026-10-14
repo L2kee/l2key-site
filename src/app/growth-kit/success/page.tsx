@@ -62,7 +62,7 @@ export default async function GrowthKitSuccessPage({ searchParams }: PageProps<"
       </div>
 
       <div className="glass rounded-3xl p-8 text-center sm:p-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f0c14b]">Your next step</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">Your next step</p>
         <h2 className="mt-2 text-2xl font-bold text-white">Book your free strategy call</h2>
         <p className="mx-auto mt-3 max-w-lg text-white/70">
           It comes with your kit. We&apos;ll look at your Google profile and website and tell you the top three things

@@ -30,12 +30,12 @@ export function BlogList({ page }: { page: number }) {
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
             <TiltCard className="glass h-full rounded-2xl p-6">
-              <span className="text-xs font-semibold uppercase tracking-wider text-[#f0c14b]">
+              <span className="text-xs font-semibold uppercase tracking-wider text-[#5fd8e6]">
                 {post.tag}
               </span>
               <h2 className="mt-3 text-lg font-semibold text-white">{post.title}</h2>
               <p className="mt-2 text-sm leading-relaxed text-white/65">{post.excerpt}</p>
-              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#f0c14b]">
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#5fd8e6]">
                 Read more <ArrowRight size={14} />
               </span>
             </TiltCard>

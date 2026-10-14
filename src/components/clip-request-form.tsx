@@ -175,7 +175,7 @@ export function ClipRequestForm() {
                 className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/30 px-4 py-2.5 text-sm text-white/80"
               >
                 <span className="flex min-w-0 items-center gap-2">
-                  <Film size={16} className="shrink-0 text-[#f0c14b]" />
+                  <Film size={16} className="shrink-0 text-[#5fd8e6]" />
                   <span className="truncate">{file.name}</span>
                   <span className="shrink-0 text-white/45">{(file.size / 1024 / 1024).toFixed(1)}MB</span>
                 </span>
@@ -198,7 +198,7 @@ export function ClipRequestForm() {
             type="button"
             onClick={() => fileInput.current?.click()}
             disabled={busy}
-            className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border-2 border-dashed border-[#f0c14b]/50 bg-[#f0c14b]/5 px-4 py-6 font-semibold text-[#f0c14b] transition hover:bg-[#f0c14b]/10"
+            className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border-2 border-dashed border-[#5fd8e6]/50 bg-[#5fd8e6]/5 px-4 py-6 font-semibold text-[#5fd8e6] transition hover:bg-[#5fd8e6]/10"
           >
             <Film size={20} /> {clips.length === 0 ? "Pick clips from your phone" : "Add another clip"}
           </button>

@@ -181,7 +181,7 @@ export default function BrandDesignPage() {
         <div className="mt-10 space-y-8">
           {PROCESS.map((p) => (
             <div key={p.step} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#f0c14b]/50">{p.step}</span>
+              <span className="shrink-0 text-2xl font-bold text-[#5fd8e6]/50">{p.step}</span>
               <div>
                 <h3 className="text-lg font-semibold text-white">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">{p.body}</p>
@@ -196,9 +196,9 @@ export default function BrandDesignPage() {
         <p className="mx-auto mt-6 max-w-2xl text-center text-white/65">
           A beautiful identity on an outdated website is money left on the
           table. After the brand is done, we can build the{" "}
-          <Link href="/web-design-agency-orlando" className="text-[#f0c14b] hover:underline">website</Link>{" "}
+          <Link href="/web-design-agency-orlando" className="text-[#5fd8e6] hover:underline">website</Link>{" "}
           and keep it found with{" "}
-          <Link href="/seo-agency-orlando" className="text-[#f0c14b] hover:underline">SEO</Link>
+          <Link href="/seo-agency-orlando" className="text-[#5fd8e6] hover:underline">SEO</Link>
           , so the look, the site, and the search results all say the same
           thing.
         </p>

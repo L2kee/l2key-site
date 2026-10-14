@@ -53,7 +53,7 @@ export function SamplePanels({ samples }: { samples: Sample[] }) {
               // h-[30rem] is 480px), so a vertical video shows uncropped. On desktop
               // the closed strips stay narrow so the open one stands out.
               open
-                ? "shrink-0 grow-0 basis-[162px] border-[#f0c14b]/50 sm:basis-[270px]"
+                ? "shrink-0 grow-0 basis-[162px] border-[#5fd8e6]/50 sm:basis-[270px]"
                 : "grow basis-0 border-white/10 sm:grow-0 sm:basis-24"
             }`}
           >

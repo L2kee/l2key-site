@@ -13,7 +13,7 @@ export function Marquee() {
                 <span className="text-2xl font-bold tracking-tight text-white/85 sm:text-4xl">
                   {word}
                 </span>
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#f0c14b]" />
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#5fd8e6]" />
               </span>
             ))}
           </div>

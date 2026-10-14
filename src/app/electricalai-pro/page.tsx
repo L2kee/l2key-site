@@ -5,7 +5,7 @@ import { ORG_ID, SITE_URL, breadcrumbs } from "@/lib/schema";
 
 // Product page for ElectricalAI Pro, styled in the app's own "kinetic
 // glass" look (ink, hairline glass panels, one cyan signal color) rather
-// than the site's gold theme, so the page and the app read as one product.
+// than the site's teal theme, so the page and the app read as one product.
 // The app itself lives at /electricalai-pro/app (static Flutter build).
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-eap-sans" });

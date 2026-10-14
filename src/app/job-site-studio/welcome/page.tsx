@@ -25,7 +25,7 @@ export default function FoundingWelcomePage() {
         <ol className="mx-auto mt-8 max-w-lg space-y-4 text-left text-white/80">
           {NEXT_STEPS.map((step, i) => (
             <li key={step} className="flex gap-4">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#f0c14b] font-bold text-black">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#5fd8e6] font-bold text-black">
                 {i + 1}
               </span>
               <span>{step}</span>

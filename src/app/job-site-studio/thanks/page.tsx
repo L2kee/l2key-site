@@ -25,7 +25,7 @@ export default function ClipsThanksPage() {
     <div className="mx-auto max-w-3xl space-y-6 px-4 pt-8 pb-20 sm:px-6">
       <div className="glass rounded-3xl px-6 py-6 text-center">
         <p className="flex items-center justify-center gap-2 text-lg font-semibold text-white">
-          <MailCheck size={22} className="text-[#f0c14b]" /> Got your clips. Your videos land in your inbox within 2
+          <MailCheck size={22} className="text-[#5fd8e6]" /> Got your clips. Your videos land in your inbox within 2
           business days.
         </p>
         <p className="mt-2 text-white/60">We just emailed you a confirmation. Reply to it with anything we should know.</p>
@@ -48,7 +48,7 @@ export default function ClipsThanksPage() {
           <ul className="space-y-3">
             {MEMBER_GETS.map((item) => (
               <li key={item} className="flex gap-3">
-                <Check size={22} className="mt-1 shrink-0 text-[#f0c14b]" />
+                <Check size={22} className="mt-1 shrink-0 text-[#5fd8e6]" />
                 <span>{item}</span>
               </li>
             ))}
@@ -67,7 +67,7 @@ export default function ClipsThanksPage() {
                 Lock In ${FOUNDING_PRICE} a Month <ArrowRight size={20} />
               </a>
               <p className="flex items-center gap-2 text-sm text-white/55">
-                <ShieldCheck size={16} className="text-[#f0c14b]" /> 30 day money back guarantee. You keep every
+                <ShieldCheck size={16} className="text-[#5fd8e6]" /> 30 day money back guarantee. You keep every
                 video.
               </p>
             </div>

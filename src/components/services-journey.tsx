@@ -126,14 +126,14 @@ export function ServicesJourney() {
   useEffect(() => () => clearTimeout(dwell.current), []);
 
   const arrow =
-    "absolute top-1/2 z-10 hidden h-11 w-11 -translate-y-1/2 place-items-center rounded-full border border-[#f0c14b]/50 bg-black/70 text-white backdrop-blur transition hover:bg-black/90 sm:grid";
+    "absolute top-1/2 z-10 hidden h-11 w-11 -translate-y-1/2 place-items-center rounded-full border border-[#5fd8e6]/50 bg-black/70 text-white backdrop-blur transition hover:bg-black/90 sm:grid";
   const spacer =
     "shrink-0 w-[calc(50%_-_min(39vw,260px)_-_1rem)] sm:w-[calc(50%_-_min(39vw,260px)_-_1.5rem)]";
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-[#f0c14b]">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-[#5fd8e6]">
           The EVOGENCY system
         </h2>
       </div>
@@ -187,7 +187,7 @@ export function ServicesJourney() {
                 >
                   <article
                     className={`glass-strong flex h-full flex-col overflow-clip rounded-2xl transition-shadow duration-500 ${
-                      on ? "shadow-[0_30px_80px_-24px_rgba(240,193,75,0.25)] ring-1 ring-[#f0c14b]/30" : "cursor-pointer"
+                      on ? "shadow-[0_30px_80px_-24px_rgba(95,216,230,0.25)] ring-1 ring-[#5fd8e6]/30" : "cursor-pointer"
                     }`}
                   >
                     <div className="relative aspect-[16/9] w-full overflow-clip border-b border-white/10">
@@ -202,7 +202,7 @@ export function ServicesJourney() {
                     </div>
 
                     <div className="flex flex-1 flex-col p-6 text-center sm:p-8 sm:text-left">
-                      <span className="text-xs font-semibold tracking-[0.15em] text-[#f0c14b]">
+                      <span className="text-xs font-semibold tracking-[0.15em] text-[#5fd8e6]">
                         {s.kicker.toUpperCase()}
                       </span>
                       <h3 className="mt-1 text-xl font-bold text-white">{s.title}</h3>
@@ -234,7 +234,7 @@ export function ServicesJourney() {
             >
               <span
                 className={`block h-2 rounded-full transition-all ${
-                  i === active ? "w-6 bg-[#f0c14b]" : "w-2 bg-white/25 group-hover:bg-white/50"
+                  i === active ? "w-6 bg-[#5fd8e6]" : "w-2 bg-white/25 group-hover:bg-white/50"
                 }`}
               />
             </button>

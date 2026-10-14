@@ -48,7 +48,7 @@ export function WorkCarousel({
           <span
             key={i}
             className="h-1.5 w-1.5 rounded-full transition-colors"
-            style={{ background: i === index ? "#f0c14b" : "rgba(255,255,255,0.3)" }}
+            style={{ background: i === index ? "#5fd8e6" : "rgba(255,255,255,0.3)" }}
           />
         ))}
       </div>

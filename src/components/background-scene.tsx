@@ -23,16 +23,16 @@ type NodeDef = {
 // this line as you scroll (see CameraRig), so scrolling reveals a new
 // shape rather than just re-spinning the ones already on screen.
 const NODES: NodeDef[] = [
-  { position: [-6.9, -1.5, -3.0], geometry: "icosahedron", scale: 0.96, color: "#f0c14b", spin: -0.17, opacity: 0.34 },
-  { position: [11.0, 2.0, -15.9], geometry: "dodecahedron", scale: 0.95, color: "#f0c14b", spin: -0.15, opacity: 0.3 },
-  { position: [-14.9, -1.4, -28.8], geometry: "tetrahedron", scale: 0.74, color: "#f0c14b", spin: -0.15, opacity: 0.27 },
-  { position: [18.4, 0.3, -41.7], geometry: "octahedron", scale: 0.91, color: "#f0c14b", spin: 0.16, opacity: 0.23 },
-  { position: [-22.7, 1.7, -54.6], geometry: "icosahedron", scale: 0.83, color: "#f0c14b", spin: 0.15, opacity: 0.2 },
+  { position: [-6.9, -1.5, -3.0], geometry: "icosahedron", scale: 0.96, color: "#5fd8e6", spin: -0.17, opacity: 0.34 },
+  { position: [11.0, 2.0, -15.9], geometry: "dodecahedron", scale: 0.95, color: "#5fd8e6", spin: -0.15, opacity: 0.3 },
+  { position: [-14.9, -1.4, -28.8], geometry: "tetrahedron", scale: 0.74, color: "#5fd8e6", spin: -0.15, opacity: 0.27 },
+  { position: [18.4, 0.3, -41.7], geometry: "octahedron", scale: 0.91, color: "#5fd8e6", spin: 0.16, opacity: 0.23 },
+  { position: [-22.7, 1.7, -54.6], geometry: "icosahedron", scale: 0.83, color: "#5fd8e6", spin: 0.15, opacity: 0.2 },
   { position: [24.0, -0.2, -58.9], geometry: "octahedron", scale: 1.04, color: "#3fc8d8", spin: 0.14, opacity: 0.18 },
 ];
 
-// Small, sparse fragments — a muted, more desaturated "antique gold" rather
-// than the brand gold above, so they read as atmosphere, not as more logo
+// Small, sparse fragments — a muted, more desaturated teal rather
+// than the brand cyan above, so they read as atmosphere, not as more logo
 // shapes. Opacity fades with depth so the farthest ones nearly vanish into
 // black. Kept deliberately few (this is atmosphere, not a particle field),
 // cut from 16 to 6 on 2026-10-12, three on each side.
@@ -48,12 +48,12 @@ type ParticleDef = {
 };
 
 const PARTICLES: ParticleDef[] = [
-  { position: [-2.7, 1.1, -6.0], geometry: "icosahedron", scale: 0.19, color: "#a4854f", opacity: 0.24, driftAmp: 0.30, driftSpeed: 0.056, phase: 1.8 },
-  { position: [7.6, -0.7, -20.0], geometry: "octahedron", scale: 0.15, color: "#8a7550", opacity: 0.2, driftAmp: 0.21, driftSpeed: 0.039, phase: 4.1 },
+  { position: [-2.7, 1.1, -6.0], geometry: "icosahedron", scale: 0.19, color: "#4f8f99", opacity: 0.24, driftAmp: 0.30, driftSpeed: 0.056, phase: 1.8 },
+  { position: [7.6, -0.7, -20.0], geometry: "octahedron", scale: 0.15, color: "#3d7580", opacity: 0.2, driftAmp: 0.21, driftSpeed: 0.039, phase: 4.1 },
   { position: [-6.6, 0.5, -23.5], geometry: "tetrahedron", scale: 0.15, color: "#5aa7b3", opacity: 0.2, driftAmp: 0.20, driftSpeed: 0.045, phase: 2.3 },
-  { position: [10.3, -2.4, -37.5], geometry: "icosahedron", scale: 0.15, color: "#a4854f", opacity: 0.16, driftAmp: 0.24, driftSpeed: 0.051, phase: 5.9 },
+  { position: [10.3, -2.4, -37.5], geometry: "icosahedron", scale: 0.15, color: "#4f8f99", opacity: 0.16, driftAmp: 0.24, driftSpeed: 0.051, phase: 5.9 },
   { position: [-4.0, -0.9, -44.5], geometry: "tetrahedron", scale: 0.15, color: "#5aa7b3", opacity: 0.14, driftAmp: 0.28, driftSpeed: 0.039, phase: 0.1 },
-  { position: [11.3, 2.3, -51.5], geometry: "octahedron", scale: 0.16, color: "#8a7550", opacity: 0.12, driftAmp: 0.22, driftSpeed: 0.049, phase: 3.1 },
+  { position: [11.3, 2.3, -51.5], geometry: "octahedron", scale: 0.16, color: "#3d7580", opacity: 0.12, driftAmp: 0.22, driftSpeed: 0.049, phase: 3.1 },
 ];
 
 const START_Z = 9;

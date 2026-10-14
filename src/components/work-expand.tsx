@@ -68,7 +68,7 @@ export function WorkExpand({
       >
         <TiltCard
           className={`${className ?? ""} transition-shadow duration-500 ${
-            open ? "shadow-[0_30px_80px_-20px_rgba(0,0,0,0.95)] ring-1 ring-[#f0c14b]/40" : ""
+            open ? "shadow-[0_30px_80px_-20px_rgba(0,0,0,0.95)] ring-1 ring-[#5fd8e6]/40" : ""
           }`}
         >
           {/* Solid backing while open, so the details card never shows through
@@ -109,7 +109,7 @@ export function WorkExpand({
                     e.stopPropagation();
                     go(d);
                   }}
-                  className={`absolute top-1/2 ${side} grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full border border-[#f0c14b]/50 bg-black/70 text-white backdrop-blur transition hover:bg-black/90`}
+                  className={`absolute top-1/2 ${side} grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full border border-[#5fd8e6]/50 bg-black/70 text-white backdrop-blur transition hover:bg-black/90`}
                 >
                   <Icon size={18} />
                 </button>
@@ -125,7 +125,7 @@ export function WorkExpand({
                       setIndex(i);
                     }}
                     className={`h-1.5 rounded-full transition-all ${
-                      i === index ? "w-5 bg-[#f0c14b]" : "w-1.5 bg-white/50"
+                      i === index ? "w-5 bg-[#5fd8e6]" : "w-1.5 bg-white/50"
                     }`}
                   />
                 ))}

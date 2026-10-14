@@ -36,7 +36,7 @@ export default function FreeReviewKitPage() {
     <div className="mx-auto max-w-5xl px-4 pt-8 pb-20 sm:px-6">
       <div className="glass-strong grid items-center gap-10 rounded-3xl px-6 py-10 sm:px-10 md:grid-cols-[1fr_1.1fr]">
         <div className="text-center md:text-left">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f0c14b]">Free for home service pros</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">Free for home service pros</p>
           <h1 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-4xl">
             How Many 5 Star Reviews Are Your Happy Customers Forgetting to Leave?
           </h1>
@@ -57,7 +57,7 @@ export default function FreeReviewKitPage() {
           <ul className="mb-7 space-y-3 text-white/75">
             {INSIDE.map((item) => (
               <li key={item} className="flex gap-3">
-                <Check size={20} className="mt-0.5 shrink-0 text-[#f0c14b]" />
+                <Check size={20} className="mt-0.5 shrink-0 text-[#5fd8e6]" />
                 <span>{item}</span>
               </li>
             ))}

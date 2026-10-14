@@ -3,7 +3,7 @@
 // must stay a single space, it is what :placeholder-shown keys off.
 
 const fieldClass =
-  "w-full rounded-xl border border-white/15 bg-black/30 px-4 pt-6 pb-2 text-white outline-none transition focus:border-[#f0c14b]/70 focus:ring-2 focus:ring-[#f0c14b]/25 disabled:opacity-40";
+  "w-full rounded-xl border border-white/15 bg-black/30 px-4 pt-6 pb-2 text-white outline-none transition focus:border-[#5fd8e6]/70 focus:ring-2 focus:ring-[#5fd8e6]/25 disabled:opacity-40";
 
 function FieldError({ message }: { message?: string }) {
   if (!message) return null;

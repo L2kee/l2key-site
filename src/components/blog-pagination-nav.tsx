@@ -21,7 +21,7 @@ export function BlogPaginationNav({
       {currentPage > 1 && (
         <Link
           href={pageHref(currentPage - 1)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:border-[#f0c14b]/50 hover:text-[#f0c14b]"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:border-[#5fd8e6]/50 hover:text-[#5fd8e6]"
           aria-label="Previous page"
         >
           <ChevronLeft size={16} />
@@ -35,8 +35,8 @@ export function BlogPaginationNav({
           aria-current={p === currentPage ? "page" : undefined}
           className={`flex h-10 w-10 items-center justify-center rounded-full border text-sm font-medium transition ${
             p === currentPage
-              ? "border-[#f0c14b] bg-[#f0c14b] text-[#0a0805]"
-              : "border-white/10 bg-white/5 text-white/70 hover:border-[#f0c14b]/50 hover:text-[#f0c14b]"
+              ? "border-[#5fd8e6] bg-[#5fd8e6] text-[#041016]"
+              : "border-white/10 bg-white/5 text-white/70 hover:border-[#5fd8e6]/50 hover:text-[#5fd8e6]"
           }`}
         >
           {p}
@@ -46,7 +46,7 @@ export function BlogPaginationNav({
       {currentPage < totalPages && (
         <Link
           href={pageHref(currentPage + 1)}
-          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:border-[#f0c14b]/50 hover:text-[#f0c14b]"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition hover:border-[#5fd8e6]/50 hover:text-[#5fd8e6]"
           aria-label="Next page"
         >
           <ChevronRight size={16} />

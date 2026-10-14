@@ -3,8 +3,8 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-accent-gold: #f0c14b;
-  --color-accent-amber: #c9922c;
+  --color-accent-cyan: #5fd8e6;
+  --color-accent-teal: #1f9fb3;
 }
 
 html,
@@ -116,7 +116,7 @@ body {
   }
 
   /* Glass surfaces with a real shadow, not a flat border. */
-  /* Tinted glass: a faint gold to teal body (the hero video's palette), a
+  /* Tinted glass: a faint cyan to teal body (the hero video's palette), a
      diagonal reflection streak, a bright rim along the top edge where light
      catches it, and saturate() so the shapes seen through it keep their
      color. All background layers, no pseudo elements, so any element can
@@ -124,7 +124,7 @@ body {
   .glass {
     background:
       linear-gradient(115deg, transparent 32%, rgb(255 255 255 / 0.04) 44%, transparent 56%),
-      linear-gradient(145deg, rgb(240 193 75 / 0.05), rgb(255 255 255 / 0.02) 45%, rgb(63 200 216 / 0.06));
+      linear-gradient(145deg, rgb(95 216 230 / 0.05), rgb(255 255 255 / 0.02) 45%, rgb(63 200 216 / 0.06));
     -webkit-backdrop-filter: blur(20px) saturate(120%);
     backdrop-filter: blur(20px) saturate(120%);
     border: 1px solid rgb(255 255 255 / 0.10);
@@ -133,7 +133,7 @@ body {
       0 1px 0 rgba(255, 255, 255, 0.08) inset,
       0 0 24px rgba(63, 200, 216, 0.03) inset,
       0 30px 60px -30px rgba(0, 0, 0, 0.7),
-      0 0 40px -20px rgba(240, 193, 75, 0.12);
+      0 0 40px -20px rgba(95, 216, 230, 0.12);
   }
 
   /* The sticky nav needs to stay legible over WHATEVER scrolls behind
@@ -152,7 +152,7 @@ body {
   .glass-strong {
     background:
       linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.05) 43%, transparent 57%),
-      linear-gradient(145deg, rgb(240 193 75 / 0.06), rgb(255 255 255 / 0.03) 45%, rgb(63 200 216 / 0.08));
+      linear-gradient(145deg, rgb(95 216 230 / 0.06), rgb(255 255 255 / 0.03) 45%, rgb(63 200 216 / 0.08));
     -webkit-backdrop-filter: blur(24px) saturate(120%);
     backdrop-filter: blur(24px) saturate(120%);
     border: 1px solid rgb(255 255 255 / 0.12);
@@ -162,7 +162,7 @@ body {
       0 -1px 0 rgba(255, 255, 255, 0.04) inset,
       0 0 30px rgba(63, 200, 216, 0.04) inset,
       0 40px 80px -30px rgba(0, 0, 0, 0.75),
-      0 0 60px -20px rgba(240, 193, 75, 0.14);
+      0 0 60px -20px rgba(95, 216, 230, 0.14);
   }
 
   /* Glass button — the "made of glass" ask. */
@@ -189,7 +189,7 @@ body {
     box-shadow:
       0 1px 0 rgba(255, 255, 255, 0.2) inset,
       0 20px 40px -14px rgba(0, 0, 0, 0.7),
-      0 0 30px -8px rgba(240, 193, 75, 0.45);
+      0 0 30px -8px rgba(95, 216, 230, 0.45);
   }
 
   .btn-solid {
@@ -198,20 +198,20 @@ body {
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
-    background: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
-    color: #241a05;
+    background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
+    color: #041016;
     font-weight: 600;
-    box-shadow: 0 14px 30px -10px rgba(240, 193, 75, 0.5);
+    box-shadow: 0 14px 30px -10px rgba(95, 216, 230, 0.5);
     transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
   }
   .btn-solid:hover {
     transform: translateY(-2px);
     filter: brightness(1.08);
-    box-shadow: 0 20px 40px -10px rgba(201, 146, 44, 0.6);
+    box-shadow: 0 20px 40px -10px rgba(95, 216, 230, 0.6);
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+    background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -311,10 +311,10 @@ body {
    entrance runs on the CTA's wrapper, not the button: a transform held by
    an animation would beat .btn-solid:hover and kill the hover lift. */
 
-/* The gold line's letters each carry the gradient, because a gradient
+/* The accent line's letters each carry the gradient, because a gradient
    clipped to the whole line breaks once its letters move on their own. */
-.hero-gold {
-  background-image: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+.hero-accent {
+  background-image: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -348,13 +348,13 @@ body {
   height: calc(100% + 2px);
   overflow: visible;
   pointer-events: none;
-  filter: drop-shadow(0 0 4px rgba(240, 193, 75, 0.6));
+  filter: drop-shadow(0 0 4px rgba(95, 216, 230, 0.6));
 }
 .cta-trace rect {
   width: calc(100% - 1.5px);
   height: calc(100% - 1.5px);
   fill: none;
-  stroke: #f0c14b;
+  stroke: #5fd8e6;
   stroke-width: 1.5;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
@@ -368,12 +368,12 @@ body {
     animation-delay: calc(var(--l, 0) * 38ms);
   }
 
-  /* Once the last letter lands, a glint runs across the gold line one
+  /* Once the last letter lands, a glint runs across the accent line one
      letter after another (its letters are --l 15 to 34). */
-  .hero-gold {
+  .hero-accent {
     background-image:
       linear-gradient(110deg, transparent 30%, rgba(255, 247, 222, 0.95) 50%, transparent 70%),
-      linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+      linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
     background-size: 300% 100%, 100% 100%;
     background-repeat: no-repeat;
     background-position: 100% 0, 0 0;
@@ -413,7 +413,7 @@ body {
     animation: hero-cta-shine 900ms ease-in-out calc(var(--hero-delay, 0ms) + 1800ms) both;
   }
 
-  /* Closing CTA: the gold line runs once around the card, then settles to
+  /* Closing CTA: the cyan line runs once around the card, then settles to
      a faint border. */
   .cta-trace.is-drawn rect {
     animation: cta-trace 2200ms cubic-bezier(0.65, 0, 0.35, 1) forwards;
@@ -692,7 +692,7 @@ body {
 .float-field:focus-within .float-label {
   top: 15px;
   font-size: 0.75rem;
-  color: #f0c14b;
+  color: #5fd8e6;
 }
 .float-field:has(:disabled) .float-label {
   opacity: 0.4;
@@ -702,7 +702,7 @@ body {
 .drawn-check circle,
 .drawn-check path {
   fill: none;
-  stroke: #f0c14b;
+  stroke: #5fd8e6;
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -715,7 +715,7 @@ body {
 .mark-sweep {
   color: #fff;
   padding: 0 0.1em;
-  background: linear-gradient(rgb(240 193 75 / 0.38), rgb(240 193 75 / 0.38)) no-repeat 0 88% / 100% 0.45em;
+  background: linear-gradient(rgb(95 216 230 / 0.38), rgb(95 216 230 / 0.38)) no-repeat 0 88% / 100% 0.45em;
 }
 .mark-scope {
   view-timeline-name: --mark;
@@ -757,7 +757,7 @@ body {
 /* Growing underline on text links (desktop nav, footer pages). */
 .link-grow {
   padding-bottom: 2px;
-  background: linear-gradient(#f0c14b, #f0c14b) no-repeat right bottom / 0% 1px;
+  background: linear-gradient(#5fd8e6, #5fd8e6) no-repeat right bottom / 0% 1px;
 }
 .link-grow:hover,
 .link-grow:focus-visible {
@@ -765,7 +765,7 @@ body {
   background-size: 100% 1px;
 }
 
-/* Glass buttons fill with gold from the left on hover. Unlayered, so it
+/* Glass buttons fill with cyan from the left on hover. Unlayered, so it
    beats the text-white utility on the buttons. */
 .btn-glass {
   isolation: isolate;
@@ -777,13 +777,13 @@ body {
   inset: 0;
   z-index: -1;
   border-radius: inherit;
-  background: linear-gradient(135deg, #f0c14b, #c9922c);
+  background: linear-gradient(135deg, #5fd8e6, #1f9fb3);
   transform: scaleX(0);
   transform-origin: left;
 }
 @media (hover: hover) {
   .btn-glass:hover {
-    color: #241a05;
+    color: #041016;
   }
   .btn-glass:hover::before {
     transform: none;
@@ -817,7 +817,7 @@ body {
   right: 0;
   z-index: 55;
   height: 3px;
-  background: linear-gradient(90deg, #f0c14b, #3fc8d8);
+  background: linear-gradient(90deg, #5fd8e6, #3fc8d8);
   transform-origin: left;
   transform: scaleX(0);
   pointer-events: none;
@@ -960,7 +960,8 @@ body {
 
 /* ===== Morphing menu highlight (2026-10-12, navbar.tsx DesktopLinks).
    One shared shape under the desktop links. At rest a faint line, then an
-   underline under the hovered or focused link, then a gold pill behind it.
+   underline under the hovered or focused link, then a faceted cyan crystal
+   (cut corners, like the lotus facets, 2026-10-13) behind it.
    Unlayered, so the lit color beats the text utilities on the links. ===== */
 .nav-morph-ind {
   position: absolute;
@@ -970,17 +971,19 @@ body {
   height: 1px;
   border-radius: 1px;
   background: rgb(255 255 255 / 0.12);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
   pointer-events: none;
 }
 .nav-morph-ind.is-line {
-  background: var(--color-accent-gold);
+  background: var(--color-accent-cyan);
 }
 .nav-morph-ind.is-pill {
-  border-radius: 9999px;
-  background: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+  border-radius: 2px;
+  background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
+  clip-path: polygon(10px 0, 100% 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 100%, 0 10px);
 }
 .nav-morph a.is-lit {
-  color: #241a05;
+  color: #041016;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -991,6 +994,7 @@ body {
       width 300ms cubic-bezier(0.22, 1, 0.36, 1),
       height 300ms cubic-bezier(0.22, 1, 0.36, 1),
       border-radius 300ms ease,
+      clip-path 300ms ease,
       background 300ms ease;
   }
 }

@@ -86,7 +86,7 @@ export function AuditRequestForm() {
             type="checkbox"
             checked={noWebsite}
             onChange={(e) => setNoWebsite(e.target.checked)}
-            className="h-4 w-4 accent-[#f0c14b]"
+            className="h-4 w-4 accent-[#5fd8e6]"
           />
           No website yet
         </label>
@@ -115,7 +115,7 @@ export function AuditRequestForm() {
               key={m}
               className={`cursor-pointer rounded-xl border px-3 py-2.5 text-center text-sm capitalize transition ${
                 contact === m
-                  ? "border-[#f0c14b]/70 bg-[#f0c14b]/10 text-white"
+                  ? "border-[#5fd8e6]/70 bg-[#5fd8e6]/10 text-white"
                   : "border-white/15 bg-black/20 text-white/70 hover:border-white/30"
               }`}
             >

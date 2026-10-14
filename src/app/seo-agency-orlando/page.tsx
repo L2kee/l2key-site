@@ -145,7 +145,7 @@ export default function SeoAgencyOrlandoPage() {
         <div className="mt-10 space-y-8">
           {PROCESS.map((p) => (
             <div key={p.step} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#f0c14b]/50">{p.step}</span>
+              <span className="shrink-0 text-2xl font-bold text-[#5fd8e6]/50">{p.step}</span>
               <div>
                 <h3 className="text-lg font-semibold text-white">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">{p.body}</p>

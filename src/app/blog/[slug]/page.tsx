@@ -136,7 +136,7 @@ export default async function BlogPostPage({
       {post.relatedHref && post.relatedLabel && (
         <Link
           href={post.relatedHref}
-          className="mt-10 inline-flex items-center gap-1.5 text-sm font-medium text-[#f0c14b] hover:text-[#c9922c]"
+          className="mt-10 inline-flex items-center gap-1.5 text-sm font-medium text-[#5fd8e6] hover:text-[#1f9fb3]"
         >
           {post.relatedLabel} <ArrowRight size={14} />
         </Link>

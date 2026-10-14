@@ -49,8 +49,8 @@ function NavLink({
 
 // Desktop links share one indicator (.nav-morph in globals.css). At rest it
 // is a faint line under the links. Hovering or focusing a link shrinks it to
-// an underline under that link, then it swells into a gold pill behind it.
-// Moving along glides the pill, and leaving melts it back into the line.
+// an underline under that link, then it swells into a faceted cyan crystal behind it.
+// Moving along glides the crystal, and leaving melts it back into the line.
 function DesktopLinks() {
   const group = useRef<HTMLDivElement>(null);
   const ind = useRef<HTMLSpanElement>(null);
@@ -193,7 +193,7 @@ export function Navbar() {
             }}
             aria-label="Open menu"
             aria-expanded={open}
-            className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#f0c14b]/50 hover:text-[#f0c14b] sm:hidden"
+            className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#5fd8e6]/50 hover:text-[#5fd8e6] sm:hidden"
           >
             <i /><i /><i />
           </button>
@@ -229,7 +229,7 @@ export function Navbar() {
               href={l.href}
               onClick={closeForNav}
               style={{ "--m": i } as React.CSSProperties}
-              className="menu-item border-b border-white/10 py-4 text-3xl font-semibold text-white hover:text-[#f0c14b]"
+              className="menu-item border-b border-white/10 py-4 text-3xl font-semibold text-white hover:text-[#5fd8e6]"
             >
               {l.label}
             </NavLink>
@@ -242,10 +242,10 @@ export function Navbar() {
           </Link>
           <div className="mt-6 flex flex-col gap-3 text-sm text-white/60">
             <a href="tel:+18138971954" className="flex items-center gap-3 transition hover:text-white">
-              <Phone size={16} style={{ color: "#f0c14b" }} /> (813) 897-1954
+              <Phone size={16} style={{ color: "#5fd8e6" }} /> (813) 897-1954
             </a>
             <a href="mailto:hello@evogencyglobal.com" className="flex items-center gap-3 transition hover:text-white">
-              <Mail size={16} style={{ color: "#f0c14b" }} /> hello@evogencyglobal.com
+              <Mail size={16} style={{ color: "#5fd8e6" }} /> hello@evogencyglobal.com
             </a>
             <a
               href="https://calendly.com/mohamed-eltoukhy011/30min"
@@ -253,7 +253,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="flex items-center gap-3 transition hover:text-white"
             >
-              <CalendarClock size={16} style={{ color: "#f0c14b" }} /> Book a call
+              <CalendarClock size={16} style={{ color: "#5fd8e6" }} /> Book a call
             </a>
           </div>
         </div>

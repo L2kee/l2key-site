@@ -35,7 +35,7 @@ export default function WorksPage() {
       {/* Hero */}
       <section className="flex min-h-[55vh] flex-col items-center justify-center py-20 text-center">
         <div className="glass-strong flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium tracking-wide text-white/80">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#f0c14b]" />
+          <span className="h-1.5 w-1.5 rounded-full bg-[#5fd8e6]" />
           Proof, not promises
         </div>
         <h1 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-6xl">

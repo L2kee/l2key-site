@@ -13,11 +13,11 @@ export default function ReviewKitThanksPage() {
     <div className="mx-auto max-w-4xl space-y-6 px-4 pt-8 pb-20 sm:px-6">
       <div className="glass rounded-3xl px-6 py-6 text-center">
         <p className="flex items-center justify-center gap-2 text-lg font-semibold text-white">
-          <MailCheck size={22} className="text-[#f0c14b]" /> Your 5 Star Review Kit is on its way to your inbox.
+          <MailCheck size={22} className="text-[#5fd8e6]" /> Your 5 Star Review Kit is on its way to your inbox.
         </p>
         <p className="mt-2 text-white/60">
           Don&apos;t see it in 5 minutes? Check your spam folder, or{" "}
-          <a href={LEAD_MAGNET_PATH} className="inline-flex items-center gap-1 text-[#f0c14b] underline" download>
+          <a href={LEAD_MAGNET_PATH} className="inline-flex items-center gap-1 text-[#5fd8e6] underline" download>
             <Download size={14} /> download it right now
           </a>
           .

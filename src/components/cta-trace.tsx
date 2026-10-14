@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
-/** A thin gold line that draws once around its card when the card scrolls
-    into view, then settles as a faint gold border. Drop it inside a
+/** A thin cyan line that draws once around its card when the card scrolls
+    into view, then settles as a faint cyan border. Drop it inside a
     relative, rounded parent and pass the parent's corner radius. Without
     JS the line just never draws (see .cta-trace in globals.css). */
 export function CtaTrace({ radius = 24 }: { radius?: number }) {

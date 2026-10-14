@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <div className="mx-auto max-w-5xl px-6 pt-28 pb-20 text-center">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f0c14b]/80">
+      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/80">
         404
       </p>
       <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -29,7 +29,7 @@ export default function NotFound() {
       <div className="mt-6">
         <Link
           href="/"
-          className="text-sm font-medium text-[#f0c14b] hover:text-[#c9922c]"
+          className="text-sm font-medium text-[#5fd8e6] hover:text-[#1f9fb3]"
         >
           Back to homepage
         </Link>
@@ -40,13 +40,13 @@ export default function NotFound() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((s) => (
             <TiltCard key={s.title} className="glass h-full rounded-2xl p-6">
-              <s.icon size={28} style={{ color: "#f0c14b" }} />
+              <s.icon size={28} style={{ color: "#5fd8e6" }} />
               <h3 className="mt-4 text-lg font-semibold text-white">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/65">{s.body}</p>
               {s.href && (
                 <Link
                   href={s.href}
-                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#f0c14b] hover:text-[#c9922c]"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#5fd8e6] hover:text-[#1f9fb3]"
                 >
                   Learn more <ArrowRight size={14} />
                 </Link>

@@ -51,7 +51,7 @@ function WorkMedia({ item }: { item: WorkItem }) {
         />
       ) : (
         <div className="flex h-full w-full items-center justify-center">
-          <Icon size={64} strokeWidth={1.25} style={{ color: "#f0c14b" }} />
+          <Icon size={64} strokeWidth={1.25} style={{ color: "#5fd8e6" }} />
         </div>
       )}
       {item.fullPage && (
@@ -81,8 +81,8 @@ function MediaOverlays({ item }: { item: WorkItem }) {
     <>
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/20" />
       {item.tag && (
-        <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-[#f0c14b]/30 bg-black/60 px-3 py-1 text-xs font-medium text-[#f0c14b] backdrop-blur">
-          <span className="h-1.5 w-1.5 rounded-full bg-[#f0c14b]" />
+        <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-[#5fd8e6]/30 bg-black/60 px-3 py-1 text-xs font-medium text-[#5fd8e6] backdrop-blur">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#5fd8e6]" />
           {item.tag}
         </span>
       )}
@@ -133,7 +133,7 @@ function WorkDetails({ item }: { item: WorkItem }) {
 }
 
 const MEDIA_BG =
-  "relative overflow-clip bg-gradient-to-br from-[#f0c14b]/15 via-[#c9922c]/5 to-transparent";
+  "relative overflow-clip bg-gradient-to-br from-[#5fd8e6]/15 via-[#1f9fb3]/5 to-transparent";
 
 /** "stacked" is the tilting image over details grid card (Works page).
     "split" (homepage) is two separate glass cards, image and details, each

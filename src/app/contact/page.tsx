@@ -41,7 +41,7 @@ export default function ContactPage() {
             Free, no pressure audit of your current site and Google presence.
             We&apos;ll tell you exactly what&apos;s costing you customers.
           </p>
-          <h2 className="mt-8 text-lg font-semibold text-[#f0c14b]">Request your free audit</h2>
+          <h2 className="mt-8 text-lg font-semibold text-[#5fd8e6]">Request your free audit</h2>
         </div>
         <div className="mt-6">
           <AuditRequestForm />

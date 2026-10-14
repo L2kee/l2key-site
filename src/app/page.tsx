@@ -32,7 +32,7 @@ export default function Home() {
             <DropLetters text="Built to be found." />
           </span>
           <span className="block">
-            <DropLetters text="Designed to be trusted." start={15} letterClass="hero-gold" />
+            <DropLetters text="Designed to be trusted." start={15} letterClass="hero-accent" />
           </span>
         </h1>
 
@@ -65,7 +65,7 @@ export default function Home() {
           {/* Three samples here, all five on the Job Site Studio page. */}
           <SamplePanels samples={SAMPLES.slice(0, 3)} />
           <div className="px-4 pt-8 pb-4 text-center sm:px-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0c14b]">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">
               Job Site Studio
             </p>
             <p className="mx-auto mt-3 max-w-md text-white/65">
@@ -91,7 +91,7 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-8 text-center">
-          <Link href="/works" className="text-sm font-medium text-[#f0c14b] hover:underline">
+          <Link href="/works" className="text-sm font-medium text-[#5fd8e6] hover:underline">
             See all work →
           </Link>
         </div>

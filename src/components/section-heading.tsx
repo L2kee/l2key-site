@@ -14,7 +14,7 @@ export function SectionHeading({
 }) {
   return (
     <div className="text-center">
-      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0c14b]/80">
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/80">
         {eyebrow}
       </p>
       {reveal ? (
