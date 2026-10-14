@@ -4839,7 +4839,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A clear explanation of the real difference between a basic chatbot and a genuine AI agent, and what each is actually good at.",
     excerpt: "The real difference between a basic chatbot and a genuine AI agent, and what each is good at.",
-    date: "2026-09-18",
+    date: "2026-10-14",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -4905,7 +4905,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical guide to which business tasks should stay in human hands, even when the technology to automate them exists.",
     excerpt: "Which business tasks should stay in human hands, even when the technology to automate them exists.",
-    date: "2026-09-18",
+    date: "2026-10-14",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -4970,7 +4970,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical framework for identifying where automation would actually help a business, without needing outside help to start.",
     excerpt: "A practical framework for identifying where automation would actually help, without outside help to start.",
-    date: "2026-09-18",
+    date: "2026-10-14",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
