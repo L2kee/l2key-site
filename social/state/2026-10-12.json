@@ -88,5 +88,17 @@
     "post": "2026-10-17-ai-tutor-plan",
     "due": "2026-10-17T08:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15"
+  },
+  "2026-10-17 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6acfe2feeab29caa1e5e2bbf",
+    "post": "2026-10-17-excalidraw",
+    "due": "2026-10-17T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15"
+  },
+  "2026-10-17 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6acfe2ff66fe8729d5913789",
+    "post": "2026-10-17-screenshot-to-text",
+    "due": "2026-10-17T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15"
   }
 }
