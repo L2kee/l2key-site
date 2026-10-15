@@ -106,5 +106,17 @@
     "post": "2026-10-18-free-audit",
     "due": "2026-10-18T08:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15"
+  },
+  "2026-10-18 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad1302f3ccfcf93aab62e2e",
+    "post": "2026-10-18-coolors-palettes",
+    "due": "2026-10-18T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15"
+  },
+  "2026-10-18 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad1303084453eae6f32b025",
+    "post": "2026-10-18-summarize-pdf",
+    "due": "2026-10-18T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15"
   }
 }
