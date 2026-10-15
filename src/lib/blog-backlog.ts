@@ -5295,7 +5295,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "The real ongoing maintenance costs of owning a mobile app that often get left out of the initial pitch: platform updates, bug fixes, and store compliance.",
     excerpt: "The real ongoing costs that often get left out of the initial pitch: updates, bug fixes, and compliance.",
-    date: "2026-09-18",
+    date: "2026-10-15",
     tag: "Mobile Apps",
     relatedHref: "/mobile-app-development-orlando",
     relatedLabel: "See our app development service",
@@ -5366,7 +5366,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to use push notifications in a way that adds real value instead of annoying users enough to delete the app entirely.",
     excerpt: "How to use push notifications in a way that adds value instead of annoying users into deleting the app.",
-    date: "2026-09-18",
+    date: "2026-10-15",
     tag: "Mobile Apps",
     relatedHref: "/mobile-app-development-orlando",
     relatedLabel: "See our app development service",
@@ -5437,7 +5437,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "An honest comparison of building an app with an in house team versus hiring an outside agency, covering cost, speed, and long term ownership.",
     excerpt: "An honest comparison covering cost, speed, and long term ownership between the two approaches.",
-    date: "2026-09-18",
+    date: "2026-10-15",
     tag: "Mobile Apps",
     relatedHref: "/mobile-app-development-orlando",
     relatedLabel: "See our app development service",

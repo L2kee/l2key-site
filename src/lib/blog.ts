@@ -612,6 +612,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "ai-automation-and-data-privacy",
   "the-real-cost-of-not-automating",
   "connecting-your-crm-and-website-with-automation",
+  "app-maintenance-costs-nobody-tells-you-about",
+  "push-notifications-done-right-vs-annoying",
+  "in-house-app-development-vs-hiring-an-agency",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
