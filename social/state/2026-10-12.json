@@ -100,5 +100,11 @@
     "post": "2026-10-17-screenshot-to-text",
     "due": "2026-10-17T19:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15"
+  },
+  "2026-10-18 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad09985a86e9aa7e5e23af0",
+    "post": "2026-10-18-free-audit",
+    "due": "2026-10-18T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15"
   }
 }
