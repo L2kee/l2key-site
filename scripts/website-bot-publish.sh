@@ -57,7 +57,8 @@ if [ -n "$DRIP_DATE" ]; then
   TODAY=$(TZ=America/New_York date +%F)
   YESTERDAY=$(TZ=America/New_York date -d yesterday +%F)
   [ "$DRIP_DATE" = "$TODAY" ] || [ "$DRIP_DATE" = "$YESTERDAY" ] || fail "drip date $DRIP_DATE is not today or yesterday"
-  if git log origin/master --format=%s | grep -qxF "Publish 3 posts dated $DRIP_DATE"; then
+  # No "git log | grep -q" here: with pipefail, grep quitting early kills git log and the check reads as false.
+  if [ -n "$(git log origin/master -1 --format=%h --grep="^Publish 3 posts dated $DRIP_DATE\$")" ]; then
     note "Posts dated $DRIP_DATE are already on master, skipped."
   else
     changed_lines() { grep -E '^[+-]' | grep -vE '^(\+\+\+|---) ' || true; }
@@ -139,7 +140,8 @@ if [ "${#SLUGS[@]}" -gt 0 ]; then
   for i in $(seq 1 45); do
     live=0
     for s in "${SLUGS[@]}"; do
-      if curl -s --max-time 20 "https://evogencyglobal.com/blog/$s" | grep -q "dateTime=\"$DRIP_DATE\""; then live=$((live + 1)); fi
+      page=$(curl -s --max-time 20 "https://evogencyglobal.com/blog/$s" || true)
+      if [[ $page == *"dateTime=\"$DRIP_DATE\""* ]]; then live=$((live + 1)); fi
     done
     [ "$live" = "${#SLUGS[@]}" ] && break
     sleep 20
