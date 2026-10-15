@@ -609,6 +609,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "chatbots-vs-ai-agents-explained",
   "what-tasks-should-never-be-automated",
   "how-to-audit-your-business-for-automation-opportunities",
+  "ai-automation-and-data-privacy",
+  "the-real-cost-of-not-automating",
+  "connecting-your-crm-and-website-with-automation",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

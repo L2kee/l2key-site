@@ -5036,7 +5036,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "The key data privacy questions a business owner should ask before adopting AI automation tools, explained in plain language.",
     excerpt: "The key data privacy questions a business owner should ask before adopting AI automation tools.",
-    date: "2026-09-18",
+    date: "2026-10-14",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -5101,7 +5101,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why the cost of staying manual is often invisible but real, through lost leads, wasted staff time, and slower response times.",
     excerpt: "Why the cost of staying manual is often invisible but real, through lost leads and wasted time.",
-    date: "2026-09-18",
+    date: "2026-10-14",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -5165,7 +5165,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How automation can connect a business website directly to its CRM, so leads flow in automatically instead of requiring manual entry.",
     excerpt: "How automation connects a website directly to a CRM, so leads flow in without manual entry.",
-    date: "2026-09-18",
+    date: "2026-10-14",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
