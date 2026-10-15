@@ -1,0 +1,58 @@
+name: Website Bot publish
+
+# When the cloud check blocks the Website Bot's push to master, the bot pushes a website-bot/<date> branch instead.
+# This publishes that branch on its own, but only if it holds nothing but the bot's standing jobs (the daily blog
+# drip, the Friday social week file) and the site builds. The rules live in scripts/website-bot-publish.sh and run
+# from master's copy, so a branch can't loosen them. If anything is off it publishes nothing and the run fails.
+# Run it by hand (Actions tab) to check a branch without publishing: dry run is on by default there.
+on:
+  push:
+    branches: ["website-bot/**"]
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "website-bot/... branch to check"
+        required: true
+      dry_run:
+        description: "1 = check and build only, 0 = publish"
+        default: "1"
+
+concurrency:
+  group: website-bot-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  publish:
+    if: github.event_name == 'workflow_dispatch' || github.event.deleted != true
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Check and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || '0' }}
+          BRANCH: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
+        run: |
+          git config user.name "Website Bot Publish"
+          git config user.email "actions@users.noreply.github.com"
+          if [ "${{ github.event_name }}" = workflow_dispatch ]; then
+            git fetch -q origin "refs/heads/$BRANCH"
+            SHA=$(git rev-parse FETCH_HEAD)
+          else
+            SHA=${{ github.sha }}
+          fi
+          bash scripts/website-bot-publish.sh "$SHA" "$BRANCH"
