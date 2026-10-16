@@ -1,0 +1,16 @@
+{
+  "seconds": 35.14,
+  "cover_ms": 3076,
+  "look": "blueprint",
+  "motion": {
+    "hook": "rise",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "lightup",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "make-money"
+}

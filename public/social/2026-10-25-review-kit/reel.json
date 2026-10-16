@@ -1,5 +1,5 @@
 {
-  "seconds": 40.3,
+  "seconds": 36.88,
   "cover_ms": 3400,
   "look": "editorial",
   "motion": {
@@ -11,6 +11,6 @@
     "change": "blur",
     "scene": "aurora"
   },
-  "voice": null,
+  "voice": "bf_lily@1.15",
   "music": "make-funk"
 }

@@ -1,5 +1,5 @@
 {
-  "seconds": 38.22,
+  "seconds": 36.57,
   "cover_ms": 3400,
   "look": "teal",
   "motion": {
@@ -11,6 +11,6 @@
     "change": "slide",
     "scene": "particles"
   },
-  "voice": null,
+  "voice": "bf_lily@1.15",
   "music": "blue-skies"
 }
