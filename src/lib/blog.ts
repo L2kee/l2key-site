@@ -615,6 +615,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "app-maintenance-costs-nobody-tells-you-about",
   "push-notifications-done-right-vs-annoying",
   "in-house-app-development-vs-hiring-an-agency",
+  "app-store-optimization-basics",
+  "how-to-know-if-your-app-idea-is-worth-building",
+  "how-ai-overviews-are-changing-local-search",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

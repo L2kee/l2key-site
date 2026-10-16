@@ -5503,7 +5503,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "The basics of app store optimization, covering the title, keywords, and screenshots that actually affect whether an app gets discovered.",
     excerpt: "The title, keywords, and screenshots that actually affect whether an app gets discovered.",
-    date: "2026-09-18",
+    date: "2026-10-16",
     tag: "Mobile Apps",
     relatedHref: "/mobile-app-development-orlando",
     relatedLabel: "See our app development service",
@@ -5574,7 +5574,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical way to evaluate whether an app idea is genuinely worth building, before investing real time and money into development.",
     excerpt: "A practical way to evaluate an app idea before investing real time and money into building it.",
-    date: "2026-09-18",
+    date: "2026-10-16",
     tag: "Mobile Apps",
     relatedHref: "/mobile-app-development-orlando",
     relatedLabel: "See our app development service",
@@ -5645,7 +5645,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How Google's AI Overviews are changing what a local search results page actually looks like, and what that means for local businesses.",
     excerpt: "How Google's AI Overviews are changing the local search results page, and what it means for local businesses.",
-    date: "2026-09-18",
+    date: "2026-10-16",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our GEO service",
