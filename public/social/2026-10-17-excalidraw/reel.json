@@ -1,15 +1,16 @@
 {
   "seconds": 36.5,
-  "cover_ms": 3329,
+  "cover_ms": 3328,
+  "engine": 2,
   "look": "teal",
   "motion": {
-    "hook": "rise",
-    "why": "lightup",
-    "num": "odometer",
-    "step": "lightup",
-    "cta": "trace",
-    "change": "fade",
-    "scene": "particles"
+    "hook": "brush",
+    "why": "mark",
+    "num": "spring",
+    "step": "words",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "aurora"
   },
   "voice": "bf_lily@1.15",
   "music": "blue-skies"

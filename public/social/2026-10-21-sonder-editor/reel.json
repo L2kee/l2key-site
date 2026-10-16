@@ -1,13 +1,14 @@
 {
   "seconds": 37.71,
   "cover_ms": 2935,
+  "engine": 2,
   "look": "noir",
   "motion": {
-    "hook": "wipe",
-    "why": "lightup",
-    "num": "odometer",
+    "hook": "circle",
+    "why": "mark",
+    "num": "spring",
     "step": "lightup",
-    "cta": "orbit",
+    "cta": "brush",
     "change": "up",
     "scene": "particles"
   },

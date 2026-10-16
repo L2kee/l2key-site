@@ -1,15 +1,16 @@
 {
-  "seconds": 33.88,
-  "cover_ms": 3323,
+  "seconds": 33.89,
+  "cover_ms": 3324,
+  "engine": 2,
   "look": "editorial",
   "motion": {
-    "hook": "type",
-    "why": "mark",
-    "num": "spring",
-    "step": "words",
-    "cta": "orbit",
-    "change": "up",
-    "scene": "aurora"
+    "hook": "drop",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "lightup",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "particles"
   },
   "voice": "bf_lily@1.15",
   "music": "make-funk"

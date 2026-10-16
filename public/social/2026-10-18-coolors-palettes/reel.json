@@ -1,15 +1,16 @@
 {
-  "seconds": 33.36,
+  "seconds": 33.37,
   "cover_ms": 2742,
+  "engine": 2,
   "look": "blueprint",
   "motion": {
-    "hook": "mark",
-    "why": "wipe",
-    "num": "pop",
-    "step": "lightup",
-    "cta": "pulse",
-    "change": "blur",
-    "scene": "particles"
+    "hook": "words",
+    "why": "brush",
+    "num": "drawn",
+    "step": "circle",
+    "cta": "scribble",
+    "change": "ripple",
+    "scene": "grid"
   },
   "voice": "bf_lily@1.15",
   "music": "make-money"

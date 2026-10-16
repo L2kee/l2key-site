@@ -1,15 +1,16 @@
 {
   "seconds": 35.69,
   "cover_ms": 2876,
+  "engine": 2,
   "look": "editorial",
   "motion": {
-    "hook": "words",
-    "why": "rise",
-    "num": "stamp",
-    "step": "lightup",
-    "cta": "nudge",
-    "change": "zoom",
-    "scene": "particles"
+    "hook": "rise",
+    "why": "brush",
+    "num": "drawn",
+    "step": "rise",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "glow"
   },
   "voice": "bf_lily@1.15",
   "music": "make-funk"

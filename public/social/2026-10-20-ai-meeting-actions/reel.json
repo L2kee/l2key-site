@@ -1,15 +1,16 @@
 {
-  "seconds": 37.19,
+  "seconds": 37.18,
   "cover_ms": 3400,
+  "engine": 2,
   "look": "cream",
   "motion": {
-    "hook": "rise",
+    "hook": "brush",
     "why": "lightup",
     "num": "odometer",
-    "step": "words",
-    "cta": "pulse",
-    "change": "blur",
-    "scene": "particles"
+    "step": "circle",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "grid"
   },
   "voice": "bf_lily@1.15",
   "music": "eat"

@@ -1,15 +1,16 @@
 {
-  "seconds": 37.1,
-  "cover_ms": 3415,
+  "seconds": 37.11,
+  "cover_ms": 3400,
+  "engine": 2,
   "look": "blueprint",
   "motion": {
-    "hook": "type",
-    "why": "mark",
-    "num": "spring",
-    "step": "rise",
-    "cta": "trace",
-    "change": "fade",
-    "scene": "glow"
+    "hook": "drop",
+    "why": "rise",
+    "num": "stamp",
+    "step": "words",
+    "cta": "scribble",
+    "change": "ripple",
+    "scene": "aurora"
   },
   "voice": "bf_lily@1.15",
   "music": "make-money"

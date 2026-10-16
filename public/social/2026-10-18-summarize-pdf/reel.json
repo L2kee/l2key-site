@@ -1,14 +1,15 @@
 {
-  "seconds": 35.11,
+  "seconds": 35.1,
   "cover_ms": 3400,
+  "engine": 2,
   "look": "spotlight",
   "motion": {
-    "hook": "wipe",
-    "why": "lightup",
-    "num": "odometer",
+    "hook": "circle",
+    "why": "rise",
+    "num": "stamp",
     "step": "rise",
-    "cta": "nudge",
-    "change": "zoom",
+    "cta": "shine",
+    "change": "slide",
     "scene": "glow"
   },
   "voice": "bf_lily@1.15",

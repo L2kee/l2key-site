@@ -1,15 +1,16 @@
 {
   "seconds": 37.97,
   "cover_ms": 3400,
+  "engine": 2,
   "look": "gold",
   "motion": {
-    "hook": "decode",
+    "hook": "wipe",
     "why": "mark",
     "num": "spring",
-    "step": "lightup",
-    "cta": "shine",
-    "change": "slide",
-    "scene": "particles"
+    "step": "brush",
+    "cta": "orbit",
+    "change": "ink",
+    "scene": "orb"
   },
   "voice": "bf_lily@1.15",
   "music": "puppy-love"

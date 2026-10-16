@@ -1,15 +1,16 @@
 {
-  "seconds": 33.95,
+  "seconds": 33.96,
   "cover_ms": 3400,
+  "engine": 2,
   "look": "cream",
   "motion": {
-    "hook": "words",
-    "why": "rise",
-    "num": "stamp",
-    "step": "rise",
-    "cta": "shine",
-    "change": "slide",
-    "scene": "particles"
+    "hook": "rise",
+    "why": "wipe",
+    "num": "pop",
+    "step": "brush",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "orb"
   },
   "voice": "bf_lily@1.15",
   "music": "eat"

@@ -1,14 +1,15 @@
 {
-  "seconds": 35.57,
+  "seconds": 35.56,
   "cover_ms": 2966,
+  "engine": 2,
   "look": "gold",
   "motion": {
-    "hook": "curtain",
-    "why": "wipe",
-    "num": "pop",
-    "step": "words",
-    "cta": "nudge",
-    "change": "zoom",
+    "hook": "letters",
+    "why": "circle",
+    "num": "drop",
+    "step": "rise",
+    "cta": "orbit",
+    "change": "ink",
     "scene": "particles"
   },
   "voice": "bf_lily@1.15",

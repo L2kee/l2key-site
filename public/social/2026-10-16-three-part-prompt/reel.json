@@ -1,15 +1,16 @@
 {
-  "seconds": 32.35,
-  "cover_ms": 3176,
+  "seconds": 32.34,
+  "cover_ms": 3173,
+  "engine": 2,
   "look": "noir",
   "motion": {
-    "hook": "decode",
-    "why": "mark",
-    "num": "spring",
-    "step": "rise",
-    "cta": "pulse",
-    "change": "blur",
-    "scene": "glow"
+    "hook": "wipe",
+    "why": "rise",
+    "num": "stamp",
+    "step": "circle",
+    "cta": "brush",
+    "change": "up",
+    "scene": "grid"
   },
   "voice": "bf_lily@1.15",
   "music": "poor-but-happy"
