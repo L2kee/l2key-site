@@ -78,45 +78,45 @@
     "fmt": "reel_vo_bf_lily@1.15"
   },
   "2026-10-16 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acea105d21c5193abcc4a2b",
+    "buffer": "6ad28acdc19525fddd3986d8",
     "post": "2026-10-16-three-part-prompt",
     "due": "2026-10-16T19:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-17 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acf4d3d1faf3fca4e4e6680",
+    "buffer": "6ad28aceab7421cbc59c2b3c",
     "post": "2026-10-17-ai-tutor-plan",
     "due": "2026-10-17T08:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-17 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acfe2feeab29caa1e5e2bbf",
+    "buffer": "6ad28aced254ff4dc47c5a88",
     "post": "2026-10-17-excalidraw",
     "due": "2026-10-17T12:30:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-17 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6acfe2ff66fe8729d5913789",
+    "buffer": "6ad28acfc74c39c9ee5779f4",
     "post": "2026-10-17-screenshot-to-text",
     "due": "2026-10-17T19:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-18 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ad09985a86e9aa7e5e23af0",
+    "buffer": "6ad28acf8fcd1dd3d7b664b3",
     "post": "2026-10-18-free-audit",
     "due": "2026-10-18T08:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-18 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ad1302f3ccfcf93aab62e2e",
+    "buffer": "6ad28ad0c74c39c9ee577a1f",
     "post": "2026-10-18-coolors-palettes",
     "due": "2026-10-18T12:30:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-18 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ad1303084453eae6f32b025",
+    "buffer": "6ad28ad0c74c39c9ee577a4d",
     "post": "2026-10-18-summarize-pdf",
     "due": "2026-10-18T19:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }

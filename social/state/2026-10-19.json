@@ -1,20 +1,20 @@
 {
   "2026-10-19 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ad25b71bf6bc9680ee338bb",
+    "buffer": "6ad28ad0c80590ed08af70c8",
     "post": "2026-10-19-ai-clean-spreadsheet",
     "due": "2026-10-19T08:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-19 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ad25b724b85493cfefff5de",
+    "buffer": "6ad28ad1c19525fddd398768",
     "post": "2026-10-19-opencode-agent",
     "due": "2026-10-19T12:30:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-19 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ad25b72cd10777bbb83e146",
+    "buffer": "6ad28ad1c80590ed08af70fe",
     "post": "2026-10-19-muse-spark-open",
     "due": "2026-10-19T19:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15"
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
