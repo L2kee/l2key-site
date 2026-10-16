@@ -10,12 +10,55 @@ import { HeroReveal } from "@/components/hero-reveal";
 import { CtaTrace } from "@/components/cta-trace";
 import { DropLetters } from "@/components/drop-letters";
 import { SamplePanels } from "@/components/sample-panels";
+import { LogoWall } from "@/components/logo-wall";
+import { FaqList } from "@/components/faq-list";
 import { SAMPLES } from "@/lib/job-site-studio";
 import { WORK } from "@/lib/content";
+
+const FAQ = [
+  {
+    q: "What is the free homepage mockup?",
+    a: "We design what your new homepage could look like, built around your business and your customers, before you pay anything. If you like it, we talk about building the full site. If not, you owe us nothing.",
+  },
+  {
+    q: "How long does a new website take?",
+    a: "Most small business sites take a few weeks from kickoff to launch, depending on how many pages and features you need.",
+  },
+  {
+    q: "How much does a website cost?",
+    a: "It depends on the pages and features you need. A clean single page site costs far less than a full site with booking built in. We give you a real number once we understand what you need, not a generic package price.",
+  },
+  {
+    q: "Do I own my website?",
+    a: "Yes. It's built with real code you own, not a locked template you keep renting month to month.",
+  },
+  {
+    q: "Will my site work well on phones?",
+    a: "Every site is designed for phones first and then adapted up to desktop, because most of your visitors find you on their phone.",
+  },
+  {
+    q: "Do you only work with Orlando businesses?",
+    a: "We're based in Orlando and work with businesses anywhere. Everything from the kickoff call to launch day happens online.",
+  },
+];
 
 export default function Home() {
   return (
     <div id="top">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: FAQ.map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: { "@type": "Answer", text: item.a },
+            })),
+          }),
+        }}
+      />
       <HeroVideo />
 
       {/* Hero */}
@@ -82,6 +125,23 @@ export default function Home() {
         </TiltCard>
       </section>
 
+      {/* Logo wall cycle: concept marks only, labeled as such (logo-wall.tsx). */}
+      <section className="mx-auto max-w-4xl px-6 pt-20">
+        <SectionHeading eyebrow="From our concept studio" title="Marks made to be remembered" />
+        <div className="mt-10">
+          <LogoWall />
+        </div>
+        <p className="mx-auto mt-5 max-w-xl text-center text-xs text-white/45">
+          Concept marks from our studio. Some reimagine real local brands, some
+          are brands we dreamed up. None are client logos.
+        </p>
+        <div className="mt-6 text-center">
+          <Link href="/brand-design" className="text-sm font-medium text-[#5fd8e6] hover:underline">
+            See our brand design studio →
+          </Link>
+        </div>
+      </section>
+
       {/* Work preview */}
       <section className="mx-auto max-w-5xl px-6 py-16">
         <SectionHeading eyebrow="Proof, not promises" title="Featured work" />
@@ -95,6 +155,12 @@ export default function Home() {
             See all work →
           </Link>
         </div>
+      </section>
+
+      {/* FAQ drawers (faq-list.tsx), same as the service pages. */}
+      <section className="mx-auto max-w-3xl px-6 py-16">
+        <SectionHeading eyebrow="Questions" title="Before you ask" />
+        <FaqList items={FAQ} />
       </section>
 
       {/* Closing CTA */}

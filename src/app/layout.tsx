@@ -8,6 +8,7 @@ import { SiteBackground } from "@/components/site-background";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { HideOnFunnel } from "@/components/hide-on-funnel";
+import { MockupNotice } from "@/components/mockup-notice";
 import { ORG_DESCRIPTION, siteGraph } from "@/lib/schema";
 import "./globals.css";
 
@@ -74,6 +75,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <HideOnFunnel>
           <Footer />
         </HideOnFunnel>
+        <MockupNotice />
         <Analytics />
       </body>
       <GoogleAnalytics gaId="G-P0SVMCCT5Y" />

@@ -171,3 +171,91 @@ export async function submitAuditRequest(
 
   return { status: "success", firstName: name.split(/\s+/)[0], method: method.toLowerCase() };
 }
+
+// Free homepage mockup request, from the slide up notice (mockup-notice.tsx).
+// Same lead and alert path as the audit form, tagged so it reads as a mockup
+// request in Agency OS and in the inbox. No business name field, so the lead
+// is named after their website, or after them when they have none.
+
+const MOCKUP_METHODS = { call: "Call", text: "Text", email: "Email", whatsapp: "WhatsApp" } as const;
+type MockupMethod = keyof typeof MOCKUP_METHODS;
+
+export type MockupFormState = {
+  status: "idle" | "success" | "error";
+  message?: string;
+  fieldErrors?: Partial<Record<"name" | "website" | "phone" | "email" | "contact", string>>;
+  firstName?: string;
+  values?: Record<"name" | "website" | "phone" | "email", string>;
+};
+
+export async function submitMockupRequest(
+  _prev: MockupFormState,
+  data: FormData,
+): Promise<MockupFormState> {
+  const name = field(data, "name", 100);
+  const websiteRaw = field(data, "website", 300);
+  const noWebsite = data.get("no_website") === "on";
+  const phone = field(data, "phone", 40);
+  const email = field(data, "email", 200);
+  const contact = field(data, "contact", 10) as MockupMethod;
+
+  if (field(data, "company_url")) return { status: "success", firstName: "" };
+
+  const fieldErrors: MockupFormState["fieldErrors"] = {};
+  if (!name) fieldErrors.name = "Please enter your name.";
+  if (!email) fieldErrors.email = "Please enter your email.";
+  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) fieldErrors.email = "Please enter a valid email address.";
+  const phoneDigits = phone.replace(/\D/g, "");
+  if (phoneDigits.length < 10 || phoneDigits.length > 15) fieldErrors.phone = "Please enter a valid phone number.";
+  if (!(contact in MOCKUP_METHODS)) fieldErrors.contact = "Pick the best way to reach you.";
+  const website = noWebsite ? null : normalizeWebsite(websiteRaw);
+  if (!noWebsite && websiteRaw && !website) fieldErrors.website = "That website address doesn't look right.";
+
+  const values = { name, website: websiteRaw, phone, email };
+  if (Object.keys(fieldErrors).length > 0) {
+    return { status: "error", message: "Please fix the highlighted fields.", fieldErrors, values };
+  }
+
+  const method = MOCKUP_METHODS[contact];
+  const site = website ? new URL(website).hostname.replace(/^www\./, "") : null;
+  const label = site ?? name;
+
+  const leadSaved = await createLead({
+    user_id: LEAD_OWNER_ID,
+    business_name: label,
+    contact_name: name,
+    phone,
+    email,
+    website,
+    has_website: noWebsite ? false : website ? true : null,
+    source: "website_form",
+    stage: "new",
+    notes: `Free homepage mockup request from the evogencyglobal.com slide up notice.\nBest way to reach: ${method}.`,
+  });
+
+  const emailSent = await notify(
+    `New free mockup request: ${label}`,
+    [
+      `New free homepage mockup request from the website.`,
+      ``,
+      `Name: ${name}`,
+      `Website: ${noWebsite ? "No website yet" : website ?? "Not given"}`,
+      `Phone: ${phone}`,
+      `Email: ${email}`,
+      `Best way to reach: ${method}`,
+      ``,
+      leadSaved ? `Saved to Agency OS as a New Lead.` : `WARNING: this did NOT save to Agency OS. Add it by hand.`,
+    ].join("\n"),
+    email,
+  );
+
+  if (!leadSaved && !emailSent) {
+    return {
+      status: "error",
+      message: "Something went wrong on our end. Call or text (813) 897-1954 and we'll take it from there.",
+      values,
+    };
+  }
+
+  return { status: "success", firstName: name.split(/\s+/)[0] };
+}
