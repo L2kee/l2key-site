@@ -1,0 +1,16 @@
+{
+  "seconds": 37.71,
+  "cover_ms": 2935,
+  "look": "noir",
+  "motion": {
+    "hook": "wipe",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "lightup",
+    "cta": "orbit",
+    "change": "up",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "poor-but-happy"
+}

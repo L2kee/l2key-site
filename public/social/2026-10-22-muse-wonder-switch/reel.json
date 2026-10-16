@@ -1,0 +1,16 @@
+{
+  "seconds": 34.29,
+  "cover_ms": 3262,
+  "look": "editorial",
+  "motion": {
+    "hook": "rise",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "rise",
+    "cta": "shine",
+    "change": "slide",
+    "scene": "glow"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "make-funk"
+}

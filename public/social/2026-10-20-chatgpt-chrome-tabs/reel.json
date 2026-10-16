@@ -1,0 +1,16 @@
+{
+  "seconds": 37.1,
+  "cover_ms": 3415,
+  "look": "blueprint",
+  "motion": {
+    "hook": "type",
+    "why": "mark",
+    "num": "spring",
+    "step": "rise",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "glow"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "make-money"
+}

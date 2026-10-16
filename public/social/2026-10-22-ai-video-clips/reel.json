@@ -1,0 +1,16 @@
+{
+  "seconds": 34.99,
+  "cover_ms": 3400,
+  "look": "teal",
+  "motion": {
+    "hook": "decode",
+    "why": "mark",
+    "num": "spring",
+    "step": "words",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "aurora"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "blue-skies"
+}

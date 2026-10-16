@@ -1,0 +1,16 @@
+{
+  "seconds": 37.97,
+  "cover_ms": 3400,
+  "look": "gold",
+  "motion": {
+    "hook": "decode",
+    "why": "mark",
+    "num": "spring",
+    "step": "lightup",
+    "cta": "shine",
+    "change": "slide",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "puppy-love"
+}

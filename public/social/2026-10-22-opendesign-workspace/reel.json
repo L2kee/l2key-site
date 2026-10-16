@@ -1,0 +1,16 @@
+{
+  "seconds": 36.22,
+  "cover_ms": 3400,
+  "look": "cream",
+  "motion": {
+    "hook": "curtain",
+    "why": "wipe",
+    "num": "pop",
+    "step": "lightup",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "eat"
+}

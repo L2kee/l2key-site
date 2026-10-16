@@ -1,0 +1,16 @@
+{
+  "seconds": 38.22,
+  "cover_ms": 3400,
+  "look": "teal",
+  "motion": {
+    "hook": "letters",
+    "why": "rise",
+    "num": "stamp",
+    "step": "lightup",
+    "cta": "shine",
+    "change": "slide",
+    "scene": "particles"
+  },
+  "voice": null,
+  "music": "blue-skies"
+}

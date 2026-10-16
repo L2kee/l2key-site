@@ -1,0 +1,16 @@
+{
+  "seconds": 37.74,
+  "cover_ms": 3082,
+  "look": "noir",
+  "motion": {
+    "hook": "letters",
+    "why": "rise",
+    "num": "stamp",
+    "step": "words",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "aurora"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "poor-but-happy"
+}

@@ -1,0 +1,16 @@
+{
+  "seconds": 37.19,
+  "cover_ms": 3400,
+  "look": "cream",
+  "motion": {
+    "hook": "rise",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "words",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "eat"
+}
