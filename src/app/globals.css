@@ -5,6 +5,8 @@
   --font-mono: var(--font-geist-mono);
   --color-accent-cyan: #5fd8e6;
   --color-accent-teal: #1f9fb3;
+  --color-accent-ice: #d6f6fa;
+  --color-accent-lime: #b5f04a;
 }
 
 html,
@@ -369,17 +371,31 @@ body {
   }
 
   /* Once the last letter lands, a glint runs across the accent line one
-     letter after another (its letters are --l 15 to 34). */
+     letter after another (its letters are --l 15 to 34). Under it the
+     colors flow nonstop: every letter slides through one looping strip
+     (cyan, teal, ice, a little lime, cyan) 20 letters wide, and each runs
+     one letter ahead of the letter to its right (the negative delay), so
+     the strip reads as one wave rolling left to right across the line.
+     The glint and the flow each move their own layer (--glint, --flow,
+     registered below), so neither animation overrides the other. */
   .hero-accent {
     background-image:
       linear-gradient(110deg, transparent 30%, rgba(255, 247, 222, 0.95) 50%, transparent 70%),
-      linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
-    background-size: 300% 100%, 100% 100%;
+      linear-gradient(
+        90deg,
+        var(--color-accent-cyan),
+        var(--color-accent-teal) 28%,
+        var(--color-accent-ice) 52%,
+        var(--color-accent-lime) 68%,
+        var(--color-accent-cyan) 86%
+      );
+    background-size: 300% 100%, 2000% 100%;
     background-repeat: no-repeat;
-    background-position: 100% 0, 0 0;
+    background-position: var(--glint) 0, var(--flow) 0;
     animation:
       hero-letter 700ms cubic-bezier(0.34, 1.56, 0.64, 1) calc(var(--l, 0) * 38ms) both,
-      hero-glint 450ms ease-in-out calc(var(--hero-delay, 0ms) + (var(--l, 0) - 15) * 30ms) both;
+      hero-glint 450ms ease-in-out calc(var(--hero-delay, 0ms) + (var(--l, 0) - 15) * 30ms) both,
+      hero-flow 6s linear calc((var(--l, 0) - 34) * 316ms) infinite;
   }
 
   .hero-in {
@@ -551,9 +567,34 @@ body {
   }
 }
 
+/* Registered so the glint and the flow animate smoothly (an unregistered
+   custom property would jump between keyframes). */
+@property --glint {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --flow {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+
 @keyframes hero-glint {
+  from {
+    --glint: 100%;
+  }
   to {
-    background-position: 0% 0, 0 0;
+    --glint: 0%;
+  }
+}
+
+@keyframes hero-flow {
+  from {
+    --flow: 100%;
+  }
+  to {
+    --flow: 0%;
   }
 }
 
