@@ -215,10 +215,13 @@ def sync():
         # Reel channels get the reel once it exists. Until then a post waits, unless it's due soon or already
         # booked as a carousel, in which case the carousel stands.
         # A narrated reel is its own format per voice, so a silent reel, or one in an old voice, gets swapped.
+        # Reels from motion engine 2 on carry the engine ("_m2"), so a re-rendered reel replaces its booked older one.
         def fmt(p, c):
             if c["service"] in REEL_SERVICES and has_reel(p):
-                voice = reel_info(p).get("voice")
-                return "reel" if not voice else "reel_vo" if voice == "am_onyx" else f"reel_vo_{voice}"
+                info = reel_info(p)
+                voice, engine = info.get("voice"), info.get("engine", 1)
+                base = "reel" if not voice else "reel_vo" if voice == "am_onyx" else f"reel_vo_{voice}"
+                return base if engine < 2 else f"{base}_m{engine}"
             return "image"
         slots = [
             s for s in slots

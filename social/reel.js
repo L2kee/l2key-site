@@ -9,6 +9,12 @@
 //
 // The video is 1080x1920 (9:16 for the Reels tab) with the 4:5 design band in the middle, so the feed's
 // 4:5 crop and the grid's 3:4 crop both show the full design.
+//
+// Engine 2 (2026-10-16) adds motions from the Motion Catalog's round five, the Claude Motion Tips open source list:
+// a bristle brush marker (the p5.brush idea), hand drawn pen loops (Rough.js), words that drop and bounce (Matter.js),
+// a dot grid ripple and a brush swipe between slides (Anime.js stagger), and a dotted orb or rippling dot grid behind
+// (thinking orbs). The brush starts at the very first frame, so a Reel is never still while a thumb decides to stay.
+// reel.json records the engine, and a Reel made by an older engine is re-rendered (and swapped in Buffer).
 const { chromium } = require('playwright');
 const { spawn } = require('child_process');
 const fs = require('fs');
@@ -16,14 +22,19 @@ const path = require('path');
 const { ROOT, logo, esc, font, css, ending, stepLabel, rotation, themeOf } = require('./style');
 
 const FPS = 30;
+const ENGINE = 2;
+// The hook only rotates through entrances that are readable within about a second, because the first second decides
+// whether a stranger keeps watching. Type, decode, and curtain hold the words back longer, so they stay available
+// only when a week file forces one ("motion": {"hook": "type"}).
+const HOOK_EXTRA = ['type', 'decode', 'curtain'];
 const MOTIONS = {
-  hook: ['rise', 'words', 'type', 'mark', 'wipe', 'letters', 'decode', 'curtain'],
-  why: ['lightup', 'rise', 'mark', 'wipe'],
-  num: ['odometer', 'stamp', 'spring', 'pop'],
-  step: ['words', 'lightup', 'rise'],
-  cta: ['trace', 'shine', 'orbit', 'pulse', 'nudge'],
-  change: ['fade', 'slide', 'up', 'blur', 'zoom'],
-  scene: ['aurora', 'particles', 'glow'],
+  hook: ['brush', 'rise', 'drop', 'words', 'circle', 'mark', 'wipe', 'letters'],
+  why: ['lightup', 'brush', 'rise', 'circle', 'mark', 'wipe'],
+  num: ['odometer', 'drawn', 'stamp', 'drop', 'spring', 'pop'],
+  step: ['words', 'brush', 'lightup', 'circle', 'rise'],
+  cta: ['trace', 'scribble', 'shine', 'brush', 'orbit', 'pulse', 'nudge'],
+  change: ['fade', 'ripple', 'slide', 'up', 'ink', 'blur', 'zoom'],
+  scene: ['aurora', 'orb', 'particles', 'grid', 'glow'],
 };
 
 const args = process.argv.slice(2);
@@ -41,7 +52,8 @@ function plan(post, slot) {
   const pick = {};
   for (const [part, list] of Object.entries(MOTIONS)) {
     const forced = post.motion && post.motion[part];
-    pick[part] = list.includes(forced) ? forced : list[((n % list.length) + list.length) % list.length];
+    const allowed = part === 'hook' ? [...list, ...HOOK_EXTRA] : list;
+    pick[part] = allowed.includes(forced) ? forced : list[((n % list.length) + list.length) % list.length];
   }
   return pick;
 }
@@ -125,11 +137,18 @@ html,body{width:1080px;height:1920px;overflow:hidden}
 .caret::after{content:"";position:absolute;width:6px;height:.9em;margin-left:6px;margin-top:.1em;background:var(--accent)}
 .l{position:relative}
 .curtain{position:absolute;left:96px;right:96px;top:40%;height:20%;background:var(--accent);transform:scaleX(0);z-index:2}
+.s .paint,.s .ink{position:absolute;left:0;top:0;width:1080px;height:1350px;pointer-events:none}
+.s .paint{z-index:0}
+.s .ink{z-index:2;overflow:visible}
+.s .ink path{fill:none;stroke:var(--accent);stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.s .mid{position:relative;z-index:1}
+#fx{position:absolute;left:0;top:0;width:1080px;height:1920px;z-index:5;pointer-events:none}
+.cta .a,.cta .u{width:fit-content}
 </style></head><body class="t-${look}"><div id="stage"><div id="scene"></div><div class="band">
 <div class="top"><div class="brand"><img src="${logo}">EVOGENCY</div><div class="count">1/6</div></div>
 <div class="prog"><i></i></div>
-${slides.map((s, i) => `<div class="s" id="s${i}">${s}</div>`).join('')}
-</div></div></body></html>` };
+${slides.map((s, i) => `<div class="s" id="s${i}"><canvas class="paint" width="1080" height="1350"></canvas>${s}<svg class="ink" viewBox="0 0 1080 1350"></svg></div>`).join('')}
+</div><canvas id="fx" width="1080" height="1920"></canvas></div></body></html>` };
 }
 
 // Runs inside the page. Draws the frame at time t (seconds) from scratch, so any frame can be rendered in any
@@ -149,10 +168,80 @@ function setup({ dur, typing, pick, seed }) {
   const prog = document.querySelector('.prog i');
   const $ = (s, sel) => [...s.querySelectorAll(sel)];
 
+  const css = getComputedStyle(document.body);
+  const accent = css.getPropertyValue('--accent').trim(), fg = css.getPropertyValue('--fg').trim();
+  // The gold look's accent is near black, so its marker goes lighter to keep the words on top readable.
+  const ink = document.body.classList.contains('t-gold') ? 0.38 : 0.62;
+  const bounce = x => { const n = 7.5625, d = 2.75; if (x < 1 / d) return n * x * x; if (x < 2 / d) return n * (x -= 1.5 / d) * x + 0.75; if (x < 2.5 / d) return n * (x -= 2.25 / d) * x + 0.9375; return n * (x -= 2.625 / d) * x + 0.984375; };
+  // Where an element sits inside its slide, ignoring every transform, so motion never moves the marks it lays down.
+  const box = el => { let x = 0, y = 0, e = el; const root = el.closest('.s'); while (e && e !== root) { x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent; } return { x, y, w: el.offsetWidth, h: el.offsetHeight }; };
+  // The words that carry the line: after its last comma, or its last 3 words.
+  const keyFrom = ws => { const text = ws.map(w => w.textContent); let from = text.findLastIndex((w, i) => i < ws.length - 1 && /,$/.test(w)) + 1; if (from === 0 || ws.length - from > 6) from = Math.max(0, ws.length - 3); return from; };
+  // Words grouped into the lines they sit on, each line one stretch for a marker or a pen loop.
+  const lines = ws => { const out = []; ws.forEach(w => { const b = box(w), l = out[out.length - 1]; if (l && Math.abs(l.y - b.y) < b.h / 2) { l.x1 = b.x + b.w; } else out.push({ x0: b.x, x1: b.x + b.w, y: b.y, h: b.h }); }); return out; };
+  // Bristle brush (the p5.brush idea): one stroke per bristle, each with its own ink, length, wobble, and dry gap.
+  const bristles = (k, n) => Array.from({ length: n }, (_, i) => ({ off: i / (n - 1) - 0.5 + (rnd(k + i) - 0.5) * 0.03, a: 0.35 + rnd(k + i + 101) * 0.6, len: 0.82 + rnd(k + i + 202) * 0.18, w: 2 + rnd(k + i + 303) * 3.5, ph: rnd(k + i + 404) * 6, gap: rnd(k + i + 505) < 0.15 ? 0.15 + rnd(k + i + 606) * 0.65 : 2 }));
+  const sweep = (ctx, segs, p, k, color, thick, alpha = 1) => {
+    const L = segs.reduce((a, s) => a + s.x1 - s.x0 + 30, 0), br = bristles(k, 44);
+    let done = 0;
+    ctx.save(); ctx.lineCap = 'round'; ctx.strokeStyle = color;
+    segs.forEach((s, si) => {
+      const len = s.x1 - s.x0 + 30, q = clamp((p * L - done) / len); done += len;
+      if (q <= 0) return;
+      for (const b of br) {
+        const end = Math.min(q, b.len); if (end <= 0) continue;
+        ctx.globalAlpha = b.a * alpha; ctx.lineWidth = b.w; ctx.beginPath();
+        let pen = false;
+        for (let u = 0; u <= end + 1e-4; u += 0.02) {
+          const x = s.x0 - 15 + u * len, y = s.y + b.off * thick * (0.75 + 0.25 * Math.sin(Math.PI * u)) + Math.sin(u * 5 + b.ph + si) * 1.6 - u * 4;
+          if (u > b.gap && u < b.gap + 0.05) { pen = false; continue; }
+          pen ? ctx.lineTo(x, y) : (ctx.moveTo(x, y), pen = true);
+        }
+        ctx.stroke();
+      }
+    });
+    ctx.restore();
+  };
+  // Hand drawn pen (the Rough.js idea): a loose loop that overshoots its start, drawn twice like a real pen.
+  const smooth = p => { let d = `M${p[0][0].toFixed(1)} ${p[0][1].toFixed(1)}`; for (let i = 0; i < p.length - 1; i++) { const p0 = p[i - 1] || p[i], p1 = p[i], p2 = p[i + 1], p3 = p[i + 2] || p2; d += ` C${(p1[0] + (p2[0] - p0[0]) / 6).toFixed(1)} ${(p1[1] + (p2[1] - p0[1]) / 6).toFixed(1)} ${(p2[0] - (p3[0] - p1[0]) / 6).toFixed(1)} ${(p2[1] - (p3[1] - p1[1]) / 6).toFixed(1)} ${p2[0].toFixed(1)} ${p2[1].toFixed(1)}`; } return d; };
+  const loop = (b, k, pad) => { const cx = b.x + b.w / 2, cy = b.y + b.h / 2, rx = b.w / 2 + pad, ry = b.h / 2 + pad * 0.55, a0 = rnd(k) * 6.28, turn = 1.1 + rnd(k + 1) * 0.12, n = 26; return smooth(Array.from({ length: n + 1 }, (_, i) => { const t = a0 + i / n * turn * 6.28, j = 1 + (rnd(k + i + 7) - 0.5) * 0.07; return [cx + Math.cos(t) * rx * j, cy + Math.sin(t) * ry * j]; })); };
+  const pen = (svg, id, d, x, opacity = 1) => {
+    let p = svg.querySelector(`[data-id="${id}"]`);
+    if (!p) { p = document.createElementNS('http://www.w3.org/2000/svg', 'path'); p.dataset.id = id; p.setAttribute('pathLength', '1'); svg.appendChild(p); }
+    p.setAttribute('d', d); p.style.strokeDashoffset = 1 - x; p.style.opacity = x > 0 ? opacity : 0;
+  };
+  const span = rows => rows.reduce((a, r) => ({ x: Math.min(a.x, r.x0), y: Math.min(a.y, r.y), w: Math.max(a.x + a.w, r.x1) - Math.min(a.x, r.x0), h: Math.max(a.y + a.h, r.y + r.h) - Math.min(a.y, r.y) }), { x: rows[0].x0, y: rows[0].y, w: 0, h: 0 });
+
   // Background scene
   const scene = document.getElementById('scene');
   let draw = () => {};
-  if (pick.scene === 'aurora' || pick.scene === 'glow') {
+  if (pick.scene === 'orb' || pick.scene === 'grid') {
+    // Orb (the thinking orbs idea): a big dotted sphere turning slowly behind the text. Grid: a field of dots,
+    // and every slide change sends a ripple ring out from the middle (the Anime.js stagger idea).
+    const c = document.createElement('canvas'); c.width = 1080; c.height = 1920; scene.appendChild(c);
+    const ctx = c.getContext('2d');
+    const N = 520, sphere = Array.from({ length: N }, (_, i) => { const y = 1 - (i + 0.5) / N * 2, r = Math.sqrt(1 - y * y), th = i * 2.39996; return [Math.cos(th) * r, y, Math.sin(th) * r]; });
+    draw = t => {
+      ctx.clearRect(0, 0, 1080, 1920);
+      if (pick.scene === 'orb') {
+        const sp = t * 0.16, R = 500 * (1 + 0.025 * Math.sin(t * 1.3)), glint = Math.sin(t * 0.7);
+        for (const [x0, y0, z0] of sphere) {
+          const X = x0 * Math.cos(sp) - z0 * Math.sin(sp), Z = x0 * Math.sin(sp) + z0 * Math.cos(sp);
+          const Y = y0 * Math.cos(0.42) - Z * Math.sin(0.42), D = (y0 * Math.sin(0.42) + Z * Math.cos(0.42) + 1) / 2;
+          const g = Math.max(0, 1 - Math.abs(X - glint) * 4);
+          ctx.globalAlpha = 0.05 + 0.2 * D + 0.25 * g * D; ctx.fillStyle = g > 0.4 ? accent : fg;
+          ctx.beginPath(); ctx.arc(540 + X * R, 960 + Y * R, 1.8 + 3 * D, 0, 7); ctx.fill();
+        }
+      } else {
+        const since = t - starts.filter(s => s <= t).pop();
+        for (let gy = 30; gy < 1920; gy += 60) for (let gx = 30; gx < 1080; gx += 60) {
+          const d = Math.hypot(gx - 540, gy - 960), w = Math.exp(-Math.pow((d - since * 1500) / 90, 2)) * clamp(1.6 - since);
+          ctx.globalAlpha = 0.09 + 0.55 * w; ctx.fillStyle = w > 0.15 ? accent : fg;
+          ctx.beginPath(); ctx.arc(gx, gy, 2.4 + 3.5 * w, 0, 7); ctx.fill();
+        }
+      }
+    };
+  } else if (pick.scene === 'aurora' || pick.scene === 'glow') {
     const blobs = (pick.scene === 'aurora'
       ? [['#f0c14b', 700, .30], ['#3fc8d8', 640, .22], ['#c9922c', 520, .22]]
       : [['#f0c14b', 900, .16], ['#c9922c', 760, .12]]).map(([c, s, o]) => {
@@ -169,7 +258,6 @@ function setup({ dur, typing, pick, seed }) {
   } else {
     const c = document.createElement('canvas'); c.width = 1080; c.height = 1920; scene.appendChild(c);
     const ctx = c.getContext('2d');
-    const accent = getComputedStyle(document.body).getPropertyValue('--accent').trim();
     const pts = Array.from({ length: 90 }, (_, k) => ({ x: rnd(seed + k) * 1080, y: rnd(seed + k + 999) * 1920,
       vx: (rnd(seed + k + 1999) - .5) * 24, vy: -8 - rnd(seed + k + 2999) * 22, r: 1.5 + rnd(seed + k + 3999) * 2.5, g: rnd(seed + k + 4999) < .65 }));
     draw = t => {
@@ -208,6 +296,29 @@ function setup({ dur, typing, pick, seed }) {
         l.style.color = t >= lock ? '' : 'var(--accent)';
       });
     },
+    // Letters fall into their word's slot, bounce, and settle straight (the Matter.js idea, solved in closed form so any
+    // frame renders alone). Each word clips its own letters, so a falling line never crosses the one above it.
+    drop(el, t, a = 0.7) {
+      words(el).forEach((w, i) => {
+        w.style.clipPath = 'inset(-0.15em -0.2em -0.3em -0.2em)';
+        [...w.children].forEach((l, j) => { const x = P(t, a + i * 0.06 + j * 0.012, 0.7), r = (rnd(seed + i * 17 + j) - 0.5) * 24; l.style.opacity = x > 0 ? 1 : 0; l.style.transform = `translateY(${(1 - bounce(x)) * -1.2}em) rotate(${r * (1 - out(x))}deg)`; });
+      });
+    },
+    // A bristle marker sweeps under the key words first, then the words rise onto it (brush at 0s, words land by 0.35s).
+    brush(el, t, a = 0.7) {
+      const ws = words(el), from = keyFrom(ws), ctx = el.closest('.s').querySelector('.paint').getContext('2d');
+      textIn.rise(el, t, a + 0.05);
+      const segs = lines(ws.slice(from)).map(l => ({ x0: l.x0, x1: l.x1, y: l.y + l.h * 0.84 }));
+      sweep(ctx, segs, out(P(t, a - 0.35, 0.3 + 0.2 * segs.length)), seed + 77, accent, ws[0].offsetHeight * 0.3, ink);
+    },
+    // The words rise, then a pen loops around the key words, twice.
+    circle(el, t, a = 0.7) {
+      const ws = words(el), from = keyFrom(ws), svg = el.closest('.s').querySelector('.ink');
+      textIn.rise(el, t, a);
+      const b = span(lines(ws.slice(from))), at = a + 0.55 + ws.length * 0.06;
+      pen(svg, el.className + 1, loop(b, seed + 11, 26), inout(P(t, at, 0.65)));
+      pen(svg, el.className + 2, loop(b, seed + 23, 34), inout(P(t, at + 0.45, 0.45)), 0.55);
+    },
     lightup(el, t, a = 0.7, span = 3) { const ws = words(el); ws.forEach((w, i) => { const x = clamp((t - a) / span * ws.length - i); w.style.opacity = 0.18 + 0.82 * x; }); },
     mark(el, t, a = 0.7) {
       textIn.rise(el, t, a);
@@ -223,12 +334,22 @@ function setup({ dur, typing, pick, seed }) {
     stamp(el, t) { const r = el.querySelector('.roll'), x = P(t, 0.5, 0.5); r.style.transform = `translateY(${-10 * 234}px)`; el.style.transformOrigin = '0 50%'; el.style.opacity = clamp(x * 3); el.style.transform = `scale(${2.2 - 1.2 * out(x)}) rotate(${-25 * (1 - out(x))}deg)`; },
     spring(el, t) { const r = el.querySelector('.roll'), x = P(t, 0.5, 0.7); r.style.transform = `translateY(${-10 * 234}px)`; el.style.opacity = clamp(x * 4); el.style.transform = `translateY(${(1 - back(x)) * -160}px)`; },
     pop(el, t) { const r = el.querySelector('.roll'), x = P(t, 0.5, 0.6); r.style.transform = `translateY(${-10 * 234}px)`; el.style.transformOrigin = '0 50%'; el.style.opacity = clamp(x * 3); el.style.transform = `scale(${0.3 + 0.7 * back(x)})`; },
+    drop(el, t) { const r = el.querySelector('.roll'), x = P(t, 0.4, 0.9); r.style.transform = `translateY(${-10 * 234}px)`; el.style.opacity = x > 0 ? 1 : 0; el.style.transform = `translateY(${(1 - bounce(x)) * -520}px)`; },
+    drawn(el, t) {
+      const r = el.querySelector('.roll'), x = P(t, 0.35, 0.4);
+      r.style.transform = `translateY(${-10 * 234}px)`; el.style.opacity = out(x);
+      // The digit strip is slid by a transform, so measure the number's window, not the digit
+      const nb = box(el), g = { x: nb.x - 4, y: nb.y + 14, w: 170, h: 206 };
+      pen(el.closest('.s').querySelector('.ink'), 'num', loop(g, seed + 31, 34), inout(P(t, 0.55, 0.6)));
+    },
   };
   const ctaFx = {
     trace(c, t) { const r = c.querySelector('rect'), x = P(t, 0.3, 1.8); r.style.opacity = x <= 0 ? 0 : x < 1 ? 1 : 1 - 0.55 * P(t, 2.1, 0.5); r.style.strokeDashoffset = 1 - inout(x); },
     shine(c, t) { const x = P((t - 0.4) % 2.6, 0, 0.9); c.querySelector('.sh').style.transform = `translateX(${-120 + x * 360}%)`; },
     orbit(c, t) { const o = c.querySelector('.orb'); o.style.opacity = P(t, 0.2, 0.5); o.style.background = `conic-gradient(from ${t * 120}deg,transparent 0 68%,var(--accent) 84%,#3fc8d8 92%,transparent 100%)`; },
     pulse(c, t) { const x = (Math.max(0, t - 0.3) % 1.6) / 1.6; c.style.boxShadow = `0 0 0 ${x * 34}px rgba(240,193,75,${0.4 * (1 - x)}), 0 20px 60px -20px rgba(240,193,75,.5)`; },
+    scribble(c, t) { const a = c.querySelector('.a'); pen(c.closest('.s').querySelector('.ink'), 'cta1', loop(box(a), seed + 41, 22), inout(P(t, 0.3, 0.7))); pen(c.closest('.s').querySelector('.ink'), 'cta2', loop(box(a), seed + 53, 30), inout(P(t, 0.85, 0.5)), 0.55); },
+    brush(c, t) { const u = c.querySelector('.u'), b = box(u); sweep(c.closest('.s').querySelector('.paint').getContext('2d'), [{ x0: b.x, x1: b.x + b.w, y: b.y + b.h * 0.86 }], out(P(t, 0.3, 0.6)), seed + 61, accent, b.h * 0.3, ink); },
     nudge(c, t) { const x = (Math.max(0, t - 0.8) % 2.4) / 2.4, k = x < 0.25 ? x / 0.25 : 0; c.style.transform = `rotate(${Math.sin(k * Math.PI * 4) * 2.5 * (1 - k)}deg) scale(${1 + 0.03 * Math.sin(k * Math.PI)})`; },
   };
   // Slide changes. The outgoing slide clears out in the first half so two slides of text never sit on top of each other.
@@ -239,6 +360,32 @@ function setup({ dur, typing, pick, seed }) {
     up: (el, x, dir) => { el.style.opacity = dir ? x : gone(x); el.style.transform = `translateY(${dir ? (1 - out(x)) * 140 : -out(x) * 140}px)`; },
     blur: (el, x, dir) => { el.style.opacity = dir ? x : gone(x); el.style.filter = `blur(${(dir ? 1 - x : x) * 24}px)`; },
     zoom: (el, x, dir) => { el.style.opacity = dir ? x : gone(x); el.style.transform = `scale(${dir ? 0.9 + 0.1 * out(x) : 1 + 0.1 * out(x)})`; },
+    ripple: (el, x, dir) => { el.style.opacity = dir ? clamp((x - 0.5) / 0.2) : 1 - clamp((x - 0.3) / 0.2); },
+    ink: (el, x, dir) => { el.style.opacity = dir ? clamp((x - 0.45) / 0.15) : 1 - clamp((x - 0.25) / 0.2); },
+  };
+  const fx = document.getElementById('fx'), fxc = fx.getContext('2d');
+  const cover = (x, k) => {
+    fxc.clearRect(0, 0, 1080, 1920);
+    if (x <= 0 || x >= 1) return;
+    if (pick.change === 'ripple') {
+      // Dots swell out from one corner across the band and shrink away again, one beat after their neighbours.
+      const ox = k % 2 ? 1080 : 0, far = Math.hypot(1080, 1920);
+      fxc.fillStyle = accent;
+      for (let gy = 45; gy < 1920; gy += 90) for (let gx = 45; gx < 1080; gx += 90) {
+        const q = clamp((x - Math.hypot(gx - ox, gy) / far * 0.5) / 0.5), r = Math.sin(Math.PI * q) * 54;
+        if (r > 0.5) { fxc.beginPath(); fxc.arc(gx, gy, r, 0, 7); fxc.fill(); }
+      }
+    } else if (pick.change === 'ink') {
+      // One giant brush stroke wipes across the band, and its tail drags off the far side.
+      const head = out(clamp(x / 0.55)), tail = clamp((x - 0.45) / 0.55), br = bristles(seed + k * 7, 90);
+      fxc.lineCap = 'round'; fxc.strokeStyle = accent;
+      for (const b of br) {
+        fxc.globalAlpha = Math.min(1, b.a + 0.35); fxc.lineWidth = 26 + b.w * 4; fxc.beginPath();
+        const y = 960 + b.off * 2150, x0 = -150 + tail * 1400 * b.len, x1 = -150 + head * 1400;
+        if (x1 > x0) { fxc.moveTo(x0, y + Math.sin(b.ph) * 8); fxc.lineTo(x1, y - 60 + Math.sin(b.ph + 2) * 8); fxc.stroke(); }
+      }
+      fxc.globalAlpha = 1;
+    }
   };
 
   // The curtain variant needs a panel over the hook.
@@ -251,8 +398,12 @@ function setup({ dur, typing, pick, seed }) {
     let cur = 0;
     starts.forEach((s, i) => { if (t >= s) cur = i; });
     count.textContent = `${cur + 1}/${slides.length}`;
+    cover(cur > 0 ? (t - starts[cur]) / TR : 0, cur);
     slides.forEach((el, i) => {
       reset(el);
+      const paint = el.querySelector('.paint');
+      paint.getContext('2d').clearRect(0, 0, 1080, 1350);
+      el.querySelectorAll('.ink path').forEach(p => { p.style.opacity = 0; });
       const local = t - starts[i];
       if (i !== cur && !(i === cur - 1 && local < dur[i] + TR)) { el.style.visibility = 'hidden'; return; }
       if (i === cur && i > 0 && local < TR) change[pick.change](el, local / TR, 1);
@@ -265,13 +416,13 @@ function setup({ dur, typing, pick, seed }) {
         [hook, ...words(hook), ...letters(hook)].forEach(reset); letters(hook).forEach(l => l.classList.remove('caret'));
         if (m === 'curtain') {
           const x = P(T, 0.5, 0.5), y = P(T, 1.0, 0.5);
-          curtain.style.top = hook.offsetTop + 'px'; curtain.style.height = hook.offsetHeight + 'px';
+          curtain.style.top = box(hook).y + 'px'; curtain.style.height = hook.offsetHeight + 'px';
           curtain.style.transformOrigin = y > 0 ? 'right' : 'left';
           curtain.style.transform = `scaleX(${y > 0 ? 1 - inout(y) : inout(x)})`;
           hook.style.opacity = y > 0 ? 1 : 0;
         } else {
           curtain.style.transform = 'scaleX(0)';
-          textIn[m](hook, T, 0.5);
+          textIn[m](hook, T, 0.3);
         }
         const b = out(P(T, 1.6 + typing, 0.6));
         bar.style.width = 140 * b + 'px';
@@ -366,17 +517,20 @@ function ffmpeg(file, vo, dur, music) {
     const dir = path.join(ROOT, 'public/social', id);
     const file = path.join(dir, 'reel.mp4');
     const vo = voiceOf(id);
-    // A reel that exists is skipped, unless new narration is ready for it (it was silent, or voiced in another voice).
+    // A reel that exists is skipped, unless new narration is ready for it (it was silent, or voiced in another voice),
+    // or an older engine made it. An old voiced reel waits for its new narration, so it never comes back silent.
     if (fs.existsSync(file)) {
       const info = JSON.parse(fs.readFileSync(path.join(dir, 'reel.json'), 'utf8'));
-      if (!vo || info.voice === vo.voice) continue;
+      const current = (info.engine || 1) === ENGINE;
+      if (current && (!vo || info.voice === vo.voice)) continue;
+      if (!current && info.voice && !vo) continue;
     }
     if (budget && Date.now() - t0 > budget) { console.log('time budget used, the rest render on the next run'); break; }
     fs.mkdirSync(dir, { recursive: true });
     const pick = plan(p, slot);
     const look = themeOf(p, slot);
     // Soft glows band into visible rings on the light looks once compressed, so those get the particles.
-    if (look === 'cream' || look === 'gold') pick.scene = 'particles';
+    if ((look === 'cream' || look === 'gold') && (pick.scene === 'aurora' || pick.scene === 'glow')) pick.scene = 'particles';
     const { dur, typing, html } = page(p, pick, look, vo);
     await tab.setContent(html, { waitUntil: 'networkidle' });
     await tab.evaluate(() => document.fonts.ready);
@@ -393,7 +547,7 @@ function ffmpeg(file, vo, dur, music) {
     fs.renameSync(tmp, file);
     await tab.evaluate(t => window.frame(t), cover);
     await tab.screenshot({ path: path.join(dir, 'cover.jpg'), type: 'jpeg', quality: 90 });
-    fs.writeFileSync(path.join(dir, 'reel.json'), JSON.stringify({ seconds: +total.toFixed(2), cover_ms: Math.round(cover * 1000), look, motion: pick, voice: vo ? vo.voice : null, music: music ? path.basename(music, '.mp3') : null }, null, 2) + '\n');
+    fs.writeFileSync(path.join(dir, 'reel.json'), JSON.stringify({ seconds: +total.toFixed(2), cover_ms: Math.round(cover * 1000), engine: ENGINE, look, motion: pick, voice: vo ? vo.voice : null, music: music ? path.basename(music, '.mp3') : null }, null, 2) + '\n');
     console.log(`reel ${id} (${total.toFixed(1)}s) look=${look} voice=${vo ? vo.voice : 'none'} music=${music ? path.basename(music, '.mp3') : 'none'} ${Object.entries(pick).map(([k, v]) => `${k}=${v}`).join(' ')}`);
   }
   await browser.close();

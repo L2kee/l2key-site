@@ -26,6 +26,8 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 RATE = 24000
+# Keep in step with ENGINE in reel.js. A Reel made by an older engine gets narrated again, so its re-render keeps its voice.
+REEL_ENGINE = 2
 LINK = ["First,", "Next,", "And the best one."]
 
 
@@ -78,8 +80,9 @@ def main():
             if not a.only and when <= now:
                 continue
             info = os.path.join(ROOT, "public", "social", pid, "reel.json")
-            if os.path.exists(info) and json.load(open(info, encoding="utf-8")).get("voice") == key:
-                continue  # already narrated in this voice and speed (any other gets narrated again)
+            made = json.load(open(info, encoding="utf-8")) if os.path.exists(info) else {}
+            if made.get("voice") == key and made.get("engine", 1) == REEL_ENGINE:
+                continue  # already narrated in this voice and speed by the current engine (anything else gets narrated again)
             done = os.path.join(a.out, pid, "voice.json")
             if os.path.exists(done) and json.load(open(done, encoding="utf-8")).get("voice") == key:
                 continue
