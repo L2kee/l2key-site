@@ -1,0 +1,646 @@
+{
+  "week": "2026-10-19",
+  "posts": [
+    {
+      "date": "2026-10-19",
+      "time": "08:00",
+      "id": "2026-10-19-ai-clean-spreadsheet",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Messy spreadsheet? The third step protects your data.",
+      "why": "Mixed date formats and stray spaces turn cleanup into an hour of clicking. AI can write the fix, and you can test it first.",
+      "src": "",
+      "steps": [
+        "Paste 10 sample rows of the messy column into Claude or ChatGPT and ask what is inconsistent.",
+        "Ask for the formula or regex that cleans it, and tell it if you use Excel or Google Sheets.",
+        "Ask for 3 test rows with nasty edge cases and run them first. Only then clean the real column."
+      ],
+      "take": "Test the fix on small data first.",
+      "label": "Step",
+      "say": [
+        "Messy spreadsheet? The third step protects your data!",
+        "Mixed date formats and stray spaces turn cleanup into an hour of clicking. AI can write the fix for you.",
+        "First, paste ten sample rows of the messy column into Claude or ChatGPT, and ask what's inconsistent. That's the easy one.",
+        "Next, ask for the formula or regex that cleans it. Tell it if you're in Excel or Google Sheets.",
+        "Now the one that protects your data. Ask for three nasty test rows, run them first, and only then clean the real column.",
+        "Test the fix on small data first."
+      ],
+      "keyword": "SHEET",
+      "prompt": "You are a spreadsheet expert. Below are 10 sample rows from a messy column in [Excel or Google Sheets]. First tell me every kind of inconsistency you see, like mixed date formats or stray spaces. Then give me one formula or regex that cleans the whole column and explain how to use it step by step. Finally give me 3 extra test rows with tricky edge cases and the result I should get for each, so I can test before touching the real data. Sample rows [paste here]",
+      "captions": {
+        "facebook": "How to clean messy data in a spreadsheet with AI.\n\nMessy spreadsheet? The third step protects your data.\n\nMixed date formats and stray spaces turn cleanup into an hour of clicking. AI can write the fix, and you can test it first.\n\n3 steps.\n1. Paste 10 sample rows of the messy column into Claude or ChatGPT and ask what is inconsistent.\n2. Ask for the formula or regex that cleans it, and tell it if you use Excel or Google Sheets.\n3. Ask for 3 test rows with nasty edge cases and run them first. Only then clean the real column.\n\nTest the fix on small data first.\n\nWant the exact prompt? Follow EVOGENCY and message us the word SHEET. We'll send it to you.\n\n#AITools #Excel #GoogleSheets #Productivity",
+        "instagram": "How to clean messy data in a spreadsheet with AI.\n\nMessy spreadsheet? The third step protects your data.\n\nMixed date formats and stray spaces turn cleanup into an hour of clicking. AI can write the fix, and you can test it first.\n\n3 steps.\n1. Paste 10 sample rows of the messy column into Claude or ChatGPT and ask what is inconsistent.\n2. Ask for the formula or regex that cleans it, and tell it if you use Excel or Google Sheets.\n3. Ask for 3 test rows with nasty edge cases and run them first. Only then clean the real column.\n\nTest the fix on small data first.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word SHEET. We'll send it to you.\n\n#AITools #Excel #GoogleSheets #Productivity",
+        "tiktok": "How to clean messy data in a spreadsheet with AI.\n\nMessy spreadsheet? The third step protects your data.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us SHEET.\n\n#AITools #Excel #GoogleSheets #Productivity"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "time": "12:30",
+      "id": "2026-10-19-opencode-agent",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Open source AI coder. The last trick is parallel agents.",
+      "why": "OpenCode is an open source coding agent for your terminal, IDE, or desktop. It works with 75 plus model providers, including local models.",
+      "src": "opencode.ai",
+      "steps": [
+        "Install it with the one line command on opencode.ai, or use npm, bun, or brew.",
+        "Connect any model provider you like, including local models. Free models are included.",
+        "Start multiple agents in parallel on the same project, and share a link to any session to debug."
+      ],
+      "take": "One agent helps. Several agents work like a team.",
+      "label": "How to use it",
+      "say": [
+        "Open source AI coder! The last trick is parallel agents.",
+        "OpenCode is an open source coding agent. Use it in your terminal, your IDE, or the desktop app.",
+        "First, install it with the one line command from opencode dot ai. Or use npm, bun, or brew. Easy win.",
+        "Next, connect any model provider you like. Even local models. Free models are included.",
+        "Now the parallel trick. Start multiple agents on the same project, and share a link to any session to debug.",
+        "One agent helps. Several agents work like a team."
+      ],
+      "captions": {
+        "facebook": "Open source AI coding agent for your terminal.\n\nOpen source AI coder. The last trick is parallel agents.\n\nOpenCode is an open source coding agent for your terminal, IDE, or desktop. It works with 75 plus model providers, including local models.\n\n3 steps.\n1. Install it with the one line command on opencode.ai, or use npm, bun, or brew.\n2. Connect any model provider you like, including local models. Free models are included.\n3. Start multiple agents in parallel on the same project, and share a link to any session to debug.\n\nOne agent helps. Several agents work like a team.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Developers #Coding #OpenSource #AITools",
+        "instagram": "Open source AI coding agent for your terminal.\n\nOpen source AI coder. The last trick is parallel agents.\n\nOpenCode is an open source coding agent for your terminal, IDE, or desktop. It works with 75 plus model providers, including local models.\n\n3 steps.\n1. Install it with the one line command on opencode.ai, or use npm, bun, or brew.\n2. Connect any model provider you like, including local models. Free models are included.\n3. Start multiple agents in parallel on the same project, and share a link to any session to debug.\n\nOne agent helps. Several agents work like a team.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Developers #Coding #OpenSource #AITools",
+        "tiktok": "Open source AI coding agent for your terminal.\n\nOpen source AI coder. The last trick is parallel agents.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Developers #Coding #OpenSource #AITools"
+      }
+    },
+    {
+      "date": "2026-10-19",
+      "time": "19:00",
+      "id": "2026-10-19-muse-spark-open",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Meta's open AI has strings. The last is your move.",
+      "why": "Meta released the weights for Muse Spark Open on October 15. It has 816 billion parameters and a 1 million token context window.",
+      "src": "Meta, TechCrunch, MarkTechPost, Oct 15 2026",
+      "steps": [
+        "Meta says it runs on two Apple Mac Studios using MLX. That is not a small business setup.",
+        "The Muse Model License has limited commercial terms, and Meta's benchmark claims are not independently verified.",
+        "Most people will reach it through hosted services. Pick one or two AI helpers that save you real hours."
+      ],
+      "take": "You don't need to chase every release.",
+      "label": "What it means",
+      "say": [
+        "Meta's open AI has strings! And the last one is your move.",
+        "Meta just released the weights for Muse Spark Open. Eight hundred sixteen billion parameters, and a one million token context window.",
+        "First, Meta says it runs on two Apple Mac Studios. That is not a small business setup. Here come the strings.",
+        "Next, the license has limited commercial terms. And Meta's benchmark claims aren't independently verified yet.",
+        "Now your move. Most people will reach this model through hosted services. So pick one or two AI helpers that save you real hours.",
+        "You don't need to chase every release."
+      ],
+      "captions": {
+        "facebook": "Meta Muse Spark Open model explained.\n\nMeta's open AI has strings. The last is your move.\n\nMeta released the weights for Muse Spark Open on October 15. It has 816 billion parameters and a 1 million token context window.\n\n3 steps.\n1. Meta says it runs on two Apple Mac Studios using MLX. That is not a small business setup.\n2. The Muse Model License has limited commercial terms, and Meta's benchmark claims are not independently verified.\n3. Most people will reach it through hosted services. Pick one or two AI helpers that save you real hours.\n\nYou don't need to chase every release.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Meta #OpenSource #AI",
+        "instagram": "Meta Muse Spark Open model explained.\n\nMeta's open AI has strings. The last is your move.\n\nMeta released the weights for Muse Spark Open on October 15. It has 816 billion parameters and a 1 million token context window.\n\n3 steps.\n1. Meta says it runs on two Apple Mac Studios using MLX. That is not a small business setup.\n2. The Muse Model License has limited commercial terms, and Meta's benchmark claims are not independently verified.\n3. Most people will reach it through hosted services. Pick one or two AI helpers that save you real hours.\n\nYou don't need to chase every release.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Meta #OpenSource #AI",
+        "tiktok": "Meta Muse Spark Open model explained.\n\nMeta's open AI has strings. The last is your move.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #Meta #OpenSource #AI"
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "time": "08:00",
+      "id": "2026-10-20-ai-meeting-actions",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Nobody remembers who owns what. The third step ends that.",
+      "why": "A messy transcript hides the decisions. AI can pull out what was decided, who owns it, and by when.",
+      "src": "",
+      "steps": [
+        "Paste the transcript into Claude or ChatGPT and ask for a summary in 5 bullet points.",
+        "Ask for every action item with an owner and a due date. Tell it to mark anything unclear.",
+        "Ask for a follow up email to the group that lists each decision and action item, ready to send."
+      ],
+      "take": "Notes in. Clear owners out.",
+      "label": "Step",
+      "say": [
+        "Nobody remembers who owns what! The third step ends that.",
+        "A messy transcript hides the decisions. AI pulls out what was decided, who owns it, and by when.",
+        "First, paste the transcript into Claude or ChatGPT, and ask for a summary in five bullets. Quick win.",
+        "Next, ask for action items, with an owner and a due date for each. Tell it to mark anything unclear.",
+        "Now the one that ends the confusion. Ask for a follow up email listing every decision and every action item. Ready to send.",
+        "Notes in. Clear owners out."
+      ],
+      "keyword": "MEETING",
+      "prompt": "You are a sharp chief of staff. Below is a transcript of a meeting. First write a summary in 5 bullet points. Then list every decision that was made. Then list every action item with an owner and a due date, and mark any item where the owner or date was not stated as unclear instead of guessing. Finally write a short follow up email to all attendees with the decisions and action items, ready to send. Transcript [paste here]",
+      "captions": {
+        "facebook": "How to summarize a meeting transcript with AI.\n\nNobody remembers who owns what. The third step ends that.\n\nA messy transcript hides the decisions. AI can pull out what was decided, who owns it, and by when.\n\n3 steps.\n1. Paste the transcript into Claude or ChatGPT and ask for a summary in 5 bullet points.\n2. Ask for every action item with an owner and a due date. Tell it to mark anything unclear.\n3. Ask for a follow up email to the group that lists each decision and action item, ready to send.\n\nNotes in. Clear owners out.\n\nWant the exact prompt? Follow EVOGENCY and message us the word MEETING. We'll send it to you.\n\n#AITools #Productivity #ChatGPT #ClaudeAI",
+        "instagram": "How to summarize a meeting transcript with AI.\n\nNobody remembers who owns what. The third step ends that.\n\nA messy transcript hides the decisions. AI can pull out what was decided, who owns it, and by when.\n\n3 steps.\n1. Paste the transcript into Claude or ChatGPT and ask for a summary in 5 bullet points.\n2. Ask for every action item with an owner and a due date. Tell it to mark anything unclear.\n3. Ask for a follow up email to the group that lists each decision and action item, ready to send.\n\nNotes in. Clear owners out.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word MEETING. We'll send it to you.\n\n#AITools #Productivity #ChatGPT #ClaudeAI",
+        "tiktok": "How to summarize a meeting transcript with AI.\n\nNobody remembers who owns what. The third step ends that.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us MEETING.\n\n#AITools #Productivity #ChatGPT #ClaudeAI"
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "time": "12:30",
+      "id": "2026-10-20-iosevka-font",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Tired of your code font? Build your own, step 3.",
+      "why": "Iosevka is an open source typeface family designed for writing code, in sans and slab styles.",
+      "src": "typeof.net/Iosevka",
+      "steps": [
+        "Hit the download button on the Iosevka site. It links to the project's releases.",
+        "Pick it as your editor font and turn on ligatures. Long arrows and bars made of equal signs join up.",
+        "Open the customizer and build your own version. There are 19 stylistic sets to mix."
+      ],
+      "take": "Your editor. Your font.",
+      "label": "How to use it",
+      "say": [
+        "Tired of your code font? Build your own, in step three!",
+        "Iosevka is an open source typeface family designed for writing code. Sans and slab styles.",
+        "First, hit the download button on the Iosevka site. It links to the releases. That's the easy one.",
+        "Next, pick it as your editor font and turn on ligatures. Long arrows and bars made of equal signs join up.",
+        "Now the custom build. Open the customizer and make your own version. There are nineteen stylistic sets to mix.",
+        "Your editor. Your font."
+      ],
+      "captions": {
+        "facebook": "Best free coding font for developers.\n\nTired of your code font? Build your own, step 3.\n\nIosevka is an open source typeface family designed for writing code, in sans and slab styles.\n\n3 steps.\n1. Hit the download button on the Iosevka site. It links to the project's releases.\n2. Pick it as your editor font and turn on ligatures. Long arrows and bars made of equal signs join up.\n3. Open the customizer and build your own version. There are 19 stylistic sets to mix.\n\nYour editor. Your font.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Developers #Coding #Typography #DesignTools",
+        "instagram": "Best free coding font for developers.\n\nTired of your code font? Build your own, step 3.\n\nIosevka is an open source typeface family designed for writing code, in sans and slab styles.\n\n3 steps.\n1. Hit the download button on the Iosevka site. It links to the project's releases.\n2. Pick it as your editor font and turn on ligatures. Long arrows and bars made of equal signs join up.\n3. Open the customizer and build your own version. There are 19 stylistic sets to mix.\n\nYour editor. Your font.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Developers #Coding #Typography #DesignTools",
+        "tiktok": "Best free coding font for developers.\n\nTired of your code font? Build your own, step 3.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Developers #Coding #Typography #DesignTools"
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "time": "19:00",
+      "id": "2026-10-20-chatgpt-chrome-tabs",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "ChatGPT now acts in your tabs. Mind the third rule.",
+      "why": "On October 16, OpenAI upgraded its ChatGPT Chrome extension so it can read your tabs and do browser chores for you.",
+      "src": "Business Today, Windows Report, Oct 16 2026",
+      "steps": [
+        "Chat mode reads your open tabs. Work mode acts in them, like filling forms.",
+        "Work mode needs at least a Plus plan, and rollout can vary by plan and workspace.",
+        "Set it to stop before it submits, and keep it out of tabs with banking or customer data."
+      ],
+      "take": "Let it draft. You press submit.",
+      "label": "What it means",
+      "say": [
+        "ChatGPT now acts in your tabs! Mind the third rule.",
+        "On October sixteenth, OpenAI upgraded its Chrome extension. It can read your tabs and do browser chores for you.",
+        "First, chat mode reads your open tabs. Work mode acts in them, like filling forms. Cool, right?",
+        "Next, work mode needs at least a Plus plan. And rollout can vary by plan and workspace.",
+        "Now the rule that keeps you safe. Set it to stop before it submits. And keep it out of tabs with banking or customer data.",
+        "Let it draft. You press submit."
+      ],
+      "captions": {
+        "facebook": "ChatGPT Chrome extension Work mode explained.\n\nChatGPT now acts in your tabs. Mind the third rule.\n\nOn October 16, OpenAI upgraded its ChatGPT Chrome extension so it can read your tabs and do browser chores for you.\n\n3 steps.\n1. Chat mode reads your open tabs. Work mode acts in them, like filling forms.\n2. Work mode needs at least a Plus plan, and rollout can vary by plan and workspace.\n3. Set it to stop before it submits, and keep it out of tabs with banking or customer data.\n\nLet it draft. You press submit.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #ChatGPT #OpenAI #Productivity",
+        "instagram": "ChatGPT Chrome extension Work mode explained.\n\nChatGPT now acts in your tabs. Mind the third rule.\n\nOn October 16, OpenAI upgraded its ChatGPT Chrome extension so it can read your tabs and do browser chores for you.\n\n3 steps.\n1. Chat mode reads your open tabs. Work mode acts in them, like filling forms.\n2. Work mode needs at least a Plus plan, and rollout can vary by plan and workspace.\n3. Set it to stop before it submits, and keep it out of tabs with banking or customer data.\n\nLet it draft. You press submit.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #ChatGPT #OpenAI #Productivity",
+        "tiktok": "ChatGPT Chrome extension Work mode explained.\n\nChatGPT now acts in your tabs. Mind the third rule.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #ChatGPT #OpenAI #Productivity"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "time": "08:00",
+      "id": "2026-10-21-ai-unit-tests",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Write unit tests fast. The final step finds forgotten bugs.",
+      "why": "Tests get skipped because writing them is slow. AI can draft them in seconds, and it can think of edge cases you missed.",
+      "src": "",
+      "steps": [
+        "Paste one function into your AI coding assistant, like Claude or Copilot, and name your test framework.",
+        "Ask for unit tests that cover normal inputs, then run them.",
+        "Ask for the edge cases you forgot, like empty input, huge values, and wrong types, with a test for each."
+      ],
+      "take": "The bug you forgot is the one that ships.",
+      "label": "Step",
+      "say": [
+        "Write unit tests fast! The final step finds the bugs you forgot.",
+        "Tests get skipped because they're slow to write. AI drafts them in seconds, and thinks of edge cases you missed.",
+        "First, paste one function into Claude or Copilot, and name your test framework. Ask for tests on normal inputs. Run them.",
+        "Next, look at what passed. Good. Now it gets spicy.",
+        "Now the bug finder. Ask for the edge cases you forgot. Empty input, huge values, wrong types. With a test for each.",
+        "The bug you forgot is the one that ships."
+      ],
+      "keyword": "TESTS",
+      "prompt": "You are a careful senior engineer. Here is one function and the test framework I use. First explain in one sentence what the function should do. Then write unit tests for normal inputs. Then list the edge cases I probably forgot, like empty input, very large values, wrong types, and boundary values, and write a test for each one. For every test, say what bug it would catch. Function [paste here] Framework [for example Jest or pytest]",
+      "captions": {
+        "facebook": "How to write unit tests with AI.\n\nWrite unit tests fast. The final step finds forgotten bugs.\n\nTests get skipped because writing them is slow. AI can draft them in seconds, and it can think of edge cases you missed.\n\n3 steps.\n1. Paste one function into your AI coding assistant, like Claude or Copilot, and name your test framework.\n2. Ask for unit tests that cover normal inputs, then run them.\n3. Ask for the edge cases you forgot, like empty input, huge values, and wrong types, with a test for each.\n\nThe bug you forgot is the one that ships.\n\nWant the exact prompt? Follow EVOGENCY and message us the word TESTS. We'll send it to you.\n\n#Developers #Coding #Testing #AITools",
+        "instagram": "How to write unit tests with AI.\n\nWrite unit tests fast. The final step finds forgotten bugs.\n\nTests get skipped because writing them is slow. AI can draft them in seconds, and it can think of edge cases you missed.\n\n3 steps.\n1. Paste one function into your AI coding assistant, like Claude or Copilot, and name your test framework.\n2. Ask for unit tests that cover normal inputs, then run them.\n3. Ask for the edge cases you forgot, like empty input, huge values, and wrong types, with a test for each.\n\nThe bug you forgot is the one that ships.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word TESTS. We'll send it to you.\n\n#Developers #Coding #Testing #AITools",
+        "tiktok": "How to write unit tests with AI.\n\nWrite unit tests fast. The final step finds forgotten bugs.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us TESTS.\n\n#Developers #Coding #Testing #AITools"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "time": "12:30",
+      "id": "2026-10-21-sonder-editor",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Free Mac writing app. The third feature is the trick.",
+      "why": "Sonder is an open source markdown editor for Mac. It opens a folder of markdown files you already have.",
+      "src": "frizky.dev/products/sonder",
+      "steps": [
+        "Download the DMG from the Sonder site and drag it into Applications. It needs macOS 14 or later.",
+        "Open a folder of notes. Press Command D for focus mode, which dims all but your sentence.",
+        "Run the style check to flag filler words like basically and very, then export to PDF, HTML, or Word."
+      ],
+      "take": "Write in plain files. Polish in one pass.",
+      "label": "How to use it",
+      "say": [
+        "Free Mac writing app! The third feature is the trick.",
+        "Sonder is an open source markdown editor for Mac. It opens the folder of notes you already have.",
+        "First, download it from the Sonder site and drag it into Applications. It needs macOS fourteen or later. Done.",
+        "Next, press Command D for focus mode. Everything dims except the sentence you're typing.",
+        "Now the trick. The style check flags filler words like basically and very. Then export to PDF, HTML, or Word.",
+        "Write in plain files. Polish in one pass."
+      ],
+      "captions": {
+        "facebook": "Free markdown editor for Mac.\n\nFree Mac writing app. The third feature is the trick.\n\nSonder is an open source markdown editor for Mac. It opens a folder of markdown files you already have.\n\n3 steps.\n1. Download the DMG from the Sonder site and drag it into Applications. It needs macOS 14 or later.\n2. Open a folder of notes. Press Command D for focus mode, which dims all but your sentence.\n3. Run the style check to flag filler words like basically and very, then export to PDF, HTML, or Word.\n\nWrite in plain files. Polish in one pass.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Writing #Mac #Productivity #Creators",
+        "instagram": "Free markdown editor for Mac.\n\nFree Mac writing app. The third feature is the trick.\n\nSonder is an open source markdown editor for Mac. It opens a folder of markdown files you already have.\n\n3 steps.\n1. Download the DMG from the Sonder site and drag it into Applications. It needs macOS 14 or later.\n2. Open a folder of notes. Press Command D for focus mode, which dims all but your sentence.\n3. Run the style check to flag filler words like basically and very, then export to PDF, HTML, or Word.\n\nWrite in plain files. Polish in one pass.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Writing #Mac #Productivity #Creators",
+        "tiktok": "Free markdown editor for Mac.\n\nFree Mac writing app. The third feature is the trick.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Writing #Mac #Productivity #Creators"
+      }
+    },
+    {
+      "date": "2026-10-21",
+      "time": "19:00",
+      "id": "2026-10-21-gemini-4-argon-price",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Gemini 4's price doubles November 30. Check number 3.",
+      "why": "Google moved Gemini 4 Argon to general availability on October 13. The launch price is only good until November 30.",
+      "src": "Google, Google for Developers, Oct 13 2026",
+      "steps": [
+        "It's in the Gemini API paid tier and AI Studio.",
+        "It costs 2 dollars in and 10 out per million tokens until Nov 30. Then it's 4 and 20.",
+        "The scores are Google's own. Test it on one real job this month, before the price changes."
+      ],
+      "take": "Same model. Double the bill. Test early.",
+      "label": "What it means",
+      "say": [
+        "Gemini 4's price doubles on November thirtieth! Check number three.",
+        "Google moved Gemini 4 Argon to general availability on October thirteenth. But the launch price won't last.",
+        "First, it's in the Gemini API paid tier and AI Studio. So you can try it now.",
+        "Next, it costs two dollars in and ten out per million tokens, until November thirtieth. Then it's four and twenty.",
+        "Now number three. The benchmark scores are Google's own. So test it on one real job this month, before the price changes.",
+        "Same model. Double the bill. Test early."
+      ],
+      "captions": {
+        "facebook": "Gemini 4 Argon price and availability.\n\nGemini 4's price doubles November 30. Check number 3.\n\nGoogle moved Gemini 4 Argon to general availability on October 13. The launch price is only good until November 30.\n\n3 steps.\n1. It's in the Gemini API paid tier and AI Studio.\n2. It costs 2 dollars in and 10 out per million tokens until Nov 30. Then it's 4 and 20.\n3. The scores are Google's own. Test it on one real job this month, before the price changes.\n\nSame model. Double the bill. Test early.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Gemini #Google #AI",
+        "instagram": "Gemini 4 Argon price and availability.\n\nGemini 4's price doubles November 30. Check number 3.\n\nGoogle moved Gemini 4 Argon to general availability on October 13. The launch price is only good until November 30.\n\n3 steps.\n1. It's in the Gemini API paid tier and AI Studio.\n2. It costs 2 dollars in and 10 out per million tokens until Nov 30. Then it's 4 and 20.\n3. The scores are Google's own. Test it on one real job this month, before the price changes.\n\nSame model. Double the bill. Test early.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Gemini #Google #AI",
+        "tiktok": "Gemini 4 Argon price and availability.\n\nGemini 4's price doubles November 30. Check number 3.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #Gemini #Google #AI"
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "time": "08:00",
+      "id": "2026-10-22-ai-video-clips",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "One video, a week of shorts. Last step writes captions.",
+      "why": "Long videos hide great short clips. AI can find them and write the hooks for you in one pass.",
+      "src": "",
+      "steps": [
+        "Paste your video transcript into Claude or ChatGPT and ask for the 5 best moments to clip.",
+        "Ask for a hook line under 10 words for each moment that makes people keep watching.",
+        "Ask for a caption for every clip, then pick the strongest hook to post first."
+      ],
+      "take": "One video in. A week of posts out.",
+      "label": "Step",
+      "say": [
+        "One video, a week of shorts! The last step writes the captions.",
+        "Long videos hide great short clips. AI finds them and writes your hooks in one pass.",
+        "First, paste your video transcript into Claude or ChatGPT, and ask for the five best moments to clip. Easy.",
+        "Next, ask for a hook line under ten words for each moment. One that makes people keep watching.",
+        "Now the finish. Ask for a caption for every clip, then pick the strongest hook to post first.",
+        "One video in. A week of posts out."
+      ],
+      "keyword": "CLIPS",
+      "prompt": "You are a short form video editor. Below is the transcript of my video. First pick the 5 best moments to turn into clips, and quote the first line of each. Then write a hook line of 10 words or fewer for each clip that makes people want to keep watching. Then write a caption for each clip with a plain search phrase on the first line and 4 hashtags. Finally tell me which clip to post first and why. Transcript [paste here]",
+      "captions": {
+        "facebook": "How to turn one video into short clips with AI.\n\nOne video, a week of shorts. Last step writes captions.\n\nLong videos hide great short clips. AI can find them and write the hooks for you in one pass.\n\n3 steps.\n1. Paste your video transcript into Claude or ChatGPT and ask for the 5 best moments to clip.\n2. Ask for a hook line under 10 words for each moment that makes people keep watching.\n3. Ask for a caption for every clip, then pick the strongest hook to post first.\n\nOne video in. A week of posts out.\n\nWant the exact prompt? Follow EVOGENCY and message us the word CLIPS. We'll send it to you.\n\n#ContentCreator #Reels #AITools #VideoMarketing",
+        "instagram": "How to turn one video into short clips with AI.\n\nOne video, a week of shorts. Last step writes captions.\n\nLong videos hide great short clips. AI can find them and write the hooks for you in one pass.\n\n3 steps.\n1. Paste your video transcript into Claude or ChatGPT and ask for the 5 best moments to clip.\n2. Ask for a hook line under 10 words for each moment that makes people keep watching.\n3. Ask for a caption for every clip, then pick the strongest hook to post first.\n\nOne video in. A week of posts out.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word CLIPS. We'll send it to you.\n\n#ContentCreator #Reels #AITools #VideoMarketing",
+        "tiktok": "How to turn one video into short clips with AI.\n\nOne video, a week of shorts. Last step writes captions.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us CLIPS.\n\n#ContentCreator #Reels #AITools #VideoMarketing"
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "time": "12:30",
+      "id": "2026-10-22-opendesign-workspace",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Open source AI design workspace. Number 3 exports slides.",
+      "why": "OpenDesign is an open source workspace where coding agents build prototypes, dashboards, and slides from your brief.",
+      "src": "OpenDesign on GitHub",
+      "steps": [
+        "Download the desktop app for Mac or Windows from the project's GitHub releases.",
+        "Start from a brief and connect a coding agent like Claude Code, Codex, or Cursor.",
+        "Build a prototype, dashboard, or deck, and export slides as HTML, PDF, or PPTX."
+      ],
+      "take": "Brief in. Prototype out.",
+      "label": "How to use it",
+      "say": [
+        "Open source AI design workspace! Number three exports slides.",
+        "OpenDesign is a workspace where coding agents build prototypes, dashboards, and slides from your brief.",
+        "First, download the desktop app for Mac or Windows from the project's GitHub releases. Quick.",
+        "Next, start from a brief and connect a coding agent like Claude Code, Codex, or Cursor.",
+        "Now the export. Build a prototype, a dashboard, or a deck. Then export slides as HTML, PDF, or PowerPoint.",
+        "Brief in. Prototype out."
+      ],
+      "captions": {
+        "facebook": "Open source AI design tool for prototypes and slides.\n\nOpen source AI design workspace. Number 3 exports slides.\n\nOpenDesign is an open source workspace where coding agents build prototypes, dashboards, and slides from your brief.\n\n3 steps.\n1. Download the desktop app for Mac or Windows from the project's GitHub releases.\n2. Start from a brief and connect a coding agent like Claude Code, Codex, or Cursor.\n3. Build a prototype, dashboard, or deck, and export slides as HTML, PDF, or PPTX.\n\nBrief in. Prototype out.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Design #UXDesign #OpenSource #AITools",
+        "instagram": "Open source AI design tool for prototypes and slides.\n\nOpen source AI design workspace. Number 3 exports slides.\n\nOpenDesign is an open source workspace where coding agents build prototypes, dashboards, and slides from your brief.\n\n3 steps.\n1. Download the desktop app for Mac or Windows from the project's GitHub releases.\n2. Start from a brief and connect a coding agent like Claude Code, Codex, or Cursor.\n3. Build a prototype, dashboard, or deck, and export slides as HTML, PDF, or PPTX.\n\nBrief in. Prototype out.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Design #UXDesign #OpenSource #AITools",
+        "tiktok": "Open source AI design tool for prototypes and slides.\n\nOpen source AI design workspace. Number 3 exports slides.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Design #UXDesign #OpenSource #AITools"
+      }
+    },
+    {
+      "date": "2026-10-22",
+      "time": "19:00",
+      "id": "2026-10-22-muse-wonder-switch",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Switch to Meta's Muse Wonder? The last step says wait.",
+      "why": "Meta released Muse Wonder on October 12, calling it its most capable model for agents. Should you move your work over?",
+      "src": "Meta, TechCrunch, CNBC, Oct 12 2026",
+      "steps": [
+        "Muse Wonder launched at 4 dollars per million input tokens and 20 per million output.",
+        "The benchmark claims are Meta's own, and outside testing is still needed.",
+        "Run one real job side by side on your current tool first, like quotes or follow ups."
+      ],
+      "take": "Judge by your results, not their chart.",
+      "label": "What it means",
+      "say": [
+        "Switch to Meta's Muse Wonder? The last step says wait!",
+        "Meta released Muse Wonder on October twelfth, and called it its most capable model for agents.",
+        "First, it costs four dollars per million input tokens, and twenty per million output. Now the catch.",
+        "Next, the benchmark claims are Meta's own. Outside testing is still needed.",
+        "So wait. Run one real job side by side on your current tool first. Like quotes, or follow ups.",
+        "Judge by your results, not their chart."
+      ],
+      "captions": {
+        "facebook": "Meta Muse Wonder price and review.\n\nSwitch to Meta's Muse Wonder? The last step says wait.\n\nMeta released Muse Wonder on October 12, calling it its most capable model for agents. Should you move your work over?\n\n3 steps.\n1. Muse Wonder launched at 4 dollars per million input tokens and 20 per million output.\n2. The benchmark claims are Meta's own, and outside testing is still needed.\n3. Run one real job side by side on your current tool first, like quotes or follow ups.\n\nJudge by your results, not their chart.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Meta #AIAgents #AI",
+        "instagram": "Meta Muse Wonder price and review.\n\nSwitch to Meta's Muse Wonder? The last step says wait.\n\nMeta released Muse Wonder on October 12, calling it its most capable model for agents. Should you move your work over?\n\n3 steps.\n1. Muse Wonder launched at 4 dollars per million input tokens and 20 per million output.\n2. The benchmark claims are Meta's own, and outside testing is still needed.\n3. Run one real job side by side on your current tool first, like quotes or follow ups.\n\nJudge by your results, not their chart.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Meta #AIAgents #AI",
+        "tiktok": "Meta Muse Wonder price and review.\n\nSwitch to Meta's Muse Wonder? The last step says wait.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #Meta #AIAgents #AI"
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "time": "08:00",
+      "id": "2026-10-23-ai-design-review",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Your design looks fine. The third check says otherwise.",
+      "why": "You stare at your own design too long to see its flaws. AI can review a screenshot like a fresh set of eyes.",
+      "src": "",
+      "steps": [
+        "Upload a screenshot of your design to Claude or ChatGPT and say who it is for.",
+        "Ask it to list contrast and spacing problems, with a fix for each.",
+        "Ask for accessibility problems too, like tiny text, then verify contrast numbers with a checker."
+      ],
+      "take": "Fresh eyes before handoff.",
+      "label": "Step",
+      "say": [
+        "Your design looks fine. But the third check says otherwise!",
+        "You stare at your own design too long to see its flaws. AI is a fresh set of eyes.",
+        "First, upload a screenshot to Claude or ChatGPT, and say who the design is for. Good start.",
+        "Next, ask it to list every contrast and spacing problem, with a fix for each.",
+        "Now the check that finds what you missed. Ask for accessibility problems, like tiny text. Then verify the contrast numbers with a checker.",
+        "Fresh eyes before handoff."
+      ],
+      "keyword": "CONTRAST",
+      "prompt": "You are a senior product designer reviewing my design before handoff. The screenshot is attached and the design is for [audience]. First list every contrast and spacing problem you can see and say where it is. For each one give a specific fix. Then list accessibility risks such as small text, low contrast, tiny tap targets, and meaning carried by color alone. Finally rank all problems from most to least serious, and tell me which ones need a real contrast checker to confirm instead of guessing numbers.",
+      "captions": {
+        "facebook": "How to review a UI design with AI.\n\nYour design looks fine. The third check says otherwise.\n\nYou stare at your own design too long to see its flaws. AI can review a screenshot like a fresh set of eyes.\n\n3 steps.\n1. Upload a screenshot of your design to Claude or ChatGPT and say who it is for.\n2. Ask it to list contrast and spacing problems, with a fix for each.\n3. Ask for accessibility problems too, like tiny text, then verify contrast numbers with a checker.\n\nFresh eyes before handoff.\n\nWant the exact prompt? Follow EVOGENCY and message us the word CONTRAST. We'll send it to you.\n\n#UXDesign #Figma #Accessibility #AITools",
+        "instagram": "How to review a UI design with AI.\n\nYour design looks fine. The third check says otherwise.\n\nYou stare at your own design too long to see its flaws. AI can review a screenshot like a fresh set of eyes.\n\n3 steps.\n1. Upload a screenshot of your design to Claude or ChatGPT and say who it is for.\n2. Ask it to list contrast and spacing problems, with a fix for each.\n3. Ask for accessibility problems too, like tiny text, then verify contrast numbers with a checker.\n\nFresh eyes before handoff.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word CONTRAST. We'll send it to you.\n\n#UXDesign #Figma #Accessibility #AITools",
+        "tiktok": "How to review a UI design with AI.\n\nYour design looks fine. The third check says otherwise.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us CONTRAST.\n\n#UXDesign #Figma #Accessibility #AITools"
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "time": "12:30",
+      "id": "2026-10-23-guitoro-guitar",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Play guitar in your browser. The last feature records you.",
+      "why": "Guitoro is a virtual guitar you play online. It is free, with no download and no sign up.",
+      "src": "guitoro.com",
+      "steps": [
+        "Open guitoro.com, pick an instrument, and press a chord. No download or account.",
+        "Pick a song, slow it down to 20 percent, and lead the chords from your keyboard.",
+        "Turn on the backing band, then record a take up to 10 minutes and save it as a WAV."
+      ],
+      "take": "A whole practice room in a browser tab.",
+      "label": "How to use it",
+      "say": [
+        "Play guitar in your browser! The last feature records you.",
+        "Guitoro is a virtual guitar you play online. Free, no download, and no sign up.",
+        "First, open guitoro dot com, pick an instrument, and press a chord. Already playing.",
+        "Next, pick a song, slow it down to twenty percent, and lead the chords from your keyboard.",
+        "Now the recorder. Turn on the backing band, record a take up to ten minutes, and save it as a WAV.",
+        "A whole practice room in a browser tab."
+      ],
+      "captions": {
+        "facebook": "Free online virtual guitar.\n\nPlay guitar in your browser. The last feature records you.\n\nGuitoro is a virtual guitar you play online. It is free, with no download and no sign up.\n\n3 steps.\n1. Open guitoro.com, pick an instrument, and press a chord. No download or account.\n2. Pick a song, slow it down to 20 percent, and lead the chords from your keyboard.\n3. Turn on the backing band, then record a take up to 10 minutes and save it as a WAV.\n\nA whole practice room in a browser tab.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Guitar #Music #Creators #FreeTools",
+        "instagram": "Free online virtual guitar.\n\nPlay guitar in your browser. The last feature records you.\n\nGuitoro is a virtual guitar you play online. It is free, with no download and no sign up.\n\n3 steps.\n1. Open guitoro.com, pick an instrument, and press a chord. No download or account.\n2. Pick a song, slow it down to 20 percent, and lead the chords from your keyboard.\n3. Turn on the backing band, then record a take up to 10 minutes and save it as a WAV.\n\nA whole practice room in a browser tab.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Guitar #Music #Creators #FreeTools",
+        "tiktok": "Free online virtual guitar.\n\nPlay guitar in your browser. The last feature records you.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Guitar #Music #Creators #FreeTools"
+      }
+    },
+    {
+      "date": "2026-10-23",
+      "time": "19:00",
+      "id": "2026-10-23-facebook-your-algorithm",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Facebook takes requests now. The last tip is for businesses.",
+      "why": "On October 13, Meta added a feature called Your Algorithm to Facebook. You type what you want more or less of.",
+      "src": "TechCrunch, PPC Land, Oct 13 2026",
+      "steps": [
+        "In the three dot menu, type the topics you want more or less of in Feed and Reels.",
+        "Meta says it updates in real time, but gave no rollout dates, so you may not see it yet.",
+        "Pages can't see what followers type. Make each post clearly about one topic so it's easy to rank."
+      ],
+      "take": "A post about one thing is easy to find. A post about everything is easy to skip.",
+      "label": "What it means",
+      "say": [
+        "Facebook takes requests now! And the last tip is for businesses.",
+        "On October thirteenth, Meta added Your Algorithm to Facebook. You type what you want more or less of.",
+        "First, in the three dot menu, type the topics you want more or less of in Feed and Reels.",
+        "Next, Meta says it updates in real time. But no rollout dates yet, so you may not see it.",
+        "Now the tip for businesses. Pages can't see what followers type. So make every post clearly about one topic.",
+        "A post about one thing is easy to find. A post about everything is easy to skip."
+      ],
+      "captions": {
+        "facebook": "Facebook Your Algorithm feature explained.\n\nFacebook takes requests now. The last tip is for businesses.\n\nOn October 13, Meta added a feature called Your Algorithm to Facebook. You type what you want more or less of.\n\n3 steps.\n1. In the three dot menu, type the topics you want more or less of in Feed and Reels.\n2. Meta says it updates in real time, but gave no rollout dates, so you may not see it yet.\n3. Pages can't see what followers type. Make each post clearly about one topic so it's easy to rank.\n\nA post about one thing is easy to find. A post about everything is easy to skip.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Facebook #Meta #SocialMedia",
+        "instagram": "Facebook Your Algorithm feature explained.\n\nFacebook takes requests now. The last tip is for businesses.\n\nOn October 13, Meta added a feature called Your Algorithm to Facebook. You type what you want more or less of.\n\n3 steps.\n1. In the three dot menu, type the topics you want more or less of in Feed and Reels.\n2. Meta says it updates in real time, but gave no rollout dates, so you may not see it yet.\n3. Pages can't see what followers type. Make each post clearly about one topic so it's easy to rank.\n\nA post about one thing is easy to find. A post about everything is easy to skip.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Facebook #Meta #SocialMedia",
+        "tiktok": "Facebook Your Algorithm feature explained.\n\nFacebook takes requests now. The last tip is for businesses.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #Facebook #Meta #SocialMedia"
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "time": "08:00",
+      "id": "2026-10-24-ai-readme",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Your README skips steps. The last step finds them.",
+      "why": "You know your project too well to see what a newcomer is missing. AI can write the README and then test it for you.",
+      "src": "",
+      "steps": [
+        "Paste your file list and main code into Claude or ChatGPT and ask for a README draft.",
+        "Ask for a quick start with exact commands, written for someone who has never seen your project.",
+        "Ask AI to act as a new developer who follows the README line by line and lists every missing step."
+      ],
+      "take": "Write it once. Let AI try to break it.",
+      "label": "Step",
+      "say": [
+        "Your README skips steps! The last step finds them.",
+        "You know your project too well to see what a newcomer misses. AI writes the README, then tests it.",
+        "First, paste your file list and main code into Claude or ChatGPT, and ask for a README draft. Done.",
+        "Next, ask for a quick start with exact commands, written for someone who's never seen your project.",
+        "Now the gap finder. Tell AI to act like a new developer, follow the README line by line, and list every missing step.",
+        "Write it once. Let AI try to break it."
+      ],
+      "keyword": "README",
+      "prompt": "You are a senior open source maintainer. Below are my project's file list and main code. First write a README with a one line summary, install steps, a quick start with exact commands, usage examples, and how to run the tests. Then act as a developer who has never seen this project and follow your own README line by line. List every step that is missing, unclear, or assumes knowledge, and fix the README to cover them. File list [paste here] Main code [paste here]",
+      "captions": {
+        "facebook": "How to write a good README with AI.\n\nYour README skips steps. The last step finds them.\n\nYou know your project too well to see what a newcomer is missing. AI can write the README and then test it for you.\n\n3 steps.\n1. Paste your file list and main code into Claude or ChatGPT and ask for a README draft.\n2. Ask for a quick start with exact commands, written for someone who has never seen your project.\n3. Ask AI to act as a new developer who follows the README line by line and lists every missing step.\n\nWrite it once. Let AI try to break it.\n\nWant the exact prompt? Follow EVOGENCY and message us the word README. We'll send it to you.\n\n#Developers #GitHub #OpenSource #AITools",
+        "instagram": "How to write a good README with AI.\n\nYour README skips steps. The last step finds them.\n\nYou know your project too well to see what a newcomer is missing. AI can write the README and then test it for you.\n\n3 steps.\n1. Paste your file list and main code into Claude or ChatGPT and ask for a README draft.\n2. Ask for a quick start with exact commands, written for someone who has never seen your project.\n3. Ask AI to act as a new developer who follows the README line by line and lists every missing step.\n\nWrite it once. Let AI try to break it.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word README. We'll send it to you.\n\n#Developers #GitHub #OpenSource #AITools",
+        "tiktok": "How to write a good README with AI.\n\nYour README skips steps. The last step finds them.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us README.\n\n#Developers #GitHub #OpenSource #AITools"
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "time": "12:30",
+      "id": "2026-10-24-talorys-assistant",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Your own AI assistant, one command. The third part remembers.",
+      "why": "Talorys is a free, open source personal AI assistant that runs in your own Cloudflare account.",
+      "src": "Talorys on GitHub",
+      "steps": [
+        "Run the one command from the Talorys GitHub page. You need Node 22 or newer.",
+        "It deploys into your own Cloudflare account and is designed to fit the free plan.",
+        "Add tasks, notes, and reminders, and view, edit, or delete what it remembers about you."
+      ],
+      "take": "Your assistant. Your account. Your data.",
+      "label": "How to use it",
+      "say": [
+        "Your own AI assistant, with one command! The third part remembers.",
+        "Talorys is a free, open source personal AI assistant. It runs in your own Cloudflare account.",
+        "First, run the one command from the Talorys GitHub page. You need Node twenty two or newer. That's the setup.",
+        "Next, it deploys into your own Cloudflare account, and it's designed to fit the free plan.",
+        "Now the memory. Add tasks, notes, and reminders, and view, edit, or delete what it remembers about you.",
+        "Your assistant. Your account. Your data."
+      ],
+      "captions": {
+        "facebook": "Free open source personal AI assistant.\n\nYour own AI assistant, one command. The third part remembers.\n\nTalorys is a free, open source personal AI assistant that runs in your own Cloudflare account.\n\n3 steps.\n1. Run the one command from the Talorys GitHub page. You need Node 22 or newer.\n2. It deploys into your own Cloudflare account and is designed to fit the free plan.\n3. Add tasks, notes, and reminders, and view, edit, or delete what it remembers about you.\n\nYour assistant. Your account. Your data.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Developers #OpenSource #Cloudflare #AITools",
+        "instagram": "Free open source personal AI assistant.\n\nYour own AI assistant, one command. The third part remembers.\n\nTalorys is a free, open source personal AI assistant that runs in your own Cloudflare account.\n\n3 steps.\n1. Run the one command from the Talorys GitHub page. You need Node 22 or newer.\n2. It deploys into your own Cloudflare account and is designed to fit the free plan.\n3. Add tasks, notes, and reminders, and view, edit, or delete what it remembers about you.\n\nYour assistant. Your account. Your data.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Developers #OpenSource #Cloudflare #AITools",
+        "tiktok": "Free open source personal AI assistant.\n\nYour own AI assistant, one command. The third part remembers.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Developers #OpenSource #Cloudflare #AITools"
+      }
+    },
+    {
+      "date": "2026-10-24",
+      "time": "19:00",
+      "id": "2026-10-24-ai-doubt-questions",
+      "kind": "value",
+      "topic": "AI tip",
+      "hook": "AI sounds sure when wrong. The last question saves you.",
+      "why": "AI writes with the same confidence whether it's right or wrong. These questions make it show its doubts.",
+      "src": "",
+      "steps": [
+        "Ask it which parts of its answer it is least sure about.",
+        "Ask what a skeptic would say is wrong with the answer.",
+        "Ask which claims you should check yourself, and where you can check them."
+      ],
+      "take": "Doubt is a feature. Ask for it.",
+      "label": "Try this",
+      "say": [
+        "AI sounds sure when it's wrong! The last question saves you.",
+        "AI writes with the same confidence whether it's right or wrong. So make it show its doubts.",
+        "First, ask which parts of its answer it's least sure about. Quick and revealing.",
+        "Next, ask what a skeptic would say is wrong with the answer.",
+        "Now the question that saves you. Ask which claims you should check yourself, and where you can check them.",
+        "Doubt is a feature. Ask for it."
+      ],
+      "captions": {
+        "facebook": "How to stop AI from making things up.\n\nAI sounds sure when wrong. The last question saves you.\n\nAI writes with the same confidence whether it's right or wrong. These questions make it show its doubts.\n\n3 steps.\n1. Ask it which parts of its answer it is least sure about.\n2. Ask what a skeptic would say is wrong with the answer.\n3. Ask which claims you should check yourself, and where you can check them.\n\nDoubt is a feature. Ask for it.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AITips #ChatGPT #ClaudeAI #Productivity",
+        "instagram": "How to stop AI from making things up.\n\nAI sounds sure when wrong. The last question saves you.\n\nAI writes with the same confidence whether it's right or wrong. These questions make it show its doubts.\n\n3 steps.\n1. Ask it which parts of its answer it is least sure about.\n2. Ask what a skeptic would say is wrong with the answer.\n3. Ask which claims you should check yourself, and where you can check them.\n\nDoubt is a feature. Ask for it.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AITips #ChatGPT #ClaudeAI #Productivity",
+        "tiktok": "How to stop AI from making things up.\n\nAI sounds sure when wrong. The last question saves you.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AITips #ChatGPT #ClaudeAI #Productivity"
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "time": "08:00",
+      "id": "2026-10-25-review-kit",
+      "kind": "promo",
+      "topic": "From us",
+      "hook": "7 free review texts. The third works on old jobs.",
+      "why": "Plenty of happy customers forget to leave a Google review. The free 5 Star Review Kit gives home service pros 7 copy and paste messages to ask.",
+      "src": "",
+      "steps": [
+        "3 texts to send within 2 hours of a job, and why timing is everything.",
+        "An email version for customers without a cell number.",
+        "A past customer text that turns last month's jobs into reviews this week."
+      ],
+      "take": "Free for home service pros. Takes 2 minutes to set up.",
+      "say": [
+        "Seven free review texts! The third one works on old jobs.",
+        "Plenty of happy customers forget to leave a Google review. This free kit gives home service pros seven messages to ask.",
+        "First, three texts to send within two hours of a job, and why timing is everything.",
+        "Next, an email version for customers without a cell number.",
+        "And the third thing inside. A past customer text that turns last month's jobs into reviews this week.",
+        "Free for home service pros. Takes two minutes to set up."
+      ],
+      "captions": {
+        "facebook": "Free Google review request templates for home service businesses.\n\n7 free review texts. The third works on old jobs.\n\nPlenty of happy customers forget to leave a Google review. The free 5 Star Review Kit gives home service pros 7 copy and paste messages to ask.\n\nWhat's inside.\n1. 3 texts to send within 2 hours of a job, and why timing is everything.\n2. An email version for customers without a cell number.\n3. A past customer text that turns last month's jobs into reviews this week.\n\nFree for home service pros. Takes 2 minutes to set up.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites and AI agents for local businesses. Get the free kit at evogencyglobal.com/free-review-kit\n\n#GoogleReviews #HomeServices #SmallBusiness #Orlando",
+        "instagram": "Free Google review request templates for home service businesses.\n\n7 free review texts. The third works on old jobs.\n\nPlenty of happy customers forget to leave a Google review. The free 5 Star Review Kit gives home service pros 7 copy and paste messages to ask.\n\nWhat's inside.\n1. 3 texts to send within 2 hours of a job, and why timing is everything.\n2. An email version for customers without a cell number.\n3. A past customer text that turns last month's jobs into reviews this week.\n\nFree for home service pros. Takes 2 minutes to set up.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites and AI agents for local businesses. Get the free kit at evogencyglobal.com/free-review-kit (link in bio)\n\n#GoogleReviews #HomeServices #SmallBusiness #Orlando",
+        "tiktok": "Free Google review request templates for home service businesses.\n\n7 free review texts. The third works on old jobs.\n\nFree kit, link in bio.\n\n#GoogleReviews #HomeServices #SmallBusiness #Orlando"
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "time": "12:30",
+      "id": "2026-10-25-desk-linux",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Linux desktop, but it's a desk. Wait for step three.",
+      "why": "DEsk is a free, open source Wayland desktop for Linux. It is still in beta, so expect rough edges.",
+      "src": "DEsk on GitHub",
+      "steps": [
+        "Download the latest release and run the installer for Debian, Ubuntu, Arch, or Fedora. It asks first.",
+        "Log out and choose DEsk on the login screen.",
+        "Your windows are paper sheets on a walnut desk. Fold, unfold, and discard them like paper."
+      ],
+      "take": "Your computer, but make it a desk.",
+      "label": "How to use it",
+      "say": [
+        "Linux desktop, but it's a desk! Wait for step three.",
+        "DEsk is a free, open source Wayland desktop for Linux. Beta, so expect rough edges.",
+        "First, download the latest release and run the installer for Debian, Ubuntu, Arch, or Fedora. It asks first.",
+        "Next, log out and choose DEsk on the login screen. That's it.",
+        "Now the fun part. Your windows are paper sheets on a walnut desk. Fold them, unfold them, and discard them like paper.",
+        "Your computer, but make it a desk."
+      ],
+      "captions": {
+        "facebook": "Skeuomorphic Linux desktop environment.\n\nLinux desktop, but it's a desk. Wait for step three.\n\nDEsk is a free, open source Wayland desktop for Linux. It is still in beta, so expect rough edges.\n\n3 steps.\n1. Download the latest release and run the installer for Debian, Ubuntu, Arch, or Fedora. It asks first.\n2. Log out and choose DEsk on the login screen.\n3. Your windows are paper sheets on a walnut desk. Fold, unfold, and discard them like paper.\n\nYour computer, but make it a desk.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Linux #OpenSource #Design #Developers",
+        "instagram": "Skeuomorphic Linux desktop environment.\n\nLinux desktop, but it's a desk. Wait for step three.\n\nDEsk is a free, open source Wayland desktop for Linux. It is still in beta, so expect rough edges.\n\n3 steps.\n1. Download the latest release and run the installer for Debian, Ubuntu, Arch, or Fedora. It asks first.\n2. Log out and choose DEsk on the login screen.\n3. Your windows are paper sheets on a walnut desk. Fold, unfold, and discard them like paper.\n\nYour computer, but make it a desk.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Linux #OpenSource #Design #Developers",
+        "tiktok": "Skeuomorphic Linux desktop environment.\n\nLinux desktop, but it's a desk. Wait for step three.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Linux #OpenSource #Design #Developers"
+      }
+    },
+    {
+      "date": "2026-10-25",
+      "time": "19:00",
+      "id": "2026-10-25-ai-interview-first",
+      "kind": "value",
+      "topic": "AI tip",
+      "hook": "Skip long prompts. Step three makes AI prove it listened.",
+      "why": "Long prompts take work, and AI still guesses what you meant. Let it interview you first instead.",
+      "src": "",
+      "steps": [
+        "Tell AI your goal and say to ask you questions first, one at a time.",
+        "Answer them, and tell it to skip any question it can guess.",
+        "Before it writes, ask it to sum up what it learned, and fix anything wrong."
+      ],
+      "take": "Short prompt. Better answer.",
+      "label": "Try this",
+      "say": [
+        "Skip long prompts! Step three makes AI prove it listened.",
+        "Long prompts take work, and AI still guesses what you meant. So let it interview you first.",
+        "First, tell AI your goal and say to ask you questions first, one at a time. Easy.",
+        "Next, answer them, and tell it to skip any question it can guess.",
+        "Now the proof. Before it writes, make it sum up what it learned. Then fix anything it got wrong.",
+        "Short prompt. Better answer."
+      ],
+      "captions": {
+        "facebook": "Better ChatGPT prompts by letting AI ask questions.\n\nSkip long prompts. Step three makes AI prove it listened.\n\nLong prompts take work, and AI still guesses what you meant. Let it interview you first instead.\n\n3 steps.\n1. Tell AI your goal and say to ask you questions first, one at a time.\n2. Answer them, and tell it to skip any question it can guess.\n3. Before it writes, ask it to sum up what it learned, and fix anything wrong.\n\nShort prompt. Better answer.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AITips #ChatGPT #ClaudeAI #PromptEngineering",
+        "instagram": "Better ChatGPT prompts by letting AI ask questions.\n\nSkip long prompts. Step three makes AI prove it listened.\n\nLong prompts take work, and AI still guesses what you meant. Let it interview you first instead.\n\n3 steps.\n1. Tell AI your goal and say to ask you questions first, one at a time.\n2. Answer them, and tell it to skip any question it can guess.\n3. Before it writes, ask it to sum up what it learned, and fix anything wrong.\n\nShort prompt. Better answer.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AITips #ChatGPT #ClaudeAI #PromptEngineering",
+        "tiktok": "Better ChatGPT prompts by letting AI ask questions.\n\nSkip long prompts. Step three makes AI prove it listened.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AITips #ChatGPT #ClaudeAI #PromptEngineering"
+      }
+    }
+  ]
+}
