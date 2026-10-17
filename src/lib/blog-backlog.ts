@@ -5709,7 +5709,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical steps to structure business website content so AI answer engines like ChatGPT and Google AI Overviews can extract it accurately.",
     excerpt: "Practical steps to structure content so AI answer engines can extract it accurately.",
-    date: "2026-09-18",
+    date: "2026-10-17",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our GEO service",
@@ -5779,7 +5779,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Common myths and overhyped claims about generative engine optimization that are worth ignoring, since the field is still genuinely new.",
     excerpt: "Common myths and overhyped claims about GEO worth ignoring, since the field is still genuinely new.",
-    date: "2026-09-18",
+    date: "2026-10-17",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our GEO service",
@@ -5849,7 +5849,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A plain language comparison of ChatGPT search, Perplexity, and Google AI Overviews, and what each means for a local business trying to get found.",
     excerpt: "A plain language comparison of the major AI search tools, and what each means for a local business.",
-    date: "2026-09-18",
+    date: "2026-10-17",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our GEO service",
