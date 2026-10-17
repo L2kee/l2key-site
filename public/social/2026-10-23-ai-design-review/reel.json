@@ -1,15 +1,16 @@
 {
   "seconds": 35.06,
   "cover_ms": 3298,
+  "engine": 2,
   "look": "blueprint",
   "motion": {
-    "hook": "words",
-    "why": "rise",
-    "num": "stamp",
-    "step": "words",
-    "cta": "orbit",
-    "change": "up",
-    "scene": "aurora"
+    "hook": "rise",
+    "why": "circle",
+    "num": "drop",
+    "step": "lightup",
+    "cta": "scribble",
+    "change": "ripple",
+    "scene": "particles"
   },
   "voice": "bf_lily@1.15",
   "music": "make-money"

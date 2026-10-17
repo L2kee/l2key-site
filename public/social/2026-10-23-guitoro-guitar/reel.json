@@ -1,15 +1,16 @@
 {
   "seconds": 33.59,
-  "cover_ms": 3231,
+  "cover_ms": 3232,
+  "engine": 2,
   "look": "spotlight",
   "motion": {
-    "hook": "type",
+    "hook": "drop",
     "why": "mark",
     "num": "spring",
-    "step": "lightup",
-    "cta": "pulse",
-    "change": "blur",
-    "scene": "particles"
+    "step": "circle",
+    "cta": "shine",
+    "change": "slide",
+    "scene": "grid"
   },
   "voice": "bf_lily@1.15",
   "music": "new-shoes"

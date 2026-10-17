@@ -1,14 +1,15 @@
 {
   "seconds": 30.94,
   "cover_ms": 3400,
+  "engine": 2,
   "look": "cream",
   "motion": {
-    "hook": "decode",
-    "why": "mark",
-    "num": "spring",
-    "step": "rise",
-    "cta": "orbit",
-    "change": "up",
+    "hook": "wipe",
+    "why": "rise",
+    "num": "stamp",
+    "step": "lightup",
+    "cta": "nudge",
+    "change": "zoom",
     "scene": "particles"
   },
   "voice": "bf_lily@1.15",

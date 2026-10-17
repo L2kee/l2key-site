@@ -1,14 +1,15 @@
 {
   "seconds": 37.34,
-  "cover_ms": 3367,
+  "cover_ms": 3366,
+  "engine": 2,
   "look": "gold",
   "motion": {
-    "hook": "wipe",
+    "hook": "circle",
     "why": "lightup",
     "num": "odometer",
     "step": "words",
-    "cta": "trace",
-    "change": "fade",
+    "cta": "orbit",
+    "change": "ink",
     "scene": "particles"
   },
   "voice": "bf_lily@1.15",

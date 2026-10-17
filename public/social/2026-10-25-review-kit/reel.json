@@ -1,15 +1,16 @@
 {
   "seconds": 36.88,
   "cover_ms": 3400,
+  "engine": 2,
   "look": "editorial",
   "motion": {
-    "hook": "curtain",
-    "why": "wipe",
-    "num": "pop",
-    "step": "words",
-    "cta": "pulse",
-    "change": "blur",
-    "scene": "aurora"
+    "hook": "letters",
+    "why": "circle",
+    "num": "drop",
+    "step": "circle",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "grid"
   },
   "voice": "bf_lily@1.15",
   "music": "make-funk"
