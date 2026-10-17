@@ -19,6 +19,7 @@ export const ORG_DESCRIPTION =
 
 /** The service landing pages, in the order they appear on /services. */
 export const SERVICE_PAGES: Record<string, { name: string; serviceType: string; anywhere?: boolean }> = {
+  "/ai": { name: "AI Front Desk and AI Receptionist", serviceType: "Telephone answering service", anywhere: true },
   "/brand-design": { name: "Luxury Brand Identity and Rebranding", serviceType: "Brand identity design", anywhere: true },
   "/web-design-agency-orlando": { name: "Web Design in Orlando", serviceType: "Web design" },
   "/seo-agency-orlando": { name: "SEO in Orlando", serviceType: "Search engine optimization" },

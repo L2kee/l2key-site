@@ -1,4 +1,4 @@
-import { Globe2, Star, Search, Smartphone, Sparkles, Database, Gem } from "lucide-react";
+import { Globe2, Star, Search, Smartphone, Sparkles, Database, Gem, PhoneCall } from "lucide-react";
 import type { WorkItem } from "@/components/work-card";
 
 type Service = {
@@ -9,6 +9,12 @@ type Service = {
 };
 
 export const SERVICES: Service[] = [
+  {
+    icon: PhoneCall,
+    title: "AI Front Desk",
+    body: "An AI receptionist that answers every call 24/7, books appointments onto your calendar, and texts back anyone you miss.",
+    href: "/ai",
+  },
   {
     icon: Gem,
     title: "Luxury Brand Design & Rebrands",

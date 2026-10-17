@@ -24,6 +24,7 @@ function backgroundFor(pathname: string) {
   if (pathname === "/about") return "about";
   if (pathname === "/contact") return "contact";
   if (pathname === "/brand-design") return "brand";
+  if (pathname === "/ai") return "ai";
   if (SERVICE_PAGES.has(pathname)) return "services";
   return "default";
 }

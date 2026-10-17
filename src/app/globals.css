@@ -83,6 +83,9 @@ body {
    file so a visitor only downloads it once. */
 .site-bg-layer--brand { background-image: var(--bg-dim), url("/bg/about.webp"); }
 .site-bg-layer--services { background-image: var(--bg-dim), url("/bg/services.webp"); }
+/* The AI Front Desk page gets its own render (Moe's pick, 2026-10-17), the
+   glowing lotus off to the right so the hero copy sits on dark space. */
+.site-bg-layer--ai { background-image: var(--bg-dim), url("/bg/ai.webp"); }
 @media (max-width: 639px) {
   .site-bg {
     opacity: 0.6;
@@ -96,6 +99,7 @@ body {
   .site-bg-layer--craft,
   .site-bg-layer--work { background-position: 66% 58%; }
   .site-bg-layer--contact { background-position: 62% 58%; }
+  .site-bg-layer--ai { background-position: 70% 58%; }
 }
 .site-bg.is-hidden {
   opacity: 0;

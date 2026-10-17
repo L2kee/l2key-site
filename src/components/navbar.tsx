@@ -8,6 +8,7 @@ import { Phone, Mail, CalendarClock } from "lucide-react";
 import { isFunnelPath } from "@/lib/funnel-paths";
 
 const LINKS = [
+  { href: "/ai", label: "AI Front Desk" },
   { href: "/services", label: "Our Craft" },
   { href: "/works", label: "Work" },
   { href: "/blog", label: "Blog" },

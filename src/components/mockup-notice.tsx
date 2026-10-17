@@ -13,7 +13,8 @@ import { submitMockupRequest, type MockupFormState } from "@/app/contact/actions
 // it for 7 days, sending the form hides it for 90. The button opens the
 // request form in a <dialog> (a bottom sheet on phones, .mockup-* in
 // globals.css). Never on the contact page or the funnel pages, where it would
-// compete with the form that is already there.
+// compete with the form that is already there, or on /ai, the AI Front Desk ad
+// landing page, where a website offer would pull clicks off the AI offer.
 
 const SEEN_KEY = "evo-mockup-seen";
 const HIDE_KEY = "evo-mockup-hide-until";
@@ -162,7 +163,7 @@ function MockupForm() {
 
 export function MockupNotice() {
   const pathname = usePathname();
-  const blocked = pathname === "/contact" || isFunnelPath(pathname);
+  const blocked = pathname === "/contact" || pathname === "/ai" || isFunnelPath(pathname);
   const [shown, setShown] = useState(false);
   const [mounted, setMounted] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
