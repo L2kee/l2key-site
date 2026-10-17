@@ -54,6 +54,9 @@ const SAVE_LEAD_TOOL: Anthropic.Tool = {
   },
 };
 
+const ALREADY_SAVED_NOTE =
+  "This visitor's details were already sent to Moe earlier in this chat, and save_lead is no longer available. Don't say you're saving anything. If they want to change their details, ask them to email hello@evogencyglobal.com.";
+
 type Turn = { role: "user" | "assistant"; content: string };
 type LeadInput = Record<"name" | "business" | "need" | "phone" | "email" | "website" | "best_time", string>;
 
@@ -157,8 +160,13 @@ export async function POST(request: Request) {
   usage.requests.push(Date.now());
 
   let turns: Turn[] | null = null;
+  // Set by the widget once a lead from this chat is saved. Then save_lead isn't
+  // offered, so a "yep, that's right" can't create a duplicate lead.
+  let alreadySaved = false;
   try {
-    turns = parseTurns(await request.json());
+    const body = await request.json();
+    turns = parseTurns(body);
+    alreadySaved = body?.leadSaved === true;
   } catch {}
   if (!turns) return reply("Sorry, I couldn't read that message. Try again with something shorter.", 400);
   if (turns.filter((t) => t.role === "user").length >= MAX_USER_TURNS) {
@@ -181,8 +189,11 @@ export async function POST(request: Request) {
         max_tokens: 1024,
         thinking: { type: "disabled" },
         output_config: { effort: "low" },
-        system: [{ type: "text", text: CHAT_SYSTEM_PROMPT, cache_control: { type: "ephemeral" } }],
-        tools: [SAVE_LEAD_TOOL],
+        system: [
+          { type: "text", text: CHAT_SYSTEM_PROMPT, cache_control: { type: "ephemeral" } },
+          ...(alreadySaved ? [{ type: "text" as const, text: ALREADY_SAVED_NOTE }] : []),
+        ],
+        ...(alreadySaved ? {} : { tools: [SAVE_LEAD_TOOL] }),
         messages,
       });
 

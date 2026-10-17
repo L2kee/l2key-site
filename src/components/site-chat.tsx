@@ -16,6 +16,7 @@ import { CHAT_GREETING } from "@/lib/chat-greeting";
 type Turn = { role: "user" | "assistant"; content: string };
 
 const STORE_KEY = "evo-chat";
+const SAVED_KEY = "evo-chat-lead";
 const MAX_CHARS = 600;
 const STARTERS = ["What does the AI Front Desk do?", "How much does it cost?", "I want a free homepage mockup"];
 
@@ -41,10 +42,16 @@ export function SiteChat() {
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
   const [done, setDone] = useState(false);
+  const [leadSaved, setLeadSaved] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
-  useEffect(() => setTurns(load()), []);
+  useEffect(() => {
+    setTurns(load());
+    try {
+      setLeadSaved(sessionStorage.getItem(SAVED_KEY) === "1");
+    } catch {}
+  }, []);
 
   useEffect(() => {
     listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
@@ -73,11 +80,17 @@ export function SiteChat() {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ messages: next }),
+        body: JSON.stringify({ messages: next, leadSaved }),
       });
       const data = await res.json();
       if (typeof data.reply === "string" && data.reply) answer = data.reply;
       if (data.done) setDone(true);
+      if (data.leadSaved) {
+        setLeadSaved(true);
+        try {
+          sessionStorage.setItem(SAVED_KEY, "1");
+        } catch {}
+      }
     } catch {}
     const withReply: Turn[] = [...next, { role: "assistant", content: answer }];
     setTurns(withReply);
