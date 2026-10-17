@@ -483,6 +483,11 @@ body {
       animation-timeline: view();
       animation-range: cover 0% cover 100%;
     }
+    /* The AI Front Desk picture has its text panels near the top edge, so
+       it drifts less and its panels stay in frame the whole way. */
+    .journey-drift-soft {
+      animation-name: journey-drift-soft;
+    }
 
     /* Featured work: screenshot card in from the left, details from the
        right (md up). Stacked on phones, so both just rise. */
@@ -640,6 +645,15 @@ body {
   }
   to {
     transform: scale(1.14) translateY(5%);
+  }
+}
+
+@keyframes journey-drift-soft {
+  from {
+    transform: scale(1.06) translateY(-2%);
+  }
+  to {
+    transform: scale(1.06) translateY(2%);
   }
 }
 
@@ -1140,5 +1154,45 @@ body {
   }
   .logo-mark {
     transition: color 300ms ease, filter 300ms ease;
+  }
+}
+
+/* Flagship system card (AI Front Desk). A cyan light runs around the
+   border, painted on a masked layer so the glass inside stays clear. */
+@property --flagship-spin {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+.flagship-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--flagship-spin),
+    rgb(95 216 230 / 0.18),
+    #5fd8e6 12%,
+    #2dd4bf 20%,
+    rgb(95 216 230 / 0.18) 34%,
+    rgb(95 216 230 / 0.18) 62%,
+    #a5f3fc 74%,
+    rgb(95 216 230 / 0.18) 86%
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .flagship-ring::before {
+    animation: flagship-spin 6s linear infinite;
+  }
+}
+@keyframes flagship-spin {
+  to {
+    --flagship-spin: 360deg;
   }
 }

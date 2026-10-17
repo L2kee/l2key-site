@@ -3,9 +3,34 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Phone } from "lucide-react";
 
-const STAGES = [
+type Stage = {
+  kicker: string;
+  title: string;
+  body: string;
+  ask: string;
+  cta: string;
+  href: string;
+  image: string;
+  imageAlt: string;
+  /** The main service. Gets the running border, the Flagship and live
+      badges, and a call link so the card itself is the demo. */
+  flagship?: { tel: string; display: string };
+};
+
+const STAGES: Stage[] = [
+  {
+    kicker: "Answer",
+    title: "AI Front Desk",
+    body: "An AI receptionist that answers, books, and follows up, day and night.",
+    ask: "How many calls did you miss last week while you were on a job?",
+    cta: "Hear it answer",
+    href: "/ai",
+    image: "/services-ai-front-desk.jpg",
+    imageAlt: "Conceptual illustration of a glowing cyan AI orb above an empty front desk at night, streaming light into a ringing desk phone, with floating panels reading incoming call, answered, 24/7, and booked Tuesday 9 AM, representing an AI receptionist that answers and books calls around the clock",
+    flagship: { tel: "tel:+13214354469", display: "(321) 435 4469" },
+  },
   {
     kicker: "Build",
     title: "Websites",
@@ -36,12 +61,12 @@ const STAGES = [
     image: "/services-discover.png",
     imageAlt: "Conceptual illustration of a glowing globe and search bar surrounded by local search suggestions and rising traffic graphics, representing search engine optimization",
   },
-] as const;
+];
 
 // How long the mouse rests on a side card before it glides into the middle.
 const DWELL_MS = 350;
 
-/** Spotlight carousel. The three services sit in one row that swipes and
+/** Spotlight carousel. The four services sit in one row that swipes and
     snaps. The card in the middle is full size and asks the visitor if it's
     the service they need. The cards beside it lean back, shrink, and dim.
     With a mouse, resting on a side card glides it into the spotlight, and
@@ -186,8 +211,14 @@ export function ServicesJourney() {
                   }}
                 >
                   <article
-                    className={`glass-strong flex h-full flex-col overflow-clip rounded-2xl transition-shadow duration-500 ${
-                      on ? "shadow-[0_30px_80px_-24px_rgba(95,216,230,0.25)] ring-1 ring-[#5fd8e6]/30" : "cursor-pointer"
+                    className={`glass-strong relative flex h-full flex-col overflow-clip rounded-2xl transition-shadow duration-500 ${
+                      s.flagship ? "flagship-ring" : ""
+                    } ${
+                      on
+                        ? s.flagship
+                          ? "shadow-[0_30px_90px_-20px_rgba(95,216,230,0.45)]"
+                          : "shadow-[0_30px_80px_-24px_rgba(95,216,230,0.25)] ring-1 ring-[#5fd8e6]/30"
+                        : "cursor-pointer"
                     }`}
                   >
                     <div className="relative aspect-[16/9] w-full overflow-clip border-b border-white/10">
@@ -196,9 +227,23 @@ export function ServicesJourney() {
                         alt={s.imageAlt}
                         fill
                         sizes="(max-width: 640px) 78vw, 520px"
-                        className="journey-drift object-cover"
+                        className={`journey-drift object-cover ${s.flagship ? "journey-drift-soft" : ""}`}
                       />
                       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+                      {s.flagship && (
+                        <div className="pointer-events-none absolute left-4 top-4 flex flex-col items-start gap-2">
+                          <span className="rounded-full border border-[#5fd8e6]/60 bg-black/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#5fd8e6] backdrop-blur">
+                            Flagship
+                          </span>
+                          <span className="flex items-center gap-2 rounded-full border border-white/15 bg-black/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur">
+                            <span className="relative flex h-2 w-2">
+                              <span className="absolute inline-flex h-full w-full rounded-full bg-[#5fd8e6] opacity-75 motion-safe:animate-ping" />
+                              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#5fd8e6]" />
+                            </span>
+                            Live 24/7
+                          </span>
+                        </div>
+                      )}
                     </div>
 
                     <div className="flex flex-1 flex-col p-6 text-center sm:p-8 sm:text-left">
@@ -208,10 +253,19 @@ export function ServicesJourney() {
                       <h3 className="mt-1 text-xl font-bold text-white">{s.title}</h3>
                       <p className="mt-2 text-sm leading-relaxed text-white/60">{s.body}</p>
                       <p className="mt-5 text-base font-semibold leading-snug text-white">{s.ask}</p>
-                      <div className="mt-auto flex justify-center pt-5 sm:justify-start">
+                      <div className="mt-auto flex flex-col items-center gap-3 pt-5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
                         <Link href={s.href} tabIndex={on ? 0 : -1} className="btn-solid">
                           {s.cta} <ArrowRight size={16} />
                         </Link>
+                        {s.flagship && (
+                          <a
+                            href={s.flagship.tel}
+                            tabIndex={on ? 0 : -1}
+                            className="inline-flex items-center gap-2 text-sm font-semibold text-[#5fd8e6] transition hover:text-white"
+                          >
+                            <Phone size={15} /> Or call it now, {s.flagship.display}
+                          </a>
+                        )}
                       </div>
                     </div>
                   </article>
