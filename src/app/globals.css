@@ -1231,6 +1231,12 @@ body {
     pointer-events: none;
   }
 }
+/* An open chat tucks the free mockup notice away so they never stack. */
+body:has(.site-chat-panel.is-open) .mockup-notice {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .site-chat-bubble {
   max-width: 85%;
   width: fit-content;

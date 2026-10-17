@@ -15,6 +15,19 @@ import { CHAT_GREETING } from "@/lib/chat-greeting";
 
 type Turn = { role: "user" | "assistant"; content: string };
 
+// Any page can open the chat with openSiteChat() (the homepage hero's "Ask
+// Ava" link uses AskAvaLink below).
+const OPEN_EVENT = "evo:open-chat";
+export const openSiteChat = () => dispatchEvent(new Event(OPEN_EVENT));
+
+export function AskAvaLink({ className = "" }: { className?: string }) {
+  return (
+    <button type="button" onClick={openSiteChat} className={className}>
+      Ask Ava, our AI.
+    </button>
+  );
+}
+
 const STORE_KEY = "evo-chat";
 const SAVED_KEY = "evo-chat-lead";
 const MAX_CHARS = 600;
@@ -56,6 +69,12 @@ export function SiteChat() {
   useEffect(() => {
     listRef.current?.scrollTo({ top: listRef.current.scrollHeight, behavior: "smooth" });
   }, [turns, pending, open]);
+
+  useEffect(() => {
+    const onOpen = () => setOpen(true);
+    addEventListener(OPEN_EVENT, onOpen);
+    return () => removeEventListener(OPEN_EVENT, onOpen);
+  }, []);
 
   useEffect(() => {
     if (!open) return;

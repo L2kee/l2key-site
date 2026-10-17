@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AskAvaLink } from "@/components/site-chat";
 import { ArrowRight } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
@@ -94,6 +95,11 @@ export default function Home() {
           >
             Get Your Free Audit <ArrowRight size={18} />
           </Link>
+          <p className="mt-5 text-sm text-white/60">
+            Got a question right now?{" "}
+            <AskAvaLink className="font-semibold text-[#5fd8e6] underline-offset-4 transition hover:text-white hover:underline" />{" "}
+            She&apos;s the same tech we build for you.
+          </p>
         </div>
       </HeroReveal>
 
