@@ -16,5 +16,11 @@
     "post": "2026-10-19-muse-spark-open",
     "due": "2026-10-19T19:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-20 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad3383b938409f1d07a08c8",
+    "post": "2026-10-20-ai-meeting-actions",
+    "due": "2026-10-20T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
