@@ -101,12 +101,6 @@
     "due": "2026-10-17T19:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
   },
-  "2026-10-18 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ad28acf8fcd1dd3d7b664b3",
-    "post": "2026-10-18-free-audit",
-    "due": "2026-10-18T08:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
-  },
   "2026-10-18 12:30|6ac29f8e6a5c39ccb6139c75": {
     "buffer": "6ad28ad0c74c39c9ee577a1f",
     "post": "2026-10-18-coolors-palettes",
@@ -117,6 +111,12 @@
     "buffer": "6ad28ad0c74c39c9ee577a4d",
     "post": "2026-10-18-summarize-pdf",
     "due": "2026-10-18T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-18 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad3ff2a938409f1d0a772e0",
+    "post": "2026-10-18-ava-chat",
+    "due": "2026-10-18T08:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
