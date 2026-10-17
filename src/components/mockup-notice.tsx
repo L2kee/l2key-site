@@ -15,6 +15,7 @@ import { submitMockupRequest, type MockupFormState } from "@/app/contact/actions
 // globals.css). Never on the contact page or the funnel pages, where it would
 // compete with the form that is already there, or on /ai, the AI Front Desk ad
 // landing page, where a website offer would pull clicks off the AI offer.
+// It sits above the site chat button (site-chat.tsx), not over it.
 
 const SEEN_KEY = "evo-mockup-seen";
 const HIDE_KEY = "evo-mockup-hide-until";
@@ -217,7 +218,7 @@ export function MockupNotice() {
         aria-label="Free homepage mockup"
         aria-hidden={!shown}
         inert={!shown}
-        className={`mockup-notice glass-strong fixed inset-x-3 bottom-3 z-40 rounded-2xl p-4 sm:p-5 sm:inset-x-auto sm:right-5 sm:bottom-5 sm:w-[22rem] ${shown ? "is-shown" : ""}`}
+        className={`mockup-notice glass-strong fixed inset-x-3 bottom-20 z-40 rounded-2xl p-4 sm:p-5 sm:inset-x-auto sm:right-5 sm:bottom-24 sm:w-[22rem] ${shown ? "is-shown" : ""}`}
       >
         <button
           type="button"
