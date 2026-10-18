@@ -22,5 +22,29 @@
     "post": "2026-10-19-opencode-agent",
     "due": "2026-10-19T12:30:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-19 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ad5133d938409f1d0e20517",
+    "post": "2026-10-19-muse-spark-open",
+    "due": "2026-10-19T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-19 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad5133da48c8f8371adab22",
+    "post": "2026-10-19-muse-spark-open",
+    "due": "2026-10-19T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-20 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ad5133e769b457934d5fcc9",
+    "post": "2026-10-20-ai-meeting-actions",
+    "due": "2026-10-20T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-20 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad5133eae173d6e0013d20d",
+    "post": "2026-10-20-ai-meeting-actions",
+    "due": "2026-10-20T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
