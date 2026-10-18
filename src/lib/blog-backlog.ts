@@ -5979,7 +5979,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "An honest look at when a DIY website builder is genuinely fine for a small business, and when hiring a professional actually pays for itself.",
     excerpt: "When a DIY website builder is genuinely fine, and when hiring a professional actually pays for itself.",
-    date: "2026-09-18",
+    date: "2026-10-18",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -6045,7 +6045,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical comparison of hiring an in house marketing employee versus working with an outside agency for a small or growing business.",
     excerpt: "A practical comparison for a small or growing business deciding between an employee and an agency.",
-    date: "2026-09-18",
+    date: "2026-10-18",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -6111,7 +6111,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "The specific signals that indicate a business is ready to move from an off the shelf CRM to a custom built one, beyond just cost.",
     excerpt: "The specific signals that indicate a business is ready to move from an off the shelf CRM to a custom build.",
-    date: "2026-09-18",
+    date: "2026-10-18",
     tag: "CRM",
     relatedHref: "/custom-crm-development-orlando",
     relatedLabel: "See our CRM development service",

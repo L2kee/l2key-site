@@ -621,6 +621,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "preparing-your-content-for-ai-answer-engines",
   "geo-myths-worth-ignoring",
   "chatgpt-search-vs-perplexity-vs-google-ai-overviews",
+  "diy-website-builders-vs-hiring-a-professional",
+  "in-house-marketer-vs-an-agency",
+  "off-the-shelf-crm-vs-custom-build-buying-signals",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
