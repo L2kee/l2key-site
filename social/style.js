@@ -88,6 +88,8 @@ const ending = p => p.kind === 'promo'
     ? `<div class="q">Want the exact prompt?</div><div class="a">Follow and DM us “${esc(p.keyword.toUpperCase())}”</div><div class="u">@evogencyglobal</div>`
     : `<div class="q">Daily AI news and tools</div><div class="a">Follow EVOGENCY</div><div class="u">Save this so you have it later</div>`;
 // The label over each step. A week file can set its own ("Step", "How to use it"), or the default stays.
-const stepLabel = p => p.kind === 'promo' ? 'What we check' : esc(p.label || 'Do this today');
+// A post's own label and foot win, otherwise promos keep the audit wording.
+const stepLabel = p => esc(p.label || (p.kind === 'promo' ? 'What we check' : 'Do this today'));
+const footLabel = p => esc(p.foot || (p.kind === 'promo' ? '3 things we check' : 'Save this for later'));
 
-module.exports = { ROOT, logo, esc, font, css, ending, stepLabel, rotation, slotOf, themeOf, THEMES };
+module.exports = { ROOT, logo, esc, font, css, ending, stepLabel, footLabel, rotation, slotOf, themeOf, THEMES };

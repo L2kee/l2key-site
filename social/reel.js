@@ -19,7 +19,7 @@ const { chromium } = require('playwright');
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { ROOT, logo, esc, font, css, ending, stepLabel, rotation, themeOf } = require('./style');
+const { ROOT, logo, esc, font, css, ending, stepLabel, footLabel, rotation, themeOf } = require('./style');
 
 const FPS = 30;
 const ENGINE = 2;
@@ -102,7 +102,7 @@ function page(p, pick, look, vo) {
   });
   const slides = [
     `<div class="mid"><div class="kicker">${esc(p.topic)}</div><div class="hook">${wordsHtml(p.hook)}</div><div class="bar"></div></div>
-     <div class="foot"><span>${promo ? '3 things we check' : 'Save this for later'}</span><span></span></div>`,
+     <div class="foot"><span>${footLabel(p)}</span><span></span></div>`,
     `<div class="mid"><div class="kicker">Why it matters</div><div class="body why">${wordsHtml(p.why)}</div>${p.src ? `<div class="src">Source · ${esc(p.src)}</div>` : ''}</div>`,
     ...p.steps.map((s, k) => `<div class="mid"><div class="kicker">${stepLabel(p)}</div>
       <div class="num"><span class="roll">${[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, k + 1].map(d => `<b>${d}</b>`).join('')}</span></div>

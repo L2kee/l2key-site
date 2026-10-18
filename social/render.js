@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
-const { ROOT, logo, esc, font, css, ending, stepLabel, slotOf, themeOf } = require('./style');
+const { ROOT, logo, esc, font, css, ending, stepLabel, footLabel, slotOf, themeOf } = require('./style');
 const week = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 
 function slide(p, i, total, inner, foot) {
@@ -31,7 +31,7 @@ ${inner}${foot ? `<div class="foot">${foot}</div>` : ''}</div></body></html>`;
     const promo = p.kind === 'promo';
     const slides = [
       slide(p, 1, total, `<div class="mid"><div class="kicker">${esc(p.topic)}</div><div class="hook">${esc(p.hook)}</div><div class="bar"></div></div>`,
-        `<span>${promo ? '3 things we check' : 'Save this for later'}</span><span class="swipe">Swipe →</span>`),
+        `<span>${footLabel(p)}</span><span class="swipe">Swipe →</span>`),
       slide(p, 2, total, `<div class="mid"><div class="kicker">Why it matters</div><div class="body">${esc(p.why)}</div>${p.src ? `<div class="src">Source · ${esc(p.src)}</div>` : ''}</div>`,
         `<span></span><span class="swipe">Swipe →</span>`),
       ...p.steps.map((s, k) => slide(p, k + 3, total,
