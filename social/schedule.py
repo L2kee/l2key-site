@@ -1,4 +1,4 @@
-"""Keeps EVOGENCY's carousel posts booked in Buffer (Instagram, Facebook, TikTok).
+"""Keeps EVOGENCY's carousel posts booked in Buffer (Instagram, Facebook, TikTok, YouTube).
 
 Usage:
   python social/schedule.py channels        list connected Buffer channels and plan limits (no changes)
@@ -24,6 +24,9 @@ reel, or one in an old voice or speed, gets swapped once the new one is live.
 A post whose reel isn't rendered yet waits for a later run, unless it's due within FALLBACK_HOURS, when it goes out
 as the image carousel instead. A booked carousel is swapped for the reel once the reel exists ("fmt" in the state).
 If Buffer refuses a reel, the carousel is booked in its place and the run fails, so GitHub emails Moe.
+YouTube (since 2026-10-18) takes the same reel as a Short. It only takes video, so it never gets the carousel: a YouTube
+slot waits until the reel exists. Its description is the Instagram caption with the asks rewritten for YouTube, which
+has no DMs (keyword posts send people to DM us on Instagram, and "Follow" becomes "Subscribe").
 
 Weekly cleanup: once a post is published, Instagram, Facebook, and TikTok keep their own copy of the media, so its
 folder in public/social is dead weight. cleanup deletes every post folder dated 2 or more days ago (folders are named
@@ -39,6 +42,7 @@ https://evogencyglobal.com/social/<post id>/slide-N.png (and reels at .../reel.m
 import glob
 import json
 import os
+import re
 import shutil
 import sys
 import time
@@ -50,12 +54,14 @@ from zoneinfo import ZoneInfo
 API = "https://api.buffer.com"
 SITE = "https://evogencyglobal.com"
 ET = ZoneInfo("America/New_York")
-SERVICES = ("instagram", "facebook", "tiktok")
+SERVICES = ("instagram", "facebook", "tiktok", "youtube")
 SOCIAL = os.path.dirname(os.path.abspath(__file__))
 # Facebook pages get hidden when they post too often, so Facebook only takes each day's first post.
 FIRST_OF_DAY_ONLY = ("facebook",)
 # Channels that get the reel with motion instead of the still carousel.
-REEL_SERVICES = ("instagram", "tiktok")
+REEL_SERVICES = ("instagram", "tiktok", "youtube")
+# Channels that only take video, so a post waits for its reel instead of falling back to the carousel.
+VIDEO_ONLY = ("youtube",)
 FALLBACK_HOURS = 12
 
 
@@ -155,7 +161,25 @@ META = {
     "instagram_reel": lambda p: {"instagram": {"type": "reel", "shouldShareToFeed": True}},
     "facebook": lambda p: {"facebook": {"type": "post"}},
     "tiktok": lambda p: {"tiktok": {"title": p["hook"][:90]}},
+    "youtube_reel": lambda p: {"youtube": {
+        "title": p["hook"][:90] + " #Shorts", "categoryId": "28", "privacy": "public",
+        "madeForKids": False, "notifySubscribers": True, "isAiGenerated": False}},
 }
+
+
+def caption(p, service):
+    """The post's caption for a channel. YouTube gets the Instagram one with the asks rewritten, since it has no DMs."""
+    if service != "youtube":
+        return p["captions"][service]
+    lines = []
+    for line in p["captions"]["instagram"].split("\n"):
+        kw = re.search(r"DM us the word (\w+)", line)
+        if kw:
+            line = f"Want the exact prompt? DM us the word {kw.group(1)} on Instagram @evogencyglobal. We'll send it to you."
+        elif line.startswith("Follow @evogencyglobal"):
+            line = "Subscribe for daily AI news and tools. Save this so you have it when you need it."
+        lines.append(line)
+    return "\n".join(lines)
 
 
 def save(path, state):
@@ -173,7 +197,7 @@ def sync():
     orgs = organizations()
     targets = [c for c in channels(orgs) if c["service"] in SERVICES]
     if not targets:
-        sys.exit("No Instagram, Facebook, or TikTok channel is connected in Buffer.")
+        sys.exit("No Instagram, Facebook, TikTok, or YouTube channel is connected in Buffer.")
     now = datetime.now(ET)
     failed = 0
 
@@ -226,7 +250,8 @@ def sync():
         slots = [
             s for s in slots
             if s[2]["service"] not in REEL_SERVICES or fmt(s[1], s[2]).startswith("reel")
-            or s[0] <= now + timedelta(hours=FALLBACK_HOURS) or s[4] in weeks[s[3]][1]]
+            or (s[2]["service"] not in VIDEO_ONLY
+                and (s[0] <= now + timedelta(hours=FALLBACK_HOURS) or s[4] in weeks[s[3]][1]))]
 
         # Stale entries: old key format, or a slot whose post was rewritten, moved, or now has a reel.
         # Delete if still booked.
@@ -282,13 +307,13 @@ def sync():
                 continue
             carousel = [{"image": {"url": f"{SITE}/social/{pid(p)}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
                         for k in range(1, 7)]
-            tries = [("image", carousel, META[c["service"]](p))]
+            tries = [] if c["service"] in VIDEO_ONLY else [("image", carousel, META[c["service"]](p))]
             if fmt(p, c).startswith("reel"):
                 reel = [{"video": {"url": f"{SITE}/social/{pid(p)}/reel.mp4",
                                    "metadata": {"thumbnailOffset": reel_info(p)["cover_ms"]}}}]
-                tries.insert(0, (fmt(p, c), reel, META.get(c["service"] + "_reel", META[c["service"]])(p)))
+                tries.insert(0, (fmt(p, c), reel, (META.get(c["service"] + "_reel") or META[c["service"]])(p)))
             for kind, assets, meta in tries:
-                inp = {"channelId": c["id"], "text": p["captions"][c["service"]], "assets": assets,
+                inp = {"channelId": c["id"], "text": caption(p, c["service"]), "assets": assets,
                        "metadata": meta, "schedulingType": "automatic",
                        "mode": "customScheduled", "dueAt": due.isoformat()}
                 res = gql(CREATE, {"input": inp})["createPost"]
