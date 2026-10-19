@@ -624,6 +624,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "diy-website-builders-vs-hiring-a-professional",
   "in-house-marketer-vs-an-agency",
   "off-the-shelf-crm-vs-custom-build-buying-signals",
+  "building-an-app-vs-a-mobile-friendly-website",
+  "organic-growth-vs-paid-ads-for-a-new-business",
+  "building-a-marketing-budget-as-a-small-orlando-business",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

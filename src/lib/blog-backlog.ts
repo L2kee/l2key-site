@@ -6182,7 +6182,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical decision framework for whether a business should build a full app or invest in a mobile friendly website first.",
     excerpt: "A practical decision framework for whether to build a full app or a mobile friendly website first.",
-    date: "2026-09-18",
+    date: "2026-10-19",
     tag: "Mobile Apps",
     relatedHref: "/mobile-app-development-orlando",
     relatedLabel: "See our app development service",
@@ -6248,7 +6248,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How a brand new business should think about balancing organic growth like SEO and reviews against paid advertising in the early stages.",
     excerpt: "How a brand new business should balance organic growth against paid advertising in the early stages.",
-    date: "2026-09-18",
+    date: "2026-10-19",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -6318,7 +6318,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A practical approach to building a marketing budget as a small Orlando business, without guessing or overspending on the wrong channels.",
     excerpt: "A practical approach to building a marketing budget without guessing or overspending on the wrong channels.",
-    date: "2026-09-18",
+    date: "2026-10-19",
     tag: "Marketing",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
