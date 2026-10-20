@@ -6383,7 +6383,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Common marketing mistakes new business owners make in their first year, from an unfinished website to inconsistent messaging across channels.",
     excerpt: "Common mistakes new business owners make in their first year, and how to avoid them.",
-    date: "2026-09-18",
+    date: "2026-10-20",
     tag: "Marketing",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -6454,7 +6454,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical, honest marketing steps a business owner can take with little to no budget, before spending anything on ads or outside help.",
     excerpt: "Practical, honest steps a business owner can take with little to no budget before spending on ads.",
-    date: "2026-09-18",
+    date: "2026-10-20",
     tag: "Marketing",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
@@ -6526,7 +6526,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to know when a business owner should hand off marketing to an outside professional instead of continuing to handle it themselves.",
     excerpt: "How to know when it's time to hand off marketing to a professional instead of handling it yourself.",
-    date: "2026-09-18",
+    date: "2026-10-20",
     tag: "Marketing",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
