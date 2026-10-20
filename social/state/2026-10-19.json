@@ -94,5 +94,29 @@
     "post": "2026-10-21-sonder-editor",
     "due": "2026-10-21T12:30:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-21 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ad7c918f5dcb31b88ddf5b6",
+    "post": "2026-10-21-gemini-4-argon-price",
+    "due": "2026-10-21T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-21 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad7c919ad4f0ba79c522ff6",
+    "post": "2026-10-21-gemini-4-argon-price",
+    "due": "2026-10-21T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-22 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ad7c91af5dcb31b88ddf5e3",
+    "post": "2026-10-22-ai-video-clips",
+    "due": "2026-10-22T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-22 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad7c91aed28fb758abb39eb",
+    "post": "2026-10-22-ai-video-clips",
+    "due": "2026-10-22T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
