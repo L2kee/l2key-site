@@ -630,6 +630,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "marketing-mistakes-new-business-owners-make",
   "how-to-market-a-business-with-no-marketing-budget",
   "when-to-hire-outside-marketing-help",
+  "seo-for-pressure-washing-companies",
+  "how-google-business-profile-categories-work",
+  "how-ai-mode-picks-local-businesses",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

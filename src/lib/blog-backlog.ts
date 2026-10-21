@@ -6598,7 +6598,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How pressure washing companies get found on Google, from homeowners searching for driveway cleaning to property managers hunting for a commercial contract.",
     excerpt: "The homeowner and the property manager search differently. Here's how to win both.",
-    date: "2026-10-15",
+    date: "2026-10-21",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -6651,7 +6651,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Your Google Business Profile category is one of the strongest local ranking signals you control. Here's how to choose the primary and secondary categories well.",
     excerpt: "The category you pick tells Google which searches you belong in. Most owners pick it in ten seconds and never look again.",
-    date: "2026-10-15",
+    date: "2026-10-21",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -6701,7 +6701,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "What we know, and what we don't, about how Google AI Mode chooses which local businesses to mention, plus the practical steps that improve your odds.",
     excerpt: "AI Mode answers local questions in a conversation. Here's what actually feeds those answers.",
-    date: "2026-10-15",
+    date: "2026-10-21",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our AI search service",
