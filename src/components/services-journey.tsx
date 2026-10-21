@@ -61,12 +61,22 @@ const STAGES: Stage[] = [
     image: "/services-discover.png",
     imageAlt: "Conceptual illustration of a glowing globe and search bar surrounded by local search suggestions and rising traffic graphics, representing search engine optimization",
   },
+  {
+    kicker: "Film",
+    title: "Job Site Studio",
+    body: "Raw clips from the job site, turned into finished videos for TikTok, Reels, Shorts, and Facebook.",
+    ask: "Are your best jobs getting seen, or dying in your camera roll?",
+    cta: "Try 3 free videos",
+    href: "/job-site-studio",
+    image: "/services-job-site-studio.jpg",
+    imageAlt: "Conceptual illustration of a phone on a work truck dashboard at dusk, streaming cyan light into two floating vertical videos of a roofer laying shingles and a driveway being pressure washed, representing job site video editing for social media",
+  },
 ];
 
 // How long the mouse rests on a side card before it glides into the middle.
 const DWELL_MS = 350;
 
-/** Spotlight carousel. The four services sit in one row that swipes and
+/** Spotlight carousel. The five services sit in one row that swipes and
     snaps. The card in the middle is full size and asks the visitor if it's
     the service they need. The cards beside it lean back, shrink, and dim.
     With a mouse, resting on a side card glides it into the spotlight, and

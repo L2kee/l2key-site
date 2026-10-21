@@ -29,7 +29,7 @@ function backgroundFor(pathname: string) {
   return "default";
 }
 
-/** Fixed lotus backdrop behind every page (below the 3D shapes canvas), a
+/** Fixed lotus backdrop behind every page, a
     different render per section that crossfades on navigation. Only layers
     that have been visited are mounted, so a visitor downloads just the
     images for the pages they open. On the homepage it stays hidden while

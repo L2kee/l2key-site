@@ -10,10 +10,8 @@ import { HeroVideo } from "@/components/hero-video";
 import { HeroReveal } from "@/components/hero-reveal";
 import { CtaTrace } from "@/components/cta-trace";
 import { DropLetters } from "@/components/drop-letters";
-import { SamplePanels } from "@/components/sample-panels";
 import { LogoWall } from "@/components/logo-wall";
 import { FaqList } from "@/components/faq-list";
-import { SAMPLES } from "@/lib/job-site-studio";
 import { WORK } from "@/lib/content";
 
 const FAQ = [
@@ -107,41 +105,13 @@ export default function Home() {
 
       <Marquee />
 
-      {/* Job Site Studio strip: the sample videos as an expanding panel
-          gallery, with the service summed up underneath. */}
-      <section className="mx-auto max-w-3xl px-6 pt-16">
-        <TiltCard className="glass-strong rounded-3xl p-3 sm:p-6">
-          {/* Three samples here, all five on the Job Site Studio page. */}
-          <SamplePanels samples={SAMPLES.slice(0, 3)} />
-          <div className="px-4 pt-8 pb-4 text-center sm:px-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">
-              Job Site Studio
-            </p>
-            <p className="mx-auto mt-3 max-w-md text-white/65">
-              Send us raw clips from the job site and get back finished videos
-              for TikTok, Reels, Shorts, and Facebook. No editing, no app to
-              learn.
-            </p>
-            <div className="mt-8 flex justify-center">
-              <Link href="/job-site-studio" className="btn-solid">
-                Try 3 free videos <ArrowRight size={16} />
-              </Link>
-            </div>
-          </div>
-        </TiltCard>
-      </section>
-
-      {/* Logo wall cycle: concept marks only, labeled as such (logo-wall.tsx). */}
+      {/* Logo wall cycle: concept marks only (logo-wall.tsx). */}
       <section className="mx-auto max-w-4xl px-6 pt-20">
         <SectionHeading eyebrow="From our concept studio" title="Marks made to be remembered" />
         <div className="mt-10">
           <LogoWall />
         </div>
-        <p className="mx-auto mt-5 max-w-xl text-center text-xs text-white/45">
-          Concept marks from our studio. Some reimagine real local brands, some
-          are brands we dreamed up. None are client logos.
-        </p>
-        <div className="mt-6 text-center">
+        <div className="mt-8 text-center">
           <Link href="/brand-design" className="text-sm font-medium text-[#5fd8e6] hover:underline">
             See our brand design studio →
           </Link>

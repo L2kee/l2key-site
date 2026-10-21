@@ -9,8 +9,7 @@ const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], display:
 // blurs out and comes back as a mark that isn't on the wall yet. Every mark
 // here is concept work from our studio, never a client logo: JRW, Majestic,
 // and Soluma are our unsolicited concept rebrands (see the Brand Design
-// page), the rest are luxury brands we invented to show range. The caption
-// says so. Real client logos (House of Manchester once signed) join later.
+// page), the rest are luxury brands we invented to show range. Real client logos (House of Manchester once signed) join later.
 // Cycling pauses offscreen and in background tabs, and never runs under
 // reduced motion.
 

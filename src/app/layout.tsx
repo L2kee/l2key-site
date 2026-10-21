@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
-import { LazyBackgroundScene } from "@/components/lazy-background-scene";
 import { SiteBackground } from "@/components/site-background";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -65,7 +64,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph()) }}
         />
         <SiteBackground />
-        <LazyBackgroundScene />
         <Navbar />
         {/* Page to page fade on client navigation, see ::view-transition
             rules in globals.css. Browsers without view transitions just
