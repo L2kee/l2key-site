@@ -130,5 +130,29 @@
     "post": "2026-10-22-opendesign-workspace",
     "due": "2026-10-22T12:30:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-22 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ad91d5bb4d22f4a9818c20e",
+    "post": "2026-10-22-muse-wonder-switch",
+    "due": "2026-10-22T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-22 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad91d5bb4d22f4a9818c24f",
+    "post": "2026-10-22-muse-wonder-switch",
+    "due": "2026-10-22T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-23 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ad91d5c2109dcc39c0808fa",
+    "post": "2026-10-23-ai-design-review",
+    "due": "2026-10-23T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-23 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad91d5cb4d22f4a9818c29c",
+    "post": "2026-10-23-ai-design-review",
+    "due": "2026-10-23T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
