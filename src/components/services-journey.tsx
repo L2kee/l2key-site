@@ -27,8 +27,8 @@ const STAGES: Stage[] = [
     ask: "How many calls did you miss last week while you were on a job?",
     cta: "Hear it answer",
     href: "/ai",
-    image: "/services-ai-front-desk.jpg",
-    imageAlt: "Conceptual illustration of a glowing cyan AI orb above an empty front desk at night, streaming light into a ringing desk phone, with floating panels reading incoming call, answered, 24/7, and booked Tuesday 9 AM, representing an AI receptionist that answers and books calls around the clock",
+    image: "/services-front-desk.jpg",
+    imageAlt: "Conceptual illustration of an empty front desk on a rainy evening, a desk phone streaming cyan light into three floating glass panels showing a phone handset, a calendar with one day booked, and a checkmark, representing an AI receptionist that answers and books calls around the clock",
     flagship: { tel: "tel:+13214354469", display: "(321) 435 4469" },
   },
   {
@@ -38,8 +38,8 @@ const STAGES: Stage[] = [
     ask: "Is your website winning you customers, or sending them to a competitor?",
     cta: "Build my website",
     href: "/web-design-agency-orlando",
-    image: "/services-build.png",
-    imageAlt: "Conceptual illustration of a glass building framework under a crane, representing custom website design and development",
+    image: "/services-websites.jpg",
+    imageAlt: "Conceptual illustration of a laptop on a desk at dusk showing a modern house, with cyan light building floating glass website panels and a glowing button beside it, representing custom website design and development",
   },
   {
     kicker: "Brand",
@@ -48,8 +48,8 @@ const STAGES: Stage[] = [
     ask: "Does your brand look as good as the work you deliver?",
     cta: "Elevate my brand",
     href: "/brand-design",
-    image: "/services-brand.jpg",
-    imageAlt: "Conceptual illustration of three gold edged glass panels on a black pedestal showing an abstract gold emblem, a black gold and cream color palette, and a gold monogram curve, representing luxury brand identity design",
+    image: "/services-brand-identity.jpg",
+    imageAlt: "Conceptual illustration of black business cards and a black shopping bag carrying a gold diamond emblem, with cyan light rising into a floating glass panel of the emblem and black, gold, cream, and cyan color swatches, representing luxury brand identity design",
   },
   {
     kicker: "Discover",
@@ -58,8 +58,8 @@ const STAGES: Stage[] = [
     ask: "When customers search for what you do, do they find you first?",
     cta: "Get me found",
     href: "/seo-agency-orlando",
-    image: "/services-discover.png",
-    imageAlt: "Conceptual illustration of a glowing globe and search bar surrounded by local search suggestions and rising traffic graphics, representing search engine optimization",
+    image: "/services-seo.jpg",
+    imageAlt: "Conceptual illustration of a hand holding a phone with a map on a small town main street at dusk, cyan light rising into a glowing map pin above the shops beside floating panels of review stars, a rising chart, and a magnifying glass, representing local search engine optimization",
   },
   {
     kicker: "Film",
