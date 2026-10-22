@@ -4,11 +4,13 @@ import { START_PATHS } from "@/lib/start-paths";
 
 // "What do you need?" One tile per service, each opening its own funnel at
 // /start/<slug>. Used on the homepage hero and on /start.
-export function StartTiles({ className = "" }: { className?: string }) {
+// wide: the 4 column hero grid, where the flagship tile spans 2 columns so
+// the 7 tiles fill two even rows.
+export function StartTiles({ className = "", wide = false }: { className?: string; wide?: boolean }) {
   return (
     <ul className={`grid gap-3 sm:grid-cols-2 lg:grid-cols-3 ${className}`}>
       {START_PATHS.map((p, i) => (
-        <li key={p.slug} className={i === 0 ? "sm:col-span-2 lg:col-span-1" : ""}>
+        <li key={p.slug} className={i === 0 ? `sm:col-span-2 ${wide ? "lg:col-span-2" : "lg:col-span-1"}` : ""}>
           <Link
             href={`/start/${p.slug}`}
             className={`start-tile group glass flex h-full items-center gap-4 rounded-2xl px-5 py-4 text-left transition hover:border-[#5fd8e6]/50 ${

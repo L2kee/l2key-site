@@ -1304,3 +1304,36 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     transform: translateX(24px);
   }
 }
+
+/* ===== Homepage hero stage (2026-10-21). From sm up the lotus video sits
+   behind the hero copy instead of above it, so the headline and the
+   "What do you need?" tiles are on the first screen with no scroll. A scrim
+   darkens the middle and the bottom where the copy and tiles sit. Phones
+   keep the video stacked above the copy (the default .hero-video-* rules).
+   The copy is on screen at load, so hero-reveal.tsx never holds it. ===== */
+@media (min-width: 640px) {
+  .hero-stage {
+    position: relative;
+    isolation: isolate;
+  }
+  .hero-stage .hero-video-outer {
+    position: absolute;
+    inset: 0 0 auto 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .hero-stage .hero-video-box {
+    opacity: 0.6;
+  }
+  .hero-stage .hero-video-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 55% at 50% 45%, rgb(0 0 0 / 0.55), transparent 75%),
+      linear-gradient(to bottom, rgb(0 0 0 / 0.1) 30%, rgb(0 0 0 / 0.7) 100%);
+  }
+  .hero-stage .hero-copy {
+    padding-top: 3.5rem;
+  }
+}

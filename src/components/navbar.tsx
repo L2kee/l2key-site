@@ -97,7 +97,7 @@ function DesktopLinks() {
   return (
     <div
       ref={group}
-      className="nav-morph relative hidden items-center gap-2 sm:flex"
+      className="nav-morph relative hidden items-center gap-2 lg:flex"
       onPointerOver={(e) => {
         const a = (e.target as HTMLElement).closest("a");
         if (e.pointerType === "mouse" && a) go(a);
@@ -182,7 +182,7 @@ export function Navbar() {
 
           <DesktopLinks />
 
-          <Link href="/start" className="btn-solid hidden !px-4 !py-2 text-sm sm:inline-flex">
+          <Link href="/start" className="btn-solid hidden !px-4 !py-2 text-sm lg:inline-flex">
             Get Started
           </Link>
 
@@ -193,7 +193,7 @@ export function Navbar() {
             }}
             aria-label="Open menu"
             aria-expanded={open}
-            className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#5fd8e6]/50 hover:text-[#5fd8e6] sm:hidden"
+            className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#5fd8e6]/50 hover:text-[#5fd8e6] lg:hidden"
           >
             <i /><i /><i />
           </button>
@@ -206,7 +206,7 @@ export function Navbar() {
           fold into the X in place. */}
       <div
         inert={!open}
-        className={`menu-overlay fixed inset-0 z-[60] flex flex-col bg-black sm:hidden ${open ? "is-open" : ""} ${instant ? "menu-instant" : ""}`}
+        className={`menu-overlay fixed inset-0 z-[60] flex flex-col bg-black lg:hidden ${open ? "is-open" : ""} ${instant ? "menu-instant" : ""}`}
       >
         <div className="flex items-center justify-between px-[33px] pt-[27px]">
           <span className="flex items-center gap-2.5">

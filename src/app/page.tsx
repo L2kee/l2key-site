@@ -71,17 +71,21 @@ export default function Home() {
           }),
         }}
       />
+      {/* Hero. From sm up the lotus video sits behind the copy (.hero-stage
+          in globals.css) so the headline and the tiles share the first
+          screen. Phones keep the video above the copy. */}
+      <div className="hero-stage">
       <HeroVideo />
 
-      {/* Hero */}
-      <HeroReveal className="mx-auto flex max-w-5xl flex-col items-center px-6 pt-8 pb-16 text-center [--hero-delay:2000ms]">
+      <HeroReveal className="hero-copy mx-auto flex max-w-6xl flex-col items-center px-6 pt-8 pb-16 text-center [--hero-delay:1200ms]">
         {/* The headline drops in letter by letter (35 letters, the last one
             lands at about 2s), then each hero-in line rises after the one
-            before it, starting at --hero-delay. --i sets its place in the
+            before it, starting at --hero-delay (1.2s, so the tiles rise
+            while the last letters land). --i sets its place in the
             order (see .hero-letter and .hero-in in globals.css). */}
         <h1
           aria-label="Built to be found. Designed to be trusted."
-          className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+          className="text-4xl font-bold tracking-tight text-white sm:text-5xl xl:text-6xl"
         >
           <span className="block">
             <DropLetters text="Built to be found." />
@@ -91,16 +95,16 @@ export default function Home() {
           </span>
         </h1>
 
-        <p className="hero-in mt-6 max-w-2xl text-balance text-lg text-white/75 [--i:2] sm:text-xl">
+        <p className="hero-in mt-5 max-w-2xl text-balance text-lg text-white/80 [--i:2] sm:text-xl">
           AI front desks, websites, apps, and online stores. Built for you from
           the first sketch to the first sale.
         </p>
 
-        <div className="hero-in mt-10 w-full [--i:3]">
+        <div className="hero-in mt-8 w-full [--i:3]">
           <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">
             What do you need?
           </h2>
-          <StartTiles className="mt-5" />
+          <StartTiles className="mt-4 lg:grid-cols-4" wide />
           <p className="mt-6 text-sm text-white/60">
             Got a question right now?{" "}
             <AskAvaLink className="font-semibold text-[#5fd8e6] underline-offset-4 transition hover:text-white hover:underline" />{" "}
@@ -108,6 +112,7 @@ export default function Home() {
           </p>
         </div>
       </HeroReveal>
+      </div>
 
       {/* How it works */}
       <section className="mx-auto max-w-5xl px-6 py-16">
