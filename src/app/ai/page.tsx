@@ -164,6 +164,7 @@ export default function AiFrontDeskPage() {
         An AI front desk that answers every call, books the appointment, and texts back anyone you miss. Built and run
         for you.
       </p>
+      <p className="mx-auto mt-3 max-w-2xl text-center text-white/65">Built in Orlando for businesses across Central Florida.</p>
       <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Don&apos;t take our word for it. Our own phone is answered by the exact product we sell, so call it and see
         how it handles you.
