@@ -154,5 +154,17 @@
     "post": "2026-10-23-ai-design-review",
     "due": "2026-10-23T08:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-23 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ad9da7f4187d54841a1a827",
+    "post": "2026-10-23-guitoro-guitar",
+    "due": "2026-10-23T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-23 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ad9da801ddfbd0b4bd9e80d",
+    "post": "2026-10-23-guitoro-guitar",
+    "due": "2026-10-23T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
