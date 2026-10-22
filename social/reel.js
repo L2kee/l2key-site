@@ -19,7 +19,7 @@ const { chromium } = require('playwright');
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { ROOT, logo, esc, font, css, ending, stepLabel, footLabel, rotation, themeOf } = require('./style');
+const { ROOT, logo, esc, font, css, ending, stepLabel, footLabel, rotation, themeOf, formatOf } = require('./style');
 
 const FPS = 30;
 const ENGINE = 2;
@@ -514,6 +514,8 @@ function ffmpeg(file, vo, dur, music) {
   for (const { p, slot, when } of posts) {
     const id = p.id || p.date;
     if (only ? id !== only : when <= now) continue;
+    // A/B test: stick figure Reels come from Moe's laptop (Content Crew), never from here, so nothing overwrites them.
+    if (formatOf(p, slot) === 'stickman') continue;
     const dir = path.join(ROOT, 'public/social', id);
     const file = path.join(dir, 'reel.mp4');
     const vo = voiceOf(id);

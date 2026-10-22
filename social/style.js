@@ -18,6 +18,16 @@ const slotOf = (week, p) => week.posts.filter(q => q.date === p.date)
 const THEMES = ['noir', 'gold', 'teal', 'cream', 'editorial', 'blueprint', 'spotlight'];
 const themeOf = (p, slot) => THEMES.includes(p.look) ? p.look : THEMES[((rotation(p, slot) % 7) + 7) % 7];
 
+// The Reel format A/B test (social/abtest.json): inside its window, value posts alternate by slot between the slide Reel
+// ("slides", rendered here) and the 3D stick figure Reel ("stickman", rendered on Moe's laptop). Keep in step with
+// format_of in voice.py.
+const AB = JSON.parse(fs.readFileSync(path.join(__dirname, 'abtest.json'), 'utf8'));
+const formatOf = (p, slot) => {
+  if (p.format === 'slides' || p.format === 'stickman') return p.format;
+  if (p.kind === 'promo' || p.date < AB.start || p.date > AB.end) return 'slides';
+  return rotation(p, slot) % 2 ? 'stickman' : 'slides';
+};
+
 const css = `
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{background:#000;font-family:'Geist',system-ui,sans-serif}
@@ -92,4 +102,4 @@ const ending = p => p.kind === 'promo'
 const stepLabel = p => esc(p.label || (p.kind === 'promo' ? 'What we check' : 'Do this today'));
 const footLabel = p => esc(p.foot || (p.kind === 'promo' ? '3 things we check' : 'Save this for later'));
 
-module.exports = { ROOT, logo, esc, font, css, ending, stepLabel, footLabel, rotation, slotOf, themeOf, THEMES };
+module.exports = { ROOT, logo, esc, font, css, ending, stepLabel, footLabel, rotation, slotOf, themeOf, formatOf, THEMES };

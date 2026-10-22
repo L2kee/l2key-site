@@ -24,6 +24,8 @@ reel, or one in an old voice or speed, gets swapped once the new one is live.
 A post whose reel isn't rendered yet waits for a later run, unless it's due within FALLBACK_HOURS, when it goes out
 as the image carousel instead. A booked carousel is swapped for the reel once the reel exists ("fmt" in the state).
 If Buffer refuses a reel, the carousel is booked in its place and the run fails, so GitHub emails Moe.
+A/B test (social/abtest.json, 2026-10-26 to 2026-11-08): half the posts carry a 3D stick figure reel made on Moe's laptop
+by the Content Crew (reel.json "engine": "stickman"). It books as "reel_stickman", so metrics can compare it with the slides.
 YouTube (since 2026-10-18) takes the same reel as a Short. It only takes video, so it never gets the carousel: a YouTube
 slot waits until the reel exists. Its description is the Instagram caption with the asks rewritten for YouTube, which
 has no DMs (keyword posts send people to DM us on Instagram, and "Follow" becomes "Subscribe").
@@ -243,6 +245,8 @@ def sync():
         def fmt(p, c):
             if c["service"] in REEL_SERVICES and has_reel(p):
                 info = reel_info(p)
+                if info.get("engine") == "stickman":
+                    return "reel_stickman"  # A/B test: the 3D stick figure Reel from the Content Crew
                 voice, engine = info.get("voice"), info.get("engine", 1)
                 base = "reel" if not voice else "reel_vo" if voice == "am_onyx" else f"reel_vo_{voice}"
                 return base if engine < 2 else f"{base}_m{engine}"

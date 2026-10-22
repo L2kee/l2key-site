@@ -13,6 +13,7 @@ not read off the slides), otherwise the slide's own text with spoken links: the 
 step 2, "And the best one." step 3, then the takeaway. The closing ask is always added here: a post with a "keyword"
 asks people to follow and DM that word for the prompt, other value posts ask for the follow, the promo points to the audit.
 The voice is recorded as "<voice>@<speed>" (bf_lily@1.15), so changing either one re-narrates every upcoming Reel. Runs on the CPU (the GitHub runner has no GPU); the 82M model loads once per run.
+Posts in the Reel format A/B test's stick figure half (social/abtest.json) are skipped: that Reel brings its own voice.
 Needs: pip install kokoro soundfile (plus torch).
 """
 import argparse
@@ -53,6 +54,31 @@ def script(p):
     return [say(x) for x in lines]
 
 
+AB = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "abtest.json"), encoding="utf-8"))
+FIRST_DAY = datetime(2026, 10, 5).date()
+
+
+def format_of(p, slot):
+    """The Reel format A/B test. Keep in step with formatOf in style.js."""
+    if p.get("format") in ("slides", "stickman"):
+        return p["format"]
+    if p.get("kind") == "promo" or p["date"] < AB["start"] or p["date"] > AB["end"]:
+        return "slides"
+    n = (datetime.fromisoformat(p["date"]).date() - FIRST_DAY).days * 3 + slot
+    return "stickman" if n % 2 else "slides"
+
+
+def slots(week):
+    """Each post's place in its day (0, 1, 2 by time), as reel.js and style.js count it."""
+    out, by_day = {}, {}
+    for p in week["posts"]:
+        by_day.setdefault(p["date"], []).append(p)
+    for day in by_day.values():
+        for k, p in enumerate(sorted(day, key=lambda q: q.get("time") or week.get("time", ""))):
+            out[id(p)] = k
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("weeks", nargs="+")
@@ -72,8 +98,11 @@ def main():
     todo = []
     for f in a.weeks:
         week = json.load(open(f, encoding="utf-8"))
+        slot = slots(week)
         for p in week["posts"]:
             pid = p.get("id") or p["date"]
+            if format_of(p, slot[id(p)]) == "stickman":
+                continue  # A/B test: the stick figure Reel brings its own voice
             when = f"{p['date']} {p.get('time') or week.get('time', '11:15')}"
             if a.only and pid != a.only:
                 continue
