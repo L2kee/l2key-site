@@ -33,13 +33,15 @@ body {
 }
 
 /* Lotus backdrop (site-background.tsx), fixed behind every page. Each
-   section has its own render, stacked as layers
-   that crossfade on navigation. The new renders are much brighter than the
-   original site-bg.jpg, so each carries a dark scrim (--bg-dim) baked into
+   section has its own angle of the hero video's lotus (Higgsfield Seedream
+   5.0 Flash from a frame of hero-lotus.mp4, 2026-10-21, originals in
+   D:\EVOGENCY Lotus Backgrounds 2026-10-21), stacked as layers that
+   crossfade on navigation. Each carries a dark scrim (--bg-dim) baked into
    its background stack to keep body copy readable. Phones fade the whole
    backdrop and aim each crop at its flower, because a portrait crop
    otherwise puts it behind the text. .is-hidden comes after the phone rule
-   so it wins on the homepage hero. */
+   so it wins on the homepage hero. New art always gets a new file name,
+   because Vercel keeps serving the old picture at a reused URL. */
 .site-bg {
   --bg-dim: linear-gradient(rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7));
   position: fixed;
@@ -68,38 +70,36 @@ body {
     opacity: 0;
   }
 }
-.site-bg-layer--default { background-image: url("/site-bg.jpg"); }
-.site-bg-layer--home { background-image: var(--bg-dim), url("/bg/home.webp"); }
-.site-bg-layer--craft { background-image: var(--bg-dim), url("/bg/craft.webp"); }
-.site-bg-layer--work { background-image: var(--bg-dim), url("/bg/work.webp"); }
-.site-bg-layer--about { background-image: var(--bg-dim), url("/bg/about.webp"); }
-.site-bg-layer--contact { background-image: var(--bg-dim), url("/bg/contact.webp"); }
-/* The top down render fills the whole frame with petals, so it sits
-   behind body copy and gets a heavier scrim. */
+.site-bg-layer--default { background-image: var(--bg-dim), url("/bg/lotus-default.webp"); }
+.site-bg-layer--home { background-image: var(--bg-dim), url("/bg/lotus-home.webp"); }
+.site-bg-layer--craft { background-image: var(--bg-dim), url("/bg/lotus-craft.webp"); }
+.site-bg-layer--work { background-image: var(--bg-dim), url("/bg/lotus-work.webp"); }
+.site-bg-layer--about { background-image: var(--bg-dim), url("/bg/lotus-about.webp"); }
+.site-bg-layer--contact { background-image: var(--bg-dim), url("/bg/lotus-contact.webp"); }
+.site-bg-layer--brand { background-image: var(--bg-dim), url("/bg/lotus-brand.webp"); }
+.site-bg-layer--lab { background-image: var(--bg-dim), url("/bg/lotus-lab.webp"); }
+/* The service pages carry the most body copy, so they get a heavier scrim. */
 .site-bg-layer--services {
   --bg-dim: linear-gradient(rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8));
+  background-image: var(--bg-dim), url("/bg/lotus-services.webp");
 }
-/* Brand Design shares the About render (Moe's call, 2026-10-09), same
-   file so a visitor only downloads it once. */
-.site-bg-layer--brand { background-image: var(--bg-dim), url("/bg/about.webp"); }
-.site-bg-layer--services { background-image: var(--bg-dim), url("/bg/services.webp"); }
-/* The AI Front Desk page gets its own render (Moe's pick, 2026-10-17), the
-   glowing lotus off to the right so the hero copy sits on dark space. */
-.site-bg-layer--ai { background-image: var(--bg-dim), url("/bg/ai.webp"); }
+/* The AI Front Desk page and the /start funnels: the flower sits on the
+   right third so the hero copy and the form sit on dark space. */
+.site-bg-layer--ai { background-image: var(--bg-dim), url("/bg/lotus-ai.webp"); }
 @media (max-width: 639px) {
   .site-bg {
     opacity: 0.6;
   }
-  /* The original backdrop has no scrim, so it keeps its old 0.4 on phones. */
-  .site-bg-layer--default.is-active { opacity: 0.67; }
-  .site-bg-layer--default { background-position: 70% 100%; }
-  .site-bg-layer--home { background-position: 18% 58%; }
+  .site-bg-layer--home,
   .site-bg-layer--about,
-  .site-bg-layer--brand { background-position: 72% 58%; }
-  .site-bg-layer--craft,
-  .site-bg-layer--work { background-position: 66% 58%; }
-  .site-bg-layer--contact { background-position: 62% 58%; }
-  .site-bg-layer--ai { background-position: 70% 58%; }
+  .site-bg-layer--default,
+  .site-bg-layer--lab { background-position: 50% 50%; }
+  .site-bg-layer--craft { background-position: 58% 50%; }
+  .site-bg-layer--services { background-position: 55% 50%; }
+  .site-bg-layer--brand { background-position: 56% 50%; }
+  .site-bg-layer--work { background-position: 22% 50%; }
+  .site-bg-layer--contact { background-position: 82% 50%; }
+  .site-bg-layer--ai { background-position: 78% 50%; }
 }
 .site-bg.is-hidden {
   opacity: 0;

@@ -14,8 +14,8 @@ const SERVICE_PAGES = new Set([
   "/generative-engine-optimization-orlando",
 ]);
 
-/** Which lotus render sits behind a route. Anything unlisted (the blog,
-    funnels, Growth Kit, 404) keeps the original site-bg.jpg. Images and per-key
+/** Which lotus angle sits behind a route. Anything unlisted (the blog,
+    funnels, Growth Kit, 404) gets the distant lotus (default). Images and per-key
     positioning live in the .site-bg-layer--* rules in globals.css. */
 function backgroundFor(pathname: string) {
   if (pathname === "/") return "home";
@@ -26,7 +26,7 @@ function backgroundFor(pathname: string) {
   if (pathname === "/brand-design") return "brand";
   if (pathname === "/ai") return "ai";
   if (pathname === "/start" || pathname.startsWith("/start/")) return "ai";
-  if (pathname === "/built-in-house") return "work";
+  if (pathname === "/built-in-house") return "lab";
   if (SERVICE_PAGES.has(pathname)) return "services";
   return "default";
 }
