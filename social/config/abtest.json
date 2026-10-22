@@ -1,0 +1,5 @@
+{
+  "_what": "Reel format A/B test (Moe, 2026-10-22). Inside the window, value posts alternate by schedule slot between the slide Reels (A, reel.js) and the 3D stick figure Reels (B, rendered on Moe's laptop by the Content Crew and committed to public/social/<post id>/). Same posts, same captions, only the video differs. Promos stay A. A post can force one with \"format\": \"slides\" or \"stickman\". Lives in social/config/ because every social/*.json is read as a week file. Read by style.js (formatOf) and voice.py (format_of). Outside the window everything is A.",
+  "start": "2026-10-26",
+  "end": "2026-11-08"
+}

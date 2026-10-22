@@ -24,7 +24,7 @@ reel, or one in an old voice or speed, gets swapped once the new one is live.
 A post whose reel isn't rendered yet waits for a later run, unless it's due within FALLBACK_HOURS, when it goes out
 as the image carousel instead. A booked carousel is swapped for the reel once the reel exists ("fmt" in the state).
 If Buffer refuses a reel, the carousel is booked in its place and the run fails, so GitHub emails Moe.
-A/B test (social/abtest.json, 2026-10-26 to 2026-11-08): half the posts carry a 3D stick figure reel made on Moe's laptop
+A/B test (social/config/abtest.json, 2026-10-26 to 2026-11-08): half the posts carry a 3D stick figure reel made on Moe's laptop
 by the Content Crew (reel.json "engine": "stickman"). It books as "reel_stickman", so metrics can compare it with the slides.
 YouTube (since 2026-10-18) takes the same reel as a Short. It only takes video, so it never gets the carousel: a YouTube
 slot waits until the reel exists. Its description is the Instagram caption with the asks rewritten for YouTube, which
