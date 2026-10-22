@@ -178,5 +178,17 @@
     "post": "2026-10-23-facebook-your-algorithm",
     "due": "2026-10-23T19:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-24 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ada6e669a872e8621a01a63",
+    "post": "2026-10-24-ai-readme",
+    "due": "2026-10-24T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-24 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ada6e67e391db54dafcefcb",
+    "post": "2026-10-24-ai-readme",
+    "due": "2026-10-24T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
