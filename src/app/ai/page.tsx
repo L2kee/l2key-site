@@ -5,6 +5,8 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
+import { RelatedGuides } from "@/components/related-guides";
+import { guidesFor } from "@/lib/blog";
 import { servicePageGraph } from "@/lib/schema";
 
 // The landing page for the AI Front Desk and AI Audit Google Ads groups, so
@@ -288,6 +290,8 @@ export default function AiFrontDeskPage() {
         <SectionHeading eyebrow="Frequently asked" title="AI receptionist questions, answered honestly" />
         <FaqList items={FAQ} />
       </div>
+
+      <RelatedGuides posts={guidesFor(["/ai", "/ai-automation-orlando"])} eyebrow="From the blog" title="Free guides on answering calls and automating the busywork" />
     </div>
   );
 }

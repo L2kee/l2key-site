@@ -3,6 +3,8 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
+import { RelatedGuides } from "@/components/related-guides";
+import { guidesFor } from "@/lib/blog";
 import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "SEO Agency Orlando | EVOGENCY";
@@ -161,6 +163,8 @@ export default function SeoAgencyOrlandoPage() {
         <SectionHeading eyebrow="Frequently asked" title="SEO agency Orlando: the honest answers" />
         <FaqList items={FAQ} />
       </div>
+
+      <RelatedGuides posts={guidesFor(["/seo-agency-orlando"])} eyebrow="From the blog" title="Free guides on SEO" />
     </div>
   );
 }

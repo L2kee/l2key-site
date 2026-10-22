@@ -3,6 +3,8 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
+import { RelatedGuides } from "@/components/related-guides";
+import { guidesFor } from "@/lib/blog";
 import { ReviewKitCallout } from "@/components/review-kit-callout";
 import { servicePageGraph } from "@/lib/schema";
 
@@ -173,6 +175,8 @@ export default function GoogleReviewsOrlandoPage() {
         <SectionHeading eyebrow="Frequently asked" title="Google reviews Orlando: the honest answers" />
         <FaqList items={FAQ} />
       </div>
+
+      <RelatedGuides posts={guidesFor(["/google-reviews-orlando"])} eyebrow="From the blog" title="Free guides on Google reviews" />
     </div>
   );
 }

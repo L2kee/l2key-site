@@ -3,6 +3,8 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
+import { RelatedGuides } from "@/components/related-guides";
+import { guidesFor } from "@/lib/blog";
 import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Generative Engine Optimization Orlando | EVOGENCY";
@@ -150,6 +152,8 @@ export default function GenerativeEngineOptimizationOrlandoPage() {
         <SectionHeading eyebrow="Frequently asked" title="Generative engine optimization: the honest answers" />
         <FaqList items={FAQ} />
       </div>
+
+      <RelatedGuides posts={guidesFor(["/generative-engine-optimization-orlando"])} eyebrow="From the blog" title="Free guides on getting found in AI search" />
     </div>
   );
 }

@@ -3,6 +3,8 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
+import { RelatedGuides } from "@/components/related-guides";
+import { guidesFor } from "@/lib/blog";
 import Link from "next/link";
 import { servicePageGraph } from "@/lib/schema";
 
@@ -202,6 +204,8 @@ export default function AiAutomationOrlandoPage() {
         <SectionHeading eyebrow="Frequently asked" title="AI automation Orlando: the honest answers" />
         <FaqList items={FAQ} />
       </div>
+
+      <RelatedGuides posts={guidesFor(["/ai-automation-orlando"])} eyebrow="From the blog" title="Free guides on AI automation" />
     </div>
   );
 }

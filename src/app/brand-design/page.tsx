@@ -5,6 +5,8 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
+import { RelatedGuides } from "@/components/related-guides";
+import { guidesFor } from "@/lib/blog";
 import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Luxury Brand Design and Rebranding Agency | EVOGENCY";
@@ -212,6 +214,8 @@ export default function BrandDesignPage() {
         <SectionHeading eyebrow="Frequently asked" title="Brand design and rebranding, the honest answers" reveal />
         <FaqList items={FAQ} />
       </div>
+
+      <RelatedGuides posts={guidesFor(["/brand-design"])} eyebrow="From the blog" title="Free guides on brand design" />
     </div>
   );
 }

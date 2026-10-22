@@ -3,6 +3,8 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
+import { RelatedGuides } from "@/components/related-guides";
+import { guidesFor } from "@/lib/blog";
 import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Mobile App Development Orlando | EVOGENCY";
@@ -159,6 +161,8 @@ export default function MobileAppDevelopmentOrlandoPage() {
         <SectionHeading eyebrow="Frequently asked" title="Mobile app development Orlando: the honest answers" />
         <FaqList items={FAQ} />
       </div>
+
+      <RelatedGuides posts={guidesFor(["/mobile-app-development-orlando"])} eyebrow="From the blog" title="Free guides on mobile apps" />
     </div>
   );
 }

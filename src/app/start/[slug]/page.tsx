@@ -21,6 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description: path.sub,
     alternates: { canonical: url },
+    // Same as /start, kept out of search, links still followed.
+    robots: { index: false, follow: true },
     openGraph: {
       title,
       description: path.sub,

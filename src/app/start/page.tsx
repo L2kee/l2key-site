@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: "/start" },
+  // Funnel forms stay out of search so they don't compete with the service
+  // pages. follow keeps the links counting.
+  robots: { index: false, follow: true },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,

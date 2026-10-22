@@ -648,3 +648,28 @@ export const BLOG_POSTS: BlogPost[] = [
 export function getBlogPost(slug: string) {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
+
+// Posts to read next. Takes the posts that follow this one in its service
+// group (same relatedHref), wrapping around, then tops up from the same tag.
+// Walking forward instead of always taking the newest means every post, old
+// ones included, gets links from its neighbours, so none sit only on a deep
+// /blog/page/N listing.
+export function relatedPosts(post: BlogPost, count = 3): BlogPost[] {
+  const picks: BlogPost[] = [];
+  const takeFrom = (group: BlogPost[]) => {
+    const at = group.findIndex((p) => p.slug === post.slug);
+    for (let k = 1; k <= group.length && picks.length < count; k++) {
+      const p = group[(at + k) % group.length];
+      if (p.slug !== post.slug && !picks.includes(p)) picks.push(p);
+    }
+  };
+  if (post.relatedHref) takeFrom(BLOG_POSTS.filter((p) => p.relatedHref === post.relatedHref));
+  takeFrom(BLOG_POSTS.filter((p) => p.tag === post.tag));
+  takeFrom(BLOG_POSTS);
+  return picks;
+}
+
+/** The newest posts that point readers at one of these service pages. */
+export function guidesFor(paths: string[], count = 6): BlogPost[] {
+  return BLOG_POSTS.filter((p) => p.relatedHref && paths.includes(p.relatedHref)).slice(0, count);
+}

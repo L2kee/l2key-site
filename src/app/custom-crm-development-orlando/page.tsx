@@ -3,6 +3,8 @@ import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
+import { RelatedGuides } from "@/components/related-guides";
+import { guidesFor } from "@/lib/blog";
 import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Custom CRM Development Orlando | EVOGENCY";
@@ -159,6 +161,8 @@ export default function CustomCrmDevelopmentOrlandoPage() {
         <SectionHeading eyebrow="Frequently asked" title="Custom CRM development Orlando: the honest answers" />
         <FaqList items={FAQ} />
       </div>
+
+      <RelatedGuides posts={guidesFor(["/custom-crm-development-orlando"])} eyebrow="From the blog" title="Free guides on custom CRMs" />
     </div>
   );
 }

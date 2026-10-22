@@ -5,7 +5,8 @@ import { ArrowRight } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
 import { ReviewKitCallout } from "@/components/review-kit-callout";
-import { BLOG_POSTS, getBlogPost } from "@/lib/blog";
+import { RelatedGuides } from "@/components/related-guides";
+import { BLOG_POSTS, getBlogPost, relatedPosts } from "@/lib/blog";
 import { FOUNDER_ID, ORG_ID, SITE_URL, WEBSITE_ID, breadcrumbs } from "@/lib/schema";
 
 export function generateStaticParams() {
@@ -143,6 +144,8 @@ export default async function BlogPostPage({
       )}
 
       <ReviewKitCallout />
+
+      <RelatedGuides posts={relatedPosts(post)} eyebrow="Keep reading" title="Related guides" columns={1} />
 
       <CtaBand text="Get Your Free Audit" />
 
