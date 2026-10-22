@@ -71,7 +71,7 @@ body {
   }
 }
 .site-bg-layer--default { background-image: var(--bg-dim), url("/bg/lotus-default.webp"); }
-.site-bg-layer--home { background-image: var(--bg-dim), url("/bg/lotus-home.webp"); }
+.site-bg-layer--home { background-image: var(--bg-dim), url("/bg/lotus-home-water.webp"); }
 .site-bg-layer--craft { background-image: var(--bg-dim), url("/bg/lotus-craft.webp"); }
 .site-bg-layer--work { background-image: var(--bg-dim), url("/bg/lotus-work.webp"); }
 .site-bg-layer--about { background-image: var(--bg-dim), url("/bg/lotus-about.webp"); }
@@ -90,7 +90,6 @@ body {
   .site-bg {
     opacity: 0.6;
   }
-  .site-bg-layer--home,
   .site-bg-layer--about,
   .site-bg-layer--default,
   .site-bg-layer--lab { background-position: 50% 50%; }
@@ -100,6 +99,7 @@ body {
   .site-bg-layer--work { background-position: 22% 50%; }
   .site-bg-layer--contact { background-position: 82% 50%; }
   .site-bg-layer--ai { background-position: 78% 50%; }
+  .site-bg-layer--home { background-position: 62% 50%; }
 }
 .site-bg.is-hidden {
   opacity: 0;
