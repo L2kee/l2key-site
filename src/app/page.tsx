@@ -9,6 +9,8 @@ import { HeroReveal } from "@/components/hero-reveal";
 import { CtaTrace } from "@/components/cta-trace";
 import { DropLetters } from "@/components/drop-letters";
 import { FaqList } from "@/components/faq-list";
+import { Marquee } from "@/components/marquee";
+import { LogoWall } from "@/components/logo-wall";
 import { StartTiles } from "@/components/start-tiles";
 import { WORK } from "@/lib/content";
 
@@ -114,6 +116,8 @@ export default function Home() {
       </HeroReveal>
       </div>
 
+      <Marquee />
+
       {/* How it works */}
       <section className="mx-auto max-w-5xl px-6 py-16">
         <SectionHeading eyebrow="How it works" title="Three steps. No runaround." />
@@ -141,6 +145,19 @@ export default function Home() {
         <div className="mt-8 text-center">
           <Link href="/works" className="text-sm font-medium text-[#5fd8e6] hover:underline">
             See all work →
+          </Link>
+        </div>
+      </section>
+
+      {/* Logo wall cycle: concept marks only (logo-wall.tsx). */}
+      <section className="mx-auto max-w-4xl px-6 py-16">
+        <SectionHeading eyebrow="From our concept studio" title="Marks made to be remembered" />
+        <div className="mt-10">
+          <LogoWall />
+        </div>
+        <div className="mt-8 text-center">
+          <Link href="/brand-design" className="text-sm font-medium text-[#5fd8e6] hover:underline">
+            See our brand design studio →
           </Link>
         </div>
       </section>
