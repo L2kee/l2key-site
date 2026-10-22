@@ -1337,3 +1337,88 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     padding-top: 3.5rem;
   }
 }
+
+/* How it works, drawn (drawn-steps.tsx). Visible by default. JS adds
+   .is-armed (hidden, waiting) unless reduced motion is on, and .is-drawn
+   when the list scrolls into view. Each card waits --start, each title
+   letter waits 55ms after the one before it (--l), and the body words
+   seep in once the pen is about 60% through the card's --write time. */
+.ink-title {
+  display: block;
+  height: auto;
+  overflow: visible;
+}
+.ink-title text {
+  fill: #ffffff;
+  stroke: #5fd8e6;
+  stroke-width: 0.6;
+  stroke-linejoin: round;
+}
+.drawn-steps.is-armed .ink-title tspan {
+  fill: transparent;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+}
+.drawn-steps.is-armed .step-num,
+.drawn-steps.is-armed .seep-word {
+  opacity: 0;
+}
+.drawn-steps.is-drawn .step-num {
+  animation: step-num-in 500ms ease-out var(--start) both;
+}
+.drawn-steps.is-drawn .ink-title tspan {
+  animation:
+    ink-trace 700ms cubic-bezier(0.65, 0, 0.35, 1) calc(var(--start) + var(--l) * 55ms) both,
+    ink-fill 500ms ease-out calc(var(--start) + var(--l) * 55ms + 450ms) both;
+}
+.drawn-steps.is-drawn .ink-title {
+  filter: drop-shadow(0 0 6px rgba(95, 216, 230, 0.35));
+}
+.drawn-steps.is-drawn .seep-word {
+  animation: seep-in 1400ms ease-out calc(var(--start) + var(--write) * 0.6 + var(--w) * 45ms) both;
+}
+@keyframes ink-trace {
+  from {
+    stroke-dashoffset: 220;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes ink-fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ffffff;
+  }
+}
+@keyframes step-num-in {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Dark, then dim, then full: the word starts as a blurred shadow the color
+   of the background and resolves into the normal body text. */
+@keyframes seep-in {
+  0% {
+    opacity: 0;
+    filter: blur(8px);
+    color: #0a1a1e;
+  }
+  45% {
+    opacity: 0.35;
+    filter: blur(3px);
+    color: #2c4a50;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    color: inherit;
+  }
+}

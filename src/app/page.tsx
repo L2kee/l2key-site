@@ -12,6 +12,7 @@ import { FaqList } from "@/components/faq-list";
 import { Marquee } from "@/components/marquee";
 import { LogoWall } from "@/components/logo-wall";
 import { StartTiles } from "@/components/start-tiles";
+import { DrawnSteps } from "@/components/drawn-steps";
 import { WORK } from "@/lib/content";
 
 const FAQ = [
@@ -43,16 +44,16 @@ const FAQ = [
 
 const STEPS = [
   {
-    title: "Tell us what you need",
-    body: "Pick what you're after and answer a few quick taps. Two minutes, tops.",
+    title: "Get Started",
+    body: "Tap what you need and answer a few quick questions. Two minutes, tops, and no sales call to sit through.",
   },
   {
-    title: "Get a plan and a real price",
-    body: "Within one business day you hear from a real person with a clear plan and a fixed number.",
+    title: "Get Your Plan & Price",
+    body: "Within one business day a real person sends you a clear plan and a fixed price. No \"it depends.\" No surprise invoices.",
   },
   {
-    title: "We build it",
-    body: "We run it for you month to month, or we hand you the keys. Your call, every time.",
+    title: "Get It Built Your Way",
+    body: "We run it for you month to month, or we build it, train your team, and hand you the keys. Your call, every time.",
   },
 ];
 
@@ -120,18 +121,8 @@ export default function Home() {
 
       {/* How it works */}
       <section className="mx-auto max-w-5xl px-6 py-16">
-        <SectionHeading eyebrow="How it works" title="Three steps. No runaround." />
-        <ol className="mt-10 grid gap-4 sm:grid-cols-3">
-          {STEPS.map((step, i) => (
-            <li key={step.title} className="glass rounded-2xl p-6">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#5fd8e6] to-[#1f9fb3] text-sm font-bold text-[#041016]">
-                {i + 1}
-              </span>
-              <h3 className="mt-4 font-semibold text-white">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">{step.body}</p>
-            </li>
-          ))}
-        </ol>
+        <SectionHeading eyebrow="How it works" title="From idea to built in three steps." />
+        <DrawnSteps steps={STEPS} />
       </section>
 
       {/* Work preview */}
