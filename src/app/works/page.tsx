@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { WorksGallery } from "@/components/works-gallery";
 import { WORK, WORK_CATEGORIES } from "@/lib/content";
 
-const TITLE = "Our Work | EVOGENCY Web Design Portfolio, Orlando FL";
+const TITLE = "Our Work | EVOGENCY AI and Software Portfolio, Orlando FL";
 const DESCRIPTION =
   "Real products, actually shipped: a live CRM platform, a professional desktop tool, and real client work from EVOGENCY in Orlando, FL.";
 

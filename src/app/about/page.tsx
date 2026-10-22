@@ -6,7 +6,7 @@ import { CtaBand } from "@/components/cta-band";
 import { LinkedInIcon } from "@/components/linkedin-icon";
 import { FOUNDER_LINKEDIN } from "@/lib/schema";
 
-const TITLE = "About EVOGENCY | Orlando Web Design & SEO Agency";
+const TITLE = "About EVOGENCY | AI Front Desks and Websites in Orlando";
 const DESCRIPTION =
   "Meet Mohamed Eltoukhy, the founder and builder behind EVOGENCY. Real software shipped for local businesses in Orlando, FL, not templates and outsourced work.";
 

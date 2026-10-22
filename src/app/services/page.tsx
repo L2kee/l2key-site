@@ -7,9 +7,9 @@ import { CtaBand } from "@/components/cta-band";
 import { ServicesJourney } from "@/components/services-journey";
 import { SERVICES } from "@/lib/content";
 
-const TITLE = "Web Design, SEO & Reputation Services | EVOGENCY Orlando";
+const TITLE = "AI Front Desk, Website and SEO Services | EVOGENCY Orlando";
 const DESCRIPTION =
-  "Websites that convert, SEO that gets found, and Google review systems that turn happy customers into new business. Built for local businesses in Orlando, FL.";
+  "AI front desks that answer every call and book the job, plus websites that convert and SEO that gets found. Built for local businesses in Orlando, FL.";
 
 export const metadata: Metadata = {
   title: TITLE,

@@ -13,6 +13,8 @@ export const ORG_ID = `${SITE_URL}/#organization`;
 export const FOUNDER_ID = `${SITE_URL}/#founder`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/mohamed-eltoukhy-6b0785412/";
+export const FOUNDER_YOUTUBE = "https://www.youtube.com/@MoToukhy-f1n";
+export const ORG_INSTAGRAM = "https://www.instagram.com/evogencyglobal/";
 
 export const ORG_DESCRIPTION =
   "EVOGENCY builds AI front desks that answer every call 24/7 and book the job, plus websites and SEO for Orlando businesses. Founded by Mohamed Eltoukhy.";
@@ -31,6 +33,15 @@ export const SERVICE_PAGES: Record<string, { name: string; serviceType: string; 
 };
 
 const ORLANDO = { "@type": "City", name: "Orlando", containedInPlace: { "@type": "State", name: "Florida" } };
+
+// The same service area as the Google Business Profile: Orlando plus 8 counties.
+const AREA_SERVED = [
+  ORLANDO,
+  ...["Orange", "Seminole", "Osceola", "Lake", "Volusia", "Brevard", "Polk", "Hillsborough"].map((c) => ({
+    "@type": "AdministrativeArea",
+    name: `${c} County, Florida`,
+  })),
+];
 
 export function siteGraph() {
   return {
@@ -55,9 +66,10 @@ export function siteGraph() {
           postalCode: "32801",
           addressCountry: "US",
         },
-        areaServed: ORLANDO,
+        areaServed: AREA_SERVED,
+        sameAs: [ORG_INSTAGRAM],
         founder: { "@id": FOUNDER_ID, "@type": "Person", name: "Mohamed Eltoukhy" },
-        knowsAbout: Object.values(SERVICE_PAGES).map((s) => s.serviceType),
+        knowsAbout: [...new Set(Object.values(SERVICE_PAGES).map((s) => s.serviceType))],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
           name: "EVOGENCY services",
@@ -75,7 +87,7 @@ export function siteGraph() {
         worksFor: { "@id": ORG_ID },
         image: `${SITE_URL}/moe-founder-v2.webp`,
         url: `${SITE_URL}/about`,
-        sameAs: [FOUNDER_LINKEDIN],
+        sameAs: [FOUNDER_LINKEDIN, FOUNDER_YOUTUBE],
       },
       {
         "@type": "WebSite",

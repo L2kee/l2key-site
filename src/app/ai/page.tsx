@@ -15,9 +15,9 @@ import { servicePageGraph } from "@/lib/schema";
 const AI_PHONE_TEL = "tel:+13214354469";
 const AI_PHONE_DISPLAY = "(321) 435 4469";
 
-const TITLE = "AI Front Desk and AI Receptionist | EVOGENCY";
+const TITLE = "AI Receptionist in Orlando | AI Front Desk by EVOGENCY";
 const DESCRIPTION =
-  "EVOGENCY sets up an AI front desk that answers every call 24/7, books appointments onto your calendar, and texts back anyone you miss. From $297 a month, month to month.";
+  "EVOGENCY sets up an AI front desk for Orlando businesses that answers every call 24/7, books the appointment, and texts back anyone you miss. From $297 a month.";
 
 export const metadata: Metadata = {
   title: TITLE,

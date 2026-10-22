@@ -4,7 +4,7 @@ import { TiltCard } from "@/components/tilt-card";
 import { AuditRequestForm } from "@/components/audit-request-form";
 import { ReviewKitCallout } from "@/components/review-kit-callout";
 
-const TITLE = "Contact EVOGENCY | Free Website & SEO Audit, Orlando FL";
+const TITLE = "Contact EVOGENCY | Book a Free Call, Orlando FL";
 const DESCRIPTION =
   "Get a free audit of your website and Google presence. Call, email, or book a time with EVOGENCY, based in Orlando, FL and remote friendly.";
 
