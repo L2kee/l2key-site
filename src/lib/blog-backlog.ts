@@ -6756,7 +6756,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Homeowners with a problem usually call a few businesses and hire whoever responds first. Here's how to become that business without hiring more staff.",
     excerpt: "The fastest reply usually wins the job. Here's how to be fast without living on your phone.",
-    date: "2026-10-15",
+    date: "2026-10-22",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -6810,7 +6810,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A pressure washing website has one job, turning a curious homeowner into a booked estimate. Here's what to put on the page and what to cut.",
     excerpt: "Before and after photos, simple pricing guidance, and an easy way to book. Here's the full list.",
-    date: "2026-10-15",
+    date: "2026-10-22",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -6867,7 +6867,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Many owners pay for a logo and expect a brand. Here's the difference, why it matters for what you can charge, and what a real brand identity includes.",
     excerpt: "A logo is one piece. A brand is everything a customer feels when they deal with you.",
-    date: "2026-10-15",
+    date: "2026-10-22",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
