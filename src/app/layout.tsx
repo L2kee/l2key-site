@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_TITLE = "EVOGENCY | Web Design, SEO & Google Reviews in Orlando";
+const SITE_TITLE = "EVOGENCY | AI Front Desk, Websites and SEO in Orlando";
 const SITE_DESCRIPTION = ORG_DESCRIPTION;
 
 export const metadata: Metadata = {

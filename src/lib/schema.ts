@@ -15,7 +15,7 @@ export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/mohamed-eltoukhy-6b0785412/";
 
 export const ORG_DESCRIPTION =
-  "EVOGENCY, founded by Mohamed Eltoukhy, helps Orlando area local businesses build a real online presence: professional websites, stronger Google reviews, and SEO that gets found.";
+  "EVOGENCY builds AI front desks that answer every call 24/7 and book the job, plus websites and SEO for Orlando businesses. Founded by Mohamed Eltoukhy.";
 
 /** The service landing pages, in the order they appear on /services. */
 export const SERVICE_PAGES: Record<string, { name: string; serviceType: string; anywhere?: boolean }> = {
