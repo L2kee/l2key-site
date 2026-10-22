@@ -9,11 +9,10 @@ import { isFunnelPath } from "@/lib/funnel-paths";
 
 const LINKS = [
   { href: "/ai", label: "AI Front Desk" },
-  { href: "/services", label: "Our Craft" },
+  { href: "/services", label: "Services" },
   { href: "/works", label: "Work" },
+  { href: "/built-in-house", label: "Built in House" },
   { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
-  { href: "/agency-os", label: "Client Portal" },
   { href: "/about", label: "About" },
 ];
 
@@ -183,8 +182,8 @@ export function Navbar() {
 
           <DesktopLinks />
 
-          <Link href="/contact" className="btn-solid hidden !px-4 !py-2 text-sm sm:inline-flex">
-            Get a Free Audit
+          <Link href="/start" className="btn-solid hidden !px-4 !py-2 text-sm sm:inline-flex">
+            Get Started
           </Link>
 
           <button
@@ -238,8 +237,8 @@ export function Navbar() {
         </nav>
 
         <div className="menu-item px-8 pb-10" style={{ "--m": LINKS.length } as React.CSSProperties}>
-          <Link href="/contact" onClick={closeForNav} className="btn-solid w-full justify-center">
-            Get a Free Audit
+          <Link href="/start" onClick={closeForNav} className="btn-solid w-full justify-center">
+            Get Started
           </Link>
           <div className="mt-6 flex flex-col gap-3 text-sm text-white/60">
             <a href="tel:+18138971954" className="flex items-center gap-3 transition hover:text-white">

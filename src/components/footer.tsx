@@ -5,11 +5,14 @@ import { FOUNDER_LINKEDIN } from "@/lib/schema";
 import { Phone, Mail, MapPin, CalendarClock } from "lucide-react";
 
 const PAGES = [
+  { href: "/start", label: "Get Started" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Our Craft" },
+  { href: "/services", label: "Services" },
   { href: "/works", label: "Work" },
+  { href: "/built-in-house", label: "Built in House" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+  { href: "/agency-os", label: "Client Portal" },
   { href: "/electricalai-pro", label: "ElectricalAI Pro" },
   { href: "/free-review-kit", label: "Free Review Kit" },
   { href: "/job-site-studio", label: "Job Site Studio" },
@@ -82,9 +85,16 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-white/60">
               {PAGES.map((p) => (
                 <li key={p.href}>
-                  <Link href={p.href} className="link-grow transition hover:text-white">
-                    {p.label}
-                  </Link>
+                  {/* Agency OS is proxied, not part of this app, so a Link prefetch 404s. */}
+                  {p.href === "/agency-os" ? (
+                    <a href={p.href} className="link-grow transition hover:text-white">
+                      {p.label}
+                    </a>
+                  ) : (
+                    <Link href={p.href} className="link-grow transition hover:text-white">
+                      {p.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -105,8 +115,8 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-            <Link href="/contact" className="btn-solid mt-6 !px-5 !py-2.5 text-sm">
-              Get a Free Audit
+            <Link href="/start" className="btn-solid mt-6 !px-5 !py-2.5 text-sm">
+              Get Started
             </Link>
           </div>
         </div>

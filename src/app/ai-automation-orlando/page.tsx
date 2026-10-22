@@ -196,7 +196,7 @@ export default function AiAutomationOrlandoPage() {
         </div>
       </div>
 
-      <CtaBand text="Get Your Free Audit" />
+      <CtaBand text="Find What AI Can Do for You" href="/start/not-sure" />
 
       <div className="mt-20">
         <SectionHeading eyebrow="Frequently asked" title="AI automation Orlando: the honest answers" />

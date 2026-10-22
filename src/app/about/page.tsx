@@ -153,7 +153,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CtaBand text="Work with us" />
+      <CtaBand text="Work with us" href="/start" />
     </div>
   );
 }

@@ -281,7 +281,7 @@ export default function AiFrontDeskPage() {
       </div>
 
       <div className="mt-16">
-        <CtaBand text="Book Your Free Call" />
+        <CtaBand text="Get Your AI Front Desk" href="/start/ai-front-desk" />
       </div>
 
       <div className="mt-20">

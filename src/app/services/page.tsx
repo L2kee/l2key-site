@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
+import { ServicesJourney } from "@/components/services-journey";
 import { SERVICES } from "@/lib/content";
 
 const TITLE = "Web Design, SEO & Reputation Services | EVOGENCY Orlando";
@@ -54,7 +55,11 @@ export default function ServicesPage() {
         ))}
       </div>
 
-      <CtaBand text="Get a Free Proposal" />
+      <div className="-mx-6">
+        <ServicesJourney />
+      </div>
+
+      <CtaBand text="Tell Us What You Need" href="/start" />
     </div>
   );
 }

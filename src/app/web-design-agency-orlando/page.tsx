@@ -165,7 +165,7 @@ export default function WebDesignAgencyOrlandoPage() {
         </div>
       </div>
 
-      <CtaBand text="Get Your Free Audit" />
+      <CtaBand text="Get Your Free Homepage Mockup" href="/start/website" />
 
       <div className="mt-20">
         <SectionHeading eyebrow="Frequently asked" title="Web design agency Orlando: the honest answers" />

@@ -3,15 +3,13 @@ import { AskAvaLink } from "@/components/site-chat";
 import { ArrowRight } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
-import { Marquee } from "@/components/marquee";
 import { WorkCard } from "@/components/work-card";
-import { ServicesJourney } from "@/components/services-journey";
 import { HeroVideo } from "@/components/hero-video";
 import { HeroReveal } from "@/components/hero-reveal";
 import { CtaTrace } from "@/components/cta-trace";
 import { DropLetters } from "@/components/drop-letters";
-import { LogoWall } from "@/components/logo-wall";
 import { FaqList } from "@/components/faq-list";
+import { StartTiles } from "@/components/start-tiles";
 import { WORK } from "@/lib/content";
 
 const FAQ = [
@@ -38,6 +36,21 @@ const FAQ = [
   {
     q: "Do you only work with Orlando businesses?",
     a: "We're based in Orlando and work with businesses anywhere. Everything from the kickoff call to launch day happens online.",
+  },
+];
+
+const STEPS = [
+  {
+    title: "Tell us what you need",
+    body: "Pick what you're after and answer a few quick taps. Two minutes, tops.",
+  },
+  {
+    title: "Get a plan and a real price",
+    body: "Within one business day you hear from a real person with a clear plan and a fixed number.",
+  },
+  {
+    title: "We build it",
+    body: "We run it for you month to month, or we hand you the keys. Your call, every time.",
   },
 ];
 
@@ -78,22 +91,17 @@ export default function Home() {
           </span>
         </h1>
 
-        <p className="hero-in mt-6 text-balance text-xl font-semibold text-white [--i:2] sm:text-2xl">
-          Your business deserves to be seen.
-        </p>
-        <p className="hero-in mt-3 max-w-2xl text-balance text-white/70 [--i:3] sm:text-lg">
-          EVOGENCY builds the websites, search presence, and digital systems
-          that turn attention into customers.
+        <p className="hero-in mt-6 max-w-2xl text-balance text-lg text-white/75 [--i:2] sm:text-xl">
+          AI front desks, websites, apps, and online stores. Built for you from
+          the first sketch to the first sale.
         </p>
 
-        <div className="hero-in mt-10 [--i:4]">
-          <Link
-            href="/contact"
-            className="btn-solid hero-cta !px-8 !py-4 text-base sm:text-lg"
-          >
-            Get Your Free Audit <ArrowRight size={18} />
-          </Link>
-          <p className="mt-5 text-sm text-white/60">
+        <div className="hero-in mt-10 w-full [--i:3]">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">
+            What do you need?
+          </h2>
+          <StartTiles className="mt-5" />
+          <p className="mt-6 text-sm text-white/60">
             Got a question right now?{" "}
             <AskAvaLink className="font-semibold text-[#5fd8e6] underline-offset-4 transition hover:text-white hover:underline" />{" "}
             She&apos;s the same tech we build for you.
@@ -101,21 +109,20 @@ export default function Home() {
         </div>
       </HeroReveal>
 
-      <ServicesJourney />
-
-      <Marquee />
-
-      {/* Logo wall cycle: concept marks only (logo-wall.tsx). */}
-      <section className="mx-auto max-w-4xl px-6 pt-20">
-        <SectionHeading eyebrow="From our concept studio" title="Marks made to be remembered" />
-        <div className="mt-10">
-          <LogoWall />
-        </div>
-        <div className="mt-8 text-center">
-          <Link href="/brand-design" className="text-sm font-medium text-[#5fd8e6] hover:underline">
-            See our brand design studio →
-          </Link>
-        </div>
+      {/* How it works */}
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <SectionHeading eyebrow="How it works" title="Three steps. No runaround." />
+        <ol className="mt-10 grid gap-4 sm:grid-cols-3">
+          {STEPS.map((step, i) => (
+            <li key={step.title} className="glass rounded-2xl p-6">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#5fd8e6] to-[#1f9fb3] text-sm font-bold text-[#041016]">
+                {i + 1}
+              </span>
+              <h3 className="mt-4 font-semibold text-white">{step.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-white/65">{step.body}</p>
+            </li>
+          ))}
+        </ol>
       </section>
 
       {/* Work preview */}
@@ -133,6 +140,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Built in house teaser */}
+      <section className="mx-auto max-w-5xl px-6 py-8">
+        <Link
+          href="/built-in-house"
+          className="glass group flex flex-col items-center justify-between gap-4 rounded-2xl px-6 py-6 text-center transition hover:border-[#5fd8e6]/50 sm:flex-row sm:text-left"
+        >
+          <span>
+            <span className="block font-semibold text-white">Every effect on this site was built by hand.</span>
+            <span className="block text-sm text-white/60">
+              The letter drop, the glass, the morphing menu. See all of it, and picture it on yours.
+            </span>
+          </span>
+          <span className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-[#5fd8e6]">
+            See what we build <ArrowRight size={16} className="transition group-hover:translate-x-1" />
+          </span>
+        </Link>
+      </section>
+
       {/* FAQ drawers (faq-list.tsx), same as the service pages. */}
       <section className="mx-auto max-w-3xl px-6 py-16">
         <SectionHeading eyebrow="Questions" title="Before you ask" />
@@ -144,15 +169,14 @@ export default function Home() {
         <TiltCard className="glass-strong relative rounded-3xl p-10 text-center">
           <CtaTrace radius={24} />
           <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Let&apos;s get your business found online
+            Tell us what you need
           </h2>
           <p className="mark-scope mx-auto mt-3 max-w-md text-white/65">
-            Free, no pressure audit of your current site and Google presence.
-            We&apos;ll tell you{" "}
-            <mark className="mark-sweep">exactly what&apos;s costing you customers.</mark>
+            A few quick taps. Within one business day you get{" "}
+            <mark className="mark-sweep">a plan and a real price,</mark> not a sales pitch.
           </p>
           <div className="mt-8 flex justify-center">
-            <Link href="/contact" className="btn-solid">
+            <Link href="/start" className="btn-solid">
               Get started <ArrowRight size={16} />
             </Link>
           </div>

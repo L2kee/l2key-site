@@ -205,7 +205,7 @@ export default function BrandDesignPage() {
       </div>
 
       <div className="mt-12">
-        <CtaBand text="Start a Brand Conversation" />
+        <CtaBand text="Start a Brand Conversation" href="/start/brand" />
       </div>
 
       <div className="mt-20">

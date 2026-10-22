@@ -1280,3 +1280,27 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   0%, 60%, 100% { transform: none; opacity: 0.5; }
   30% { transform: translateY(-0.25rem); opacity: 1; }
 }
+
+/* ===== Guided funnel (2026-10-21, start-wizard.tsx and start-tiles.tsx).
+   Each question slides in from the right as the last one leaves, and a
+   tapped choice gives a small press. ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .start-step {
+    animation: start-step-in 380ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .start-choice:active {
+    transform: scale(0.98);
+  }
+  .start-tile {
+    transition: transform 200ms ease, border-color 200ms ease, background-color 200ms ease;
+  }
+  .start-tile:hover {
+    transform: translateY(-2px);
+  }
+}
+@keyframes start-step-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
