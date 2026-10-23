@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Caveat } from "next/font/google";
 
-const hand = Caveat({ subsets: ["latin"], weight: ["600"], display: "swap" });
+const hand = Caveat({ subsets: ["latin"], weight: ["600"], display: "swap", preload: false });
 
 type Step = { title: string; body: string };
 

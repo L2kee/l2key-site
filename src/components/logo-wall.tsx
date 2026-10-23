@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Cormorant_Garamond } from "next/font/google";
 
-const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], display: "swap" });
+const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], display: "swap", preload: false });
 
 // Logo wall cycle (Motion Catalog). Six slots, and every few seconds one slot
 // blurs out and comes back as a mark that isn't on the wall yet. Every mark

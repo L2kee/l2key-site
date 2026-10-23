@@ -17,9 +17,12 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+// Nothing on the site sets font-mono today, so don't spend phone bandwidth
+// preloading it on every page.
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  preload: false,
 });
 
 const SITE_TITLE = "EVOGENCY | AI Front Desk, Websites and SEO in Orlando";
