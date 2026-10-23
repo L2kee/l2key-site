@@ -1,0 +1,17 @@
+{
+  "seconds": 35.37,
+  "cover_ms": 2693,
+  "engine": 2,
+  "look": "gold",
+  "motion": {
+    "hook": "rise",
+    "why": "circle",
+    "num": "drop",
+    "step": "brush",
+    "cta": "orbit",
+    "change": "ink",
+    "scene": "orb"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "puppy-love"
+}

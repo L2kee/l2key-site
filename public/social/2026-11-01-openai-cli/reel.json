@@ -1,0 +1,17 @@
+{
+  "seconds": 38.06,
+  "cover_ms": 3400,
+  "engine": 2,
+  "look": "blueprint",
+  "motion": {
+    "hook": "mark",
+    "why": "brush",
+    "num": "drawn",
+    "step": "words",
+    "cta": "scribble",
+    "change": "ripple",
+    "scene": "aurora"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "make-money"
+}

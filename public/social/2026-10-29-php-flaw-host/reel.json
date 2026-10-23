@@ -1,0 +1,17 @@
+{
+  "seconds": 41.2,
+  "cover_ms": 3400,
+  "engine": 2,
+  "look": "editorial",
+  "motion": {
+    "hook": "mark",
+    "why": "wipe",
+    "num": "pop",
+    "step": "lightup",
+    "cta": "trace",
+    "change": "fade",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "make-funk"
+}
