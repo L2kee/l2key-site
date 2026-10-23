@@ -6920,7 +6920,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Pool service companies live on recurring weekly customers and urgent green pool calls. Here's how to show up on Google for both kinds of search.",
     excerpt: "Recurring service and urgent repairs bring two different searchers. Here's how to reach both.",
-    date: "2026-10-15",
+    date: "2026-10-23",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -6973,7 +6973,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A missed call text back sends an automatic text to anyone whose call you couldn't answer. Here's how it works, what to say, and the rules to follow.",
     excerpt: "One automatic text can keep a caller from moving on to your competitor. Here's how to set it up right.",
-    date: "2026-10-15",
+    date: "2026-10-23",
     tag: "AI Automation",
     relatedHref: "/growth-kit",
     relatedLabel: "Get the Home Service Growth Kit",
@@ -7027,7 +7027,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Photos on your Google Business Profile shape whether people call you or scroll past. Here's which photos to post, how often, and what to avoid.",
     excerpt: "Customers judge your profile by its photos before they read a single review.",
-    date: "2026-10-15",
+    date: "2026-10-23",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
