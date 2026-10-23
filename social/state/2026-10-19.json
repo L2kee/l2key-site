@@ -202,5 +202,29 @@
     "post": "2026-10-24-talorys-assistant",
     "due": "2026-10-24T12:30:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-24 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6adb97c19acae620d80d55ee",
+    "post": "2026-10-24-ai-doubt-questions",
+    "due": "2026-10-24T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-24 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6adb97c23d5b27036b43c45f",
+    "post": "2026-10-24-ai-doubt-questions",
+    "due": "2026-10-24T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-25 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6adb97c33d5b27036b43c495",
+    "post": "2026-10-25-review-kit",
+    "due": "2026-10-25T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-25 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6adb97c3e4be8a4d86197a06",
+    "post": "2026-10-25-review-kit",
+    "due": "2026-10-25T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
