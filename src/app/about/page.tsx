@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaBand } from "@/components/cta-band";
-import { LinkedInIcon } from "@/components/linkedin-icon";
-import { FOUNDER_LINKEDIN } from "@/lib/schema";
 
 const TITLE = "About EVOGENCY | AI Front Desks and Websites in Orlando";
 const DESCRIPTION =
-  "Meet Mohamed Eltoukhy, the founder and builder behind EVOGENCY. Real software shipped for local businesses in Orlando, FL, not templates and outsourced work.";
+  "EVOGENCY builds AI front desks, websites, SEO, and custom software for local businesses in Orlando, FL. Real software shipped, not templates and outsourced work.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -33,8 +32,7 @@ export const metadata: Metadata = {
 
 const FACTS: { label: string; value: React.ReactNode }[] = [
   { label: "What", value: "A web design, SEO, and custom software studio based in Orlando, Florida." },
-  { label: "Who runs it", value: "Founded by Mohamed Eltoukhy, who designs and builds every project himself." },
-  { label: "Services", value: "Websites, SEO, Google review systems, AI automation, custom CRMs, and mobile apps." },
+  { label: "Services", value: "AI front desks, websites, SEO, Google review systems, AI automation, custom CRMs, and mobile apps." },
   { label: "Built in house", value: "Agency OS, the CRM EVOGENCY runs on, and ElectricalAI Pro, free electrical calculators for the trades." },
   {
     label: "Contact",
@@ -66,37 +64,31 @@ const PRINCIPLES = [
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 pt-28 pb-20">
-      <SectionHeading as="h1" eyebrow="Not an agency. An engineer." title="The Orlando engineer behind EVOGENCY" />
+      <SectionHeading as="h1" eyebrow="About EVOGENCY" title="Real software for Orlando businesses" />
 
       <div className="mt-12">
         <TiltCard className="glass-strong flex flex-col items-center gap-6 rounded-3xl p-10 text-center sm:flex-row sm:text-left">
-          <div className="h-28 w-28 shrink-0 overflow-hidden rounded-full ring-2 ring-white/10 shadow-[0_20px_50px_-15px_rgba(95,216,230,0.5)]">
+          <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-full ring-2 ring-white/10 shadow-[0_20px_50px_-15px_rgba(95,216,230,0.5)]">
             <Image
-              src="/moe-founder-v2.webp"
-              alt="Mohamed Eltoukhy, founder of EVOGENCY, in a navy suit and tie"
-              width={112}
-              height={112}
-              className="h-full w-full object-cover"
+              src="/evogency-logo.png"
+              alt="EVOGENCY logo"
+              width={72}
+              height={72}
+              className="h-18 w-18 object-contain"
             />
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-white">Mohamed Eltoukhy</h2>
-            <p className="text-sm font-medium text-[#5fd8e6]">Founder, EVOGENCY</p>
+            <h2 className="text-xl font-semibold text-white">EVOGENCY</h2>
+            <p className="text-sm font-medium text-[#5fd8e6]">AI front desks, websites, and custom software</p>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
-              Mohamed built EVOGENCY on a simple premise: agencies should ship
-              real software, not slideshows. He designs and builds the CRM
-              platforms, websites, and SEO systems clients rely on, combining
-              a background in electronics and systems work with hands on
-              software development.
+              EVOGENCY was built on a simple premise. Agencies should ship real
+              software, not slideshows. We design and build the AI front desks,
+              websites, CRM platforms, and SEO systems local businesses rely on,
+              and we keep them running after launch.
             </p>
-            <a
-              href={FOUNDER_LINKEDIN}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-glass mt-5 !px-4 !py-2 text-sm text-white"
-            >
-              <LinkedInIcon size={15} /> Connect on LinkedIn
-            </a>
+            <Link href="/services" className="btn-glass mt-5 !px-4 !py-2 text-sm text-white">
+              See what we build
+            </Link>
           </div>
         </TiltCard>
       </div>
