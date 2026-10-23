@@ -1,0 +1,646 @@
+{
+  "week": "2026-10-26",
+  "posts": [
+    {
+      "date": "2026-10-26",
+      "time": "08:00",
+      "id": "2026-10-26-ai-review-themes",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Got 10 reviews? The third step writes your reply.",
+      "why": "Reading reviews one at a time hides the pattern. AI can sort ten of them into themes in about a minute.",
+      "src": "",
+      "steps": [
+        "Copy 10 recent customer reviews into Claude or ChatGPT and ask for the top 3 themes.",
+        "Ask which complaint is the most urgent and why it matters more than the others.",
+        "Ask for a calm reply template for that complaint, so you have a fix and a script."
+      ],
+      "take": "Take names out of the reviews before you paste.",
+      "label": "Step",
+      "say": [
+        "Got ten reviews? The third step writes your reply!",
+        "Reading reviews one at a time hides the pattern. AI can sort ten of them into themes in about a minute.",
+        "First, copy ten recent customer reviews into Claude or ChatGPT, and ask for the top three themes. That's the easy one.",
+        "Next, ask which complaint is the most urgent, and why it matters more than the others.",
+        "Then comes the reply. Ask for a calm template for that complaint, so you have both a fix and a script.",
+        "Take names out of the reviews before you paste."
+      ],
+      "keyword": "THEMES",
+      "prompt": "You are a customer experience analyst. Below are 10 recent reviews of my business. First group them into the top 3 themes and quote one line for each. Then tell me which complaint is the most urgent and why. Then write a calm, honest reply template for that complaint that I can adapt, with [brackets] for names and details. Do not invent facts about my business. Reviews [paste here]",
+      "captions": {
+        "facebook": "How to find the top complaint in your customer reviews with AI.\n\nGot 10 reviews? The third step writes your reply.\n\nReading reviews one at a time hides the pattern. AI can sort ten of them into themes in about a minute.\n\n3 steps.\n1. Copy 10 recent customer reviews into Claude or ChatGPT and ask for the top 3 themes.\n2. Ask which complaint is the most urgent and why it matters more than the others.\n3. Ask for a calm reply template for that complaint, so you have a fix and a script.\n\nTake names out of the reviews before you paste.\n\nWant the exact prompt? Follow EVOGENCY and message us the word THEMES. We'll send it to you.\n\n#AITools #CustomerReviews #SmallBusiness #Productivity",
+        "instagram": "How to find the top complaint in your customer reviews with AI.\n\nGot 10 reviews? The third step writes your reply.\n\nReading reviews one at a time hides the pattern. AI can sort ten of them into themes in about a minute.\n\n3 steps.\n1. Copy 10 recent customer reviews into Claude or ChatGPT and ask for the top 3 themes.\n2. Ask which complaint is the most urgent and why it matters more than the others.\n3. Ask for a calm reply template for that complaint, so you have a fix and a script.\n\nTake names out of the reviews before you paste.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word THEMES. We'll send it to you.\n\n#AITools #CustomerReviews #SmallBusiness #Productivity",
+        "tiktok": "How to find the top complaint in your customer reviews with AI.\n\nGot 10 reviews? The third step writes your reply.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us THEMES.\n\n#AITools #CustomerReviews #SmallBusiness #Productivity"
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "time": "12:30",
+      "id": "2026-10-26-sphinx-git-hook",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "AI wrote your code. Step 3 quizzes you on it.",
+      "why": "Sphinx is a free, MIT licensed Git hook that quizzes you on your own change before a push, using a reviewer model like Claude Code.",
+      "src": "github.com/parthh01/sphinx",
+      "steps": [
+        "Install it from npm, then run sphinx install. It needs Node 22.19 or newer on macOS, Linux, or WSL.",
+        "In each repository run sphinx init, then sphinx doctor to check the setup.",
+        "Push as usual. Sphinx asks you to predict what your change does, and lets the push through when you pass."
+      ],
+      "take": "It is a learning aid, not a security control.",
+      "label": "How to use it",
+      "say": [
+        "Your AI wrote the code! Step three quizzes you on it.",
+        "Sphinx is a free Git hook under the MIT license. Before a push, it quizzes you on your own change.",
+        "First, install it from npm, then run sphinx install. You need Node twenty two or newer. That's the setup done.",
+        "Next, run sphinx init in each repository, then sphinx doctor to check it works.",
+        "Here's the quiz. Push as usual, and Sphinx asks you to predict what your change does. Pass, and the push goes through.",
+        "It's a learning aid, not a security control."
+      ],
+      "captions": {
+        "facebook": "Free Git hook that quizzes you on AI written code.\n\nAI wrote your code. Step 3 quizzes you on it.\n\nSphinx is a free, MIT licensed Git hook that quizzes you on your own change before a push, using a reviewer model like Claude Code.\n\n3 steps.\n1. Install it from npm, then run sphinx install. It needs Node 22.19 or newer on macOS, Linux, or WSL.\n2. In each repository run sphinx init, then sphinx doctor to check the setup.\n3. Push as usual. Sphinx asks you to predict what your change does, and lets the push through when you pass.\n\nIt is a learning aid, not a security control.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#DevTools #OpenSource #Git #AICoding",
+        "instagram": "Free Git hook that quizzes you on AI written code.\n\nAI wrote your code. Step 3 quizzes you on it.\n\nSphinx is a free, MIT licensed Git hook that quizzes you on your own change before a push, using a reviewer model like Claude Code.\n\n3 steps.\n1. Install it from npm, then run sphinx install. It needs Node 22.19 or newer on macOS, Linux, or WSL.\n2. In each repository run sphinx init, then sphinx doctor to check the setup.\n3. Push as usual. Sphinx asks you to predict what your change does, and lets the push through when you pass.\n\nIt is a learning aid, not a security control.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#DevTools #OpenSource #Git #AICoding",
+        "tiktok": "Free Git hook that quizzes you on AI written code.\n\nAI wrote your code. Step 3 quizzes you on it.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#DevTools #OpenSource #Git #AICoding"
+      }
+    },
+    {
+      "date": "2026-10-26",
+      "time": "19:00",
+      "id": "2026-10-26-banks-block-agents",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Banks told AI agents no. Point 3 applies to you.",
+      "why": "After JPMorgan's CEO warned of rogue agents on Oct 13, big banks limited agents that log in with a customer's password. No harm has been reported.",
+      "src": "PYMNTS Oct 19, OECD.AI Oct 16, Let's Data Science Oct 15 2026",
+      "steps": [
+        "JPMorgan, Schwab, Citigroup, and Bank of America describe limits on agents that use a customer's login.",
+        "Outside agents can still read balances through approved connectors like Plaid, but cannot move money.",
+        "The rule to copy is simple. An agent can read, but a person approves anything that sends, spends, or signs."
+      ],
+      "take": "Start with read only access and add more only when it earns it.",
+      "label": "What it means",
+      "say": [
+        "Banks said no to AI agents! Point three applies to you.",
+        "After JPMorgan's CEO warned about rogue agents, big banks limited agents that log in with a customer's password. No harm has been reported so far.",
+        "First, JPMorgan, Schwab, Citigroup, and Bank of America each describe limits on agents that use a customer's login.",
+        "Next, outside agents can still read balances through approved connectors like Plaid. They just can't move money.",
+        "Now point three, the one for you. An agent can read, but a person approves anything that sends, spends, or signs.",
+        "Start with read only access, and add more only when it earns it."
+      ],
+      "captions": {
+        "facebook": "Big banks limit AI agents, what it means for your business.\n\nBanks told AI agents no. Point 3 applies to you.\n\nAfter JPMorgan's CEO warned of rogue agents on Oct 13, big banks limited agents that log in with a customer's password. No harm has been reported.\n\n3 steps.\n1. JPMorgan, Schwab, Citigroup, and Bank of America describe limits on agents that use a customer's login.\n2. Outside agents can still read balances through approved connectors like Plaid, but cannot move money.\n3. The rule to copy is simple. An agent can read, but a person approves anything that sends, spends, or signs.\n\nStart with read only access and add more only when it earns it.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #AIAgents #Cybersecurity #SmallBusiness",
+        "instagram": "Big banks limit AI agents, what it means for your business.\n\nBanks told AI agents no. Point 3 applies to you.\n\nAfter JPMorgan's CEO warned of rogue agents on Oct 13, big banks limited agents that log in with a customer's password. No harm has been reported.\n\n3 steps.\n1. JPMorgan, Schwab, Citigroup, and Bank of America describe limits on agents that use a customer's login.\n2. Outside agents can still read balances through approved connectors like Plaid, but cannot move money.\n3. The rule to copy is simple. An agent can read, but a person approves anything that sends, spends, or signs.\n\nStart with read only access and add more only when it earns it.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #AIAgents #Cybersecurity #SmallBusiness",
+        "tiktok": "Big banks limit AI agents, what it means for your business.\n\nBanks told AI agents no. Point 3 applies to you.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #AIAgents #Cybersecurity #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-10-27",
+      "time": "08:00",
+      "id": "2026-10-27-ai-design-directions",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "One brief, 3 directions. The last one is bold.",
+      "why": "Staring at a blank canvas wastes the first hour. AI can hand you three starting directions before you open Figma.",
+      "src": "",
+      "steps": [
+        "Paste the client brief into Claude or ChatGPT and ask for two safe design directions.",
+        "For each, ask for a color palette, a font pairing, and one line on why it fits the client.",
+        "Ask for a third direction that breaks the obvious look of their industry, then compare all three."
+      ],
+      "take": "Pick one direction before you open Figma.",
+      "label": "Step",
+      "say": [
+        "One brief, three directions! The last one is bold.",
+        "Staring at a blank canvas wastes the first hour. AI can hand you three starting directions before you open Figma.",
+        "First, paste the client brief into Claude or ChatGPT, and ask for two safe design directions. That's the warm up.",
+        "Next, ask for a color palette, a font pairing, and one line on why each fits the client.",
+        "Time for the bold one. Ask for a third direction that breaks the obvious look of their industry, then compare all three.",
+        "Pick one direction before you open Figma."
+      ],
+      "keyword": "DIRECTIONS",
+      "prompt": "You are a senior brand designer. Below is a client brief. First give me two safe design directions. Then give me a third direction that breaks the obvious look of the client's industry. For each direction give a color palette with hex codes, a font pairing, and one line on why it fits this client. Finally tell me which direction you would show first and why. Do not invent facts about the client. Brief [paste here]",
+      "captions": {
+        "facebook": "How to get 3 design directions from a client brief with AI.\n\nOne brief, 3 directions. The last one is bold.\n\nStaring at a blank canvas wastes the first hour. AI can hand you three starting directions before you open Figma.\n\n3 steps.\n1. Paste the client brief into Claude or ChatGPT and ask for two safe design directions.\n2. For each, ask for a color palette, a font pairing, and one line on why it fits the client.\n3. Ask for a third direction that breaks the obvious look of their industry, then compare all three.\n\nPick one direction before you open Figma.\n\nWant the exact prompt? Follow EVOGENCY and message us the word DIRECTIONS. We'll send it to you.\n\n#Design #GraphicDesign #AITools #Figma",
+        "instagram": "How to get 3 design directions from a client brief with AI.\n\nOne brief, 3 directions. The last one is bold.\n\nStaring at a blank canvas wastes the first hour. AI can hand you three starting directions before you open Figma.\n\n3 steps.\n1. Paste the client brief into Claude or ChatGPT and ask for two safe design directions.\n2. For each, ask for a color palette, a font pairing, and one line on why it fits the client.\n3. Ask for a third direction that breaks the obvious look of their industry, then compare all three.\n\nPick one direction before you open Figma.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word DIRECTIONS. We'll send it to you.\n\n#Design #GraphicDesign #AITools #Figma",
+        "tiktok": "How to get 3 design directions from a client brief with AI.\n\nOne brief, 3 directions. The last one is bold.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us DIRECTIONS.\n\n#Design #GraphicDesign #AITools #Figma"
+      }
+    },
+    {
+      "date": "2026-10-27",
+      "time": "12:30",
+      "id": "2026-10-27-adobe-plugin-chatgpt",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Edit images inside ChatGPT. The third step is sliders.",
+      "why": "Adobe's plugin puts Photoshop, Adobe Express, and Acrobat tools in a ChatGPT side panel. Adobe says it is rolling out on ChatGPT web and app.",
+      "src": "Adobe blog, Sep 29 2026",
+      "steps": [
+        "Open the Adobe plugin in ChatGPT, then open an image in the side panel.",
+        "Select an area and ask ChatGPT to use the Adobe plugin to change it.",
+        "Refine the result with sliders for hue, saturation, and contrast, and the edit stays in your chat."
+      ],
+      "take": "Adobe's post states no pricing, so check your plan first.",
+      "label": "How to use it",
+      "say": [
+        "Edit images inside ChatGPT! The third step is the sliders.",
+        "Adobe's plugin puts Photoshop, Adobe Express, and Acrobat tools in a ChatGPT side panel.",
+        "First, open the Adobe plugin in ChatGPT, then open an image in the side panel. That's the setup.",
+        "Next, select an area and ask ChatGPT to use the Adobe plugin to change it.",
+        "Then the sliders. Refine the result with hue, saturation, and contrast, and the edit stays right in your chat.",
+        "Adobe's post states no pricing, so check your plan first."
+      ],
+      "captions": {
+        "facebook": "Adobe plugin in ChatGPT, edit images and PDFs in chat.\n\nEdit images inside ChatGPT. The third step is sliders.\n\nAdobe's plugin puts Photoshop, Adobe Express, and Acrobat tools in a ChatGPT side panel. Adobe says it is rolling out on ChatGPT web and app.\n\n3 steps.\n1. Open the Adobe plugin in ChatGPT, then open an image in the side panel.\n2. Select an area and ask ChatGPT to use the Adobe plugin to change it.\n3. Refine the result with sliders for hue, saturation, and contrast, and the edit stays in your chat.\n\nAdobe's post states no pricing, so check your plan first.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Design #Photoshop #ChatGPT #CreativeTools",
+        "instagram": "Adobe plugin in ChatGPT, edit images and PDFs in chat.\n\nEdit images inside ChatGPT. The third step is sliders.\n\nAdobe's plugin puts Photoshop, Adobe Express, and Acrobat tools in a ChatGPT side panel. Adobe says it is rolling out on ChatGPT web and app.\n\n3 steps.\n1. Open the Adobe plugin in ChatGPT, then open an image in the side panel.\n2. Select an area and ask ChatGPT to use the Adobe plugin to change it.\n3. Refine the result with sliders for hue, saturation, and contrast, and the edit stays in your chat.\n\nAdobe's post states no pricing, so check your plan first.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Design #Photoshop #ChatGPT #CreativeTools",
+        "tiktok": "Adobe plugin in ChatGPT, edit images and PDFs in chat.\n\nEdit images inside ChatGPT. The third step is sliders.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Design #Photoshop #ChatGPT #CreativeTools"
+      }
+    },
+    {
+      "date": "2026-10-27",
+      "time": "19:00",
+      "id": "2026-10-27-claude-duet-approval",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Claude Duet checks your apps. The third part is approval.",
+      "why": "Anthropic announced a research preview of Duet on Oct 21. It sends a morning brief and alerts you when something needs attention.",
+      "src": "CNBC, MacRumors Oct 21, The Decoder Oct 22 2026",
+      "steps": [
+        "It sends a morning brief and checks your connected apps every few hours.",
+        "It is a research preview, limited to US Pro and Max subscribers on a waitlist.",
+        "It asks for your approval before it sends messages, pays, signs, or deletes. Look for that in any agent."
+      ],
+      "take": "Helpful agents are coming. Set the rules before you hand one the keys.",
+      "label": "What it means",
+      "say": [
+        "Claude Duet checks your apps! The third part is approval.",
+        "Anthropic announced a research preview of Duet. It sends a morning brief, and alerts you when something needs attention.",
+        "First, it checks your connected apps every few hours and sends that brief.",
+        "Next, it's a research preview, limited to US Pro and Max subscribers on a waitlist.",
+        "And the approval part. It asks before it sends messages, pays, signs, or deletes. Look for that in any agent.",
+        "Set the rules before you hand one the keys."
+      ],
+      "captions": {
+        "facebook": "Claude Duet explained, an AI agent that asks first.\n\nClaude Duet checks your apps. The third part is approval.\n\nAnthropic announced a research preview of Duet on Oct 21. It sends a morning brief and alerts you when something needs attention.\n\n3 steps.\n1. It sends a morning brief and checks your connected apps every few hours.\n2. It is a research preview, limited to US Pro and Max subscribers on a waitlist.\n3. It asks for your approval before it sends messages, pays, signs, or deletes. Look for that in any agent.\n\nHelpful agents are coming. Set the rules before you hand one the keys.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Anthropic #AIAgents #Automation",
+        "instagram": "Claude Duet explained, an AI agent that asks first.\n\nClaude Duet checks your apps. The third part is approval.\n\nAnthropic announced a research preview of Duet on Oct 21. It sends a morning brief and alerts you when something needs attention.\n\n3 steps.\n1. It sends a morning brief and checks your connected apps every few hours.\n2. It is a research preview, limited to US Pro and Max subscribers on a waitlist.\n3. It asks for your approval before it sends messages, pays, signs, or deletes. Look for that in any agent.\n\nHelpful agents are coming. Set the rules before you hand one the keys.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Anthropic #AIAgents #Automation",
+        "tiktok": "Claude Duet explained, an AI agent that asks first.\n\nClaude Duet checks your apps. The third part is approval.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #Anthropic #AIAgents #Automation"
+      }
+    },
+    {
+      "date": "2026-10-28",
+      "time": "08:00",
+      "id": "2026-10-28-ai-pr-review",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Review any pull request fast. Step 3 finds the risk.",
+      "why": "Big diffs are easy to skim and hard to trust. AI can summarize one, list the tests it needs, and point at the scary lines.",
+      "src": "",
+      "steps": [
+        "Paste the diff into Claude or ChatGPT and ask for a plain English summary for the reviewer.",
+        "Ask for a test list that covers each change, including cases the author may have skipped.",
+        "Ask for the 5 riskiest lines, with the reason each one could break something."
+      ],
+      "take": "Check your company's rules before pasting private code.",
+      "label": "Step",
+      "say": [
+        "Review any pull request fast! Step three finds the risk.",
+        "Big diffs are easy to skim and hard to trust. AI can summarize one and point at the scary lines.",
+        "First, feed the diff into Claude or ChatGPT and ask for a plain English summary. Good. It gets better.",
+        "Next, ask for a test list that covers each change, including cases the author may have skipped.",
+        "Finally, the risk. Ask for the five riskiest lines, with the reason each one could break something.",
+        "Check your company's rules before pasting private code."
+      ],
+      "keyword": "DIFF",
+      "prompt": "You are a careful senior engineer reviewing a pull request. Below is the diff. First write a plain English summary for the reviewer in 5 sentences or fewer. Then list the tests this change needs, including edge cases the author may have skipped. Then name the 5 riskiest lines and say exactly how each could break something. If something is unclear from the diff alone, say so instead of guessing. Diff [paste here]",
+      "captions": {
+        "facebook": "How to review a pull request faster with AI.\n\nReview any pull request fast. Step 3 finds the risk.\n\nBig diffs are easy to skim and hard to trust. AI can summarize one, list the tests it needs, and point at the scary lines.\n\n3 steps.\n1. Paste the diff into Claude or ChatGPT and ask for a plain English summary for the reviewer.\n2. Ask for a test list that covers each change, including cases the author may have skipped.\n3. Ask for the 5 riskiest lines, with the reason each one could break something.\n\nCheck your company's rules before pasting private code.\n\nWant the exact prompt? Follow EVOGENCY and message us the word DIFF. We'll send it to you.\n\n#Developers #CodeReview #AITools #Programming",
+        "instagram": "How to review a pull request faster with AI.\n\nReview any pull request fast. Step 3 finds the risk.\n\nBig diffs are easy to skim and hard to trust. AI can summarize one, list the tests it needs, and point at the scary lines.\n\n3 steps.\n1. Paste the diff into Claude or ChatGPT and ask for a plain English summary for the reviewer.\n2. Ask for a test list that covers each change, including cases the author may have skipped.\n3. Ask for the 5 riskiest lines, with the reason each one could break something.\n\nCheck your company's rules before pasting private code.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word DIFF. We'll send it to you.\n\n#Developers #CodeReview #AITools #Programming",
+        "tiktok": "How to review a pull request faster with AI.\n\nReview any pull request fast. Step 3 finds the risk.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us DIFF.\n\n#Developers #CodeReview #AITools #Programming"
+      }
+    },
+    {
+      "date": "2026-10-28",
+      "time": "12:30",
+      "id": "2026-10-28-permit-pending-game",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Free city game where everyone objects. Round 3 is lawsuits.",
+      "why": "Permit Pending is a free browser city builder. You are an elected mayor, and every project goes through hearings, objections, and appeals.",
+      "src": "permit.petercai.com",
+      "steps": [
+        "Open the game in your browser and pick a scenario, from Blank Slate to The Unaffordable Metropolis.",
+        "File a project like new housing, then offer concessions at the public hearing to win votes.",
+        "Survive the appeals and lawsuits, and stay in office through a reelection every four years."
+      ],
+      "take": "No account needed, and it works offline after your first visit.",
+      "label": "How to use it",
+      "say": [
+        "A free city game where everyone objects! Round three is lawsuits.",
+        "Permit Pending is a free browser city builder. You're an elected mayor, and every project goes through hearings, objections, and appeals.",
+        "First, open it in your browser and pick a scenario, from Blank Slate to The Unaffordable Metropolis. That's the easy part.",
+        "Next, file a project, like new housing, then offer concessions at the public hearing to win votes.",
+        "Now round three. Survive the appeals and the lawsuits, and stay in office through reelection every four years.",
+        "No account needed, and it works offline after your first visit."
+      ],
+      "captions": {
+        "facebook": "Free browser city builder game where you are the mayor.\n\nFree city game where everyone objects. Round 3 is lawsuits.\n\nPermit Pending is a free browser city builder. You are an elected mayor, and every project goes through hearings, objections, and appeals.\n\n3 steps.\n1. Open the game in your browser and pick a scenario, from Blank Slate to The Unaffordable Metropolis.\n2. File a project like new housing, then offer concessions at the public hearing to win votes.\n3. Survive the appeals and lawsuits, and stay in office through a reelection every four years.\n\nNo account needed, and it works offline after your first visit.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#IndieGames #BrowserGames #Creators #CityBuilder",
+        "instagram": "Free browser city builder game where you are the mayor.\n\nFree city game where everyone objects. Round 3 is lawsuits.\n\nPermit Pending is a free browser city builder. You are an elected mayor, and every project goes through hearings, objections, and appeals.\n\n3 steps.\n1. Open the game in your browser and pick a scenario, from Blank Slate to The Unaffordable Metropolis.\n2. File a project like new housing, then offer concessions at the public hearing to win votes.\n3. Survive the appeals and lawsuits, and stay in office through a reelection every four years.\n\nNo account needed, and it works offline after your first visit.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#IndieGames #BrowserGames #Creators #CityBuilder",
+        "tiktok": "Free browser city builder game where you are the mayor.\n\nFree city game where everyone objects. Round 3 is lawsuits.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#IndieGames #BrowserGames #Creators #CityBuilder"
+      }
+    },
+    {
+      "date": "2026-10-28",
+      "time": "19:00",
+      "id": "2026-10-28-muse-share-leak",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Meta leaked 6,800 AI chats. Check number 3 today.",
+      "why": "Security firm Claroc found Muse share links exposed through public DNS. Meta suspended sharing after Ars Technica asked about it.",
+      "src": "Ars Technica, Futurism, Slashdot, Oct 20 2026",
+      "steps": [
+        "Keep loan applications, revenue numbers, and account details out of any chat you might share.",
+        "Find out whether a share link is public or private before you send it.",
+        "Delete old shared chats you no longer need, since they may still be live."
+      ],
+      "take": "Treat every AI chat like an email you might forward by accident.",
+      "label": "What it means",
+      "say": [
+        "Meta leaked six thousand eight hundred AI chats! Check number three today.",
+        "Security firm Claroc found that Muse share links were exposed through public DNS. Meta suspended sharing after Ars Technica asked about it.",
+        "First, keep loan applications, revenue numbers, and account details out of any chat you might share.",
+        "Next, find out whether a share link is public or private before you send it.",
+        "Now number three. Delete old shared chats you no longer need, because they may still be live.",
+        "Treat every AI chat like an email you might forward by accident."
+      ],
+      "captions": {
+        "facebook": "Meta Muse leaked private AI chats, how to protect yours.\n\nMeta leaked 6,800 AI chats. Check number 3 today.\n\nSecurity firm Claroc found Muse share links exposed through public DNS. Meta suspended sharing after Ars Technica asked about it.\n\n3 steps.\n1. Keep loan applications, revenue numbers, and account details out of any chat you might share.\n2. Find out whether a share link is public or private before you send it.\n3. Delete old shared chats you no longer need, since they may still be live.\n\nTreat every AI chat like an email you might forward by accident.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #DataPrivacy #Cybersecurity #SmallBusiness",
+        "instagram": "Meta Muse leaked private AI chats, how to protect yours.\n\nMeta leaked 6,800 AI chats. Check number 3 today.\n\nSecurity firm Claroc found Muse share links exposed through public DNS. Meta suspended sharing after Ars Technica asked about it.\n\n3 steps.\n1. Keep loan applications, revenue numbers, and account details out of any chat you might share.\n2. Find out whether a share link is public or private before you send it.\n3. Delete old shared chats you no longer need, since they may still be live.\n\nTreat every AI chat like an email you might forward by accident.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #DataPrivacy #Cybersecurity #SmallBusiness",
+        "tiktok": "Meta Muse leaked private AI chats, how to protect yours.\n\nMeta leaked 6,800 AI chats. Check number 3 today.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #DataPrivacy #Cybersecurity #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "time": "08:00",
+      "id": "2026-10-29-ai-morning-brief",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Overloaded inbox? The third step plans your first hour.",
+      "why": "Most mornings start with a pile and no order. AI can rank the pile before you reply to a single thing.",
+      "src": "",
+      "steps": [
+        "Paste a week of calendar entries and email subject lines into Claude or ChatGPT.",
+        "Ask what needs a reply today, what can wait, and what looks missing from your list.",
+        "Ask for a plan for your first hour, with the one thing to finish before anything else."
+      ],
+      "take": "Leave out private details before you paste.",
+      "label": "Step",
+      "say": [
+        "Overloaded inbox? The third step plans your first hour!",
+        "Most mornings start with a pile and no order. AI can rank the pile before you reply to a single thing.",
+        "First, paste a week of calendar entries and email subject lines into Claude or ChatGPT. Quick win done.",
+        "Next, ask what needs a reply today, what can wait, and what looks missing.",
+        "Here's the plan. Ask for your first hour, with the one thing to finish before anything else.",
+        "Leave out private details before you paste."
+      ],
+      "keyword": "MORNING",
+      "prompt": "You are my chief of staff. Below are my calendar entries and email subject lines for the week. First rank what needs a reply today, what can wait, and what looks missing or unclear. Then write a plan for my first hour of the day, starting with the one thing I should finish before anything else. Keep it under 150 words and do not invent meetings or emails. Calendar and subjects [paste here]",
+      "captions": {
+        "facebook": "How to plan your morning with AI.\n\nOverloaded inbox? The third step plans your first hour.\n\nMost mornings start with a pile and no order. AI can rank the pile before you reply to a single thing.\n\n3 steps.\n1. Paste a week of calendar entries and email subject lines into Claude or ChatGPT.\n2. Ask what needs a reply today, what can wait, and what looks missing from your list.\n3. Ask for a plan for your first hour, with the one thing to finish before anything else.\n\nLeave out private details before you paste.\n\nWant the exact prompt? Follow EVOGENCY and message us the word MORNING. We'll send it to you.\n\n#AITools #Productivity #TimeManagement #WorkSmarter",
+        "instagram": "How to plan your morning with AI.\n\nOverloaded inbox? The third step plans your first hour.\n\nMost mornings start with a pile and no order. AI can rank the pile before you reply to a single thing.\n\n3 steps.\n1. Paste a week of calendar entries and email subject lines into Claude or ChatGPT.\n2. Ask what needs a reply today, what can wait, and what looks missing from your list.\n3. Ask for a plan for your first hour, with the one thing to finish before anything else.\n\nLeave out private details before you paste.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word MORNING. We'll send it to you.\n\n#AITools #Productivity #TimeManagement #WorkSmarter",
+        "tiktok": "How to plan your morning with AI.\n\nOverloaded inbox? The third step plans your first hour.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us MORNING.\n\n#AITools #Productivity #TimeManagement #WorkSmarter"
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "time": "12:30",
+      "id": "2026-10-29-mitmproxy-tool",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "See your app's traffic. Tool 3 runs in a browser.",
+      "why": "mitmproxy is a free, MIT licensed intercepting proxy that lets developers see and edit HTTP, HTTP/2, and WebSocket traffic.",
+      "src": "github.com/mitmproxy/mitmproxy",
+      "steps": [
+        "Follow the install guide at docs.mitmproxy.org, then run mitmproxy for the console version.",
+        "Use mitmdump when you want a command line view, like tcpdump for HTTP.",
+        "Use mitmweb for a browser based view to inspect your traffic."
+      ],
+      "take": "Only inspect traffic from apps you own or are allowed to test.",
+      "label": "How to use it",
+      "say": [
+        "See what your app sends! Tool three runs in a browser.",
+        "mitmproxy is a free, MIT licensed proxy that lets developers see and edit HTTP, and WebSocket traffic.",
+        "First, follow the install guide at docs dot mitmproxy dot org, then run mitmproxy for the console version.",
+        "Next, use mitmdump when you want a command line view. Think tcpdump for HTTP.",
+        "Now tool three. Use mitmweb, and inspect your traffic in a browser.",
+        "Only inspect traffic from apps you own or are allowed to test."
+      ],
+      "captions": {
+        "facebook": "Free tool to inspect HTTP traffic from your apps.\n\nSee your app's traffic. Tool 3 runs in a browser.\n\nmitmproxy is a free, MIT licensed intercepting proxy that lets developers see and edit HTTP, HTTP/2, and WebSocket traffic.\n\n3 steps.\n1. Follow the install guide at docs.mitmproxy.org, then run mitmproxy for the console version.\n2. Use mitmdump when you want a command line view, like tcpdump for HTTP.\n3. Use mitmweb for a browser based view to inspect your traffic.\n\nOnly inspect traffic from apps you own or are allowed to test.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#DevTools #OpenSource #Debugging #WebDevelopment",
+        "instagram": "Free tool to inspect HTTP traffic from your apps.\n\nSee your app's traffic. Tool 3 runs in a browser.\n\nmitmproxy is a free, MIT licensed intercepting proxy that lets developers see and edit HTTP, HTTP/2, and WebSocket traffic.\n\n3 steps.\n1. Follow the install guide at docs.mitmproxy.org, then run mitmproxy for the console version.\n2. Use mitmdump when you want a command line view, like tcpdump for HTTP.\n3. Use mitmweb for a browser based view to inspect your traffic.\n\nOnly inspect traffic from apps you own or are allowed to test.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#DevTools #OpenSource #Debugging #WebDevelopment",
+        "tiktok": "Free tool to inspect HTTP traffic from your apps.\n\nSee your app's traffic. Tool 3 runs in a browser.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#DevTools #OpenSource #Debugging #WebDevelopment"
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "time": "19:00",
+      "id": "2026-10-29-php-flaw-host",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Critical PHP flaw. Step 3 is emailing your host.",
+      "why": "On Oct 21 PHP released versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 to fix two flaws rated 9.2 out of 10 that could let an attacker run code.",
+      "src": "PHP Foundation, Patchstack, Codeable, Oct 21 2026",
+      "steps": [
+        "The flaws are in PHP itself, so updating WordPress or your plugins does not fix them.",
+        "Many Linux hosts patch without changing the version number, so an old looking version proves nothing.",
+        "Ask your host, in writing, if they applied the October 21 PHP security release."
+      ],
+      "take": "A managed site beats a forgotten one.",
+      "label": "What it means",
+      "say": [
+        "Critical PHP flaw! Step three is one email to your host.",
+        "On October twenty first, PHP released new versions to fix two flaws rated nine point two out of ten. They could let an attacker run code on a server.",
+        "First, the flaws are in PHP itself, so updating WordPress or your plugins does not fix them.",
+        "Next, many Linux hosts patch without changing the version number. An old looking version proves nothing.",
+        "Now step three, the email. Ask your host, in writing, if they applied the October twenty first PHP security release.",
+        "A managed site beats a forgotten one."
+      ],
+      "captions": {
+        "facebook": "Critical PHP security flaw, what WordPress site owners should do.\n\nCritical PHP flaw. Step 3 is emailing your host.\n\nOn Oct 21 PHP released versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 to fix two flaws rated 9.2 out of 10 that could let an attacker run code.\n\n3 steps.\n1. The flaws are in PHP itself, so updating WordPress or your plugins does not fix them.\n2. Many Linux hosts patch without changing the version number, so an old looking version proves nothing.\n3. Ask your host, in writing, if they applied the October 21 PHP security release.\n\nA managed site beats a forgotten one.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #WordPress #WebsiteSecurity #SmallBusiness",
+        "instagram": "Critical PHP security flaw, what WordPress site owners should do.\n\nCritical PHP flaw. Step 3 is emailing your host.\n\nOn Oct 21 PHP released versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 to fix two flaws rated 9.2 out of 10 that could let an attacker run code.\n\n3 steps.\n1. The flaws are in PHP itself, so updating WordPress or your plugins does not fix them.\n2. Many Linux hosts patch without changing the version number, so an old looking version proves nothing.\n3. Ask your host, in writing, if they applied the October 21 PHP security release.\n\nA managed site beats a forgotten one.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #WordPress #WebsiteSecurity #SmallBusiness",
+        "tiktok": "Critical PHP security flaw, what WordPress site owners should do.\n\nCritical PHP flaw. Step 3 is emailing your host.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #WordPress #WebsiteSecurity #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "time": "08:00",
+      "id": "2026-10-30-ai-customer-faq",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "20 customer questions. The last step builds your FAQ.",
+      "why": "You keep typing the same answers. AI can find the questions that come up most and draft the replies once.",
+      "src": "",
+      "steps": [
+        "Paste 20 questions customers asked you by email into Claude or ChatGPT.",
+        "Ask it to group them and name the 5 that come up most.",
+        "Ask for a short, plain answer to each of the top 5, ready to paste onto a FAQ page."
+      ],
+      "take": "Answer it once, then stop typing it twenty times.",
+      "label": "Step",
+      "say": [
+        "Twenty customer questions! The last step builds your FAQ.",
+        "You keep typing the same answers. AI can find the questions that come up most, and draft the replies once.",
+        "First, drop twenty questions customers asked you by email into Claude or ChatGPT. Simple so far.",
+        "Next, ask it to group them, and name the five that come up most.",
+        "Then the FAQ. Ask for a short, plain answer to each of the top five, ready to paste onto a page.",
+        "Answer it once, then stop typing it twenty times."
+      ],
+      "keyword": "FAQ",
+      "prompt": "You are a customer support writer. Below are 20 questions real customers asked my business. First group them by topic and name the 5 questions that come up most. Then write a short, plain answer to each of those 5, in a friendly voice, under 60 words each. If you need a fact I did not give you, put [brackets] there instead of guessing. Finally suggest where on my website each answer should live. Questions [paste here]",
+      "captions": {
+        "facebook": "How to write a FAQ page from customer emails with AI.\n\n20 customer questions. The last step builds your FAQ.\n\nYou keep typing the same answers. AI can find the questions that come up most and draft the replies once.\n\n3 steps.\n1. Paste 20 questions customers asked you by email into Claude or ChatGPT.\n2. Ask it to group them and name the 5 that come up most.\n3. Ask for a short, plain answer to each of the top 5, ready to paste onto a FAQ page.\n\nAnswer it once, then stop typing it twenty times.\n\nWant the exact prompt? Follow EVOGENCY and message us the word FAQ. We'll send it to you.\n\n#AITools #SmallBusiness #CustomerService #Productivity",
+        "instagram": "How to write a FAQ page from customer emails with AI.\n\n20 customer questions. The last step builds your FAQ.\n\nYou keep typing the same answers. AI can find the questions that come up most and draft the replies once.\n\n3 steps.\n1. Paste 20 questions customers asked you by email into Claude or ChatGPT.\n2. Ask it to group them and name the 5 that come up most.\n3. Ask for a short, plain answer to each of the top 5, ready to paste onto a FAQ page.\n\nAnswer it once, then stop typing it twenty times.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word FAQ. We'll send it to you.\n\n#AITools #SmallBusiness #CustomerService #Productivity",
+        "tiktok": "How to write a FAQ page from customer emails with AI.\n\n20 customer questions. The last step builds your FAQ.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us FAQ.\n\n#AITools #SmallBusiness #CustomerService #Productivity"
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "time": "12:30",
+      "id": "2026-10-30-local-wikipedia",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Wikipedia for your walk. The last button is a surprise.",
+      "why": "Local Wikipedia shows Wikipedia pages for places about a half hour walk from you. Your location stays in your browser.",
+      "src": "edjefferson.com/localwiki",
+      "steps": [
+        "Enter a town, landmark, or postcode and click Start, or use your location.",
+        "Browse the Nearby list for pages about places within about a half hour walk.",
+        "Hit Random article to find something odd close to home."
+      ],
+      "take": "A good way to find story ideas on your own street.",
+      "label": "How to use it",
+      "say": [
+        "Wikipedia for your walk! The last button is a surprise.",
+        "Local Wikipedia shows Wikipedia pages for places about a half hour walk from you. Your location stays in your browser.",
+        "First, enter a town, landmark, or postcode and click Start. Or just use your location.",
+        "Next, browse the Nearby list for pages about places within about a half hour walk.",
+        "And the surprise. Hit Random article, and find something odd close to home.",
+        "A good way to find story ideas on your own street."
+      ],
+      "captions": {
+        "facebook": "Wikipedia map for places near you.\n\nWikipedia for your walk. The last button is a surprise.\n\nLocal Wikipedia shows Wikipedia pages for places about a half hour walk from you. Your location stays in your browser.\n\n3 steps.\n1. Enter a town, landmark, or postcode and click Start, or use your location.\n2. Browse the Nearby list for pages about places within about a half hour walk.\n3. Hit Random article to find something odd close to home.\n\nA good way to find story ideas on your own street.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Creators #Wikipedia #Storytelling #Explore",
+        "instagram": "Wikipedia map for places near you.\n\nWikipedia for your walk. The last button is a surprise.\n\nLocal Wikipedia shows Wikipedia pages for places about a half hour walk from you. Your location stays in your browser.\n\n3 steps.\n1. Enter a town, landmark, or postcode and click Start, or use your location.\n2. Browse the Nearby list for pages about places within about a half hour walk.\n3. Hit Random article to find something odd close to home.\n\nA good way to find story ideas on your own street.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Creators #Wikipedia #Storytelling #Explore",
+        "tiktok": "Wikipedia map for places near you.\n\nWikipedia for your walk. The last button is a surprise.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Creators #Wikipedia #Storytelling #Explore"
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "time": "19:00",
+      "id": "2026-10-30-gemini-business-tools",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Gemini's new business tools. Number 3 is what stays out.",
+      "why": "On Oct 20 Google announced a Gemini business page with marketing and finance skills and connected apps like Google Business Profile, Shopify, and Xero.",
+      "src": "Google, ANI, Storyboard18, Oct 20 and 21 2026",
+      "steps": [
+        "Set your brand style once, with your website, fonts, and colors, and Gemini keeps it for later images.",
+        "Hand it receipts and spreadsheets to turn into charts, plus rough drafts of posts and offers.",
+        "Keep customer data and bank details out of it, and remember strategy still needs a human."
+      ],
+      "take": "Try it on low risk work first.",
+      "label": "What it means",
+      "say": [
+        "Gemini's new business tools! Number three is what stays out.",
+        "Google announced a Gemini business page, with marketing and finance skills and connected apps like Google Business Profile, Shopify, and Xero.",
+        "First, set your brand style once, with your website, fonts, and colors, and Gemini keeps it for later images.",
+        "Next, hand it receipts and spreadsheets to turn into charts, plus rough drafts of posts and offers.",
+        "And number three. Keep customer data and bank details out of it, and remember strategy still needs a human.",
+        "Try it on low risk work first."
+      ],
+      "captions": {
+        "facebook": "Google Gemini business tools for small business owners.\n\nGemini's new business tools. Number 3 is what stays out.\n\nOn Oct 20 Google announced a Gemini business page with marketing and finance skills and connected apps like Google Business Profile, Shopify, and Xero.\n\n3 steps.\n1. Set your brand style once, with your website, fonts, and colors, and Gemini keeps it for later images.\n2. Hand it receipts and spreadsheets to turn into charts, plus rough drafts of posts and offers.\n3. Keep customer data and bank details out of it, and remember strategy still needs a human.\n\nTry it on low risk work first.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Gemini #SmallBusiness #Marketing",
+        "instagram": "Google Gemini business tools for small business owners.\n\nGemini's new business tools. Number 3 is what stays out.\n\nOn Oct 20 Google announced a Gemini business page with marketing and finance skills and connected apps like Google Business Profile, Shopify, and Xero.\n\n3 steps.\n1. Set your brand style once, with your website, fonts, and colors, and Gemini keeps it for later images.\n2. Hand it receipts and spreadsheets to turn into charts, plus rough drafts of posts and offers.\n3. Keep customer data and bank details out of it, and remember strategy still needs a human.\n\nTry it on low risk work first.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Gemini #SmallBusiness #Marketing",
+        "tiktok": "Google Gemini business tools for small business owners.\n\nGemini's new business tools. Number 3 is what stays out.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #Gemini #SmallBusiness #Marketing"
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "time": "08:00",
+      "id": "2026-10-31-ai-permission-check",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Before you click allow, check number 3 first.",
+      "why": "Most of us click allow without reading. AI can read the permission screen for you and tell you what you are really agreeing to.",
+      "src": "",
+      "steps": [
+        "Copy the permission screen text and paste it into Claude or ChatGPT.",
+        "Ask what the tool can read, and what it can change, send, spend, or delete.",
+        "Ask which permissions to refuse or limit, and what you should still approve yourself."
+      ],
+      "take": "Start with read only access and add more later.",
+      "label": "Step",
+      "say": [
+        "Before you click allow, check number three first!",
+        "Most of us click allow without reading. AI can read the permission screen for you, and tell you what you're really agreeing to.",
+        "First, copy the permission screen text and paste it into Claude or ChatGPT. That's the easy one.",
+        "Next, ask what the tool can read, and what it can change, send, spend, or delete.",
+        "Finally, number three. Ask which permissions to refuse or limit, and what you should still approve yourself.",
+        "Start with read only access, and add more later."
+      ],
+      "keyword": "ACCESS",
+      "prompt": "You are a careful security minded advisor for a small business owner. Below is the text of a permission screen from a tool I am about to connect to my accounts. First list everything it can read. Then list everything it can change, send, spend, or delete. Then tell me which permissions I should refuse or limit, and what I should still approve myself. If something is unclear, say so instead of guessing. Permission text [paste here]",
+      "captions": {
+        "facebook": "How to check app permissions before you connect an AI tool.\n\nBefore you click allow, check number 3 first.\n\nMost of us click allow without reading. AI can read the permission screen for you and tell you what you are really agreeing to.\n\n3 steps.\n1. Copy the permission screen text and paste it into Claude or ChatGPT.\n2. Ask what the tool can read, and what it can change, send, spend, or delete.\n3. Ask which permissions to refuse or limit, and what you should still approve yourself.\n\nStart with read only access and add more later.\n\nWant the exact prompt? Follow EVOGENCY and message us the word ACCESS. We'll send it to you.\n\n#AITools #Cybersecurity #SmallBusiness #DataPrivacy",
+        "instagram": "How to check app permissions before you connect an AI tool.\n\nBefore you click allow, check number 3 first.\n\nMost of us click allow without reading. AI can read the permission screen for you and tell you what you are really agreeing to.\n\n3 steps.\n1. Copy the permission screen text and paste it into Claude or ChatGPT.\n2. Ask what the tool can read, and what it can change, send, spend, or delete.\n3. Ask which permissions to refuse or limit, and what you should still approve yourself.\n\nStart with read only access and add more later.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word ACCESS. We'll send it to you.\n\n#AITools #Cybersecurity #SmallBusiness #DataPrivacy",
+        "tiktok": "How to check app permissions before you connect an AI tool.\n\nBefore you click allow, check number 3 first.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us ACCESS.\n\n#AITools #Cybersecurity #SmallBusiness #DataPrivacy"
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "time": "12:30",
+      "id": "2026-10-31-openshell-sandbox",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Cage your AI agents. Step 3 hides your keys.",
+      "why": "OpenShell is NVIDIA's free, Apache 2.0 runtime that runs AI agents in isolated sandboxes and checks every network connection against policy.",
+      "src": "github.com/NVIDIA/OpenShell",
+      "steps": [
+        "Run the installer from the OpenShell GitHub page. You need Docker or Podman.",
+        "Create a sandbox with openshell sandbox create, then run your agent inside it.",
+        "Set policies for files, network, and processes. The agent never sees your real credentials."
+      ],
+      "take": "Windows support through WSL 2 is still experimental.",
+      "label": "How to use it",
+      "say": [
+        "Keep AI agents in a box! Step three hides your keys.",
+        "OpenShell is NVIDIA's free, Apache two point oh runtime that runs AI agents in isolated sandboxes, and checks every network connection against policy.",
+        "First, run the installer from the OpenShell GitHub page. You need Docker or Podman.",
+        "Next, create a sandbox with openshell sandbox create, then run your agent inside it.",
+        "Then step three. Set policies for files, network, and processes. The agent never sees your real credentials.",
+        "Windows support through WSL two is still experimental."
+      ],
+      "captions": {
+        "facebook": "Free sandbox for running AI agents safely.\n\nCage your AI agents. Step 3 hides your keys.\n\nOpenShell is NVIDIA's free, Apache 2.0 runtime that runs AI agents in isolated sandboxes and checks every network connection against policy.\n\n3 steps.\n1. Run the installer from the OpenShell GitHub page. You need Docker or Podman.\n2. Create a sandbox with openshell sandbox create, then run your agent inside it.\n3. Set policies for files, network, and processes. The agent never sees your real credentials.\n\nWindows support through WSL 2 is still experimental.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#DevTools #AIAgents #OpenSource #Security",
+        "instagram": "Free sandbox for running AI agents safely.\n\nCage your AI agents. Step 3 hides your keys.\n\nOpenShell is NVIDIA's free, Apache 2.0 runtime that runs AI agents in isolated sandboxes and checks every network connection against policy.\n\n3 steps.\n1. Run the installer from the OpenShell GitHub page. You need Docker or Podman.\n2. Create a sandbox with openshell sandbox create, then run your agent inside it.\n3. Set policies for files, network, and processes. The agent never sees your real credentials.\n\nWindows support through WSL 2 is still experimental.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#DevTools #AIAgents #OpenSource #Security",
+        "tiktok": "Free sandbox for running AI agents safely.\n\nCage your AI agents. Step 3 hides your keys.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#DevTools #AIAgents #OpenSource #Security"
+      }
+    },
+    {
+      "date": "2026-10-31",
+      "time": "19:00",
+      "id": "2026-10-31-redact-whatsapp-hidden-rules",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "A chatbot's hidden rules leaked. Ask question 3 before buying.",
+      "why": "Privacy firm Redact reported on Oct 19 that about 80 of 545 WhatsApp help pages held hidden text written for its AI support bot.",
+      "src": "Redact, IBTimes Singapore, Zeebiz, Oct 19 and 20 2026",
+      "steps": [
+        "One note told the AI not to recommend any data protection regulator. Meta said it removed the text.",
+        "Nobody has shown Meta broke a law, or that the chatbot followed those notes.",
+        "Before buying a chatbot, ask to read every instruction, what it must never say, and who can change the rules."
+      ],
+      "take": "If the answer is that's private, keep shopping.",
+      "label": "What it means",
+      "say": [
+        "A chatbot's hidden rules leaked! Ask question three before buying.",
+        "Privacy firm Redact reported that about eighty of five hundred forty five WhatsApp help pages held hidden text written for its AI support bot.",
+        "First, one note told the AI not to recommend any data protection regulator. Meta said it removed the text.",
+        "Next, nobody has shown Meta broke a law, or that the chatbot followed those notes.",
+        "Now question three. Before buying a chatbot, ask to read every instruction, what it must never say, and who can change the rules.",
+        "If the answer is that's private, keep shopping."
+      ],
+      "captions": {
+        "facebook": "WhatsApp AI chatbot hidden instructions, what to ask before buying a chatbot.\n\nA chatbot's hidden rules leaked. Ask question 3 before buying.\n\nPrivacy firm Redact reported on Oct 19 that about 80 of 545 WhatsApp help pages held hidden text written for its AI support bot.\n\n3 steps.\n1. One note told the AI not to recommend any data protection regulator. Meta said it removed the text.\n2. Nobody has shown Meta broke a law, or that the chatbot followed those notes.\n3. Before buying a chatbot, ask to read every instruction, what it must never say, and who can change the rules.\n\nIf the answer is that's private, keep shopping.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Chatbots #Transparency #SmallBusiness",
+        "instagram": "WhatsApp AI chatbot hidden instructions, what to ask before buying a chatbot.\n\nA chatbot's hidden rules leaked. Ask question 3 before buying.\n\nPrivacy firm Redact reported on Oct 19 that about 80 of 545 WhatsApp help pages held hidden text written for its AI support bot.\n\n3 steps.\n1. One note told the AI not to recommend any data protection regulator. Meta said it removed the text.\n2. Nobody has shown Meta broke a law, or that the chatbot followed those notes.\n3. Before buying a chatbot, ask to read every instruction, what it must never say, and who can change the rules.\n\nIf the answer is that's private, keep shopping.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #Chatbots #Transparency #SmallBusiness",
+        "tiktok": "WhatsApp AI chatbot hidden instructions, what to ask before buying a chatbot.\n\nA chatbot's hidden rules leaked. Ask question 3 before buying.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #Chatbots #Transparency #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "time": "08:00",
+      "id": "2026-11-01-free-audit-promo",
+      "kind": "promo",
+      "topic": "From us",
+      "hook": "Free site audit. The third check is the sneaky one.",
+      "why": "Most local business websites leak customers in ways the owner never sees. Our free audit shows you exactly what is costing you calls.",
+      "src": "",
+      "steps": [
+        "Speed on a real phone, because 53% of mobile visitors leave a site that takes over 3 seconds to load.",
+        "Whether a customer can call, book, or get a quote in one tap from any page.",
+        "How you show up on Google, from your Business Profile to your reviews. This is the one owners miss."
+      ],
+      "take": "No pressure. Just a clear list of what to fix, whether you hire us or not.",
+      "say": [
+        "Free site audit! The third check is the sneaky one.",
+        "Most local business websites leak customers in ways the owner never sees. Our free audit shows you what is costing you calls.",
+        "First, speed on a real phone. Fifty three percent of mobile visitors leave a site that takes over three seconds to load.",
+        "Next, whether a customer can call, book, or get a quote in one tap from any page.",
+        "And the sneaky third check. How you show up on Google, from your Business Profile to your reviews.",
+        "No pressure. Just a clear list of what to fix, whether you hire us or not."
+      ],
+      "captions": {
+        "facebook": "Free website and Google presence audit for local businesses.\n\nFree site audit. The third check is the sneaky one.\n\nMost local business websites leak customers in ways the owner never sees. Our free audit shows you exactly what is costing you calls.\n\nWhat we check.\n1. Speed on a real phone, because 53% of mobile visitors leave a site that takes over 3 seconds to load.\n2. Whether a customer can call, book, or get a quote in one tap from any page.\n3. How you show up on Google, from your Business Profile to your reviews. This is the one owners miss.\n\nNo pressure. Just a clear list of what to fix, whether you hire us or not.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites for local businesses that turn visitors into calls and bookings. Get your free audit at evogencyglobal.com/contact\n\n#WebDesign #LocalSEO #SmallBusiness #OrlandoBusiness",
+        "instagram": "Free website and Google presence audit for local businesses.\n\nFree site audit. The third check is the sneaky one.\n\nMost local business websites leak customers in ways the owner never sees. Our free audit shows you exactly what is costing you calls.\n\nWhat we check.\n1. Speed on a real phone, because 53% of mobile visitors leave a site that takes over 3 seconds to load.\n2. Whether a customer can call, book, or get a quote in one tap from any page.\n3. How you show up on Google, from your Business Profile to your reviews. This is the one owners miss.\n\nNo pressure. Just a clear list of what to fix, whether you hire us or not.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites for local businesses that turn visitors into calls and bookings. Get your free audit at evogencyglobal.com/contact (link in bio)\n\n#WebDesign #LocalSEO #SmallBusiness #OrlandoBusiness",
+        "tiktok": "Free website and Google presence audit for local businesses.\n\nFree site audit. The third check is the sneaky one.\n\nFree audit, link in bio.\n\n#WebDesign #LocalSEO #SmallBusiness #OrlandoBusiness"
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "time": "12:30",
+      "id": "2026-11-01-openai-cli",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "OpenAI's command line tool. The third trick is batches.",
+      "why": "The OpenAI CLI is the official command line tool for the OpenAI API, open source under Apache 2.0. You need an API key.",
+      "src": "OpenAI CLI on GitHub",
+      "steps": [
+        "Install it with brew install openai/tools/openai, or grab a binary from GitHub Releases.",
+        "Make an image from your terminal with openai images generate and a prompt.",
+        "Upload files and run batches with openai batches create, then openai batches wait to collect results."
+      ],
+      "take": "Check OpenAI's pricing before you run big jobs.",
+      "label": "How to use it",
+      "say": [
+        "OpenAI has a command line tool! The third trick is batches.",
+        "The OpenAI CLI is the official command line tool for the OpenAI API, open source under Apache two point oh. You need an API key.",
+        "First, install it with brew, or grab a binary from GitHub Releases. That's the setup.",
+        "Next, make an image from your terminal with openai images generate and a prompt.",
+        "Then the batches. Upload files, run openai batches create, then openai batches wait to collect the results.",
+        "Check OpenAI's pricing before you run big jobs."
+      ],
+      "captions": {
+        "facebook": "OpenAI CLI, generate images and run batches from your terminal.\n\nOpenAI's command line tool. The third trick is batches.\n\nThe OpenAI CLI is the official command line tool for the OpenAI API, open source under Apache 2.0. You need an API key.\n\n3 steps.\n1. Install it with brew install openai/tools/openai, or grab a binary from GitHub Releases.\n2. Make an image from your terminal with openai images generate and a prompt.\n3. Upload files and run batches with openai batches create, then openai batches wait to collect results.\n\nCheck OpenAI's pricing before you run big jobs.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#Creators #OpenAI #CommandLine #Automation",
+        "instagram": "OpenAI CLI, generate images and run batches from your terminal.\n\nOpenAI's command line tool. The third trick is batches.\n\nThe OpenAI CLI is the official command line tool for the OpenAI API, open source under Apache 2.0. You need an API key.\n\n3 steps.\n1. Install it with brew install openai/tools/openai, or grab a binary from GitHub Releases.\n2. Make an image from your terminal with openai images generate and a prompt.\n3. Upload files and run batches with openai batches create, then openai batches wait to collect results.\n\nCheck OpenAI's pricing before you run big jobs.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#Creators #OpenAI #CommandLine #Automation",
+        "tiktok": "OpenAI CLI, generate images and run batches from your terminal.\n\nOpenAI's command line tool. The third trick is batches.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#Creators #OpenAI #CommandLine #Automation"
+      }
+    },
+    {
+      "date": "2026-11-01",
+      "time": "19:00",
+      "id": "2026-11-01-minimax-agent-cost",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "MiniMax says agents cost 70% less. Step 3 tests it.",
+      "why": "MiniMax released M3.1 Flash on Oct 19, listing API prices of $0.15 per million input tokens and $0.60 per million output tokens.",
+      "src": "MiniMax, SiliconANGLE, MarkTechPost, Oct 19 2026",
+      "steps": [
+        "The 70% saving, the prices, and the benchmark scores all come from MiniMax, not independent tests.",
+        "An agent makes many model calls per job, so cost per finished task beats price per token.",
+        "Run one real task on your current model and the new one, then compare cost and how often a human fixes it."
+      ],
+      "take": "A cheap model that needs three retries is not cheap.",
+      "label": "What it means",
+      "say": [
+        "MiniMax says agents cost seventy percent less! Step three tests it.",
+        "MiniMax released M three point one Flash, and listed API prices of fifteen cents per million input tokens, and sixty cents per million output tokens.",
+        "First, the seventy percent saving, the prices, and the benchmark scores all come from MiniMax, not independent tests.",
+        "Next, an agent makes many model calls per job, so cost per finished task beats price per token.",
+        "Last, step three. Run one real task on your current model and the new one, then compare cost and how often a human fixes it.",
+        "A cheap model that needs three retries is not cheap."
+      ],
+      "captions": {
+        "facebook": "MiniMax M3.1 Flash, are cheaper AI agents real.\n\nMiniMax says agents cost 70% less. Step 3 tests it.\n\nMiniMax released M3.1 Flash on Oct 19, listing API prices of $0.15 per million input tokens and $0.60 per million output tokens.\n\n3 steps.\n1. The 70% saving, the prices, and the benchmark scores all come from MiniMax, not independent tests.\n2. An agent makes many model calls per job, so cost per finished task beats price per token.\n3. Run one real task on your current model and the new one, then compare cost and how often a human fixes it.\n\nA cheap model that needs three retries is not cheap.\n\nFollow EVOGENCY for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #AIAgents #MiniMax #Automation",
+        "instagram": "MiniMax M3.1 Flash, are cheaper AI agents real.\n\nMiniMax says agents cost 70% less. Step 3 tests it.\n\nMiniMax released M3.1 Flash on Oct 19, listing API prices of $0.15 per million input tokens and $0.60 per million output tokens.\n\n3 steps.\n1. The 70% saving, the prices, and the benchmark scores all come from MiniMax, not independent tests.\n2. An agent makes many model calls per job, so cost per finished task beats price per token.\n3. Run one real task on your current model and the new one, then compare cost and how often a human fixes it.\n\nA cheap model that needs three retries is not cheap.\n\nFollow @evogencyglobal for daily AI news and tools. Save this so you have it when you need it.\n\n#AINews #AIAgents #MiniMax #Automation",
+        "tiktok": "MiniMax M3.1 Flash, are cheaper AI agents real.\n\nMiniMax says agents cost 70% less. Step 3 tests it.\n\nWatch for 3 steps.\n\nFollow for daily AI news and tools.\n\n#AINews #AIAgents #MiniMax #Automation"
+      }
+    }
+  ]
+}
