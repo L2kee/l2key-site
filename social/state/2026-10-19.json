@@ -190,5 +190,17 @@
     "post": "2026-10-24-ai-readme",
     "due": "2026-10-24T08:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-24 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6adb282c2baa602d0242cc59",
+    "post": "2026-10-24-talorys-assistant",
+    "due": "2026-10-24T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-24 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6adb282dd8e05f97fb0b6d31",
+    "post": "2026-10-24-talorys-assistant",
+    "due": "2026-10-24T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
