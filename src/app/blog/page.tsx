@@ -3,7 +3,7 @@ import { BlogList } from "@/components/blog-list";
 
 const TITLE = "Marketing Guides for Orlando Businesses | EVOGENCY Blog";
 const DESCRIPTION =
-  "Honest, practical guides on SEO, web design, Google reviews, AI automation, custom CRMs, and app development for Orlando businesses, from the people who actually build it.";
+  "Honest, practical guides on SEO, web design, Google reviews, AI automation, and apps for Orlando businesses, written by the people who build it.";
 
 export const metadata: Metadata = {
   title: TITLE,

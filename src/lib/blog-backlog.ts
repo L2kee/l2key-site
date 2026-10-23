@@ -14,7 +14,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     title: "SEO for Plumbers: What Actually Gets the Phone Ringing",
     seoTitle: "SEO for Plumbers: What Gets the Phone Ringing",
     description:
-      "SEO for plumbing companies explained: the searches that actually matter, why emergency keywords behave differently, and what a plumber's website needs to convert.",
+      "SEO for plumbing companies explained. The searches that matter, why emergency keywords behave differently, and what a plumber's website needs to convert.",
     excerpt: "The searches that actually matter for plumbers, and why emergency keywords behave differently.",
     date: "2026-09-18",
     updated: "2026-09-23",
@@ -6649,7 +6649,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     title: "Choosing Your Google Business Profile Categories the Right Way",
     seoTitle: "Google Business Profile Categories Explained",
     description:
-      "Your Google Business Profile category is one of the strongest local ranking signals you control. Here's how to choose the primary and secondary categories well.",
+      "Your Google Business Profile category is one of the strongest local ranking signals you control. Here's how to pick the primary and secondary ones well.",
     excerpt: "The category you pick tells Google which searches you belong in. Most owners pick it in ten seconds and never look again.",
     date: "2026-10-21",
     tag: "SEO",

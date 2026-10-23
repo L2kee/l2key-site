@@ -11,7 +11,7 @@ import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Luxury Brand Design and Rebranding Agency | EVOGENCY";
 const DESCRIPTION =
-  "EVOGENCY designs logos and complete brand identities for premium brands that are launching or repositioning, then builds the website and search presence to match.";
+  "EVOGENCY designs logos and full brand identities for premium brands launching or repositioning, then builds the website and search presence to match.";
 
 export const metadata: Metadata = {
   title: TITLE,

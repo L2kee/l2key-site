@@ -9,7 +9,7 @@ import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Generative Engine Optimization Orlando | EVOGENCY";
 const DESCRIPTION =
-  "EVOGENCY helps Orlando businesses show up when people ask ChatGPT, Perplexity, and Google AI Overviews for a recommendation. Structured content built for the way AI actually reads the web.";
+  "EVOGENCY helps Orlando businesses get recommended when people ask ChatGPT, Perplexity, and Google AI Overviews. Content built the way AI reads the web.";
 
 export const metadata: Metadata = {
   title: TITLE,

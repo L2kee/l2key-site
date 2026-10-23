@@ -92,6 +92,8 @@ export default function BuiltInHousePage() {
         No page builder, no template. Try them right here, then picture them on your own site.
       </p>
 
+      {/* Screen reader and crawler heading so the demo h3s don't skip a level. */}
+      <h2 className="sr-only">Effects you can try</h2>
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <Demo title="Letters that drop in" body="Each letter falls into place with a little bounce, then the colors flow across the line nonstop.">
           <Replay>

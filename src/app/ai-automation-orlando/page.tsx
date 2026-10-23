@@ -10,7 +10,7 @@ import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "AI Automation Orlando | EVOGENCY";
 const DESCRIPTION =
-  "EVOGENCY builds AI agents and automation for Orlando businesses: instant lead response, workflows connected across the tools you already use, and follow up that never gets missed.";
+  "EVOGENCY builds AI agents and automation for Orlando businesses. Instant lead response, workflows that connect your tools, and follow up that never slips.";
 
 export const metadata: Metadata = {
   title: TITLE,

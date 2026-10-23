@@ -17,7 +17,7 @@ const APP_HREF = "/electricalai-pro/app";
 
 const TITLE = "ElectricalAI Pro | Electrical Calculators and AI Assistant";
 const DESCRIPTION =
-  "Free electrical calculators built on NEC tables, plus an AI assistant for electricians. Wire ampacity, voltage drop, conduit fill, box fill, and more, right in your browser.";
+  "Free electrical calculators built on NEC tables, plus an AI assistant for electricians. Ampacity, voltage drop, conduit fill, and box fill in your browser.";
 
 export const metadata: Metadata = {
   title: TITLE,

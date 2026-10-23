@@ -14,7 +14,7 @@ import {
 
 const TITLE = "Job Site Studio | Free Videos From Your Job Site Clips | EVOGENCY";
 const DESCRIPTION =
-  "Film 20 seconds on the job and get back a finished video for TikTok, Facebook, and Instagram. Send 3 clips and get 3 videos free. For plumbers, HVAC, electricians, roofers, and contractors.";
+  "Film 20 seconds on the job and get a finished video for TikTok, Facebook, and Instagram. Send 3 clips and get 3 videos free. Built for the trades.";
 
 export const metadata: Metadata = {
   title: TITLE,

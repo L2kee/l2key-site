@@ -7,7 +7,7 @@ import { CtaBand } from "@/components/cta-band";
 
 const TITLE = "About EVOGENCY | AI Front Desks and Websites in Orlando";
 const DESCRIPTION =
-  "EVOGENCY builds AI front desks, websites, SEO, and custom software for local businesses in Orlando, FL. Real software shipped, not templates and outsourced work.";
+  "EVOGENCY builds AI front desks, websites, SEO, and custom software for local businesses in Orlando, FL. Real software we ship ourselves, never templates.";
 
 export const metadata: Metadata = {
   title: TITLE,

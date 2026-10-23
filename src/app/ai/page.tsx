@@ -17,7 +17,7 @@ const AI_PHONE_DISPLAY = "(321) 435 4469";
 
 const TITLE = "AI Receptionist in Orlando | AI Front Desk by EVOGENCY";
 const DESCRIPTION =
-  "EVOGENCY sets up an AI front desk for Orlando businesses that answers every call 24/7, books the appointment, and texts back anyone you miss. From $297 a month.";
+  "EVOGENCY sets up an AI front desk for Orlando businesses that answers every call 24/7, books the job, and texts back anyone you miss. From $297 a month.";
 
 export const metadata: Metadata = {
   title: TITLE,

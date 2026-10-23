@@ -28,7 +28,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
     slug: "how-to-choose-an-seo-agency-in-orlando",
     title: "How to Choose an SEO Agency in Orlando",
     description:
-      "A straightforward guide to picking an SEO agency in Orlando: what to actually look for, the red flags to avoid, and the questions worth asking before you sign anything.",
+      "A straightforward guide to picking an SEO agency in Orlando, with what to look for, the red flags to avoid, and the questions to ask before you sign.",
     excerpt:
       "What to actually look for in an SEO agency, the red flags to avoid, and the questions worth asking before you sign anything.",
     date: "2026-09-18",
@@ -73,7 +73,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
     title: "What Is Local SEO and Why It Matters for Orlando Businesses",
     seoTitle: "What Is Local SEO? A Guide for Orlando Businesses",
     description:
-      "Local SEO explained in plain language: what it actually is, how it's different from regular SEO, and why it matters most for Orlando businesses that depend on nearby customers.",
+      "Local SEO in plain language. What it is, how it differs from regular SEO, and why it matters most for Orlando businesses that depend on nearby customers.",
     excerpt:
       "Local SEO explained in plain language, and why it matters most if your customers are searching for you nearby.",
     date: "2026-09-18",
@@ -112,7 +112,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
     title: "How Much Should a Small Business Website Actually Cost",
     seoTitle: "Small Business Website Cost: A Real Breakdown | EVOGENCY",
     description:
-      "A real breakdown of small business website pricing: what changes the cost, why templates and custom builds are priced so differently, and how to avoid overpaying or underbuilding.",
+      "A real breakdown of small business website pricing, covering what changes the cost, templates versus custom builds, and how to avoid overpaying.",
     excerpt:
       "What actually changes the price of a small business website, and how to avoid overpaying or underbuilding.",
     date: "2026-09-18",
@@ -199,7 +199,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
     title: "How to Get More Google Reviews Without Breaking the Rules",
     seoTitle: "How to Get More Google Reviews the Right Way | EVOGENCY",
     description:
-      "A practical, honest guide to getting more Google reviews for your business the right way, without fake reviews or tactics that put your Google Business Profile at risk.",
+      "An honest guide to getting more Google reviews the right way, without fake reviews or tactics that put your Google Business Profile at risk.",
     excerpt:
       "A practical, honest guide to getting more reviews without fake reviews or tactics that put your Google profile at risk.",
     date: "2026-09-18",
@@ -288,7 +288,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
     title: "What Generative Engine Optimization Means for Your Business",
     seoTitle: "What Is Generative Engine Optimization? | EVOGENCY",
     description:
-      "A plain language explanation of generative engine optimization, or GEO: what it is, how it differs from regular SEO, and why it's worth thinking about now while almost nobody else is.",
+      "Generative engine optimization (GEO) in plain language. What it is, how it differs from SEO, and why it pays to start now while almost nobody else has.",
     excerpt:
       "A plain language explanation of GEO, how it differs from regular SEO, and why it's worth thinking about now.",
     date: "2026-09-18",
@@ -370,7 +370,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
     title: "Cross Platform vs Native: How to Choose the Right Approach for Your App",
     seoTitle: "Cross Platform vs Native Apps: How to Choose | EVOGENCY",
     description:
-      "A clear breakdown of cross platform app development with Flutter versus native iOS and Android development, and how to decide which one actually fits your app idea.",
+      "Flutter cross platform development versus native iOS and Android, explained clearly, and how to decide which one actually fits your app idea.",
     excerpt:
       "Cross platform versus native app development, explained plainly, and how to decide which one fits your idea.",
     date: "2026-09-18",
@@ -408,7 +408,7 @@ const ORIGINAL_POSTS: BlogPost[] = [
     title: "The Google Business Profile Checklist Every Local Business Should Run Through",
     seoTitle: "Google Business Profile Checklist | EVOGENCY",
     description:
-      "A complete checklist for optimizing your Google Business Profile, covering the fields most local businesses skip and the details that actually affect map pack visibility.",
+      "A complete Google Business Profile checklist covering the fields most local businesses skip and the details that actually move map pack visibility.",
     excerpt:
       "A complete checklist covering the fields most local businesses skip and the details that actually affect visibility.",
     date: "2026-09-18",

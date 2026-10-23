@@ -49,6 +49,8 @@ export default function WorksPage() {
         </p>
       </section>
 
+      {/* Screen reader and crawler heading so the project card h3s don't skip a level. */}
+      <h2 className="sr-only">Our projects</h2>
       <WorksGallery items={WORK} categories={WORK_CATEGORIES} />
 
       {/* Value copy */}

@@ -3,7 +3,7 @@ import { GrowthKitLetter } from "@/components/growth-kit-letter";
 
 const TITLE = "The Home Service Growth Kit | EVOGENCY";
 const DESCRIPTION =
-  "Copy and paste review requests, missed call text backs, and ad templates for plumbers, HVAC, electricians, and roofers. $27, instant download, 30 day guarantee.";
+  "Copy and paste review requests, missed call text backs, and ad templates for plumbers, HVAC, electricians, and roofers. $27 with a 30 day guarantee.";
 
 export const metadata: Metadata = {
   title: TITLE,

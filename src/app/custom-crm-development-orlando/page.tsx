@@ -9,7 +9,7 @@ import { servicePageGraph } from "@/lib/schema";
 
 const TITLE = "Custom CRM Development Orlando | EVOGENCY";
 const DESCRIPTION =
-  "EVOGENCY builds custom CRM platforms for Orlando businesses: real pipeline management, lead tracking, and automation built around how your business actually works.";
+  "EVOGENCY builds custom CRMs for Orlando businesses, with real pipeline management, lead tracking, and automation built around how you actually work.";
 
 export const metadata: Metadata = {
   title: TITLE,
