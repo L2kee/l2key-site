@@ -43,7 +43,7 @@ body {
    so it wins on the homepage hero. New art always gets a new file name,
    because Vercel keeps serving the old picture at a reused URL. */
 .site-bg {
-  --bg-dim: linear-gradient(rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7));
+  --bg-dim: linear-gradient(rgb(0 0 0 / 0.85), rgb(0 0 0 / 0.85));
   position: fixed;
   inset: 0;
   z-index: -2;
@@ -80,7 +80,7 @@ body {
 .site-bg-layer--lab { background-image: var(--bg-dim), url("/bg/lotus-lab.webp"); }
 /* The service pages carry the most body copy, so they get a heavier scrim. */
 .site-bg-layer--services {
-  --bg-dim: linear-gradient(rgb(0 0 0 / 0.8), rgb(0 0 0 / 0.8));
+  --bg-dim: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
   background-image: var(--bg-dim), url("/bg/lotus-services.webp");
 }
 /* The AI Front Desk page and the /start funnels: the flower sits on the
@@ -88,7 +88,7 @@ body {
 .site-bg-layer--ai { background-image: var(--bg-dim), url("/bg/lotus-ai.webp"); }
 @media (max-width: 639px) {
   .site-bg {
-    opacity: 0.6;
+    opacity: 0.45;
   }
   .site-bg-layer--about,
   .site-bg-layer--default,
