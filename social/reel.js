@@ -514,8 +514,8 @@ function ffmpeg(file, vo, dur, music) {
   for (const { p, slot, when } of posts) {
     const id = p.id || p.date;
     if (only ? id !== only : when <= now) continue;
-    // A/B test: stick figure Reels come from Moe's laptop (Content Crew), never from here, so nothing overwrites them.
-    if (formatOf(p, slot) === 'stickman') continue;
+    // Stick figure and mascot Reels come from Moe's laptop (Content Crew), never from here, so nothing overwrites them.
+    if (formatOf(p, slot) !== 'slides') continue;
     const dir = path.join(ROOT, 'public/social', id);
     const file = path.join(dir, 'reel.mp4');
     const vo = voiceOf(id);

@@ -1,5 +1,9 @@
 {
-  "_what": "Reel format A/B test (Moe, 2026-10-22). Inside the window, value posts alternate by schedule slot between the slide Reels (A, reel.js) and the 3D stick figure Reels (B, rendered on Moe's laptop by the Content Crew and committed to public/social/<post id>/). Same posts, same captions, only the video differs. Promos stay A. A post can force one with \"format\": \"slides\" or \"stickman\". Lives in social/config/ because every social/*.json is read as a week file. Read by style.js (formatOf) and voice.py (format_of). Outside the window everything is A.",
+  "_what": "Which Reel format each post gets. Read by style.js (formatOf) and voice.py (format_of). Lives in social/config/ because every social/*.json is read as a week file. A post can force one with \"format\": \"slides\", \"stickman\", or \"mascot\". Promos are always slides. (1) The A/B test (Moe, 2026-10-22), start to end: value posts alternate by schedule slot between the slide Reels (A, reel.js) and the 3D stick figure Reels (B, rendered on Moe's laptop by the Content Crew into public/social/<post id>/). (2) The three format rotation (Moe, 2026-10-24), from rotation.start with no end: value posts take formats[(days since 2026-10-05 + slot) mod 3], so every day carries one of each and each format moves to another time slot each day. stickman and mascot are rendered on Moe's laptop. Before start everything is slides.",
   "start": "2026-10-26",
-  "end": "2026-11-08"
+  "end": "2026-11-01",
+  "rotation": {
+    "start": "2026-11-02",
+    "formats": ["slides", "stickman", "mascot"]
+  }
 }

@@ -13,7 +13,7 @@ not read off the slides), otherwise the slide's own text with spoken links: the 
 step 2, "And the best one." step 3, then the takeaway. The closing ask is always added here: a post with a "keyword"
 asks people to follow and DM that word for the prompt, other value posts ask for the follow, the promo points to the audit.
 The voice is recorded as "<voice>@<speed>" (bf_lily@1.15), so changing either one re-narrates every upcoming Reel. Runs on the CPU (the GitHub runner has no GPU); the 82M model loads once per run.
-Posts in the Reel format A/B test's stick figure half (social/config/abtest.json) are skipped: that Reel brings its own voice.
+Posts whose Reel format (social/config/abtest.json) is stick figure or mascot are skipped: those Reels bring their own voices.
 Needs: pip install kokoro soundfile (plus torch).
 """
 import argparse
@@ -62,13 +62,18 @@ FIRST_DAY = datetime(2026, 10, 5).date()
 
 
 def format_of(p, slot):
-    """The Reel format A/B test. Keep in step with formatOf in style.js."""
-    if p.get("format") in ("slides", "stickman"):
+    """The Reel format: the A/B test window, then the three format rotation. Keep in step with formatOf in style.js."""
+    formats = AB["rotation"]["formats"]
+    if p.get("format") in formats:
         return p["format"]
-    if p.get("kind") == "promo" or p["date"] < AB["start"] or p["date"] > AB["end"]:
+    if p.get("kind") == "promo":
         return "slides"
-    n = (datetime.fromisoformat(p["date"]).date() - FIRST_DAY).days * 3 + slot
-    return "stickman" if n % 2 else "slides"
+    days = (datetime.fromisoformat(p["date"]).date() - FIRST_DAY).days
+    if p["date"] >= AB["rotation"]["start"]:
+        return formats[(days + slot) % 3]
+    if p["date"] < AB["start"] or p["date"] > AB["end"]:
+        return "slides"
+    return "stickman" if (days * 3 + slot) % 2 else "slides"
 
 
 def slots(week):
@@ -104,8 +109,8 @@ def main():
         slot = slots(week)
         for p in week["posts"]:
             pid = p.get("id") or p["date"]
-            if format_of(p, slot[id(p)]) == "stickman":
-                continue  # A/B test: the stick figure Reel brings its own voice
+            if format_of(p, slot[id(p)]) != "slides":
+                continue  # stick figure and mascot Reels bring their own voices
             when = f"{p['date']} {p.get('time') or week.get('time', '11:15')}"
             if a.only and pid != a.only:
                 continue

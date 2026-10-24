@@ -18,13 +18,18 @@ const slotOf = (week, p) => week.posts.filter(q => q.date === p.date)
 const THEMES = ['noir', 'gold', 'teal', 'cream', 'editorial', 'blueprint', 'spotlight'];
 const themeOf = (p, slot) => THEMES.includes(p.look) ? p.look : THEMES[((rotation(p, slot) % 7) + 7) % 7];
 
-// The Reel format A/B test (social/config/abtest.json, outside social/*.json so the week file loops never read it): inside its window, value posts alternate by slot between the slide Reel
-// ("slides", rendered here) and the 3D stick figure Reel ("stickman", rendered on Moe's laptop). Keep in step with
+// The Reel format (social/config/abtest.json, outside social/*.json so the week file loops never read it). In the A/B
+// test window value posts alternate by slot between the slide Reel ("slides", rendered here) and the 3D stick figure Reel
+// ("stickman", rendered on Moe's laptop). From rotation.start they rotate through slides, stickman, and the two character
+// "mascot" Reel (also laptop), one of each per day, each format moving one time slot later each day. Keep in step with
 // format_of in voice.py.
 const AB = JSON.parse(fs.readFileSync(path.join(__dirname, 'config', 'abtest.json'), 'utf8'));
+const FORMATS = AB.rotation.formats;
 const formatOf = (p, slot) => {
-  if (p.format === 'slides' || p.format === 'stickman') return p.format;
-  if (p.kind === 'promo' || p.date < AB.start || p.date > AB.end) return 'slides';
+  if (FORMATS.includes(p.format)) return p.format;
+  if (p.kind === 'promo') return 'slides';
+  if (p.date >= AB.rotation.start) return FORMATS[((Math.round((Date.parse(p.date) - FIRST_DAY) / 864e5) + slot) % 3 + 3) % 3];
+  if (p.date < AB.start || p.date > AB.end) return 'slides';
   return rotation(p, slot) % 2 ? 'stickman' : 'slides';
 };
 
