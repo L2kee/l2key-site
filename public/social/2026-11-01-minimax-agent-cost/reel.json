@@ -1,0 +1,9 @@
+{
+  "seconds": 51.82,
+  "cover_ms": 2000,
+  "engine": "stickman",
+  "look": "blueprint",
+  "voice": "bm_lewis@1.05",
+  "music": "puppy-love",
+  "run": "2026-11-01-minimax-agent-cost"
+}
