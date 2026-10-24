@@ -7084,7 +7084,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Contractors don't need a film crew to win on TikTok, Reels, and Shorts. Here's why real phone footage from the job site works and how to start.",
     excerpt: "Twenty seconds of real job site footage can do more than a polished commercial.",
-    date: "2026-10-15",
+    date: "2026-10-24",
     tag: "Marketing",
     relatedHref: "/job-site-studio",
     relatedLabel: "Get 3 free videos from your clips",
@@ -7137,7 +7137,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to tell whether your business has outgrown its brand, and how to separate a real reason to rebrand from simply being tired of your logo.",
     excerpt: "Being bored with your logo isn't a reason. These seven signs are.",
-    date: "2026-10-15",
+    date: "2026-10-24",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -7202,7 +7202,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How HVAC companies can build a steady flow of honest Google reviews from repair calls, installs, and maintenance visits without breaking Google's rules.",
     excerpt: "Every repair, install, and tune up is a chance to earn a review. Here's a system that actually runs.",
-    date: "2026-10-15",
+    date: "2026-10-24",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",
