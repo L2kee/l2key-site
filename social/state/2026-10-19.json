@@ -226,5 +226,17 @@
     "post": "2026-10-25-review-kit",
     "due": "2026-10-25T08:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-25 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6adc731f0b5343d07073b051",
+    "post": "2026-10-25-desk-linux",
+    "due": "2026-10-25T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-25 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6adc731fe4be8a4d864c4e26",
+    "post": "2026-10-25-desk-linux",
+    "due": "2026-10-25T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
