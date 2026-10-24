@@ -65,6 +65,8 @@ REEL_SERVICES = ("instagram", "tiktok", "youtube")
 # Channels that only take video, so a post waits for its reel instead of falling back to the carousel.
 VIDEO_ONLY = ("youtube",)
 FALLBACK_HOURS = 12
+# The tagline changes to "AI skills and people skills" from this date (Moe, 2026-10-24). Keep in step with style.js and voice.py.
+PEOPLE_FROM = "2026-11-02"
 
 
 def gql(query, variables=None):
@@ -179,7 +181,8 @@ def caption(p, service):
         if kw:
             line = f"Want the exact prompt? DM us the word {kw.group(1)} on Instagram @evogencyglobal. We'll send it to you."
         elif line.startswith("Follow @evogencyglobal"):
-            line = "Subscribe for daily AI news and tools. Save this so you have it when you need it."
+            line = (f"Subscribe for daily {'AI skills and people skills' if p['date'] >= PEOPLE_FROM else 'AI news and tools'}."
+                    " Save this so you have it when you need it.")
         lines.append(line)
     return "\n".join(lines)
 

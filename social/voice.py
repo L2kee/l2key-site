@@ -30,6 +30,8 @@ RATE = 24000
 # Keep in step with ENGINE in reel.js. A Reel made by an older engine gets narrated again, so its re-render keeps its voice.
 REEL_ENGINE = 2
 LINK = ["First,", "Next,", "And the best one."]
+# The tagline changes to "AI skills and people skills" from this date (Moe, 2026-10-24). Keep in step with style.js and schedule.py.
+PEOPLE_FROM = "2026-11-02"
 
 
 def say(text):
@@ -47,7 +49,8 @@ def script(p):
     elif kw:
         ask = f"Want the exact prompt? Follow us, and DM the word {kw.capitalize()}."
     else:
-        ask = "Follow Evogency for daily AI news and tools, and save this one."
+        ask = ("Follow Evogency for daily AI skills and people skills, and save this one." if p["date"] >= PEOPLE_FROM
+               else "Follow Evogency for daily AI news and tools, and save this one.")
     lines = list(p["say"]) if len(p.get("say") or []) == 6 else [
         p["hook"], p["why"], *[f"{LINK[k]} {s}" for k, s in enumerate(p["steps"])], p["take"]]
     lines[-1] = f"{lines[-1]} {ask}"
