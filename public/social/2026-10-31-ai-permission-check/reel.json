@@ -1,17 +1,9 @@
 {
-  "seconds": 35.37,
-  "cover_ms": 2693,
-  "engine": 2,
-  "look": "gold",
-  "motion": {
-    "hook": "rise",
-    "why": "circle",
-    "num": "drop",
-    "step": "brush",
-    "cta": "orbit",
-    "change": "ink",
-    "scene": "orb"
-  },
-  "voice": "bf_lily@1.15",
-  "music": "puppy-love"
+  "seconds": 45.74,
+  "cover_ms": 2050,
+  "engine": "mascot",
+  "look": "mascot",
+  "voice": "am_onyx@1.05+bf_lily@1.15",
+  "music": "jazzhouse-9904179",
+  "run": "2026-10-31-ai-permission-check"
 }

@@ -1,9 +1,9 @@
 {
-  "seconds": 47.88,
-  "cover_ms": 2000,
-  "engine": "stickman",
-  "look": "blueprint",
-  "voice": "bm_lewis@1.05",
-  "music": "make-funk",
+  "seconds": 48.33,
+  "cover_ms": 2050,
+  "engine": "mascot",
+  "look": "mascot",
+  "voice": "am_onyx@1.05+bf_lily@1.15",
+  "music": "jazzhouse-14556498",
   "run": "2026-10-28-ai-pr-review"
 }

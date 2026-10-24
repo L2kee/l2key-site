@@ -1,17 +1,9 @@
 {
-  "seconds": 37.43,
-  "cover_ms": 2969,
-  "engine": 2,
-  "look": "cream",
-  "motion": {
-    "hook": "mark",
-    "why": "circle",
-    "num": "drop",
-    "step": "rise",
-    "cta": "nudge",
-    "change": "zoom",
-    "scene": "particles"
-  },
-  "voice": "bf_lily@1.15",
-  "music": "eat"
+  "seconds": 49.1,
+  "cover_ms": 2000,
+  "engine": "stickman",
+  "look": "noir",
+  "voice": "bm_lewis@1.05",
+  "music": "jazzhouse-473420",
+  "run": "2026-10-27-ai-design-directions"
 }

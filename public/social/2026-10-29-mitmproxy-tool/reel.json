@@ -1,9 +1,9 @@
 {
-  "seconds": 49.42,
+  "seconds": 47.47,
   "cover_ms": 2000,
   "engine": "stickman",
-  "look": "noir",
+  "look": "cream",
   "voice": "bm_lewis@1.05",
-  "music": "poor-but-happy",
+  "music": "jazzhouse-12684096",
   "run": "2026-10-29-mitmproxy-tool"
 }

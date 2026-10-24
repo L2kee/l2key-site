@@ -1,17 +1,9 @@
 {
-  "seconds": 31.35,
-  "cover_ms": 3328,
-  "engine": 2,
-  "look": "spotlight",
-  "motion": {
-    "hook": "rise",
-    "why": "wipe",
-    "num": "pop",
-    "step": "words",
-    "cta": "shine",
-    "change": "slide",
-    "scene": "aurora"
-  },
-  "voice": "bf_lily@1.15",
-  "music": "new-shoes"
+  "seconds": 41.62,
+  "cover_ms": 2000,
+  "engine": "stickman",
+  "look": "teal",
+  "voice": "bm_lewis@1.05",
+  "music": "jazzhouse-7965661",
+  "run": "2026-10-25-ai-interview-first"
 }

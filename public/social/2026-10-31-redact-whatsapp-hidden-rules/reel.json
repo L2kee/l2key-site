@@ -1,17 +1,9 @@
 {
-  "seconds": 40.65,
-  "cover_ms": 3400,
-  "engine": 2,
-  "look": "cream",
-  "motion": {
-    "hook": "words",
-    "why": "wipe",
-    "num": "pop",
-    "step": "circle",
-    "cta": "nudge",
-    "change": "zoom",
-    "scene": "grid"
-  },
-  "voice": "bf_lily@1.15",
-  "music": "eat"
+  "seconds": 50.57,
+  "cover_ms": 2000,
+  "engine": "stickman",
+  "look": "blueprint",
+  "voice": "bm_lewis@1.05",
+  "music": "jazzhouse-15515258",
+  "run": "2026-10-31-redact-whatsapp-hidden-rules"
 }

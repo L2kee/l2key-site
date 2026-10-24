@@ -1,17 +1,9 @@
 {
-  "seconds": 38.06,
-  "cover_ms": 3400,
-  "engine": 2,
-  "look": "blueprint",
-  "motion": {
-    "hook": "mark",
-    "why": "brush",
-    "num": "drawn",
-    "step": "words",
-    "cta": "scribble",
-    "change": "ripple",
-    "scene": "aurora"
-  },
-  "voice": "bf_lily@1.15",
-  "music": "make-money"
+  "seconds": 47.07,
+  "cover_ms": 2000,
+  "engine": "stickman",
+  "look": "noir",
+  "voice": "bm_lewis@1.05",
+  "music": "jazzhouse-12836568",
+  "run": "2026-11-01-openai-cli"
 }

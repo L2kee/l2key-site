@@ -1,9 +1,9 @@
 {
-  "seconds": 51.82,
-  "cover_ms": 2000,
-  "engine": "stickman",
-  "look": "blueprint",
-  "voice": "bm_lewis@1.05",
-  "music": "puppy-love",
+  "seconds": 51.76,
+  "cover_ms": 2050,
+  "engine": "mascot",
+  "look": "mascot",
+  "voice": "am_onyx@1.05+bf_lily@1.15",
+  "music": "jazzhouse-11718092",
   "run": "2026-11-01-minimax-agent-cost"
 }
