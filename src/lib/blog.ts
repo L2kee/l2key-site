@@ -642,6 +642,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "short-form-video-for-contractors",
   "when-to-rebrand-a-business",
   "google-reviews-for-hvac-companies",
+  "ai-receptionist-vs-answering-service",
+  "getting-reviews-that-mention-your-services",
+  "how-chatgpt-recommends-local-businesses",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

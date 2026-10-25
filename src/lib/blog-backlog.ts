@@ -7262,7 +7262,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "An honest comparison of AI phone receptionists and human answering services for small businesses, covering cost, coverage, call quality, and when to use each.",
     excerpt: "Both answer the phone when you can't. They're good at very different things.",
-    date: "2026-10-15",
+    date: "2026-10-25",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -7317,7 +7317,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Reviews that mention the service and the town persuade more customers. Here is how to encourage specific reviews without scripting them or breaking rules.",
     excerpt: "\"Great job\" is nice. \"Fixed our water heater same day in Clermont\" sells.",
-    date: "2026-10-15",
+    date: "2026-10-25",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",
@@ -7376,7 +7376,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "When people ask ChatGPT for a local recommendation, where do the answers come from? Here's what's known and what local businesses can do about it.",
     excerpt: "More customers ask ChatGPT for recommendations. Here's where those answers come from.",
-    date: "2026-10-15",
+    date: "2026-10-25",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our AI search service",
