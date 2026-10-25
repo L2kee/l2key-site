@@ -1,0 +1,54 @@
+{
+  "week": "2026-10-26",
+  "approved": false,
+  "posts": [
+    {"date": "2026-10-26", "time": "08:00", "kind": "take", "tag": "Small Business",
+     "text": "Most small businesses don't have a marketing problem. They have an answering problem.\n\nYou paid for the ad. The phone rang. Nobody picked up.\n\nThat's not a lost lead. That's a lead you paid for and handed to your competitor.\n\nAgree or disagree?"},
+    {"date": "2026-10-26", "time": "12:30", "kind": "useful", "tag": "Small Business",
+     "text": "Free 5 minute test that might ruin your night.\n\n1. Call your own business tonight at 8 PM.\n2. Count the rings and listen to what a customer hears.\n3. Leave a message like a real customer, then time how long until someone calls back.\n\nIf the answer is \"tomorrow,\" that customer already booked someone else.\n\nFollow for one fix like this every day."},
+    {"date": "2026-10-26", "time": "19:00", "kind": "question", "tag": "Entrepreneurship",
+     "text": "Owners, real question.\n\nWhen a call comes in after 6 PM, what actually happens?\n\nA) Voicemail\nB) It rings forever\nC) It forwards to my cell and I answer at dinner\nD) Something smarter\n\nReply with your letter. If it's A or B, I'll show you what we'd do instead."},
+
+    {"date": "2026-10-27", "time": "08:00", "kind": "take", "tag": "AI Tools",
+     "text": "Unpopular opinion. You don't need more AI tools. You need one tool you actually open every day.\n\nMost owners sign up for five, use none, and decide AI is overhyped.\n\nPick one. Use it daily for a month. Then judge.\n\nWhich one would you pick?"},
+    {"date": "2026-10-27", "time": "12:30", "kind": "useful", "tag": "AI Tools",
+     "text": "Tool Tuesday. NotebookLM from Google is free and criminally underrated.\n\nUpload your price sheet, your FAQ, and your policies. Then ask it questions like a new hire would.\n\nIt answers from your own documents and shows you where it found each answer.\n\nInstant training manual for new staff.\n\nFollow for one tool like this every Tuesday."},
+    {"date": "2026-10-27", "time": "19:00", "kind": "question", "tag": "Small Business",
+     "text": "Owners, what's the one AI tool you actually use every single week?\n\nNot the one you signed up for. The one you open.\n\nBest answers get their own Tool Tuesday post, with credit."},
+
+    {"date": "2026-10-28", "time": "08:00", "kind": "take", "tag": "Small Business",
+     "text": "Myth. \"My customers will hate talking to AI.\"\n\nYour customers hate voicemail more. They hate being on hold more. They hate calling three times more.\n\nWhat people hate is a bad experience. Not a robot.\n\nAgree or disagree?"},
+    {"date": "2026-10-28", "time": "12:30", "kind": "useful", "tag": "AI Tools",
+     "text": "Myth. \"AI is too expensive for a small business.\"\n\nThe free versions of ChatGPT, Claude, and Gemini can already\n1. Draft a reply to every review\n2. Turn one job photo into a week of captions\n3. Rewrite your About page so it sounds like a human\n\nZero dollars. About 20 minutes.\n\nFollow for more ways to use AI without a budget."},
+    {"date": "2026-10-28", "time": "19:00", "kind": "question", "tag": "Entrepreneurship",
+     "text": "What's stopping you from using AI in your business right now?\n\nA) Don't trust it\nB) No time to learn it\nC) Don't know where to start\nD) Already using it\n\nReply with your letter. I'll answer every one."},
+
+    {"date": "2026-10-29", "time": "08:00", "kind": "build", "tag": "AI Tools",
+     "text": "Building in public.\n\nWe're building an AI receptionist for small businesses. It answers the phone, books the appointment, and never puts anyone on hold.\n\nHardest part so far? Not the tech. It's teaching it to sound like someone who actually cares.\n\nAnyone else building with voice AI? Let's connect and trade notes."},
+    {"date": "2026-10-29", "time": "12:30", "kind": "build", "tag": "AI Tools",
+     "text": "We got tired of making content by hand, so we built a crew of six AI agents to do it.\n\nOne finds the topic. One writes the script. One voices it. One animates a stick figure. One posts it. One checks everyone's work.\n\nStill tuning it. Anyone else building AI teams like this? Reply and let's connect."},
+    {"date": "2026-10-29", "time": "19:00", "kind": "build", "tag": "Entrepreneurship",
+     "text": "This post was written with AI, approved by a human, and posted by a robot.\n\nWe're automating our whole social presence so we can spend our time actually talking to people.\n\nWhich is why we're here. If you're automating your business with AI, say hi below. Let's connect and compare setups."},
+
+    {"date": "2026-10-30", "time": "08:00", "kind": "take", "tag": "Small Business",
+     "text": "The money isn't in the quote. It's in the follow up.\n\nMost quotes that go quiet aren't a no. They're a busy person who forgot.\n\nOne friendly text three days later wins jobs you already wrote off.\n\nBe honest. Do you follow up on every quote?"},
+    {"date": "2026-10-30", "time": "12:30", "kind": "useful", "tag": "AI Tools",
+     "text": "Prompt Friday. Copy this.\n\n\"I sent a customer a quote for [job] 3 days ago and haven't heard back. Write a short, friendly text that checks in, answers one common worry about [job], and makes it easy to say yes or no. Under 300 characters. No pressure, no discounts.\"\n\nPaste it into ChatGPT or Claude. Send the text. Count the replies.\n\nFollow for a new prompt every Friday."},
+    {"date": "2026-10-30", "time": "19:00", "kind": "question", "tag": "Entrepreneurship",
+     "text": "Friday question for owners.\n\nWhat's one task you did this week that a robot should have done?\n\nBest answer gets a free prompt from us that handles it."},
+
+    {"date": "2026-10-31", "time": "08:00", "kind": "take", "tag": "Small Business",
+     "text": "Your best marketing isn't an ad. It's how your team answers the phone.\n\nSame price, same service, and people still pick the business that made them feel heard.\n\nAgree?"},
+    {"date": "2026-10-31", "time": "12:30", "kind": "useful", "tag": "Small Business",
+     "text": "Steal this from Dale Carnegie. He said a person's name is the sweetest sound in any language to them.\n\n1. Write the customer's name on the job sheet.\n2. Use it when you greet them and when you leave.\n3. Use it again in the thank you text.\n\nCosts nothing. Customers remember the business that remembered them.\n\nFollow for one people skill every Saturday."},
+    {"date": "2026-10-31", "time": "19:00", "kind": "question", "tag": "Entrepreneurship",
+     "text": "Happy Halloween, owners.\n\nWhat's the scariest thing a customer ever said to you?\n\nKeep it clean. Best story wins bragging rights."},
+
+    {"date": "2026-11-01", "time": "08:00", "kind": "take", "tag": "Entrepreneurship",
+     "text": "A business that only grows when you work more isn't a business. It's a job with extra paperwork.\n\nThe goal is systems that work while you sleep.\n\nWhat's one system you want running by next Sunday?"},
+    {"date": "2026-11-01", "time": "12:30", "kind": "useful", "tag": "Small Business",
+     "text": "Sunday reset for owners. 15 minutes.\n\n1. Reply to every review from this week.\n2. Text every customer whose quote went quiet.\n3. Block one hour next week to work on the business, not in it.\n\nDo it every Sunday and watch what happens by December.\n\nFollow for more."},
+    {"date": "2026-11-01", "time": "19:00", "kind": "promo", "tag": "Small Business",
+     "text": "Want more 5 star Google reviews without begging for them?\n\nOur free 5 Star Review Kit has the exact texts to send after a job, 2 follow ups that get the review without being annoying, and a timing cheat sheet.\n\nBuilt for home service pros. It's free. Link in our bio."}
+  ]
+}

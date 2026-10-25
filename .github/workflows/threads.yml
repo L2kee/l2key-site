@@ -1,0 +1,41 @@
+name: Threads posts
+
+# Publishes the posts in social/threads/<week>.json straight through Meta's Threads API (no Buffer, $0).
+# The Threads API can't schedule, so this runs every 15 minutes and posts whatever is due (see social/threads.py).
+# GitHub often starts scheduled runs late, so a post can land 5 to 30 minutes after its slot. That's fine.
+# Sundays it also renews the 60 day token. No AI involved, nothing gets committed.
+on:
+  push:
+    branches: [master]
+    paths: ["social/threads/**", "social/threads.py"]
+  schedule:
+    - cron: "*/15 * * * *"
+    - cron: "40 7 * * 0"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "post (publish what's due), check (does the token work), refresh (renew the token), or lint (validate the week files)"
+        default: post
+
+# One run at a time, so two runs can never post the same thing.
+concurrency:
+  group: threads-posts
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  threads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || github.event.schedule == '40 7 * * 0' && 'refresh' || 'post' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Threads ${{ env.MODE }}
+        run: python3 social/threads.py "$MODE"
