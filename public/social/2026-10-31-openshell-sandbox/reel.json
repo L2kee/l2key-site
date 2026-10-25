@@ -1,0 +1,17 @@
+{
+  "seconds": 38.54,
+  "cover_ms": 3400,
+  "engine": 2,
+  "look": "teal",
+  "motion": {
+    "hook": "drop",
+    "why": "mark",
+    "num": "spring",
+    "step": "lightup",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "particles"
+  },
+  "voice": null,
+  "music": "blue-skies"
+}

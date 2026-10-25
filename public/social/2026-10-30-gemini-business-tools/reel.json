@@ -1,0 +1,17 @@
+{
+  "seconds": 41.86,
+  "cover_ms": 3400,
+  "engine": 2,
+  "look": "noir",
+  "motion": {
+    "hook": "brush",
+    "why": "rise",
+    "num": "stamp",
+    "step": "words",
+    "cta": "brush",
+    "change": "up",
+    "scene": "aurora"
+  },
+  "voice": null,
+  "music": "poor-but-happy"
+}

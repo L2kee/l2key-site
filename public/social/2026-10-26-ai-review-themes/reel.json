@@ -1,0 +1,17 @@
+{
+  "seconds": 40.88,
+  "cover_ms": 3400,
+  "engine": 2,
+  "look": "noir",
+  "motion": {
+    "hook": "drop",
+    "why": "lightup",
+    "num": "odometer",
+    "step": "brush",
+    "cta": "brush",
+    "change": "up",
+    "scene": "orb"
+  },
+  "voice": null,
+  "music": "poor-but-happy"
+}
