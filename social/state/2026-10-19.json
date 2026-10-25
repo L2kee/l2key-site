@@ -240,15 +240,15 @@
     "fmt": "reel_vo_bf_lily@1.15_m2"
   },
   "2026-10-25 19:00|6ad443b8778b240e2f4389b4": {
-    "buffer": "6adcfe3e6887a2efc1cf448b",
+    "buffer": "6ade55786887a2efc11eaae3",
     "post": "2026-10-25-ai-interview-first",
     "due": "2026-10-25T19:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
+    "fmt": "reel_stickman"
   },
   "2026-10-25 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6adcfe3f3d5b27036b9b7e95",
+    "buffer": "6ade5579bd33ce99c388fe16",
     "post": "2026-10-25-ai-interview-first",
     "due": "2026-10-25T19:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
+    "fmt": "reel_stickman"
   }
 }

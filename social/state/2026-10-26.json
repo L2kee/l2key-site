@@ -1,26 +1,50 @@
 {
+  "2026-10-26 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ade557a6887a2efc11eab4b",
+    "post": "2026-10-26-ai-review-themes",
+    "due": "2026-10-26T08:00:00-04:00",
+    "fmt": "reel_m2"
+  },
+  "2026-10-26 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ade557abd33ce99c3890060",
+    "post": "2026-10-26-ai-review-themes",
+    "due": "2026-10-26T08:00:00-04:00",
+    "fmt": "reel_m2"
+  },
   "2026-10-26 12:30|6ad443b8778b240e2f4389b4": {
-    "buffer": "6adcfe3f6887a2efc1cf44cb",
+    "buffer": "6ade557b0b5343d070e9e14e",
     "post": "2026-10-26-sphinx-git-hook",
     "due": "2026-10-26T12:30:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
+    "fmt": "reel_stickman"
   },
   "2026-10-26 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6adcfe408b3d437ddcd3a5d7",
+    "buffer": "6ade557b8b3d437ddc231c4a",
     "post": "2026-10-26-sphinx-git-hook",
     "due": "2026-10-26T12:30:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
+    "fmt": "reel_stickman"
+  },
+  "2026-10-26 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ade557ce4be8a4d86c1def9",
+    "post": "2026-10-26-banks-block-agents",
+    "due": "2026-10-26T19:00:00-04:00",
+    "fmt": "reel_mascot"
+  },
+  "2026-10-26 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ade557c8b3d437ddc231cab",
+    "post": "2026-10-26-banks-block-agents",
+    "due": "2026-10-26T19:00:00-04:00",
+    "fmt": "reel_mascot"
   },
   "2026-10-27 08:00|6ad443b8778b240e2f4389b4": {
-    "buffer": "6addc873bd33ce99c363ec56",
+    "buffer": "6ade557dbd33ce99c3890111",
     "post": "2026-10-27-ai-design-directions",
     "due": "2026-10-27T08:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
+    "fmt": "reel_stickman"
   },
   "2026-10-27 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6addc8740b5343d070c3f318",
+    "buffer": "6ade557ebd33ce99c3890172",
     "post": "2026-10-27-ai-design-directions",
     "due": "2026-10-27T08:00:00-04:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
+    "fmt": "reel_stickman"
   }
 }
