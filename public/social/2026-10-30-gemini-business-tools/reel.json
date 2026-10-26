@@ -1,5 +1,5 @@
 {
-  "seconds": 41.86,
+  "seconds": 38.28,
   "cover_ms": 3400,
   "engine": 2,
   "look": "noir",
@@ -12,6 +12,6 @@
     "change": "up",
     "scene": "aurora"
   },
-  "voice": null,
+  "voice": "bf_lily@1.15",
   "music": "poor-but-happy"
 }

@@ -1,6 +1,6 @@
 {
-  "seconds": 40.88,
-  "cover_ms": 3400,
+  "seconds": 36.51,
+  "cover_ms": 2913,
   "engine": 2,
   "look": "noir",
   "motion": {
@@ -12,6 +12,6 @@
     "change": "up",
     "scene": "orb"
   },
-  "voice": null,
+  "voice": "bf_lily@1.15",
   "music": "poor-but-happy"
 }
