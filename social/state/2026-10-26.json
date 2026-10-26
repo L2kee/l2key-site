@@ -1,16 +1,4 @@
 {
-  "2026-10-26 08:00|6ad443b8778b240e2f4389b4": {
-    "buffer": "6ade557a6887a2efc11eab4b",
-    "post": "2026-10-26-ai-review-themes",
-    "due": "2026-10-26T08:00:00-04:00",
-    "fmt": "reel_m2"
-  },
-  "2026-10-26 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ade557abd33ce99c3890060",
-    "post": "2026-10-26-ai-review-themes",
-    "due": "2026-10-26T08:00:00-04:00",
-    "fmt": "reel_m2"
-  },
   "2026-10-26 12:30|6ad443b8778b240e2f4389b4": {
     "buffer": "6ade557b0b5343d070e9e14e",
     "post": "2026-10-26-sphinx-git-hook",
@@ -46,5 +34,29 @@
     "post": "2026-10-27-ai-design-directions",
     "due": "2026-10-27T08:00:00-04:00",
     "fmt": "reel_stickman"
+  },
+  "2026-10-26 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6adf2ad10e2d22425b216580",
+    "post": "2026-10-26-ai-review-themes",
+    "due": "2026-10-26T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-26 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6adf2ad2295aa0bde9947cf9",
+    "post": "2026-10-26-ai-review-themes",
+    "due": "2026-10-26T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-27 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6adf2ad30e2d22425b216605",
+    "post": "2026-10-27-adobe-plugin-chatgpt",
+    "due": "2026-10-27T12:30:00-04:00",
+    "fmt": "reel_mascot"
+  },
+  "2026-10-27 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6adf2ad38b3bea238dc81301",
+    "post": "2026-10-27-adobe-plugin-chatgpt",
+    "due": "2026-10-27T12:30:00-04:00",
+    "fmt": "reel_mascot"
   }
 }
