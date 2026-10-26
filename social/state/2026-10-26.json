@@ -58,5 +58,29 @@
     "post": "2026-10-27-adobe-plugin-chatgpt",
     "due": "2026-10-27T12:30:00-04:00",
     "fmt": "reel_mascot"
+  },
+  "2026-10-27 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6adfc0aa2e4832a623d75116",
+    "post": "2026-10-27-claude-duet-approval",
+    "due": "2026-10-27T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-27 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6adfc0ab465475d28775c667",
+    "post": "2026-10-27-claude-duet-approval",
+    "due": "2026-10-27T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-28 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6adfc0ab2e4832a623d751be",
+    "post": "2026-10-28-ai-pr-review",
+    "due": "2026-10-28T08:00:00-04:00",
+    "fmt": "reel_mascot"
+  },
+  "2026-10-28 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6adfc0ac3ffda7dd059172ad",
+    "post": "2026-10-28-ai-pr-review",
+    "due": "2026-10-28T08:00:00-04:00",
+    "fmt": "reel_mascot"
   }
 }
