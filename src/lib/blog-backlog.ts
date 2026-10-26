@@ -7432,7 +7432,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How landscaping companies can design a website that sells design and install projects as well as weekly maintenance, with the photos and details buyers want.",
     excerpt: "Mowing customers and design clients want different things from your website.",
-    date: "2026-10-15",
+    date: "2026-10-26",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -7494,7 +7494,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Fifteen easy video ideas contractors can film on any job site with just a phone, from before and after reveals to quick tips homeowners actually want.",
     excerpt: "Never wonder what to post again. Fifteen ideas you can film on your next job.",
-    date: "2026-10-15",
+    date: "2026-10-26",
     tag: "Marketing",
     relatedHref: "/job-site-studio",
     relatedLabel: "Get 3 free videos from your clips",
@@ -7559,7 +7559,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "If you travel to customers, Google wants your profile set up as a service area business. Here's how it works, what to hide, and how to still rank well.",
     excerpt: "If you work out of your truck or home, your profile needs to be set up differently.",
-    date: "2026-10-15",
+    date: "2026-10-26",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
