@@ -15,7 +15,7 @@ Instagram week file by render.js, voice.py, reel.js, and schedule.py, so a Threa
 - Nothing in a week posts until "approved" is true (Moe reviews each new week first).
 - A post with "skip": true never posts. That's the kill switch (or delete the post from the file).
 - Times are Eastern. The Threads API has no scheduling, so the workflow runs this every 15 minutes and it publishes
-  whatever is due. A post more than GRACE_HOURS late is skipped as stale instead of going out at the wrong time.
+  whatever is due. A post more than GRACE_HOURS (6) late is skipped as stale, and the log says so.
 
 No state file: before publishing, it reads back the account's latest posts and skips any whose text is already up,
 so a rerun never double posts and nothing gets committed (no extra Vercel deploys).
@@ -40,7 +40,7 @@ API = os.environ.get("THREADS_API", "https://graph.threads.com")
 ET = ZoneInfo("America/New_York")
 HERE = os.path.dirname(os.path.abspath(__file__))
 WEEKS = os.path.join(HERE, "threads")
-GRACE_HOURS = 3
+GRACE_HOURS = 6
 KINDS = {"take", "useful", "question", "build", "promo"}
 MAX_BYTES = 500  # Threads' text limit; emojis count by their UTF-8 bytes
 
@@ -155,7 +155,10 @@ def post():
             if at > t or p.get("skip"):
                 continue
             if t - at > timedelta(hours=GRACE_HOURS):
-                continue  # stale, or already handled on an earlier run
+                # Stale, or already handled on an earlier run. Say so for a day, so a dropped post shows in the log.
+                if t - at <= timedelta(hours=24):
+                    print(f"{p['date']} {p['time']}: past the {GRACE_HOURS} hour window, not posting (fine if it's already up)")
+                continue
             if not week.get("approved"):
                 print(f"{name}: {p['date']} {p['time']} is due but the week isn't approved, not posting")
                 continue

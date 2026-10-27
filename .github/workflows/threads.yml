@@ -2,7 +2,7 @@ name: Threads posts
 
 # Publishes the posts in social/threads/<week>.json straight through Meta's Threads API (no Buffer, $0).
 # The Threads API can't schedule, so this runs every 15 minutes and posts whatever is due (see social/threads.py).
-# GitHub often starts scheduled runs late, so a post can land 5 to 30 minutes after its slot. That's fine.
+# GitHub often starts scheduled runs late, so a post can land minutes to hours after its slot (6 hour window).
 # Sundays it also renews the 60 day token. No AI involved, nothing gets committed.
 on:
   push:
@@ -10,6 +10,10 @@ on:
     paths: ["social/threads/**", "social/threads.py"]
   schedule:
     - cron: "*/15 * * * *"
+    # GitHub runs */15 only every 4 to 6 hours in practice (seen 2026-10-26 and 27), so each slot also gets its own
+    # run at an odd minute, which GitHub honors more often. Both UTC hours cover EDT and EST (8:07, 12:37, 7:07 PM ET).
+    - cron: "7 0,12,13,23 * * *"
+    - cron: "37 16,17 * * *"
     - cron: "40 7 * * 0"
   workflow_dispatch:
     inputs:
