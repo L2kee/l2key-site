@@ -1404,21 +1404,24 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   }
 }
 /* Dark, then dim, then full: the word starts as a blurred shadow the color
-   of the background and resolves into the normal body text. */
+   of the background and resolves into the normal body text. The blur is a
+   text-shadow on transparent text, not filter: blur(). iOS Safari gives a
+   filtered inline span its own layer and sometimes never repaints it sharp,
+   leaving random words stuck blurry after the animation ends. */
 @keyframes seep-in {
   0% {
     opacity: 0;
-    filter: blur(8px);
-    color: #0a1a1e;
+    color: transparent;
+    text-shadow: 0 0 8px #0a1a1e;
   }
   45% {
     opacity: 0.35;
-    filter: blur(3px);
-    color: #2c4a50;
+    color: transparent;
+    text-shadow: 0 0 3px #2c4a50;
   }
   100% {
     opacity: 1;
-    filter: blur(0);
     color: inherit;
+    text-shadow: 0 0 0 transparent;
   }
 }
