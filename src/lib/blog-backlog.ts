@@ -7620,7 +7620,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Premium prices need a premium position. Here's how brand positioning shapes what customers expect to pay, and how to move your business upmarket.",
     excerpt: "Customers decide what you're worth before you quote. Positioning is how you influence that.",
-    date: "2026-10-15",
+    date: "2026-10-27",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -7677,7 +7677,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How painting contractors can rank for the searches that bring real jobs, from interior repaints to cabinet refinishing and commercial work.",
     excerpt: "Painters compete on trust. Here's how to earn it in search before the first estimate.",
-    date: "2026-10-15",
+    date: "2026-10-27",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -7737,7 +7737,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical ways residential and commercial cleaning companies can use AI and automation for quotes, scheduling, reminders, and staff communication.",
     excerpt: "Quotes, scheduling, reminders, and rebooking. Here's where automation saves cleaning companies real hours.",
-    date: "2026-10-15",
+    date: "2026-10-27",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
