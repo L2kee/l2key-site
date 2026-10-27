@@ -94,5 +94,29 @@
     "post": "2026-10-28-permit-pending-game",
     "due": "2026-10-28T12:30:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-28 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae10e144137b5e3590bafcd",
+    "post": "2026-10-28-muse-share-leak",
+    "due": "2026-10-28T19:00:00-04:00",
+    "fmt": "reel_stickman"
+  },
+  "2026-10-28 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae10e154e914b3cee28df33",
+    "post": "2026-10-28-muse-share-leak",
+    "due": "2026-10-28T19:00:00-04:00",
+    "fmt": "reel_stickman"
+  },
+  "2026-10-29 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae10e162086adf9c11834f8",
+    "post": "2026-10-29-ai-morning-brief",
+    "due": "2026-10-29T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-29 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae10e162f35d654faec94b4",
+    "post": "2026-10-29-ai-morning-brief",
+    "due": "2026-10-29T08:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
