@@ -130,5 +130,29 @@
     "post": "2026-10-29-mitmproxy-tool",
     "due": "2026-10-29T12:30:00-04:00",
     "fmt": "reel_stickman"
+  },
+  "2026-10-29 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae2652260384583ecd4c546",
+    "post": "2026-10-29-php-flaw-host",
+    "due": "2026-10-29T19:00:00-04:00",
+    "fmt": "reel_mascot"
+  },
+  "2026-10-29 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae26523a840ef151b676786",
+    "post": "2026-10-29-php-flaw-host",
+    "due": "2026-10-29T19:00:00-04:00",
+    "fmt": "reel_mascot"
+  },
+  "2026-10-30 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae265247570388bc1f17f11",
+    "post": "2026-10-30-ai-customer-faq",
+    "due": "2026-10-30T08:00:00-04:00",
+    "fmt": "reel_stickman"
+  },
+  "2026-10-30 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae26524443b48362cce2587",
+    "post": "2026-10-30-ai-customer-faq",
+    "due": "2026-10-30T08:00:00-04:00",
+    "fmt": "reel_stickman"
   }
 }
