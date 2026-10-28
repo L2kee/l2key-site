@@ -7798,7 +7798,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Electrical work is about safety and trust, and reviews are how homeowners judge both. Here's how electricians can earn more honest reviews.",
     excerpt: "Homeowners can't judge wiring. They judge reviews. Here's how to earn more of them.",
-    date: "2026-10-15",
+    date: "2026-10-28",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",
@@ -7856,7 +7856,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical holiday marketing ideas for local businesses that bring in customers without slashing prices, from gift cards to timely offers and honest deadlines.",
     excerpt: "The holidays don't have to mean giving away your margins. Here's what works instead.",
-    date: "2026-10-15",
+    date: "2026-10-28",
     tag: "Marketing",
     relatedHref: "/growth-kit",
     relatedLabel: "Get the Home Service Growth Kit",
@@ -7917,7 +7917,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Google Business Profile posts are free and easy, but most businesses waste them. Here's what to post, how often, and what gets customers to act.",
     excerpt: "Free space on Google that most businesses leave empty. Here's how to use it well.",
-    date: "2026-10-15",
+    date: "2026-10-28",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
