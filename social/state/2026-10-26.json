@@ -118,5 +118,17 @@
     "post": "2026-10-29-ai-morning-brief",
     "due": "2026-10-29T08:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-29 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae1d14a4e936aa1bcc04ebe",
+    "post": "2026-10-29-mitmproxy-tool",
+    "due": "2026-10-29T12:30:00-04:00",
+    "fmt": "reel_stickman"
+  },
+  "2026-10-29 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae1d14b96dccc28f6789961",
+    "post": "2026-10-29-mitmproxy-tool",
+    "due": "2026-10-29T12:30:00-04:00",
+    "fmt": "reel_stickman"
   }
 }
