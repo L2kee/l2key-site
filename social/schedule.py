@@ -27,7 +27,8 @@ If Buffer refuses a reel, the carousel is booked in its place and the run fails,
 Reel formats (social/config/abtest.json): in the A/B test (2026-10-26 to 2026-11-01) half the posts carry a 3D stick figure
 reel made on Moe's laptop by the Content Crew (reel.json "engine": "stickman"), and from 2026-11-02 a third of them carry
 the stick figure and a third the two character mascot reel ("engine": "mascot"). They book as "reel_stickman" and
-"reel_mascot", so metrics can compare them with the slides.
+"reel_mascot", so metrics can compare them with the slides. From 2026-11-02 it's slides and Moe's avatar Reel
+("engine": "avatar", booked as "reel_avatar") only.
 YouTube (since 2026-10-18) takes the same reel as a Short. It only takes video, so it never gets the carousel: a YouTube
 slot waits until the reel exists. Its description is the Instagram caption with the asks rewritten for YouTube, which
 has no DMs (keyword posts send people to DM us on Instagram, and "Follow" becomes "Subscribe").
@@ -250,8 +251,8 @@ def sync():
         def fmt(p, c):
             if c["service"] in REEL_SERVICES and has_reel(p):
                 info = reel_info(p)
-                if info.get("engine") in ("stickman", "mascot"):
-                    return f"reel_{info['engine']}"  # the stick figure or mascot Reel from the Content Crew
+                if info.get("engine") in ("stickman", "mascot", "avatar"):
+                    return f"reel_{info['engine']}"  # the stick figure, mascot, or avatar Reel from the Content Crew
                 voice, engine = info.get("voice"), info.get("engine", 1)
                 base = "reel" if not voice else "reel_vo" if voice == "am_onyx" else f"reel_vo_{voice}"
                 return base if engine < 2 else f"{base}_m{engine}"
