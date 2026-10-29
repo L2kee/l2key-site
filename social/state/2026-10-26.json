@@ -166,5 +166,29 @@
     "post": "2026-10-30-local-wikipedia",
     "due": "2026-10-30T12:30:00-04:00",
     "fmt": "reel_mascot"
+  },
+  "2026-10-30 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae3b74460532fc2b0cfe93d",
+    "post": "2026-10-30-gemini-business-tools",
+    "due": "2026-10-30T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-30 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae3b7448d19aa0a5be45751",
+    "post": "2026-10-30-gemini-business-tools",
+    "due": "2026-10-30T19:00:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-31 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae3b74560532fc2b0cfe99b",
+    "post": "2026-10-31-ai-permission-check",
+    "due": "2026-10-31T08:00:00-04:00",
+    "fmt": "reel_mascot"
+  },
+  "2026-10-31 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae3b7468d19aa0a5be457f8",
+    "post": "2026-10-31-ai-permission-check",
+    "due": "2026-10-31T08:00:00-04:00",
+    "fmt": "reel_mascot"
   }
 }
