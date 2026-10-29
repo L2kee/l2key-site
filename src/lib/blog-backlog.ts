@@ -7980,7 +7980,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Luxury websites follow different rules than typical small business sites. Here's what premium brands do with space, photography, copy, and the path to inquiry.",
     excerpt: "More space, fewer words, better photos, and a calm path to the inquiry.",
-    date: "2026-10-15",
+    date: "2026-10-29",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -8042,7 +8042,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Moving customers worry about scams and surprise fees. Here's how moving companies can rank locally and use their website to earn trust before the first call.",
     excerpt: "People are wary of movers. The company that earns trust online gets the booking.",
-    date: "2026-10-15",
+    date: "2026-10-29",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -8099,7 +8099,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Social followers can disappear overnight. An email list is yours. Here's how a local business can build one honestly and use it without annoying anyone.",
     excerpt: "Followers live on someone else's platform. Your email list belongs to you.",
-    date: "2026-10-15",
+    date: "2026-10-29",
     tag: "Marketing",
     relatedHref: "/growth-kit",
     relatedLabel: "Get the Home Service Growth Kit",
