@@ -154,5 +154,17 @@
     "post": "2026-10-30-ai-customer-faq",
     "due": "2026-10-30T08:00:00-04:00",
     "fmt": "reel_stickman"
+  },
+  "2026-10-30 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae326ea871db13a17aec061",
+    "post": "2026-10-30-local-wikipedia",
+    "due": "2026-10-30T12:30:00-04:00",
+    "fmt": "reel_mascot"
+  },
+  "2026-10-30 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae326eb871db13a17aec0cc",
+    "post": "2026-10-30-local-wikipedia",
+    "due": "2026-10-30T12:30:00-04:00",
+    "fmt": "reel_mascot"
   }
 }
