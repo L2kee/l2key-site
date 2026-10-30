@@ -202,5 +202,29 @@
     "post": "2026-10-31-openshell-sandbox",
     "due": "2026-10-31T12:30:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-31 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae4d183cd8290b9b901a5dc",
+    "post": "2026-10-31-redact-whatsapp-hidden-rules",
+    "due": "2026-10-31T19:00:00-04:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-10-31 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae4d18434702c2daac0b38f",
+    "post": "2026-10-31-redact-whatsapp-hidden-rules",
+    "due": "2026-10-31T19:00:00-04:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-01 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae4d18510a950f13734e4b6",
+    "post": "2026-11-01-free-audit-promo",
+    "due": "2026-11-01T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-01 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae4d185a351214acf9ca8c1",
+    "post": "2026-11-01-free-audit-promo",
+    "due": "2026-11-01T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
