@@ -1,9 +1,9 @@
 {
-  "seconds": 46.2,
+  "seconds": 53.34,
   "cover_ms": 2000,
-  "engine": "stickman",
+  "engine": "avatar",
   "look": "spotlight",
-  "voice": "bm_lewis@1.05",
-  "music": "jazzhouse-13770344",
-  "run": "2026-10-30-ai-customer-faq"
+  "voice": "voicetut-moe",
+  "music": "jazzhouse-3328806",
+  "run": "2026-10-30-ai-customer-faq-avatar"
 }

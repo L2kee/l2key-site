@@ -167,15 +167,16 @@ META = {
     "instagram": lambda p: {"instagram": {"type": "post", "shouldShareToFeed": True}},
     "instagram_reel": lambda p: {"instagram": {"type": "reel", "shouldShareToFeed": True}},
     "facebook": lambda p: {"facebook": {"type": "post"}},
-    "tiktok": lambda p: {"tiktok": {"title": p["hook"][:90]}},
+    "tiktok": lambda p: {"tiktok": {"title": (p.get("title") or p["hook"])[:90]}},
     "youtube_reel": lambda p: {"youtube": {
-        "title": p["hook"][:90] + " #Shorts", "categoryId": "28", "privacy": "public",
+        "title": (p.get("title") or p["hook"])[:90] + " #Shorts", "categoryId": "28", "privacy": "public",
         "madeForKids": False, "notifySubscribers": True, "isAiGenerated": False}},
 }
 
 
 def caption(p, service):
-    """The post's caption for a channel. YouTube gets the Instagram one with the asks rewritten, since it has no DMs."""
+    """The post's caption for a channel. YouTube gets the Instagram one with the asks rewritten, since it has no DMs.
+    An avatar Reel's post carries an Egyptian Arabic "title" (TikTok and YouTube) and captions, written by the crew."""
     if service != "youtube":
         return p["captions"][service]
     lines = []

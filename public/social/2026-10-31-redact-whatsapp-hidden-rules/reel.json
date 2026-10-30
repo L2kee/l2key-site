@@ -1,9 +1,9 @@
 {
-  "seconds": 50.57,
+  "seconds": 50.66,
   "cover_ms": 2000,
-  "engine": "stickman",
-  "look": "blueprint",
-  "voice": "bm_lewis@1.05",
-  "music": "jazzhouse-15515258",
-  "run": "2026-10-31-redact-whatsapp-hidden-rules"
+  "engine": "avatar",
+  "look": "alex-corniche",
+  "voice": "voicetut-moe",
+  "music": "jazzhouse-15187089",
+  "run": "2026-10-31-redact-whatsapp-hidden-rules-avatar"
 }

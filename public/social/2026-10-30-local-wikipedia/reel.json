@@ -1,9 +1,9 @@
 {
-  "seconds": 46.34,
-  "cover_ms": 2050,
-  "engine": "mascot",
-  "look": "mascot",
-  "voice": "am_onyx@1.05+bf_lily@1.15",
-  "music": "jazzhouse-3706899",
-  "run": "2026-10-30-local-wikipedia"
+  "seconds": 49.82,
+  "cover_ms": 2000,
+  "engine": "avatar",
+  "look": "khan-lanterns",
+  "voice": "voicetut-moe",
+  "music": "jazzhouse-588542",
+  "run": "2026-10-30-local-wikipedia-avatar"
 }

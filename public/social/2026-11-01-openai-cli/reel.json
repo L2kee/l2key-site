@@ -1,9 +1,9 @@
 {
-  "seconds": 47.07,
+  "seconds": 54.7,
   "cover_ms": 2000,
-  "engine": "stickman",
-  "look": "noir",
-  "voice": "bm_lewis@1.05",
-  "music": "jazzhouse-12836568",
-  "run": "2026-11-01-openai-cli"
+  "engine": "avatar",
+  "look": "riad-courtyard",
+  "voice": "voicetut-moe",
+  "music": "jazzhouse-13047900",
+  "run": "2026-11-01-openai-cli-avatar"
 }

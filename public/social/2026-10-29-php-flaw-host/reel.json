@@ -1,9 +1,9 @@
 {
-  "seconds": 52.33,
-  "cover_ms": 2050,
-  "engine": "mascot",
-  "look": "mascot",
-  "voice": "am_onyx@1.05+bf_lily@1.15",
-  "music": "jazzhouse-5628885",
-  "run": "2026-10-29-php-flaw-host"
+  "seconds": 57.61,
+  "cover_ms": 2000,
+  "engine": "avatar",
+  "look": "cream",
+  "voice": "voicetut-moe",
+  "music": "jazzhouse-1633251",
+  "run": "2026-10-29-php-flaw-host-avatar"
 }
