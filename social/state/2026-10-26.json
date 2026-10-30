@@ -143,30 +143,6 @@
     "due": "2026-10-29T19:00:00-04:00",
     "fmt": "reel_mascot"
   },
-  "2026-10-30 08:00|6ad443b8778b240e2f4389b4": {
-    "buffer": "6ae265247570388bc1f17f11",
-    "post": "2026-10-30-ai-customer-faq",
-    "due": "2026-10-30T08:00:00-04:00",
-    "fmt": "reel_stickman"
-  },
-  "2026-10-30 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ae26524443b48362cce2587",
-    "post": "2026-10-30-ai-customer-faq",
-    "due": "2026-10-30T08:00:00-04:00",
-    "fmt": "reel_stickman"
-  },
-  "2026-10-30 12:30|6ad443b8778b240e2f4389b4": {
-    "buffer": "6ae326ea871db13a17aec061",
-    "post": "2026-10-30-local-wikipedia",
-    "due": "2026-10-30T12:30:00-04:00",
-    "fmt": "reel_mascot"
-  },
-  "2026-10-30 12:30|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ae326eb871db13a17aec0cc",
-    "post": "2026-10-30-local-wikipedia",
-    "due": "2026-10-30T12:30:00-04:00",
-    "fmt": "reel_mascot"
-  },
   "2026-10-30 19:00|6ad443b8778b240e2f4389b4": {
     "buffer": "6ae3b74460532fc2b0cfe93d",
     "post": "2026-10-30-gemini-business-tools",
@@ -179,16 +155,52 @@
     "due": "2026-10-30T19:00:00-04:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
   },
+  "2026-10-30 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae3fcb22782e7f331c90b0a",
+    "post": "2026-10-30-ai-customer-faq",
+    "due": "2026-10-30T08:00:00-04:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-10-30 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae3fcb32782e7f331c90b37",
+    "post": "2026-10-30-ai-customer-faq",
+    "due": "2026-10-30T08:00:00-04:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-10-30 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae3fcb3a83a7fb63c8ca007",
+    "post": "2026-10-30-local-wikipedia",
+    "due": "2026-10-30T12:30:00-04:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-10-30 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae3fcb456e01b97637fea47",
+    "post": "2026-10-30-local-wikipedia",
+    "due": "2026-10-30T12:30:00-04:00",
+    "fmt": "reel_avatar"
+  },
   "2026-10-31 08:00|6ad443b8778b240e2f4389b4": {
-    "buffer": "6ae3b74560532fc2b0cfe99b",
+    "buffer": "6ae3fcb52782e7f331c90bdb",
     "post": "2026-10-31-ai-permission-check",
     "due": "2026-10-31T08:00:00-04:00",
-    "fmt": "reel_mascot"
+    "fmt": "reel_avatar"
   },
   "2026-10-31 08:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6ae3b7468d19aa0a5be457f8",
+    "buffer": "6ae3fcb656e01b97637feab7",
     "post": "2026-10-31-ai-permission-check",
     "due": "2026-10-31T08:00:00-04:00",
-    "fmt": "reel_mascot"
+    "fmt": "reel_avatar"
+  },
+  "2026-10-31 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae3fcb656e01b97637feae3",
+    "post": "2026-10-31-openshell-sandbox",
+    "due": "2026-10-31T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-10-31 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae3fcb72782e7f331c90c3c",
+    "post": "2026-10-31-openshell-sandbox",
+    "due": "2026-10-31T12:30:00-04:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
