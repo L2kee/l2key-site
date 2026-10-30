@@ -1,0 +1,648 @@
+{
+  "week": "2026-11-02",
+  "posts": [
+    {
+      "date": "2026-11-02",
+      "time": "08:00",
+      "id": "2026-11-02-ai-resume-tailor",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Tailor your resume fast. Step 3 keeps it honest.",
+      "why": "Recruiters skim for the words in the posting. AI can match your real experience to those words in about 5 minutes.",
+      "src": "",
+      "steps": [
+        "Paste the job posting and your resume bullets into Claude or ChatGPT.",
+        "Ask which 3 bullets fit the posting best and which words in the posting mean the same as yours.",
+        "Ask for a rewrite in the posting's words with nothing untrue added, and a flag on any gap."
+      ],
+      "take": "Read every line before you send. Your name goes on it.",
+      "label": "Step",
+      "say": [
+        "Tailor your resume fast! Step three keeps it honest.",
+        "Recruiters skim for the words in the posting. AI can match your real experience to those words in about five minutes.",
+        "Start by pasting the job posting and your resume bullets into Claude or ChatGPT. That's the easy part.",
+        "Next, ask which three bullets fit the posting best, and which words in the posting mean the same as yours.",
+        "The honest part is next. Ask for a rewrite in the posting's words, with nothing untrue added, and a flag on any gap.",
+        "Read every line before you send. Your name goes on it."
+      ],
+      "keyword": "RESUME",
+      "prompt": "You are a careful career coach. Below is a job posting and my current resume bullets. First tell me which 3 bullets match the posting best. Then rewrite those bullets using the posting's own words, without adding any skill, tool, or result that I did not give you. Finally list any requirement in the posting that my bullets do not cover, so I can decide what to say. Job posting [paste here] Resume bullets [paste here]",
+      "captions": {
+        "facebook": "How to tailor your resume to a job posting with AI.\n\nTailor your resume fast. Step 3 keeps it honest.\n\nRecruiters skim for the words in the posting. AI can match your real experience to those words in about 5 minutes.\n\n3 steps.\n1. Paste the job posting and your resume bullets into Claude or ChatGPT.\n2. Ask which 3 bullets fit the posting best and which words in the posting mean the same as yours.\n3. Ask for a rewrite in the posting's words with nothing untrue added, and a flag on any gap.\n\nRead every line before you send. Your name goes on it.\n\nWant the exact prompt? Follow EVOGENCY and message us the word RESUME. We'll send it to you.\n\n#AITools #Resume #JobSearch #Productivity",
+        "instagram": "How to tailor your resume to a job posting with AI.\n\nTailor your resume fast. Step 3 keeps it honest.\n\nRecruiters skim for the words in the posting. AI can match your real experience to those words in about 5 minutes.\n\n3 steps.\n1. Paste the job posting and your resume bullets into Claude or ChatGPT.\n2. Ask which 3 bullets fit the posting best and which words in the posting mean the same as yours.\n3. Ask for a rewrite in the posting's words with nothing untrue added, and a flag on any gap.\n\nRead every line before you send. Your name goes on it.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word RESUME. We'll send it to you.\n\n#AITools #Resume #JobSearch #Productivity",
+        "tiktok": "How to tailor your resume to a job posting with AI.\n\nTailor your resume fast. Step 3 keeps it honest.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us RESUME.\n\n#AITools #Resume #JobSearch #Productivity"
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "time": "12:30",
+      "id": "2026-11-02-carnegie-sincere-interest",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "3 steps people remember you by. The last is sincere.",
+      "why": "Dale Carnegie's old rule still works. People like you when you're interested in them, not when you try to be interesting.",
+      "src": "How to Win Friends and Influence People, Dale Carnegie",
+      "steps": [
+        "Learn one name today and use it twice in the conversation.",
+        "Ask about something they care about, then listen without planning your reply.",
+        "Draft a short thank you, then ask AI to make it specific and sincere, never flattering."
+      ],
+      "take": "Sincere beats clever. If you can't mean it, don't say it.",
+      "label": "Do this",
+      "say": [
+        "Three steps people remember you by! The last one is sincere.",
+        "Dale Carnegie's old rule still works. People like you when you're interested in them, not when you try to be interesting.",
+        "Learn one name today, and use it twice in the conversation. Easy win.",
+        "Then ask about something they care about, and listen without planning your reply.",
+        "Now the sincere one. Draft a short thank you, then ask AI to make it specific, never flattering.",
+        "Sincere beats clever. If you can't mean it, don't say it."
+      ],
+      "captions": {
+        "facebook": "How to make people like you using Dale Carnegie's rules.\n\n3 steps people remember you by. The last is sincere.\n\nDale Carnegie's old rule still works. People like you when you're interested in them, not when you try to be interesting.\n\n3 steps.\n1. Learn one name today and use it twice in the conversation.\n2. Ask about something they care about, then listen without planning your reply.\n3. Draft a short thank you, then ask AI to make it specific and sincere, never flattering.\n\nSincere beats clever. If you can't mean it, don't say it.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Carnegie #Communication #Leadership",
+        "instagram": "How to make people like you using Dale Carnegie's rules.\n\n3 steps people remember you by. The last is sincere.\n\nDale Carnegie's old rule still works. People like you when you're interested in them, not when you try to be interesting.\n\n3 steps.\n1. Learn one name today and use it twice in the conversation.\n2. Ask about something they care about, then listen without planning your reply.\n3. Draft a short thank you, then ask AI to make it specific and sincere, never flattering.\n\nSincere beats clever. If you can't mean it, don't say it.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Carnegie #Communication #Leadership",
+        "tiktok": "How to make people like you using Dale Carnegie's rules.\n\n3 steps people remember you by. The last is sincere.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #Carnegie #Communication #Leadership"
+      }
+    },
+    {
+      "date": "2026-11-02",
+      "time": "19:00",
+      "id": "2026-11-02-anthropic-s1-meter",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Anthropic opened its books. Point 3 is your bill.",
+      "why": "Anthropic made its S-1 public on October 26. It lists about $16.3 billion in first half revenue and no advertising business.",
+      "src": "SEC filing, PPC Land, and CNBC, Oct 26 2026",
+      "steps": [
+        "The filing shows about $16.3B in first half revenue, up from about $1.2B a year earlier.",
+        "It lists no ads business, and over 11,900 customers each paid more than $100,000 in the trailing year.",
+        "So the AI inside an agent is a metered cost. Ask any vendor who pays the provider and what the meter reads."
+      ],
+      "take": "The IPO date is only press talk so far.",
+      "label": "What it means",
+      "say": [
+        "Anthropic opened its books! Point three is your bill.",
+        "Anthropic made its filing public on October twenty sixth. About sixteen point three billion dollars of revenue in the first half, and no ads business.",
+        "First, that revenue is up from about one point two billion a year earlier.",
+        "Next, no advertising. Over eleven thousand nine hundred customers each paid more than a hundred thousand dollars in a year.",
+        "Point three is the one for you. The AI inside an agent is a metered cost. Ask any vendor who pays the provider.",
+        "The IPO date is only press talk so far."
+      ],
+      "captions": {
+        "facebook": "Anthropic IPO filing explained for small business owners.\n\nAnthropic opened its books. Point 3 is your bill.\n\nAnthropic made its S-1 public on October 26. It lists about $16.3 billion in first half revenue and no advertising business.\n\n3 steps.\n1. The filing shows about $16.3B in first half revenue, up from about $1.2B a year earlier.\n2. It lists no ads business, and over 11,900 customers each paid more than $100,000 in the trailing year.\n3. So the AI inside an agent is a metered cost. Ask any vendor who pays the provider and what the meter reads.\n\nThe IPO date is only press talk so far.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Anthropic #AIAgents #SmallBusiness",
+        "instagram": "Anthropic IPO filing explained for small business owners.\n\nAnthropic opened its books. Point 3 is your bill.\n\nAnthropic made its S-1 public on October 26. It lists about $16.3 billion in first half revenue and no advertising business.\n\n3 steps.\n1. The filing shows about $16.3B in first half revenue, up from about $1.2B a year earlier.\n2. It lists no ads business, and over 11,900 customers each paid more than $100,000 in the trailing year.\n3. So the AI inside an agent is a metered cost. Ask any vendor who pays the provider and what the meter reads.\n\nThe IPO date is only press talk so far.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Anthropic #AIAgents #SmallBusiness",
+        "tiktok": "Anthropic IPO filing explained for small business owners.\n\nAnthropic opened its books. Point 3 is your bill.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Anthropic #AIAgents #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "time": "08:00",
+      "id": "2026-11-03-ai-rank-tracker-check",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Rankings tanked? Check step 3 before you panic.",
+      "why": "Some rank trackers showed swapped results this fall, and Semrush confirmed it on October 27. Check yours against Search Console.",
+      "src": "",
+      "steps": [
+        "Export your rank tracker data and your Search Console clicks for the same pages.",
+        "Paste both into Claude or ChatGPT and ask which drops show up in both.",
+        "Ask which drops show only in the tracker. Those are the scares to ignore for now."
+      ],
+      "take": "Search Console is Google's own data about your own site, and it's free.",
+      "label": "Step",
+      "say": [
+        "Rankings tanked? Check step three before you panic!",
+        "Some rank trackers showed swapped results this fall, and Semrush confirmed it. Check yours against Search Console.",
+        "Export your rank tracker data and your Search Console clicks for the same pages. Start there.",
+        "Then paste both into Claude or ChatGPT, and ask which drops show up in both.",
+        "Here's the check. Ask which drops show only in the tracker. Those are the scares to ignore for now.",
+        "Search Console is Google's own data about your own site, and it's free."
+      ],
+      "keyword": "RANKS",
+      "prompt": "You are an SEO analyst. Below are two exports for the same pages. One is from my rank tracker and one is from Google Search Console clicks. First list the pages where both show a drop. Then list the pages where only the tracker shows a drop. Then tell me which I should look into first and which I should wait on, and say what you are unsure about instead of guessing. Rank tracker data [paste here] Search Console data [paste here]",
+      "captions": {
+        "facebook": "How to check if an SEO ranking drop is real.\n\nRankings tanked? Check step 3 before you panic.\n\nSome rank trackers showed swapped results this fall, and Semrush confirmed it on October 27. Check yours against Search Console.\n\n3 steps.\n1. Export your rank tracker data and your Search Console clicks for the same pages.\n2. Paste both into Claude or ChatGPT and ask which drops show up in both.\n3. Ask which drops show only in the tracker. Those are the scares to ignore for now.\n\nSearch Console is Google's own data about your own site, and it's free.\n\nWant the exact prompt? Follow EVOGENCY and message us the word RANKS. We'll send it to you.\n\n#SEO #AITools #GoogleSearch #SmallBusiness",
+        "instagram": "How to check if an SEO ranking drop is real.\n\nRankings tanked? Check step 3 before you panic.\n\nSome rank trackers showed swapped results this fall, and Semrush confirmed it on October 27. Check yours against Search Console.\n\n3 steps.\n1. Export your rank tracker data and your Search Console clicks for the same pages.\n2. Paste both into Claude or ChatGPT and ask which drops show up in both.\n3. Ask which drops show only in the tracker. Those are the scares to ignore for now.\n\nSearch Console is Google's own data about your own site, and it's free.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word RANKS. We'll send it to you.\n\n#SEO #AITools #GoogleSearch #SmallBusiness",
+        "tiktok": "How to check if an SEO ranking drop is real.\n\nRankings tanked? Check step 3 before you panic.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us RANKS.\n\n#SEO #AITools #GoogleSearch #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "time": "12:30",
+      "id": "2026-11-03-ghostty-1-4",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Faster terminal, less memory. The third trick is SSH.",
+      "why": "Ghostty is a terminal app for macOS and Linux. Version 1.4 compresses hidden scrollback to save memory.",
+      "src": "ghostty.org",
+      "steps": [
+        "Install Ghostty 1.4. Idle scrollback compresses itself, cutting memory 70% to 90% for typical text.",
+        "Show an animated GIF with kitten icat. It now plays instead of showing one still frame.",
+        "Connect with ghostty +ssh. It sets up Ghostty's terminfo on the remote host and passes your settings along."
+      ],
+      "take": "Scrollback compression only runs while the terminal is idle.",
+      "label": "How to use it",
+      "say": [
+        "Faster terminal, less memory! The third trick is SSH.",
+        "Ghostty is a terminal app for Mac and Linux. Version one point four compresses hidden scrollback to save memory.",
+        "Start by installing Ghostty one point four. Idle scrollback compresses itself, cutting memory seventy to ninety percent for typical text.",
+        "Next, show an animated GIF with kitten icat. It plays now, instead of one still frame.",
+        "Then the SSH trick. Connect with ghostty plus ssh, and it sets up the remote host for you.",
+        "Scrollback compression only runs while the terminal is idle."
+      ],
+      "captions": {
+        "facebook": "Ghostty terminal 1.4 new features for developers.\n\nFaster terminal, less memory. The third trick is SSH.\n\nGhostty is a terminal app for macOS and Linux. Version 1.4 compresses hidden scrollback to save memory.\n\n3 steps.\n1. Install Ghostty 1.4. Idle scrollback compresses itself, cutting memory 70% to 90% for typical text.\n2. Show an animated GIF with kitten icat. It now plays instead of showing one still frame.\n3. Connect with ghostty +ssh. It sets up Ghostty's terminfo on the remote host and passes your settings along.\n\nScrollback compression only runs while the terminal is idle.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#Ghostty #Terminal #DevTools #Developers",
+        "instagram": "Ghostty terminal 1.4 new features for developers.\n\nFaster terminal, less memory. The third trick is SSH.\n\nGhostty is a terminal app for macOS and Linux. Version 1.4 compresses hidden scrollback to save memory.\n\n3 steps.\n1. Install Ghostty 1.4. Idle scrollback compresses itself, cutting memory 70% to 90% for typical text.\n2. Show an animated GIF with kitten icat. It now plays instead of showing one still frame.\n3. Connect with ghostty +ssh. It sets up Ghostty's terminfo on the remote host and passes your settings along.\n\nScrollback compression only runs while the terminal is idle.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#Ghostty #Terminal #DevTools #Developers",
+        "tiktok": "Ghostty terminal 1.4 new features for developers.\n\nFaster terminal, less memory. The third trick is SSH.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#Ghostty #Terminal #DevTools #Developers"
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "time": "19:00",
+      "id": "2026-11-03-openai-terra-price",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Half price AI model. Number 3 is the catch.",
+      "why": "OpenAI released GPT 6.1 Terra on October 26 at $1 per million input tokens and $5 per million output tokens, half its predecessor.",
+      "src": "The Decoder, SiliconANGLE, and Decrypt, Oct 26 2026",
+      "steps": [
+        "It is in ChatGPT on paid plans, in Codex, and in the API.",
+        "OpenAI pitches it for agent work and computer control, at about half the cost of the model before it.",
+        "The performance numbers are OpenAI's own and early. Test it on one real task before you switch."
+      ],
+      "take": "A cheaper model means cheaper agents, but check the bill.",
+      "label": "What it means",
+      "say": [
+        "Half price AI model! Number three is the catch.",
+        "OpenAI released GPT six point one Terra on October twenty sixth. One dollar in and five dollars out per million tokens, half its predecessor.",
+        "First, where it lives. ChatGPT on paid plans, Codex, and the API.",
+        "Next, what it's for. Agent work and computer control, at about half the cost of the model before it.",
+        "The catch is number three. The performance numbers are OpenAI's own and early. Test it on one real task first.",
+        "A cheaper model means cheaper agents, but check the bill."
+      ],
+      "captions": {
+        "facebook": "GPT 6.1 Terra price and what it means for AI agents.\n\nHalf price AI model. Number 3 is the catch.\n\nOpenAI released GPT 6.1 Terra on October 26 at $1 per million input tokens and $5 per million output tokens, half its predecessor.\n\n3 steps.\n1. It is in ChatGPT on paid plans, in Codex, and in the API.\n2. OpenAI pitches it for agent work and computer control, at about half the cost of the model before it.\n3. The performance numbers are OpenAI's own and early. Test it on one real task before you switch.\n\nA cheaper model means cheaper agents, but check the bill.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #OpenAI #AIAgents #SmallBusiness",
+        "instagram": "GPT 6.1 Terra price and what it means for AI agents.\n\nHalf price AI model. Number 3 is the catch.\n\nOpenAI released GPT 6.1 Terra on October 26 at $1 per million input tokens and $5 per million output tokens, half its predecessor.\n\n3 steps.\n1. It is in ChatGPT on paid plans, in Codex, and in the API.\n2. OpenAI pitches it for agent work and computer control, at about half the cost of the model before it.\n3. The performance numbers are OpenAI's own and early. Test it on one real task before you switch.\n\nA cheaper model means cheaper agents, but check the bill.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #OpenAI #AIAgents #SmallBusiness",
+        "tiktok": "GPT 6.1 Terra price and what it means for AI agents.\n\nHalf price AI model. Number 3 is the catch.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #OpenAI #AIAgents #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "time": "08:00",
+      "id": "2026-11-04-ai-meeting-followup",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Messy meeting? The last step emails each owner.",
+      "why": "Meetings end with everyone sure someone else will follow up. AI can turn a messy transcript into a clear list in minutes.",
+      "src": "",
+      "steps": [
+        "Paste the meeting transcript into Claude or ChatGPT.",
+        "Ask for the decisions, owners, and deadlines in a table.",
+        "Ask for one short follow up email per owner, ready to send."
+      ],
+      "take": "Check every owner and date against the transcript before you send.",
+      "label": "Step",
+      "say": [
+        "Messy meeting? The last step emails each owner!",
+        "Meetings end with everyone sure someone else will follow up. AI can turn a messy transcript into a clear list in minutes.",
+        "Paste the transcript into Claude or ChatGPT. Quick win done.",
+        "Then ask for the decisions, owners, and deadlines in a table.",
+        "The payoff is the emails. Ask for one short follow up per owner, ready to send.",
+        "Check every owner and date against the transcript before you send."
+      ],
+      "keyword": "FOLLOWUP",
+      "prompt": "You are my chief of staff. Below is a transcript of a meeting. First list the decisions that were made. Then make a table with each action, its owner, and its deadline. If an owner or deadline was not stated, write unclear instead of guessing. Finally write one short follow up email per owner, friendly and under 80 words, with [brackets] for anything I need to fill in. Transcript [paste here]",
+      "captions": {
+        "facebook": "How to turn meeting notes into action items with AI.\n\nMessy meeting? The last step emails each owner.\n\nMeetings end with everyone sure someone else will follow up. AI can turn a messy transcript into a clear list in minutes.\n\n3 steps.\n1. Paste the meeting transcript into Claude or ChatGPT.\n2. Ask for the decisions, owners, and deadlines in a table.\n3. Ask for one short follow up email per owner, ready to send.\n\nCheck every owner and date against the transcript before you send.\n\nWant the exact prompt? Follow EVOGENCY and message us the word FOLLOWUP. We'll send it to you.\n\n#AITools #Meetings #Productivity #Teamwork",
+        "instagram": "How to turn meeting notes into action items with AI.\n\nMessy meeting? The last step emails each owner.\n\nMeetings end with everyone sure someone else will follow up. AI can turn a messy transcript into a clear list in minutes.\n\n3 steps.\n1. Paste the meeting transcript into Claude or ChatGPT.\n2. Ask for the decisions, owners, and deadlines in a table.\n3. Ask for one short follow up email per owner, ready to send.\n\nCheck every owner and date against the transcript before you send.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word FOLLOWUP. We'll send it to you.\n\n#AITools #Meetings #Productivity #Teamwork",
+        "tiktok": "How to turn meeting notes into action items with AI.\n\nMessy meeting? The last step emails each owner.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us FOLLOWUP.\n\n#AITools #Meetings #Productivity #Teamwork"
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "time": "12:30",
+      "id": "2026-11-04-voss-calibrated-questions",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Stuck in a negotiation? Question 3 does the heavy lifting.",
+      "why": "Chris Voss, an FBI hostage negotiator, built his method on tactical empathy. Understand them first and they start solving it with you.",
+      "src": "Never Split the Difference, Chris Voss",
+      "steps": [
+        "Mirror them. Repeat their last 3 words as a question, then stay quiet.",
+        "Label the feeling. Say it seems like they're worried about cost.",
+        "Ask how or what, like how am I supposed to do that. Practice it first with AI playing the other side."
+      ],
+      "take": "Stay calm and slow. Tone does half the work.",
+      "label": "Do this",
+      "say": [
+        "Stuck in a negotiation? Question three does the heavy lifting!",
+        "Chris Voss, an FBI hostage negotiator, built his method on tactical empathy. Understand them first and they start solving it with you.",
+        "Mirror first. Repeat their last three words as a question, then stay quiet. It feels odd, and it works.",
+        "Next, label the feeling. Say it seems like they're worried about cost.",
+        "Question three is the big one. Ask how or what, like how am I supposed to do that. Practice it with AI playing the other side.",
+        "Stay calm and slow. Tone does half the work."
+      ],
+      "captions": {
+        "facebook": "How to negotiate using Chris Voss's FBI techniques.\n\nStuck in a negotiation? Question 3 does the heavy lifting.\n\nChris Voss, an FBI hostage negotiator, built his method on tactical empathy. Understand them first and they start solving it with you.\n\n3 steps.\n1. Mirror them. Repeat their last 3 words as a question, then stay quiet.\n2. Label the feeling. Say it seems like they're worried about cost.\n3. Ask how or what, like how am I supposed to do that. Practice it first with AI playing the other side.\n\nStay calm and slow. Tone does half the work.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Negotiation #ChrisVoss #Communication",
+        "instagram": "How to negotiate using Chris Voss's FBI techniques.\n\nStuck in a negotiation? Question 3 does the heavy lifting.\n\nChris Voss, an FBI hostage negotiator, built his method on tactical empathy. Understand them first and they start solving it with you.\n\n3 steps.\n1. Mirror them. Repeat their last 3 words as a question, then stay quiet.\n2. Label the feeling. Say it seems like they're worried about cost.\n3. Ask how or what, like how am I supposed to do that. Practice it first with AI playing the other side.\n\nStay calm and slow. Tone does half the work.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Negotiation #ChrisVoss #Communication",
+        "tiktok": "How to negotiate using Chris Voss's FBI techniques.\n\nStuck in a negotiation? Question 3 does the heavy lifting.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #Negotiation #ChrisVoss #Communication"
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "time": "19:00",
+      "id": "2026-11-04-gemini-4-carbon",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Google's top model isn't for sale. Fact 3 matters.",
+      "why": "On October 28 Google announced Gemini 4 Carbon, its strongest model for cybersecurity and long engineering work.",
+      "src": "Google blog, Unite.ai, and TestingCatalog, Oct 28 2026",
+      "steps": [
+        "Access starts with a group of cyber defenders, then trusted partners through the Fairwind Program.",
+        "Developers, businesses, and consumers are listed as coming soon.",
+        "The intro price of $2 in and $10 out per million tokens rises to $4 and $20 later, so don't build on it yet."
+      ],
+      "take": "The benchmark scores are Google's own claims.",
+      "label": "What it means",
+      "say": [
+        "Google's top model isn't for sale! Fact three matters.",
+        "On October twenty eighth Google announced Gemini four Carbon, its strongest model for cybersecurity and long engineering work.",
+        "Fact one. Access starts with cyber defenders, then trusted partners.",
+        "Fact two. Developers, businesses, and consumers are listed as coming soon.",
+        "And fact three. The intro price doubles later, from two dollars in to four. Don't build on it yet.",
+        "The benchmark scores are Google's own claims."
+      ],
+      "captions": {
+        "facebook": "Gemini 4 Carbon release and price explained.\n\nGoogle's top model isn't for sale. Fact 3 matters.\n\nOn October 28 Google announced Gemini 4 Carbon, its strongest model for cybersecurity and long engineering work.\n\n3 steps.\n1. Access starts with a group of cyber defenders, then trusted partners through the Fairwind Program.\n2. Developers, businesses, and consumers are listed as coming soon.\n3. The intro price of $2 in and $10 out per million tokens rises to $4 and $20 later, so don't build on it yet.\n\nThe benchmark scores are Google's own claims.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Gemini #Google #AIAgents",
+        "instagram": "Gemini 4 Carbon release and price explained.\n\nGoogle's top model isn't for sale. Fact 3 matters.\n\nOn October 28 Google announced Gemini 4 Carbon, its strongest model for cybersecurity and long engineering work.\n\n3 steps.\n1. Access starts with a group of cyber defenders, then trusted partners through the Fairwind Program.\n2. Developers, businesses, and consumers are listed as coming soon.\n3. The intro price of $2 in and $10 out per million tokens rises to $4 and $20 later, so don't build on it yet.\n\nThe benchmark scores are Google's own claims.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Gemini #Google #AIAgents",
+        "tiktok": "Gemini 4 Carbon release and price explained.\n\nGoogle's top model isn't for sale. Fact 3 matters.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Gemini #Google #AIAgents"
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "time": "08:00",
+      "id": "2026-11-05-ai-readme-video-script",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Turn docs into a video script. Step 3 plans shots.",
+      "why": "You already wrote the docs. AI can turn a README or release notes into a 60 second video script in minutes.",
+      "src": "",
+      "steps": [
+        "Paste your README or release notes into Claude or ChatGPT.",
+        "Ask for a 60 second script with a hook, 3 screen moments, and a call to action.",
+        "Ask for a shot list that says what to show on screen for each line."
+      ],
+      "take": "Read it aloud once. If you trip, rewrite that line.",
+      "label": "Step",
+      "say": [
+        "Turn docs into a video script! Step three plans the shots.",
+        "You already wrote the docs. AI can turn a README or release notes into a sixty second video script in minutes.",
+        "Begin by pasting your README or release notes into Claude or ChatGPT. Good start.",
+        "Next, ask for a sixty second script with a hook, three screen moments, and a call to action.",
+        "The shot list is what makes it filmable. Ask what to show on screen for each line.",
+        "Read it aloud once. If you trip, rewrite that line."
+      ],
+      "keyword": "SCRIPT",
+      "prompt": "You are a video producer for developer tools. Below is a product README or release notes. Write a 60 second script with a hook, three screen moments, and a clear call to action. Then write a shot list that says exactly what to show on screen for each line. Only use facts that appear in the text, and put [brackets] where you need something from me. README [paste here]",
+      "captions": {
+        "facebook": "How to turn a README into a video script with AI.\n\nTurn docs into a video script. Step 3 plans shots.\n\nYou already wrote the docs. AI can turn a README or release notes into a 60 second video script in minutes.\n\n3 steps.\n1. Paste your README or release notes into Claude or ChatGPT.\n2. Ask for a 60 second script with a hook, 3 screen moments, and a call to action.\n3. Ask for a shot list that says what to show on screen for each line.\n\nRead it aloud once. If you trip, rewrite that line.\n\nWant the exact prompt? Follow EVOGENCY and message us the word SCRIPT. We'll send it to you.\n\n#AITools #Developers #VideoMarketing #Productivity",
+        "instagram": "How to turn a README into a video script with AI.\n\nTurn docs into a video script. Step 3 plans shots.\n\nYou already wrote the docs. AI can turn a README or release notes into a 60 second video script in minutes.\n\n3 steps.\n1. Paste your README or release notes into Claude or ChatGPT.\n2. Ask for a 60 second script with a hook, 3 screen moments, and a call to action.\n3. Ask for a shot list that says what to show on screen for each line.\n\nRead it aloud once. If you trip, rewrite that line.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word SCRIPT. We'll send it to you.\n\n#AITools #Developers #VideoMarketing #Productivity",
+        "tiktok": "How to turn a README into a video script with AI.\n\nTurn docs into a video script. Step 3 plans shots.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us SCRIPT.\n\n#AITools #Developers #VideoMarketing #Productivity"
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "time": "12:30",
+      "id": "2026-11-05-survival-llm",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Private offline AI answers. Step 3 shows its sources.",
+      "why": "Survival LLM is a free, open source assistant and emergency library that runs on your own computer. After setup it needs no internet.",
+      "src": "brangus.io",
+      "steps": [
+        "Install it while you have internet. It needs a Mac with Apple Silicon or 64 bit Windows 10 or 11.",
+        "Ask a question. It answers from sources like Ready.gov, CDC guidance, and about 930,000 Wikipedia articles.",
+        "Check which articles each answer used, then add your own PDFs and notes to the library."
+      ],
+      "take": "It's a reference, not a doctor. In an emergency, call emergency services.",
+      "label": "How to use it",
+      "say": [
+        "Private offline AI answers! Step three shows its sources.",
+        "Survival LLM is a free, open source assistant and emergency library that runs on your own computer. After setup it needs no internet.",
+        "Begin with the install, while you have internet. You need a Mac with Apple Silicon, or Windows ten or eleven.",
+        "Next, ask a question. It answers from Ready dot gov, CDC guidance, and about nine hundred thirty thousand Wikipedia articles.",
+        "Step three is the sources. Check which articles each answer used, then add your own PDFs and notes.",
+        "It's a reference, not a doctor. In an emergency, call emergency services."
+      ],
+      "captions": {
+        "facebook": "Free offline AI assistant that shows its sources.\n\nPrivate offline AI answers. Step 3 shows its sources.\n\nSurvival LLM is a free, open source assistant and emergency library that runs on your own computer. After setup it needs no internet.\n\n3 steps.\n1. Install it while you have internet. It needs a Mac with Apple Silicon or 64 bit Windows 10 or 11.\n2. Ask a question. It answers from sources like Ready.gov, CDC guidance, and about 930,000 Wikipedia articles.\n3. Check which articles each answer used, then add your own PDFs and notes to the library.\n\nIt's a reference, not a doctor. In an emergency, call emergency services.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#SurvivalLLM #OfflineAI #OpenSource #Preparedness",
+        "instagram": "Free offline AI assistant that shows its sources.\n\nPrivate offline AI answers. Step 3 shows its sources.\n\nSurvival LLM is a free, open source assistant and emergency library that runs on your own computer. After setup it needs no internet.\n\n3 steps.\n1. Install it while you have internet. It needs a Mac with Apple Silicon or 64 bit Windows 10 or 11.\n2. Ask a question. It answers from sources like Ready.gov, CDC guidance, and about 930,000 Wikipedia articles.\n3. Check which articles each answer used, then add your own PDFs and notes to the library.\n\nIt's a reference, not a doctor. In an emergency, call emergency services.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#SurvivalLLM #OfflineAI #OpenSource #Preparedness",
+        "tiktok": "Free offline AI assistant that shows its sources.\n\nPrivate offline AI answers. Step 3 shows its sources.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#SurvivalLLM #OfflineAI #OpenSource #Preparedness"
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "time": "19:00",
+      "id": "2026-11-05-openai-dot-texting",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Your AI agent texts you now. Check 3 before using.",
+      "why": "OpenAI now lets US Pro subscribers text their Dot agent by iMessage or RCS, with text, photos, and voice notes. It is a preview.",
+      "src": "Engadget and Techstrong, Oct 28 2026, Android Authority, Oct 29 2026",
+      "steps": [
+        "The Dot can text you first with updates. Plus, Business, and Enterprise plans are excluded for now.",
+        "Techstrong reports the messages go through a partner called Linq and are not end to end encrypted.",
+        "Disconnecting doesn't delete stored history, so never text an agent customer data, card numbers, or passwords."
+      ],
+      "take": "It's a preview, so the rules may change.",
+      "label": "What it means",
+      "say": [
+        "Your AI agent texts you now! Check three before using.",
+        "OpenAI now lets US Pro subscribers text their Dot agent by iMessage or RCS, with text, photos, and voice notes. It's a preview.",
+        "One. The Dot can text you first with updates. Plus, Business, and Enterprise plans are excluded for now.",
+        "Two. Techstrong reports the messages go through a partner called Linq, and aren't end to end encrypted.",
+        "Three, the one that matters. Disconnecting doesn't delete stored history. Never text an agent customer data, card numbers, or passwords.",
+        "It's a preview, so the rules may change."
+      ],
+      "captions": {
+        "facebook": "Is texting an AI agent safe? OpenAI Dot on iMessage.\n\nYour AI agent texts you now. Check 3 before using.\n\nOpenAI now lets US Pro subscribers text their Dot agent by iMessage or RCS, with text, photos, and voice notes. It is a preview.\n\n3 steps.\n1. The Dot can text you first with updates. Plus, Business, and Enterprise plans are excluded for now.\n2. Techstrong reports the messages go through a partner called Linq and are not end to end encrypted.\n3. Disconnecting doesn't delete stored history, so never text an agent customer data, card numbers, or passwords.\n\nIt's a preview, so the rules may change.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #OpenAI #Privacy #AIAgents",
+        "instagram": "Is texting an AI agent safe? OpenAI Dot on iMessage.\n\nYour AI agent texts you now. Check 3 before using.\n\nOpenAI now lets US Pro subscribers text their Dot agent by iMessage or RCS, with text, photos, and voice notes. It is a preview.\n\n3 steps.\n1. The Dot can text you first with updates. Plus, Business, and Enterprise plans are excluded for now.\n2. Techstrong reports the messages go through a partner called Linq and are not end to end encrypted.\n3. Disconnecting doesn't delete stored history, so never text an agent customer data, card numbers, or passwords.\n\nIt's a preview, so the rules may change.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #OpenAI #Privacy #AIAgents",
+        "tiktok": "Is texting an AI agent safe? OpenAI Dot on iMessage.\n\nYour AI agent texts you now. Check 3 before using.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #OpenAI #Privacy #AIAgents"
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "time": "08:00",
+      "id": "2026-11-06-ai-model-switch-math",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Switch AI models? Step 3 shows your break even.",
+      "why": "AI prices keep dropping. A 10 minute check tells you whether a cheaper model is worth the switch.",
+      "src": "",
+      "steps": [
+        "Copy a model's pricing page and your monthly usage into Claude or ChatGPT.",
+        "Ask for the monthly cost on your current model and on the next cheaper one.",
+        "Ask for the break even point and a list of what to test before you switch."
+      ],
+      "take": "Prices change, so check the pricing page again before you decide.",
+      "label": "Step",
+      "say": [
+        "Switch AI models? Step three shows your break even!",
+        "AI prices keep dropping. A ten minute check tells you whether a cheaper model is worth the switch.",
+        "First, copy a model's pricing page and your monthly usage into Claude or ChatGPT. Easy.",
+        "Next, ask for the monthly cost on your current model, and on the next cheaper one.",
+        "Then the break even. Ask for that point, plus a list of what to test before you switch.",
+        "Prices change, so check the pricing page again before you decide."
+      ],
+      "keyword": "PRICING",
+      "prompt": "You are a careful cost analyst. Below is a pricing page for an AI model and my monthly usage numbers. First calculate my monthly cost on my current model and on the next cheaper option. Then give me the break even point and the main risks of switching. Finally list what I should test on a real task before I change anything. Show your math and say what you are unsure about instead of guessing. Pricing page [paste here] My usage [paste here]",
+      "captions": {
+        "facebook": "How to compare AI model prices before you switch.\n\nSwitch AI models? Step 3 shows your break even.\n\nAI prices keep dropping. A 10 minute check tells you whether a cheaper model is worth the switch.\n\n3 steps.\n1. Copy a model's pricing page and your monthly usage into Claude or ChatGPT.\n2. Ask for the monthly cost on your current model and on the next cheaper one.\n3. Ask for the break even point and a list of what to test before you switch.\n\nPrices change, so check the pricing page again before you decide.\n\nWant the exact prompt? Follow EVOGENCY and message us the word PRICING. We'll send it to you.\n\n#AITools #AIPricing #Productivity #Developers",
+        "instagram": "How to compare AI model prices before you switch.\n\nSwitch AI models? Step 3 shows your break even.\n\nAI prices keep dropping. A 10 minute check tells you whether a cheaper model is worth the switch.\n\n3 steps.\n1. Copy a model's pricing page and your monthly usage into Claude or ChatGPT.\n2. Ask for the monthly cost on your current model and on the next cheaper one.\n3. Ask for the break even point and a list of what to test before you switch.\n\nPrices change, so check the pricing page again before you decide.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word PRICING. We'll send it to you.\n\n#AITools #AIPricing #Productivity #Developers",
+        "tiktok": "How to compare AI model prices before you switch.\n\nSwitch AI models? Step 3 shows your break even.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us PRICING.\n\n#AITools #AIPricing #Productivity #Developers"
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "time": "12:30",
+      "id": "2026-11-06-radical-candor-feedback",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Nice feedback is failing your team. Step 3 fixes it.",
+      "why": "Kim Scott's Radical Candor says good feedback cares personally and challenges directly. Nice but vague is called ruinous empathy.",
+      "src": "Radical Candor, Kim Scott",
+      "steps": [
+        "Show you care first. Start with something real you value in their work.",
+        "Challenge directly. Say what needs to change in one clear sentence.",
+        "Paste your draft into AI and ask if it lands as candor or as aggression."
+      ],
+      "take": "If it feels cruel, add the care. If it feels vague, add the challenge.",
+      "label": "Do this",
+      "say": [
+        "Nice feedback is failing your team! Step three fixes it.",
+        "Kim Scott's Radical Candor says good feedback cares personally and challenges directly. Nice but vague is called ruinous empathy.",
+        "Start with care. Say something real you value in their work. Good.",
+        "Next, challenge directly. Say what needs to change in one clear sentence.",
+        "Here's the fix. Paste your draft into AI and ask if it lands as candor or as aggression.",
+        "If it feels cruel, add the care. If it feels vague, add the challenge."
+      ],
+      "captions": {
+        "facebook": "How to give honest feedback without being harsh. Radical Candor.\n\nNice feedback is failing your team. Step 3 fixes it.\n\nKim Scott's Radical Candor says good feedback cares personally and challenges directly. Nice but vague is called ruinous empathy.\n\n3 steps.\n1. Show you care first. Start with something real you value in their work.\n2. Challenge directly. Say what needs to change in one clear sentence.\n3. Paste your draft into AI and ask if it lands as candor or as aggression.\n\nIf it feels cruel, add the care. If it feels vague, add the challenge.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Leadership #Feedback #RadicalCandor",
+        "instagram": "How to give honest feedback without being harsh. Radical Candor.\n\nNice feedback is failing your team. Step 3 fixes it.\n\nKim Scott's Radical Candor says good feedback cares personally and challenges directly. Nice but vague is called ruinous empathy.\n\n3 steps.\n1. Show you care first. Start with something real you value in their work.\n2. Challenge directly. Say what needs to change in one clear sentence.\n3. Paste your draft into AI and ask if it lands as candor or as aggression.\n\nIf it feels cruel, add the care. If it feels vague, add the challenge.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Leadership #Feedback #RadicalCandor",
+        "tiktok": "How to give honest feedback without being harsh. Radical Candor.\n\nNice feedback is failing your team. Step 3 fixes it.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #Leadership #Feedback #RadicalCandor"
+      }
+    },
+    {
+      "date": "2026-11-06",
+      "time": "19:00",
+      "id": "2026-11-06-mistral-large-4-open",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Mistral opened a trillion parameter model. Catch 3 is hardware.",
+      "why": "On October 29 Mistral released the open weights of Mistral Large 4, a model of about 1 trillion parameters with a 1 million token context.",
+      "src": "Mistral, Hugging Face, and AI Weekly, Oct 29 2026",
+      "steps": [
+        "The license is a modified MIT. You can self host, fine tune, and build products.",
+        "Companies that sell it as a Model as a Service need a separate commercial license.",
+        "Open weights aren't cheap to run. Hugging Face's examples need 8 GPUs, so most people will use a hosted API."
+      ],
+      "take": "Benchmarks and prices here come from Mistral.",
+      "label": "What it means",
+      "say": [
+        "Mistral opened a trillion parameter model! Catch three is hardware.",
+        "On October twenty ninth Mistral released the open weights of Mistral Large four, a model of about one trillion parameters.",
+        "Catch one. The license is a modified MIT. You can self host, fine tune, and build products.",
+        "Catch two. Companies that sell it as a Model as a Service need a separate commercial license.",
+        "And catch three. Open weights aren't cheap to run. Hugging Face's examples need eight GPUs.",
+        "Benchmarks and prices here come from Mistral."
+      ],
+      "captions": {
+        "facebook": "Mistral Large 4 open weights explained for builders.\n\nMistral opened a trillion parameter model. Catch 3 is hardware.\n\nOn October 29 Mistral released the open weights of Mistral Large 4, a model of about 1 trillion parameters with a 1 million token context.\n\n3 steps.\n1. The license is a modified MIT. You can self host, fine tune, and build products.\n2. Companies that sell it as a Model as a Service need a separate commercial license.\n3. Open weights aren't cheap to run. Hugging Face's examples need 8 GPUs, so most people will use a hosted API.\n\nBenchmarks and prices here come from Mistral.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Mistral #OpenSource #AIAgents",
+        "instagram": "Mistral Large 4 open weights explained for builders.\n\nMistral opened a trillion parameter model. Catch 3 is hardware.\n\nOn October 29 Mistral released the open weights of Mistral Large 4, a model of about 1 trillion parameters with a 1 million token context.\n\n3 steps.\n1. The license is a modified MIT. You can self host, fine tune, and build products.\n2. Companies that sell it as a Model as a Service need a separate commercial license.\n3. Open weights aren't cheap to run. Hugging Face's examples need 8 GPUs, so most people will use a hosted API.\n\nBenchmarks and prices here come from Mistral.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Mistral #OpenSource #AIAgents",
+        "tiktok": "Mistral Large 4 open weights explained for builders.\n\nMistral opened a trillion parameter model. Catch 3 is hardware.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Mistral #OpenSource #AIAgents"
+      }
+    },
+    {
+      "date": "2026-11-07",
+      "time": "08:00",
+      "id": "2026-11-07-ai-filing-five-numbers",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Skim a 300 page filing. Step 3 finds what's missing.",
+      "why": "Long filings bury the point. AI can pull out the 5 numbers that matter and tell you what each one means.",
+      "src": "",
+      "steps": [
+        "Paste a public filing or an earnings summary into Claude or ChatGPT.",
+        "Ask for the 5 numbers that matter and what each one means in plain English.",
+        "Ask for one thing the company did not say."
+      ],
+      "take": "AI can misread tables, so check each number against the source.",
+      "label": "Step",
+      "say": [
+        "Skim a three hundred page filing! Step three finds what's missing.",
+        "Long filings bury the point. AI can pull out the five numbers that matter and tell you what each one means.",
+        "First, paste a public filing or an earnings summary into Claude or ChatGPT. Easy.",
+        "Next, ask for the five numbers that matter, in plain English.",
+        "What nobody does is step three. Ask for one thing the company did not say.",
+        "AI can misread tables, so check each number against the source."
+      ],
+      "keyword": "FILING",
+      "prompt": "You are a plain English financial reader. Below is a public filing or an earnings summary. First list the 5 numbers that matter most and say what each one means in simple words. Then name one important thing the company did not say or explain. Quote the line each number came from, and say what you are unsure about instead of guessing. This is for learning, not investment advice. Document [paste here]",
+      "captions": {
+        "facebook": "How to read a long company filing fast with AI.\n\nSkim a 300 page filing. Step 3 finds what's missing.\n\nLong filings bury the point. AI can pull out the 5 numbers that matter and tell you what each one means.\n\n3 steps.\n1. Paste a public filing or an earnings summary into Claude or ChatGPT.\n2. Ask for the 5 numbers that matter and what each one means in plain English.\n3. Ask for one thing the company did not say.\n\nAI can misread tables, so check each number against the source.\n\nWant the exact prompt? Follow EVOGENCY and message us the word FILING. We'll send it to you.\n\n#AITools #Investing #Research #Productivity",
+        "instagram": "How to read a long company filing fast with AI.\n\nSkim a 300 page filing. Step 3 finds what's missing.\n\nLong filings bury the point. AI can pull out the 5 numbers that matter and tell you what each one means.\n\n3 steps.\n1. Paste a public filing or an earnings summary into Claude or ChatGPT.\n2. Ask for the 5 numbers that matter and what each one means in plain English.\n3. Ask for one thing the company did not say.\n\nAI can misread tables, so check each number against the source.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word FILING. We'll send it to you.\n\n#AITools #Investing #Research #Productivity",
+        "tiktok": "How to read a long company filing fast with AI.\n\nSkim a 300 page filing. Step 3 finds what's missing.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us FILING.\n\n#AITools #Investing #Research #Productivity"
+      }
+    },
+    {
+      "date": "2026-11-07",
+      "time": "12:30",
+      "id": "2026-11-07-herdr-agents",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Juggling coding agents? The third feature saves your terminals.",
+      "why": "Herdr is an open source desktop app that groups terminals into spaces and shows which coding agents need you.",
+      "src": "Herdr GitHub page",
+      "steps": [
+        "Install it on a Mac with Apple Silicon, Linux, or Windows, and group your terminals into spaces.",
+        "Watch the sidebar. Agents that report status show as Working, Blocked, or Done.",
+        "Close the window. Terminals keep running, and SSH machines keep going while your laptop sleeps."
+      ],
+      "take": "Usage telemetry is on by default. Turn it off in Settings, then Privacy.",
+      "label": "How to use it",
+      "say": [
+        "Juggling coding agents? The third feature saves your terminals!",
+        "Herdr is an open source desktop app that groups terminals into spaces and shows which coding agents need you.",
+        "First, install it on a Mac with Apple Silicon, Linux, or Windows, and group your terminals into spaces.",
+        "Next, watch the sidebar. Agents show as Working, Blocked, or Done.",
+        "Feature three is the keeper. Close the window, and your terminals keep running. SSH machines keep going while your laptop sleeps.",
+        "Usage telemetry is on by default. Turn it off in Settings, then Privacy."
+      ],
+      "captions": {
+        "facebook": "Herdr app to manage multiple coding agents.\n\nJuggling coding agents? The third feature saves your terminals.\n\nHerdr is an open source desktop app that groups terminals into spaces and shows which coding agents need you.\n\n3 steps.\n1. Install it on a Mac with Apple Silicon, Linux, or Windows, and group your terminals into spaces.\n2. Watch the sidebar. Agents that report status show as Working, Blocked, or Done.\n3. Close the window. Terminals keep running, and SSH machines keep going while your laptop sleeps.\n\nUsage telemetry is on by default. Turn it off in Settings, then Privacy.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#Herdr #CodingAgents #DevTools #OpenSource",
+        "instagram": "Herdr app to manage multiple coding agents.\n\nJuggling coding agents? The third feature saves your terminals.\n\nHerdr is an open source desktop app that groups terminals into spaces and shows which coding agents need you.\n\n3 steps.\n1. Install it on a Mac with Apple Silicon, Linux, or Windows, and group your terminals into spaces.\n2. Watch the sidebar. Agents that report status show as Working, Blocked, or Done.\n3. Close the window. Terminals keep running, and SSH machines keep going while your laptop sleeps.\n\nUsage telemetry is on by default. Turn it off in Settings, then Privacy.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#Herdr #CodingAgents #DevTools #OpenSource",
+        "tiktok": "Herdr app to manage multiple coding agents.\n\nJuggling coding agents? The third feature saves your terminals.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#Herdr #CodingAgents #DevTools #OpenSource"
+      }
+    },
+    {
+      "date": "2026-11-07",
+      "time": "19:00",
+      "id": "2026-11-07-google-ads-ai-mode",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Google ads now follow the chat. Number 3 is yours.",
+      "why": "On October 28 Google said it is expanding ads in AI Mode to 10 more countries and launching ads on follow up questions in the US.",
+      "src": "Google blog and Search Engine Roundtable, Oct 28 2026, India Today, Oct 30 2026",
+      "steps": [
+        "Brazil, Mexico, and the UK are planned for the fourth quarter.",
+        "In the US, ads can now appear on follow up questions in an AI Mode conversation, labeled Sponsored.",
+        "Check your offers and product feeds, since ads now follow people through a whole conversation."
+      ],
+      "take": "Google's click through claims are its own, so don't promise results.",
+      "label": "What it means",
+      "say": [
+        "Google ads now follow the chat! Number three is yours.",
+        "On October twenty eighth Google said it's expanding ads in AI Mode to ten more countries, and launching ads on follow up questions in the US.",
+        "One. Brazil, Mexico, and the UK are planned for the fourth quarter.",
+        "Two. In the US, ads can now appear on follow up questions in an AI Mode conversation, labeled Sponsored.",
+        "Now number three, yours. Check your offers and product feeds, because ads follow people through the whole conversation.",
+        "Google's click through claims are its own, so don't promise results."
+      ],
+      "captions": {
+        "facebook": "Google ads in AI Mode explained for small businesses.\n\nGoogle ads now follow the chat. Number 3 is yours.\n\nOn October 28 Google said it is expanding ads in AI Mode to 10 more countries and launching ads on follow up questions in the US.\n\n3 steps.\n1. Brazil, Mexico, and the UK are planned for the fourth quarter.\n2. In the US, ads can now appear on follow up questions in an AI Mode conversation, labeled Sponsored.\n3. Check your offers and product feeds, since ads now follow people through a whole conversation.\n\nGoogle's click through claims are its own, so don't promise results.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #GoogleAds #AIMode #SmallBusiness",
+        "instagram": "Google ads in AI Mode explained for small businesses.\n\nGoogle ads now follow the chat. Number 3 is yours.\n\nOn October 28 Google said it is expanding ads in AI Mode to 10 more countries and launching ads on follow up questions in the US.\n\n3 steps.\n1. Brazil, Mexico, and the UK are planned for the fourth quarter.\n2. In the US, ads can now appear on follow up questions in an AI Mode conversation, labeled Sponsored.\n3. Check your offers and product feeds, since ads now follow people through a whole conversation.\n\nGoogle's click through claims are its own, so don't promise results.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #GoogleAds #AIMode #SmallBusiness",
+        "tiktok": "Google ads in AI Mode explained for small businesses.\n\nGoogle ads now follow the chat. Number 3 is yours.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #GoogleAds #AIMode #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "time": "08:00",
+      "id": "2026-11-08-review-kit-timing",
+      "kind": "promo",
+      "topic": "From us",
+      "hook": "5 parts, 1 free kit. The last one is timing.",
+      "why": "Happy customers forget to leave a Google review. The free 5 Star Review Kit gives home service pros 7 copy and paste messages to ask.",
+      "src": "",
+      "steps": [
+        "3 texts to send within 2 hours of a job, and why timing is everything.",
+        "2 follow ups that get the review without being annoying.",
+        "A timing cheat sheet so you always know what to send and when."
+      ],
+      "take": "Free for home service pros. Takes 2 minutes to set up.",
+      "label": "Inside",
+      "say": [
+        "Five parts, one free kit! The last one is timing.",
+        "Happy customers forget to leave a Google review. The free review kit gives home service pros seven copy and paste messages to ask.",
+        "First, three texts to send within two hours of a job, and why timing is everything.",
+        "Next, two follow ups that get the review without being annoying.",
+        "And the last part, the timing cheat sheet, so you always know what to send and when.",
+        "Free for home service pros. Takes two minutes to set up."
+      ],
+      "captions": {
+        "facebook": "Free Google review request templates for home service businesses.\n\n5 parts, 1 free kit. The last one is timing.\n\nHappy customers forget to leave a Google review. The free 5 Star Review Kit gives home service pros 7 copy and paste messages to ask.\n\nWhat's inside.\n1. 3 texts to send within 2 hours of a job, and why timing is everything.\n2. 2 follow ups that get the review without being annoying.\n3. A timing cheat sheet so you always know what to send and when.\n\nFree for home service pros. Takes 2 minutes to set up.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites and AI agents for local businesses. Get the free kit at evogencyglobal.com/free-review-kit\n\n#GoogleReviews #HomeServices #SmallBusiness #Orlando",
+        "instagram": "Free Google review request templates for home service businesses.\n\n5 parts, 1 free kit. The last one is timing.\n\nHappy customers forget to leave a Google review. The free 5 Star Review Kit gives home service pros 7 copy and paste messages to ask.\n\nWhat's inside.\n1. 3 texts to send within 2 hours of a job, and why timing is everything.\n2. 2 follow ups that get the review without being annoying.\n3. A timing cheat sheet so you always know what to send and when.\n\nFree for home service pros. Takes 2 minutes to set up.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites and AI agents for local businesses. Get the free kit at evogencyglobal.com/free-review-kit (link in bio)\n\n#GoogleReviews #HomeServices #SmallBusiness #Orlando",
+        "tiktok": "Free Google review request templates for home service businesses.\n\n5 parts, 1 free kit. The last one is timing.\n\nFree kit, link in bio.\n\n#GoogleReviews #HomeServices #SmallBusiness #Orlando"
+      },
+      "foot": "A free kit for home service pros"
+    },
+    {
+      "date": "2026-11-08",
+      "time": "12:30",
+      "id": "2026-11-08-kiyosaki-asset-test",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Your last 3 buys. Asset or liability? Step 3 stings.",
+      "why": "Robert Kiyosaki's Rich Dad Poor Dad splits spending into assets and liabilities. Seeing the split is a mindset habit, not advice.",
+      "src": "Rich Dad Poor Dad, Robert Kiyosaki",
+      "steps": [
+        "List your last 5 purchases.",
+        "Mark each one. An asset puts money in your pocket and a liability takes it out.",
+        "Ask AI to sort the list and show the pattern, then pick one habit to change."
+      ],
+      "take": "Mindset only, not advice. Ask a licensed professional about your own money.",
+      "label": "Do this",
+      "say": [
+        "Your last three buys. Asset or liability? Step three stings.",
+        "Robert Kiyosaki's Rich Dad Poor Dad splits spending into assets and liabilities. Seeing the split is a mindset habit, not advice.",
+        "First, list your last five purchases. Takes a minute.",
+        "Next, mark each one. An asset puts money in your pocket, and a liability takes it out.",
+        "The sting comes next. Ask AI to sort the list and show the pattern, then pick one habit to change.",
+        "Mindset only, not advice. Ask a licensed professional about your own money."
+      ],
+      "captions": {
+        "facebook": "How to tell an asset from a liability. Rich Dad Poor Dad lesson.\n\nYour last 3 buys. Asset or liability? Step 3 stings.\n\nRobert Kiyosaki's Rich Dad Poor Dad splits spending into assets and liabilities. Seeing the split is a mindset habit, not advice.\n\n3 steps.\n1. List your last 5 purchases.\n2. Mark each one. An asset puts money in your pocket and a liability takes it out.\n3. Ask AI to sort the list and show the pattern, then pick one habit to change.\n\nMindset only, not advice. Ask a licensed professional about your own money.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #MoneyMindset #RichDadPoorDad #Habits",
+        "instagram": "How to tell an asset from a liability. Rich Dad Poor Dad lesson.\n\nYour last 3 buys. Asset or liability? Step 3 stings.\n\nRobert Kiyosaki's Rich Dad Poor Dad splits spending into assets and liabilities. Seeing the split is a mindset habit, not advice.\n\n3 steps.\n1. List your last 5 purchases.\n2. Mark each one. An asset puts money in your pocket and a liability takes it out.\n3. Ask AI to sort the list and show the pattern, then pick one habit to change.\n\nMindset only, not advice. Ask a licensed professional about your own money.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #MoneyMindset #RichDadPoorDad #Habits",
+        "tiktok": "How to tell an asset from a liability. Rich Dad Poor Dad lesson.\n\nYour last 3 buys. Asset or liability? Step 3 stings.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #MoneyMindset #RichDadPoorDad #Habits"
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "time": "19:00",
+      "id": "2026-11-08-genie-4-world-model",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Genie 4 builds worlds with sound. Fact 3 is access.",
+      "why": "On October 27 Google DeepMind unveiled Genie 4, a world model you steer in real time with plain language.",
+      "src": "Google DeepMind and Gizmodo, Oct 27 2026, MarkTechPost, Oct 28 2026",
+      "steps": [
+        "You steer it in real time, like changing the weather or adding a person.",
+        "It is Google's first real time world model to generate audio natively, including dialogue that reacts to the scene.",
+        "It's a research preview for trusted testers, coming first to Google AI Ultra subscribers. No price is stated."
+      ],
+      "take": "Gizmodo reports it still struggles to stay consistent in longer sessions.",
+      "label": "What it means",
+      "say": [
+        "Genie four builds worlds with sound! Fact three is access.",
+        "On October twenty seventh Google DeepMind unveiled Genie four, a world model you steer in real time with plain language.",
+        "Fact one. You steer it live, like changing the weather or adding a person.",
+        "Fact two. It's Google's first real time world model to generate audio natively, even dialogue that reacts to the scene.",
+        "And fact three, access. It's a research preview for trusted testers, coming first to Google AI Ultra subscribers.",
+        "Gizmodo reports it still struggles to stay consistent in longer sessions."
+      ],
+      "captions": {
+        "facebook": "Google Genie 4 world model with audio explained.\n\nGenie 4 builds worlds with sound. Fact 3 is access.\n\nOn October 27 Google DeepMind unveiled Genie 4, a world model you steer in real time with plain language.\n\n3 steps.\n1. You steer it in real time, like changing the weather or adding a person.\n2. It is Google's first real time world model to generate audio natively, including dialogue that reacts to the scene.\n3. It's a research preview for trusted testers, coming first to Google AI Ultra subscribers. No price is stated.\n\nGizmodo reports it still struggles to stay consistent in longer sessions.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Google #DeepMind #Creators",
+        "instagram": "Google Genie 4 world model with audio explained.\n\nGenie 4 builds worlds with sound. Fact 3 is access.\n\nOn October 27 Google DeepMind unveiled Genie 4, a world model you steer in real time with plain language.\n\n3 steps.\n1. You steer it in real time, like changing the weather or adding a person.\n2. It is Google's first real time world model to generate audio natively, including dialogue that reacts to the scene.\n3. It's a research preview for trusted testers, coming first to Google AI Ultra subscribers. No price is stated.\n\nGizmodo reports it still struggles to stay consistent in longer sessions.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Google #DeepMind #Creators",
+        "tiktok": "Google Genie 4 world model with audio explained.\n\nGenie 4 builds worlds with sound. Fact 3 is access.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Google #DeepMind #Creators"
+      }
+    }
+  ]
+}
