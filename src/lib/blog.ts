@@ -657,6 +657,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "what-a-luxury-brand-website-gets-right",
   "seo-for-moving-companies",
   "how-to-build-an-email-list-for-a-local-business",
+  "ai-automation-for-dentists",
+  "small-business-saturday-plan",
+  "website-design-for-law-firms",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

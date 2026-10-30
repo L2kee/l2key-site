@@ -8156,7 +8156,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical ways dental practices can use AI and automation for scheduling, reminders, recalls, intake, and phones while protecting patient privacy.",
     excerpt: "Fewer no shows, fuller schedules, and a front desk that isn't drowning. Here's where automation helps.",
-    date: "2026-10-15",
+    date: "2026-10-30",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -8216,7 +8216,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Small Business Saturday rewards local businesses that plan ahead. Here's a simple week by week plan to bring in customers on the day and keep them after.",
     excerpt: "The businesses that win Small Business Saturday start planning weeks before it.",
-    date: "2026-10-15",
+    date: "2026-10-30",
     tag: "Marketing",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -8278,7 +8278,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How small law firms can design a website that builds trust quickly, explains practice areas clearly, and makes booking a consultation easy.",
     excerpt: "People looking for a lawyer are stressed. Your website should calm them down and make the next step obvious.",
-    date: "2026-10-15",
+    date: "2026-10-30",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
