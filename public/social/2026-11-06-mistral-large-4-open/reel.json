@@ -1,0 +1,17 @@
+{
+  "seconds": 38.48,
+  "cover_ms": 3400,
+  "engine": 2,
+  "look": "noir",
+  "motion": {
+    "hook": "mark",
+    "why": "wipe",
+    "num": "pop",
+    "step": "brush",
+    "cta": "brush",
+    "change": "up",
+    "scene": "orb"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "poor-but-happy"
+}
