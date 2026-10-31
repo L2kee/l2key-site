@@ -226,5 +226,17 @@
     "post": "2026-11-01-free-audit-promo",
     "due": "2026-11-01T08:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-01 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae5c2d6b84259308bceda57",
+    "post": "2026-11-01-openai-cli",
+    "due": "2026-11-01T12:30:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-01 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae5c2d6ceb491e585ee967c",
+    "post": "2026-11-01-openai-cli",
+    "due": "2026-11-01T12:30:00-05:00",
+    "fmt": "reel_avatar"
   }
 }
