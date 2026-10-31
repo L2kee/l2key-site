@@ -8340,7 +8340,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "For service businesses, the brand lives on trucks, uniforms, invoices, and the website. Here's how to make them look like one trustworthy company.",
     excerpt: "A homeowner sees your truck before your website. Here's how to make every piece match.",
-    date: "2026-10-15",
+    date: "2026-10-31",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -8398,7 +8398,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How small law firms can earn more Google reviews, reply safely without breaking confidentiality, and stay within bar advertising rules.",
     excerpt: "For law firms, reviews build trust but come with confidentiality and ethics rules. Here's how to handle both.",
-    date: "2026-10-15",
+    date: "2026-10-31",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",
@@ -8455,7 +8455,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How tree service companies can show up on Google for urgent storm damage calls and planned trimming and removal jobs, and earn trust online.",
     excerpt: "A tree on the roof and a yearly trim bring two very different searchers. Here's how to reach both.",
-    date: "2026-10-15",
+    date: "2026-10-31",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
