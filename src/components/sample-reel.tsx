@@ -94,6 +94,7 @@ export function SampleReel({ samples }: { samples: Sample[] }) {
     });
     // Sound is left out on purpose. Toggling it mutes or unmutes the playing
     // video in place (toggleSound) instead of restarting it.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [settled, onScreen]);
 
   function goTo(i: number) {

@@ -198,6 +198,8 @@ export function MockupNotice() {
 
   // Leaving for the contact page or a funnel tucks it away.
   useEffect(() => {
+    // Deliberate: the route is the outside signal, and hiding on it is the point.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (blocked) setShown(false);
   }, [blocked]);
 

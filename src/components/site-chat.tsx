@@ -60,6 +60,9 @@ export function SiteChat() {
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
+    // Deliberate: the chat history lives in sessionStorage, which only exists in
+    // the browser, so it loads after mount to keep server and browser HTML equal.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTurns(load());
     try {
       setLeadSaved(sessionStorage.getItem(SAVED_KEY) === "1");

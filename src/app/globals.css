@@ -265,8 +265,147 @@ body {
   .marquee-group {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding-right: 2rem;
+  }
+
+  /* Mojo strip: one group is exactly one screen wide with the three words
+     in equal thirds, so the loop length is the screen and a word leaving
+     one edge is the same word entering the other. The dot sits on each
+     third's right edge (the last one wraps to sit before the next copy).
+     Durations keep the speed near 65px a second at every screen width;
+     CSS can't turn a vw width into a time, hence the steps. */
+  .marquee-mojo .marquee-track {
+    animation-duration: 6s;
+  }
+  .marquee-mojo .marquee-group {
+    width: 100vw;
+  }
+  .marquee-cell {
+    position: relative;
+    display: flex;
+    flex: 0 0 33.3333vw;
+    justify-content: center;
+  }
+  .marquee-cell::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    margin: -3px -3px 0 0;
+    border-radius: 9999px;
+    background: var(--color-accent-cyan);
+  }
+  /* Glass outline letters: a thin ice edge with a soft cyan glow. */
+  .mojo-word {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 0.9px rgb(214 246 250 / 0.85);
+    text-shadow: 0 0 18px rgb(95 216 230 / 0.35);
+  }
+  @media (min-width: 481px) {
+    .marquee-mojo .marquee-track {
+      animation-duration: 10s;
+    }
+  }
+  @media (min-width: 640px) {
+    .mojo-word {
+      font-size: 34px;
+      -webkit-text-stroke-width: 1.1px;
+    }
+  }
+  @media (min-width: 769px) {
+    .marquee-mojo .marquee-track {
+      animation-duration: 17s;
+    }
+  }
+  @media (min-width: 1024px) {
+    .mojo-word {
+      font-size: 44px;
+      -webkit-text-stroke-width: 1.2px;
+    }
+  }
+  @media (min-width: 1281px) {
+    .marquee-mojo .marquee-track {
+      animation-duration: 26s;
+    }
+  }
+  @media (min-width: 1921px) {
+    .marquee-mojo .marquee-track {
+      animation-duration: 37s;
+    }
+  }
+
+  /* The line between the strips: thin uppercase Geist, wide tracking, a
+     cyan rule fading in on each side. Phones get the short line. */
+  .marquee-tagline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 40px 16px;
+    text-align: center;
+  }
+  .marquee-tagline p {
+    margin: 0;
+    max-width: 900px;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1.9;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(255 255 255 / 0.78);
+  }
+  .marquee-rule {
+    flex-shrink: 0;
+    width: 22px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-accent-cyan));
+  }
+  .marquee-rule-end {
+    background: linear-gradient(270deg, transparent, var(--color-accent-cyan));
+  }
+  @media (min-width: 640px) {
+    .marquee-tagline {
+      gap: 28px;
+      padding: 56px 24px;
+    }
+    .marquee-tagline p {
+      font-size: 15px;
+      letter-spacing: 0.32em;
+    }
+    .marquee-rule {
+      width: 72px;
+    }
+  }
+
+  /* Logo strip: runs the opposite way to the words. */
+  .marquee-logos .marquee-track {
+    animation-duration: 40s;
+    animation-direction: reverse;
+  }
+  .marquee-logos .marquee-group {
+    gap: 2.75rem;
+    padding-right: 2.75rem;
+  }
+  .tech-logo {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+  }
+  @media (min-width: 640px) {
+    .marquee-logos .marquee-group {
+      gap: 4.25rem;
+      padding-right: 4.25rem;
+    }
+    .tech-logo {
+      width: 32px;
+      height: 32px;
+    }
   }
 
   /* 3D tilt surface — perspective lives on the parent, this is the card

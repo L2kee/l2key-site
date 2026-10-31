@@ -66,6 +66,8 @@ export function SiteBackground() {
     if (!isHome) return;
     const hero = document.querySelector(".hero-video-box");
     if (!hero) {
+      // Deliberate: no hero video on this page, so fall back to visible background.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setHeroVisible(false);
       return;
     }
