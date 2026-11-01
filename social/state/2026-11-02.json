@@ -22,5 +22,29 @@
     "post": "2026-11-02-anthropic-s1-meter",
     "due": "2026-11-02T19:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-03 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae7a30cae27912f0392ecf2",
+    "post": "2026-11-03-ghostty-1-4",
+    "due": "2026-11-03T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-03 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae7a30d07b774c8fb2c675d",
+    "post": "2026-11-03-ghostty-1-4",
+    "due": "2026-11-03T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-04 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae7a30e465de073df1cf5c2",
+    "post": "2026-11-04-ai-meeting-followup",
+    "due": "2026-11-04T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-04 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae7a30eae27912f0392ed51",
+    "post": "2026-11-04-ai-meeting-followup",
+    "due": "2026-11-04T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
