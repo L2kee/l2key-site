@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
   preload: false,
 });
 
-const SITE_TITLE = "EVOGENCY | AI Front Desk, Websites and SEO in Orlando";
+const SITE_TITLE = "Orlando SEO Agency, AI Search & Web Design | Evogency";
 const SITE_DESCRIPTION = ORG_DESCRIPTION;
 
 export const metadata: Metadata = {
