@@ -1,3 +1,6 @@
+import { outline } from "@/lib/fonts";
+
+// Titles are glass outline letters (.glass-text in globals.css).
 // reveal: each line of the title (split on a newline) rises out of its own mask
 // (.mask-line in globals.css). An h1 plays on load, an h2 when it scrolls
 // into view.
@@ -19,7 +22,7 @@ export function SectionHeading({
       </p>
       {reveal ? (
         <Heading
-          className={`mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl ${Heading === "h1" ? "mask-rise-load" : "mask-rise-view"}`}
+          className={`mt-3 text-3xl font-bold tracking-tight sm:text-4xl glass-text ${outline.className} ${Heading === "h1" ? "mask-rise-load" : "mask-rise-view"}`}
         >
           {title.split("\n").map((line, i) => (
             <span key={line} className="mask-line">
@@ -28,7 +31,7 @@ export function SectionHeading({
           ))}
         </Heading>
       ) : (
-        <Heading className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <Heading className={`mt-3 text-3xl font-bold tracking-tight sm:text-4xl glass-text ${outline.className}`}>
           {title}
         </Heading>
       )}

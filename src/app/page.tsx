@@ -1,3 +1,4 @@
+import { outline } from "@/lib/fonts";
 import Link from "next/link";
 import { AskAvaLink } from "@/components/site-chat";
 import { ArrowRight } from "lucide-react";
@@ -90,7 +91,7 @@ export default function Home() {
           aria-label="Built to be found. Designed to be trusted."
           className="text-4xl font-bold tracking-tight text-white sm:text-5xl xl:text-6xl"
         >
-          <span className="block">
+          <span className={`block glass-text ${outline.className}`}>
             <DropLetters text="Built to be found." />
           </span>
           <span className="block">
@@ -129,8 +130,8 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-6 py-16">
         <SectionHeading eyebrow="Proof, not promises" title="Featured work" />
         <div className="mt-10 flex flex-col gap-14 md:gap-8">
-          {WORK.map((w) => (
-            <WorkCard key={w.title} item={w} layout="split" />
+          {WORK.map((w, i) => (
+            <WorkCard key={w.title} item={w} layout="split" flip={i % 2 === 1} />
           ))}
         </div>
         <div className="mt-8 text-center">

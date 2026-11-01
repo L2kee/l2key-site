@@ -296,6 +296,16 @@ body {
     border-radius: 9999px;
     background: var(--color-accent-cyan);
   }
+  /* Glass outline headings (SectionHeading, the hero's first line): the
+     marquee's ice edge and cyan glow, a touch thinner at heading sizes.
+     Stroke and shadow inherit, so per letter spans (DropLetters) get it.
+     Needs the static font from lib/fonts.ts, see the note there. */
+  .glass-text {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(214 246 250 / 0.88);
+    text-shadow: 0 0 16px rgb(95 216 230 / 0.32);
+  }
+
   /* Glass outline letters: a thin ice edge with a soft cyan glow. */
   .mojo-word {
     font-weight: 700;
@@ -628,6 +638,13 @@ body {
       }
       .work-in-details {
         animation-name: work-in-right;
+      }
+      /* Flipped rows (picture on the right) slide in mirrored. */
+      .work-flip .work-in-media {
+        animation-name: work-in-right;
+      }
+      .work-flip .work-in-details {
+        animation-name: work-in-left;
       }
     }
 

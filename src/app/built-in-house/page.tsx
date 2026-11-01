@@ -1,3 +1,4 @@
+import { outline } from "@/lib/fonts";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -101,7 +102,7 @@ export default function BuiltInHousePage() {
               aria-label="Built to be found. Designed to be trusted."
               className="text-center text-2xl font-bold leading-tight text-white [--hero-delay:2000ms]"
             >
-              <span className="block">
+              <span className={`block glass-text ${outline.className}`}>
                 <DropLetters text="Built to be found." />
               </span>
               <span className="block">

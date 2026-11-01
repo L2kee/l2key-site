@@ -1,16 +1,8 @@
-import localFont from "next/font/local";
 import { TECH_LOGOS } from "@/components/tech-logos";
+import { outline } from "@/lib/fonts";
 
-// The mojo strip is outlined glass letters. It uses Vercel's static Geist
-// Bold, not the variable Geist from Google: the variable file keeps the
-// overlapping contours where strokes join, and -webkit-text-stroke traces
-// every one of them (stray lines inside the "t" and "E"). The static file
-// has the overlaps removed, so only the outer edge is drawn.
-const outline = localFont({
-  src: "../fonts/Geist-Bold.woff2",
-  weight: "700",
-  display: "swap",
-});
+// The mojo strip is outlined glass letters, in the static Geist Bold from
+// lib/fonts.ts (why that file and not Google's Geist is explained there).
 
 const WORDS = ["Evolve.", "Elevate.", "Grow."];
 

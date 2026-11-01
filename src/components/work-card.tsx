@@ -141,17 +141,23 @@ const MEDIA_BG =
 export function WorkCard({
   item,
   layout = "stacked",
+  flip = false,
 }: {
   item: WorkItem;
   layout?: "stacked" | "split";
+  /** Split only: picture on the right, details on the left (md up). */
+  flip?: boolean;
 }) {
   if (layout === "split") {
     return (
-      <div data-work-row className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
+      <div
+        data-work-row
+        className={`flex flex-col gap-4 md:items-center md:gap-6 ${flip ? "work-flip md:flex-row-reverse" : "md:flex-row"}`}
+      >
         {/* work-in-*: the pair slides in from opposite sides on scroll. On
             hover the picture slides to the middle and grows, with arrows to
             flip through the screenshots (see WorkExpand). */}
-        <div className="work-in work-in-media relative z-10 has-[[data-open]]:z-40 md:w-[52%] md:shrink-0">
+        <div className="work-in work-in-media relative z-10 has-[[data-open]]:z-40 md:w-[62%] md:shrink-0">
           {item.images && item.images.length > 0 ? (
             <WorkExpand
               images={item.images}
@@ -169,7 +175,7 @@ export function WorkCard({
           )}
         </div>
         <div className="work-in work-in-details flex-1">
-          <TiltCard className="glass-strong rounded-2xl p-6 md:p-8">
+          <TiltCard className="glass-strong rounded-2xl p-5 md:p-6">
             <WorkDetails item={item} />
           </TiltCard>
         </div>
