@@ -8511,7 +8511,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Most quotes die quietly in the customer's inbox. Here's a simple, friendly follow up sequence that wins more jobs without making anyone uncomfortable.",
     excerpt: "Many quotes are lost to silence, not to a competitor. A friendly follow up wins them back.",
-    date: "2026-10-15",
+    date: "2026-11-01",
     tag: "Marketing",
     relatedHref: "/growth-kit",
     relatedLabel: "Get the Home Service Growth Kit",
@@ -8569,7 +8569,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Some websites look fine to people but nearly blank to AI crawlers. Here's how to check whether ChatGPT, Perplexity, and other tools can read your site.",
     excerpt: "Your site might look great to visitors and nearly empty to AI tools. Here's how to check.",
-    date: "2026-10-15",
+    date: "2026-11-01",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our AI search service",
@@ -8624,7 +8624,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical ways salons and spas can use AI and automation for booking, reminders, rebooking, waitlists, and reviews without losing the personal touch.",
     excerpt: "Keep your chairs full and your front desk sane. Here's where automation helps salons and spas.",
-    date: "2026-10-15",
+    date: "2026-11-01",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
