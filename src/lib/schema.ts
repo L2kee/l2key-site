@@ -15,6 +15,8 @@ export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const FOUNDER_LINKEDIN = "https://www.linkedin.com/in/mohamed-eltoukhy-6b0785412/";
 export const FOUNDER_YOUTUBE = "https://www.youtube.com/@MoToukhy-f1n";
 export const ORG_INSTAGRAM = "https://www.instagram.com/evogencyglobal/";
+/** The Google Business Profile (a service area listing, so no street pin). */
+export const ORG_GBP = "https://www.google.com/maps?cid=15771395900100909639";
 
 export const ORG_DESCRIPTION =
   "EVOGENCY builds AI front desks that answer every call 24/7 and book the job, plus websites and SEO for Orlando businesses. Founded by Mohamed Eltoukhy.";
@@ -67,7 +69,7 @@ export function siteGraph() {
           addressCountry: "US",
         },
         areaServed: AREA_SERVED,
-        sameAs: [ORG_INSTAGRAM],
+        sameAs: [ORG_INSTAGRAM, ORG_GBP],
         founder: { "@id": FOUNDER_ID, "@type": "Person", name: "Mohamed Eltoukhy" },
         knowsAbout: [...new Set(Object.values(SERVICE_PAGES).map((s) => s.serviceType))],
         hasOfferCatalog: {

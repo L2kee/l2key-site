@@ -32,8 +32,9 @@ export function WorkExpand({
   const n = images.length;
 
   // Rotates on its own only while closed, same timing as the old carousel.
+  // Never for reduced motion visitors, they flip with the arrows instead.
   useEffect(() => {
-    if (open || n < 2) return;
+    if (open || n < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const id = setInterval(() => setIndex((i) => (i + 1) % n), 2800);
     return () => clearInterval(id);
   }, [open, n]);

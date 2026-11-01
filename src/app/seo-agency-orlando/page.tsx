@@ -7,7 +7,7 @@ import { RelatedGuides } from "@/components/related-guides";
 import { guidesFor } from "@/lib/blog";
 import { servicePageGraph } from "@/lib/schema";
 
-const TITLE = "SEO Agency Orlando | EVOGENCY";
+const TITLE = "SEO Agency Orlando | Local SEO and AI Search | EVOGENCY";
 const DESCRIPTION =
   "EVOGENCY is an SEO agency in Orlando, FL helping local businesses rank higher, show up in the map pack, and turn searches into customers. Get a free audit.";
 

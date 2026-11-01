@@ -5,31 +5,39 @@ import { getTotalPages } from "@/lib/blog-pagination";
 const BASE_URL = "https://evogencyglobal.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    "",
-    "/about",
-    "/services",
-    "/ai",
-    "/built-in-house",
-    "/brand-design",
-    "/works",
-    "/contact",
-    "/blog",
-    "/seo-agency-orlando",
-    "/generative-engine-optimization-orlando",
-    "/ai-automation-orlando",
-    "/web-design-agency-orlando",
-    "/google-reviews-orlando",
-    "/custom-crm-development-orlando",
-    "/mobile-app-development-orlando",
-    "/electricalai-pro",
-    "/free-review-kit",
-    "/growth-kit",
-    "/job-site-studio",
-  ];
+  // Each page's last real change, so search engines know what to recrawl.
+  // Bump a page's date when its content changes (git log -1 on its folder).
+  // The blog index follows the newest post instead.
+  const routes: Record<string, string> = {
+    "": "2026-10-31",
+    "/about": "2026-10-22",
+    "/services": "2026-10-22",
+    "/ai": "2026-10-22",
+    "/built-in-house": "2026-10-31",
+    "/brand-design": "2026-10-22",
+    "/works": "2026-10-22",
+    "/contact": "2026-10-22",
+    "/blog": "",
+    "/seo-agency-orlando": "2026-11-01",
+    "/generative-engine-optimization-orlando": "2026-10-22",
+    "/ai-automation-orlando": "2026-10-22",
+    "/web-design-agency-orlando": "2026-10-22",
+    "/google-reviews-orlando": "2026-10-22",
+    "/custom-crm-development-orlando": "2026-10-22",
+    "/mobile-app-development-orlando": "2026-10-22",
+    "/electricalai-pro": "2026-10-22",
+    "/free-review-kit": "2026-11-01",
+    "/growth-kit": "2026-10-22",
+    "/job-site-studio": "2026-11-01",
+  };
+  const newestPost = BLOG_POSTS.reduce(
+    (max, post) => Math.max(max, new Date(post.updated ?? post.date).getTime()),
+    0,
+  );
 
-  const staticEntries = routes.map((route) => ({
+  const staticEntries = Object.entries(routes).map(([route, date]) => ({
     url: `${BASE_URL}${route}`,
+    lastModified: route === "/blog" ? new Date(newestPost) : new Date(date),
     changeFrequency: "weekly" as const,
     priority: route === "" ? 1 : 0.8,
   }));

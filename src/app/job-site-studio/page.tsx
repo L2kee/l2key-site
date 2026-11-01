@@ -12,7 +12,7 @@ import {
   SAMPLES,
 } from "@/lib/job-site-studio";
 
-const TITLE = "Job Site Studio | Free Videos From Your Job Site Clips | EVOGENCY";
+const TITLE = "Job Site Studio | Free Videos From Job Site Clips | EVOGENCY";
 const DESCRIPTION =
   "Film 20 seconds on the job and get a finished video for TikTok, Facebook, and Instagram. Send 3 clips and get 3 videos free. Built for the trades.";
 

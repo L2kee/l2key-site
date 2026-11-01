@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Check } from "lucide-react";
 import { ReviewKitForm } from "@/components/review-kit-form";
 
-const TITLE = "Free 5 Star Review Kit for Home Service Businesses | EVOGENCY";
+const TITLE = "Free 5 Star Review Kit for Home Services | EVOGENCY";
 const DESCRIPTION =
   "7 copy and paste messages that get happy customers to leave Google reviews. Free for plumbers, HVAC techs, electricians, roofers, and contractors.";
 

@@ -17,8 +17,9 @@ export function WorkCarousel({
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
 
+  // No auto rotation for reduced motion visitors, the first screenshot stays.
   useEffect(() => {
-    if (paused) return;
+    if (paused || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const id = setInterval(() => setIndex((i) => (i + 1) % images.length), 2800);
     return () => clearInterval(id);
   }, [paused, images.length]);

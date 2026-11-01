@@ -7673,7 +7673,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
   {
     slug: "seo-for-painting-contractors",
     title: "SEO for Painting Contractors, Getting Found for Interior, Exterior, and Commercial Jobs",
-    seoTitle: "SEO for Painting Contractors",
+    seoTitle: "SEO for Painting Contractors | EVOGENCY",
     description:
       "How painting contractors can rank for the searches that bring real jobs, from interior repaints to cabinet refinishing and commercial work.",
     excerpt: "Painters compete on trust. Here's how to earn it in search before the first estimate.",
@@ -8038,7 +8038,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
   {
     slug: "seo-for-moving-companies",
     title: "SEO for Moving Companies, Earning Trust in a Skeptical Market",
-    seoTitle: "SEO for Moving Companies",
+    seoTitle: "SEO for Moving Companies | EVOGENCY",
     description:
       "Moving customers worry about scams and surprise fees. Here's how moving companies can rank locally and use their website to earn trust before the first call.",
     excerpt: "People are wary of movers. The company that earns trust online gets the booking.",
@@ -8394,7 +8394,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
   {
     slug: "google-reviews-for-law-firms",
     title: "Google Reviews for Law Firms, Earning Trust Within the Rules",
-    seoTitle: "Google Reviews for Law Firms",
+    seoTitle: "Google Reviews for Law Firms | EVOGENCY",
     description:
       "How small law firms can earn more Google reviews, reply safely without breaking confidentiality, and stay within bar advertising rules.",
     excerpt: "For law firms, reviews build trust but come with confidentiality and ethics rules. Here's how to handle both.",
