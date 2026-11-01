@@ -10,5 +10,17 @@
     "post": "2026-11-02-ai-resume-tailor",
     "due": "2026-11-02T08:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-02 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae72131cf3a3112f3f38ae5",
+    "post": "2026-11-02-anthropic-s1-meter",
+    "due": "2026-11-02T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-02 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae72131ab019b9087567726",
+    "post": "2026-11-02-anthropic-s1-meter",
+    "due": "2026-11-02T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
