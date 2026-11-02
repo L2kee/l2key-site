@@ -1,18 +1,28 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, House } from "lucide-react";
 import { START_PATHS } from "@/lib/start-paths";
 
-// "What do you need?" One tile per service, each opening its own funnel at
-// /start/<slug>. Used on the homepage hero and on /start.
-// wide: the 4 column hero grid, where the flagship tile spans 2 columns so
-// the 7 tiles fill two even rows.
-export function StartTiles({ className = "", wide = false }: { className?: string; wide?: boolean }) {
+// One tile per service, each opening its own funnel at /start/<slug>, plus
+// the Listing Suite tile, which goes straight to its own page (it has no
+// funnel). Used on the homepage hero and on /start. 8 tiles fill even rows
+// in the 2 and 4 column grids, so no tile spans. The first carries the ring.
+const TILES = [
+  ...START_PATHS.map((p) => ({ key: p.slug, icon: p.icon, tile: p.tile, tileLine: p.tileLine, href: `/start/${p.slug}` })),
+];
+TILES.splice(2, 0, {
+  key: "listing-suite",
+  icon: House,
+  tile: "Listing Suite",
+  tileLine: "Luxury pages for real estate listings",
+  href: "/real-estate-listing-websites-orlando",
+});
+export function StartTiles({ className = "" }: { className?: string; wide?: boolean }) {
   return (
     <ul className={`grid gap-3 sm:grid-cols-2 lg:grid-cols-3 ${className}`}>
-      {START_PATHS.map((p, i) => (
-        <li key={p.slug} className={i === 0 ? `sm:col-span-2 ${wide ? "lg:col-span-2" : "lg:col-span-1"}` : ""}>
+      {TILES.map((p, i) => (
+        <li key={p.key}>
           <Link
-            href={`/start/${p.slug}`}
+            href={p.href}
             className={`start-tile group glass flex h-full items-center gap-4 rounded-2xl px-5 py-4 text-left transition hover:border-[#5fd8e6]/50 ${
               i === 0 ? "flagship-ring relative" : ""
             }`}

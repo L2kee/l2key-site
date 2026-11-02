@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
 import { CtaBand } from "@/components/cta-band";
 import { servicePageGraph } from "@/lib/schema";
+import { RealtorTiles } from "@/components/realtor-tiles";
 
 // Moe picked Cormorant Garamond (option B, 2026-11-01) for the Listing Suite headline only.
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], style: ["normal", "italic"], display: "swap" });
@@ -171,6 +172,7 @@ export default function RealEstateListingWebsitesOrlandoPage() {
           </span>
         </h1>
       </div>
+      <RealtorTiles className="mx-auto mt-10 max-w-4xl" />
       {/* Plain, quotable definition first, for readers and AI answer engines. */}
       <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-white/90">
         {"EVOGENCY Listing Suite creates bespoke single property websites designed exclusively for real estate agents who understand that presentation matters."}
