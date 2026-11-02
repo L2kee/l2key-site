@@ -512,7 +512,8 @@ body {
   }
 
   /* Once the last letter lands, a glint runs across the accent line one
-     letter after another (its letters are --l 15 to 34). Under it the
+     letter after another (its letters run --accent-first to --accent-last,
+     15 to 34 by default, set per page on the h1). Under it the
      colors flow nonstop: every letter slides through one looping strip
      (cyan, teal, ice, cyan) 20 letters wide, and each runs
      one letter ahead of the letter to its right (the negative delay), so
@@ -534,8 +535,8 @@ body {
     background-position: var(--glint) 0, var(--flow) 0;
     animation:
       hero-letter 700ms cubic-bezier(0.34, 1.56, 0.64, 1) calc(var(--l, 0) * 38ms) both,
-      hero-glint 450ms ease-in-out calc(var(--hero-delay, 0ms) + (var(--l, 0) - 15) * 30ms) both,
-      hero-flow 6s linear calc((var(--l, 0) - 34) * 316ms) infinite;
+      hero-glint 450ms ease-in-out calc(var(--hero-delay, 0ms) + (var(--l, 0) - var(--accent-first, 15)) * 30ms) both,
+      hero-flow 6s linear calc((var(--l, 0) - var(--accent-last, 34)) * 316ms) infinite;
   }
 
   .hero-in {

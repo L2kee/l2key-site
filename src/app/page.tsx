@@ -82,31 +82,30 @@ export default function Home() {
       <HeroVideo />
 
       <HeroReveal className="hero-copy mx-auto flex max-w-6xl flex-col items-center px-6 pt-8 pb-16 text-center [--hero-delay:1200ms]">
-        {/* The headline drops in letter by letter (35 letters, the last one
-            lands at about 2s), then each hero-in line rises after the one
+        {/* The headline drops in letter by letter (40 letters, the last one
+            lands a little after 2s), then each hero-in line rises after the one
             before it, starting at --hero-delay (1.2s, so the tiles rise
             while the last letters land). --i sets its place in the
             order (see .hero-letter and .hero-in in globals.css). */}
         <h1
-          aria-label="Built to be found. Designed to be trusted."
-          className="text-4xl font-bold tracking-tight text-white sm:text-5xl xl:text-6xl"
+          aria-label="Redefining Communication Through Innovation"
+          className="text-4xl font-bold tracking-tight text-white [--accent-first:23] [--accent-last:39] sm:text-5xl xl:text-6xl"
         >
           <span className={`block glass-text ${outline.className}`}>
-            <DropLetters text="Built to be found." />
+            <DropLetters text="Redefining Communication" />
           </span>
           <span className="block">
-            <DropLetters text="Designed to be trusted." start={15} letterClass="hero-accent" />
+            <DropLetters text="Through Innovation" start={23} letterClass="hero-accent" />
           </span>
         </h1>
 
         <p className="hero-in mt-5 max-w-2xl text-balance text-lg text-white/80 [--i:2] sm:text-xl">
-          AI front desks, websites, apps, and online stores. Built for you from
-          the first sketch to the first sale.
+          Delivering Excellence Beyond Expectations
         </p>
 
         <div className="hero-in mt-8 w-full [--i:3]">
           <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">
-            What do you need?
+            How Can We Bring Your Vision To Life?
           </h2>
           <StartTiles className="mt-4 lg:grid-cols-4" wide />
           <p className="mt-6 text-sm text-white/60">
@@ -122,7 +121,7 @@ export default function Home() {
 
       {/* How it works */}
       <section className="mx-auto max-w-5xl px-6 py-16">
-        <SectionHeading eyebrow="How it works" title="From idea to built in three steps." />
+        <SectionHeading eyebrow="Simple. Smart. Seamless." title="From Idea To Execution. Three Steps. One Seamless Experience." />
         <DrawnSteps steps={STEPS} />
       </section>
 
