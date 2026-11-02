@@ -463,6 +463,19 @@ body {
   color: transparent;
 }
 
+/* Homepage serif headline (Cormorant Garamond, option D5). Each accent
+   letter clips its own gradient to its box, and an italic letter leans
+   past that box, so the padding widens the painted area and the negative
+   margin keeps the spacing. The glow sits on the whole line, not on each
+   letter, so the letters don't stack 17 separate filters. */
+.hero-serif .hero-accent {
+  padding: 0 0.12em;
+  margin: 0 -0.12em;
+}
+.hero-serif .italic {
+  filter: drop-shadow(0 0 18px rgb(95 216 230 / 0.55));
+}
+
 /* Static base for the work card full page scroll (work-card.tsx). Hidden
    until a hover (desktop) or the touch rules below show it. container-type
    lets the image scroll exactly one frame short of its own height (cqh). */
