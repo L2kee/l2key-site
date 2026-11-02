@@ -1354,6 +1354,45 @@ body {
   }
 }
 
+/* Listing Suite tile (start-tiles.tsx, option L4, Moe 2026-11-01). Its own
+   cream and ice ring, a sister to the flagship ring: same build, slower
+   (9s vs 6s) so the two never spin in step. The title is Cormorant italic
+   in the ice, cyan, teal gradient. */
+.suite-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--flagship-spin),
+    rgb(243 237 224 / 0.15),
+    #f3ede0 10%,
+    #d6f6fa 20%,
+    rgb(243 237 224 / 0.15) 32%,
+    rgb(243 237 224 / 0.15) 60%,
+    #d6f6fa 72%,
+    rgb(243 237 224 / 0.15) 84%
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .suite-ring::before {
+    animation: flagship-spin 9s linear infinite;
+  }
+}
+.suite-title {
+  background: linear-gradient(90deg, var(--color-accent-ice), var(--color-accent-cyan) 45%, var(--color-accent-teal));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-right: 0.1em;
+}
+
 /* ===== Site chat, Ava (2026-10-17, site-chat.tsx). A floating panel above
    the launcher on desktop, a bottom sheet on phones. ===== */
 .site-chat-panel {
