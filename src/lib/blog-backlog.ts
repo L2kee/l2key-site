@@ -8689,7 +8689,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to set special holiday hours on your Google Business Profile, why it matters for trust and rankings, and which dates local businesses forget most.",
     excerpt: "Wrong holiday hours cost you customers who never tell you why. Here's the fix.",
-    date: "2026-10-15",
+    date: "2026-11-02",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -8747,7 +8747,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Color psychology charts promise that blue means trust and red means urgency. Here's what actually matters when choosing brand colors for a small business.",
     excerpt: "Forget the color psychology charts. Here's how to choose brand colors that actually work.",
-    date: "2026-10-15",
+    date: "2026-11-02",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -8804,7 +8804,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How med spas can rank for treatment searches, build trust with accurate content, and stay within advertising rules for medical procedures.",
     excerpt: "Med spa buyers research carefully. Here's how to rank and build trust without overpromising.",
-    date: "2026-10-15",
+    date: "2026-11-02",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
