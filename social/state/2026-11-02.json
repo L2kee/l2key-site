@@ -46,5 +46,17 @@
     "post": "2026-11-04-ai-meeting-followup",
     "due": "2026-11-04T08:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-02 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae883f93911b6a45d4c7aab",
+    "post": "2026-11-02-carnegie-sincere-interest",
+    "due": "2026-11-02T12:30:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-04 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6ae883f909c35c01e8c8b680",
+    "post": "2026-11-04-gemini-4-carbon",
+    "due": "2026-11-04T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
