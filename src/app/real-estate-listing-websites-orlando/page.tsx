@@ -1,17 +1,33 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond } from "next/font/google";
-import { Check } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, CalendarClock, Check } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { SectionHeading } from "@/components/section-heading";
 import { FaqList } from "@/components/faq-list";
-import { CtaBand } from "@/components/cta-band";
 import { servicePageGraph } from "@/lib/schema";
 import { RealtorTiles } from "@/components/realtor-tiles";
+import { listingStartHref, LISTING_START_PATH, type ListingPlanId } from "@/lib/listing-plans";
 
 // Moe picked Cormorant Garamond (option B, 2026-11-01) for the Listing Suite headline only.
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], style: ["normal", "italic"], display: "swap" });
 
 const PATH = "/real-estate-listing-websites-orlando";
+
+// Two buttons wherever the page asks for action: the paid start (main) and
+// the complimentary page (second). Both land on the realtor intake form.
+function CtaPair() {
+  return (
+    <div className="flex flex-col items-center justify-center gap-3 py-4 sm:flex-row">
+      <Link href={LISTING_START_PATH} className="btn-solid">
+        Start My Listing <ArrowRight size={16} />
+      </Link>
+      <Link href={listingStartHref("free")} className="btn-glass text-white">
+        Or try one page free
+      </Link>
+    </div>
+  );
+}
 const TITLE = "Luxury Listing Websites for Orlando Real Estate Agents | EVOGENCY";
 const DESCRIPTION =
   "EVOGENCY Listing Suite gives every Orlando listing its own bespoke property website, delivered in as little as 48 hours. Your first page is complimentary, then $297 per listing or $497 a month.";
@@ -66,6 +82,8 @@ const BENEFITS = [
 
 const PLANS = [
   {
+    id: "signature" as ListingPlanId,
+    cta: "Start Signature Listing",
     eyebrow: "Per property",
     name: "Signature Listing",
     price: "$297",
@@ -83,6 +101,8 @@ const PLANS = [
     hot: false,
   },
   {
+    id: "partner" as ListingPlanId,
+    cta: "Start Listing Partner",
     eyebrow: "Monthly",
     name: "Listing Partner",
     price: "$497",
@@ -98,6 +118,8 @@ const PLANS = [
     hot: true,
   },
   {
+    id: "brokerage" as ListingPlanId,
+    cta: "Get a Team Quote",
     eyebrow: "Teams and offices",
     name: "Brokerage Plan",
     price: "Quoted",
@@ -187,9 +209,10 @@ export default function RealEstateListingWebsitesOrlandoPage() {
         <p className="text-white/70">Give your sellers something they can see, share, and remember.</p>
       </div>
       <p className="mx-auto mt-8 max-w-2xl text-center text-white/80">
-        Experience EVOGENCY Listing Suite with a complimentary page for your current listing.
+        Ready for a page that sells? Start your listing today, or experience EVOGENCY Listing Suite with a
+        complimentary page for your current listing.
       </p>
-      <CtaBand text="Get your complimentary listing page" href="/contact" />
+      <CtaPair />
 
       <div className="mt-16">
         <SectionHeading eyebrow="What every page does for you" title="Built to win the listing, and the buyer" />
@@ -209,7 +232,8 @@ export default function RealEstateListingWebsitesOrlandoPage() {
           {PLANS.map((plan) => (
             <div
               key={plan.name}
-              className={`glass relative flex flex-col rounded-2xl p-6 ${plan.hot ? "border-[#5fd8e6]/60 shadow-[0_0_50px_-15px_rgba(95,216,230,0.55)]" : ""}`}
+              id={plan.id}
+              className={`plan-card glass relative flex scroll-mt-28 flex-col rounded-2xl p-6 ${plan.hot ? "border-[#5fd8e6]/60 shadow-[0_0_50px_-15px_rgba(95,216,230,0.55)]" : ""}`}
             >
               {plan.hot && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-[#5fd8e6] to-[#1f9fb3] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#041016]">
@@ -229,6 +253,12 @@ export default function RealEstateListingWebsitesOrlandoPage() {
                 ))}
               </ul>
               <p className="mt-auto pt-6 text-sm text-[#d6f6fa]/85">{plan.fit}</p>
+              <Link
+                href={listingStartHref(plan.id)}
+                className={`${plan.hot ? "btn-solid" : "btn-glass text-white"} mt-5 w-full justify-center`}
+              >
+                {plan.cta} <ArrowRight size={16} />
+              </Link>
             </div>
           ))}
         </div>
@@ -236,12 +266,18 @@ export default function RealEstateListingWebsitesOrlandoPage() {
           <span className="btn-solid w-fit shrink-0">Free</span>
           <p className="text-white/80">
             <span className="font-semibold text-white">Your first page is on us.</span> Send your current listing and
-            we build it free. Keep it live when you start any plan.
+            we build it free. Keep it live when you start any plan.{" "}
+            <Link href={listingStartHref("free")} className="font-semibold text-[#5fd8e6] hover:underline">
+              Claim yours
+            </Link>
           </p>
         </div>
         <p className="mt-4 text-center text-sm text-white/55">
           Add on. Put our AI front desk on your listing line to answer buyer questions and book showings around the
-          clock. Ask for a quote.
+          clock.{" "}
+          <Link href="/ai" className="text-[#5fd8e6] hover:underline">
+            See how it works
+          </Link>
         </p>
       </div>
 
@@ -260,7 +296,21 @@ export default function RealEstateListingWebsitesOrlandoPage() {
         </div>
       </div>
 
-      <CtaBand text="Get your complimentary listing page" href="/contact" />
+      <div className="mt-6 text-center">
+        <p className="gradient-text text-2xl font-bold tracking-tight sm:text-3xl">Your next listing deserves a stage.</p>
+        <CtaPair />
+        <p className="text-sm text-white/55">
+          Rather talk it through first?{" "}
+          <a
+            href="https://calendly.com/mohamed-eltoukhy011/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-[#5fd8e6] hover:underline"
+          >
+            <CalendarClock size={14} aria-hidden="true" /> Book a quick call
+          </a>
+        </p>
+      </div>
 
       <div className="mx-auto mt-20 max-w-3xl">
         <SectionHeading eyebrow="Straight answers" title="Listing websites for Orlando agents" />

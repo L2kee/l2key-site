@@ -1634,3 +1634,21 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     text-shadow: 0 0 0 transparent;
   }
 }
+
+/* Listing Suite plan cards: a cyan pulse when a tile jumps to one
+   (plan-jump-link.tsx adds .plan-flash) or a link lands on its #id. */
+@keyframes plan-flash {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(95, 216, 230, 0); }
+  30%, 60% { box-shadow: 0 0 0 2px rgba(95, 216, 230, 0.9), 0 0 60px -10px rgba(95, 216, 230, 0.7); }
+}
+.plan-card.plan-flash,
+.plan-card:target {
+  animation: plan-flash 1.8s ease-in-out 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .plan-card.plan-flash,
+  .plan-card:target {
+    animation: none;
+    outline: 2px solid rgba(95, 216, 230, 0.9);
+  }
+}
