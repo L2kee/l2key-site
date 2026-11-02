@@ -127,4 +127,29 @@ export const WORK: WorkItem[] = [
     stack: ["HTML", "CSS", "Design"],
     links: [],
   },
+  {
+    title: "Listing Suite Sample",
+    category: "Websites",
+    year: "2026",
+    tag: "Design concept",
+    icon: "globe",
+    images: ["/listing-suite-1-hero.webp", "/listing-suite-2-gallery.webp", "/listing-suite-3-details.webp"],
+    imageAlts: [
+      "Sample listing page hero for The Modern Residence in Windermere, Florida, a modern home with a pool, listed at $2,450,000 with a Request a private showing button",
+      "Sample listing page gallery titled Every angle, showing the home's pool, stone and glass front, outdoor kitchen, and bright interiors",
+      "Sample listing page details titled Made for living, with Living, Outdoor, and Location lists above a neighborhood map of Windermere",
+    ],
+    body: "A sample of what EVOGENCY Listing Suite builds for real estate agents. One home gets its own luxury page with a story, a full gallery, the details, a neighborhood map, and a showing request form that lands on the agent's phone. The home, price, and agent are illustrative.",
+    fullPage: {
+      src: "/work-listing-suite-full.jpg",
+      width: 1000,
+      height: 4734,
+      alt: "The full sample listing page, from The Modern Residence hero through the story, the essentials, the gallery, the details, the map, the showing form, and the agent card",
+    },
+    stack: ["HTML", "CSS", "JavaScript"],
+    links: [
+      { label: "See the sample page", href: "https://demos.evogencyglobal.com/sample-modern-residence/" },
+      { label: "Listing Suite plans", href: "/real-estate-listing-websites-orlando" },
+    ],
+  },
 ];
