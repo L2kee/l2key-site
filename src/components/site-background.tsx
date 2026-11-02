@@ -12,6 +12,7 @@ const SERVICE_PAGES = new Set([
   "/custom-crm-development-orlando",
   "/mobile-app-development-orlando",
   "/generative-engine-optimization-orlando",
+  "/real-estate-listing-websites-orlando",
 ]);
 
 /** Which lotus angle sits behind a route. Anything unlisted (the blog,

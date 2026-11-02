@@ -32,6 +32,7 @@ export const SERVICE_PAGES: Record<string, { name: string; serviceType: string; 
   "/custom-crm-development-orlando": { name: "Custom CRM Development in Orlando", serviceType: "Custom software development" },
   "/mobile-app-development-orlando": { name: "Mobile App Development in Orlando", serviceType: "Mobile app development" },
   "/generative-engine-optimization-orlando": { name: "Generative Engine Optimization in Orlando", serviceType: "Search engine optimization" },
+  "/real-estate-listing-websites-orlando": { name: "Luxury Listing Websites for Orlando Real Estate Agents", serviceType: "Real estate marketing" },
 };
 
 const ORLANDO = { "@type": "City", name: "Orlando", containedInPlace: { "@type": "State", name: "Florida" } };

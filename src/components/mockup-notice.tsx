@@ -164,7 +164,8 @@ function MockupForm() {
 
 export function MockupNotice() {
   const pathname = usePathname();
-  const blocked = pathname === "/contact" || pathname === "/ai" || isFunnelPath(pathname);
+  // The Listing Suite page sells its own free listing page, so the homepage mockup offer stays off it.
+  const blocked = pathname === "/contact" || pathname === "/ai" || pathname === "/real-estate-listing-websites-orlando" || isFunnelPath(pathname);
   const [shown, setShown] = useState(false);
   const [mounted, setMounted] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);

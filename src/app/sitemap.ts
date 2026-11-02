@@ -29,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/free-review-kit": "2026-11-01",
     "/growth-kit": "2026-10-22",
     "/job-site-studio": "2026-11-01",
+    "/real-estate-listing-websites-orlando": "2026-11-01",
   };
   const newestPost = BLOG_POSTS.reduce(
     (max, post) => Math.max(max, new Date(post.updated ?? post.date).getTime()),
