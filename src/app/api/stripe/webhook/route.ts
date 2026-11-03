@@ -1,4 +1,4 @@
-import { isFulfillable, verifyWebhook, type CheckoutSession } from "@/lib/stripe";
+import { isFulfillable, verifyWebhook } from "@/lib/stripe";
 import {
   buyerEmail,
   createLead,
@@ -7,8 +7,9 @@ import {
   leadExistsForNote,
   notifyMoe,
 } from "@/lib/growth-kit";
+import { handleListingPayment, listingPlanForSession, type PaymentLinkSession } from "@/lib/listing-payments";
 
-type CompletedSession = CheckoutSession & {
+type CompletedSession = PaymentLinkSession & {
   custom_fields?: { key: string; text?: { value: string | null } }[];
 };
 
@@ -30,6 +31,14 @@ export async function POST(request: Request) {
 
   const event = JSON.parse(payload) as { type: string; data: { object: CompletedSession } };
   const session = event.data.object;
+
+  // Listing Suite sales come from Payment Links Moe sends by hand.
+  const listingPlan = listingPlanForSession(session);
+  if (listingPlan) {
+    const result = await handleListingPayment(event.type, session, listingPlan, isFulfillable(session));
+    return new Response(result, { status: 200 });
+  }
+
   if (session.metadata?.product !== KIT_PRODUCT_KEY) return new Response("Ignored", { status: 200 });
 
   if (event.type === "checkout.session.async_payment_failed") {
