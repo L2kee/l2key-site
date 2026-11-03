@@ -76,5 +76,17 @@
     "post": "2026-11-05-survival-llm",
     "due": "2026-11-05T12:30:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-03 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae9cdd5f81926b9329468b3",
+    "post": "2026-11-03-ai-rank-tracker-check",
+    "due": "2026-11-03T08:00:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-03 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6ae9cdd53b7ecdee655e2da8",
+    "post": "2026-11-03-openai-terra-price",
+    "due": "2026-11-03T19:00:00-05:00",
+    "fmt": "image"
   }
 }
