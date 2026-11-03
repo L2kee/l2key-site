@@ -8866,7 +8866,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How a med spa website can feel premium, build trust in providers and results, and make booking a consultation simple on any phone.",
     excerpt: "Premium feel, real results, trusted providers, and easy booking. Here's how to put it together.",
-    date: "2026-10-15",
+    date: "2026-11-03",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -8932,7 +8932,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How med spas can earn more Google reviews, encourage clients to share their experience, and reply without revealing anything about a client's treatment.",
     excerpt: "Reviews sell med spa treatments. Replying the wrong way can create a privacy problem.",
-    date: "2026-10-15",
+    date: "2026-11-03",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",
@@ -8989,7 +8989,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "One completed job can feed your website, Google profile, social media, email, and reviews. Here's how local businesses get five pieces of content from one job.",
     excerpt: "Stop staring at a blank screen. Every job you finish is already a week of content.",
-    date: "2026-10-15",
+    date: "2026-11-03",
     tag: "Marketing",
     relatedHref: "/job-site-studio",
     relatedLabel: "Get 3 free videos from your clips",

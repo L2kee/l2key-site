@@ -669,6 +669,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "setting-holiday-hours-on-google",
   "brand-colors-what-matters-and-whats-myth",
   "seo-for-med-spas",
+  "website-design-for-med-spas",
+  "google-reviews-for-med-spas",
+  "turn-one-job-into-five-pieces-of-content",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
