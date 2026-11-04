@@ -1,7 +1,7 @@
 """Posts EVOGENCY's Threads posts straight through Meta's Threads API (no Buffer, $0).
 
 Usage:
-  python social/threads.py post      publish every post that came due in the last GRACE_HOURS and isn't up yet
+  python social/threads.py post      publish the newest post that came due in the last GRACE_HOURS and isn't up yet
   python social/threads.py check     confirm the token works and say which account it posts as (never prints the token)
   python social/threads.py refresh   renew the 60 day token (Sundays, from the workflow)
   python social/threads.py lint      validate every week file, no network
@@ -14,8 +14,14 @@ Instagram week file by render.js, voice.py, reel.js, and schedule.py, so a Threa
 
 - Nothing in a week posts until "approved" is true (Moe reviews each new week first).
 - A post with "skip": true never posts. That's the kill switch (or delete the post from the file).
-- Times are Eastern. The Threads API has no scheduling, so the workflow runs this every 15 minutes and it publishes
-  whatever is due. A post more than GRACE_HOURS (6) late is skipped as stale, and the log says so.
+- Times are Eastern. The Threads API has no scheduling, and GitHub starts scheduled runs 15 minutes to 3.5 hours late
+  (measured on week 1), so a scheduled run doesn't just post and quit. With THREADS_LOOP_MINUTES set it stays up,
+  sleeps until each next slot, posts it on the minute, and pulls the repo before each pass so a week approved
+  mid run is seen. The workflow gives it about 5 hours, and the next queued run picks up where it stops.
+- One post per pass. If a gap left several posts due, only the newest goes out and the older ones are dropped,
+  so the feed never gets 3 posts dumped at once. A post more than GRACE_HOURS (2) late is dropped as stale.
+- Fails loudly (GitHub emails Moe) when no approved week has posts for today, so it can never sit quiet and green
+  with nothing to post again (that hid an empty week 2 from 2026-11-02).
 
 No state file: before publishing, it reads back the account's latest posts and skips any whose text is already up,
 so a rerun never double posts and nothing gets committed (no extra Vercel deploys).
@@ -28,6 +34,7 @@ with weeks of runway before the token would actually expire.
 import glob
 import json
 import os
+import subprocess
 import sys
 import time
 import urllib.error
@@ -40,14 +47,38 @@ API = os.environ.get("THREADS_API", "https://graph.threads.com")
 ET = ZoneInfo("America/New_York")
 HERE = os.path.dirname(os.path.abspath(__file__))
 WEEKS = os.path.join(HERE, "threads")
-GRACE_HOURS = 6
+GRACE_HOURS = 2
 KINDS = {"take", "useful", "question", "build", "promo"}
 MAX_BYTES = 500  # Threads' text limit; emojis count by their UTF-8 bytes
 
 
+_skew = timedelta()  # tests only, how far the fake clock has been slept forward
+_said_stale = set()  # stale notices already logged this run, so a long run says each one once
+
+
 def now():
     fake = os.environ.get("THREADS_NOW")  # tests only, an ISO time in Eastern
-    return datetime.fromisoformat(fake).replace(tzinfo=ET) if fake else datetime.now(ET)
+    return datetime.fromisoformat(fake).replace(tzinfo=ET) + _skew if fake else datetime.now(ET)
+
+
+def sleep_until(at):
+    global _skew
+    wait = (at - now()).total_seconds()
+    if wait <= 0:
+        return
+    if os.environ.get("THREADS_NOW"):
+        _skew += timedelta(seconds=wait)
+    else:
+        time.sleep(wait)
+
+
+def pull():
+    """Fetch the newest week files mid run. A failed pull isn't fatal, the files on disk still post."""
+    if not os.environ.get("THREADS_PULL"):
+        return
+    r = subprocess.run(["git", "pull", "--ff-only", "-q"], cwd=os.path.dirname(HERE), capture_output=True, text=True)
+    if r.returncode:
+        print(f"git pull failed, posting from the files already here ({r.stderr.strip()[:200]})")
 
 
 def call(method, path, params):
@@ -138,41 +169,74 @@ def publish(user, p):
     return call("POST", f"/v1.0/{user}/threads_publish", {"creation_id": container})["id"]
 
 
-def post():
-    if not os.environ.get("THREADS_TOKEN") or not os.environ.get("THREADS_USER_ID"):
-        print("Threads isn't set up yet (no THREADS_TOKEN or THREADS_USER_ID secret), nothing to do.")
-        return 0
-    user = os.environ["THREADS_USER_ID"]
+def slot_time(p):
+    return datetime.strptime(f"{p['date']} {p['time']}", "%Y-%m-%d %H:%M").replace(tzinfo=ET)
+
+
+def post_once(user):
+    """One pass. Returns (failed, next_slot), next_slot being the next approved post still ahead, or None."""
     t = now()
-    due, failed = [], 0
+    due, failed, next_slot, today = [], 0, None, 0
     for name, week, problems in weeks():
         if problems:
             print(f"{name}: skipped, fix it first ({len(problems)} problems, run lint)")
             failed += 1
             continue
         for p in week["posts"]:
-            at = datetime.strptime(f"{p['date']} {p['time']}", "%Y-%m-%d %H:%M").replace(tzinfo=ET)
-            if at > t or p.get("skip"):
+            if p.get("skip"):
+                continue
+            at = slot_time(p)
+            if week.get("approved") and p["date"] == f"{t:%Y-%m-%d}":
+                today += 1
+            if at > t:
+                if week.get("approved") and (next_slot is None or at < next_slot):
+                    next_slot = at
                 continue
             if t - at > timedelta(hours=GRACE_HOURS):
-                # Stale, or already handled on an earlier run. Say so for a day, so a dropped post shows in the log.
-                if t - at <= timedelta(hours=24):
+                # Stale, or already handled on an earlier pass. Say so for a day, so a dropped post shows in the log.
+                if t - at <= timedelta(hours=24) and (p["date"], p["time"]) not in _said_stale:
+                    _said_stale.add((p["date"], p["time"]))
                     print(f"{p['date']} {p['time']}: past the {GRACE_HOURS} hour window, not posting (fine if it's already up)")
                 continue
             if not week.get("approved"):
                 print(f"{name}: {p['date']} {p['time']} is due but the week isn't approved, not posting")
                 continue
             due.append(p)
+    if not today:
+        print(f"NO APPROVED THREADS POSTS FOR {t:%A %Y-%m-%d}. The account is dark today. Write or approve the week file "
+              f"in social/threads/ (the Website Bot writes it on Fridays, Moe sets \"approved\": true).")
+        failed += 1
     if not due:
         print(f"Nothing due at {t:%Y-%m-%d %H:%M} ET.")
-        return 1 if failed else 0
+        return failed, next_slot
+    due.sort(key=slot_time)
+    for p in due[:-1]:
+        print(f"{p['date']} {p['time']}: dropped, the newer {due[-1]['time']} slot is due too (one post per pass)")
+    p = due[-1]
     recent = call("GET", f"/v1.0/{user}/threads", {"fields": "id,text,timestamp", "limit": 25}).get("data", [])
-    for p in due:
-        if any(same(r.get("text") or "", p["text"]) for r in recent):
-            print(f"{p['date']} {p['time']}: already up, skipped")
-            continue
+    if any(same(r.get("text") or "", p["text"]) for r in recent):
+        print(f"{p['date']} {p['time']}: already up, skipped")
+    else:
         media = publish(user, p)
         print(f"{p['date']} {p['time']}: posted ({p['kind']}, media {media})")
+    return failed, next_slot
+
+
+def post():
+    if not os.environ.get("THREADS_TOKEN") or not os.environ.get("THREADS_USER_ID"):
+        print("Threads isn't set up yet (no THREADS_TOKEN or THREADS_USER_ID secret), nothing to do.")
+        return 0
+    user = os.environ["THREADS_USER_ID"]
+    stop = now() + timedelta(minutes=int(os.environ.get("THREADS_LOOP_MINUTES") or 0))
+    failed = 0
+    while True:
+        f, next_slot = post_once(user)
+        failed += f
+        if f or next_slot is None or next_slot > stop:
+            break  # a failing run ends at once so GitHub emails Moe now, not hours later
+        print(f"Waiting for the {next_slot:%Y-%m-%d %H:%M} ET slot.")
+        sleep_until(next_slot + timedelta(seconds=20))
+        pull()
     return 1 if failed else 0
 
 

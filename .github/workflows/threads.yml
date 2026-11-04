@@ -1,8 +1,9 @@
 name: Threads posts
 
 # Publishes the posts in social/threads/<week>.json straight through Meta's Threads API (no Buffer, $0).
-# The Threads API can't schedule, so this runs every 15 minutes and posts whatever is due (see social/threads.py).
-# GitHub often starts scheduled runs late, so a post can land minutes to hours after its slot (6 hour window).
+# 8 posts a day, every 2 hours from 8 AM to 10 PM ET (Moe, 2026-11-03). The Threads API can't schedule, and GitHub
+# starts scheduled runs 15 minutes to 3.5 hours late, so each post run stays up for about 5 hours, sleeps until each
+# slot, and posts it on the minute (see social/threads.py). Runs queue behind each other, so one always picks up.
 # Sundays it also renews the 60 day token. No AI involved, nothing gets committed.
 on:
   push:
@@ -10,10 +11,9 @@ on:
     paths: ["social/threads/**", "social/threads.py"]
   schedule:
     - cron: "*/15 * * * *"
-    # GitHub runs */15 only every 4 to 6 hours in practice (seen 2026-10-26 and 27), so each slot also gets its own
-    # run at an odd minute, which GitHub honors more often. Both UTC hours cover EDT and EST (8:07, 12:37, 7:07 PM ET).
-    - cron: "7 0,12,13,23 * * *"
-    - cron: "37 16,17 * * *"
+    # GitHub runs */15 only every 4 to 6 hours in practice (seen 2026-10-26 and 27), so there's also an odd minute run
+    # every hour, which GitHub honors more often. The overnight ones are what get a run waiting for the 8 AM slot.
+    - cron: "7 * * * *"
     - cron: "40 7 * * 0"
   workflow_dispatch:
     inputs:
@@ -21,9 +21,10 @@ on:
         description: "post (publish what's due), check (does the token work), refresh (renew the token), or lint (validate the week files)"
         default: post
 
-# One run at a time, so two runs can never post the same thing.
+# One post run at a time, so two runs can never post the same thing. Token refresh and manual check or lint runs get
+# their own group, so they never wait hours behind a sleeping post run or get bumped from the queue by one.
 concurrency:
-  group: threads-posts
+  group: threads-${{ (github.event_name == 'workflow_dispatch' && inputs.mode != 'post' && 'tools') || (github.event.schedule == '40 7 * * 0' && 'refresh') || 'posts' }}
   cancel-in-progress: false
 
 permissions:
@@ -32,11 +33,14 @@ permissions:
 jobs:
   threads:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 340
     env:
       THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
       THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
       MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || github.event.schedule == '40 7 * * 0' && 'refresh' || 'post' }}
+      # Scheduled and push runs stay up to post each slot on time. A manual post run does one pass and quits.
+      THREADS_LOOP_MINUTES: ${{ github.event_name == 'workflow_dispatch' && '0' || '300' }}
+      THREADS_PULL: "1"
     steps:
       - uses: actions/checkout@v4
         with:
