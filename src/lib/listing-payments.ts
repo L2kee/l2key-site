@@ -11,8 +11,13 @@ const TAG = "listing-payment";
 
 type ListingPaymentPlan = { label: string; hours: number; recurring: boolean };
 
-// Live Payment Link ids (Stripe Dashboard, created 2026-11-02).
+// Live Payment Link ids (Stripe Dashboard). Current links, created 2026-11-03
+// for the price cut ($199 one time, $399 a month), come first. The 2026-11-02
+// links ($297, $497) stay mapped so a checkout from an old link already sent
+// to an agent still gets recorded.
 export const LISTING_PAYMENT_LINKS: Record<string, ListingPaymentPlan> = {
+  plink_1UXvHSLvQ4CJbtuWk4cYjiS1: { label: "Signature Listing", hours: 48, recurring: false },
+  plink_1UXvLcLvQ4CJbtuW4Vmm8uZt: { label: "Listing Partner", hours: 24, recurring: true },
   plink_1UXPuDLvQ4CJbtuWYVOPGfrF: { label: "Signature Listing", hours: 48, recurring: false },
   plink_1UXPtrLvQ4CJbtuWhOqTs7wm: { label: "Listing Partner", hours: 24, recurring: true },
 };
