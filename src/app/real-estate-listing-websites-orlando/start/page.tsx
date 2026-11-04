@@ -9,7 +9,7 @@ const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], styl
 
 const TITLE = "Start Your Listing Page | EVOGENCY Listing Suite";
 const DESCRIPTION =
-  "Tell us about your listing and pick a plan. Complimentary first page, Signature Listing at $297, or Listing Partner at $497 a month.";
+  "Tell us about your listing and pick a plan. Complimentary first page, Signature Listing at $199, or Listing Partner at $399 a month.";
 
 export const metadata: Metadata = {
   title: TITLE,

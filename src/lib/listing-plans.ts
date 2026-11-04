@@ -19,8 +19,8 @@ export type ListingPlan = {
 
 export const LISTING_PLANS: ListingPlan[] = [
   { id: "free", label: "Complimentary Page", price: "Free", address: "required", submit: "Build my complimentary page", paid: false },
-  { id: "signature", label: "Signature Listing", price: "$297 per listing", address: "required", submit: "Start my Signature Listing", paid: true },
-  { id: "partner", label: "Listing Partner", price: "$497 a month", address: "optional", submit: "Start Listing Partner", paid: true },
+  { id: "signature", label: "Signature Listing", price: "$199 per listing", address: "required", submit: "Start my Signature Listing", paid: true },
+  { id: "partner", label: "Listing Partner", price: "$399 a month", address: "optional", submit: "Start Listing Partner", paid: true },
   { id: "brokerage", label: "Brokerage Plan", price: "Quoted per agent", address: "none", submit: "Request my team quote", paid: false },
   { id: "unsure", label: "Not Sure Yet", price: "Help me pick", address: "optional", submit: "Help me pick the right fit", paid: false },
 ];

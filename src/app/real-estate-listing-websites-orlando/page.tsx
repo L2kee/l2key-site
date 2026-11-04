@@ -30,7 +30,7 @@ function CtaPair() {
 }
 const TITLE = "Luxury Listing Websites for Orlando Real Estate Agents | EVOGENCY";
 const DESCRIPTION =
-  "EVOGENCY Listing Suite gives every Orlando listing its own bespoke property website, delivered in as little as 48 hours. Your first page is complimentary, then $297 per listing or $497 a month.";
+  "EVOGENCY Listing Suite gives every Orlando listing its own bespoke property website, delivered in as little as 48 hours. Your first page is complimentary, then $199 per listing or $399 a month.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -86,7 +86,7 @@ const PLANS = [
     cta: "Start Signature Listing",
     eyebrow: "Per property",
     name: "Signature Listing",
-    price: "$297",
+    price: "$199",
     per: "per listing, paid once",
     items: [
       "Luxury page live in 48 hours",
@@ -105,7 +105,7 @@ const PLANS = [
     cta: "Start Listing Partner",
     eyebrow: "Monthly",
     name: "Listing Partner",
-    price: "$497",
+    price: "$399",
     per: "a month, up to 4 new listings",
     items: [
       "Everything in Signature Listing",
@@ -114,7 +114,7 @@ const PLANS = [
       "Monthly report you can show sellers",
       "Month to month, cancel anytime",
     ],
-    fit: "About $124 a listing at 4 a month. Two or more listings a month and it pays for itself.",
+    fit: "About $100 a listing at 4 a month. At two listings a month it already matches paying per listing.",
     hot: true,
   },
   {
@@ -148,7 +148,7 @@ const FAQ = [
   },
   {
     q: "How much does a listing website cost?",
-    a: "Your first page is free. After that it's $297 per listing on Signature Listing, or $497 a month on Listing Partner for up to 4 new listings a month. Brokerages get a per agent quote.",
+    a: "Your first page is free. After that it's $199 per listing on Signature Listing, or $399 a month on Listing Partner for up to 4 new listings a month. Brokerages get a per agent quote.",
   },
   {
     q: "How fast can my listing page go live?",
