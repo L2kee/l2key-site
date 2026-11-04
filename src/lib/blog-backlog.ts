@@ -9051,7 +9051,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How chiropractic practices can rank for the searches new patients make, build trust with careful content, and turn local search into booked visits.",
     excerpt: "New patients search by symptom and by location. Here's how to show up for both.",
-    date: "2026-10-15",
+    date: "2026-11-04",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -9112,7 +9112,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A lead magnet is a free, useful resource offered in exchange for an email. Here's what works for local service businesses and what nobody wants.",
     excerpt: "Nobody signs up for your newsletter. They will sign up for a specific answer to a specific problem.",
-    date: "2026-10-15",
+    date: "2026-11-04",
     tag: "Marketing",
     relatedHref: "/free-review-kit",
     relatedLabel: "Get the free Review Kit",
@@ -9171,7 +9171,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Many customers call service businesses in the evening and on weekends. Here's what happens when nobody answers, and the practical ways to cover those hours.",
     excerpt: "Your customers call when they finally have time, which is usually after you've gone home.",
-    date: "2026-10-15",
+    date: "2026-11-04",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
