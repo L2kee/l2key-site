@@ -9232,7 +9232,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Before you print a single sign, check trademarks, domains, social handles, search results, and how the name sounds out loud. Here's the full list.",
     excerpt: "A name you love can turn into an expensive problem. Here's what to check before you commit.",
-    date: "2026-10-15",
+    date: "2026-11-05",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -9297,7 +9297,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How residential and commercial cleaning companies can design a website that builds trust, explains pricing, and makes booking a cleaning effortless.",
     excerpt: "People are letting strangers into their home or office. Your website has to make that feel safe.",
-    date: "2026-10-15",
+    date: "2026-11-05",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -9363,7 +9363,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How residential and commercial cleaning companies can build a steady flow of honest Google reviews from first time and recurring clients.",
     excerpt: "Recurring clients love you but rarely think to say so. Here's how to change that.",
-    date: "2026-10-15",
+    date: "2026-11-05",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",

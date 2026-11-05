@@ -675,6 +675,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "seo-for-chiropractors",
   "lead-magnets-for-local-service-businesses",
   "the-after-hours-call-problem",
+  "naming-a-business-what-to-check",
+  "website-design-for-cleaning-companies",
+  "google-reviews-for-cleaning-companies",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
