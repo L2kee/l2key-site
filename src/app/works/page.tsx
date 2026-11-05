@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { WorksGallery } from "@/components/works-gallery";
+import { Workbench } from "@/components/workbench";
 import { WORK, WORK_CATEGORIES } from "@/lib/content";
 
 const TITLE = "Our Work | EVOGENCY AI and Software Portfolio, Orlando FL";
@@ -44,14 +45,16 @@ export default function WorksPage() {
           <span className="gradient-text">That Actually Ship</span>
         </h1>
         <p className="mt-6 max-w-2xl text-balance text-white/70 sm:text-lg">
-          Not mockups. Not concepts sitting in a folder. Real software,
-          live and in production right now.
+          Real software, live and in production right now. Plus the free
+          mockups and brand concepts we build for real businesses.
         </p>
       </section>
 
       {/* Screen reader and crawler heading so the project card h3s don't skip a level. */}
       <h2 className="sr-only">Our projects</h2>
       <WorksGallery items={WORK} categories={WORK_CATEGORIES} />
+
+      <Workbench />
 
       {/* Value copy */}
       <section className="mx-auto mt-24 max-w-3xl text-center">
