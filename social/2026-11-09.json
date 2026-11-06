@@ -1,0 +1,648 @@
+{
+  "week": "2026-11-09",
+  "posts": [
+    {
+      "date": "2026-11-09",
+      "time": "08:00",
+      "id": "2026-11-09-ai-rss-break-check",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Reddit RSS ends Nov 13. Step 3 stops silent breaks.",
+      "why": "Reddit says it ends RSS feeds on November 13. Anything of yours that reads them will quietly go blank.",
+      "src": "Reddit RSS shutdown, Decrypt and TheNextWeb, Sep 30 2026",
+      "steps": [
+        "Make a list of every automation, script, and feed reader that pulls a Reddit RSS feed.",
+        "Paste the list into Claude or ChatGPT and ask which ones break and what each depends on.",
+        "Ask for a replacement plan for each one, ranked by what hurts most if it stops."
+      ],
+      "take": "Do this before the 13th, not after something goes quiet.",
+      "label": "Step",
+      "say": [
+        "Reddit ends RSS feeds on November thirteenth! Step three stops the silent breaks.",
+        "Reddit says it ends RSS feeds on November thirteenth. Anything of yours that reads them will quietly go blank.",
+        "First, list every automation, script, and feed reader that pulls a Reddit feed. That's the easy part.",
+        "Next, paste the list into Claude or ChatGPT and ask which ones break and what each depends on.",
+        "Now the step that stops the silent break. Ask for a replacement plan for each one, ranked by what hurts most.",
+        "Do this before the thirteenth, not after something goes quiet."
+      ],
+      "keyword": "RSS",
+      "prompt": "You are a careful automation auditor. Below is a list of the automations, scripts, and feed readers I use that pull Reddit RSS feeds. First tell me which ones will stop working when Reddit ends RSS feeds on November 13 and what each one depends on. Then give me a replacement plan for each one, ranked by what hurts most if it stops. Say what you are unsure about instead of guessing. My list [paste here]",
+      "captions": {
+        "facebook": "How to check what breaks when Reddit RSS ends.\n\nReddit RSS ends Nov 13. Step 3 stops silent breaks.\n\nReddit says it ends RSS feeds on November 13. Anything of yours that reads them will quietly go blank.\n\n3 steps.\n1. Make a list of every automation, script, and feed reader that pulls a Reddit RSS feed.\n2. Paste the list into Claude or ChatGPT and ask which ones break and what each depends on.\n3. Ask for a replacement plan for each one, ranked by what hurts most if it stops.\n\nDo this before the 13th, not after something goes quiet.\n\nWant the exact prompt? Follow EVOGENCY and message us the word RSS. We'll send it to you.\n\n#AITools #Reddit #Automation #Developers",
+        "instagram": "How to check what breaks when Reddit RSS ends.\n\nReddit RSS ends Nov 13. Step 3 stops silent breaks.\n\nReddit says it ends RSS feeds on November 13. Anything of yours that reads them will quietly go blank.\n\n3 steps.\n1. Make a list of every automation, script, and feed reader that pulls a Reddit RSS feed.\n2. Paste the list into Claude or ChatGPT and ask which ones break and what each depends on.\n3. Ask for a replacement plan for each one, ranked by what hurts most if it stops.\n\nDo this before the 13th, not after something goes quiet.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word RSS. We'll send it to you.\n\n#AITools #Reddit #Automation #Developers",
+        "tiktok": "How to check what breaks when Reddit RSS ends.\n\nReddit RSS ends Nov 13. Step 3 stops silent breaks.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us RSS.\n\n#AITools #Reddit #Automation #Developers"
+      }
+    },
+    {
+      "date": "2026-11-09",
+      "time": "12:30",
+      "id": "2026-11-09-covey-listen-to-understand",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Listening to reply? The last step flips it.",
+      "why": "Stephen Covey's habit still wins arguments. Seek to understand the other person before you try to be understood.",
+      "src": "The 7 Habits of Highly Effective People, Stephen Covey",
+      "steps": [
+        "Stop planning your answer while they talk. Listen all the way to the end.",
+        "Say back what you heard in your own words and ask, did I get that right?",
+        "Before you argue, ask AI to write their side in its strongest form, then answer that."
+      ],
+      "take": "You can't win someone over until they feel understood.",
+      "label": "Do this",
+      "say": [
+        "Listening to reply? The last step flips it!",
+        "Stephen Covey's habit still wins arguments. Seek to understand the other person before you try to be understood.",
+        "Stop planning your answer while they talk. Listen all the way to the end. Easy win.",
+        "Then say back what you heard in your own words, and ask if you got it right.",
+        "Now the flip. Before you argue, ask AI to write their side in its strongest form, then answer that.",
+        "You can't win someone over until they feel understood."
+      ],
+      "captions": {
+        "facebook": "How to be a better listener using Stephen Covey's habit.\n\nListening to reply? The last step flips it.\n\nStephen Covey's habit still wins arguments. Seek to understand the other person before you try to be understood.\n\n3 steps.\n1. Stop planning your answer while they talk. Listen all the way to the end.\n2. Say back what you heard in your own words and ask, did I get that right?\n3. Before you argue, ask AI to write their side in its strongest form, then answer that.\n\nYou can't win someone over until they feel understood.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Covey #Listening #Communication",
+        "instagram": "How to be a better listener using Stephen Covey's habit.\n\nListening to reply? The last step flips it.\n\nStephen Covey's habit still wins arguments. Seek to understand the other person before you try to be understood.\n\n3 steps.\n1. Stop planning your answer while they talk. Listen all the way to the end.\n2. Say back what you heard in your own words and ask, did I get that right?\n3. Before you argue, ask AI to write their side in its strongest form, then answer that.\n\nYou can't win someone over until they feel understood.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Covey #Listening #Communication",
+        "tiktok": "How to be a better listener using Stephen Covey's habit.\n\nListening to reply? The last step flips it.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #Covey #Listening #Communication"
+      }
+    },
+    {
+      "date": "2026-11-09",
+      "time": "19:00",
+      "id": "2026-11-09-google-search-cant-skip-ai",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Google says Search can't skip AI. Check number 3 today.",
+      "why": "On November 3, Google said Search still carries AI features like AI Overviews and AI Mode, even for school accounts.",
+      "src": "NBC News, AP, and The Guardian, Nov 3 2026",
+      "steps": [
+        "Search your business name and read what the AI answer says about you.",
+        "Search your main service plus your city, and check the hours, services, and reviews it shows.",
+        "Fix what is wrong at the source, your website and your Google Business Profile."
+      ],
+      "take": "Customers meet the AI answer before they ever reach your site.",
+      "label": "What it means",
+      "say": [
+        "Google says Search can't skip AI! Check number three today.",
+        "On November third, Google said Search still carries AI features like AI Overviews and AI Mode, even for school accounts.",
+        "First, search your business name and read what the AI answer says about you. Take a screenshot.",
+        "Next, search your main service plus your city, and check the hours, services, and reviews it shows.",
+        "Number three is the fix. Change what is wrong at the source, your website and your Google Business Profile.",
+        "Customers meet the AI answer before they ever reach your site."
+      ],
+      "captions": {
+        "facebook": "How to check what Google's AI says about your business.\n\nGoogle says Search can't skip AI. Check number 3 today.\n\nOn November 3, Google said Search still carries AI features like AI Overviews and AI Mode, even for school accounts.\n\n3 steps.\n1. Search your business name and read what the AI answer says about you.\n2. Search your main service plus your city, and check the hours, services, and reviews it shows.\n3. Fix what is wrong at the source, your website and your Google Business Profile.\n\nCustomers meet the AI answer before they ever reach your site.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #GoogleSearch #LocalSEO #SmallBusiness",
+        "instagram": "How to check what Google's AI says about your business.\n\nGoogle says Search can't skip AI. Check number 3 today.\n\nOn November 3, Google said Search still carries AI features like AI Overviews and AI Mode, even for school accounts.\n\n3 steps.\n1. Search your business name and read what the AI answer says about you.\n2. Search your main service plus your city, and check the hours, services, and reviews it shows.\n3. Fix what is wrong at the source, your website and your Google Business Profile.\n\nCustomers meet the AI answer before they ever reach your site.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #GoogleSearch #LocalSEO #SmallBusiness",
+        "tiktok": "How to check what Google's AI says about your business.\n\nGoogle says Search can't skip AI. Check number 3 today.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #GoogleSearch #LocalSEO #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "time": "08:00",
+      "id": "2026-11-10-ai-robots-txt-optout",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "One robots.txt line, three AI giants. Step 3 is timing.",
+      "why": "Google, OpenAI, and Microsoft said on October 30 they will honor one shared opt out for AI training. It rolls out in stages.",
+      "src": "Search Engine Roundtable and AI Weekly, Oct 30 2026, ToolNavs, Oct 31 2026",
+      "steps": [
+        "Paste your site's robots.txt into Claude or ChatGPT.",
+        "Ask it to explain each rule in plain words and confirm your search bots stay allowed.",
+        "Ask for the new AI training opt out line as a draft, and keep it parked until each company supports it in 2027."
+      ],
+      "take": "It covers training only, it is voluntary, and it won't remove what was already collected.",
+      "label": "Step",
+      "say": [
+        "One robots dot txt line, three AI giants! Step three is timing.",
+        "Google, OpenAI, and Microsoft said on October thirtieth they will honor one shared opt out for AI training. It rolls out in stages.",
+        "First, paste your site's robots dot txt into Claude or ChatGPT. Quick win done.",
+        "Next, ask it to explain each rule in plain words and confirm your search bots stay allowed.",
+        "Now the timing. Ask for the new opt out line as a draft, and keep it parked until each company supports it in twenty twenty seven.",
+        "It covers training only, it is voluntary, and it won't remove what was already collected."
+      ],
+      "keyword": "ROBOTS",
+      "prompt": "You are a careful web developer. Below is my site's robots.txt file. First explain each rule in plain words. Then tell me whether any rule would block search engines and, if so, which one. Then write a draft that adds the new shared AI training opt out line from the IETF AI Preferences draft [token name from the announcement], keeps all search bots allowed, and keeps my existing crawler rules. Say clearly that this line is voluntary, covers training only, and that Microsoft targets February 1 2027, Google early 2027, and OpenAI in the coming months, so I should not switch it on before then. My robots.txt [paste here]",
+      "captions": {
+        "facebook": "How to update robots.txt for AI training opt out.\n\nOne robots.txt line, three AI giants. Step 3 is timing.\n\nGoogle, OpenAI, and Microsoft said on October 30 they will honor one shared opt out for AI training. It rolls out in stages.\n\n3 steps.\n1. Paste your site's robots.txt into Claude or ChatGPT.\n2. Ask it to explain each rule in plain words and confirm your search bots stay allowed.\n3. Ask for the new AI training opt out line as a draft, and keep it parked until each company supports it in 2027.\n\nIt covers training only, it is voluntary, and it won't remove what was already collected.\n\nWant the exact prompt? Follow EVOGENCY and message us the word ROBOTS. We'll send it to you.\n\n#AITools #SEO #WebDevelopment #WebsiteOwners",
+        "instagram": "How to update robots.txt for AI training opt out.\n\nOne robots.txt line, three AI giants. Step 3 is timing.\n\nGoogle, OpenAI, and Microsoft said on October 30 they will honor one shared opt out for AI training. It rolls out in stages.\n\n3 steps.\n1. Paste your site's robots.txt into Claude or ChatGPT.\n2. Ask it to explain each rule in plain words and confirm your search bots stay allowed.\n3. Ask for the new AI training opt out line as a draft, and keep it parked until each company supports it in 2027.\n\nIt covers training only, it is voluntary, and it won't remove what was already collected.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word ROBOTS. We'll send it to you.\n\n#AITools #SEO #WebDevelopment #WebsiteOwners",
+        "tiktok": "How to update robots.txt for AI training opt out.\n\nOne robots.txt line, three AI giants. Step 3 is timing.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us ROBOTS.\n\n#AITools #SEO #WebDevelopment #WebsiteOwners"
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "time": "12:30",
+      "id": "2026-11-10-omnidiff-syntax-diff",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Git diff that reads code. The third trick is PDFs.",
+      "why": "A normal diff compares lines. OmniDiff compares code by its syntax, in 25 languages.",
+      "src": "github.com/ivankovic/omnidiff",
+      "steps": [
+        "Use it as your git diff and let it compare code by its syntax instead of by line.",
+        "Open its terminal view to walk through each change, or use the JSON output for scripts.",
+        "Point it at PDFs, images, or archives to see exactly what changed in them too."
+      ],
+      "take": "It is free software under the AGPL 3.0 license, and its README says its accuracy goals are not met yet, so check big changes by eye.",
+      "label": "How to use it",
+      "say": [
+        "A git diff that reads code! The third trick is PDFs.",
+        "A normal diff compares lines. OmniDiff compares code by its syntax, in twenty five languages.",
+        "First, use it as your git diff and let it compare code by its syntax instead of by line. That's the easy one.",
+        "Next, open its terminal view to walk through each change, or use the JSON output for scripts.",
+        "Now the PDF trick. Point it at PDFs, images, or archives to see exactly what changed in them too.",
+        "It is free software, and its README says accuracy goals are not met yet, so check big changes by eye."
+      ],
+      "captions": {
+        "facebook": "Free syntax aware git diff tool for developers.\n\nGit diff that reads code. The third trick is PDFs.\n\nA normal diff compares lines. OmniDiff compares code by its syntax, in 25 languages.\n\n3 steps.\n1. Use it as your git diff and let it compare code by its syntax instead of by line.\n2. Open its terminal view to walk through each change, or use the JSON output for scripts.\n3. Point it at PDFs, images, or archives to see exactly what changed in them too.\n\nIt is free software under the AGPL 3.0 license, and its README says its accuracy goals are not met yet, so check big changes by eye.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#DevTools #OpenSource #Git #Developers",
+        "instagram": "Free syntax aware git diff tool for developers.\n\nGit diff that reads code. The third trick is PDFs.\n\nA normal diff compares lines. OmniDiff compares code by its syntax, in 25 languages.\n\n3 steps.\n1. Use it as your git diff and let it compare code by its syntax instead of by line.\n2. Open its terminal view to walk through each change, or use the JSON output for scripts.\n3. Point it at PDFs, images, or archives to see exactly what changed in them too.\n\nIt is free software under the AGPL 3.0 license, and its README says its accuracy goals are not met yet, so check big changes by eye.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#DevTools #OpenSource #Git #Developers",
+        "tiktok": "Free syntax aware git diff tool for developers.\n\nGit diff that reads code. The third trick is PDFs.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#DevTools #OpenSource #Git #Developers"
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "time": "19:00",
+      "id": "2026-11-10-postman-plugins-consent",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Postman added AI plugins without asking. Check number 3.",
+      "why": "A developer reported that opening Postman's desktop app added plugins and hooks to Claude Code and Codex with no prompt.",
+      "src": "GitHub issue, Oct 25 2026, RuntimeWire, Nov 3 2026, Hacker News, Nov 4 2026",
+      "steps": [
+        "The report says opening Postman's desktop app added plugins and hooks to Claude Code and Codex settings with no prompt.",
+        "The reporters do not claim data was stolen, and Postman says it will make the opt in clearer.",
+        "Search your Claude Code and Codex settings for postman and remove anything you did not install."
+      ],
+      "take": "This is a consent problem, not a proven leak.",
+      "label": "What it means",
+      "say": [
+        "Postman added AI plugins without asking! Check number three.",
+        "A developer reported that opening Postman's desktop app added plugins and hooks to Claude Code and Codex with no prompt.",
+        "First, the report says those plugins and hooks landed in your Claude Code and Codex settings without asking.",
+        "Next, the reporters do not claim data was stolen, and Postman says it will make the opt in clearer.",
+        "Check number three takes two minutes. Search your Claude Code and Codex settings for postman and remove anything you did not install.",
+        "This is a consent problem, not a proven leak."
+      ],
+      "captions": {
+        "facebook": "Postman installed AI plugins without asking, what to check.\n\nPostman added AI plugins without asking. Check number 3.\n\nA developer reported that opening Postman's desktop app added plugins and hooks to Claude Code and Codex with no prompt.\n\n3 steps.\n1. The report says opening Postman's desktop app added plugins and hooks to Claude Code and Codex settings with no prompt.\n2. The reporters do not claim data was stolen, and Postman says it will make the opt in clearer.\n3. Search your Claude Code and Codex settings for postman and remove anything you did not install.\n\nThis is a consent problem, not a proven leak.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ClaudeCode #Developers #Security",
+        "instagram": "Postman installed AI plugins without asking, what to check.\n\nPostman added AI plugins without asking. Check number 3.\n\nA developer reported that opening Postman's desktop app added plugins and hooks to Claude Code and Codex with no prompt.\n\n3 steps.\n1. The report says opening Postman's desktop app added plugins and hooks to Claude Code and Codex settings with no prompt.\n2. The reporters do not claim data was stolen, and Postman says it will make the opt in clearer.\n3. Search your Claude Code and Codex settings for postman and remove anything you did not install.\n\nThis is a consent problem, not a proven leak.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ClaudeCode #Developers #Security",
+        "tiktok": "Postman installed AI plugins without asking, what to check.\n\nPostman added AI plugins without asking. Check number 3.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #ClaudeCode #Developers #Security"
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "time": "08:00",
+      "id": "2026-11-11-ai-customer-question-answers",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Your customers ask real questions. The last step answers them.",
+      "why": "People search in full questions, not just keywords. A clear two sentence answer for each one is easy content to write.",
+      "src": "",
+      "steps": [
+        "Paste 10 short phrases customers type into your search box or contact form.",
+        "Ask AI to rewrite each phrase as a full question.",
+        "Ask for a two sentence answer to each one, using only facts you give it."
+      ],
+      "take": "Check every answer for accuracy before it goes on your site.",
+      "label": "Step",
+      "say": [
+        "Your customers ask real questions! The last step answers them.",
+        "People search in full questions, not just keywords. A clear two sentence answer for each one is easy content to write.",
+        "Start by pasting ten short phrases customers type into your search box or contact form. Quick win.",
+        "Then ask AI to rewrite each phrase as a full question.",
+        "Now the answers. Ask for a two sentence reply to each one, using only facts you give it.",
+        "Check every answer for accuracy before it goes on your site."
+      ],
+      "keyword": "ANSWERS",
+      "prompt": "You are a helpful website writer. Below are 10 short phrases my customers type into my search box or contact form, and a few facts about my business. First rewrite each phrase as a full question. Then write a two sentence answer to each question in a friendly, plain voice, using only the facts I gave you. If you need a fact I did not give, write [fill this in] instead of guessing. Phrases [paste here] Facts about my business [paste here]",
+      "captions": {
+        "facebook": "How to turn customer search phrases into FAQ answers with AI.\n\nYour customers ask real questions. The last step answers them.\n\nPeople search in full questions, not just keywords. A clear two sentence answer for each one is easy content to write.\n\n3 steps.\n1. Paste 10 short phrases customers type into your search box or contact form.\n2. Ask AI to rewrite each phrase as a full question.\n3. Ask for a two sentence answer to each one, using only facts you give it.\n\nCheck every answer for accuracy before it goes on your site.\n\nWant the exact prompt? Follow EVOGENCY and message us the word ANSWERS. We'll send it to you.\n\n#AITools #SmallBusiness #ContentMarketing #SEO",
+        "instagram": "How to turn customer search phrases into FAQ answers with AI.\n\nYour customers ask real questions. The last step answers them.\n\nPeople search in full questions, not just keywords. A clear two sentence answer for each one is easy content to write.\n\n3 steps.\n1. Paste 10 short phrases customers type into your search box or contact form.\n2. Ask AI to rewrite each phrase as a full question.\n3. Ask for a two sentence answer to each one, using only facts you give it.\n\nCheck every answer for accuracy before it goes on your site.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word ANSWERS. We'll send it to you.\n\n#AITools #SmallBusiness #ContentMarketing #SEO",
+        "tiktok": "How to turn customer search phrases into FAQ answers with AI.\n\nYour customers ask real questions. The last step answers them.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us ANSWERS.\n\n#AITools #SmallBusiness #ContentMarketing #SEO"
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "time": "12:30",
+      "id": "2026-11-11-difficult-conversations-contribution",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Blame never ends a fight. The third question does.",
+      "why": "Stone, Patton, and Heen say every hard talk is really three, what happened, feelings, and identity. Arguing about who is right stalls all three.",
+      "src": "Difficult Conversations, Douglas Stone, Bruce Patton, and Sheila Heen",
+      "steps": [
+        "Say what you saw happen, then ask for their story instead of arguing about who is right.",
+        "Separate your intent from the impact. Say what you meant, and own how it landed.",
+        "Ask what each of you did to get here. Practice it first by having AI play the other person."
+      ],
+      "take": "Contribution replaces blame, and blame is what keeps the fight alive.",
+      "label": "Do this",
+      "say": [
+        "Blame never ends a fight! The third question does.",
+        "Stone, Patton, and Heen say every hard talk is really three, what happened, feelings, and identity. Arguing about who is right stalls all three.",
+        "First, say what you saw happen, then ask for their story instead of arguing about who is right. Good start.",
+        "Next, separate your intent from the impact. Say what you meant, and own how it landed.",
+        "Now the question that ends it. Ask what each of you did to get here. Practice it first by having AI play the other person.",
+        "Contribution replaces blame, and blame is what keeps the fight alive."
+      ],
+      "captions": {
+        "facebook": "How to handle a hard conversation without blame.\n\nBlame never ends a fight. The third question does.\n\nStone, Patton, and Heen say every hard talk is really three, what happened, feelings, and identity. Arguing about who is right stalls all three.\n\n3 steps.\n1. Say what you saw happen, then ask for their story instead of arguing about who is right.\n2. Separate your intent from the impact. Say what you meant, and own how it landed.\n3. Ask what each of you did to get here. Practice it first by having AI play the other person.\n\nContribution replaces blame, and blame is what keeps the fight alive.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #HardConversations #Communication #Leadership",
+        "instagram": "How to handle a hard conversation without blame.\n\nBlame never ends a fight. The third question does.\n\nStone, Patton, and Heen say every hard talk is really three, what happened, feelings, and identity. Arguing about who is right stalls all three.\n\n3 steps.\n1. Say what you saw happen, then ask for their story instead of arguing about who is right.\n2. Separate your intent from the impact. Say what you meant, and own how it landed.\n3. Ask what each of you did to get here. Practice it first by having AI play the other person.\n\nContribution replaces blame, and blame is what keeps the fight alive.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #HardConversations #Communication #Leadership",
+        "tiktok": "How to handle a hard conversation without blame.\n\nBlame never ends a fight. The third question does.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #HardConversations #Communication #Leadership"
+      }
+    },
+    {
+      "date": "2026-11-11",
+      "time": "19:00",
+      "id": "2026-11-11-chatgpt-gif-maker",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "ChatGPT now makes GIFs. Fact 3 is access.",
+      "why": "On November 4, ChatGPT added animated GIF creation from a text prompt or a photo, powered by OpenAI's new Images 2.6 model.",
+      "src": "The Decoder, Decrypt, and OpenAI, Nov 4 2026",
+      "steps": [
+        "ChatGPT can now turn a text prompt or an uploaded photo into an animated GIF.",
+        "You can control the animation speed and edit individual frames.",
+        "Access is still rolling out and limits are not published, so test it before you plan a campaign around it."
+      ],
+      "take": "A looping GIF for a promo, a before and after, or a product tip is now one prompt away.",
+      "label": "What it means",
+      "say": [
+        "ChatGPT now makes GIFs! Fact three is access.",
+        "On November fourth, ChatGPT added animated GIF creation from a text prompt or a photo, powered by OpenAI's new Images two point six model.",
+        "First, ChatGPT can turn a text prompt or an uploaded photo into an animated GIF.",
+        "Next, you can control the animation speed and edit individual frames.",
+        "Fact three is access. It is still rolling out and limits are not published, so test it before you plan a campaign around it.",
+        "A looping GIF for a promo, a before and after, or a product tip is now one prompt away."
+      ],
+      "captions": {
+        "facebook": "ChatGPT GIF maker explained.\n\nChatGPT now makes GIFs. Fact 3 is access.\n\nOn November 4, ChatGPT added animated GIF creation from a text prompt or a photo, powered by OpenAI's new Images 2.6 model.\n\n3 steps.\n1. ChatGPT can now turn a text prompt or an uploaded photo into an animated GIF.\n2. You can control the animation speed and edit individual frames.\n3. Access is still rolling out and limits are not published, so test it before you plan a campaign around it.\n\nA looping GIF for a promo, a before and after, or a product tip is now one prompt away.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ChatGPT #ContentCreators #SmallBusiness",
+        "instagram": "ChatGPT GIF maker explained.\n\nChatGPT now makes GIFs. Fact 3 is access.\n\nOn November 4, ChatGPT added animated GIF creation from a text prompt or a photo, powered by OpenAI's new Images 2.6 model.\n\n3 steps.\n1. ChatGPT can now turn a text prompt or an uploaded photo into an animated GIF.\n2. You can control the animation speed and edit individual frames.\n3. Access is still rolling out and limits are not published, so test it before you plan a campaign around it.\n\nA looping GIF for a promo, a before and after, or a product tip is now one prompt away.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ChatGPT #ContentCreators #SmallBusiness",
+        "tiktok": "ChatGPT GIF maker explained.\n\nChatGPT now makes GIFs. Fact 3 is access.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #ChatGPT #ContentCreators #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "time": "08:00",
+      "id": "2026-11-12-ai-late-invoice-reminders",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Late payers cost you cash. Step 3 sends the reminder.",
+      "why": "Chasing money feels awkward, so it gets put off. AI can find who is late and draft the nudge in minutes.",
+      "src": "",
+      "steps": [
+        "Export your last three months of invoices as a CSV and remove anything private you don't need.",
+        "Paste it into Claude or ChatGPT and ask which clients paid late and by how many days.",
+        "Ask for a friendly two line reminder for each late payer, ready to send."
+      ],
+      "take": "Check every name and amount against your own records before you send.",
+      "label": "Step",
+      "say": [
+        "Late payers cost you cash! Step three sends the reminder.",
+        "Chasing money feels awkward, so it gets put off. AI can find who is late and draft the nudge in minutes.",
+        "First, export your last three months of invoices as a CSV and remove anything private you don't need. Done.",
+        "Next, paste it into Claude or ChatGPT and ask which clients paid late and by how many days.",
+        "Now the reminder. Ask for a friendly two line message for each late payer, ready to send.",
+        "Check every name and amount against your own records before you send."
+      ],
+      "keyword": "INVOICE",
+      "prompt": "You are my friendly bookkeeping assistant. Below is a CSV of my invoices from the last three months. First list every client who paid late and by how many days. Then tell me which clients are still unpaid. Finally write a friendly two line payment reminder for each late or unpaid client, with [brackets] for anything I need to fill in. Do not guess any amount or date that is not in the data. Invoices [paste here]",
+      "captions": {
+        "facebook": "How to find late paying clients and write reminders with AI.\n\nLate payers cost you cash. Step 3 sends the reminder.\n\nChasing money feels awkward, so it gets put off. AI can find who is late and draft the nudge in minutes.\n\n3 steps.\n1. Export your last three months of invoices as a CSV and remove anything private you don't need.\n2. Paste it into Claude or ChatGPT and ask which clients paid late and by how many days.\n3. Ask for a friendly two line reminder for each late payer, ready to send.\n\nCheck every name and amount against your own records before you send.\n\nWant the exact prompt? Follow EVOGENCY and message us the word INVOICE. We'll send it to you.\n\n#AITools #SmallBusiness #Invoices #CashFlow",
+        "instagram": "How to find late paying clients and write reminders with AI.\n\nLate payers cost you cash. Step 3 sends the reminder.\n\nChasing money feels awkward, so it gets put off. AI can find who is late and draft the nudge in minutes.\n\n3 steps.\n1. Export your last three months of invoices as a CSV and remove anything private you don't need.\n2. Paste it into Claude or ChatGPT and ask which clients paid late and by how many days.\n3. Ask for a friendly two line reminder for each late payer, ready to send.\n\nCheck every name and amount against your own records before you send.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word INVOICE. We'll send it to you.\n\n#AITools #SmallBusiness #Invoices #CashFlow",
+        "tiktok": "How to find late paying clients and write reminders with AI.\n\nLate payers cost you cash. Step 3 sends the reminder.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us INVOICE.\n\n#AITools #SmallBusiness #Invoices #CashFlow"
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "time": "12:30",
+      "id": "2026-11-12-pjit-free-image-model",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Free AI image model. Step 3 fixes your short prompts.",
+      "why": "Pyramid JiT is a 2 billion parameter text to image model trained for about 21 thousand dollars, and the weights are free.",
+      "src": "huggingface.co/Linum-AI/pjit-21k",
+      "steps": [
+        "Download the weights from Hugging Face. They are free under the Apache 2.0 license.",
+        "Run the repo's generate script with a detailed prompt of 50 to 80 words, which is how it was trained.",
+        "Turn on its prompt upsampler, which rewrites a short idea into the long caption it likes. It needs an OpenRouter key."
+      ],
+      "take": "It is a research checkpoint, so expect rough edges. It cannot write text or make posters.",
+      "label": "How to use it",
+      "say": [
+        "A free AI image model! Step three fixes your short prompts.",
+        "Pyramid JiT is a two billion parameter text to image model trained for about twenty one thousand dollars, and the weights are free.",
+        "First, download the weights from Hugging Face. They are free under the Apache two point oh license.",
+        "Next, run the repo's generate script with a detailed prompt of fifty to eighty words, which is how it was trained.",
+        "Now the fix for short prompts. Turn on its prompt upsampler, which rewrites a short idea into the long caption it likes. It needs an OpenRouter key.",
+        "It is a research checkpoint, so expect rough edges. It cannot write text or make posters."
+      ],
+      "captions": {
+        "facebook": "Free open source AI image generator you can run yourself.\n\nFree AI image model. Step 3 fixes your short prompts.\n\nPyramid JiT is a 2 billion parameter text to image model trained for about 21 thousand dollars, and the weights are free.\n\n3 steps.\n1. Download the weights from Hugging Face. They are free under the Apache 2.0 license.\n2. Run the repo's generate script with a detailed prompt of 50 to 80 words, which is how it was trained.\n3. Turn on its prompt upsampler, which rewrites a short idea into the long caption it likes. It needs an OpenRouter key.\n\nIt is a research checkpoint, so expect rough edges. It cannot write text or make posters.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AITools #OpenSource #Designers #AIArt",
+        "instagram": "Free open source AI image generator you can run yourself.\n\nFree AI image model. Step 3 fixes your short prompts.\n\nPyramid JiT is a 2 billion parameter text to image model trained for about 21 thousand dollars, and the weights are free.\n\n3 steps.\n1. Download the weights from Hugging Face. They are free under the Apache 2.0 license.\n2. Run the repo's generate script with a detailed prompt of 50 to 80 words, which is how it was trained.\n3. Turn on its prompt upsampler, which rewrites a short idea into the long caption it likes. It needs an OpenRouter key.\n\nIt is a research checkpoint, so expect rough edges. It cannot write text or make posters.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AITools #OpenSource #Designers #AIArt",
+        "tiktok": "Free open source AI image generator you can run yourself.\n\nFree AI image model. Step 3 fixes your short prompts.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AITools #OpenSource #Designers #AIArt"
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "time": "19:00",
+      "id": "2026-11-12-ai-mode-home-services-booking",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "AI Mode books home services. Check number 3 first.",
+      "why": "On November 4, Google added direct booking and quote links in AI Mode for home services in the US.",
+      "src": "Search Engine Land, Search Engine Journal, and Housecall Pro, Nov 4 2026",
+      "steps": [
+        "The links run through Angi, Thumbtack, Housecall Pro, and Jobber, with ServiceTitan coming soon.",
+        "How providers get chosen in AI Mode has not been shared yet.",
+        "So make sure your profile, services, and booking tool are set up and say the same thing everywhere."
+      ],
+      "take": "Fees are unclear, so ask your booking tool before you rely on it.",
+      "label": "What it means",
+      "say": [
+        "AI Mode books home services! Check number three first.",
+        "On November fourth, Google added direct booking and quote links in AI Mode for home services in the US.",
+        "First, the links run through Angi, Thumbtack, Housecall Pro, and Jobber, with ServiceTitan coming soon.",
+        "Next, how providers get chosen in AI Mode has not been shared yet.",
+        "Check number three is yours. Make sure your profile, services, and booking tool are set up and say the same thing everywhere.",
+        "Fees are unclear, so ask your booking tool before you rely on it."
+      ],
+      "captions": {
+        "facebook": "Google AI Mode booking for home service businesses explained.\n\nAI Mode books home services. Check number 3 first.\n\nOn November 4, Google added direct booking and quote links in AI Mode for home services in the US.\n\n3 steps.\n1. The links run through Angi, Thumbtack, Housecall Pro, and Jobber, with ServiceTitan coming soon.\n2. How providers get chosen in AI Mode has not been shared yet.\n3. So make sure your profile, services, and booking tool are set up and say the same thing everywhere.\n\nFees are unclear, so ask your booking tool before you rely on it.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #GoogleAI #HomeServices #LocalBusiness",
+        "instagram": "Google AI Mode booking for home service businesses explained.\n\nAI Mode books home services. Check number 3 first.\n\nOn November 4, Google added direct booking and quote links in AI Mode for home services in the US.\n\n3 steps.\n1. The links run through Angi, Thumbtack, Housecall Pro, and Jobber, with ServiceTitan coming soon.\n2. How providers get chosen in AI Mode has not been shared yet.\n3. So make sure your profile, services, and booking tool are set up and say the same thing everywhere.\n\nFees are unclear, so ask your booking tool before you rely on it.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #GoogleAI #HomeServices #LocalBusiness",
+        "tiktok": "Google AI Mode booking for home service businesses explained.\n\nAI Mode books home services. Check number 3 first.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #GoogleAI #HomeServices #LocalBusiness"
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "time": "08:00",
+      "id": "2026-11-13-ai-forum-thread-research",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Long thread, 10 minutes. Step 3 lists their questions.",
+      "why": "People say what they really want in forum threads, but nobody has time to read 400 comments. AI can.",
+      "src": "",
+      "steps": [
+        "Copy a long Reddit or Hacker News thread about your product or niche into Claude or ChatGPT.",
+        "Ask it to group the thread into the 5 main arguments, with the best quote for each.",
+        "Ask for the 3 questions people keep asking, since those are your next posts or features."
+      ],
+      "take": "Check every quote against the thread, because AI can misquote.",
+      "label": "Step",
+      "say": [
+        "Long thread, ten minutes! Step three lists their questions.",
+        "People say what they really want in forum threads, but nobody has time to read four hundred comments. AI can.",
+        "First, copy a long Reddit or Hacker News thread about your product or niche into Claude or ChatGPT.",
+        "Next, ask it to group the thread into the five main arguments, with the best quote for each.",
+        "Now the payoff. Ask for the three questions people keep asking, since those are your next posts or features.",
+        "Check every quote against the thread, because AI can misquote."
+      ],
+      "keyword": "THREAD",
+      "prompt": "You are a sharp customer researcher. Below is a long forum thread about my product or niche. First group the thread into the 5 main arguments, and give the best quote for each one. Then list the 3 questions people keep asking. Finally suggest one post or feature idea for each question. Only use quotes that appear in the thread, and say what you are unsure about instead of guessing. Thread [paste here]",
+      "captions": {
+        "facebook": "How to research customers from a forum thread with AI.\n\nLong thread, 10 minutes. Step 3 lists their questions.\n\nPeople say what they really want in forum threads, but nobody has time to read 400 comments. AI can.\n\n3 steps.\n1. Copy a long Reddit or Hacker News thread about your product or niche into Claude or ChatGPT.\n2. Ask it to group the thread into the 5 main arguments, with the best quote for each.\n3. Ask for the 3 questions people keep asking, since those are your next posts or features.\n\nCheck every quote against the thread, because AI can misquote.\n\nWant the exact prompt? Follow EVOGENCY and message us the word THREAD. We'll send it to you.\n\n#AITools #CustomerResearch #Founders #Productivity",
+        "instagram": "How to research customers from a forum thread with AI.\n\nLong thread, 10 minutes. Step 3 lists their questions.\n\nPeople say what they really want in forum threads, but nobody has time to read 400 comments. AI can.\n\n3 steps.\n1. Copy a long Reddit or Hacker News thread about your product or niche into Claude or ChatGPT.\n2. Ask it to group the thread into the 5 main arguments, with the best quote for each.\n3. Ask for the 3 questions people keep asking, since those are your next posts or features.\n\nCheck every quote against the thread, because AI can misquote.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word THREAD. We'll send it to you.\n\n#AITools #CustomerResearch #Founders #Productivity",
+        "tiktok": "How to research customers from a forum thread with AI.\n\nLong thread, 10 minutes. Step 3 lists their questions.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us THREAD.\n\n#AITools #CustomerResearch #Founders #Productivity"
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "time": "12:30",
+      "id": "2026-11-13-cialdini-real-scarcity",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Is that countdown timer real? The last check tells.",
+      "why": "Robert Cialdini lists scarcity as one of seven persuasion principles. It is a fair tool when it is true, and a trick when it is faked.",
+      "src": "Influence, Robert Cialdini",
+      "steps": [
+        "Name the pressure you feel. Rushed feelings are the signal to slow down.",
+        "Ask what is actually limited, stock, seats, or time, and who says so.",
+        "Paste the offer into AI and ask which claims can be verified and which are only pressure."
+      ],
+      "take": "Scarcity is fine when it is true. Never fake it with your own customers.",
+      "label": "Do this",
+      "say": [
+        "Is that countdown timer real? The last check tells!",
+        "Robert Cialdini lists scarcity as one of seven persuasion principles. It is a fair tool when it is true, and a trick when it is faked.",
+        "First, name the pressure you feel. Rushed feelings are the signal to slow down. Easy win.",
+        "Next, ask what is actually limited, stock, seats, or time, and who says so.",
+        "Now the check that tells. Paste the offer into AI and ask which claims can be verified and which are only pressure.",
+        "Scarcity is fine when it is true. Never fake it with your own customers."
+      ],
+      "captions": {
+        "facebook": "How to spot a fake scarcity trick using Robert Cialdini's rules.\n\nIs that countdown timer real? The last check tells.\n\nRobert Cialdini lists scarcity as one of seven persuasion principles. It is a fair tool when it is true, and a trick when it is faked.\n\n3 steps.\n1. Name the pressure you feel. Rushed feelings are the signal to slow down.\n2. Ask what is actually limited, stock, seats, or time, and who says so.\n3. Paste the offer into AI and ask which claims can be verified and which are only pressure.\n\nScarcity is fine when it is true. Never fake it with your own customers.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Cialdini #Persuasion #Marketing",
+        "instagram": "How to spot a fake scarcity trick using Robert Cialdini's rules.\n\nIs that countdown timer real? The last check tells.\n\nRobert Cialdini lists scarcity as one of seven persuasion principles. It is a fair tool when it is true, and a trick when it is faked.\n\n3 steps.\n1. Name the pressure you feel. Rushed feelings are the signal to slow down.\n2. Ask what is actually limited, stock, seats, or time, and who says so.\n3. Paste the offer into AI and ask which claims can be verified and which are only pressure.\n\nScarcity is fine when it is true. Never fake it with your own customers.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Cialdini #Persuasion #Marketing",
+        "tiktok": "How to spot a fake scarcity trick using Robert Cialdini's rules.\n\nIs that countdown timer real? The last check tells.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #Cialdini #Persuasion #Marketing"
+      }
+    },
+    {
+      "date": "2026-11-13",
+      "time": "19:00",
+      "id": "2026-11-13-claude-code-email-header",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Claude Code may send your email. Step 3 blocks it.",
+      "why": "A GitHub issue opened November 5 reports Claude Code can put your signed in email in the headers of web requests it makes.",
+      "src": "GitHub issue, Nov 5 2026, Hacker News and explainx, Nov 6 2026",
+      "steps": [
+        "The report says the email can land in the User Agent header of requests to third party sites.",
+        "A contributor says a privacy fix is on by default in version 2.1.317, but a Windows user says it did not block their two test commands.",
+        "Add a PreToolUse hook or a free tool that blocks agent requests carrying your own email or name."
+      ],
+      "take": "The link to scam email is unproven, and we found no statement from Anthropic yet.",
+      "label": "What it means",
+      "say": [
+        "Claude Code may send your email! Step three blocks it.",
+        "A GitHub issue opened November fifth reports Claude Code can put your signed in email in the headers of web requests it makes.",
+        "First, the report says the email can land in the User Agent header of requests to third party sites.",
+        "Next, a contributor says a privacy fix is on by default in version two point one point three seventeen, but a Windows user says it did not block their two test commands.",
+        "Step three is the block. Add a PreToolUse hook or a free tool that stops agent requests carrying your own email or name.",
+        "The link to scam email is unproven, and we found no statement from Anthropic yet."
+      ],
+      "captions": {
+        "facebook": "Claude Code email in web requests, what to do.\n\nClaude Code may send your email. Step 3 blocks it.\n\nA GitHub issue opened November 5 reports Claude Code can put your signed in email in the headers of web requests it makes.\n\n3 steps.\n1. The report says the email can land in the User Agent header of requests to third party sites.\n2. A contributor says a privacy fix is on by default in version 2.1.317, but a Windows user says it did not block their two test commands.\n3. Add a PreToolUse hook or a free tool that blocks agent requests carrying your own email or name.\n\nThe link to scam email is unproven, and we found no statement from Anthropic yet.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ClaudeCode #Privacy #Developers",
+        "instagram": "Claude Code email in web requests, what to do.\n\nClaude Code may send your email. Step 3 blocks it.\n\nA GitHub issue opened November 5 reports Claude Code can put your signed in email in the headers of web requests it makes.\n\n3 steps.\n1. The report says the email can land in the User Agent header of requests to third party sites.\n2. A contributor says a privacy fix is on by default in version 2.1.317, but a Windows user says it did not block their two test commands.\n3. Add a PreToolUse hook or a free tool that blocks agent requests carrying your own email or name.\n\nThe link to scam email is unproven, and we found no statement from Anthropic yet.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ClaudeCode #Privacy #Developers",
+        "tiktok": "Claude Code email in web requests, what to do.\n\nClaude Code may send your email. Step 3 blocks it.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #ClaudeCode #Privacy #Developers"
+      }
+    },
+    {
+      "date": "2026-11-14",
+      "time": "08:00",
+      "id": "2026-11-14-ai-local-business-answer-check",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Ask AI about your business. Step 3 fixes the facts.",
+      "why": "Customers now meet an AI answer about your business before they meet your website. You can check what it would say in 10 minutes.",
+      "src": "",
+      "steps": [
+        "Paste your service pages, your Google Business Profile text, and your 10 best reviews into Claude or ChatGPT.",
+        "Ask what an AI answer would say about your business to someone who has never heard of you.",
+        "Ask it to flag anything wrong or missing, then write the fixes for your site and your profile."
+      ],
+      "take": "Fix the source, your website and your profile, not just the answer.",
+      "label": "Step",
+      "say": [
+        "Ask AI about your business! Step three fixes the facts.",
+        "Customers now meet an AI answer about your business before they meet your website. You can check what it would say in ten minutes.",
+        "First, paste your service pages, your Google Business Profile text, and your ten best reviews into Claude or ChatGPT.",
+        "Next, ask what an AI answer would say about your business to someone who has never heard of you.",
+        "Now the fix. Ask it to flag anything wrong or missing, then write the fixes for your site and your profile.",
+        "Fix the source, your website and your profile, not just the answer."
+      ],
+      "keyword": "LOCAL",
+      "prompt": "You are an AI search analyst for local businesses. Below are my service pages, my Google Business Profile text, and my 10 best reviews. First write the short answer an AI assistant would give to someone who asks about my business and has never heard of it. Then flag anything wrong, outdated, or missing, including hours, services, and service area. Finally write the exact fixes for my website and my profile. Only use what is in the text and say what you are unsure about instead of guessing. Service pages [paste here] Profile text [paste here] Reviews [paste here]",
+      "captions": {
+        "facebook": "How to check what AI says about your local business.\n\nAsk AI about your business. Step 3 fixes the facts.\n\nCustomers now meet an AI answer about your business before they meet your website. You can check what it would say in 10 minutes.\n\n3 steps.\n1. Paste your service pages, your Google Business Profile text, and your 10 best reviews into Claude or ChatGPT.\n2. Ask what an AI answer would say about your business to someone who has never heard of you.\n3. Ask it to flag anything wrong or missing, then write the fixes for your site and your profile.\n\nFix the source, your website and your profile, not just the answer.\n\nWant the exact prompt? Follow EVOGENCY and message us the word LOCAL. We'll send it to you.\n\n#AITools #LocalSEO #SmallBusiness #GoogleBusinessProfile",
+        "instagram": "How to check what AI says about your local business.\n\nAsk AI about your business. Step 3 fixes the facts.\n\nCustomers now meet an AI answer about your business before they meet your website. You can check what it would say in 10 minutes.\n\n3 steps.\n1. Paste your service pages, your Google Business Profile text, and your 10 best reviews into Claude or ChatGPT.\n2. Ask what an AI answer would say about your business to someone who has never heard of you.\n3. Ask it to flag anything wrong or missing, then write the fixes for your site and your profile.\n\nFix the source, your website and your profile, not just the answer.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word LOCAL. We'll send it to you.\n\n#AITools #LocalSEO #SmallBusiness #GoogleBusinessProfile",
+        "tiktok": "How to check what AI says about your local business.\n\nAsk AI about your business. Step 3 fixes the facts.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us LOCAL.\n\n#AITools #LocalSEO #SmallBusiness #GoogleBusinessProfile"
+      }
+    },
+    {
+      "date": "2026-11-14",
+      "time": "12:30",
+      "id": "2026-11-14-whoami-guard-email-hook",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Block agents from sending your email. Step 3 tests it.",
+      "why": "whoami guard is a free hook for Claude Code and Codex that stops a coding agent from sending your own email or name to outside sites.",
+      "src": "pypi.org/project/whoami-guard",
+      "steps": [
+        "Install it with pipx from PyPI.",
+        "Put your email and name in its identity file, then add its PreToolUse hook to your agent settings.",
+        "Test it with a curl request that carries your own email. The hook should deny it, while other people's addresses pass."
+      ],
+      "take": "It is a seatbelt, not full network isolation. Free and open source under the MIT license.",
+      "label": "How to use it",
+      "say": [
+        "Block agents from sending your email! Step three tests it.",
+        "whoami guard is a free hook for Claude Code and Codex that stops a coding agent from sending your own email or name to outside sites.",
+        "First, install it with pipx from PyPI. Quick one.",
+        "Next, put your email and name in its identity file, then add its PreToolUse hook to your agent settings.",
+        "Now the test. Run a curl request that carries your own email. The hook should deny it, while other people's addresses pass.",
+        "It is a seatbelt, not full network isolation. Free and open source."
+      ],
+      "captions": {
+        "facebook": "Free hook that stops coding agents leaking your email.\n\nBlock agents from sending your email. Step 3 tests it.\n\nwhoami guard is a free hook for Claude Code and Codex that stops a coding agent from sending your own email or name to outside sites.\n\n3 steps.\n1. Install it with pipx from PyPI.\n2. Put your email and name in its identity file, then add its PreToolUse hook to your agent settings.\n3. Test it with a curl request that carries your own email. The hook should deny it, while other people's addresses pass.\n\nIt is a seatbelt, not full network isolation. Free and open source under the MIT license.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#DevTools #ClaudeCode #Privacy #OpenSource",
+        "instagram": "Free hook that stops coding agents leaking your email.\n\nBlock agents from sending your email. Step 3 tests it.\n\nwhoami guard is a free hook for Claude Code and Codex that stops a coding agent from sending your own email or name to outside sites.\n\n3 steps.\n1. Install it with pipx from PyPI.\n2. Put your email and name in its identity file, then add its PreToolUse hook to your agent settings.\n3. Test it with a curl request that carries your own email. The hook should deny it, while other people's addresses pass.\n\nIt is a seatbelt, not full network isolation. Free and open source under the MIT license.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#DevTools #ClaudeCode #Privacy #OpenSource",
+        "tiktok": "Free hook that stops coding agents leaking your email.\n\nBlock agents from sending your email. Step 3 tests it.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#DevTools #ClaudeCode #Privacy #OpenSource"
+      }
+    },
+    {
+      "date": "2026-11-14",
+      "time": "19:00",
+      "id": "2026-11-14-claude-personal-finance",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Claude can read your bank accounts. Point 3 is sharing.",
+      "why": "On November 5, Anthropic launched Personal Finance in Claude, a US beta for Pro, Max, and Ultra plans.",
+      "src": "TechCrunch, 9to5Mac, and Claude Help Center, Nov 5 2026",
+      "steps": [
+        "You link US bank and card accounts through Plaid, and Claude can total spending by category and flag duplicate charges.",
+        "Access is read only, so Claude can't move or invest your money.",
+        "Anthropic warns that shared chat links and artifacts can show your account figures to anyone who opens them, so don't share them."
+      ],
+      "take": "This is not financial advice. Anthropic says it is not designed for investment advice.",
+      "label": "What it means",
+      "say": [
+        "Claude can read your bank accounts! Point three is sharing.",
+        "On November fifth, Anthropic launched Personal Finance in Claude, a US beta for Pro, Max, and Ultra plans.",
+        "First, you link US bank and card accounts through Plaid, and Claude can total spending by category and flag duplicate charges.",
+        "Next, access is read only, so Claude can't move or invest your money.",
+        "Point three is sharing. Anthropic warns that shared chat links and artifacts can show your account figures to anyone who opens them, so don't share them.",
+        "This is not financial advice. Anthropic says it is not designed for investment advice."
+      ],
+      "captions": {
+        "facebook": "Claude Personal Finance explained.\n\nClaude can read your bank accounts. Point 3 is sharing.\n\nOn November 5, Anthropic launched Personal Finance in Claude, a US beta for Pro, Max, and Ultra plans.\n\n3 steps.\n1. You link US bank and card accounts through Plaid, and Claude can total spending by category and flag duplicate charges.\n2. Access is read only, so Claude can't move or invest your money.\n3. Anthropic warns that shared chat links and artifacts can show your account figures to anyone who opens them, so don't share them.\n\nThis is not financial advice. Anthropic says it is not designed for investment advice.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Claude #PersonalFinance #AIAgents",
+        "instagram": "Claude Personal Finance explained.\n\nClaude can read your bank accounts. Point 3 is sharing.\n\nOn November 5, Anthropic launched Personal Finance in Claude, a US beta for Pro, Max, and Ultra plans.\n\n3 steps.\n1. You link US bank and card accounts through Plaid, and Claude can total spending by category and flag duplicate charges.\n2. Access is read only, so Claude can't move or invest your money.\n3. Anthropic warns that shared chat links and artifacts can show your account figures to anyone who opens them, so don't share them.\n\nThis is not financial advice. Anthropic says it is not designed for investment advice.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Claude #PersonalFinance #AIAgents",
+        "tiktok": "Claude Personal Finance explained.\n\nClaude can read your bank accounts. Point 3 is sharing.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Claude #PersonalFinance #AIAgents"
+      }
+    },
+    {
+      "date": "2026-11-15",
+      "time": "08:00",
+      "id": "2026-11-15-ai-search-check-promo",
+      "kind": "promo",
+      "topic": "From us",
+      "hook": "Does ChatGPT name you? The last check is rivals.",
+      "why": "When someone asks ChatGPT, Perplexity, or Google AI Overviews for a recommendation, does your business get named? We show you what they say right now.",
+      "src": "",
+      "steps": [
+        "What ChatGPT, Perplexity, and Google AI Overviews say about your business today.",
+        "Whether your key pages state the facts about you clearly enough for an AI to repeat them correctly.",
+        "What those same tools say about your competitors, so you see exactly where you are missing."
+      ],
+      "take": "We can't guarantee a mention, and nobody honest can. We show you the real picture.",
+      "label": "What we check",
+      "say": [
+        "Does ChatGPT name you? The last check is your rivals!",
+        "When someone asks ChatGPT, Perplexity, or Google AI Overviews for a recommendation, does your business get named? We show you what they say right now.",
+        "First, what ChatGPT, Perplexity, and Google AI Overviews say about your business today.",
+        "Next, whether your key pages state the facts about you clearly enough for an AI to repeat them correctly.",
+        "And the last check, your rivals. What those same tools say about your competitors, so you see exactly where you are missing.",
+        "We can't guarantee a mention, and nobody honest can. We show you the real picture."
+      ],
+      "captions": {
+        "facebook": "How to get your business mentioned in ChatGPT and AI search.\n\nDoes ChatGPT name you? The last check is rivals.\n\nWhen someone asks ChatGPT, Perplexity, or Google AI Overviews for a recommendation, does your business get named? We show you what they say right now.\n\nWhat we check.\n1. What ChatGPT, Perplexity, and Google AI Overviews say about your business today.\n2. Whether your key pages state the facts about you clearly enough for an AI to repeat them correctly.\n3. What those same tools say about your competitors, so you see exactly where you are missing.\n\nWe can't guarantee a mention, and nobody honest can. We show you the real picture.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We help local businesses get recommended in AI answers. See how at evogencyglobal.com/generative-engine-optimization-orlando\n\n#AISearch #LocalSEO #SmallBusiness #Orlando",
+        "instagram": "How to get your business mentioned in ChatGPT and AI search.\n\nDoes ChatGPT name you? The last check is rivals.\n\nWhen someone asks ChatGPT, Perplexity, or Google AI Overviews for a recommendation, does your business get named? We show you what they say right now.\n\nWhat we check.\n1. What ChatGPT, Perplexity, and Google AI Overviews say about your business today.\n2. Whether your key pages state the facts about you clearly enough for an AI to repeat them correctly.\n3. What those same tools say about your competitors, so you see exactly where you are missing.\n\nWe can't guarantee a mention, and nobody honest can. We show you the real picture.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We help local businesses get recommended in AI answers. See how at evogencyglobal.com/generative-engine-optimization-orlando (link in bio)\n\n#AISearch #LocalSEO #SmallBusiness #Orlando",
+        "tiktok": "How to get your business mentioned in ChatGPT and AI search.\n\nDoes ChatGPT name you? The last check is rivals.\n\nLearn more, link in bio.\n\n#AISearch #LocalSEO #SmallBusiness #Orlando"
+      },
+      "foot": "3 AI checks"
+    },
+    {
+      "date": "2026-11-15",
+      "time": "12:30",
+      "id": "2026-11-15-housel-enough",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Rich is not wealthy. The last step is enough.",
+      "why": "Morgan Housel says wealth is what you don't see, the money you didn't spend. Knowing your enough is a skill.",
+      "src": "The Psychology of Money, Morgan Housel",
+      "steps": [
+        "Notice that looking rich and being wealthy are different. Wealth is the money not spent.",
+        "Respect compounding. Small steady habits beat big rare moves, and they need time.",
+        "Write down your enough in plain words, then ask AI to poke holes in it and keep it honest."
+      ],
+      "take": "Mindset only, not personal financial advice. Check big decisions with a professional.",
+      "label": "Do this",
+      "say": [
+        "Rich is not wealthy! The last step is enough.",
+        "Morgan Housel says wealth is what you don't see, the money you didn't spend. Knowing your enough is a skill.",
+        "First, notice that looking rich and being wealthy are different. Wealth is the money not spent.",
+        "Next, respect compounding. Small steady habits beat big rare moves, and they need time.",
+        "Now the enough. Write it down in plain words, then ask AI to poke holes in it and keep it honest.",
+        "Mindset only, not personal financial advice. Check big decisions with a professional."
+      ],
+      "captions": {
+        "facebook": "How to know your enough with Morgan Housel's money mindset.\n\nRich is not wealthy. The last step is enough.\n\nMorgan Housel says wealth is what you don't see, the money you didn't spend. Knowing your enough is a skill.\n\n3 steps.\n1. Notice that looking rich and being wealthy are different. Wealth is the money not spent.\n2. Respect compounding. Small steady habits beat big rare moves, and they need time.\n3. Write down your enough in plain words, then ask AI to poke holes in it and keep it honest.\n\nMindset only, not personal financial advice. Check big decisions with a professional.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #MoneyMindset #PsychologyOfMoney #Mindset",
+        "instagram": "How to know your enough with Morgan Housel's money mindset.\n\nRich is not wealthy. The last step is enough.\n\nMorgan Housel says wealth is what you don't see, the money you didn't spend. Knowing your enough is a skill.\n\n3 steps.\n1. Notice that looking rich and being wealthy are different. Wealth is the money not spent.\n2. Respect compounding. Small steady habits beat big rare moves, and they need time.\n3. Write down your enough in plain words, then ask AI to poke holes in it and keep it honest.\n\nMindset only, not personal financial advice. Check big decisions with a professional.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #MoneyMindset #PsychologyOfMoney #Mindset",
+        "tiktok": "How to know your enough with Morgan Housel's money mindset.\n\nRich is not wealthy. The last step is enough.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #MoneyMindset #PsychologyOfMoney #Mindset"
+      }
+    },
+    {
+      "date": "2026-11-15",
+      "time": "19:00",
+      "id": "2026-11-15-ai-premortem-tip",
+      "kind": "value",
+      "topic": "AI tip",
+      "hook": "Your plan failed. Ask AI why. Step 3 stops it.",
+      "why": "Most plans fail for reasons you could have seen coming. AI is good at imagining the failure before it happens.",
+      "src": "",
+      "steps": [
+        "Tell AI your plan in 3 sentences, and say it is a year from now and the plan failed.",
+        "Ask for the 5 most likely reasons it failed, ranked from most to least likely.",
+        "Ask what one change this week would stop the biggest reason."
+      ],
+      "take": "AI guesses, so treat the list as questions to check, not facts.",
+      "label": "Try this",
+      "say": [
+        "Your plan failed. Ask AI why. Step three stops it!",
+        "Most plans fail for reasons you could have seen coming. AI is good at imagining the failure before it happens.",
+        "First, tell AI your plan in three sentences, and say it is a year from now and the plan failed. That's the setup.",
+        "Next, ask for the five most likely reasons it failed, ranked from most to least likely.",
+        "Now the step that stops it. Ask what one change this week would stop the biggest reason.",
+        "AI guesses, so treat the list as questions to check, not facts."
+      ],
+      "captions": {
+        "facebook": "How to use AI to find the weak spots in your plan.\n\nYour plan failed. Ask AI why. Step 3 stops it.\n\nMost plans fail for reasons you could have seen coming. AI is good at imagining the failure before it happens.\n\n3 steps.\n1. Tell AI your plan in 3 sentences, and say it is a year from now and the plan failed.\n2. Ask for the 5 most likely reasons it failed, ranked from most to least likely.\n3. Ask what one change this week would stop the biggest reason.\n\nAI guesses, so treat the list as questions to check, not facts.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AITips #Planning #Productivity #Founders",
+        "instagram": "How to use AI to find the weak spots in your plan.\n\nYour plan failed. Ask AI why. Step 3 stops it.\n\nMost plans fail for reasons you could have seen coming. AI is good at imagining the failure before it happens.\n\n3 steps.\n1. Tell AI your plan in 3 sentences, and say it is a year from now and the plan failed.\n2. Ask for the 5 most likely reasons it failed, ranked from most to least likely.\n3. Ask what one change this week would stop the biggest reason.\n\nAI guesses, so treat the list as questions to check, not facts.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AITips #Planning #Productivity #Founders",
+        "tiktok": "How to use AI to find the weak spots in your plan.\n\nYour plan failed. Ask AI why. Step 3 stops it.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AITips #Planning #Productivity #Founders"
+      }
+    }
+  ]
+}
