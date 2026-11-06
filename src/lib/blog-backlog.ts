@@ -9429,7 +9429,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A simple year end marketing review for small business owners, covering where customers came from, what worked, what to cut, and what to fix first next year.",
     excerpt: "Before you plan next year, find out what actually worked this year. It takes one afternoon.",
-    date: "2026-10-15",
+    date: "2026-11-06",
     tag: "Marketing",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "Request a free audit",
@@ -9489,7 +9489,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Locksmith search is crowded with fake listings and lead sellers. Here's how a real, local locksmith can build trust and visibility on Google.",
     excerpt: "Locksmith search is full of fake listings. Being clearly real is your biggest advantage.",
-    date: "2026-10-15",
+    date: "2026-11-06",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -9544,7 +9544,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical ways landscaping companies can use AI and automation for estimates, routing, crew communication, weather changes, and renewals.",
     excerpt: "Estimates, schedules, rain delays, and renewals. Here's where automation saves landscapers real time.",
-    date: "2026-10-15",
+    date: "2026-11-06",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
