@@ -1,0 +1,17 @@
+{
+  "seconds": 38.19,
+  "cover_ms": 3053,
+  "engine": 2,
+  "look": "spotlight",
+  "motion": {
+    "hook": "rise",
+    "why": "brush",
+    "num": "drawn",
+    "step": "brush",
+    "cta": "shine",
+    "change": "slide",
+    "scene": "orb"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "new-shoes"
+}

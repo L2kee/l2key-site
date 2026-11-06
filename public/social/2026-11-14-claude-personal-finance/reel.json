@@ -1,0 +1,17 @@
+{
+  "seconds": 42.81,
+  "cover_ms": 2982,
+  "engine": 2,
+  "look": "cream",
+  "motion": {
+    "hook": "mark",
+    "why": "wipe",
+    "num": "pop",
+    "step": "words",
+    "cta": "nudge",
+    "change": "zoom",
+    "scene": "particles"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "eat"
+}
