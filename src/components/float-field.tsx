@@ -43,6 +43,17 @@ function useFocusFirstInvalid(ref: React.RefObject<HTMLInputElement | HTMLSelect
   }, [ref, error]);
 }
 
+/** For forms with a choice group (radio pills or toggle buttons). After a
+    failed send, focus the first broken control in page order, whether it's
+    a field or the group. A group marks itself with data-invalid. This runs
+    after the fields' own effects, so it has the final say. */
+export function useFocusFirstError(formRef: React.RefObject<HTMLFormElement | null>, state: { status: string }) {
+  useEffect(() => {
+    if (state.status !== "error") return;
+    formRef.current?.querySelector<HTMLElement>('[aria-invalid="true"], [data-invalid] input, [data-invalid] button')?.focus();
+  }, [formRef, state]);
+}
+
 function describedBy(own: string | undefined, errorId: string, error?: string) {
   return [own, error ? errorId : undefined].filter(Boolean).join(" ") || undefined;
 }

@@ -1,9 +1,9 @@
 "use client";
 
-import { useActionState, useEffect, useRef, useState } from "react";
+import { useActionState, useEffect, useId, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowRight, X } from "lucide-react";
-import { FloatInput } from "@/components/float-field";
+import { FloatInput, useFocusFirstError } from "@/components/float-field";
 import { DrawnCheck } from "@/components/drawn-check";
 import { isFunnelPath } from "@/lib/funnel-paths";
 import { submitMockupRequest, type MockupFormState } from "@/app/contact/actions";
@@ -50,13 +50,20 @@ function isHidden() {
   }
 }
 
-function FieldError({ message }: { message?: string }) {
+function FieldError({ id, message }: { id?: string; message?: string }) {
   if (!message) return null;
-  return <p className="mt-1.5 text-sm text-rose-300">{message}</p>;
+  return (
+    <p id={id} className="mt-1.5 text-sm text-rose-300">
+      {message}
+    </p>
+  );
 }
 
 function MockupForm() {
   const [state, formAction, pending] = useActionState(submitMockupRequest, { status: "idle" } as MockupFormState);
+  const formRef = useRef<HTMLFormElement>(null);
+  const contactErrorId = useId();
+  useFocusFirstError(formRef, state);
   const [contact, setContact] = useState("");
   const [noWebsite, setNoWebsite] = useState(false);
   const errors = state.fieldErrors ?? {};
@@ -81,7 +88,7 @@ function MockupForm() {
   }
 
   return (
-    <form action={formAction} noValidate className="space-y-4 text-left">
+    <form ref={formRef} action={formAction} noValidate className="space-y-4 text-left">
       <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
         <label>
           Company URL
@@ -121,7 +128,7 @@ function MockupForm() {
         <FloatInput label="Phone number" name="phone" defaultValue={values?.phone} type="tel" autoComplete="tel" required error={errors.phone} />
       </div>
 
-      <fieldset>
+      <fieldset data-invalid={errors.contact ? true : undefined}>
         <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
         <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
           {METHODS.map(([m, label]) => (
@@ -136,6 +143,7 @@ function MockupForm() {
               <input
                 type="radio"
                 name="contact_choice"
+                aria-describedby={errors.contact ? contactErrorId : undefined}
                 value={m}
                 checked={contact === m}
                 onChange={() => setContact(m)}
@@ -145,7 +153,7 @@ function MockupForm() {
             </label>
           ))}
         </div>
-        <FieldError message={errors.contact} />
+        <FieldError id={contactErrorId} message={errors.contact} />
       </fieldset>
 
       {state.status === "error" && state.message && (

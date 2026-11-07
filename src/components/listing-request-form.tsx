@@ -1,8 +1,8 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useActionState, useId, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { FloatInput } from "@/components/float-field";
+import { FloatInput, useFocusFirstError } from "@/components/float-field";
 import { DrawnCheck } from "@/components/drawn-check";
 import { submitListingRequest, type ListingFormState } from "@/app/real-estate-listing-websites-orlando/start/actions";
 import { LISTING_PLANS, getListingPlan, type ListingPlanId } from "@/lib/listing-plans";
@@ -23,13 +23,21 @@ const NEXT_STEP: Record<ListingPlanId, string> = {
   unsure: "to help you pick the right fit",
 };
 
-function FieldError({ message }: { message?: string }) {
+function FieldError({ id, message }: { id?: string; message?: string }) {
   if (!message) return null;
-  return <p className="mt-1.5 text-sm text-rose-300">{message}</p>;
+  return (
+    <p id={id} className="mt-1.5 text-sm text-rose-300">
+      {message}
+    </p>
+  );
 }
 
 export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanId }) {
   const [state, formAction, pending] = useActionState(submitListingRequest, initialState);
+  const formRef = useRef<HTMLFormElement>(null);
+  const planErrorId = useId();
+  const contactErrorId = useId();
+  useFocusFirstError(formRef, state);
   const [planId, setPlanId] = useState<ListingPlanId | "">(initialPlan ?? "");
   const [contact, setContact] = useState("");
   const errors = state.fieldErrors ?? {};
@@ -54,7 +62,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
   }
 
   return (
-    <form action={formAction} noValidate className="space-y-5 text-left">
+    <form ref={formRef} action={formAction} noValidate className="space-y-5 text-left">
       {/* Honeypot: hidden from people, tempting to bots. */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
         <label>
@@ -67,7 +75,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
       <input type="hidden" name="plan" value={planId} />
       <input type="hidden" name="contact" value={contact} />
 
-      <fieldset>
+      <fieldset data-invalid={errors.plan ? true : undefined}>
         <legend className="text-sm font-medium text-white/80">What would you like?</legend>
         <div className="mt-2 grid gap-2 sm:grid-cols-2">
           {LISTING_PLANS.map((p) => (
@@ -82,6 +90,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
               <input
                 type="radio"
                 name="plan_choice"
+                aria-describedby={errors.plan ? planErrorId : undefined}
                 value={p.id}
                 checked={planId === p.id}
                 onChange={() => setPlanId(p.id)}
@@ -92,7 +101,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
             </label>
           ))}
         </div>
-        <FieldError message={errors.plan} />
+        <FieldError id={planErrorId} message={errors.plan} />
       </fieldset>
 
       <div className="grid gap-5 sm:grid-cols-2">
@@ -136,7 +145,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
         />
       )}
 
-      <fieldset>
+      <fieldset data-invalid={errors.contact ? true : undefined}>
         <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
         <div className="mt-2 grid grid-cols-3 gap-3">
           {(["call", "text", "email"] as const).map((m) => (
@@ -151,6 +160,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
               <input
                 type="radio"
                 name="contact_choice"
+                aria-describedby={errors.contact ? contactErrorId : undefined}
                 value={m}
                 checked={contact === m}
                 onChange={() => setContact(m)}
@@ -160,7 +170,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
             </label>
           ))}
         </div>
-        <FieldError message={errors.contact} />
+        <FieldError id={contactErrorId} message={errors.contact} />
       </fieldset>
 
       {state.status === "error" && state.message && (

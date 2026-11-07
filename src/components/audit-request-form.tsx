@@ -1,8 +1,8 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useActionState, useId, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { FloatInput } from "@/components/float-field";
+import { FloatInput, useFocusFirstError } from "@/components/float-field";
 import { DrawnCheck } from "@/components/drawn-check";
 import { submitAuditRequest, type AuditFormState } from "@/app/contact/actions";
 
@@ -14,13 +14,20 @@ const METHOD_PHRASE: Record<string, string> = {
   email: "by email",
 };
 
-function FieldError({ message }: { message?: string }) {
+function FieldError({ id, message }: { id?: string; message?: string }) {
   if (!message) return null;
-  return <p className="mt-1.5 text-sm text-rose-300">{message}</p>;
+  return (
+    <p id={id} className="mt-1.5 text-sm text-rose-300">
+      {message}
+    </p>
+  );
 }
 
 export function AuditRequestForm() {
   const [state, formAction, pending] = useActionState(submitAuditRequest, initialState);
+  const formRef = useRef<HTMLFormElement>(null);
+  const contactErrorId = useId();
+  useFocusFirstError(formRef, state);
   const [contact, setContact] = useState("");
   const [noWebsite, setNoWebsite] = useState(false);
   const errors = state.fieldErrors ?? {};
@@ -42,7 +49,7 @@ export function AuditRequestForm() {
   }
 
   return (
-    <form action={formAction} noValidate className="space-y-5 text-left">
+    <form ref={formRef} action={formAction} noValidate className="space-y-5 text-left">
       {/* Honeypot: hidden from people, tempting to bots. */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
         <label>
@@ -107,7 +114,7 @@ export function AuditRequestForm() {
         />
       </div>
 
-      <fieldset>
+      <fieldset data-invalid={errors.contact ? true : undefined}>
         <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
         <div className="mt-2 grid grid-cols-3 gap-3">
           {(["call", "text", "email"] as const).map((m) => (
@@ -122,6 +129,7 @@ export function AuditRequestForm() {
               <input
                 type="radio"
                 name="contact_choice"
+                aria-describedby={errors.contact ? contactErrorId : undefined}
                 value={m}
                 checked={contact === m}
                 onChange={() => setContact(m)}
@@ -131,7 +139,7 @@ export function AuditRequestForm() {
             </label>
           ))}
         </div>
-        <FieldError message={errors.contact} />
+        <FieldError id={contactErrorId} message={errors.contact} />
       </fieldset>
 
       {state.status === "error" && state.message && (

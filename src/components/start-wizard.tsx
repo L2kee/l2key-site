@@ -1,8 +1,8 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useActionState, useId, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Check, CalendarClock } from "lucide-react";
-import { FloatInput } from "@/components/float-field";
+import { FloatInput, useFocusFirstError } from "@/components/float-field";
 import { DrawnCheck } from "@/components/drawn-check";
 import { submitStartRequest, type StartFormState } from "@/app/start/actions";
 import { getStartPath } from "@/lib/start-paths";
@@ -16,9 +16,13 @@ const METHOD_PHRASE: Record<string, string> = {
   email: "by email",
 };
 
-function FieldError({ message }: { message?: string }) {
+function FieldError({ id, message }: { id?: string; message?: string }) {
   if (!message) return null;
-  return <p className="mt-1.5 text-sm text-rose-300">{message}</p>;
+  return (
+    <p id={id} className="mt-1.5 text-sm text-rose-300">
+      {message}
+    </p>
+  );
 }
 
 // One question per screen (.start-step in globals.css slides each one in).
@@ -34,6 +38,9 @@ export function StartWizard({ slug }: { slug: string }) {
   const [contact, setContact] = useState("");
   const [fields, setFields] = useState({ name: "", business: "", phone: "", email: "", details: "" });
   const [state, formAction, pending] = useActionState(submitStartRequest, initialState);
+  const formRef = useRef<HTMLFormElement>(null);
+  const contactErrorId = useId();
+  useFocusFirstError(formRef, state);
   const errors = state.fieldErrors ?? {};
 
   if (state.status === "success") {
@@ -148,7 +155,7 @@ export function StartWizard({ slug }: { slug: string }) {
       )}
 
       {isContact && (
-        <form key="contact" action={formAction} noValidate className="start-step mt-7 space-y-5 text-left">
+        <form ref={formRef} key="contact" action={formAction} noValidate className="start-step mt-7 space-y-5 text-left">
           <div>
             <h2 className="text-xl font-semibold text-white sm:text-2xl">Last step. Where do we send your plan?</h2>
             <p className="mt-1 text-sm text-white/50">No spam, no pushy sales calls. One person, one straight answer.</p>
@@ -196,7 +203,7 @@ export function StartWizard({ slug }: { slug: string }) {
             />
           </div>
 
-          <fieldset>
+          <fieldset data-invalid={errors.contact ? true : undefined}>
             <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
             <div className="mt-2 grid grid-cols-3 gap-3">
               {(["call", "text", "email"] as const).map((m) => (
@@ -204,6 +211,7 @@ export function StartWizard({ slug }: { slug: string }) {
                   key={m}
                   type="button"
                   aria-pressed={contact === m}
+                  aria-describedby={errors.contact ? contactErrorId : undefined}
                   onClick={() => setContact(m)}
                   className={`rounded-xl border px-3 py-2.5 text-center text-sm capitalize transition ${
                     contact === m
@@ -215,7 +223,7 @@ export function StartWizard({ slug }: { slug: string }) {
                 </button>
               ))}
             </div>
-            <FieldError message={errors.contact} />
+            <FieldError id={contactErrorId} message={errors.contact} />
           </fieldset>
 
           <label className="block">
