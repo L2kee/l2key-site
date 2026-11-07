@@ -9610,7 +9610,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A suspended Google Business Profile can make your business vanish from Maps overnight. Here's why it happens, what to check, and how to appeal.",
     excerpt: "Your listing vanished from Maps. Here's how to figure out why and how to get it back.",
-    date: "2026-10-15",
+    date: "2026-11-07",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -9672,7 +9672,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Brand guidelines are a simple rulebook that keeps your logo, colors, fonts, and voice consistent everywhere. Here's what to include and why it pays off.",
     excerpt: "A short rulebook that stops your brand from slowly falling apart.",
-    date: "2026-10-15",
+    date: "2026-11-07",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -9728,7 +9728,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How appliance repair companies can rank for urgent repair searches by appliance and brand, and build trust before a customer lets them in the door.",
     excerpt: "A broken fridge creates urgency. Here's how to be the company that shows up first.",
-    date: "2026-10-15",
+    date: "2026-11-07",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
