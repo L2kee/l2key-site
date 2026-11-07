@@ -113,7 +113,7 @@ export function AuditRequestForm() {
           {(["call", "text", "email"] as const).map((m) => (
             <label
               key={m}
-              className={`cursor-pointer rounded-xl border px-3 py-2.5 text-center text-sm capitalize transition ${
+              className={`has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-[#5fd8e6] cursor-pointer rounded-xl border px-3 py-2.5 text-center text-sm capitalize transition ${
                 contact === m
                   ? "border-[#5fd8e6]/70 bg-[#5fd8e6]/10 text-white"
                   : "border-white/15 bg-black/20 text-white/70 hover:border-white/30"
@@ -135,7 +135,7 @@ export function AuditRequestForm() {
       </fieldset>
 
       {state.status === "error" && state.message && (
-        <p className="text-sm text-rose-300" aria-live="polite">
+        <p className="text-sm text-rose-300" role="alert">
           {state.message}
         </p>
       )}

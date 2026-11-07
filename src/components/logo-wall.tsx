@@ -214,7 +214,7 @@ export function LogoWall() {
                 <div className={`logo-mark ${mark.tight ? "h-14" : "h-11"} text-[#e9e3d6] sm:h-14`}>{mark.svg}</div>
                 <div className="text-center leading-none">
                   <p className="text-[15px] tracking-[0.28em] text-[#f3ede0] uppercase sm:text-base">{mark.name}</p>
-                  <p className="mt-1.5 font-sans text-[10px] tracking-[0.2em] text-white/40 uppercase">{mark.note}</p>
+                  <p className="mt-1.5 font-sans text-[10px] tracking-[0.2em] text-white/60 uppercase">{mark.note}</p>
                 </div>
               </div>
             </div>

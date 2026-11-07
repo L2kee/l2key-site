@@ -66,13 +66,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteGraph()) }}
         />
+        {/* First Tab stop on every page, hidden until focused (.skip-link in globals.css). */}
+        <a href="#main" className="skip-link">
+          Skip to main content
+        </a>
         <SiteBackground />
         <Navbar />
         {/* Page to page fade on client navigation, see ::view-transition
             rules in globals.css. Browsers without view transitions just
             swap pages as before. */}
         <ViewTransition name="page">
-          <main className="flex flex-col">{children}</main>
+          <main id="main" tabIndex={-1} className="flex flex-col outline-none">{children}</main>
         </ViewTransition>
         <HideOnFunnel>
           <Footer />

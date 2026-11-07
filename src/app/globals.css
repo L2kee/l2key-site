@@ -15,6 +15,40 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Keyboard focus ring (2026-11-06 accessibility pass). The browser default
+   is a 1px ring that disappears on the black site. :focus-visible shows it
+   for keyboard users only, never on a mouse click. In the base layer so a
+   field that draws its own ring (outline-none plus focus:ring) still wins. */
+@layer base {
+  :focus-visible {
+    outline: 2px solid #5fd8e6;
+    outline-offset: 3px;
+  }
+}
+
+/* Skip link (layout.tsx). Offscreen until it gets keyboard focus, then it
+   drops in at the top left above the navbar. */
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  background: #5fd8e6;
+  color: #000;
+  font-weight: 600;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease-out;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline-color: #fff;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skip-link { transition: none; }
+}
+
 /* Anchor-nav sections must clear the sticky glass navbar, or the jump
    lands content half-hidden underneath it. */
 section[id],
@@ -1750,7 +1784,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 .wb-shine { position: relative; overflow: hidden; }
 .wb-shine::after { content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%; background: linear-gradient(100deg, transparent, rgb(255 255 255 / .55), transparent); transform: skewX(-18deg); animation: wb-shine 3.6s cubic-bezier(.22,1,.36,1) infinite; pointer-events: none; }
 @keyframes wb-shine { 0%, 55% { left: -60%; } 100% { left: 130%; } }
-.wb-fine { margin: 22px auto 0; max-width: 680px; text-align: center; font-size: 12.5px; color: rgb(255 255 255 / .4); }
+.wb-fine { margin: 22px auto 0; max-width: 680px; text-align: center; font-size: 12.5px; color: rgb(255 255 255 / .6); }
 
 .wb-lb { position: fixed; inset: 0; z-index: 80; display: grid; grid-template-rows: auto 1fr; background: rgb(0 0 0 / .88); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); animation: wb-fade .35s cubic-bezier(.22,1,.36,1); }
 @keyframes wb-fade { from { opacity: 0; } }

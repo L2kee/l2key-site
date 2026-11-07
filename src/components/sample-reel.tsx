@@ -213,7 +213,7 @@ export function SampleReel({ samples }: { samples: Sample[] }) {
             onClick={() => goTo(i)}
             aria-label={`Show ${s.trade} sample video`}
             aria-current={active === i}
-            className="group flex h-6 items-center px-1"
+            className="group flex h-6 min-w-6 items-center justify-center px-1"
           >
             <span
               className={`block h-2 rounded-full transition-all ${active === i ? "w-6 bg-[#5fd8e6]" : "w-2 bg-white/25 group-hover:bg-white/50"}`}

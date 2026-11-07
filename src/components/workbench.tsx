@@ -286,6 +286,7 @@ function Card({ item, index, onOpen }: { item: Item; index: number; onOpen: (v: 
 function Lightbox({ item, view, onView, onClose }: { item: Item; view: View; onView: (v: View) => void; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
+  const boxRef = useRef<HTMLDivElement>(null);
   const src = img(item.slug, view);
   const [readySrc, setReadySrc] = useState("");
   const ready = readySrc === src;
@@ -293,13 +294,29 @@ function Lightbox({ item, view, onView, onClose }: { item: Item; view: View; onV
     const prev = document.activeElement as HTMLElement | null;
     closeRef.current?.focus();
     document.body.style.overflow = "hidden";
-    const key = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    // Esc closes, and Tab and Shift+Tab wrap inside the popup so keyboard
+    // focus can't slip behind it.
+    const key = (e: KeyboardEvent) => {
+      if (e.key === "Escape") return onClose();
+      if (e.key !== "Tab" || !boxRef.current) return;
+      const items = boxRef.current.querySelectorAll<HTMLElement>("button:not([disabled]), a[href]");
+      if (!items.length) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (e.shiftKey && (document.activeElement === first || !boxRef.current.contains(document.activeElement))) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && (document.activeElement === last || !boxRef.current.contains(document.activeElement))) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
     window.addEventListener("keydown", key);
     return () => { document.body.style.overflow = ""; window.removeEventListener("keydown", key); prev?.focus(); };
   }, [onClose]);
   useEffect(() => { if (bodyRef.current) bodyRef.current.scrollTop = 0; }, [src]);
   return (
-    <div className="wb-lb" role="dialog" aria-modal="true" aria-label={`${item.name} full page`} onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
+    <div ref={boxRef} className="wb-lb" role="dialog" aria-modal="true" aria-label={`${item.name} full page`} onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
       <div className="wb-lb-top">
         <b>{item.name}</b>
         <div className="wb-lb-r">

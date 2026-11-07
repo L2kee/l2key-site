@@ -79,6 +79,22 @@ export function SiteChat() {
     return () => removeEventListener(OPEN_EVENT, onOpen);
   }, []);
 
+  // Closing hands focus back to the round chat button when it was inside the
+  // panel (Esc or the X), so keyboard users aren't dropped at the top of the page.
+  const launcherRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLElement>(null);
+  const wasOpen = useRef(false);
+  useEffect(() => {
+    if (open) {
+      wasOpen.current = true;
+      return;
+    }
+    if (!wasOpen.current) return;
+    wasOpen.current = false;
+    const a = document.activeElement;
+    if (!a || a === document.body || panelRef.current?.contains(a)) launcherRef.current?.focus();
+  }, [open]);
+
   useEffect(() => {
     if (!open) return;
     inputRef.current?.focus();
@@ -125,6 +141,7 @@ export function SiteChat() {
   return (
     <>
       <button
+        ref={launcherRef}
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-label={open ? "Close chat" : "Chat with Ava, our AI assistant"}
@@ -136,6 +153,7 @@ export function SiteChat() {
       </button>
 
       <section
+        ref={panelRef}
         id="site-chat-panel"
         role="dialog"
         aria-label="Chat with Ava"
@@ -170,10 +188,10 @@ export function SiteChat() {
             </p>
           ))}
           {pending && (
-            <p className="site-chat-bubble is-ava site-chat-typing" aria-label="Ava is typing">
-              <span />
-              <span />
-              <span />
+            <p className="site-chat-bubble is-ava site-chat-typing" role="status" aria-label="Ava is typing">
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
             </p>
           )}
           {showStarters && (

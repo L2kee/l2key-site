@@ -167,15 +167,15 @@ export default function ElectricalAIProPage() {
               </div>
               <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 border-t border-[#1c2735] pt-6 sm:gap-6">
                 <div>
-                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#5e6b7d]">Modules</Mono></dt>
+                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8794a8]">Modules</Mono></dt>
                   <dd className="mt-1 text-2xl font-bold">11</dd>
                 </div>
                 <div>
-                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#5e6b7d]">Code basis</Mono></dt>
+                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8794a8]">Code basis</Mono></dt>
                   <dd className="mt-1 text-2xl font-bold">NEC</dd>
                 </div>
                 <div>
-                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#5e6b7d]">Price</Mono></dt>
+                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8794a8]">Price</Mono></dt>
                   <dd className="mt-1 text-2xl font-bold">Free</dd>
                 </div>
               </dl>
@@ -190,7 +190,7 @@ export default function ElectricalAIProPage() {
                     <Pulse />
                     <Mono className="text-[11px] uppercase tracking-wider text-[#94a0b2]">Wire check</Mono>
                   </div>
-                  <Mono className="text-[11px] text-[#5e6b7d]">Example</Mono>
+                  <Mono className="text-[11px] text-[#8794a8]">Example</Mono>
                 </div>
                 <div className="space-y-4 p-4 sm:p-5">
                   <div className="ml-auto max-w-[82%] rounded-2xl rounded-tr-sm bg-[#00d3e3]/15 px-4 py-3 text-sm ring-1 ring-[#00d3e3]/20">
@@ -203,15 +203,15 @@ export default function ElectricalAIProPage() {
                     </p>
                     <div className="mt-4 grid grid-cols-3 gap-2 border-t border-[#1c2735] pt-3">
                       <div>
-                        <Mono className="block text-[9px] uppercase tracking-wider text-[#5e6b7d] sm:text-[10px]">Ampacity</Mono>
+                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8794a8] sm:text-[10px]">Ampacity</Mono>
                         <div className="mt-1 text-sm font-semibold text-white">50 A</div>
                       </div>
                       <div>
-                        <Mono className="block text-[9px] uppercase tracking-wider text-[#5e6b7d] sm:text-[10px]">Voltage drop</Mono>
+                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8794a8] sm:text-[10px]">Voltage drop</Mono>
                         <div className="mt-1 text-sm font-semibold text-white">2.04%</div>
                       </div>
                       <div>
-                        <Mono className="block text-[9px] uppercase tracking-wider text-[#5e6b7d] sm:text-[10px]">Result</Mono>
+                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8794a8] sm:text-[10px]">Result</Mono>
                         <div className="mt-1 text-sm font-semibold text-[#00d3e3]">Passes</div>
                       </div>
                     </div>
@@ -222,7 +222,7 @@ export default function ElectricalAIProPage() {
                   </div>
                 </div>
               </div>
-              <p className="mt-3 px-1 text-xs text-[#5e6b7d]">
+              <p className="mt-3 px-1 text-xs text-[#8794a8]">
                 Numbers from the app&apos;s own calculators. Planning aid: confirm with your codebook and the AHJ.
               </p>
             </div>
@@ -236,7 +236,7 @@ export default function ElectricalAIProPage() {
               <Mono className="text-[11px] uppercase tracking-wider text-[#00d3e3]">(a) Calculators</Mono>
               <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">The full bench, one surface.</h2>
             </div>
-            <Mono className="hidden text-xs text-[#5e6b7d] md:block">11 modules</Mono>
+            <Mono className="hidden text-xs text-[#8794a8] md:block">11 modules</Mono>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {MODULES.map((m) => (
@@ -246,13 +246,13 @@ export default function ElectricalAIProPage() {
                 className="group rounded-2xl border border-[#1c2735] bg-[#0a111d]/50 p-5 transition-colors hover:border-[#00d3e3]/40"
               >
                 <div className="flex items-center justify-between">
-                  <Mono className="text-[11px] text-[#5e6b7d]">{m.n}</Mono>
-                  <Mono className="text-[11px] text-[#5e6b7d]">{m.tag}</Mono>
+                  <Mono className="text-[11px] text-[#8794a8]">{m.n}</Mono>
+                  <Mono className="text-[11px] text-[#8794a8]">{m.tag}</Mono>
                 </div>
                 <h3 className="mt-4 text-lg font-semibold">{m.title}</h3>
                 <p className="mt-1 text-sm text-[#94a0b2]">{m.body}</p>
                 <div className="mt-4 flex items-center justify-between border-t border-[#1c2735] pt-3">
-                  <Mono className="text-xs text-[#5e6b7d]">{m.foot}</Mono>
+                  <Mono className="text-xs text-[#8794a8]">{m.foot}</Mono>
                   <span className="text-[#00d3e3] transition-transform group-hover:translate-x-1">→</span>
                 </div>
               </a>
@@ -293,7 +293,7 @@ export default function ElectricalAIProPage() {
                     </Mono>
                     <div>
                       <div className="text-sm font-semibold">{t.title}</div>
-                      <Mono className="text-[11px] text-[#5e6b7d]">{t.ref}</Mono>
+                      <Mono className="text-[11px] text-[#8794a8]">{t.ref}</Mono>
                     </div>
                   </div>
                 ))}
@@ -356,7 +356,7 @@ export default function ElectricalAIProPage() {
             >
               Open ElectricalAI Pro
             </a>
-            <p className="mt-8 text-sm text-[#5e6b7d]">
+            <p className="mt-8 text-sm text-[#8794a8]">
               Want an app like this for your business?{" "}
               <Link href="/mobile-app-development-orlando" className="text-[#94a0b2] underline decoration-[#1c2735] underline-offset-4 hover:text-white">
                 EVOGENCY builds them.

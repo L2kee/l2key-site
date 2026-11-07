@@ -275,7 +275,7 @@ export default function RealEstateListingWebsitesOrlandoPage() {
         <p className="mt-4 text-center text-sm text-white/55">
           Add on. Put our AI front desk on your listing line to answer buyer questions and book showings around the
           clock.{" "}
-          <Link href="/ai" className="text-[#5fd8e6] hover:underline">
+          <Link href="/ai" className="text-[#5fd8e6] underline underline-offset-4 hover:text-white">
             See how it works
           </Link>
         </p>

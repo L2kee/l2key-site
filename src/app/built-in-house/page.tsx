@@ -98,10 +98,9 @@ export default function BuiltInHousePage() {
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <Demo title="Letters that drop in" body="Each letter falls into place with a little bounce, then the colors flow across the line nonstop.">
           <Replay>
-            <p
-              aria-label="Built to be found. Designed to be trusted."
-              className="text-center text-2xl font-bold leading-tight text-white [--hero-delay:2000ms]"
-            >
+            <p className="text-center text-2xl font-bold leading-tight text-white [--hero-delay:2000ms]">
+              {/* DropLetters hides its letters from screen readers, so the line is read whole from here. */}
+              <span className="sr-only">Built to be found. Designed to be trusted.</span>
               <span className={`block glass-text ${outline.className}`}>
                 <DropLetters text="Built to be found." />
               </span>

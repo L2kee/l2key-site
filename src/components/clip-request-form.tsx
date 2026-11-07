@@ -229,7 +229,7 @@ export function ClipRequestForm() {
       </div>
 
       {message && (
-        <p className="text-sm text-rose-300" aria-live="polite">
+        <p className="text-sm text-rose-300" role="alert">
           {message}
         </p>
       )}

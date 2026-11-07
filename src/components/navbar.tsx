@@ -134,10 +134,50 @@ export function Navbar() {
   const [instant, setInstant] = useState(false);
   const [hidden, setHidden] = useState(false);
   const closeForNav = () => {
+    navigating.current = true;
     setInstant(true);
     setOpen(false);
   };
   const lastY = useRef(0);
+  const burgerRef = useRef<HTMLButtonElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const wasOpen = useRef(false);
+  const navigating = useRef(false);
+
+  // The phone menu behaves as a modal dialog for keyboard and screen reader
+  // users. Opening moves focus to the close button, Tab and Shift+Tab stay
+  // inside, Esc closes it, and closing puts focus back on the menu button
+  // (unless a link was chosen, where the new page takes over).
+  useEffect(() => {
+    if (open) {
+      wasOpen.current = true;
+      navigating.current = false;
+      closeRef.current?.focus();
+      const onKey = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          setOpen(false);
+          return;
+        }
+        if (e.key !== "Tab" || !menuRef.current) return;
+        const items = menuRef.current.querySelectorAll<HTMLElement>("a[href], button:not([disabled])");
+        if (!items.length) return;
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      };
+      document.addEventListener("keydown", onKey);
+      return () => document.removeEventListener("keydown", onKey);
+    }
+    if (wasOpen.current && !navigating.current) burgerRef.current?.focus();
+    wasOpen.current = false;
+  }, [open]);
 
   useEffect(() => {
     lastY.current = window.scrollY;
@@ -187,12 +227,15 @@ export function Navbar() {
           </Link>
 
           <button
+            ref={burgerRef}
+            type="button"
             onClick={() => {
               setInstant(false);
               setOpen(true);
             }}
             aria-label="Open menu"
             aria-expanded={open}
+            aria-controls="site-menu"
             className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#5fd8e6]/50 hover:text-[#5fd8e6] lg:hidden"
           >
             <i /><i /><i />
@@ -205,6 +248,11 @@ export function Navbar() {
           where the navbar's logo and button are, so the button's three lines
           fold into the X in place. */}
       <div
+        ref={menuRef}
+        id="site-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Site menu"
         inert={!open}
         className={`menu-overlay fixed inset-0 z-[60] flex flex-col bg-black lg:hidden ${open ? "is-open" : ""} ${instant ? "menu-instant" : ""}`}
       >
@@ -214,6 +262,8 @@ export function Navbar() {
             <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
           </span>
           <button
+            ref={closeRef}
+            type="button"
             onClick={() => setOpen(false)}
             aria-label="Close menu"
             className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white"

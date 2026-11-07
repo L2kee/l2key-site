@@ -232,7 +232,7 @@ export function StartWizard({ slug }: { slug: string }) {
           </label>
 
           {state.status === "error" && state.message && (
-            <p className="text-sm text-rose-300" aria-live="polite">
+            <p className="text-sm text-rose-300" role="alert">
               {state.message}
             </p>
           )}

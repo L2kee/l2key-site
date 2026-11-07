@@ -294,7 +294,7 @@ export function ServicesJourney() {
               aria-label={`Show ${s.title}`}
               aria-current={i === active}
               onClick={() => goTo(i)}
-              className="group flex h-6 items-center px-1"
+              className="group flex h-6 min-w-6 items-center justify-center px-1"
             >
               <span
                 className={`block h-2 rounded-full transition-all ${

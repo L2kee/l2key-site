@@ -62,6 +62,14 @@ export function WorkExpand({
       onPointerEnter={(e) => e.pointerType === "mouse" && expand()}
       onPointerLeave={(e) => e.pointerType === "mouse" && setOpen(false)}
       onClick={() => !open && expand()}
+      // Keyboard users Tab onto the arrows, so focus opens the card the same
+      // way the mouse does, and Tab moving on closes it again.
+      onFocus={(e) => {
+        if (!open && (e.target as HTMLElement).matches(":focus-visible")) expand();
+      }}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setOpen(false);
+      }}
     >
       <div
         className="transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none"
@@ -115,20 +123,25 @@ export function WorkExpand({
                   <Icon size={18} />
                 </button>
               ))}
-              <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5">
+              <div className="absolute inset-x-0 bottom-1.5 flex justify-center">
                 {images.map((src, i) => (
                   <button
                     key={src}
                     type="button"
                     aria-label={`Show screenshot ${i + 1}`}
+                    aria-current={i === index}
                     onClick={(e) => {
                       e.stopPropagation();
                       setIndex(i);
                     }}
-                    className={`h-1.5 rounded-full transition-all ${
-                      i === index ? "w-5 bg-[#5fd8e6]" : "w-1.5 bg-white/50"
-                    }`}
-                  />
+                    className="grid h-6 min-w-6 place-items-center px-1"
+                  >
+                    <span
+                      className={`block h-1.5 rounded-full transition-all ${
+                        i === index ? "w-5 bg-[#5fd8e6]" : "w-1.5 bg-white/50"
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
             </div>
