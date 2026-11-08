@@ -1,0 +1,42 @@
+name: Website daily
+
+# The Website Bot's daily job, no AI: blog drip, post checks, IndexNow, health check, social refill check.
+# All the steps are in scripts/website-daily.sh. Any problem fails the run, which emails Moe, and the
+# Chief of Staff's morning brief reports it. The Website Bot routine now runs on Fridays only, to write the
+# social week file. Run it by hand from the Actions tab (dry run is on by default there).
+on:
+  schedule:
+    # 17:20 UTC = 12:20 PM Eastern in winter, 1:20 PM in summer. GitHub often starts scheduled runs late.
+    - cron: "20 17 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1 = build and check only, 0 = publish"
+        default: "1"
+
+concurrency:
+  group: website-daily
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Drip, checks, health, refill
+        env:
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || '0' }}
+        run: bash scripts/website-daily.sh
