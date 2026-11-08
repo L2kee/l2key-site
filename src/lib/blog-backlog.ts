@@ -9789,7 +9789,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How plumbers, roofers, HVAC companies, and other home service businesses can run Facebook and Instagram ads that bring in real leads instead of empty likes.",
     excerpt: "Likes don't pay the bills. Here's how home service companies set up ads that bring in leads.",
-    date: "2026-10-15",
+    date: "2026-11-08",
     tag: "Marketing",
     relatedHref: "/growth-kit",
     relatedLabel: "Get the Home Service Growth Kit",
@@ -9851,7 +9851,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How Google Local Services Ads work, how they differ from regular Google Ads, what the screening involves, and whether pay per lead makes sense for you.",
     excerpt: "Those ads at the very top of Google with a badge. Here's how they work and whether they're worth it.",
-    date: "2026-10-15",
+    date: "2026-11-08",
     tag: "Marketing",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -9911,7 +9911,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How gyms and fitness studios can design a website that shows the experience, answers pricing questions, and turns visitors into trial visits.",
     excerpt: "Show the vibe, answer the price question, and make the first visit easy.",
-    date: "2026-10-15",
+    date: "2026-11-08",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
