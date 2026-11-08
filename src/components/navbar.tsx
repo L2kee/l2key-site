@@ -161,6 +161,9 @@ export function Navbar() {
   // fights the page crossfade (.menu-instant in globals.css).
   const [instant, setInstant] = useState(false);
   const [hidden, setHidden] = useState(false);
+  // Past the first 80px the transparent bar gets a soft dark shade behind it
+  // (.nav-scrim in globals.css), so its words never sit on page text.
+  const [scrolled, setScrolled] = useState(false);
   const closeForNav = () => {
     navigating.current = true;
     setInstant(true);
@@ -211,6 +214,7 @@ export function Navbar() {
     lastY.current = window.scrollY;
     const onScroll = () => {
       const y = window.scrollY;
+      setScrolled(y > 80);
       if (open || y < 80) {
         setHidden(false);
         lastY.current = y;
@@ -245,7 +249,7 @@ export function Navbar() {
           left (16px in, Moe 2026-11-08), so the bar spans the rest of the
           window: full width, padded by the menu's 184px plus the 24px gap. */}
       <header
-        className={`pointer-events-none sticky top-0 z-50 flex justify-center px-4 pt-4 transition-transform duration-300 ease-out ${hidden ? "-translate-y-full" : "translate-y-0"}`}
+        className={`nav-scrim pointer-events-none sticky top-0 z-50 flex justify-center px-4 pt-4 transition-transform duration-300 ease-out ${hidden ? "-translate-y-full" : "translate-y-0"} ${scrolled ? "is-scrolled" : ""}`}
       >
         <div className={`flex w-full justify-center ${pathname === "/" ? "max-w-5xl lg:max-w-none lg:pl-[208px]" : "max-w-5xl"}`}>
         {/* From lg up a three column grid keeps the links dead center in the

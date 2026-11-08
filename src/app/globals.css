@@ -1889,3 +1889,25 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 .nav-clear .nav-morph a.is-lit {
   text-shadow: none;
 }
+
+/* Shade behind the transparent navbar once the page has scrolled (Moe
+   2026-11-08). A dark wash from the top of the screen fading to clear, no
+   box or edge, so the bar still reads as see through but its words never
+   land on page text. Moves with the bar when it hides. */
+.nav-scrim::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 -36px 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0.96), rgb(0 0 0 / 0.92) 62%, transparent);
+  opacity: 0;
+}
+.nav-scrim.is-scrolled::before {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .nav-scrim::before {
+    transition: opacity 300ms ease;
+  }
+}
