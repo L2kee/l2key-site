@@ -8,6 +8,12 @@ on:
   schedule:
     # 17:20 UTC = 12:20 PM Eastern in winter, 1:20 PM in summer. GitHub often starts scheduled runs late.
     - cron: "20 17 * * *"
+    # Backups, because GitHub sometimes skips or drops a scheduled run (the first one, 2026-11-08, never fired).
+    # Whichever run fires first publishes. Later runs see the posts are already on master and only re-check the site.
+    # 18:07, 19:07, 21:07 UTC = 1:07, 2:07, 4:07 PM Eastern in winter (an hour later in summer). Odd minutes get honored more often.
+    - cron: "7 18 * * *"
+    - cron: "7 19 * * *"
+    - cron: "7 21 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
