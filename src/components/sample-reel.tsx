@@ -169,7 +169,7 @@ export function SampleReel({ samples }: { samples: Sample[] }) {
                 onClick={() => (active === i ? toggleSound() : goTo(i))}
                 aria-label={
                   active === i
-                    ? `${sound ? "Mute" : "Play with sound"}, ${s.trade} sample video`
+                    ? `${sound ? "Sound on, tap to mute" : "Tap for sound"}, ${s.trade} sample video`
                     : `Show ${s.trade} sample video`
                 }
                 className="relative block w-full overflow-hidden rounded-2xl border border-white/10 bg-black"
@@ -186,17 +186,21 @@ export function SampleReel({ samples }: { samples: Sample[] }) {
                   preload="none"
                   className="aspect-[9/16] w-full object-cover"
                 />
-                <span className="absolute right-2 bottom-2 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-semibold text-white">
-                  {sound ? (
-                    <>
-                      <Volume2 size={14} className="text-[#5fd8e6]" /> Sound on
-                    </>
-                  ) : (
-                    <>
-                      <VolumeX size={14} /> Tap for sound
-                    </>
-                  )}
-                </span>
+                {/* Badge only on the active card, and the label starts with its text,
+                    so voice control ("click Tap for sound") matches (WCAG 2.5.3). */}
+                {active === i && (
+                  <span className="absolute right-2 bottom-2 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-semibold text-white">
+                    {sound ? (
+                      <>
+                        <Volume2 size={14} className="text-[#5fd8e6]" /> Sound on
+                      </>
+                    ) : (
+                      <>
+                        <VolumeX size={14} /> Tap for sound
+                      </>
+                    )}
+                  </span>
+                )}
               </button>
               <p className="mt-2 text-center text-sm font-semibold text-white">{s.trade}</p>
               <p className="text-center text-xs text-white/55">{s.hook}</p>

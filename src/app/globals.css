@@ -1706,7 +1706,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 .wb-head > p { margin: 18px auto 0; max-width: 620px; color: rgb(255 255 255 / .68); font-size: clamp(16px, 2vw, 18px); text-wrap: balance; }
 .wb-stats { display: flex; justify-content: center; flex-wrap: wrap; gap: clamp(22px, 6vw, 60px); margin-top: 36px; }
 .wb-stats b { display: block; font-size: clamp(32px, 5vw, 46px); font-weight: 700; letter-spacing: -.03em; color: #fff; font-variant-numeric: tabular-nums; }
-.wb-stats span { font-size: 12.5px; color: rgb(255 255 255 / .45); letter-spacing: .08em; text-transform: uppercase; }
+.wb-stats span { font-size: 12.5px; color: rgb(255 255 255 / .65); letter-spacing: .08em; text-transform: uppercase; }
 
 /* contain keeps the endless track from widening the page (the parent sizes to its content) */
 .wb-marquee { contain: inline-size; margin: 48px calc(50% - 50vw) 40px; border-block: 1px solid rgb(255 255 255 / .1); padding: 15px 0; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }

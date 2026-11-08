@@ -243,7 +243,7 @@ function Card({ item, index, onOpen }: { item: Item; index: number; onOpen: (v: 
           type="button"
           className={`wb-dev wb-browser${view === "desk" ? "" : " is-off"}`}
           onClick={() => onOpen("desk")}
-          aria-label={`Open the ${item.name} desktop page`}
+          aria-label={`Open ${item.url}, the ${item.name} desktop page`}
           tabIndex={view === "desk" ? 0 : -1}
         >
           <span className="wb-chrome"><i /><i /><i /><span>{item.url}</span></span>
