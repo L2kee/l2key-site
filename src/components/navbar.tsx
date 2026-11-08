@@ -241,17 +241,19 @@ export function Navbar() {
     <>
       {/* The header itself lets clicks through, only the bar catches them,
           so on the homepage the services rail under its left edge stays
-          clickable. On the homepage (lg up) the bar sits over the column to
-          the right of the rail: same 1320px frame as the page, padded by
-          the rail's 184px plus the 24px gap (1288px = the page's 1320px
-          frame minus its 16px side padding). */}
+          clickable. On the homepage (lg up) the services menu sits flush
+          left (16px in, Moe 2026-11-08), so the bar spans the rest of the
+          window: full width, padded by the menu's 184px plus the 24px gap. */}
       <header
         className={`pointer-events-none sticky top-0 z-50 flex justify-center px-4 pt-4 transition-transform duration-300 ease-out ${hidden ? "-translate-y-full" : "translate-y-0"}`}
       >
-        <div className={`flex w-full justify-center ${pathname === "/" ? "max-w-[1288px] lg:pl-[208px]" : "max-w-5xl"}`}>
+        <div className={`flex w-full justify-center ${pathname === "/" ? "max-w-5xl lg:max-w-none lg:pl-[208px]" : "max-w-5xl"}`}>
         {/* From lg up a three column grid keeps the links dead center in the
             bar whether or not the logo shows: logo, links, Get Started. */}
-        <nav className="glass-nav pointer-events-auto flex w-full items-center justify-between rounded-2xl px-4 py-2.5 lg:grid lg:grid-cols-[1fr_auto_1fr]">
+        {/* Transparent bar, only the words and buttons show (Moe 2026-11-08).
+            .nav-clear in globals.css gives the words a soft shadow so they
+            stay readable over whatever scrolls behind them. */}
+        <nav className="nav-clear pointer-events-auto flex w-full items-center justify-between rounded-2xl px-4 py-2.5 lg:grid lg:grid-cols-[1fr_auto_1fr]">
           {/* On the homepage from lg up the services menu already carries the
               logo, so the bar drops it (Moe 2026-11-08). */}
           <Link

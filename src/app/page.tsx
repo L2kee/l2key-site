@@ -80,7 +80,7 @@ export default function Home() {
           screen (.home-hero). Phones keep the video above the copy. From lg up the
           services menu runs down the left beside it (services-rail.tsx,
           Moe 2026-11-08), lifted to line up with the navbar (.home-rail). */}
-      <div className="mx-auto flex w-full max-w-[1320px] gap-6 lg:px-4">
+      <div className="flex w-full gap-6 lg:px-4">
       <ServicesRail className="home-rail" />
       <div className="hero-stage home-hero min-w-0 flex-1">
       <HeroVideo />
