@@ -1,0 +1,5948 @@
+{
+  "taken": "2026-11-08T06:22-05:00",
+  "posts": [
+    {
+      "buffer": "6aefc04e3d6be65a30506565",
+      "post": null,
+      "fmt": null,
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-08T00:18:28.000Z",
+      "sent": "2026-11-08T00:18:28.000Z",
+      "first_line": "WHAT IF YOU COULD START EVERY MORNING WITH THE WORK ALREADY DONE? \ud83e\udd2f",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 1
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6aefbe841e099f3d35c421a2",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-11-08T00:09:01.000Z",
+      "sent": "2026-11-08T00:09:01.000Z",
+      "first_line": "WHAT IF YOU COULD START EVERY MORNING WITH THE WORK ALREADY DONE? \ud83e\udd2f",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0,
+        "Avg. Watch Time (sec)": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.621Z"
+    },
+    {
+      "buffer": "6aef87e99214322f681446e5",
+      "post": "2026-11-07-google-ads-ai-mode",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-08T00:00:00.000Z",
+      "sent": "2026-11-08T00:01:05.909Z",
+      "first_line": "Google ads in AI Mode explained for small businesses.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.297Z"
+    },
+    {
+      "buffer": "6aef87e8562f2e6de97bf0b4",
+      "post": "2026-11-07-google-ads-ai-mode",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-11-08T00:00:00.000Z",
+      "sent": "2026-11-08T00:01:21.991Z",
+      "first_line": "Google ads in AI Mode explained for small businesses.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.600Z"
+    },
+    {
+      "buffer": "6aef2b2824c1fa73b0c4b8dd",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-11-07T11:46:16.000Z",
+      "sent": "2026-11-07T11:46:16.000Z",
+      "first_line": "",
+      "metrics": {
+        "Views": 32,
+        "Reach": 28,
+        "Replies": 0,
+        "Eng. Rate": 3.57,
+        "Reactions": 1
+      },
+      "metric_units": {
+        "Views": "count",
+        "Reach": "count",
+        "Replies": "count",
+        "Eng. Rate": "percentage",
+        "Reactions": "count"
+      },
+      "metrics_updated": "2026-11-08T08:41:23.588Z"
+    },
+    {
+      "buffer": "6aef2b2824c1fa73b0c4b8db",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-11-07T12:10:54.000Z",
+      "sent": "2026-11-07T12:10:54.000Z",
+      "first_line": "",
+      "metrics": {
+        "Views": 16,
+        "Reach": 15,
+        "Replies": 1,
+        "Eng. Rate": 13.33,
+        "Reactions": 2
+      },
+      "metric_units": {
+        "Views": "count",
+        "Reach": "count",
+        "Replies": "count",
+        "Eng. Rate": "percentage",
+        "Reactions": "count"
+      },
+      "metrics_updated": "2026-11-08T08:41:23.590Z"
+    },
+    {
+      "buffer": "6aee7c84229bf05daf1ea196",
+      "post": "2026-11-07-herdr-agents",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-11-07T17:30:00.000Z",
+      "sent": "2026-11-07T17:31:19.556Z",
+      "first_line": "Herdr app to manage multiple coding agents.",
+      "metrics": {
+        "Reactions": 2,
+        "Comments": 0,
+        "Eng. Rate": 3.23,
+        "Views": 86,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 3.73,
+        "Avg. Watch Time (sec)": 3.2,
+        "Reach": 62
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.618Z"
+    },
+    {
+      "buffer": "6aee7c83af7e526d43f1d0b1",
+      "post": "2026-11-07-ai-filing-five-numbers",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-07T13:00:00.000Z",
+      "sent": "2026-11-07T13:02:15.212Z",
+      "first_line": "How to read a long company filing fast with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.297Z"
+    },
+    {
+      "buffer": "6aee7c83229bf05daf1ea165",
+      "post": "2026-11-07-ai-filing-five-numbers",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-11-07T01:53:11.941Z",
+      "sent": "2026-11-07T01:53:47.776Z",
+      "first_line": "How to read a long company filing fast with AI.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 7.14,
+        "Views": 45,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 14
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.657Z"
+    },
+    {
+      "buffer": "6aee7ae1d0a84f48c5574b8b",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-11-06T05:31:16.000Z",
+      "sent": "2026-11-06T05:31:16.000Z",
+      "first_line": "",
+      "metrics": {
+        "Views": 25,
+        "Reach": 22,
+        "Replies": 0,
+        "Eng. Rate": 4.55,
+        "Reactions": 1
+      },
+      "metric_units": {
+        "Views": "count",
+        "Reach": "count",
+        "Replies": "count",
+        "Eng. Rate": "percentage",
+        "Reactions": "count"
+      },
+      "metrics_updated": "2026-11-07T05:21:17.293Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32857",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-03-27T15:48:25.000Z",
+      "sent": "2023-03-27T15:48:25.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 6,
+        "Comments": 2,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.602Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32854",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2024-05-11T02:44:25.000Z",
+      "sent": "2024-05-11T02:44:25.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 0,
+        "Eng. Rate": 4.62,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 65
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.665Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32852",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2025-05-23T04:56:51.000Z",
+      "sent": "2025-05-23T04:56:51.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 7,
+        "Comments": 3,
+        "Eng. Rate": 19.61,
+        "Views": 110,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 11.58,
+        "Avg. Watch Time (sec)": 9.27,
+        "Reach": 51
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.644Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32850",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-07-11T20:17:02.000Z",
+      "sent": "2023-07-11T20:17:02.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 8,
+        "Comments": 2,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.699Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3284c",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2024-05-10T04:06:01.000Z",
+      "sent": "2024-05-10T04:06:01.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 0,
+        "Eng. Rate": 5.17,
+        "Views": 85,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 11.76,
+        "Avg. Watch Time (sec)": 7.13,
+        "Reach": 58
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.619Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32845",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2022-10-28T15:05:06.000Z",
+      "sent": "2022-10-28T15:05:06.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 9,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.637Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32842",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-09-05T05:21:28.000Z",
+      "sent": "2023-09-05T05:21:28.000Z",
+      "first_line": "When it goes down. It got no where to go but up",
+      "metrics": {
+        "Reactions": 6,
+        "Comments": 1,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.622Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32840",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2025-08-21T19:23:43.000Z",
+      "sent": "2025-08-21T19:23:43.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 3,
+        "Eng. Rate": 23.08,
+        "Views": 123,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 26
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.616Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3283e",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-03-27T15:47:34.000Z",
+      "sent": "2023-03-27T15:47:34.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 4,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.651Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3283c",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2024-05-11T02:52:18.000Z",
+      "sent": "2024-05-11T02:52:18.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 0,
+        "Eng. Rate": 4.69,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 64
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.594Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32832",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-03-27T15:49:21.000Z",
+      "sent": "2023-03-27T15:49:21.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 8,
+        "Comments": 7,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.643Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32830",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-07-24T20:26:41.000Z",
+      "sent": "2026-07-24T20:26:41.000Z",
+      "first_line": "First time in history we put a camera on an octopus and we have discovered something really special #fyp #virals #comedy #instadaily #sea",
+      "metrics": {
+        "Reactions": 2,
+        "Comments": 0,
+        "Eng. Rate": 3.92,
+        "Views": 98,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 10.1,
+        "Avg. Watch Time (sec)": 10.45,
+        "Reach": 51
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.650Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3282e",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-06-03T20:45:51.000Z",
+      "sent": "2023-06-03T20:45:51.000Z",
+      "first_line": "\u0627\u0644\u0644\u0647\u0645 \u0627\u063a\u0641\u0631 \u0644\u0623\u062e\u064a \u0648\u0627\u0631\u062d\u0645\u0647 \u0648\u062a\u062c\u0627\u0648\u0632 \u0639\u0646 \u0633\u064a\u0626\u0627\u062a\u0647\u060c \u0648\u0627\u062c\u0639\u0644 \u0642\u0628\u0631\u0647 \u0631\u0648\u0636\u0629 \u0645\u0646 \u0631\u064a\u0627\u0636 \u0627\u0644\u062c\u0646\u0629\u060c \u0648\u0623\u0646\u0632\u0644\u0647 \u0645\u0646\u0632\u0644\u064b\u0627 \u0645\u0628\u0627\u0631\u0643\u064b\u0627 \u0648\u0646\u0648\u0631\u064b\u0627\u060c \u0648\u0623\u062c\u0639\u0644\u0647 \u064a\u0646\u0639\u0645 \u0641\u064a\u0647 \u0628\u0631\u0627\u062d\u0629 \u0648\u0633\u0643\u064a\u0646\u0629. \u0627\u0644\u0644\u0647\u0645 \u0627\u062c\u0639\u0644\u0647 \u0641\u064a \u0641\u0633\u064a\u062d \u062c\u0646\u0627\u062a\u0643\u060c \u0648",
+      "metrics": {
+        "Reactions": 8,
+        "Comments": 2,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.596Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3282b",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-09-16T10:51:13.000Z",
+      "sent": "2023-09-16T10:51:13.000Z",
+      "first_line": "\u0645\u0646 \u0627\u0634\u0647\u0631 \u0642\u0635\u0627\u0626\u062f \u0627\u0644\u0627\u0645\u0627\u0645 \u0627\u0644\u0634\u0627\u0641\u0639\u064a ",
+      "metrics": {
+        "Reactions": 5,
+        "Comments": 2,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.628Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32825",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2024-05-11T03:01:48.000Z",
+      "sent": "2024-05-11T03:01:48.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 4,
+        "Comments": 0,
+        "Eng. Rate": 10.53,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 38
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.639Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32822",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-03-27T15:48:41.000Z",
+      "sent": "2023-03-27T15:48:41.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.647Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32820",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-10-13T13:25:55.000Z",
+      "sent": "2026-10-13T13:25:55.000Z",
+      "first_line": "#ai #marketing #orlando #uae #british",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 0,
+        "Eng. Rate": 9.09,
+        "Views": 55,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 4.09,
+        "Avg. Watch Time (sec)": 6.13,
+        "Reach": 33
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.626Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3281e",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2025-01-05T03:50:08.000Z",
+      "sent": "2025-01-05T03:50:08.000Z",
+      "first_line": "\u0645\u0647\u0645\u0627 \u0637\u0627\u0644 \u0627\u0644\u0627\u0646\u062a\u0638\u0627\u0631. \u0645\u0634\u062a\u0627\u0642\u0644\u0643 \u0645\u0646 \u063a\u064a\u0631 \u0627\u062e\u062a\u064a\u0627\u0631",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 0,
+        "Eng. Rate": 7.14,
+        "Views": 80,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 4.61,
+        "Avg. Watch Time (sec)": 4.13,
+        "Reach": 42
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.633Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3281c",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-09-05T10:13:39.000Z",
+      "sent": "2026-09-05T10:13:39.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 2,
+        "Eng. Rate": 9.68,
+        "Views": 72,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 31
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.646Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3281a",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2024-05-11T02:55:54.000Z",
+      "sent": "2024-05-11T02:55:54.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 5,
+        "Comments": 4,
+        "Eng. Rate": 20.45,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 44
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.597Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32818",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2025-01-10T23:45:58.000Z",
+      "sent": "2025-01-10T23:45:58.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 4,
+        "Comments": 5,
+        "Eng. Rate": 21.95,
+        "Views": 200,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 41
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.603Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32816",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2025-03-07T16:24:34.000Z",
+      "sent": "2025-03-07T16:24:34.000Z",
+      "first_line": "#\u0627\u0644\u0627\u0647\u0631\u0627\u0645\u0627\u062a #gizapyramids",
+      "metrics": {
+        "Reactions": 14,
+        "Comments": 3,
+        "Eng. Rate": 26.87,
+        "Views": 131,
+        "Shares": 0,
+        "Saves": 1,
+        "Watch Time (min)": 39.18,
+        "Avg. Watch Time (sec)": 21.57,
+        "Reach": 67
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.666Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32814",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-10-11T17:28:15.000Z",
+      "sent": "2026-10-11T17:28:15.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 0,
+        "Eng. Rate": 11.54,
+        "Views": 42,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 5.89,
+        "Avg. Watch Time (sec)": 12.2,
+        "Reach": 26
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.606Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32812",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-10-14T14:44:52.000Z",
+      "sent": "2026-10-14T14:44:52.000Z",
+      "first_line": "Share for the sake of Allah",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 1,
+        "Eng. Rate": 14.71,
+        "Views": 79,
+        "Shares": 0,
+        "Saves": 1,
+        "Follows": 0,
+        "Reach": 34
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.624Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32810",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2022-10-16T16:55:27.000Z",
+      "sent": "2022-10-16T16:55:27.000Z",
+      "first_line": "My bro and I decades ago",
+      "metrics": {
+        "Reactions": 7,
+        "Comments": 1,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.625Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3280e",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2025-07-12T19:54:17.000Z",
+      "sent": "2025-07-12T19:54:17.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 1,
+        "Eng. Rate": 11.43,
+        "Views": 170,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 35
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.641Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3280c",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2022-10-30T20:44:24.000Z",
+      "sent": "2022-10-30T20:44:24.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 5,
+        "Comments": 1,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.702Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf3280a",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2025-06-02T05:41:48.000Z",
+      "sent": "2025-06-02T05:41:48.000Z",
+      "first_line": "",
+      "metrics": {
+        "Reactions": 4,
+        "Comments": 1,
+        "Eng. Rate": 13.51,
+        "Views": 191,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 37
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.631Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32808",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-10-24T11:22:21.000Z",
+      "sent": "2026-10-24T11:22:21.000Z",
+      "first_line": "Your business deserves more than just a website. It deserves a digital strategy built for growth. \ud83d\ude80",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 1,
+        "Eng. Rate": 3.7,
+        "Views": 45,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 27
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.629Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32806",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-10-16T22:31:49.000Z",
+      "sent": "2026-10-16T22:31:49.000Z",
+      "first_line": "Your website has about 3 seconds to impress someone. Most of them waste it.",
+      "metrics": {
+        "Reactions": 5,
+        "Comments": 0,
+        "Eng. Rate": 17.86,
+        "Views": 48,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 5.69,
+        "Avg. Watch Time (sec)": 11.78,
+        "Reach": 28
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.604Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32804",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2023-12-17T11:28:35.000Z",
+      "sent": "2023-12-17T11:28:35.000Z",
+      "first_line": "I was looking somthing up on #googlesearch and my page was one of the results. I'm muslim and I'm proud",
+      "metrics": {
+        "Reactions": 5,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.630Z"
+    },
+    {
+      "buffer": "6aee7ad60ef3a056eaf32802",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6aee7ad3e29c69a1718c1f7a",
+      "due": "2026-10-30T01:03:24.000Z",
+      "sent": "2026-10-30T01:03:24.000Z",
+      "first_line": "claude made all of this",
+      "metrics": {
+        "Reactions": 8,
+        "Comments": 5,
+        "Eng. Rate": 8.38,
+        "Views": 236,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 30.8,
+        "Avg. Watch Time (sec)": 10.68,
+        "Reach": 167
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T00:12:52.598Z"
+    },
+    {
+      "buffer": "6aedc496f6d00f3472adf55e",
+      "post": "2026-11-06-radical-candor-feedback",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-06T17:30:00.000Z",
+      "sent": "2026-11-06T17:33:32.237Z",
+      "first_line": "How to give honest feedback without being harsh. Radical Candor.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 1,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 1
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6aec77148c78f6a77fa7b24c",
+      "post": "2026-11-05-openai-dot-texting",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-06T00:00:00.000Z",
+      "sent": "2026-11-06T00:03:46.991Z",
+      "first_line": "Is texting an AI agent safe? OpenAI Dot on iMessage.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 2,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6aec77148c78f6a77fa7b20f",
+      "post": "2026-11-05-ai-readme-video-script",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-05T13:00:00.000Z",
+      "sent": "2026-11-05T13:00:53.120Z",
+      "first_line": "How to turn a README into a video script with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 3,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6aebaabedce07267a195a34a",
+      "post": "2026-11-07-herdr-agents",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-07T17:30:00.000Z",
+      "sent": "2026-11-07T17:31:18.627Z",
+      "first_line": "Herdr app to manage multiple coding agents.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 24
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6aebaabe0baebf13ccc341e6",
+      "post": "2026-11-07-herdr-agents",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-07T17:30:00.000Z",
+      "sent": "2026-11-07T17:35:09.709Z",
+      "first_line": "Herdr app to manage multiple coding agents.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 35,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.42,
+        "Avg. Watch Time (sec)": 2.5,
+        "Reach": 34
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.297Z"
+    },
+    {
+      "buffer": "6aebaabd3a6057e11e7859c7",
+      "post": "2026-11-06-mistral-large-4-open",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-07T00:00:00.000Z",
+      "sent": "2026-11-07T00:02:45.883Z",
+      "first_line": "Mistral Large 4 open weights explained for builders.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 2.02,
+        "Views": 115,
+        "Shares": 1,
+        "Saves": 0,
+        "Watch Time (min)": 7.57,
+        "Avg. Watch Time (sec)": 4.37,
+        "Reach": 99
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.297Z"
+    },
+    {
+      "buffer": "6aeb2260e23d13cc15965fbe",
+      "post": "2026-11-04-voss-calibrated-questions",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-04T17:30:00.000Z",
+      "sent": "2026-11-04T17:31:41.576Z",
+      "first_line": "How to negotiate using Chris Voss's FBI techniques.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6aea57e7ca28ab6c31798284",
+      "post": "2026-11-06-mistral-large-4-open",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-07T00:00:00.000Z",
+      "sent": "2026-11-07T00:02:17.266Z",
+      "first_line": "Mistral Large 4 open weights explained for builders.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 23
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6aea57e6ca28ab6c31798258",
+      "post": "2026-11-06-ai-model-switch-math",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-06T13:00:00.000Z",
+      "sent": "2026-11-06T13:06:29.733Z",
+      "first_line": "How to compare AI model prices before you switch.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 7,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.21,
+        "Avg. Watch Time (sec)": 1.83,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6aea57e684e334d814e4a9b3",
+      "post": "2026-11-06-ai-model-switch-math",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-06T13:00:00.000Z",
+      "sent": "2026-11-06T13:03:32.601Z",
+      "first_line": "How to compare AI model prices before you switch.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 1
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae9cdd5f81926b9329468b3",
+      "post": "2026-11-03-ai-rank-tracker-check",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-03T13:00:00.000Z",
+      "sent": "2026-11-03T13:01:28.163Z",
+      "first_line": "How to check if an SEO ranking drop is real.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 3,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae9cdd53b7ecdee655e2da8",
+      "post": "2026-11-03-openai-terra-price",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-04T00:00:00.000Z",
+      "sent": "2026-11-04T00:02:56.773Z",
+      "first_line": "GPT 6.1 Terra price and what it means for AI agents.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 0,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 0
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae91ed9967eeee46f569a14",
+      "post": "2026-11-05-survival-llm",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-05T17:30:00.000Z",
+      "sent": "2026-11-05T17:33:35.671Z",
+      "first_line": "Free offline AI assistant that shows its sources.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 3.7,
+        "Views": 28,
+        "Shares": 0,
+        "Saves": 1,
+        "Watch Time (min)": 0.69,
+        "Avg. Watch Time (sec)": 1.47,
+        "Reach": 27
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae91ed89e9bda3b49d669ab",
+      "post": "2026-11-04-gemini-4-carbon",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-05T00:00:00.000Z",
+      "sent": "2026-11-05T00:03:20.014Z",
+      "first_line": "Gemini 4 Carbon release and price explained.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.09,
+        "Avg. Watch Time (sec)": 1.4,
+        "Reach": 4
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae91ed84e401f604e50fae5",
+      "post": "2026-11-05-survival-llm",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-05T17:30:00.000Z",
+      "sent": "2026-11-05T17:31:06.103Z",
+      "first_line": "Free offline AI assistant that shows its sources.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 12
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae883f93911b6a45d4c7aab",
+      "post": "2026-11-02-carnegie-sincere-interest",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-02T17:30:00.000Z",
+      "sent": "2026-11-02T17:32:20.538Z",
+      "first_line": "How to make people like you using Dale Carnegie's rules.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 1,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 1
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae883f909c35c01e8c8b680",
+      "post": "2026-11-04-gemini-4-carbon",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-05T00:00:00.000Z",
+      "sent": "2026-11-05T00:02:31.582Z",
+      "first_line": "Gemini 4 Carbon release and price explained.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 26
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae7a30eae27912f0392ed51",
+      "post": "2026-11-04-ai-meeting-followup",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-04T13:00:00.000Z",
+      "sent": "2026-11-04T13:05:46.112Z",
+      "first_line": "How to turn meeting notes into action items with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 3,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.04,
+        "Avg. Watch Time (sec)": 0.87,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae7a30e465de073df1cf5c2",
+      "post": "2026-11-04-ai-meeting-followup",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-04T13:00:00.000Z",
+      "sent": "2026-11-04T13:04:24.406Z",
+      "first_line": "How to turn meeting notes into action items with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 22
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae7a30d07b774c8fb2c675d",
+      "post": "2026-11-03-ghostty-1-4",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-03T17:30:00.000Z",
+      "sent": "2026-11-03T17:33:11.876Z",
+      "first_line": "Ghostty terminal 1.4 new features for developers.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 1,
+        "Views": 114,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 7.01,
+        "Avg. Watch Time (sec)": 3.97,
+        "Reach": 100
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae7a30cae27912f0392ecf2",
+      "post": "2026-11-03-ghostty-1-4",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-03T17:30:00.000Z",
+      "sent": "2026-11-03T17:31:12.101Z",
+      "first_line": "Ghostty terminal 1.4 new features for developers.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 22
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae72131cf3a3112f3f38ae5",
+      "post": "2026-11-02-anthropic-s1-meter",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-03T00:00:00.000Z",
+      "sent": "2026-11-03T00:01:58.968Z",
+      "first_line": "Anthropic IPO filing explained for small business owners.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 23
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae72131ab019b9087567726",
+      "post": "2026-11-02-anthropic-s1-meter",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-03T00:00:00.000Z",
+      "sent": "2026-11-03T00:04:01.436Z",
+      "first_line": "Anthropic IPO filing explained for small business owners.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 7,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.2,
+        "Avg. Watch Time (sec)": 2.01,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae64a13f0984eef332b2b8f",
+      "post": "2026-11-02-ai-resume-tailor",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-02T13:00:00.000Z",
+      "sent": "2026-11-02T13:04:13.179Z",
+      "first_line": "How to tailor your resume to a job posting with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.2,
+        "Avg. Watch Time (sec)": 1.99,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae64a13cf3a3112f3bf4e20",
+      "post": "2026-11-02-ai-resume-tailor",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-02T13:00:00.000Z",
+      "sent": "2026-11-02T13:03:06.632Z",
+      "first_line": "How to tailor your resume to a job posting with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 22
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae64a12ab019b908720d231",
+      "post": "2026-11-01-minimax-agent-cost",
+      "fmt": "reel_avatar",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-02T00:00:00.000Z",
+      "sent": "2026-11-02T00:01:39.492Z",
+      "first_line": "\u0645\u064a\u0646\u064a \u0645\u0627\u0643\u0633 \u0628\u062a\u0642\u0648\u0644 \u0627\u0644\u0625\u064a\u062c\u0646\u062a\u0633 \u0647\u062a\u0643\u0644\u0641\u0643 70% \u0623\u0642\u0644. \u0627\u0644\u062e\u0637\u0648\u0629 \u0627\u0644\u062a\u0627\u0644\u062a\u0629 \u0647\u062a\u062e\u062a\u0628\u0631 \u0627\u0644\u0643\u0644\u0627\u0645 \u062f\u0647.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 36,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.38,
+        "Avg. Watch Time (sec)": 2.5,
+        "Reach": 32
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae64a11f0984eef332b2a97",
+      "post": "2026-11-01-minimax-agent-cost",
+      "fmt": "reel_avatar",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-02T00:00:00.000Z",
+      "sent": "2026-11-02T00:01:04.827Z",
+      "first_line": "\u0645\u064a\u0646\u064a \u0645\u0627\u0643\u0633 \u0628\u062a\u0642\u0648\u0644 \u0627\u0644\u0625\u064a\u062c\u0646\u062a\u0633 \u0647\u062a\u0643\u0644\u0641\u0643 70% \u0623\u0642\u0644. \u0627\u0644\u062e\u0637\u0648\u0629 \u0627\u0644\u062a\u0627\u0644\u062a\u0629 \u0647\u062a\u062e\u062a\u0628\u0631 \u0627\u0644\u0643\u0644\u0627\u0645 \u062f\u0647.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 17
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae5c2d6ceb491e585ee967c",
+      "post": "2026-11-01-openai-cli",
+      "fmt": "reel_avatar",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-01T17:30:00.000Z",
+      "sent": "2026-11-01T17:32:10.348Z",
+      "first_line": "\u062f\u064a \u0627\u0644\u0623\u062f\u0627\u0629 \u0627\u0644\u0631\u0633\u0645\u064a\u0629 \u0644\u0640 OpenAI API \u0641\u064a \u0627\u0644\u062a\u0631\u0645\u064a\u0646\u0627\u0644\u060c \u0645\u0641\u062a\u0648\u062d\u0629 \u0627\u0644\u0645\u0635\u062f\u0631 \u0628\u0631\u062e\u0635\u0629 Apache 2.0. \u0645\u062d\u062a\u0627\u062c \u0645\u0641\u062a\u0627\u062d API \u0628\u0633.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 116,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 8.02,
+        "Avg. Watch Time (sec)": 4.58,
+        "Reach": 105
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae5c2d6b84259308bceda57",
+      "post": "2026-11-01-openai-cli",
+      "fmt": "reel_avatar",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-01T17:30:00.000Z",
+      "sent": "2026-11-01T17:30:57.225Z",
+      "first_line": "\u062f\u064a \u0627\u0644\u0623\u062f\u0627\u0629 \u0627\u0644\u0631\u0633\u0645\u064a\u0629 \u0644\u0640 OpenAI API \u0641\u064a \u0627\u0644\u062a\u0631\u0645\u064a\u0646\u0627\u0644\u060c \u0645\u0641\u062a\u0648\u062d\u0629 \u0627\u0644\u0645\u0635\u062f\u0631 \u0628\u0631\u062e\u0635\u0629 Apache 2.0. \u0645\u062d\u062a\u0627\u062c \u0645\u0641\u062a\u0627\u062d API \u0628\u0633.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 21
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae4d185a351214acf9ca8c1",
+      "post": "2026-11-01-free-audit-promo",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-11-01T13:00:00.000Z",
+      "sent": "2026-11-01T13:02:48.264Z",
+      "first_line": "Free website and Google presence audit for local businesses.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 2,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.03,
+        "Avg. Watch Time (sec)": 0.75,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae4d18510a950f13734e4b6",
+      "post": "2026-11-01-free-audit-promo",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-11-01T13:00:00.000Z",
+      "sent": "2026-11-01T13:02:02.655Z",
+      "first_line": "Free website and Google presence audit for local businesses.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 7
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae4d18434702c2daac0b38f",
+      "post": "2026-10-31-redact-whatsapp-hidden-rules",
+      "fmt": "reel_avatar",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-31T23:00:00.000Z",
+      "sent": "2026-10-31T23:02:03.523Z",
+      "first_line": "\u0634\u0631\u0643\u0629 \u062e\u0635\u0648\u0635\u064a\u0629 \u0627\u0633\u0645\u0647\u0627 Redact \u0642\u0627\u0644\u062a \u0625\u0646 \u062d\u0648\u0627\u0644\u064a 80 \u0645\u0646 545 \u0635\u0641\u062d\u0629 \u0645\u0633\u0627\u0639\u062f\u0629 \u0641\u064a \u0648\u0627\u062a\u0633\u0627\u0628 \u0641\u064a\u0647\u0627 \u0643\u0644\u0627\u0645 \u0645\u0633\u062a\u062e\u0628\u064a \u0644\u0628\u0648\u062a \u0627\u0644\u062f\u0639\u0645. \u0645\u0644\u0627\u062d\u0638\u0629 \u0645\u0646\u0647\u0645 \u0642\u0627\u0644\u062a \u0644\u0644\u0628\u0648\u062a \u0645\u0627 \u064a\u0631\u0634\u062d\u0634 \u0623\u064a \u062c\u0647\u0629 \u0631\u0642\u0627\u0628\u064a\u0629 \u0644\u062d\u0645\u0627\u064a\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 114,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 5.71,
+        "Avg. Watch Time (sec)": 3.26,
+        "Reach": 106
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae4d183cd8290b9b901a5dc",
+      "post": "2026-10-31-redact-whatsapp-hidden-rules",
+      "fmt": "reel_avatar",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-31T23:00:00.000Z",
+      "sent": "2026-10-31T23:01:07.047Z",
+      "first_line": "\u0634\u0631\u0643\u0629 \u062e\u0635\u0648\u0635\u064a\u0629 \u0627\u0633\u0645\u0647\u0627 Redact \u0642\u0627\u0644\u062a \u0625\u0646 \u062d\u0648\u0627\u0644\u064a 80 \u0645\u0646 545 \u0635\u0641\u062d\u0629 \u0645\u0633\u0627\u0639\u062f\u0629 \u0641\u064a \u0648\u0627\u062a\u0633\u0627\u0628 \u0641\u064a\u0647\u0627 \u0643\u0644\u0627\u0645 \u0645\u0633\u062a\u062e\u0628\u064a \u0644\u0628\u0648\u062a \u0627\u0644\u062f\u0639\u0645. \u0645\u0644\u0627\u062d\u0638\u0629 \u0645\u0646\u0647\u0645 \u0642\u0627\u0644\u062a \u0644\u0644\u0628\u0648\u062a \u0645\u0627 \u064a\u0631\u0634\u062d\u0634 \u0623\u064a \u062c\u0647\u0629 \u0631\u0642\u0627\u0628\u064a\u0629 \u0644\u062d\u0645\u0627\u064a\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 22
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae3fcb72782e7f331c90c3c",
+      "post": "2026-10-31-openshell-sandbox",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-31T16:30:00.000Z",
+      "sent": "2026-10-31T16:31:35.724Z",
+      "first_line": "Free sandbox for running AI agents safely.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 54,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.17,
+        "Avg. Watch Time (sec)": 1.44,
+        "Reach": 45
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae3fcb656e01b97637feae3",
+      "post": "2026-10-31-openshell-sandbox",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-31T16:30:00.000Z",
+      "sent": "2026-10-31T16:30:36.957Z",
+      "first_line": "Free sandbox for running AI agents safely.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 10
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae3fcb656e01b97637feab7",
+      "post": "2026-10-31-ai-permission-check",
+      "fmt": "reel_avatar",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-31T12:00:00.000Z",
+      "sent": "2026-10-31T12:04:36.204Z",
+      "first_line": "\u0623\u063a\u0644\u0628\u0646\u0627 \u0628\u064a\u062f\u0648\u0633 \u0645\u0648\u0627\u0641\u0642 \u0645\u0646 \u063a\u064a\u0631 \u0645\u0627 \u064a\u0642\u0631\u0627. \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u0642\u062f\u0631 \u064a\u0642\u0631\u0627 \u0634\u0627\u0634\u0629 \u0627\u0644\u0635\u0644\u0627\u062d\u064a\u0627\u062a \u0628\u062f\u0627\u0644\u0643 \u0648\u064a\u0642\u0648\u0644\u0643 \u0627\u0646\u062a \u0645\u0648\u0627\u0641\u0642 \u0639\u0644\u0649 \u0625\u064a\u0647 \u0628\u062c\u062f.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 7,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.99,
+        "Avg. Watch Time (sec)": 9.89,
+        "Reach": 6
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae3fcb52782e7f331c90bdb",
+      "post": "2026-10-31-ai-permission-check",
+      "fmt": "reel_avatar",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-31T12:00:00.000Z",
+      "sent": "2026-10-31T12:01:45.617Z",
+      "first_line": "\u0623\u063a\u0644\u0628\u0646\u0627 \u0628\u064a\u062f\u0648\u0633 \u0645\u0648\u0627\u0641\u0642 \u0645\u0646 \u063a\u064a\u0631 \u0645\u0627 \u064a\u0642\u0631\u0627. \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u064a\u0642\u062f\u0631 \u064a\u0642\u0631\u0627 \u0634\u0627\u0634\u0629 \u0627\u0644\u0635\u0644\u0627\u062d\u064a\u0627\u062a \u0628\u062f\u0627\u0644\u0643 \u0648\u064a\u0642\u0648\u0644\u0643 \u0627\u0646\u062a \u0645\u0648\u0627\u0641\u0642 \u0639\u0644\u0649 \u0625\u064a\u0647 \u0628\u062c\u062f.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 15
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae3fcb456e01b97637fea47",
+      "post": "2026-10-30-local-wikipedia",
+      "fmt": "reel_avatar",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-30T16:30:00.000Z",
+      "sent": "2026-10-30T16:32:54.617Z",
+      "first_line": "\u0645\u0648\u0642\u0639 \u0627\u0633\u0645\u0647 Local Wikipedia \u0628\u064a\u0648\u0631\u064a\u0643 \u0635\u0641\u062d\u0627\u062a \u0648\u064a\u0643\u064a\u0628\u064a\u062f\u064a\u0627 \u0639\u0646 \u0623\u0645\u0627\u0643\u0646 \u0639\u0644\u0649 \u0628\u0639\u062f \u0646\u0635 \u0633\u0627\u0639\u0629 \u0645\u0634\u064a \u0645\u0646\u0643\u060c \u0648\u0645\u0643\u0627\u0646\u0643 \u0628\u064a\u0641\u0636\u0644 \u0641\u064a \u0627\u0644\u0628\u0631\u0627\u0648\u0632\u0631 \u0628\u062a\u0627\u0639\u0643 \u0628\u0633.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 22,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.7,
+        "Avg. Watch Time (sec)": 6.01,
+        "Reach": 19
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae3fcb3a83a7fb63c8ca007",
+      "post": "2026-10-30-local-wikipedia",
+      "fmt": "reel_avatar",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-30T16:30:00.000Z",
+      "sent": "2026-10-30T16:30:58.197Z",
+      "first_line": "\u0645\u0648\u0642\u0639 \u0627\u0633\u0645\u0647 Local Wikipedia \u0628\u064a\u0648\u0631\u064a\u0643 \u0635\u0641\u062d\u0627\u062a \u0648\u064a\u0643\u064a\u0628\u064a\u062f\u064a\u0627 \u0639\u0646 \u0623\u0645\u0627\u0643\u0646 \u0639\u0644\u0649 \u0628\u0639\u062f \u0646\u0635 \u0633\u0627\u0639\u0629 \u0645\u0634\u064a \u0645\u0646\u0643\u060c \u0648\u0645\u0643\u0627\u0646\u0643 \u0628\u064a\u0641\u0636\u0644 \u0641\u064a \u0627\u0644\u0628\u0631\u0627\u0648\u0632\u0631 \u0628\u062a\u0627\u0639\u0643 \u0628\u0633.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 21
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae3fcb32782e7f331c90b37",
+      "post": "2026-10-30-ai-customer-faq",
+      "fmt": "reel_avatar",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-30T12:00:00.000Z",
+      "sent": "2026-10-30T12:02:05.570Z",
+      "first_line": "\u0625\u0632\u0627\u064a \u062a\u0639\u0645\u0644 \u0635\u0641\u062d\u0629 \u0623\u0633\u0626\u0644\u0629 \u0634\u0627\u0626\u0639\u0629 \u0645\u0646 \u0625\u064a\u0645\u064a\u0644\u0627\u062a \u0632\u0628\u0627\u064a\u0646\u0643 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 20,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.87,
+        "Avg. Watch Time (sec)": 3.07,
+        "Reach": 17
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae3fcb22782e7f331c90b0a",
+      "post": "2026-10-30-ai-customer-faq",
+      "fmt": "reel_avatar",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-30T12:00:00.000Z",
+      "sent": "2026-10-30T12:00:50.283Z",
+      "first_line": "\u0625\u0632\u0627\u064a \u062a\u0639\u0645\u0644 \u0635\u0641\u062d\u0629 \u0623\u0633\u0626\u0644\u0629 \u0634\u0627\u0626\u0639\u0629 \u0645\u0646 \u0625\u064a\u0645\u064a\u0644\u0627\u062a \u0632\u0628\u0627\u064a\u0646\u0643 \u0628\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 28
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae3b7448d19aa0a5be45751",
+      "post": "2026-10-30-gemini-business-tools",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-30T23:00:00.000Z",
+      "sent": "2026-10-30T23:01:59.004Z",
+      "first_line": "Google Gemini business tools for small business owners.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 1,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.04,
+        "Avg. Watch Time (sec)": 2.21,
+        "Reach": 1
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae3b74460532fc2b0cfe93d",
+      "post": "2026-10-30-gemini-business-tools",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-30T23:00:00.000Z",
+      "sent": "2026-10-30T23:00:50.877Z",
+      "first_line": "Google Gemini business tools for small business owners.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 7
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae26523a840ef151b676786",
+      "post": "2026-10-29-php-flaw-host",
+      "fmt": "reel_mascot",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-29T23:00:00.000Z",
+      "sent": "2026-10-29T23:03:29.121Z",
+      "first_line": "Critical PHP security flaw, what WordPress site owners should do.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 95,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 6.63,
+        "Avg. Watch Time (sec)": 4.42,
+        "Reach": 89
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae2652260384583ecd4c546",
+      "post": "2026-10-29-php-flaw-host",
+      "fmt": "reel_mascot",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-29T23:00:00.000Z",
+      "sent": "2026-10-29T23:01:04.028Z",
+      "first_line": "Critical PHP security flaw, what WordPress site owners should do.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 11
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae1d14b96dccc28f6789961",
+      "post": "2026-10-29-mitmproxy-tool",
+      "fmt": "reel_stickman",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-29T16:30:00.000Z",
+      "sent": "2026-10-29T16:31:59.151Z",
+      "first_line": "Free tool to inspect HTTP traffic from your apps.",
+      "metrics": {
+        "Reactions": 2,
+        "Comments": 0,
+        "Eng. Rate": 2.27,
+        "Views": 145,
+        "Shares": 1,
+        "Saves": 0,
+        "Watch Time (min)": 11.64,
+        "Avg. Watch Time (sec)": 5.17,
+        "Reach": 132
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae1d14a4e936aa1bcc04ebe",
+      "post": "2026-10-29-mitmproxy-tool",
+      "fmt": "reel_stickman",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-29T16:30:00.000Z",
+      "sent": "2026-10-29T16:31:05.263Z",
+      "first_line": "Free tool to inspect HTTP traffic from your apps.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 17
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae10e162f35d654faec94b4",
+      "post": "2026-10-29-ai-morning-brief",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-29T12:00:00.000Z",
+      "sent": "2026-10-29T12:04:54.744Z",
+      "first_line": "How to plan your morning with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 15,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.49,
+        "Avg. Watch Time (sec)": 6.4,
+        "Reach": 11
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae10e162086adf9c11834f8",
+      "post": "2026-10-29-ai-morning-brief",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-29T12:00:00.000Z",
+      "sent": "2026-10-29T12:02:09.157Z",
+      "first_line": "How to plan your morning with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae10e154e914b3cee28df33",
+      "post": "2026-10-28-muse-share-leak",
+      "fmt": "reel_stickman",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-28T23:00:00.000Z",
+      "sent": "2026-10-28T23:02:56.058Z",
+      "first_line": "Meta Muse leaked private AI chats, how to protect yours.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 113,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 8.98,
+        "Avg. Watch Time (sec)": 5.13,
+        "Reach": 107
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae10e144137b5e3590bafcd",
+      "post": "2026-10-28-muse-share-leak",
+      "fmt": "reel_stickman",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-28T23:00:00.000Z",
+      "sent": "2026-10-28T23:01:46.995Z",
+      "first_line": "Meta Muse leaked private AI chats, how to protect yours.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 26
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ae074eaf8fdca14fefa169f",
+      "post": "2026-10-28-permit-pending-game",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-28T16:30:00.000Z",
+      "sent": "2026-10-28T16:32:00.235Z",
+      "first_line": "Free browser city builder game where you are the mayor.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 14,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.76,
+        "Avg. Watch Time (sec)": 4.12,
+        "Reach": 8
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ae074eaf8fdca14fefa164d",
+      "post": "2026-10-28-permit-pending-game",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-28T16:30:00.000Z",
+      "sent": "2026-10-28T16:31:21.186Z",
+      "first_line": "Free browser city builder game where you are the mayor.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 9
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6adfc0ac3ffda7dd059172ad",
+      "post": "2026-10-28-ai-pr-review",
+      "fmt": "reel_mascot",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-28T12:00:00.000Z",
+      "sent": "2026-10-28T12:03:43.859Z",
+      "first_line": "How to review a pull request faster with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 15,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.75,
+        "Avg. Watch Time (sec)": 3,
+        "Reach": 15
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6adfc0ab465475d28775c667",
+      "post": "2026-10-27-claude-duet-approval",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-27T23:00:00.000Z",
+      "sent": "2026-10-27T23:02:36.710Z",
+      "first_line": "Claude Duet explained, an AI agent that asks first.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 24,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.62,
+        "Avg. Watch Time (sec)": 1.76,
+        "Reach": 20
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6adfc0ab2e4832a623d751be",
+      "post": "2026-10-28-ai-pr-review",
+      "fmt": "reel_mascot",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-28T12:00:00.000Z",
+      "sent": "2026-10-28T12:09:53.409Z",
+      "first_line": "How to review a pull request faster with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 18
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6adfc0aa2e4832a623d75116",
+      "post": "2026-10-27-claude-duet-approval",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-27T23:00:00.000Z",
+      "sent": "2026-10-27T23:01:25.366Z",
+      "first_line": "Claude Duet explained, an AI agent that asks first.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 8
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6adf2ad38b3bea238dc81301",
+      "post": "2026-10-27-adobe-plugin-chatgpt",
+      "fmt": "reel_mascot",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-27T16:30:00.000Z",
+      "sent": "2026-10-27T16:32:33.052Z",
+      "first_line": "Adobe plugin in ChatGPT, edit images and PDFs in chat.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 9,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.53,
+        "Avg. Watch Time (sec)": 4.01,
+        "Reach": 8
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6adf2ad30e2d22425b216605",
+      "post": "2026-10-27-adobe-plugin-chatgpt",
+      "fmt": "reel_mascot",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-27T16:30:00.000Z",
+      "sent": "2026-10-27T16:31:23.249Z",
+      "first_line": "Adobe plugin in ChatGPT, edit images and PDFs in chat.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 4
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6adf2ad2295aa0bde9947cf9",
+      "post": "2026-10-26-ai-review-themes",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-26T12:00:00.000Z",
+      "sent": "2026-10-26T12:01:27.190Z",
+      "first_line": "How to find the top complaint in your customer reviews with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 12,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.37,
+        "Avg. Watch Time (sec)": 2.03,
+        "Reach": 10
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6adf2ad10e2d22425b216580",
+      "post": "2026-10-26-ai-review-themes",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-26T12:00:00.000Z",
+      "sent": "2026-10-26T12:00:25.587Z",
+      "first_line": "How to find the top complaint in your customer reviews with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 8
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ade557ebd33ce99c3890172",
+      "post": "2026-10-27-ai-design-directions",
+      "fmt": "reel_stickman",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-27T12:00:00.000Z",
+      "sent": "2026-10-27T12:05:20.459Z",
+      "first_line": "How to get 3 design directions from a client brief with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 114,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 9.45,
+        "Avg. Watch Time (sec)": 5.45,
+        "Reach": 100
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ade557dbd33ce99c3890111",
+      "post": "2026-10-27-ai-design-directions",
+      "fmt": "reel_stickman",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-27T12:00:00.000Z",
+      "sent": "2026-10-27T12:02:32.948Z",
+      "first_line": "How to get 3 design directions from a client brief with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 7
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ade557ce4be8a4d86c1def9",
+      "post": "2026-10-26-banks-block-agents",
+      "fmt": "reel_mascot",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-26T23:00:00.000Z",
+      "sent": "2026-10-26T23:01:14.840Z",
+      "first_line": "Big banks limit AI agents, what it means for your business.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ade557c8b3d437ddc231cab",
+      "post": "2026-10-26-banks-block-agents",
+      "fmt": "reel_mascot",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-26T23:00:00.000Z",
+      "sent": "2026-10-26T23:03:35.378Z",
+      "first_line": "Big banks limit AI agents, what it means for your business.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 20,
+        "Views": 8,
+        "Shares": 1,
+        "Saves": 0,
+        "Watch Time (min)": 2.03,
+        "Avg. Watch Time (sec)": 24.36,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ade557b8b3d437ddc231c4a",
+      "post": "2026-10-26-sphinx-git-hook",
+      "fmt": "reel_stickman",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-26T16:30:00.000Z",
+      "sent": "2026-10-26T16:32:39.496Z",
+      "first_line": "Free Git hook that quizzes you on AI written code.",
+      "metrics": {
+        "Reactions": 4,
+        "Comments": 0,
+        "Eng. Rate": 4.35,
+        "Views": 128,
+        "Shares": 0,
+        "Saves": 1,
+        "Watch Time (min)": 12.04,
+        "Avg. Watch Time (sec)": 6.12,
+        "Reach": 115
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ade557b0b5343d070e9e14e",
+      "post": "2026-10-26-sphinx-git-hook",
+      "fmt": "reel_stickman",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-26T16:30:00.000Z",
+      "sent": "2026-10-26T16:30:37.059Z",
+      "first_line": "Free Git hook that quizzes you on AI written code.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 30
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ade5579bd33ce99c388fe16",
+      "post": "2026-10-25-ai-interview-first",
+      "fmt": "reel_stickman",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-25T23:00:00.000Z",
+      "sent": "2026-10-25T23:01:11.837Z",
+      "first_line": "Better ChatGPT prompts by letting AI ask questions.",
+      "metrics": {
+        "Reactions": 10,
+        "Comments": 0,
+        "Eng. Rate": 2.38,
+        "Views": 889,
+        "Shares": 1,
+        "Saves": 8,
+        "Watch Time (min)": 99.69,
+        "Avg. Watch Time (sec)": 7.32,
+        "Reach": 797
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ade55786887a2efc11eaae3",
+      "post": "2026-10-25-ai-interview-first",
+      "fmt": "reel_stickman",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-25T23:00:00.000Z",
+      "sent": "2026-10-25T23:00:11.216Z",
+      "first_line": "Better ChatGPT prompts by letting AI ask questions.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 90
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6adc731fe4be8a4d864c4e26",
+      "post": "2026-10-25-desk-linux",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-25T16:30:00.000Z",
+      "sent": "2026-10-25T16:31:28.177Z",
+      "first_line": "Skeuomorphic Linux desktop environment.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 0.88,
+        "Views": 119,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 9.77,
+        "Avg. Watch Time (sec)": 5.23,
+        "Reach": 113
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6adc731f0b5343d07073b051",
+      "post": "2026-10-25-desk-linux",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-25T16:30:00.000Z",
+      "sent": "2026-10-25T16:30:47.210Z",
+      "first_line": "Skeuomorphic Linux desktop environment.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 73
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6adb97c3e4be8a4d86197a06",
+      "post": "2026-10-25-review-kit",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-25T12:00:00.000Z",
+      "sent": "2026-10-25T12:02:25.712Z",
+      "first_line": "Free Google review request templates for home service businesses.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 10,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.78,
+        "Avg. Watch Time (sec)": 5.18,
+        "Reach": 9
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6adb97c33d5b27036b43c495",
+      "post": "2026-10-25-review-kit",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-25T12:00:00.000Z",
+      "sent": "2026-10-25T12:01:08.225Z",
+      "first_line": "Free Google review request templates for home service businesses.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 61
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6adb97c23d5b27036b43c45f",
+      "post": "2026-10-24-ai-doubt-questions",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-24T23:00:00.000Z",
+      "sent": "2026-10-24T23:02:18.955Z",
+      "first_line": "How to stop AI from making things up.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 8,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.66,
+        "Avg. Watch Time (sec)": 3.94,
+        "Reach": 6
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6adb97c19acae620d80d55ee",
+      "post": "2026-10-24-ai-doubt-questions",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-24T23:00:00.000Z",
+      "sent": "2026-10-24T23:01:10.626Z",
+      "first_line": "How to stop AI from making things up.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 0.65,
+        "Video Views": 154
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6adb282dd8e05f97fb0b6d31",
+      "post": "2026-10-24-talorys-assistant",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-24T16:30:00.000Z",
+      "sent": "2026-10-24T16:31:33.738Z",
+      "first_line": "Free open source personal AI assistant.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 15,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.38,
+        "Avg. Watch Time (sec)": 5.54,
+        "Reach": 9
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6adb282c2baa602d0242cc59",
+      "post": "2026-10-24-talorys-assistant",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-24T16:30:00.000Z",
+      "sent": "2026-10-24T16:30:51.600Z",
+      "first_line": "Free open source personal AI assistant.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 11
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.185Z"
+    },
+    {
+      "buffer": "6ada6e67e391db54dafcefcb",
+      "post": "2026-10-24-ai-readme",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-24T12:00:00.000Z",
+      "sent": "2026-10-24T12:03:01.244Z",
+      "first_line": "How to write a good README with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 88,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 2.89,
+        "Avg. Watch Time (sec)": 2.04,
+        "Reach": 71
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ada6e669a872e8621a01a63",
+      "post": "2026-10-24-ai-readme",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-24T12:00:00.000Z",
+      "sent": "2026-10-24T12:01:28.287Z",
+      "first_line": "How to write a good README with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 52
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ada10b9eb1348c17ac0597a",
+      "post": "2026-10-23-facebook-your-algorithm",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-23T23:00:00.000Z",
+      "sent": "2026-10-23T23:02:32.276Z",
+      "first_line": "Facebook Your Algorithm feature explained.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.5,
+        "Avg. Watch Time (sec)": 6.03,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ada10b8e8cca8cdcc53fdec",
+      "post": "2026-10-23-facebook-your-algorithm",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-23T23:00:00.000Z",
+      "sent": "2026-10-23T23:01:26.804Z",
+      "first_line": "Facebook Your Algorithm feature explained.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 54
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad9da801ddfbd0b4bd9e80d",
+      "post": "2026-10-23-guitoro-guitar",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-23T16:30:00.000Z",
+      "sent": "2026-10-23T16:32:52.085Z",
+      "first_line": "Free online virtual guitar.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 28,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 2.63,
+        "Avg. Watch Time (sec)": 5.64,
+        "Reach": 27
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ad9da7f4187d54841a1a827",
+      "post": "2026-10-23-guitoro-guitar",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-23T16:30:00.000Z",
+      "sent": "2026-10-23T16:31:23.130Z",
+      "first_line": "Free online virtual guitar.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 82
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad91d5cb4d22f4a9818c29c",
+      "post": "2026-10-23-ai-design-review",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-23T12:00:00.000Z",
+      "sent": "2026-10-23T12:04:59.819Z",
+      "first_line": "How to review a UI design with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 5.26,
+        "Views": 20,
+        "Shares": 0,
+        "Saves": 1,
+        "Watch Time (min)": 1.83,
+        "Avg. Watch Time (sec)": 5.78,
+        "Reach": 19
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ad91d5c2109dcc39c0808fa",
+      "post": "2026-10-23-ai-design-review",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-23T12:00:00.000Z",
+      "sent": "2026-10-23T12:02:12.544Z",
+      "first_line": "How to review a UI design with AI.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 1.92,
+        "Video Views": 52
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad91d5bb4d22f4a9818c24f",
+      "post": "2026-10-22-muse-wonder-switch",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-22T23:00:00.000Z",
+      "sent": "2026-10-22T23:02:29.211Z",
+      "first_line": "Meta Muse Wonder price and review.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.61,
+        "Avg. Watch Time (sec)": 9.17,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ad91d5bb4d22f4a9818c20e",
+      "post": "2026-10-22-muse-wonder-switch",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-22T23:00:00.000Z",
+      "sent": "2026-10-22T23:01:16.715Z",
+      "first_line": "Meta Muse Wonder price and review.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 2.22,
+        "Video Views": 45
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad885777f2a5e272ecaae85",
+      "post": "2026-10-22-opendesign-workspace",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-22T16:30:00.000Z",
+      "sent": "2026-10-22T16:31:16.984Z",
+      "first_line": "Open source AI design tool for prototypes and slides.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 48
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad8857772c27851146a408c",
+      "post": "2026-10-22-opendesign-workspace",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-22T16:30:00.000Z",
+      "sent": "2026-10-22T16:33:32.176Z",
+      "first_line": "Open source AI design tool for prototypes and slides.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 6,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.4,
+        "Avg. Watch Time (sec)": 3.96,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ad7c91af5dcb31b88ddf5e3",
+      "post": "2026-10-22-ai-video-clips",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-22T12:00:00.000Z",
+      "sent": "2026-10-22T12:02:03.133Z",
+      "first_line": "How to turn one video into short clips with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 39
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad7c91aed28fb758abb39eb",
+      "post": "2026-10-22-ai-video-clips",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-22T12:00:00.000Z",
+      "sent": "2026-10-22T12:04:02.845Z",
+      "first_line": "How to turn one video into short clips with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 3,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.11,
+        "Avg. Watch Time (sec)": 2.13,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ad7c919ad4f0ba79c522ff6",
+      "post": "2026-10-21-gemini-4-argon-price",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-21T23:00:00.000Z",
+      "sent": "2026-10-21T23:02:22.224Z",
+      "first_line": "Gemini 4 Argon price and availability.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 6,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.22,
+        "Avg. Watch Time (sec)": 14.7,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.298Z"
+    },
+    {
+      "buffer": "6ad7c918f5dcb31b88ddf5b6",
+      "post": "2026-10-21-gemini-4-argon-price",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-21T23:00:00.000Z",
+      "sent": "2026-10-21T23:01:04.114Z",
+      "first_line": "Gemini 4 Argon price and availability.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 69
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad7350095f8ed1a3c83c29e",
+      "post": "2026-10-21-sonder-editor",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-21T16:30:00.000Z",
+      "sent": "2026-10-21T16:33:03.596Z",
+      "first_line": "Free markdown editor for Mac.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 6.67,
+        "Views": 18,
+        "Shares": 0,
+        "Saves": 1,
+        "Watch Time (min)": 1.19,
+        "Avg. Watch Time (sec)": 3.95,
+        "Reach": 15
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad734fffc46f49b9285be06",
+      "post": "2026-10-21-sonder-editor",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-21T16:30:00.000Z",
+      "sent": "2026-10-21T16:31:38.946Z",
+      "first_line": "Free markdown editor for Mac.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 54
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad687237b002f7cbe4f788d",
+      "post": "2026-10-21-ai-unit-tests",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-21T12:00:00.000Z",
+      "sent": "2026-10-21T12:03:23.448Z",
+      "first_line": "How to write unit tests with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 1,
+        "Eng. Rate": 1.11,
+        "Views": 114,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 7.33,
+        "Avg. Watch Time (sec)": 4.27,
+        "Reach": 90
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad687237b002f7cbe4f7861",
+      "post": "2026-10-21-ai-unit-tests",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-21T12:00:00.000Z",
+      "sent": "2026-10-21T12:01:57.530Z",
+      "first_line": "How to write unit tests with AI.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 2.27,
+        "Video Views": 44
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad6872252bb7ebd605efe72",
+      "post": "2026-10-20-chatgpt-chrome-tabs",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-20T23:00:00.000Z",
+      "sent": "2026-10-20T23:01:36.669Z",
+      "first_line": "ChatGPT Chrome extension Work mode explained.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 66
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad687224d814f3c3839fa1e",
+      "post": "2026-10-20-chatgpt-chrome-tabs",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-20T23:00:00.000Z",
+      "sent": "2026-10-20T23:02:25.115Z",
+      "first_line": "ChatGPT Chrome extension Work mode explained.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.94,
+        "Avg. Watch Time (sec)": 9.43,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad5eac6c31fbd1de8eb5090",
+      "post": "2026-10-20-iosevka-font",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-20T16:30:00.000Z",
+      "sent": "2026-10-20T16:31:44.708Z",
+      "first_line": "Best free coding font for developers.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 26,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 2.06,
+        "Avg. Watch Time (sec)": 5.16,
+        "Reach": 22
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad5eac5da0da05802b7d7bb",
+      "post": "2026-10-20-iosevka-font",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-20T16:30:00.000Z",
+      "sent": "2026-10-20T16:31:07.402Z",
+      "first_line": "Best free coding font for developers.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 47
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad5133eae173d6e0013d20d",
+      "post": "2026-10-20-ai-meeting-actions",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-20T12:00:00.000Z",
+      "sent": "2026-10-20T12:04:42.679Z",
+      "first_line": "How to summarize a meeting transcript with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 19,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.48,
+        "Avg. Watch Time (sec)": 1.44,
+        "Reach": 17
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad5133e769b457934d5fcc9",
+      "post": "2026-10-20-ai-meeting-actions",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-20T12:00:00.000Z",
+      "sent": "2026-10-20T12:02:00.804Z",
+      "first_line": "How to summarize a meeting transcript with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 65
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad5133da48c8f8371adab22",
+      "post": "2026-10-19-muse-spark-open",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-19T23:00:00.000Z",
+      "sent": "2026-10-19T23:02:01.424Z",
+      "first_line": "Meta Muse Spark Open model explained.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 10,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.96,
+        "Avg. Watch Time (sec)": 4.8,
+        "Reach": 9
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad5133d938409f1d0e20517",
+      "post": "2026-10-19-muse-spark-open",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-19T23:00:00.000Z",
+      "sent": "2026-10-19T23:01:24.164Z",
+      "first_line": "Meta Muse Spark Open model explained.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 95
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad4edfd299cc1d01a102ced",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-17T19:45:28.000Z",
+      "sent": "2026-10-17T19:45:28.000Z",
+      "first_line": "Your phone rang at 9:47 last night. Who picked up?",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.68,
+        "Avg. Watch Time (sec)": 8.17,
+        "Reach": 4
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad4edfd299cc1d01a102ce4",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-18T02:52:03.000Z",
+      "sent": "2026-10-18T02:52:03.000Z",
+      "first_line": "Same business. Completely different first impression.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 9,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.42,
+        "Avg. Watch Time (sec)": 9.48,
+        "Reach": 7
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad4edfd299cc1d01a102cd8",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-18T04:01:45.000Z",
+      "sent": "2026-10-18T04:01:45.000Z",
+      "first_line": "Myth. You need a big following to get customers.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 3,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad4479f0a208cb3234d1a9b",
+      "post": "2026-10-19-opencode-agent",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-19T16:30:00.000Z",
+      "sent": "2026-10-19T16:30:59.871Z",
+      "first_line": "Open source AI coding agent for your terminal.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 49
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad4479ee272c4918fb3d230",
+      "post": "2026-10-18-summarize-pdf",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-18T23:00:00.000Z",
+      "sent": "2026-10-18T23:00:35.210Z",
+      "first_line": "How to summarize a PDF with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 62
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad4479e0a208cb3234d1a71",
+      "post": "2026-10-19-ai-clean-spreadsheet",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-19T12:00:00.000Z",
+      "sent": "2026-10-19T12:02:05.767Z",
+      "first_line": "How to clean messy data in a spreadsheet with AI.",
+      "metrics": {
+        "Reactions": 2,
+        "Comments": 0,
+        "Eng. Rate": 3.57,
+        "Video Views": 56
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad4479d0b0d72757a084ec4",
+      "post": "2026-10-18-coolors-palettes",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-18T16:30:00.000Z",
+      "sent": "2026-10-18T16:30:16.558Z",
+      "first_line": "Free color palette generator.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 2.5,
+        "Video Views": 40
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad4479c0a208cb3234d1a48",
+      "post": "2026-10-18-ava-ai",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-18T12:00:00.000Z",
+      "sent": "2026-10-18T12:00:48.390Z",
+      "first_line": "AI chat assistant for small business websites.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Video Views": 16
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad443ba5c87c17ec12a891a",
+      "post": null,
+      "fmt": null,
+      "service": "youtube",
+      "channel": "6ad443b8778b240e2f4389b4",
+      "due": "2026-10-17T21:40:43.000Z",
+      "sent": "2026-10-17T21:40:43.000Z",
+      "first_line": "Every missed call is a customer calling your competitor. Our AI front desk answers 24/7, books the job, texts back missed calls, and asks for reviews.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 4.55,
+        "Video Views": 22
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Video Views": "count"
+      },
+      "metrics_updated": "2026-11-08T08:02:18.186Z"
+    },
+    {
+      "buffer": "6ad43427938409f1d0b239f7",
+      "post": "2026-10-18-ava-ai",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-18T12:00:00.000Z",
+      "sent": "2026-10-18T12:02:32.747Z",
+      "first_line": "AI chat assistant for small business websites.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 9,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.55,
+        "Avg. Watch Time (sec)": 11.62,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad39c731f9abbd70dff2fa6",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-16T22:21:19.000Z",
+      "sent": "2026-10-16T22:21:19.000Z",
+      "first_line": "Your website has about 3 seconds to impress someone. Most of them waste it.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 197.06,
+        "Views": 44,
+        "Shares": 66,
+        "Saves": 0,
+        "Watch Time (min)": 8.9,
+        "Avg. Watch Time (sec)": 12.14,
+        "Reach": 34
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad28ad1c19525fddd398768",
+      "post": "2026-10-19-opencode-agent",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-19T16:30:00.000Z",
+      "sent": "2026-10-19T16:32:38.438Z",
+      "first_line": "Open source AI coding agent for your terminal.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 8,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.96,
+        "Avg. Watch Time (sec)": 6.38,
+        "Reach": 7
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad28ad0c80590ed08af70c8",
+      "post": "2026-10-19-ai-clean-spreadsheet",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-19T12:00:00.000Z",
+      "sent": "2026-10-19T12:02:58.293Z",
+      "first_line": "How to clean messy data in a spreadsheet with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.19,
+        "Avg. Watch Time (sec)": 1.88,
+        "Reach": 4
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad28ad0c74c39c9ee577a4d",
+      "post": "2026-10-18-summarize-pdf",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-18T23:00:00.000Z",
+      "sent": "2026-10-18T23:02:53.494Z",
+      "first_line": "How to summarize a PDF with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 78,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 2.25,
+        "Avg. Watch Time (sec)": 1.9,
+        "Reach": 62
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad28ad0c74c39c9ee577a1f",
+      "post": "2026-10-18-coolors-palettes",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-18T16:30:00.000Z",
+      "sent": "2026-10-18T16:31:30.679Z",
+      "first_line": "Free color palette generator.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 5.71,
+        "Views": 62,
+        "Shares": 1,
+        "Saves": 1,
+        "Watch Time (min)": 4.23,
+        "Avg. Watch Time (sec)": 4.53,
+        "Reach": 35
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad28acfc74c39c9ee5779f4",
+      "post": "2026-10-17-screenshot-to-text",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-17T23:00:00.000Z",
+      "sent": "2026-10-17T23:02:21.931Z",
+      "first_line": "How to copy text from an image with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 0.61,
+        "Avg. Watch Time (sec)": 7.37,
+        "Reach": 4
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad28aced254ff4dc47c5a88",
+      "post": "2026-10-17-excalidraw",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-17T16:30:00.000Z",
+      "sent": "2026-10-17T16:31:19.677Z",
+      "first_line": "Free online whiteboard for diagrams.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 104,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 2.52,
+        "Avg. Watch Time (sec)": 1.53,
+        "Reach": 100
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad28aceab7421cbc59c2b3c",
+      "post": "2026-10-17-ai-tutor-plan",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-17T12:00:00.000Z",
+      "sent": "2026-10-17T12:02:00.096Z",
+      "first_line": "How to learn a new skill with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 25,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.31,
+        "Avg. Watch Time (sec)": 3.41,
+        "Reach": 23
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ad28acdc19525fddd3986d8",
+      "post": "2026-10-16-three-part-prompt",
+      "fmt": "reel_vo_bf_lily@1.15_m2",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-16T23:00:00.000Z",
+      "sent": "2026-10-16T23:01:01.941Z",
+      "first_line": "How to write better AI prompts.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.41,
+        "Avg. Watch Time (sec)": 10.54,
+        "Reach": 5
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ace1d23b7b7fb6d7b06e0cb",
+      "post": "2026-10-16-photopea-free-psd",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-16T16:30:00.000Z",
+      "sent": "2026-10-16T16:32:38.640Z",
+      "first_line": "Free Photoshop alternative online.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 4.35,
+        "Views": 26,
+        "Shares": 1,
+        "Saves": 0,
+        "Watch Time (min)": 3.44,
+        "Avg. Watch Time (sec)": 7.94,
+        "Reach": 23
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf315229b40e869260ac",
+      "post": "2026-10-16-photoshop-product-shoot",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-16T12:00:00.000Z",
+      "sent": "2026-10-16T12:04:48.650Z",
+      "first_line": "Photoshop Generative Fill product photo.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 16,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 2.04,
+        "Avg. Watch Time (sec)": 7.2,
+        "Reach": 15
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf305462be2e9036015a",
+      "post": "2026-10-15-squoosh-images",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-15T16:30:00.000Z",
+      "sent": "2026-10-15T16:33:40.870Z",
+      "first_line": "Free image compressor for websites.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 16,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.32,
+        "Avg. Watch Time (sec)": 5.26,
+        "Reach": 13
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf303d6121df403f15b8",
+      "post": "2026-10-15-ai-write-like-you",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-15T23:00:00.000Z",
+      "sent": "2026-10-15T23:02:22.664Z",
+      "first_line": "How to make AI writing sound human.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.14,
+        "Avg. Watch Time (sec)": 11.39,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf2f9f22b96ae7f3b3a7",
+      "post": "2026-10-15-ai-debug-prompt",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-15T12:00:00.000Z",
+      "sent": "2026-10-15T12:04:53.696Z",
+      "first_line": "How to debug code with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 9,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.09,
+        "Avg. Watch Time (sec)": 7.28,
+        "Reach": 6
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf2eaec88be081f4522d",
+      "post": "2026-10-14-ollama-local-ai",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-14T16:30:00.000Z",
+      "sent": "2026-10-14T16:32:30.611Z",
+      "first_line": "Run AI models locally for free.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 10,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.02,
+        "Avg. Watch Time (sec)": 6.14,
+        "Reach": 8
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf2e3d6121df403f1541",
+      "post": "2026-10-14-microsoft-decision-1",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-14T23:00:00.000Z",
+      "sent": "2026-10-14T23:04:13.555Z",
+      "first_line": "Microsoft Decision 1 AI model.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.02,
+        "Avg. Watch Time (sec)": 12.24,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf2d9f22b96ae7f3b37c",
+      "post": "2026-10-14-ai-resume-tailor",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-14T12:00:00.000Z",
+      "sent": "2026-10-14T12:04:07.583Z",
+      "first_line": "How to tailor your resume with AI.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 9,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.54,
+        "Avg. Watch Time (sec)": 11.57,
+        "Reach": 7
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf2caec88be081f451d1",
+      "post": "2026-10-13-haiku-5-5-price",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-13T23:00:00.000Z",
+      "sent": "2026-10-13T23:03:06.442Z",
+      "first_line": "Claude Haiku 5.5 price.",
+      "metrics": {
+        "Reactions": 3,
+        "Comments": 0,
+        "Eng. Rate": 2.36,
+        "Views": 136,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 15.1,
+        "Avg. Watch Time (sec)": 6.97,
+        "Reach": 127
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acdaf2b3d6121df403f14db",
+      "post": "2026-10-13-upscayl",
+      "fmt": "reel_vo_bf_lily@1.15",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-13T16:30:00.000Z",
+      "sent": "2026-10-13T16:32:30.000Z",
+      "first_line": "Free AI image upscaler.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 9.09,
+        "Views": 33,
+        "Shares": 1,
+        "Saves": 0,
+        "Watch Time (min)": 3.45,
+        "Avg. Watch Time (sec)": 7.66,
+        "Reach": 22
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acc2f787db619a291525088",
+      "post": "2026-10-12-thank-you-note",
+      "fmt": "reel_vo_bf_emma",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-12T23:00:00.000Z",
+      "sent": "2026-10-12T23:02:50.083Z",
+      "first_line": "A thank you after the job is the cheapest marketing there is.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 6,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.84,
+        "Avg. Watch Time (sec)": 27.55,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acc2f77fa026cfb811ec1aa",
+      "post": "2026-10-12-ai-meeting-notes",
+      "fmt": "reel_vo_bf_emma",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-12T12:00:00.000Z",
+      "sent": "2026-10-12T12:02:21.396Z",
+      "first_line": "Let AI turn your messy notes into a clean to do list.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.55,
+        "Avg. Watch Time (sec)": 18.61,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acc2f77ea568e911a483936",
+      "post": "2026-10-12-invoice-same-day",
+      "fmt": "reel_vo_bf_emma",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-12T16:30:00.000Z",
+      "sent": "2026-10-12T16:32:12.928Z",
+      "first_line": "The longer you wait to send an invoice, the longer you wait to get paid.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.58,
+        "Avg. Watch Time (sec)": 18.98,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acbd9dcfa026cfb81105395",
+      "post": "2026-10-11-ai-practice",
+      "fmt": "reel_vo",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-11T23:00:00.000Z",
+      "sent": "2026-10-11T23:01:09.151Z",
+      "first_line": "Ask AI to play your toughest customer.",
+      "metrics": {
+        "Reactions": 0,
+        "Comments": 0,
+        "Eng. Rate": 0,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 1.7,
+        "Avg. Watch Time (sec)": 33.93,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acbb337f2257418180bff59",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-10T16:31:09.000Z",
+      "sent": "2026-10-10T16:31:09.000Z",
+      "first_line": "The business that replies first usually gets the job.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 33.33,
+        "Views": 7,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acaa442bba9419ccb155a2f",
+      "post": "2026-10-11-sunday-plan",
+      "fmt": "reel",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-11T16:30:00.000Z",
+      "sent": "2026-10-11T16:32:03.583Z",
+      "first_line": "Plan your week in 15 minutes every Sunday.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 6.67,
+        "Views": 20,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 2.14,
+        "Avg. Watch Time (sec)": 6.77,
+        "Reach": 15
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acaa442b07d37ac9786bc15",
+      "post": "2026-10-11-free-audit",
+      "fmt": "reel",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-11T12:00:00.000Z",
+      "sent": "2026-10-11T12:01:44.007Z",
+      "first_line": "We'll look at your website and Google presence for free. Here's what we check.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 14.29,
+        "Views": 8,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 4.69,
+        "Avg. Watch Time (sec)": 31.26,
+        "Reach": 7
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6acaa441f91f772d45a750c4",
+      "post": "2026-10-10-logo-myth",
+      "fmt": "reel",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-10T23:00:00.000Z",
+      "sent": "2026-10-10T23:00:59.436Z",
+      "first_line": "Myth. You need a fancy logo before you can start marketing.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 1.72,
+        "Views": 67,
+        "Shares": 0,
+        "Saves": 0,
+        "Watch Time (min)": 2.1,
+        "Avg. Watch Time (sec)": 1.97,
+        "Reach": 58
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Watch Time (min)": "count",
+        "Avg. Watch Time (sec)": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6aca61ab208bb5ef0df8e2c5",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-09T23:03:04.000Z",
+      "sent": "2026-10-09T23:03:04.000Z",
+      "first_line": "Stop undercharging because you're scared to lose the job.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 50,
+        "Views": 3,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6aca61ab208bb5ef0df8e2bf",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-10T12:02:55.000Z",
+      "sent": "2026-10-10T12:02:55.000Z",
+      "first_line": "Myth. You need a big following to get customers.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 50,
+        "Views": 2,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ac9102387a3def5bdfafaf9",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-09T12:05:05.000Z",
+      "sent": "2026-10-09T12:05:05.000Z",
+      "first_line": "Do all your similar tasks in one batch. Your brain will thank you.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 33.33,
+        "Views": 4,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-08T06:54:44.299Z"
+    },
+    {
+      "buffer": "6ac4285aa1596ff3fb065878",
+      "post": "2026-10-08-stop-doing-list",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-08T23:00:00.000Z",
+      "sent": "2026-10-08T23:02:27.253Z",
+      "first_line": "The one list that shows you what to stop doing.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 25,
+        "Views": 9,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 4
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-07T07:54:34.151Z"
+    },
+    {
+      "buffer": "6ac4285a38629554e345438a",
+      "post": "2026-10-08-ai-first-draft",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-08T16:30:00.000Z",
+      "sent": "2026-10-08T16:32:20.766Z",
+      "first_line": "Let AI write your first draft, never your final one.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 25,
+        "Views": 7,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 4
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-07T07:54:34.151Z"
+    },
+    {
+      "buffer": "6ac2d0655de5ee424c19950b",
+      "post": "2026-10-08-too-expensive",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-08T12:00:00.000Z",
+      "sent": "2026-10-08T12:05:27.846Z",
+      "first_line": "What to say when a customer tells you \u201cthat's too expensive.\u201d",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 25,
+        "Views": 11,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 4
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-07T07:54:34.151Z"
+    },
+    {
+      "buffer": "6ac2d064ca1380ada83a0515",
+      "post": "2026-10-07-three-numbers",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-07T16:30:00.000Z",
+      "sent": "2026-10-07T16:32:23.758Z",
+      "first_line": "Know your numbers. Three you should check every month.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 33.33,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-06T08:54:25.488Z"
+    },
+    {
+      "buffer": "6ac2d06469a169193a4ec856",
+      "post": "2026-10-07-angry-review",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-07T23:00:00.000Z",
+      "sent": "2026-10-07T23:03:32.920Z",
+      "first_line": "How to turn an angry review into your best advertisement.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 50,
+        "Views": 2,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-06T08:54:25.487Z"
+    },
+    {
+      "buffer": "6ac2d06469a169193a4ec82e",
+      "post": "2026-10-07-reviews-97",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-07T12:00:00.000Z",
+      "sent": "2026-10-07T12:05:32.065Z",
+      "first_line": "97% of people read reviews before they pick a local business.",
+      "metrics": {
+        "Reactions": 2,
+        "Comments": 0,
+        "Eng. Rate": 66.67,
+        "Views": 10,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-06T08:54:25.488Z"
+    },
+    {
+      "buffer": "6ac2d06363761da98b5f0a92",
+      "post": "2026-10-06-voice-memo-posts",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-06T23:00:00.000Z",
+      "sent": "2026-10-06T23:03:25.198Z",
+      "first_line": "Turn one voice memo into a week of posts with AI.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 33.33,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-05T09:54:13.812Z"
+    },
+    {
+      "buffer": "6ac2d0635de5ee424c1994ae",
+      "post": "2026-10-06-notifications",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-06T16:30:00.000Z",
+      "sent": "2026-10-06T16:32:13.066Z",
+      "first_line": "Your phone notifications are running your business. Turn most of them off.",
+      "metrics": {
+        "Reactions": 2,
+        "Comments": 2,
+        "Eng. Rate": 922.22,
+        "Views": 7,
+        "Shares": 78,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 9
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-05T09:54:13.812Z"
+    },
+    {
+      "buffer": "6ac2d062ca1380ada83a04bf",
+      "post": "2026-10-06-get-paid-faster",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-06T12:00:00.000Z",
+      "sent": "2026-10-06T12:03:12.928Z",
+      "first_line": "Getting paid faster is the cheapest raise you'll ever give yourself.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 50,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-05T09:54:13.812Z"
+    },
+    {
+      "buffer": "6ac2d0625de5ee424c199461",
+      "post": "2026-10-05-cheapest-myth",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-05T23:00:00.000Z",
+      "sent": "2026-10-05T23:02:02.656Z",
+      "first_line": "Myth. Customers always choose the cheapest option.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 33.33,
+        "Views": 5,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-04T10:54:05.114Z"
+    },
+    {
+      "buffer": "6ac2d061fe1389e41343b8b7",
+      "post": "2026-10-05-ai-email-replies",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-05T12:00:00.000Z",
+      "sent": "2026-10-05T12:03:36.780Z",
+      "first_line": "Stop typing the same email 20 times a week.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 50,
+        "Views": 8,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 2
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-04T10:54:05.114Z"
+    },
+    {
+      "buffer": "6ac2d06169a169193a4ec7c6",
+      "post": "2026-10-05-referral-ask",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-05T16:30:00.000Z",
+      "sent": "2026-10-05T16:32:07.804Z",
+      "first_line": "The fastest way to get more referrals is one sentence.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 33.33,
+        "Views": 10,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-04T10:54:05.114Z"
+    },
+    {
+      "buffer": "6ac2a881ca1380ada8346b01",
+      "post": "2026-10-09-two-minute-rule",
+      "fmt": "image",
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-04T19:40:31.757Z",
+      "sent": "2026-10-04T19:40:57.652Z",
+      "first_line": "The 2 minute rule that keeps your to do list from eating you alive.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 2,
+        "Eng. Rate": 100,
+        "Views": 7,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-03T11:53:54.290Z"
+    },
+    {
+      "buffer": "6ac2a591d467abe8cfc419cd",
+      "post": null,
+      "fmt": null,
+      "service": "instagram",
+      "channel": "6ac29f8e6a5c39ccb6139c75",
+      "due": "2026-10-04T19:17:11.969Z",
+      "sent": "2026-10-04T19:17:41.288Z",
+      "first_line": "Ever notice the ads at the very top of Google for plumbers, electricians, and locksmiths, with a badge and a star rating? Those are Google Local Services Ads.",
+      "metrics": {
+        "Reactions": 1,
+        "Comments": 0,
+        "Eng. Rate": 33.33,
+        "Views": 6,
+        "Shares": 0,
+        "Saves": 0,
+        "Follows": 0,
+        "Reach": 3
+      },
+      "metric_units": {
+        "Reactions": "count",
+        "Comments": "count",
+        "Eng. Rate": "percentage",
+        "Views": "count",
+        "Shares": "count",
+        "Saves": "count",
+        "Follows": "count",
+        "Reach": "count"
+      },
+      "metrics_updated": "2026-11-03T11:53:54.290Z"
+    }
+  ]
+}
