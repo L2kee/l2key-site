@@ -12,9 +12,9 @@ import { DropLetters } from "@/components/drop-letters";
 import { FaqList } from "@/components/faq-list";
 import { Marquee } from "@/components/marquee";
 import { LogoWall } from "@/components/logo-wall";
-import { StartTiles } from "@/components/start-tiles";
 import { DrawnSteps } from "@/components/drawn-steps";
-import { WORK } from "@/lib/content";
+import { ServicesRail } from "@/components/services-rail";
+import { TOP_SERVICES } from "@/lib/content";
 
 const FAQ = [
   {
@@ -76,9 +76,13 @@ export default function Home() {
         }}
       />
       {/* Hero. From sm up the lotus video sits behind the copy (.hero-stage
-          in globals.css) so the headline and the tiles share the first
-          screen. Phones keep the video above the copy. */}
-      <div className="hero-stage">
+          in globals.css), the welcome message centered in the first
+          screen (.home-hero). Phones keep the video above the copy. From lg up the
+          services menu runs down the left beside it (services-rail.tsx,
+          Moe 2026-11-08), lifted to line up with the navbar (.home-rail). */}
+      <div className="mx-auto flex w-full max-w-[1320px] gap-6 lg:px-4">
+      <ServicesRail className="home-rail" />
+      <div className="hero-stage home-hero min-w-0 flex-1">
       <HeroVideo />
 
       <HeroReveal className="hero-copy mx-auto flex max-w-6xl flex-col items-center px-6 pt-8 pb-16 text-center [--hero-delay:1200ms]">
@@ -89,7 +93,7 @@ export default function Home() {
             order (see .hero-letter and .hero-in in globals.css). */}
         <h1
           aria-label="Redefining Communication Through Innovation"
-          className={`hero-serif text-5xl font-semibold leading-[1.05] text-[#d6f6fa] [--accent-first:23] [--accent-last:39] sm:text-6xl xl:text-7xl ${serif.className}`}
+          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#d6f6fa] [--accent-first:23] [--accent-last:39] sm:text-5xl xl:text-6xl ${serif.className}`}
         >
           <span className="block">
             <DropLetters text="Redefining Communication" />
@@ -99,43 +103,40 @@ export default function Home() {
           </span>
         </h1>
 
-        <p className="hero-in mt-5 max-w-2xl text-balance text-lg text-white/80 [--i:2] sm:text-xl">
+        <p className="hero-in mt-4 max-w-2xl text-balance text-base text-white/80 [--i:2] sm:text-lg">
           Delivering Excellence Beyond Expectations
         </p>
 
-        <div className="hero-in mt-8 w-full [--i:3]">
-          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">
-            How Can We Bring Your Vision To Life?
-          </h2>
-          <StartTiles className="mt-4 lg:grid-cols-4" wide />
-          <p className="mt-6 text-sm text-white/60">
-            Got a question right now?{" "}
-            <AskAvaLink className="font-semibold text-[#5fd8e6] underline-offset-4 transition hover:text-white hover:underline" />{" "}
-            She&apos;s the same tech we build for you.
-          </p>
-        </div>
+        <p className="hero-in mt-8 text-sm text-white/60 [--i:3]">
+          Got a question right now?{" "}
+          <AskAvaLink className="font-semibold text-[#5fd8e6] underline-offset-4 transition hover:text-white hover:underline" />{" "}
+          She&apos;s the same tech we build for you.
+        </p>
       </HeroReveal>
       </div>
+      </div>
 
-      <Marquee />
+      {/* How it works, then Grow. Evolve. Elevate., then the tech logos
+          (Moe 2026-11-08). */}
+      <Marquee>
+        <section className="mx-auto max-w-5xl px-6 py-16">
+          <SectionHeading eyebrow="Simple. Smart. Seamless." title="From Idea To Execution. Three Steps. One Seamless Experience." />
+          <DrawnSteps steps={STEPS} />
+        </section>
+      </Marquee>
 
-      {/* How it works */}
+      {/* Top services (Moe 2026-11-08), in the Featured Work card layout
+          that used to sit here. The work itself lives on /works. */}
       <section className="mx-auto max-w-5xl px-6 py-16">
-        <SectionHeading eyebrow="Simple. Smart. Seamless." title="From Idea To Execution. Three Steps. One Seamless Experience." />
-        <DrawnSteps steps={STEPS} />
-      </section>
-
-      {/* Work preview */}
-      <section className="mx-auto max-w-5xl px-6 py-16">
-        <SectionHeading eyebrow="Proof, not promises" title="Featured work" />
+        <SectionHeading eyebrow="Proof, not promises" title="Our Top Services" />
         <div className="mt-10 flex flex-col gap-14 md:gap-8">
-          {WORK.map((w, i) => (
+          {TOP_SERVICES.map((w, i) => (
             <WorkCard key={w.title} item={w} layout="split" flip={i % 2 === 1} />
           ))}
         </div>
         <div className="mt-8 text-center">
-          <Link href="/works" className="text-sm font-medium text-[#5fd8e6] hover:underline">
-            See all work →
+          <Link href="/services" className="text-sm font-medium text-[#5fd8e6] hover:underline">
+            See all services →
           </Link>
         </div>
       </section>

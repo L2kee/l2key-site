@@ -10,9 +10,13 @@ const WORDS = ["Evolve.", "Elevate.", "Grow."];
 // once, spread across exactly one screen width so the word leaving one
 // edge is the same word entering the other. Bottom, the tech logos in
 // brand color, running the opposite way.
-export function Marquee() {
+// children: optional content placed above the mojo strip (the homepage puts
+// its three steps there, Moe 2026-11-08).
+export function Marquee({ children }: { children?: React.ReactNode }) {
   return (
     <div>
+      {children}
+
       <div className="marquee marquee-mojo border-y border-white/10 py-6">
         <div className="marquee-track">
           {[0, 1].map((copy) => (

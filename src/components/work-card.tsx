@@ -1,10 +1,11 @@
 import Image from "next/image";
-import { ArrowUpRight, Smartphone, LayoutDashboard, Zap, Globe2 } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, ArrowUpRight, Smartphone, LayoutDashboard, Zap, Globe2, PhoneCall } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
 import { WorkCarousel } from "@/components/work-carousel";
 import { WorkExpand } from "@/components/work-expand";
 
-const ICONS = { phone: Smartphone, dashboard: LayoutDashboard, bolt: Zap, globe: Globe2 };
+const ICONS = { phone: Smartphone, dashboard: LayoutDashboard, bolt: Zap, globe: Globe2, call: PhoneCall };
 
 export type WorkItem = {
   title: string;
@@ -23,7 +24,9 @@ export type WorkItem = {
   fullPage?: { src: string; width: number; height: number; alt: string };
   icon: keyof typeof ICONS;
   stack: string[];
-  links: { label: string; href: string }[];
+  /** internal: a page on this site (or a tel: link), opened in the same
+      tab. Everything else opens a new tab. */
+  links: { label: string; href: string; internal?: boolean }[];
 };
 
 function WorkMedia({ item }: { item: WorkItem }) {
@@ -115,17 +118,29 @@ function WorkDetails({ item }: { item: WorkItem }) {
 
       {item.links.length > 0 && (
         <div className="mt-6 flex flex-wrap gap-3 pt-2">
-          {item.links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-glass text-sm text-white"
-            >
-              {l.label} <ArrowUpRight size={15} />
-            </a>
-          ))}
+          {item.links.map((l) =>
+            l.internal ? (
+              l.href.startsWith("/") ? (
+                <Link key={l.href} href={l.href} className="btn-glass text-sm text-white">
+                  {l.label} <ArrowRight size={15} aria-hidden="true" />
+                </Link>
+              ) : (
+                <a key={l.href} href={l.href} className="btn-glass text-sm text-white">
+                  {l.label}
+                </a>
+              )
+            ) : (
+              <a
+                key={l.href}
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-glass text-sm text-white"
+              >
+                {l.label} <ArrowUpRight size={15} />
+              </a>
+            ),
+          )}
         </div>
       )}
     </>

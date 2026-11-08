@@ -18,6 +18,12 @@ import { submitMockupRequest, type MockupFormState } from "@/app/contact/actions
 // It sits above the site chat button (site-chat.tsx), not over it.
 
 const SEEN_KEY = "evo-mockup-seen";
+const OPEN_EVENT = "evo-open-mockup";
+
+/** Opens the free mockup request form from anywhere, such as the navbar's
+    Free Mockup link (Moe 2026-11-08). Works on every page, including the
+    ones where the notice never springs up on its own. */
+export const openMockup = () => dispatchEvent(new Event(OPEN_EVENT));
 const HIDE_KEY = "evo-mockup-hide-until";
 const DAY = 86_400_000;
 
@@ -177,6 +183,29 @@ export function MockupNotice() {
   const [shown, setShown] = useState(false);
   const [mounted, setMounted] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const openWhenMounted = useRef(false);
+
+  // openMockup(): mount if needed, then open the form.
+  useEffect(() => {
+    const onOpen = () => {
+      if (dialogRef.current) {
+        setShown(false);
+        dialogRef.current.showModal();
+        return;
+      }
+      openWhenMounted.current = true;
+      setMounted(true);
+    };
+    addEventListener(OPEN_EVENT, onOpen);
+    return () => removeEventListener(OPEN_EVENT, onOpen);
+  }, []);
+
+  useEffect(() => {
+    if (mounted && openWhenMounted.current && dialogRef.current) {
+      openWhenMounted.current = false;
+      dialogRef.current.showModal();
+    }
+  }, [mounted]);
 
   useEffect(() => {
     if (blocked || mounted || isHidden()) return;

@@ -1808,3 +1808,72 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   .wb-dot, .wb-flow, .wb-track, .wb-card::after, .wb-shine::after, .wb-lb { animation: none; }
   .wb-card { transform: none; }
 }
+
+/* Homepage services menu (services-rail.tsx, Moe 2026-11-08). From lg up
+   it lifts by the navbar's height so its top lines up with the bar. */
+@media (min-width: 1024px) {
+  .home-rail {
+    margin-top: -58px; /* header 74px - bar inset 16px */
+  }
+}
+/* The menu's three flagship rings start at different points of the spin. */
+.rail-ring-1::before {
+  animation-delay: -2s;
+}
+.rail-ring-2::before {
+  animation-delay: -4s;
+}
+
+/* Homepage hero without the tiles (Moe 2026-11-08). The lotus video keeps
+   its original full size (as wide as min(the window, 85svh of its own
+   shape), pulled up under the navbar), even though the hero column is
+   narrower than the window now that the services menu sits beside it. It
+   centers on that column and spills past it on both sides, faded out by
+   its own mask, and runs behind the glass menu. From sm up the video and
+   the welcome message share one grid cell, the message centered in the
+   first screen. */
+@media (min-width: 640px) {
+  .home-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .home-hero > .hero-video-outer,
+  .home-hero > .hero-copy {
+    grid-area: 1 / 1;
+  }
+  .home-hero > .hero-video-outer {
+    position: relative;
+    inset: auto;
+    align-items: center;
+  }
+  .home-hero .hero-video-box {
+    flex-shrink: 0;
+    width: min(100vw, calc(85svh * 1376 / 776));
+  }
+  .home-hero > .hero-copy {
+    /* Centered in the first screen a visitor sees, from under the navbar
+       (74px) to the bottom of the window (Moe 2026-11-08). The row grows to
+       match, so the flower centers on the same line. */
+    align-self: start;
+    min-height: calc(100svh - 74px);
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Full bleed pieces (the homepage video, the /works strip built on
+   calc(50% - 50vw)) measure 100vw, which counts the desktop scrollbar, so
+   they ran a few pixels past the window. Clip, not hidden, so nothing
+   becomes a scroll box and the sticky navbar keeps working. */
+#main {
+  overflow-x: clip;
+}
+
+/* Borderless services menu (services-rail.tsx, Moe's pick 2026-11-08). No edge or panel shadow, just a faint frosted wash that
+   fades out toward the bottom so the menu melts into the page. */
+.rail-soft {
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.05), rgb(255 255 255 / 0.015) 70%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}

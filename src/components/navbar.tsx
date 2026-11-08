@@ -6,14 +6,21 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Phone, Mail, CalendarClock } from "lucide-react";
 import { isFunnelPath } from "@/lib/funnel-paths";
+import { openMockup } from "@/components/mockup-notice";
 
-const LINKS = [
-  { href: "/ai", label: "AI Front Desk" },
+// Moe 2026-11-08. AI Front Desk left the bar (still in the homepage services
+// menu, Top Services, and the footer), Built in House moved to the footer,
+// Contact came in, and Free Mockup (the lead magnet, in cyan) opens the
+// mockup request form instead of navigating. /contact is its no script
+// fallback. Client Portal is a small text link beside Get Started.
+type NavItem = { href: string; label: string; mockup?: boolean };
+const LINKS: NavItem[] = [
   { href: "/services", label: "Services" },
   { href: "/works", label: "Work" },
-  { href: "/built-in-house", label: "Built in House" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+  { href: "/contact", label: "Free Mockup", mockup: true },
 ];
 
 // Routes served outside this Next app (proxied or static). A next/link
@@ -25,14 +32,32 @@ function NavLink({
   className,
   onClick,
   style,
+  mockup = false,
   children,
 }: {
   href: string;
   className: string;
   onClick?: () => void;
   style?: React.CSSProperties;
+  mockup?: boolean;
   children: React.ReactNode;
 }) {
+  if (mockup) {
+    return (
+      <a
+        href={href}
+        className={className}
+        style={style}
+        onClick={(e) => {
+          e.preventDefault();
+          onClick?.();
+          openMockup();
+        }}
+      >
+        {children}
+      </a>
+    );
+  }
   if (EXTERNAL_ROUTES.has(href)) {
     return (
       <a href={href} className={className} onClick={onClick} style={style}>
@@ -97,7 +122,7 @@ function DesktopLinks() {
   return (
     <div
       ref={group}
-      className="nav-morph relative hidden items-center gap-2 lg:flex"
+      className="nav-morph relative hidden items-center gap-2 lg:col-start-2 lg:flex"
       onPointerOver={(e) => {
         const a = (e.target as HTMLElement).closest("a");
         if (e.pointerType === "mouse" && a) go(a);
@@ -116,9 +141,12 @@ function DesktopLinks() {
       <span ref={ind} className="nav-morph-ind" aria-hidden="true" />
       {LINKS.map((l) => (
         <NavLink
-          key={l.href}
+          key={l.label}
           href={l.href}
-          className="relative z-[1] rounded-full px-2 py-1.5 text-sm font-medium text-white/70 transition-colors hover:text-white"
+          mockup={l.mockup}
+          className={`relative z-[1] rounded-full px-2 py-1.5 text-sm font-medium transition-colors ${
+            l.mockup ? "font-semibold text-[#5fd8e6] hover:text-white" : "text-white/70 hover:text-white"
+          }`}
         >
           {l.label}
         </NavLink>
@@ -211,20 +239,40 @@ export function Navbar() {
 
   return (
     <>
+      {/* The header itself lets clicks through, only the bar catches them,
+          so on the homepage the services rail under its left edge stays
+          clickable. On the homepage (lg up) the bar sits over the column to
+          the right of the rail: same 1320px frame as the page, padded by
+          the rail's 184px plus the 24px gap (1288px = the page's 1320px
+          frame minus its 16px side padding). */}
       <header
-        className={`sticky top-0 z-50 flex justify-center px-4 pt-4 transition-transform duration-300 ease-out ${hidden ? "-translate-y-full" : "translate-y-0"}`}
+        className={`pointer-events-none sticky top-0 z-50 flex justify-center px-4 pt-4 transition-transform duration-300 ease-out ${hidden ? "-translate-y-full" : "translate-y-0"}`}
       >
-        <nav className="glass-nav flex w-full max-w-5xl items-center justify-between rounded-2xl px-4 py-2.5">
-          <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
+        <div className={`flex w-full justify-center ${pathname === "/" ? "max-w-[1288px] lg:pl-[208px]" : "max-w-5xl"}`}>
+        {/* From lg up a three column grid keeps the links dead center in the
+            bar whether or not the logo shows: logo, links, Get Started. */}
+        <nav className="glass-nav pointer-events-auto flex w-full items-center justify-between rounded-2xl px-4 py-2.5 lg:grid lg:grid-cols-[1fr_auto_1fr]">
+          {/* On the homepage from lg up the services menu already carries the
+              logo, so the bar drops it (Moe 2026-11-08). */}
+          <Link
+            href="/"
+            className={`flex items-center gap-2.5 ${pathname === "/" ? "lg:hidden" : ""}`}
+            onClick={() => setOpen(false)}
+          >
             <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={36} height={36} className="h-9 w-9 object-contain" />
             <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
           </Link>
 
           <DesktopLinks />
 
-          <Link href="/start" className="btn-solid hidden !px-4 !py-2 text-sm lg:inline-flex">
-            Get Started
-          </Link>
+          <div className="hidden items-center gap-4 lg:col-start-3 lg:flex lg:justify-self-end">
+            <a href="/agency-os" className="text-xs text-white/55 transition hover:text-white">
+              Client Portal
+            </a>
+            <Link href="/start" className="btn-solid !px-4 !py-2 text-sm">
+              Get Started
+            </Link>
+          </div>
 
           <button
             ref={burgerRef}
@@ -241,6 +289,7 @@ export function Navbar() {
             <i /><i /><i />
           </button>
         </nav>
+        </div>
       </header>
 
       {/* Always mounted so it can spread out from the menu button and fold
@@ -275,11 +324,12 @@ export function Navbar() {
         <nav className="flex flex-1 flex-col justify-center gap-2 px-8">
           {LINKS.map((l, i) => (
             <NavLink
-              key={l.href}
+              key={l.label}
               href={l.href}
+              mockup={l.mockup}
               onClick={closeForNav}
               style={{ "--m": i } as React.CSSProperties}
-              className="menu-item border-b border-white/10 py-4 text-3xl font-semibold text-white hover:text-[#5fd8e6]"
+              className={`menu-item border-b border-white/10 py-4 text-3xl font-semibold hover:text-[#5fd8e6] ${l.mockup ? "text-[#5fd8e6]" : "text-white"}`}
             >
               {l.label}
             </NavLink>
@@ -304,6 +354,9 @@ export function Navbar() {
               className="flex items-center gap-3 transition hover:text-white"
             >
               <CalendarClock size={16} style={{ color: "#5fd8e6" }} /> Book a call
+            </a>
+            <a href="/agency-os" onClick={closeForNav} className="text-xs text-white/50 transition hover:text-white">
+              Client Portal
             </a>
           </div>
         </div>
