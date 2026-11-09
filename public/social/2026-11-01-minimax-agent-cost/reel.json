@@ -1,9 +1,0 @@
-{
-  "seconds": 47.75,
-  "cover_ms": 2000,
-  "engine": "avatar",
-  "look": "teal",
-  "voice": "voicetut-moe",
-  "music": "jazzhouse-9850604",
-  "run": "2026-11-01-minimax-agent-cost-avatar"
-}
