@@ -1,10 +1,4 @@
 {
-  "2026-11-09 08:00|6aee7ad3e29c69a1718c1f7a": {
-    "buffer": "6aef87e9004e4879a77a1cc5",
-    "post": "2026-11-09-ai-rss-break-check",
-    "due": "2026-11-09T08:00:00-05:00",
-    "fmt": "reel_avatar"
-  },
   "2026-11-09 08:00|6ad443b8778b240e2f4389b4": {
     "buffer": "6af0dd3c9214322f68766376",
     "post": "2026-11-09-ai-rss-break-check",
@@ -39,6 +33,42 @@
     "buffer": "6af0dd409214322f6876643c",
     "post": "2026-11-09-google-search-cant-skip-ai",
     "due": "2026-11-09T19:00:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-09 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6af1c443b8fb1e3cacb5fa3e",
+    "post": "2026-11-09-google-search-cant-skip-ai",
+    "due": "2026-11-09T19:00:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-09 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6af1c44398ae1c26b8e5b0bc",
+    "post": "2026-11-09-google-search-cant-skip-ai",
+    "due": "2026-11-09T19:00:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-10 08:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6af1c4444ed9d7a0d3956223",
+    "post": "2026-11-10-ai-robots-txt-optout",
+    "due": "2026-11-10T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-10 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6af1c44598ae1c26b8e5b122",
+    "post": "2026-11-10-ai-robots-txt-optout",
+    "due": "2026-11-10T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-10 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6af1c445b8fb1e3cacb5fb2b",
+    "post": "2026-11-10-ai-robots-txt-optout",
+    "due": "2026-11-10T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-10 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6af1c44698ae1c26b8e5b353",
+    "post": "2026-11-10-omnidiff-syntax-diff",
+    "due": "2026-11-10T12:30:00-05:00",
     "fmt": "reel_avatar"
   }
 }
