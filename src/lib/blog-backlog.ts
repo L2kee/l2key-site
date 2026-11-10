@@ -9975,7 +9975,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical ways pest control companies can use AI and automation for lead replies, recurring service reminders, routing, and renewals.",
     excerpt: "Recurring routes, urgent calls, and lots of reminders. Here's where automation helps pest control companies.",
-    date: "2026-10-15",
+    date: "2026-11-09",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -10044,7 +10044,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Links and mentions from local organizations help your business get found. Here are honest ways to earn them without paying for spammy links.",
     excerpt: "Real local mentions beat bought links every time. Here's how to earn them.",
-    date: "2026-10-15",
+    date: "2026-11-09",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -10104,7 +10104,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How mobile and shop based auto detailers can rank on Google, show off their work, and turn searches for detailing and ceramic coating into bookings.",
     excerpt: "Detailing sells on photos and trust. Here's how to show up when people search.",
-    date: "2026-10-15",
+    date: "2026-11-09",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
