@@ -22,6 +22,13 @@ Instagram week file by render.js, voice.py, reel.js, and schedule.py, so a Threa
   so the feed never gets 3 posts dumped at once. A post more than GRACE_HOURS (2) late is dropped as stale.
 - Fails loudly (GitHub emails Moe) when no approved week has posts for today, so it can never sit quiet and green
   with nothing to post again (that hid an empty week 2 from 2026-11-02).
+- Warns ahead too (since 2026-11-10, after the account went dark 11-09 with no week 3). From Friday 6 PM ET the run
+  fails if no week file has posts for next Monday (the Website Bot writes it Fridays at 1 PM), and from Saturday it
+  fails if next Monday's posts aren't approved yet. The warning never stops this week's posts, the run still posts
+  every slot and only reports the failure when it ends.
+- If Meta loses a post between create and publish ("Media Not Found", seen 2026-11-08 8 AM), it checks the post isn't
+  up, then creates it again, up to 3 tries. A post that still fails is logged and the run keeps going to the next slot
+  (that failure used to end the run, which also lost the 10 AM and 12 PM slots on 11-08), then fails at the end.
 
 No state file: before publishing, it reads back the account's latest posts and skips any whose text is already up,
 so a rerun never double posts and nothing gets committed (no extra Vercel deploys).
@@ -81,6 +88,14 @@ def pull():
         print(f"git pull failed, posting from the files already here ({r.stderr.strip()[:200]})")
 
 
+class ApiError(SystemExit):
+    """A failed Threads API call. Still a SystemExit, so anything that doesn't catch it ends the run as before."""
+
+    def __init__(self, message, code, body):
+        super().__init__(message)
+        self.code, self.body = code, body
+
+
 def call(method, path, params):
     params = dict(params, access_token=os.environ["THREADS_TOKEN"])
     url = API + path
@@ -95,7 +110,7 @@ def call(method, path, params):
             return json.loads(r.read() or b"{}")
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace").replace(os.environ["THREADS_TOKEN"], "***")
-        raise SystemExit(f"Threads API {method} {path} failed with HTTP {e.code}: {body[:500]}")
+        raise ApiError(f"Threads API {method} {path} failed with HTTP {e.code}: {body[:500]}", e.code, body)
 
 
 def lint_week(path):
@@ -154,7 +169,17 @@ def same(a, b):
     return " ".join(a.split()) == " ".join(b.split())
 
 
-def publish(user, p):
+def is_up(user, text):
+    recent = call("GET", f"/v1.0/{user}/threads", {"fields": "id,text,timestamp", "limit": 25}).get("data", [])
+    return any(same(r.get("text") or "", text) for r in recent)
+
+
+def media_lost(e):
+    """Meta's "Media Not Found" on publish (code 24, subcode 4279009): the container vanished, so make a new one."""
+    return e.code == 400 and ('"error_subcode":4279009' in e.body or "Media Not Found" in e.body)
+
+
+def publish_once(user, p):
     params = {"media_type": "TEXT", "text": p["text"]}
     if p.get("tag"):
         params["topic_tag"] = p["tag"]
@@ -165,8 +190,26 @@ def publish(user, p):
             break
         if status.get("status") in ("ERROR", "EXPIRED"):
             raise SystemExit(f"Threads refused the post: {status.get('error_message') or status.get('status')}")
-        time.sleep(5)
+        sleep(5)
     return call("POST", f"/v1.0/{user}/threads_publish", {"creation_id": container})["id"]
+
+
+def publish(user, p, tries=3):
+    """Returns the media id, or None if a retry found the post already up."""
+    for attempt in range(1, tries + 1):
+        try:
+            return publish_once(user, p)
+        except ApiError as e:
+            if not media_lost(e) or attempt == tries:
+                raise
+            print(f"{p['date']} {p['time']}: Meta lost the post before publishing (try {attempt} of {tries}), retrying in 30 seconds")
+            sleep(30)
+            if is_up(user, p["text"]):  # it went up after all, don't post it twice
+                return None
+
+
+def sleep(seconds):
+    sleep_until(now() + timedelta(seconds=seconds))
 
 
 def slot_time(p):
@@ -174,7 +217,9 @@ def slot_time(p):
 
 
 def post_once(user):
-    """One pass. Returns (failed, next_slot), next_slot being the next approved post still ahead, or None."""
+    """One pass. Returns (failed, next_slot, post_failed). next_slot is the next approved post still ahead, or None.
+    failed ends the run at once (a broken week file, or nothing approved for today). post_failed is one post that
+    wouldn't publish, which the run reports at the end after posting the rest of its slots."""
     t = now()
     due, failed, next_slot, today = [], 0, None, 0
     for name, week, problems in weeks():
@@ -208,18 +253,45 @@ def post_once(user):
         failed += 1
     if not due:
         print(f"Nothing due at {t:%Y-%m-%d %H:%M} ET.")
-        return failed, next_slot
+        return failed, next_slot, 0
     due.sort(key=slot_time)
     for p in due[:-1]:
         print(f"{p['date']} {p['time']}: dropped, the newer {due[-1]['time']} slot is due too (one post per pass)")
     p = due[-1]
-    recent = call("GET", f"/v1.0/{user}/threads", {"fields": "id,text,timestamp", "limit": 25}).get("data", [])
-    if any(same(r.get("text") or "", p["text"]) for r in recent):
+    if is_up(user, p["text"]):
         print(f"{p['date']} {p['time']}: already up, skipped")
-    else:
+        return failed, next_slot, 0
+    try:
         media = publish(user, p)
-        print(f"{p['date']} {p['time']}: posted ({p['kind']}, media {media})")
-    return failed, next_slot
+    except SystemExit as e:
+        print(f"::error::{p['date']} {p['time']}: NOT POSTED. {e}")
+        return failed, next_slot, 1
+    print(f"{p['date']} {p['time']}: " + (f"posted ({p['kind']}, media {media})" if media else "went up on Meta's side after all, not posted twice"))
+    return failed, next_slot, 0
+
+
+def next_week_warning(t):
+    """From Friday 6 PM ET, 1 if next Monday has no posts in any week file. From Saturday, 1 if they aren't approved."""
+    if t.weekday() < 4 or (t.weekday() == 4 and t.hour < 18):
+        return 0
+    monday = f"{(t + timedelta(days=7 - t.weekday())):%Y-%m-%d}"
+    written = approved = 0
+    for name, week, problems in weeks():
+        if problems:
+            continue  # post_once reports broken files
+        for p in week["posts"]:
+            if p["date"] == monday and not p.get("skip"):
+                written += 1
+                approved += bool(week.get("approved"))
+    if not written:
+        print(f"::error::NEXT WEEK'S THREADS ISN'T WRITTEN. Nothing in social/threads/ for Monday {monday}. The Website Bot "
+              f"writes it Fridays at 1 PM ET, so it missed this week. Without it the account goes dark Monday.")
+        return 1
+    if not approved and t.weekday() >= 5:
+        print(f"::error::NEXT WEEK'S THREADS ISN'T APPROVED. Monday {monday} has {written} posts written and waiting on Moe. "
+              f"Read the week file, then set \"approved\": true (or tell Jarvis to). Without it the account goes dark Monday.")
+        return 1
+    return 0
 
 
 def post():
@@ -228,16 +300,21 @@ def post():
         return 0
     user = os.environ["THREADS_USER_ID"]
     stop = now() + timedelta(minutes=int(os.environ.get("THREADS_LOOP_MINUTES") or 0))
-    failed = 0
+    failed = warned = post_failures = 0
     while True:
-        f, next_slot = post_once(user)
+        if not warned:
+            warned = next_week_warning(now())  # checked each pass until it fires, then said once per run
+        f, next_slot, post_failed = post_once(user)
         failed += f
+        post_failures += post_failed
         if f or next_slot is None or next_slot > stop:
-            break  # a failing run ends at once so GitHub emails Moe now, not hours later
+            break  # a run with nothing approved for today ends at once so GitHub emails Moe now, not hours later
         print(f"Waiting for the {next_slot:%Y-%m-%d %H:%M} ET slot.")
         sleep_until(next_slot + timedelta(seconds=20))
         pull()
-    return 1 if failed else 0
+    if (warned or post_failures) and not failed:
+        print("Run failing on purpose so GitHub emails Moe, see the ::error:: lines above.")
+    return 1 if failed or warned or post_failures else 0
 
 
 def check():

@@ -7,6 +7,8 @@
 #   "Publish 3 posts dated D"  reruns publish-next-posts.mjs on master and requires the identical change.
 #                              D must be today or yesterday (New York time).
 #   "Social week of M"         copies the one new social/M.json (M a Monday, not on master yet, valid JSON).
+#   "Threads week of M"        copies the one new social/threads/M.json (M a Monday, not on master yet, passes
+#                              social/threads.py lint, and "approved" is false, so only Moe can approve a week).
 # Any other commit, file, or change and it stops without publishing anything.
 #
 # Usage: website-bot-publish.sh <sha> <branch>    (DRY_RUN=1 checks and builds but pushes nothing)
@@ -23,10 +25,10 @@ git checkout -q -B master origin/master
 git reset -q --hard origin/master
 BASE=$(git merge-base origin/master "$SHA")
 
-# 1. Every commit on the branch is one of the two standing jobs.
+# 1. Every commit on the branch is one of the standing jobs.
 [ -n "$(git rev-list "$BASE..$SHA")" ] || fail "the branch has no commits that aren't on master already"
 [ -z "$(git rev-list --min-parents=2 "$BASE..$SHA")" ] || fail "the branch has a merge commit"
-DRIP_DATE="" WEEK="" AUTHOR=""
+DRIP_DATE="" WEEK="" TWEEK="" AUTHOR=""
 for c in $(git rev-list --reverse "$BASE..$SHA"); do
   subject=$(git log -1 --format=%s "$c")
   if [[ $subject =~ ^Publish\ 3\ posts\ dated\ ([0-9]{4}-[0-9]{2}-[0-9]{2})$ ]]; then
@@ -36,6 +38,9 @@ for c in $(git rev-list --reverse "$BASE..$SHA"); do
   elif [[ $subject =~ ^Social\ week\ of\ ([0-9]{4}-[0-9]{2}-[0-9]{2}) ]]; then
     [ -z "$WEEK" ] || [ "$WEEK" = "${BASH_REMATCH[1]}" ] || fail "two different social weeks on one branch"
     WEEK=${BASH_REMATCH[1]}
+  elif [[ $subject =~ ^Threads\ week\ of\ ([0-9]{4}-[0-9]{2}-[0-9]{2}) ]]; then
+    [ -z "$TWEEK" ] || [ "$TWEEK" = "${BASH_REMATCH[1]}" ] || fail "two different Threads weeks on one branch"
+    TWEEK=${BASH_REMATCH[1]}
   else
     fail "commit $c is not a standing job: $subject"
   fi
@@ -46,6 +51,7 @@ while read -r status path; do
   case "$path" in
     src/lib/blog.ts|src/lib/blog-backlog.ts) [ -n "$DRIP_DATE" ] || fail "$path changed without a drip commit" ;;
     "social/$WEEK.json") [ -n "$WEEK" ] && [ "$status" = A ] || fail "$path must be a new file from a social week commit" ;;
+    "social/threads/$TWEEK.json") [ -n "$TWEEK" ] && [ "$status" = A ] || fail "$path must be a new file from a Threads week commit" ;;
     *) fail "the branch touches $path, which isn't a standing job file" ;;
   esac
 done < <(git diff --no-renames --name-status "$BASE" "$SHA")
@@ -91,6 +97,26 @@ if [ -n "$WEEK" ]; then
     PUBLISHED=1
     SOCIAL_NEW=1
     note "Social week $WEEK copied."
+  fi
+fi
+
+# 4b. Threads week: copy the one new file. The bot writes it, Moe approves it, so it must arrive unapproved.
+if [ -n "$TWEEK" ]; then
+  [ "$(date -d "$TWEEK" +%u)" = 1 ] || fail "Threads week $TWEEK is not a Monday"
+  if git cat-file -e "origin/master:social/threads/$TWEEK.json" 2>/dev/null; then
+    note "social/threads/$TWEEK.json is already on master, skipped."
+  else
+    git show "$SHA:social/threads/$TWEEK.json" > "social/threads/$TWEEK.json"
+    node -e 'const w = JSON.parse(require("fs").readFileSync(process.argv[1], "utf8")); process.exit(w.approved === false ? 0 : 1)' \
+      "social/threads/$TWEEK.json" || fail "social/threads/$TWEEK.json must be valid JSON with \"approved\": false (only Moe approves a week)"
+    LINT=$(python3 social/threads.py lint) || { echo "$LINT"; fail "social/threads/$TWEEK.json fails social/threads.py lint"; }
+    echo "$LINT"
+    rm -rf social/__pycache__
+    git add "social/threads/$TWEEK.json"
+    git -c user.name="Website Bot Publish" -c user.email="actions@users.noreply.github.com" \
+      commit -q -m "Threads week of $TWEEK"
+    PUBLISHED=1
+    note "Threads week $TWEEK copied, waiting on Moe's approval."
   fi
 fi
 
