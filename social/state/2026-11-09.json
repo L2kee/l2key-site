@@ -106,5 +106,41 @@
     "post": "2026-11-11-ai-customer-question-answers",
     "due": "2026-11-11T08:00:00-05:00",
     "fmt": "reel_avatar"
+  },
+  "2026-11-11 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6af392418cf622448db97a91",
+    "post": "2026-11-11-ai-customer-question-answers",
+    "due": "2026-11-11T08:00:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-11 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6af392418cf622448db97abf",
+    "post": "2026-11-11-ai-customer-question-answers",
+    "due": "2026-11-11T08:00:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-11 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6af39242acda3662ff12ce95",
+    "post": "2026-11-11-difficult-conversations-contribution",
+    "due": "2026-11-11T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-11 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6af392422cc03d2ce398b567",
+    "post": "2026-11-11-difficult-conversations-contribution",
+    "due": "2026-11-11T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-11 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6af392432cc03d2ce398b597",
+    "post": "2026-11-11-difficult-conversations-contribution",
+    "due": "2026-11-11T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-11 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6af39244acda3662ff12cee8",
+    "post": "2026-11-11-chatgpt-gif-maker",
+    "due": "2026-11-11T19:00:00-05:00",
+    "fmt": "reel_avatar"
   }
 }
