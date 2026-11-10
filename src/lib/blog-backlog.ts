@@ -10166,7 +10166,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Med spas sell trust, care, and results. Here's how brand design shapes what clients expect to pay and why so many med spas look the same.",
     excerpt: "If every med spa uses the same pink and gold, nobody stands out. Here's how to build a brand that does.",
-    date: "2026-10-15",
+    date: "2026-11-10",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -10226,7 +10226,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Most service businesses have a slow season. Here's how to use it to fill the calendar, fix your marketing foundation, and set up a stronger busy season.",
     excerpt: "The slow season is the best time to fix the things you never have time for.",
-    date: "2026-10-15",
+    date: "2026-11-10",
     tag: "Marketing",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "Request a free audit",
@@ -10292,7 +10292,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How landscaping and lawn care companies can earn steady Google reviews from maintenance customers and design projects without breaking the rules.",
     excerpt: "Your work is visible to every neighbor. Your reviews should be too.",
-    date: "2026-10-15",
+    date: "2026-11-10",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",
