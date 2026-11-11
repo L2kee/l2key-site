@@ -10354,7 +10354,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "AI tools sometimes give wrong hours, old services, or another company's details for your business. Here's how to track down the source and fix it.",
     excerpt: "You can't edit ChatGPT's answer. You can fix what it's reading.",
-    date: "2026-10-15",
+    date: "2026-11-11",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our AI search service",
@@ -10414,7 +10414,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How pest control companies can design a website that calms worried visitors, explains treatments and safety, and sells recurring service plans.",
     excerpt: "Visitors are panicking about what they just found. Your site should calm them down and book the visit.",
-    date: "2026-10-15",
+    date: "2026-11-11",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -10478,7 +10478,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How gyms and fitness studios can use AI and automation for lead follow up, class bookings, check ins, and keeping members from quietly quitting.",
     excerpt: "Follow up on every trial, fill every class, and catch members before they drift away.",
-    date: "2026-10-15",
+    date: "2026-11-11",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
