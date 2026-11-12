@@ -696,6 +696,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "when-ai-gets-your-business-wrong",
   "website-design-for-pest-control-companies",
   "ai-automation-for-gyms-and-fitness-studios",
+  "seo-for-garage-door-companies",
+  "seo-for-solar-installers",
+  "referral-programs-for-local-businesses",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

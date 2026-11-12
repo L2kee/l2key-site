@@ -10548,7 +10548,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Garage door search is crowded with lead sellers and look alike listings. Here's how a real, local garage door company can rank and earn trust.",
     excerpt: "A stuck garage door is urgent. Here's how to be the trustworthy company that shows up.",
-    date: "2026-10-15",
+    date: "2026-11-12",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -10604,7 +10604,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How solar installers can rank for local searches, answer cost and savings questions honestly, and keep incentive information accurate as rules change.",
     excerpt: "Solar buyers research for weeks. The installer with the clearest, most current answers wins.",
-    date: "2026-10-15",
+    date: "2026-11-12",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -10666,7 +10666,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Word of mouth is the best marketing a local business can get. Here's how to set up a simple referral program that customers remember and use.",
     excerpt: "Happy customers will send you business. Most just need a reason and a reminder.",
-    date: "2026-10-15",
+    date: "2026-11-12",
     tag: "Marketing",
     relatedHref: "/growth-kit",
     relatedLabel: "Get the Home Service Growth Kit",
