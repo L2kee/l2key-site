@@ -250,5 +250,41 @@
     "post": "2026-11-14-ai-local-business-answer-check",
     "due": "2026-11-14T08:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-14 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6af758c9eea5d89b92dfad0a",
+    "post": "2026-11-14-ai-local-business-answer-check",
+    "due": "2026-11-14T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-14 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6af758ca7d320dbe3ec56c48",
+    "post": "2026-11-14-ai-local-business-answer-check",
+    "due": "2026-11-14T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-14 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6af758cbc578ae3e2b38aff9",
+    "post": "2026-11-14-whoami-guard-email-hook",
+    "due": "2026-11-14T12:30:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-14 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6af758cb94400d1f24ac6ca5",
+    "post": "2026-11-14-whoami-guard-email-hook",
+    "due": "2026-11-14T12:30:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-14 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6af758cc7d320dbe3ec56c77",
+    "post": "2026-11-14-whoami-guard-email-hook",
+    "due": "2026-11-14T12:30:00-05:00",
+    "fmt": "reel_avatar"
+  },
+  "2026-11-14 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6af758cc397bcb7d109072a1",
+    "post": "2026-11-14-claude-personal-finance",
+    "due": "2026-11-14T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
