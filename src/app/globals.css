@@ -1923,3 +1923,32 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     transition: opacity 300ms ease;
   }
 }
+
+/* Funnel page site menu (funnel-nav.tsx, Moe 2026-11-13). Slides in from the
+   left over a dimmed page, hidden and inert while closed. */
+.funnel-drawer {
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 0.32s;
+}
+.funnel-drawer.is-open {
+  transform: none;
+  visibility: visible;
+  transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s;
+}
+.funnel-drawer-scrim {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.funnel-drawer-scrim.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .funnel-drawer,
+  .funnel-drawer.is-open,
+  .funnel-drawer-scrim {
+    transition: none;
+  }
+}

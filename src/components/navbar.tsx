@@ -6,71 +6,15 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Phone, Mail, CalendarClock } from "lucide-react";
 import { isFunnelPath } from "@/lib/funnel-paths";
-import { openMockup } from "@/components/mockup-notice";
+import { NavLink } from "@/components/nav-link";
+import { FunnelNav } from "@/components/funnel-nav";
+import { NAV_LINKS } from "@/lib/site-nav";
 
 // Moe 2026-11-08. AI Front Desk left the bar (still in the homepage services
 // menu, Top Services, and the footer), Built in House moved to the footer,
-// Contact came in, and Free Mockup (the lead magnet, in cyan) opens the
-// mockup request form instead of navigating. /contact is its no script
-// fallback. Client Portal is a small text link beside Get Started.
-type NavItem = { href: string; label: string; mockup?: boolean };
-const LINKS: NavItem[] = [
-  { href: "/services", label: "Services" },
-  { href: "/works", label: "Work" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
-  { href: "/contact", label: "Free Mockup", mockup: true },
-];
-
-// Routes served outside this Next app (proxied or static). A next/link
-// prefetch of them 404s, so they get a plain anchor and a full page load.
-const EXTERNAL_ROUTES = new Set(["/agency-os"]);
-
-function NavLink({
-  href,
-  className,
-  onClick,
-  style,
-  mockup = false,
-  children,
-}: {
-  href: string;
-  className: string;
-  onClick?: () => void;
-  style?: React.CSSProperties;
-  mockup?: boolean;
-  children: React.ReactNode;
-}) {
-  if (mockup) {
-    return (
-      <a
-        href={href}
-        className={className}
-        style={style}
-        onClick={(e) => {
-          e.preventDefault();
-          onClick?.();
-          openMockup();
-        }}
-      >
-        {children}
-      </a>
-    );
-  }
-  if (EXTERNAL_ROUTES.has(href)) {
-    return (
-      <a href={href} className={className} onClick={onClick} style={style}>
-        {children}
-      </a>
-    );
-  }
-  return (
-    <Link href={href} className={className} onClick={onClick} style={style}>
-      {children}
-    </Link>
-  );
-}
+// Contact came in, and Free Mockup opens the mockup request form. The link
+// list lives in lib/site-nav.ts, shared with the funnel drawer.
+const LINKS = NAV_LINKS;
 
 // Desktop links share one indicator (.nav-morph in globals.css). At rest it
 // is a faint line under the links. Hovering or focusing a link shrinks it to
@@ -230,15 +174,9 @@ export function Navbar() {
 
   const pathname = usePathname();
   if (isFunnelPath(pathname)) {
-    // Funnel pages keep the brand but offer no way out except the page's own button.
-    return (
-      <header className="flex justify-center px-4 pt-4">
-        <span className="glass-nav flex items-center gap-2.5 rounded-2xl px-4 py-2.5">
-          <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={36} height={36} className="h-9 w-9 object-contain" />
-          <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
-        </span>
-      </header>
-    );
+    // Funnel pages stay focused on their form, but never trap anyone: a Home
+    // button and a slide out site menu (Moe 2026-11-13).
+    return <FunnelNav />;
   }
 
   return (

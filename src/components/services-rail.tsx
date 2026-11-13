@@ -1,23 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Sparkles, PhoneCall, Database, Globe2, Gem, Smartphone, Search, Star, House } from "lucide-react";
+import { ArrowRight, type House } from "lucide-react";
+import { SERVICE_LINKS } from "@/lib/site-nav";
 
-// Every service, each linking to its own page. The first three are the
-// highest margin services (Service Margin Grid in the vault, 2026-11-08),
-// so they lead, each a glass card with the spinning flagship ring from the
-// hero's AI Front Desk tile (.flagship-ring, offset per card by .rail-ring-N
-// in globals.css so the three never spin in step).
-const RAIL_SERVICES = [
-  { href: "/ai-automation-orlando", label: "AI Automation", icon: Sparkles, top: true },
-  { href: "/ai", label: "AI Front Desk", icon: PhoneCall, top: true },
-  { href: "/custom-crm-development-orlando", label: "Custom CRM", icon: Database, top: true },
-  { href: "/web-design-agency-orlando", label: "Websites That Convert", icon: Globe2 },
-  { href: "/brand-design", label: "Luxury Brand Design", icon: Gem },
-  { href: "/mobile-app-development-orlando", label: "Mobile App Development", icon: Smartphone },
-  { href: "/seo-agency-orlando", label: "SEO That Gets Found", icon: Search },
-  { href: "/google-reviews-orlando", label: "Google Reviews", icon: Star },
-  { href: "/real-estate-listing-websites-orlando", label: "Listing Suite", icon: House },
-];
+// The services list lives in lib/site-nav.ts (shared with the funnel drawer).
+// The first three are the highest margin services, so they lead, each a
+// glass card with the spinning flagship ring from the hero's AI Front Desk
+// tile (.flagship-ring, offset per card by .rail-ring-N in globals.css so
+// the three never spin in step).
+const RAIL_SERVICES = SERVICE_LINKS;
 
 // The icon box from the hero tiles (start-tiles.tsx), a size down.
 function ServiceIcon({ icon: Icon }: { icon: typeof House }) {
