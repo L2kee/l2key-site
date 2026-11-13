@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
 import Link from "next/link";
 import { ArrowRight, CalendarClock, Check } from "lucide-react";
 import { TiltCard } from "@/components/tilt-card";
@@ -9,9 +8,7 @@ import { servicePageGraph } from "@/lib/schema";
 import { RealtorTiles } from "@/components/realtor-tiles";
 import { listingStartHref, LISTING_START_PATH, type ListingPlanId } from "@/lib/listing-plans";
 
-// Moe picked Cormorant Garamond (option B, 2026-11-01) for the Listing Suite headline only.
-const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], style: ["normal", "italic"], display: "swap" });
-
+// The headline is the site font, Cormorant Garamond (lib/fonts.ts).
 const PATH = "/real-estate-listing-websites-orlando";
 
 // Two buttons wherever the page asks for action: the paid start (main) and
@@ -185,7 +182,7 @@ export default function RealEstateListingWebsitesOrlandoPage() {
       />
       <div className="text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/80">EVOGENCY Listing Suite</p>
-        <h1 className={`mask-rise-load mt-3 text-5xl leading-[1.02] font-medium sm:text-6xl lg:text-7xl ${cormorant.className}`}>
+        <h1 className={`mask-rise-load mt-3 text-5xl leading-[1.02] font-medium sm:text-6xl lg:text-7xl`}>
           <span className="mask-line">
             <span className="text-[#f3ede0]" style={{ "--i": 0 } as React.CSSProperties}>Every Property</span>
           </span>

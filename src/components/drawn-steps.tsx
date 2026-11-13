@@ -1,9 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Caveat } from "next/font/google";
-
-const hand = Caveat({ subsets: ["latin"], weight: ["600"], display: "swap", preload: false });
 
 type Step = { title: string; body: string };
 
@@ -90,7 +87,7 @@ function InkTitle({ text }: { text: string }) {
 
   return (
     <svg
-      className={`ink-title ${hand.className}`}
+      className="ink-title font-semibold"
       viewBox={`${box.x} ${box.y} ${box.w} ${box.h}`}
       style={{ width: box.w, maxWidth: "100%" }}
       role="img"

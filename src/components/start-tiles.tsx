@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, House } from "lucide-react";
 import { START_PATHS } from "@/lib/start-paths";
-import { serif } from "@/lib/fonts";
 
 // One tile per service, each opening its own funnel at /start/<slug>, plus
 // the Listing Suite tile, which goes straight to its own page (it has no
@@ -36,7 +35,7 @@ export function StartTiles({ className = "" }: { className?: string; wide?: bool
             </span>
             <span className="min-w-0 flex-1">
               {p.suite ? (
-                <span className={`suite-title block text-2xl leading-tight italic ${serif.className}`}>{p.tile}</span>
+                <span className={`suite-title block text-2xl leading-tight italic`}>{p.tile}</span>
               ) : (
                 <span className="block font-semibold text-white">{p.tile}</span>
               )}

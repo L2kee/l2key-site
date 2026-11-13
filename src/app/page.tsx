@@ -1,4 +1,3 @@
-import { serif } from "@/lib/fonts";
 import Link from "next/link";
 import { AskAvaLink } from "@/components/site-chat";
 import { ArrowRight } from "lucide-react";
@@ -94,7 +93,7 @@ export default function Home() {
             order (see .hero-letter and .hero-in in globals.css). */}
         <h1
           aria-label="Redefining Communication Through Innovation"
-          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#d6f6fa] [--accent-first:23] [--accent-last:39] sm:text-5xl xl:text-6xl ${serif.className}`}
+          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#d6f6fa] [--accent-first:23] [--accent-last:39] sm:text-5xl xl:text-6xl`}
         >
           <span className="block">
             <DropLetters text="Redefining Communication" />

@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Inter, JetBrains_Mono } from "next/font/google";
 import { ORG_ID, SITE_URL, breadcrumbs } from "@/lib/schema";
 
 // Product page for ElectricalAI Pro, styled in the app's own "kinetic
 // glass" look (ink, hairline glass panels, one cyan signal color) rather
 // than the site's teal theme, so the page and the app read as one product.
 // The app itself lives at /electricalai-pro/app (static Flutter build).
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-eap-sans" });
-const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-eap-mono" });
 
 // Plain <a>, not next/link: the app is a static Flutter build, not a Next
 // route, so a <Link> prefetch of it 404s.
@@ -79,7 +75,7 @@ const APP_SCHEMA = {
 };
 
 function Mono({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  return <span className={`font-[family-name:var(--font-eap-mono)] ${className}`}>{children}</span>;
+  return <span className={`${className}`}>{children}</span>;
 }
 
 function Pulse() {
@@ -94,7 +90,7 @@ function Pulse() {
 export default function ElectricalAIProPage() {
   return (
     <div
-      className={`${inter.variable} ${mono.variable} relative w-full bg-[#060a12] font-[family-name:var(--font-eap-sans)] text-[#f1f5f9] selection:bg-[#00d3e3]/30`}
+      className={`relative w-full bg-[#060a12] text-[#f1f5f9] selection:bg-[#00d3e3]/30`}
     >
       {/* Faint cyan glow behind the hero so the ink reads as depth, not a flat fill. */}
       <div

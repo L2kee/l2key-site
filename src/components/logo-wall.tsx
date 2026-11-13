@@ -1,9 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Cormorant_Garamond } from "next/font/google";
-
-const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], display: "swap", preload: false });
 
 // Logo wall cycle (Motion Catalog). Six slots, and every few seconds one slot
 // blurs out and comes back as a mark that isn't on the wall yet. Every mark
@@ -204,7 +201,7 @@ export function LogoWall() {
   }, []);
 
   return (
-    <div ref={ref} className={serif.className}>
+    <div ref={ref}>
       <div className="logo-wall grid grid-cols-2 gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 sm:grid-cols-3">
         {shown.map((m, slot) => {
           const mark = MARKS[m];

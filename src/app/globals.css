@@ -1,17 +1,25 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-site);
+  --font-mono: var(--font-site);
   --color-accent-cyan: #5fd8e6;
   --color-accent-teal: #1f9fb3;
   --color-accent-ice: #d6f6fa;
   --color-accent-lime: #b5f04a;
 }
 
+/* One font site wide, Cormorant Garamond (lib/fonts.ts), except the marquee.
+   font-size-adjust renders every size 12% bigger (x height .4375 instead of
+   the font's own .39), so text reads like it did in the old sans without
+   touching spacing. It inherits, so .mojo-word turns it off. Lining numerals,
+   because the font's default old style figures drop below the line (11 read
+   as "ıı", prices looked uneven). */
 html,
 body {
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-sans), Georgia, serif;
+  font-size-adjust: 0.4375;
+  font-variant-numeric: lining-nums;
   scroll-behavior: smooth;
 }
 
@@ -330,18 +338,21 @@ body {
     border-radius: 9999px;
     background: var(--color-accent-cyan);
   }
-  /* Glass outline headings (SectionHeading, the hero's first line): the
-     marquee's ice edge and cyan glow, a touch thinner at heading sizes.
-     Stroke and shadow inherit, so per letter spans (DropLetters) get it.
-     Needs the static font from lib/fonts.ts, see the note there. */
+  /* Glass headings (SectionHeading, the built in house demo line): solid
+     white letters with a thin cyan edge and the marquee's soft cyan glow.
+     The 2px stroke is painted behind the fill, so 1px shows outside each
+     letter and no inner contour lines appear. Stroke, paint order and shadow
+     inherit, so per letter spans (DropLetters) get it. */
   .glass-text {
-    color: transparent;
-    -webkit-text-stroke: 1px rgb(214 246 250 / 0.88);
-    text-shadow: 0 0 16px rgb(95 216 230 / 0.32);
+    color: #fff;
+    -webkit-text-stroke: 2px rgb(95 216 230 / 0.9);
+    paint-order: stroke fill;
+    text-shadow: 0 0 16px rgb(95 216 230 / 0.38);
   }
 
   /* Glass outline letters: a thin ice edge with a soft cyan glow. */
   .mojo-word {
+    font-size-adjust: none;
     font-weight: 700;
     font-size: 22px;
     line-height: 1.15;
@@ -384,7 +395,7 @@ body {
     }
   }
 
-  /* The line between the strips: thin uppercase Geist, wide tracking, a
+  /* The line between the strips: thin uppercase, wide tracking, a
      cyan rule fading in on each side. Phones get the short line. */
   .marquee-tagline {
     display: flex;
@@ -1592,6 +1603,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   overflow: visible;
 }
 .ink-title text {
+  paint-order: stroke fill;
   fill: #ffffff;
   stroke: #5fd8e6;
   stroke-width: 0.6;
@@ -1705,7 +1717,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 @keyframes wb-flow { to { background-position: 300% 0; } }
 .wb-head > p { margin: 18px auto 0; max-width: 620px; color: rgb(255 255 255 / .68); font-size: clamp(16px, 2vw, 18px); text-wrap: balance; }
 .wb-stats { display: flex; justify-content: center; flex-wrap: wrap; gap: clamp(22px, 6vw, 60px); margin-top: 36px; }
-.wb-stats b { display: block; font-size: clamp(32px, 5vw, 46px); font-weight: 700; letter-spacing: -.03em; color: #fff; font-variant-numeric: tabular-nums; }
+.wb-stats b { display: block; font-size: clamp(32px, 5vw, 46px); font-weight: 700; letter-spacing: -.03em; color: #fff; font-variant-numeric: lining-nums tabular-nums; }
 .wb-stats span { font-size: 12.5px; color: rgb(255 255 255 / .65); letter-spacing: .08em; text-transform: uppercase; }
 
 /* contain keeps the endless track from widening the page (the parent sizes to its content) */

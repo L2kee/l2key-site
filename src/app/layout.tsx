@@ -1,6 +1,5 @@
 import { ViewTransition } from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SiteBackground } from "@/components/site-background";
@@ -9,21 +8,9 @@ import { Footer } from "@/components/footer";
 import { HideOnFunnel } from "@/components/hide-on-funnel";
 import { MockupNotice } from "@/components/mockup-notice";
 import { SiteChat } from "@/components/site-chat";
+import { serif } from "@/lib/fonts";
 import { ORG_DESCRIPTION, siteGraph } from "@/lib/schema";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-// Nothing on the site sets font-mono today, so don't spend phone bandwidth
-// preloading it on every page.
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  preload: false,
-});
 
 const SITE_TITLE = "Orlando SEO Agency, AI Search & Web Design | Evogency";
 const SITE_DESCRIPTION = ORG_DESCRIPTION;
@@ -54,12 +41,11 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${serif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <script

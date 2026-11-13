@@ -1,4 +1,3 @@
-import { outline } from "@/lib/fonts";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -101,7 +100,7 @@ export default function BuiltInHousePage() {
             <p className="text-center text-2xl font-bold leading-tight text-white [--hero-delay:2000ms]">
               {/* DropLetters hides its letters from screen readers, so the line is read whole from here. */}
               <span className="sr-only">Built to be found. Designed to be trusted.</span>
-              <span className={`block glass-text ${outline.className}`}>
+              <span className={`block glass-text`}>
                 <DropLetters text="Built to be found." />
               </span>
               <span className="block">

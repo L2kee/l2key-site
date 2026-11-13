@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Cormorant_Garamond } from "next/font/google";
 import { ArrowLeft, CalendarClock, Check, Phone } from "lucide-react";
 import { ListingRequestForm } from "@/components/listing-request-form";
 import { getListingPlan, LISTING_PATH, LISTING_START_PATH } from "@/lib/listing-plans";
-
-const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["500"], style: ["normal", "italic"], display: "swap" });
 
 const TITLE = "Start Your Listing Page | EVOGENCY Listing Suite";
 const DESCRIPTION =
@@ -43,7 +40,7 @@ export default async function ListingStartPage({
       <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
         <div className="lg:sticky lg:top-28">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/80">EVOGENCY Listing Suite</p>
-          <h1 className={`mt-3 text-4xl leading-[1.05] font-medium sm:text-5xl ${cormorant.className}`}>
+          <h1 className={`mt-3 text-4xl leading-[1.05] font-medium sm:text-5xl`}>
             <span className="text-[#f3ede0]">Let&apos;s Put Your Listing </span>
             <span className="gradient-text italic">on Stage</span>
           </h1>
