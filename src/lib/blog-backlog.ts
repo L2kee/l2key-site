@@ -10732,7 +10732,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Sending ad clicks to your home page wastes money. Here's why a focused landing page usually converts better and what to put on one.",
     excerpt: "Your home page tries to say everything. An ad click needs one clear answer.",
-    date: "2026-10-15",
+    date: "2026-11-13",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -10792,7 +10792,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Restaurant branding shapes what guests expect before they sit down. Here's how name, logo, menu, interior, and online presence work together.",
     excerpt: "Guests taste your brand before they taste your food. Here's how to make it a good first bite.",
-    date: "2026-10-15",
+    date: "2026-11-13",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -10852,7 +10852,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How gyms and fitness studios can earn more honest Google reviews from members, reply to complaints well, and use reviews to welcome nervous newcomers.",
     excerpt: "Nervous newcomers read reviews to see if they'll fit in. Here's how to give them plenty to read.",
-    date: "2026-10-15",
+    date: "2026-11-13",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",
