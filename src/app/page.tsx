@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { WorkCard } from "@/components/work-card";
 import { HeroVideo } from "@/components/hero-video";
 import { HeroReveal } from "@/components/hero-reveal";
+import { HeroMockupButton } from "@/components/hero-mockup-button";
 import { CtaTrace } from "@/components/cta-trace";
 import { DropLetters } from "@/components/drop-letters";
 import { FaqList } from "@/components/faq-list";
@@ -106,6 +107,16 @@ export default function Home() {
         <p className="hero-in mt-4 max-w-2xl text-balance text-base text-white/80 [--i:2] sm:text-lg">
           Delivering Excellence Beyond Expectations
         </p>
+
+        {/* Phones only (Moe 2026-11-13): a tap target in the first screen.
+            Its own short --hero-delay so it rises right after the video
+            instead of waiting out the 2s letter drop. */}
+        <div className="hero-in mt-6 flex flex-col items-center gap-3 [--hero-delay:300ms] [--i:0] sm:hidden">
+          <HeroMockupButton className="btn-solid hero-cta" />
+          <Link href="/start" className="text-sm font-medium text-[#5fd8e6] underline-offset-4 hover:underline">
+            or tell us what you need
+          </Link>
+        </div>
 
         <p className="hero-in mt-8 text-sm text-white/60 [--i:3]">
           Got a question right now?{" "}

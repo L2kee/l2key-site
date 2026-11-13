@@ -266,7 +266,8 @@ export function Navbar() {
             onClick={() => setOpen(false)}
           >
             <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={36} height={36} className="h-9 w-9 object-contain" />
-            <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
+            {/* Dropped under 360px so the Get Started pill still fits. */}
+            <span className="text-sm font-semibold tracking-wide text-white max-[359px]:hidden">EVOGENCY</span>
           </Link>
 
           <DesktopLinks />
@@ -280,6 +281,12 @@ export function Navbar() {
             </Link>
           </div>
 
+          {/* Phones and tablets (Moe 2026-11-13): the Get Started pill sits
+              beside the burger so there is a tap target from the first frame. */}
+          <div className="flex items-center gap-2 lg:hidden">
+          <Link href="/start" className="btn-solid !px-3.5 !py-2 text-xs">
+            Get Started
+          </Link>
           <button
             ref={burgerRef}
             type="button"
@@ -294,6 +301,7 @@ export function Navbar() {
           >
             <i /><i /><i />
           </button>
+          </div>
         </nav>
         </div>
       </header>
