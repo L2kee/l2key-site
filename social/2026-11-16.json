@@ -1,0 +1,648 @@
+{
+  "week": "2026-11-16",
+  "posts": [
+    {
+      "date": "2026-11-16",
+      "time": "08:00",
+      "id": "2026-11-16-ai-sort-customer-messages",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Inbox chaos? The last step drafts every reply.",
+      "why": "Urgent messages hide between questions and quote requests. Sorting them first means the right ones get answered first.",
+      "src": "",
+      "steps": [
+        "Copy 20 recent customer messages into one document. Remove last names and phone numbers.",
+        "Ask AI to label each one urgent, quote request, or question.",
+        "Ask for a one line reply to each, then read every reply before you send it."
+      ],
+      "take": "AI drafts. You still hit send.",
+      "label": "Step",
+      "say": [
+        "Inbox chaos! The last step drafts every reply.",
+        "Urgent messages hide between questions and quote requests. Sorting them first means the right ones get answered first.",
+        "First, copy twenty recent customer messages into one document and remove last names and phone numbers. Easy win.",
+        "Next, ask AI to label each one urgent, quote request, or question. Now you can see the pile.",
+        "Last, the part that clears the inbox. Ask for a one line reply to each, then read every reply before you send it.",
+        "AI drafts. You still hit send."
+      ],
+      "keyword": "SORT",
+      "prompt": "You are my inbox assistant. Below are 20 customer messages with private details removed. Label each one urgent, quote request, or question. Then write a one line reply to each that is friendly, plain, and promises nothing I did not say. If a message needs a fact I did not give you, write [fill this in] instead of guessing. Messages [paste here]",
+      "captions": {
+        "facebook": "How to sort customer messages with AI.\n\nInbox chaos? The last step drafts every reply.\n\nUrgent messages hide between questions and quote requests. Sorting them first means the right ones get answered first.\n\n3 steps.\n1. Copy 20 recent customer messages into one document. Remove last names and phone numbers.\n2. Ask AI to label each one urgent, quote request, or question.\n3. Ask for a one line reply to each, then read every reply before you send it.\n\nAI drafts. You still hit send.\n\nWant the exact prompt? Follow EVOGENCY and message us the word SORT. We'll send it to you.\n\n#AITools #SmallBusiness #CustomerService #Productivity",
+        "instagram": "How to sort customer messages with AI.\n\nInbox chaos? The last step drafts every reply.\n\nUrgent messages hide between questions and quote requests. Sorting them first means the right ones get answered first.\n\n3 steps.\n1. Copy 20 recent customer messages into one document. Remove last names and phone numbers.\n2. Ask AI to label each one urgent, quote request, or question.\n3. Ask for a one line reply to each, then read every reply before you send it.\n\nAI drafts. You still hit send.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word SORT. We'll send it to you.\n\n#AITools #SmallBusiness #CustomerService #Productivity",
+        "tiktok": "How to sort customer messages with AI.\n\nInbox chaos? The last step drafts every reply.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us SORT.\n\n#AITools #SmallBusiness #CustomerService #Productivity"
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "time": "12:30",
+      "id": "2026-11-16-charisma-myth-presence",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Charisma is learnable. The third step is warmth.",
+      "why": "Olivia Fox Cabane says charisma is a learned skill built on presence, power, and warmth. People feel it the second you drift.",
+      "src": "The Charisma Myth, Olivia Fox Cabane",
+      "steps": [
+        "Put your phone out of sight before you talk. People feel it when your attention is split.",
+        "Listen to their whole thought before you plan your reply.",
+        "Show warmth. Say one thing you genuinely appreciated about what they shared."
+      ],
+      "take": "Presence first, then warmth. People feel both.",
+      "label": "Do this",
+      "say": [
+        "Charisma is learnable! The third step is warmth.",
+        "Olivia Fox Cabane says charisma is a learned skill built on presence, power, and warmth. People feel it the second you drift.",
+        "First, put your phone out of sight before you talk. People feel it when your attention is split. That's the easy one.",
+        "Next, listen to their whole thought before you plan your reply.",
+        "Now the warm part. Say one thing you genuinely appreciated about what they shared.",
+        "Presence first, then warmth. People feel both."
+      ],
+      "captions": {
+        "facebook": "How to be more charismatic in conversation.\n\nCharisma is learnable. The third step is warmth.\n\nOlivia Fox Cabane says charisma is a learned skill built on presence, power, and warmth. People feel it the second you drift.\n\n3 steps.\n1. Put your phone out of sight before you talk. People feel it when your attention is split.\n2. Listen to their whole thought before you plan your reply.\n3. Show warmth. Say one thing you genuinely appreciated about what they shared.\n\nPresence first, then warmth. People feel both.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Charisma #Communication #Leadership",
+        "instagram": "How to be more charismatic in conversation.\n\nCharisma is learnable. The third step is warmth.\n\nOlivia Fox Cabane says charisma is a learned skill built on presence, power, and warmth. People feel it the second you drift.\n\n3 steps.\n1. Put your phone out of sight before you talk. People feel it when your attention is split.\n2. Listen to their whole thought before you plan your reply.\n3. Show warmth. Say one thing you genuinely appreciated about what they shared.\n\nPresence first, then warmth. People feel both.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Charisma #Communication #Leadership",
+        "tiktok": "How to be more charismatic in conversation.\n\nCharisma is learnable. The third step is warmth.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #Charisma #Communication #Leadership"
+      }
+    },
+    {
+      "date": "2026-11-16",
+      "time": "19:00",
+      "id": "2026-11-16-microsoft-365-outage-plan-b",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Microsoft 365 went dark. Point 3 is your plan B.",
+      "why": "A Microsoft 365 outage began November 12 and hit Outlook, Teams, and Copilot. One tool down can mean no way to reach anyone.",
+      "src": "The Next Web, Nov 13 2026, Microsoft 365 Status and Hacker News, Nov 12 and 13 2026",
+      "steps": [
+        "Reports came from 74 countries per Downdetector, and the outage ran past 12 hours.",
+        "Microsoft ruled out a cyberattack and has not given a root cause, so nobody should guess at one.",
+        "Set up a plan B this week, a second contact method, a text list for key customers, and a notes tool outside your email."
+      ],
+      "take": "No cause is confirmed, but a plan B is easy to set up.",
+      "label": "What it means",
+      "say": [
+        "Microsoft three sixty five went dark! Point three is your plan B.",
+        "A Microsoft three sixty five outage began November twelfth and hit Outlook, Teams, and Copilot. One tool down can mean no way to reach anyone.",
+        "First, reports came from seventy four countries per Downdetector, and the outage ran past twelve hours. That's the scale.",
+        "Next, Microsoft ruled out a cyberattack and has not given a root cause, so nobody should guess at one.",
+        "Your plan B is point three. Set up a second contact method, a text list for key customers, and a notes tool outside your email.",
+        "No cause is confirmed, but a plan B is easy to set up."
+      ],
+      "captions": {
+        "facebook": "Microsoft 365 outage, what to do.\n\nMicrosoft 365 went dark. Point 3 is your plan B.\n\nA Microsoft 365 outage began November 12 and hit Outlook, Teams, and Copilot. One tool down can mean no way to reach anyone.\n\n3 steps.\n1. Reports came from 74 countries per Downdetector, and the outage ran past 12 hours.\n2. Microsoft ruled out a cyberattack and has not given a root cause, so nobody should guess at one.\n3. Set up a plan B this week, a second contact method, a text list for key customers, and a notes tool outside your email.\n\nNo cause is confirmed, but a plan B is easy to set up.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Microsoft365 #SmallBusiness #BusinessContinuity",
+        "instagram": "Microsoft 365 outage, what to do.\n\nMicrosoft 365 went dark. Point 3 is your plan B.\n\nA Microsoft 365 outage began November 12 and hit Outlook, Teams, and Copilot. One tool down can mean no way to reach anyone.\n\n3 steps.\n1. Reports came from 74 countries per Downdetector, and the outage ran past 12 hours.\n2. Microsoft ruled out a cyberattack and has not given a root cause, so nobody should guess at one.\n3. Set up a plan B this week, a second contact method, a text list for key customers, and a notes tool outside your email.\n\nNo cause is confirmed, but a plan B is easy to set up.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Microsoft365 #SmallBusiness #BusinessContinuity",
+        "tiktok": "Microsoft 365 outage, what to do.\n\nMicrosoft 365 went dark. Point 3 is your plan B.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Microsoft365 #SmallBusiness #BusinessContinuity"
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "time": "08:00",
+      "id": "2026-11-17-ai-incident-status-update",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Outage at work? Step 3 writes the apology.",
+      "why": "Silence makes a problem feel bigger. A short, calm update tells customers you know and you are on it.",
+      "src": "",
+      "steps": [
+        "Write what happened in plain words, what broke, when, and who is affected.",
+        "Ask AI for a calm four line status update for customers.",
+        "Ask for one honest apology line and the time of your next update."
+      ],
+      "take": "Only say what you know. Never guess at the cause.",
+      "label": "Step",
+      "say": [
+        "Outage at work! Step three writes the apology.",
+        "Silence makes a problem feel bigger. A short, calm update tells customers you know and you are on it.",
+        "First, write what happened in plain words. What broke, when, and who is affected. Quick win.",
+        "Next, ask AI for a calm four line status update for customers.",
+        "Now the apology. Ask for one honest line and the time of your next update.",
+        "Only say what you know. Never guess at the cause."
+      ],
+      "keyword": "STATUS",
+      "prompt": "You are a calm customer communicator. Below is what went wrong at my business, written in plain words. Write a four line status update for customers that says what happened, who is affected, what we are doing, and when the next update comes. Then write one honest apology line. Only use facts I gave you, and never guess at a cause. If a fact is missing, write [fill this in]. What happened [paste here]",
+      "captions": {
+        "facebook": "How to write a customer status update after an outage.\n\nOutage at work? Step 3 writes the apology.\n\nSilence makes a problem feel bigger. A short, calm update tells customers you know and you are on it.\n\n3 steps.\n1. Write what happened in plain words, what broke, when, and who is affected.\n2. Ask AI for a calm four line status update for customers.\n3. Ask for one honest apology line and the time of your next update.\n\nOnly say what you know. Never guess at the cause.\n\nWant the exact prompt? Follow EVOGENCY and message us the word STATUS. We'll send it to you.\n\n#AITools #SmallBusiness #CustomerService #Communication",
+        "instagram": "How to write a customer status update after an outage.\n\nOutage at work? Step 3 writes the apology.\n\nSilence makes a problem feel bigger. A short, calm update tells customers you know and you are on it.\n\n3 steps.\n1. Write what happened in plain words, what broke, when, and who is affected.\n2. Ask AI for a calm four line status update for customers.\n3. Ask for one honest apology line and the time of your next update.\n\nOnly say what you know. Never guess at the cause.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word STATUS. We'll send it to you.\n\n#AITools #SmallBusiness #CustomerService #Communication",
+        "tiktok": "How to write a customer status update after an outage.\n\nOutage at work? Step 3 writes the apology.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us STATUS.\n\n#AITools #SmallBusiness #CustomerService #Communication"
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "time": "12:30",
+      "id": "2026-11-17-devvm-sandbox",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "AI coder near your SSH keys? Step 3 fixes that.",
+      "why": "devvm gives each project folder its own sandbox VM, so a prompt injection or a rogue agent stays inside it.",
+      "src": "devvm.dev",
+      "steps": [
+        "Install devvm from devvm.dev, then run devvm in a project folder.",
+        "It picks toolchains from your project's files and opens a shell inside that folder's VM.",
+        "Run Claude Code, Codex, or opencode there. Your SSH keys and AWS credentials stay outside the VM."
+      ],
+      "take": "A sandbox limits the damage, so read the docs on what it covers.",
+      "label": "How to use it",
+      "say": [
+        "AI coder near your SSH keys! Step three fixes that.",
+        "devvm gives each project folder its own sandbox VM, so a prompt injection or a rogue agent stays inside it.",
+        "First, install devvm from devvm dot dev, then run devvm in a project folder. One command. That's the easy one.",
+        "Next, it picks toolchains from your project's files and opens a shell inside that folder's VM.",
+        "Here's the fix. Run Claude Code, Codex, or opencode there, and your SSH keys and AWS credentials stay outside the VM.",
+        "A sandbox limits the damage, so read the docs on what it covers."
+      ],
+      "captions": {
+        "facebook": "Sandbox for AI coding agents.\n\nAI coder near your SSH keys? Step 3 fixes that.\n\ndevvm gives each project folder its own sandbox VM, so a prompt injection or a rogue agent stays inside it.\n\n3 steps.\n1. Install devvm from devvm.dev, then run devvm in a project folder.\n2. It picks toolchains from your project's files and opens a shell inside that folder's VM.\n3. Run Claude Code, Codex, or opencode there. Your SSH keys and AWS credentials stay outside the VM.\n\nA sandbox limits the damage, so read the docs on what it covers.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#DevTools #AIAgents #Security #Developers",
+        "instagram": "Sandbox for AI coding agents.\n\nAI coder near your SSH keys? Step 3 fixes that.\n\ndevvm gives each project folder its own sandbox VM, so a prompt injection or a rogue agent stays inside it.\n\n3 steps.\n1. Install devvm from devvm.dev, then run devvm in a project folder.\n2. It picks toolchains from your project's files and opens a shell inside that folder's VM.\n3. Run Claude Code, Codex, or opencode there. Your SSH keys and AWS credentials stay outside the VM.\n\nA sandbox limits the damage, so read the docs on what it covers.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#DevTools #AIAgents #Security #Developers",
+        "tiktok": "Sandbox for AI coding agents.\n\nAI coder near your SSH keys? Step 3 fixes that.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#DevTools #AIAgents #Security #Developers"
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "time": "19:00",
+      "id": "2026-11-17-gemini-4-hydrogen",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Google's fast new model. Point 3 is the catch.",
+      "why": "On November 12 Google launched Gemini 4 Hydrogen, a fast model for everyday coding and agent work.",
+      "src": "Google, Nov 12 2026, Search Engine Land, Nov 12 2026, Mashable, Nov 13 2026",
+      "steps": [
+        "It is rolling out in the Gemini API, AI Studio, Android Studio, and the Gemini app.",
+        "Google lists $1.50 per million input tokens, $7.50 per million output, and a 1 million token window.",
+        "Google claims about 2.5 times the speed of Gemini 3.8 Flash. That is Google's own number, so test it."
+      ],
+      "take": "Test it on your own jobs before you switch.",
+      "label": "What it means",
+      "say": [
+        "Google's fast new model! Point three is the catch.",
+        "On November twelfth Google launched Gemini four Hydrogen, a fast model for everyday coding and agent work.",
+        "First, it is rolling out in the Gemini API, AI Studio, Android Studio, and the Gemini app. That's where to find it.",
+        "Next, Google lists one dollar fifty per million input tokens, seven dollars fifty per million output, and a one million token window.",
+        "The catch is point three. Google claims about two point five times the speed of Gemini three point eight Flash. That is Google's own number, so test it.",
+        "Test it on your own jobs before you switch."
+      ],
+      "captions": {
+        "facebook": "Gemini 4 Hydrogen explained.\n\nGoogle's fast new model. Point 3 is the catch.\n\nOn November 12 Google launched Gemini 4 Hydrogen, a fast model for everyday coding and agent work.\n\n3 steps.\n1. It is rolling out in the Gemini API, AI Studio, Android Studio, and the Gemini app.\n2. Google lists $1.50 per million input tokens, $7.50 per million output, and a 1 million token window.\n3. Google claims about 2.5 times the speed of Gemini 3.8 Flash. That is Google's own number, so test it.\n\nTest it on your own jobs before you switch.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Gemini #Google #AIAgents",
+        "instagram": "Gemini 4 Hydrogen explained.\n\nGoogle's fast new model. Point 3 is the catch.\n\nOn November 12 Google launched Gemini 4 Hydrogen, a fast model for everyday coding and agent work.\n\n3 steps.\n1. It is rolling out in the Gemini API, AI Studio, Android Studio, and the Gemini app.\n2. Google lists $1.50 per million input tokens, $7.50 per million output, and a 1 million token window.\n3. Google claims about 2.5 times the speed of Gemini 3.8 Flash. That is Google's own number, so test it.\n\nTest it on your own jobs before you switch.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Gemini #Google #AIAgents",
+        "tiktok": "Gemini 4 Hydrogen explained.\n\nGoogle's fast new model. Point 3 is the catch.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Gemini #Google #AIAgents"
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "time": "08:00",
+      "id": "2026-11-18-ai-dmarc-check",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Outlook bouncing your emails? The last step fixes it.",
+      "why": "Reports say Outlook.com has started bouncing some mail from domains with no DMARC record. A basic record takes minutes.",
+      "src": "Spam Resource, Nov 7 2026, MailRoute, Nov 6 2026, Bento, Nov 9 2026",
+      "steps": [
+        "Look up your sending domain's SPF, DKIM, and DMARC records and paste them in.",
+        "Ask AI what is missing and what each part does.",
+        "Ask for the exact DMARC record at p=none, and never loosen a stricter policy you already have."
+      ],
+      "take": "How far this reaches is not confirmed, so check with whoever manages your domain.",
+      "label": "Step",
+      "say": [
+        "Outlook bouncing your emails! The last step fixes it.",
+        "Reports say Outlook dot com has started bouncing some mail from domains with no DMARC record. A basic record takes minutes.",
+        "First, look up your sending domain's SPF, DKIM, and DMARC records and paste them in. That's the easy part.",
+        "Next, ask AI what is missing and what each part does.",
+        "Now the fix. Ask for the exact DMARC record at p equals none, and never loosen a stricter policy you already have.",
+        "How far this reaches is not confirmed, so check with whoever manages your domain."
+      ],
+      "keyword": "DMARC",
+      "prompt": "You are a careful email deliverability helper. Below are the SPF, DKIM, and DMARC DNS records for my sending domain. Tell me what is missing, explain what each part does in plain words, and write the exact DMARC TXT record at p=none if I have none. If I already have a stricter policy, tell me not to loosen it. Say what you are unsure about instead of guessing. My records [paste here]",
+      "captions": {
+        "facebook": "How to fix Outlook rejecting your email.\n\nOutlook bouncing your emails? The last step fixes it.\n\nReports say Outlook.com has started bouncing some mail from domains with no DMARC record. A basic record takes minutes.\n\n3 steps.\n1. Look up your sending domain's SPF, DKIM, and DMARC records and paste them in.\n2. Ask AI what is missing and what each part does.\n3. Ask for the exact DMARC record at p=none, and never loosen a stricter policy you already have.\n\nHow far this reaches is not confirmed, so check with whoever manages your domain.\n\nWant the exact prompt? Follow EVOGENCY and message us the word DMARC. We'll send it to you.\n\n#EmailMarketing #SmallBusiness #Outlook #AITools",
+        "instagram": "How to fix Outlook rejecting your email.\n\nOutlook bouncing your emails? The last step fixes it.\n\nReports say Outlook.com has started bouncing some mail from domains with no DMARC record. A basic record takes minutes.\n\n3 steps.\n1. Look up your sending domain's SPF, DKIM, and DMARC records and paste them in.\n2. Ask AI what is missing and what each part does.\n3. Ask for the exact DMARC record at p=none, and never loosen a stricter policy you already have.\n\nHow far this reaches is not confirmed, so check with whoever manages your domain.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word DMARC. We'll send it to you.\n\n#EmailMarketing #SmallBusiness #Outlook #AITools",
+        "tiktok": "How to fix Outlook rejecting your email.\n\nOutlook bouncing your emails? The last step fixes it.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us DMARC.\n\n#EmailMarketing #SmallBusiness #Outlook #AITools"
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "time": "12:30",
+      "id": "2026-11-18-crucial-conversations-state",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Bad news needs safety first. Step 3 is STATE.",
+      "why": "Patterson, Grenny, McMillan, and Switzler say people go quiet or turn harsh when a talk feels unsafe. Make it safe before you make your point.",
+      "src": "Crucial Conversations, Patterson, Grenny, McMillan, and Switzler",
+      "steps": [
+        "Start with heart. Ask what you really want from this talk, for you, them, and the relationship.",
+        "Make it safe. Say what you respect and what you both want before the hard part.",
+        "Share your facts, then ask for their view. Rehearse it first by having AI play your boss."
+      ],
+      "take": "Facts first, then curiosity. Safety keeps them listening.",
+      "label": "Do this",
+      "say": [
+        "Bad news needs safety first! Step three is STATE.",
+        "Patterson, Grenny, McMillan, and Switzler say people go quiet or turn harsh when a talk feels unsafe. Make it safe before you make your point.",
+        "First, start with heart. Ask what you really want from this talk, for you, them, and the relationship. Good start.",
+        "Next, make it safe. Say what you respect and what you both want before the hard part.",
+        "Now STATE. Share your facts, then ask for their view. Rehearse it first by having AI play your boss.",
+        "Facts first, then curiosity. Safety keeps them listening."
+      ],
+      "captions": {
+        "facebook": "How to give your boss bad news.\n\nBad news needs safety first. Step 3 is STATE.\n\nPatterson, Grenny, McMillan, and Switzler say people go quiet or turn harsh when a talk feels unsafe. Make it safe before you make your point.\n\n3 steps.\n1. Start with heart. Ask what you really want from this talk, for you, them, and the relationship.\n2. Make it safe. Say what you respect and what you both want before the hard part.\n3. Share your facts, then ask for their view. Rehearse it first by having AI play your boss.\n\nFacts first, then curiosity. Safety keeps them listening.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #CrucialConversations #Leadership #Communication",
+        "instagram": "How to give your boss bad news.\n\nBad news needs safety first. Step 3 is STATE.\n\nPatterson, Grenny, McMillan, and Switzler say people go quiet or turn harsh when a talk feels unsafe. Make it safe before you make your point.\n\n3 steps.\n1. Start with heart. Ask what you really want from this talk, for you, them, and the relationship.\n2. Make it safe. Say what you respect and what you both want before the hard part.\n3. Share your facts, then ask for their view. Rehearse it first by having AI play your boss.\n\nFacts first, then curiosity. Safety keeps them listening.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #CrucialConversations #Leadership #Communication",
+        "tiktok": "How to give your boss bad news.\n\nBad news needs safety first. Step 3 is STATE.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #CrucialConversations #Leadership #Communication"
+      }
+    },
+    {
+      "date": "2026-11-18",
+      "time": "19:00",
+      "id": "2026-11-18-united-bans-ai-agents",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "United banned outside AI agents. Point 3 is yours.",
+      "why": "On November 11 United said it is barring unauthorized third party AI agents from making, changing, or servicing tickets.",
+      "src": "CBS News, Nov 11 2026, Tech Times and Hacker News, Nov 12 2026",
+      "steps": [
+        "United cites exposed logins, purchases nobody meant to make, and rules that call for a human to attest.",
+        "AI tools can still research fares, and reports differ on which booking sites are affected.",
+        "Decide your own agent policy, and never hand a personal login to an AI tool."
+      ],
+      "take": "Every business is about to need an agent policy.",
+      "label": "What it means",
+      "say": [
+        "United banned outside AI agents! Point three is yours.",
+        "On November eleventh United said it is barring unauthorized third party AI agents from making, changing, or servicing tickets.",
+        "First, United cites exposed logins, purchases nobody meant to make, and rules that call for a human to attest. That's the why.",
+        "Next, AI tools can still research fares, and reports differ on which booking sites are affected.",
+        "Point three is yours. Decide your own agent policy, and never hand a personal login to an AI tool.",
+        "Every business is about to need an agent policy."
+      ],
+      "captions": {
+        "facebook": "United Airlines AI agent ban explained.\n\nUnited banned outside AI agents. Point 3 is yours.\n\nOn November 11 United said it is barring unauthorized third party AI agents from making, changing, or servicing tickets.\n\n3 steps.\n1. United cites exposed logins, purchases nobody meant to make, and rules that call for a human to attest.\n2. AI tools can still research fares, and reports differ on which booking sites are affected.\n3. Decide your own agent policy, and never hand a personal login to an AI tool.\n\nEvery business is about to need an agent policy.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #AIAgents #SmallBusiness #Travel",
+        "instagram": "United Airlines AI agent ban explained.\n\nUnited banned outside AI agents. Point 3 is yours.\n\nOn November 11 United said it is barring unauthorized third party AI agents from making, changing, or servicing tickets.\n\n3 steps.\n1. United cites exposed logins, purchases nobody meant to make, and rules that call for a human to attest.\n2. AI tools can still research fares, and reports differ on which booking sites are affected.\n3. Decide your own agent policy, and never hand a personal login to an AI tool.\n\nEvery business is about to need an agent policy.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #AIAgents #SmallBusiness #Travel",
+        "tiktok": "United Airlines AI agent ban explained.\n\nUnited banned outside AI agents. Point 3 is yours.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #AIAgents #SmallBusiness #Travel"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "time": "08:00",
+      "id": "2026-11-19-ai-modernize-javascript",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Old JavaScript? Step 3 explains every change.",
+      "why": "Old code keeps working until it doesn't. Newer browser features are often shorter and easier to review.",
+      "src": "",
+      "steps": [
+        "Paste one old function and say which browsers you need to support.",
+        "Ask a coding assistant to rewrite it with modern browser features.",
+        "Ask it to explain each change and flag anything that behaves differently. Then run your tests."
+      ],
+      "take": "Small rewrites, one function at a time.",
+      "label": "Step",
+      "say": [
+        "Old JavaScript! Step three explains every change.",
+        "Old code keeps working until it doesn't. Newer browser features are often shorter and easier to review.",
+        "First, paste one old function and say which browsers you need to support. Quick win.",
+        "Next, ask a coding assistant to rewrite it with modern browser features.",
+        "Now the part that keeps you safe. Ask it to explain each change and flag anything that behaves differently. Then run your tests.",
+        "Small rewrites, one function at a time."
+      ],
+      "keyword": "MODERN",
+      "prompt": "You are a careful senior JavaScript reviewer. Rewrite the function below using modern browser features. Keep the behavior the same. Then explain each change in one line and list anything that could behave differently. I need to support [browsers]. Function [paste here]",
+      "captions": {
+        "facebook": "How to modernize old JavaScript with AI.\n\nOld JavaScript? Step 3 explains every change.\n\nOld code keeps working until it doesn't. Newer browser features are often shorter and easier to review.\n\n3 steps.\n1. Paste one old function and say which browsers you need to support.\n2. Ask a coding assistant to rewrite it with modern browser features.\n3. Ask it to explain each change and flag anything that behaves differently. Then run your tests.\n\nSmall rewrites, one function at a time.\n\nWant the exact prompt? Follow EVOGENCY and message us the word MODERN. We'll send it to you.\n\n#JavaScript #Coding #AITools #Developers",
+        "instagram": "How to modernize old JavaScript with AI.\n\nOld JavaScript? Step 3 explains every change.\n\nOld code keeps working until it doesn't. Newer browser features are often shorter and easier to review.\n\n3 steps.\n1. Paste one old function and say which browsers you need to support.\n2. Ask a coding assistant to rewrite it with modern browser features.\n3. Ask it to explain each change and flag anything that behaves differently. Then run your tests.\n\nSmall rewrites, one function at a time.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word MODERN. We'll send it to you.\n\n#JavaScript #Coding #AITools #Developers",
+        "tiktok": "How to modernize old JavaScript with AI.\n\nOld JavaScript? Step 3 explains every change.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us MODERN.\n\n#JavaScript #Coding #AITools #Developers"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "time": "12:30",
+      "id": "2026-11-19-benchup-3d-woodworking",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Free 3D app for woodworkers. The third step is measuring.",
+      "why": "BenchUp is a free, open source 3D modeling app for woodworking and furniture design. No account needed.",
+      "src": "ketchup3d.github.io/app",
+      "steps": [
+        "Open the editor in your desktop browser or download the app. No account.",
+        "Draw a rectangle, then use Push/Pull to give it thickness.",
+        "Type exact lengths and use Tape Measure and Dimensions to check fit before you cut."
+      ],
+      "take": "Needs a desktop browser with WebGPU or WebGL2, and a mouse.",
+      "label": "How to use it",
+      "say": [
+        "Free 3D app for woodworkers! The third step is measuring.",
+        "BenchUp is a free, open source 3D modeling app for woodworking and furniture design. No account needed.",
+        "First, open the editor in your desktop browser or download the app. Easy start.",
+        "Next, draw a rectangle, then use Push Pull to give it thickness.",
+        "Now the measuring. Type exact lengths and use Tape Measure and Dimensions to check fit before you cut.",
+        "Needs a desktop browser with WebGPU or WebGL2, and a mouse."
+      ],
+      "captions": {
+        "facebook": "Free 3D woodworking design app.\n\nFree 3D app for woodworkers. The third step is measuring.\n\nBenchUp is a free, open source 3D modeling app for woodworking and furniture design. No account needed.\n\n3 steps.\n1. Open the editor in your desktop browser or download the app. No account.\n2. Draw a rectangle, then use Push/Pull to give it thickness.\n3. Type exact lengths and use Tape Measure and Dimensions to check fit before you cut.\n\nNeeds a desktop browser with WebGPU or WebGL2, and a mouse.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#Woodworking #3DDesign #FreeTools #DIY",
+        "instagram": "Free 3D woodworking design app.\n\nFree 3D app for woodworkers. The third step is measuring.\n\nBenchUp is a free, open source 3D modeling app for woodworking and furniture design. No account needed.\n\n3 steps.\n1. Open the editor in your desktop browser or download the app. No account.\n2. Draw a rectangle, then use Push/Pull to give it thickness.\n3. Type exact lengths and use Tape Measure and Dimensions to check fit before you cut.\n\nNeeds a desktop browser with WebGPU or WebGL2, and a mouse.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#Woodworking #3DDesign #FreeTools #DIY",
+        "tiktok": "Free 3D woodworking design app.\n\nFree 3D app for woodworkers. The third step is measuring.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#Woodworking #3DDesign #FreeTools #DIY"
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "time": "19:00",
+      "id": "2026-11-19-chatgpt-business-profiles",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "ChatGPT now has business profiles. Point 3 is eligibility.",
+      "why": "On November 10 OpenAI launched Businesses in ChatGPT in beta. Eligible companies can claim and verify a profile.",
+      "src": "The Next Web, Nov 10 2026, ContentGrip and Business Today, Nov 11 2026",
+      "steps": [
+        "A profile shows mentions, website clicks, and common topics. Business Agents let shoppers chat with a company's own AI.",
+        "Agents must say they are AI and keep prices accurate. Reports say OpenAI shares no private chats with businesses.",
+        "For now agents are limited to eligible US ecommerce and online service companies. No ranking boost is promised."
+      ],
+      "take": "Claiming a profile is a fair first step, but nobody has shown it lifts recommendations.",
+      "label": "What it means",
+      "say": [
+        "ChatGPT now has business profiles! Point three is eligibility.",
+        "On November tenth OpenAI launched Businesses in ChatGPT in beta. Eligible companies can claim and verify a profile.",
+        "First, a profile shows mentions, website clicks, and common topics. Business Agents let shoppers chat with a company's own AI. That's the big one.",
+        "Next, agents must say they are AI and keep prices accurate. Reports say OpenAI shares no private chats with businesses.",
+        "Eligibility is point three. For now agents are limited to eligible US ecommerce and online service companies, and no ranking boost is promised.",
+        "Claiming a profile is a fair first step, but nobody has shown it lifts recommendations."
+      ],
+      "captions": {
+        "facebook": "ChatGPT business profiles explained.\n\nChatGPT now has business profiles. Point 3 is eligibility.\n\nOn November 10 OpenAI launched Businesses in ChatGPT in beta. Eligible companies can claim and verify a profile.\n\n3 steps.\n1. A profile shows mentions, website clicks, and common topics. Business Agents let shoppers chat with a company's own AI.\n2. Agents must say they are AI and keep prices accurate. Reports say OpenAI shares no private chats with businesses.\n3. For now agents are limited to eligible US ecommerce and online service companies. No ranking boost is promised.\n\nClaiming a profile is a fair first step, but nobody has shown it lifts recommendations.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ChatGPT #SmallBusiness #AISearch",
+        "instagram": "ChatGPT business profiles explained.\n\nChatGPT now has business profiles. Point 3 is eligibility.\n\nOn November 10 OpenAI launched Businesses in ChatGPT in beta. Eligible companies can claim and verify a profile.\n\n3 steps.\n1. A profile shows mentions, website clicks, and common topics. Business Agents let shoppers chat with a company's own AI.\n2. Agents must say they are AI and keep prices accurate. Reports say OpenAI shares no private chats with businesses.\n3. For now agents are limited to eligible US ecommerce and online service companies. No ranking boost is promised.\n\nClaiming a profile is a fair first step, but nobody has shown it lifts recommendations.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ChatGPT #SmallBusiness #AISearch",
+        "tiktok": "ChatGPT business profiles explained.\n\nChatGPT now has business profiles. Point 3 is eligibility.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #ChatGPT #SmallBusiness #AISearch"
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "time": "08:00",
+      "id": "2026-11-20-ai-policy-position",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "New policy dropped? Step 3 writes your position.",
+      "why": "Long notices bury the part that matters to you. A one page read beats a 20 minute scroll.",
+      "src": "",
+      "steps": [
+        "Paste the policy or terms change you need to understand, like an airline's new AI agent rules.",
+        "Ask AI who is affected and what it changes for your own business.",
+        "Ask for a one page position for your own policy, then check it against the original text."
+      ],
+      "take": "Check every claim against the original before you act.",
+      "label": "Step",
+      "say": [
+        "New policy dropped! Step three writes your position.",
+        "Long notices bury the part that matters to you. A one page read beats a twenty minute scroll.",
+        "First, paste the policy or terms change you need to understand, like an airline's new AI agent rules. Easy start.",
+        "Next, ask AI who is affected and what it changes for your own business.",
+        "Now your position. Ask for a one page position for your own policy, then check it against the original text.",
+        "Check every claim against the original before you act."
+      ],
+      "keyword": "POLICY",
+      "prompt": "You are a careful policy analyst. Below is a policy or terms change. Tell me who is affected, what changes for my business, and which parts are unclear. Then draft a one page position for my own policy. Only say what you can find in the text, and say what you are unsure about instead of guessing. About my business [paste here]. The policy [paste here]",
+      "captions": {
+        "facebook": "How to summarize a policy change with AI.\n\nNew policy dropped? Step 3 writes your position.\n\nLong notices bury the part that matters to you. A one page read beats a 20 minute scroll.\n\n3 steps.\n1. Paste the policy or terms change you need to understand, like an airline's new AI agent rules.\n2. Ask AI who is affected and what it changes for your own business.\n3. Ask for a one page position for your own policy, then check it against the original text.\n\nCheck every claim against the original before you act.\n\nWant the exact prompt? Follow EVOGENCY and message us the word POLICY. We'll send it to you.\n\n#AITools #SmallBusiness #Policy #Productivity",
+        "instagram": "How to summarize a policy change with AI.\n\nNew policy dropped? Step 3 writes your position.\n\nLong notices bury the part that matters to you. A one page read beats a 20 minute scroll.\n\n3 steps.\n1. Paste the policy or terms change you need to understand, like an airline's new AI agent rules.\n2. Ask AI who is affected and what it changes for your own business.\n3. Ask for a one page position for your own policy, then check it against the original text.\n\nCheck every claim against the original before you act.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word POLICY. We'll send it to you.\n\n#AITools #SmallBusiness #Policy #Productivity",
+        "tiktok": "How to summarize a policy change with AI.\n\nNew policy dropped? Step 3 writes your position.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us POLICY.\n\n#AITools #SmallBusiness #Policy #Productivity"
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "time": "12:30",
+      "id": "2026-11-20-give-and-take-protect",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Givers win and lose. The third habit protects you.",
+      "why": "Adam Grant found givers land at both the bottom and the top of success. The ones at the top are generous but protect their own time.",
+      "src": "Give and Take, Adam Grant",
+      "steps": [
+        "Do one five minute favor today, like an intro, a quick answer, or a share.",
+        "Notice whether someone is a giver, a taker, or a matcher before you give big.",
+        "Protect your time. Say yes fast to small favors and no kindly to big ones. Have AI draft the kind no."
+      ],
+      "take": "Generous and protected beats generous and drained.",
+      "label": "Do this",
+      "say": [
+        "Givers win and lose! The third habit protects you.",
+        "Adam Grant found givers land at both the bottom and the top of success. The ones at the top are generous but protect their own time.",
+        "First, do one five minute favor today, like an intro, a quick answer, or a share. Small and fast.",
+        "Next, notice whether someone is a giver, a taker, or a matcher before you give big.",
+        "Now the habit that protects you. Say yes fast to small favors and no kindly to big ones. Have AI draft the kind no.",
+        "Generous and protected beats generous and drained."
+      ],
+      "captions": {
+        "facebook": "How to be generous without burning out.\n\nGivers win and lose. The third habit protects you.\n\nAdam Grant found givers land at both the bottom and the top of success. The ones at the top are generous but protect their own time.\n\n3 steps.\n1. Do one five minute favor today, like an intro, a quick answer, or a share.\n2. Notice whether someone is a giver, a taker, or a matcher before you give big.\n3. Protect your time. Say yes fast to small favors and no kindly to big ones. Have AI draft the kind no.\n\nGenerous and protected beats generous and drained.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #GiveAndTake #Networking #Leadership",
+        "instagram": "How to be generous without burning out.\n\nGivers win and lose. The third habit protects you.\n\nAdam Grant found givers land at both the bottom and the top of success. The ones at the top are generous but protect their own time.\n\n3 steps.\n1. Do one five minute favor today, like an intro, a quick answer, or a share.\n2. Notice whether someone is a giver, a taker, or a matcher before you give big.\n3. Protect your time. Say yes fast to small favors and no kindly to big ones. Have AI draft the kind no.\n\nGenerous and protected beats generous and drained.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #GiveAndTake #Networking #Leadership",
+        "tiktok": "How to be generous without burning out.\n\nGivers win and lose. The third habit protects you.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #GiveAndTake #Networking #Leadership"
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "time": "19:00",
+      "id": "2026-11-20-gemini-decisions-api",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "An AI that scores, not chats. Fact 3 is price.",
+      "why": "On November 11 Google launched the Gemini Decisions API. It scores questions about one input instead of writing text.",
+      "src": "Google, SiliconANGLE, and MarkTechPost, Nov 11 2026",
+      "steps": [
+        "It scores up to 1,000 yes or no, multiple choice, or rubric questions and returns probabilities.",
+        "The input can be text, images, audio, video, or a PDF. Think routing a message or grading a lead.",
+        "Google lists $0.10 per million input tokens and no charge for output. Those figures are Google's own."
+      ],
+      "take": "Test it before you trust it. Independent tests are not out yet.",
+      "label": "What it means",
+      "say": [
+        "An AI that scores, not chats! Fact three is price.",
+        "On November eleventh Google launched the Gemini Decisions API. It scores questions about one input instead of writing text.",
+        "First, it scores up to one thousand yes or no, multiple choice, or rubric questions and returns probabilities. That's the idea.",
+        "Next, the input can be text, images, audio, video, or a PDF. Think routing a message or grading a lead.",
+        "Fact three is the price. Google lists ten cents per million input tokens and no charge for output. Those figures are Google's own.",
+        "Test it before you trust it. Independent tests are not out yet."
+      ],
+      "captions": {
+        "facebook": "Google Gemini Decisions API explained.\n\nAn AI that scores, not chats. Fact 3 is price.\n\nOn November 11 Google launched the Gemini Decisions API. It scores questions about one input instead of writing text.\n\n3 steps.\n1. It scores up to 1,000 yes or no, multiple choice, or rubric questions and returns probabilities.\n2. The input can be text, images, audio, video, or a PDF. Think routing a message or grading a lead.\n3. Google lists $0.10 per million input tokens and no charge for output. Those figures are Google's own.\n\nTest it before you trust it. Independent tests are not out yet.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Gemini #Developers #AIAgents",
+        "instagram": "Google Gemini Decisions API explained.\n\nAn AI that scores, not chats. Fact 3 is price.\n\nOn November 11 Google launched the Gemini Decisions API. It scores questions about one input instead of writing text.\n\n3 steps.\n1. It scores up to 1,000 yes or no, multiple choice, or rubric questions and returns probabilities.\n2. The input can be text, images, audio, video, or a PDF. Think routing a message or grading a lead.\n3. Google lists $0.10 per million input tokens and no charge for output. Those figures are Google's own.\n\nTest it before you trust it. Independent tests are not out yet.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Gemini #Developers #AIAgents",
+        "tiktok": "Google Gemini Decisions API explained.\n\nAn AI that scores, not chats. Fact 3 is price.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Gemini #Developers #AIAgents"
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "time": "08:00",
+      "id": "2026-11-21-ai-video-ad-prompt",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "A 15 second ad prompt. Step 3 fixes the text.",
+      "why": "AI video tools can garble words inside the picture. Writing the on screen text separately lets you add it yourself.",
+      "src": "",
+      "steps": [
+        "Write one sentence on what you sell, three facts you can prove, and the vibe you want.",
+        "Ask AI for a shot by shot plan for a 15 second video, with one spoken line.",
+        "Ask for the on screen text written separately, then add it in an editor."
+      ],
+      "take": "Only claim facts you can prove.",
+      "label": "Step",
+      "say": [
+        "A fifteen second ad prompt! Step three fixes the text.",
+        "AI video tools can garble words inside the picture. Writing the on screen text separately lets you add it yourself.",
+        "First, write one sentence on what you sell, three facts you can prove, and the vibe you want. Quick start.",
+        "Next, ask AI for a shot by shot plan for a fifteen second video, with one spoken line.",
+        "Now the text fix. Ask for the on screen text written separately, then add it in an editor.",
+        "Only claim facts you can prove."
+      ],
+      "keyword": "SHOTS",
+      "prompt": "You are a short video ad planner. Below is what I sell, three facts I can prove, and the vibe I want. Write a shot by shot plan for a 15 second video with one spoken line. Then write the on screen text separately, so I can add it in an editor. Use only the facts I give you and invent nothing. What I sell [paste here]. Facts [paste here]. Vibe [paste here]",
+      "captions": {
+        "facebook": "How to write an AI video ad prompt.\n\nA 15 second ad prompt. Step 3 fixes the text.\n\nAI video tools can garble words inside the picture. Writing the on screen text separately lets you add it yourself.\n\n3 steps.\n1. Write one sentence on what you sell, three facts you can prove, and the vibe you want.\n2. Ask AI for a shot by shot plan for a 15 second video, with one spoken line.\n3. Ask for the on screen text written separately, then add it in an editor.\n\nOnly claim facts you can prove.\n\nWant the exact prompt? Follow EVOGENCY and message us the word SHOTS. We'll send it to you.\n\n#AIVideo #Marketing #SmallBusiness #AITools",
+        "instagram": "How to write an AI video ad prompt.\n\nA 15 second ad prompt. Step 3 fixes the text.\n\nAI video tools can garble words inside the picture. Writing the on screen text separately lets you add it yourself.\n\n3 steps.\n1. Write one sentence on what you sell, three facts you can prove, and the vibe you want.\n2. Ask AI for a shot by shot plan for a 15 second video, with one spoken line.\n3. Ask for the on screen text written separately, then add it in an editor.\n\nOnly claim facts you can prove.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word SHOTS. We'll send it to you.\n\n#AIVideo #Marketing #SmallBusiness #AITools",
+        "tiktok": "How to write an AI video ad prompt.\n\nA 15 second ad prompt. Step 3 fixes the text.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us SHOTS.\n\n#AIVideo #Marketing #SmallBusiness #AITools"
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "time": "12:30",
+      "id": "2026-11-21-pi-coding-agent",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "A tiny coding agent you can reshape. Step 3 rewinds.",
+      "why": "Pi is a minimal coding agent harness. Ask it for the command, tool, or tweak you want and it customizes itself.",
+      "src": "pi.dev",
+      "steps": [
+        "Install Pi from pi.dev with curl or npm, then run it in your project.",
+        "Switch models mid session with /model or Ctrl+L. It lists 15 plus providers.",
+        "Sessions are stored as trees. Use /tree to jump to any earlier point and branch from there."
+      ],
+      "take": "It skips sub agents and plan mode on purpose, so check it fits how you work.",
+      "label": "How to use it",
+      "say": [
+        "A tiny coding agent you can reshape! Step three rewinds.",
+        "Pi is a minimal coding agent harness. Ask it for the command, tool, or tweak you want and it customizes itself.",
+        "First, install Pi from pi dot dev with curl or npm, then run it in your project. Easy start.",
+        "Next, switch models mid session with slash model or control L. It lists fifteen plus providers.",
+        "Now the rewind. Sessions are stored as trees, so use slash tree to jump to any earlier point and branch from there.",
+        "It skips sub agents and plan mode on purpose, so check it fits how you work."
+      ],
+      "captions": {
+        "facebook": "Minimal AI coding agent for the terminal.\n\nA tiny coding agent you can reshape. Step 3 rewinds.\n\nPi is a minimal coding agent harness. Ask it for the command, tool, or tweak you want and it customizes itself.\n\n3 steps.\n1. Install Pi from pi.dev with curl or npm, then run it in your project.\n2. Switch models mid session with /model or Ctrl+L. It lists 15 plus providers.\n3. Sessions are stored as trees. Use /tree to jump to any earlier point and branch from there.\n\nIt skips sub agents and plan mode on purpose, so check it fits how you work.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#CodingAgents #DevTools #AITools #Developers",
+        "instagram": "Minimal AI coding agent for the terminal.\n\nA tiny coding agent you can reshape. Step 3 rewinds.\n\nPi is a minimal coding agent harness. Ask it for the command, tool, or tweak you want and it customizes itself.\n\n3 steps.\n1. Install Pi from pi.dev with curl or npm, then run it in your project.\n2. Switch models mid session with /model or Ctrl+L. It lists 15 plus providers.\n3. Sessions are stored as trees. Use /tree to jump to any earlier point and branch from there.\n\nIt skips sub agents and plan mode on purpose, so check it fits how you work.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#CodingAgents #DevTools #AITools #Developers",
+        "tiktok": "Minimal AI coding agent for the terminal.\n\nA tiny coding agent you can reshape. Step 3 rewinds.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#CodingAgents #DevTools #AITools #Developers"
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "time": "19:00",
+      "id": "2026-11-21-claude-fable-5-2-price",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Anthropic's top model got cheaper. Fact 3 is the caveat.",
+      "why": "On November 9 Anthropic launched Claude Fable 5.2 for all users, plus Mythos 5.2 for vetted cyber and life sciences groups.",
+      "src": "Anthropic and TechCrunch, Nov 9 2026, Bloomberg, Nov 9 2026, Business Today, Nov 10 2026",
+      "steps": [
+        "Anthropic lists $8 per million input tokens and $40 per million output, down from $10 and $50 for Fable 5.",
+        "It says output is up to 30 percent faster than 5.1, and fast mode is up to 2.5 times faster.",
+        "Those figures are Anthropic's own, and it still points to Opus 5.5 as the everyday model. Test before you switch."
+      ],
+      "take": "Cheaper per token is the real news. Test it on your own work.",
+      "label": "What it means",
+      "say": [
+        "Anthropic's top model got cheaper! Fact three is the caveat.",
+        "On November ninth Anthropic launched Claude Fable five point two for all users, plus Mythos five point two for vetted cyber and life sciences groups.",
+        "First, Anthropic lists eight dollars per million input tokens and forty dollars per million output, down from ten and fifty for Fable five. That's the headline.",
+        "Next, it says output is up to thirty percent faster than five point one, and fast mode is up to two point five times faster.",
+        "The caveat is fact three. Those figures are Anthropic's own, and it still points to Opus five point five as the everyday model. Test before you switch.",
+        "Cheaper per token is the real news. Test it on your own work."
+      ],
+      "captions": {
+        "facebook": "Claude Fable 5.2 price and speed explained.\n\nAnthropic's top model got cheaper. Fact 3 is the caveat.\n\nOn November 9 Anthropic launched Claude Fable 5.2 for all users, plus Mythos 5.2 for vetted cyber and life sciences groups.\n\n3 steps.\n1. Anthropic lists $8 per million input tokens and $40 per million output, down from $10 and $50 for Fable 5.\n2. It says output is up to 30 percent faster than 5.1, and fast mode is up to 2.5 times faster.\n3. Those figures are Anthropic's own, and it still points to Opus 5.5 as the everyday model. Test before you switch.\n\nCheaper per token is the real news. Test it on your own work.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Claude #AIModels #Developers",
+        "instagram": "Claude Fable 5.2 price and speed explained.\n\nAnthropic's top model got cheaper. Fact 3 is the caveat.\n\nOn November 9 Anthropic launched Claude Fable 5.2 for all users, plus Mythos 5.2 for vetted cyber and life sciences groups.\n\n3 steps.\n1. Anthropic lists $8 per million input tokens and $40 per million output, down from $10 and $50 for Fable 5.\n2. It says output is up to 30 percent faster than 5.1, and fast mode is up to 2.5 times faster.\n3. Those figures are Anthropic's own, and it still points to Opus 5.5 as the everyday model. Test before you switch.\n\nCheaper per token is the real news. Test it on your own work.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Claude #AIModels #Developers",
+        "tiktok": "Claude Fable 5.2 price and speed explained.\n\nAnthropic's top model got cheaper. Fact 3 is the caveat.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Claude #AIModels #Developers"
+      }
+    },
+    {
+      "date": "2026-11-22",
+      "time": "08:00",
+      "id": "2026-11-22-ai-front-desk-promo",
+      "kind": "promo",
+      "topic": "From us",
+      "hook": "Missed calls cost jobs. The last one texts back.",
+      "why": "When the phone rings out, callers rarely leave a message. They leave. The AI Front Desk answers every call, day or night.",
+      "src": "",
+      "steps": [
+        "Answers every call, day or night, and the questions you get all day.",
+        "Checks your calendar and books the appointment right on the call.",
+        "Texts back anyone who hangs up, so a missed call becomes a conversation."
+      ],
+      "take": "Call 321 435 4469 and hear our own front desk answer.",
+      "label": "What you get",
+      "say": [
+        "Missed calls cost jobs! The last one texts back.",
+        "When the phone rings out, callers rarely leave a message. They leave. The AI Front Desk answers every call, day or night.",
+        "First, it answers every call, day or night, and the questions you get all day.",
+        "Next, it checks your calendar and books the appointment right on the call.",
+        "And the last one, it texts back anyone who hangs up, so a missed call becomes a conversation.",
+        "Call three two one, four three five, four four six nine, and hear our own front desk answer."
+      ],
+      "captions": {
+        "facebook": "AI receptionist for small business.\n\nMissed calls cost jobs. The last one texts back.\n\nWhen the phone rings out, callers rarely leave a message. They leave. The AI Front Desk answers every call, day or night.\n\nWhat you get.\n1. Answers every call, day or night, and the questions you get all day.\n2. Checks your calendar and books the appointment right on the call.\n3. Texts back anyone who hangs up, so a missed call becomes a conversation.\n\nCall 321 435 4469 and hear our own front desk answer.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites and AI agents for local businesses. Hear the AI Front Desk at evogencyglobal.com/ai\n\n#AIReceptionist #SmallBusiness #Orlando #CustomerService",
+        "instagram": "AI receptionist for small business.\n\nMissed calls cost jobs. The last one texts back.\n\nWhen the phone rings out, callers rarely leave a message. They leave. The AI Front Desk answers every call, day or night.\n\nWhat you get.\n1. Answers every call, day or night, and the questions you get all day.\n2. Checks your calendar and books the appointment right on the call.\n3. Texts back anyone who hangs up, so a missed call becomes a conversation.\n\nCall 321 435 4469 and hear our own front desk answer.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites and AI agents for local businesses. Hear the AI Front Desk at evogencyglobal.com/ai (link in bio)\n\n#AIReceptionist #SmallBusiness #Orlando #CustomerService",
+        "tiktok": "AI receptionist for small business.\n\nMissed calls cost jobs. The last one texts back.\n\nLearn more, link in bio.\n\n#AIReceptionist #SmallBusiness #Orlando #CustomerService"
+      },
+      "foot": "3 front desk jobs"
+    },
+    {
+      "date": "2026-11-22",
+      "time": "12:30",
+      "id": "2026-11-22-extreme-ownership-miss",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Client blew up? Step 3 is owning the miss.",
+      "why": "Jocko Willink and Leif Babin teach extreme ownership. A leader owns everything in their world, including the failures.",
+      "src": "Extreme Ownership, Jocko Willink and Leif Babin",
+      "steps": [
+        "Skip the excuse. Say what went wrong on your part, in one sentence.",
+        "Fix the thing in front of you first, before you explain why.",
+        "Change one step in your process so it cannot happen the same way twice. Have AI turn it into a checklist."
+      ],
+      "take": "Ownership fixes the problem. Blame only defends it.",
+      "label": "Do this",
+      "say": [
+        "Client blew up! Step three is owning the miss.",
+        "Jocko Willink and Leif Babin teach extreme ownership. A leader owns everything in their world, including the failures.",
+        "First, skip the excuse. Say what went wrong on your part, in one sentence. Hard, but simple.",
+        "Next, fix the thing in front of you first, before you explain why.",
+        "Now owning the miss. Change one step in your process so it cannot happen the same way twice, and have AI turn it into a checklist.",
+        "Ownership fixes the problem. Blame only defends it."
+      ],
+      "captions": {
+        "facebook": "How to handle a client mistake like a leader.\n\nClient blew up? Step 3 is owning the miss.\n\nJocko Willink and Leif Babin teach extreme ownership. A leader owns everything in their world, including the failures.\n\n3 steps.\n1. Skip the excuse. Say what went wrong on your part, in one sentence.\n2. Fix the thing in front of you first, before you explain why.\n3. Change one step in your process so it cannot happen the same way twice. Have AI turn it into a checklist.\n\nOwnership fixes the problem. Blame only defends it.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #ExtremeOwnership #Leadership #Clients",
+        "instagram": "How to handle a client mistake like a leader.\n\nClient blew up? Step 3 is owning the miss.\n\nJocko Willink and Leif Babin teach extreme ownership. A leader owns everything in their world, including the failures.\n\n3 steps.\n1. Skip the excuse. Say what went wrong on your part, in one sentence.\n2. Fix the thing in front of you first, before you explain why.\n3. Change one step in your process so it cannot happen the same way twice. Have AI turn it into a checklist.\n\nOwnership fixes the problem. Blame only defends it.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #ExtremeOwnership #Leadership #Clients",
+        "tiktok": "How to handle a client mistake like a leader.\n\nClient blew up? Step 3 is owning the miss.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #ExtremeOwnership #Leadership #Clients"
+      }
+    },
+    {
+      "date": "2026-11-22",
+      "time": "19:00",
+      "id": "2026-11-22-ai-push-back-tip",
+      "kind": "value",
+      "topic": "AI tip",
+      "hook": "AI agrees too fast. Step 3 makes it push back.",
+      "why": "AI often goes along with whatever you bring it. A strong check is to make it argue the other side.",
+      "src": "",
+      "steps": [
+        "Paste your plan or draft and say what you decided.",
+        "Ask for the strongest argument against it.",
+        "Ask which one fact would change its mind, then go check that fact yourself."
+      ],
+      "take": "AI can be wrong in both directions. You make the call.",
+      "label": "Try this",
+      "say": [
+        "AI agrees too fast! Step three makes it push back.",
+        "AI often goes along with whatever you bring it. A strong check is to make it argue the other side.",
+        "First, paste your plan or draft and say what you decided. Takes ten seconds.",
+        "Next, ask for the strongest argument against it.",
+        "Now the push back. Ask which one fact would change its mind, then go check that fact yourself.",
+        "AI can be wrong in both directions. You make the call."
+      ],
+      "captions": {
+        "facebook": "How to make AI challenge your plan.\n\nAI agrees too fast. Step 3 makes it push back.\n\nAI often goes along with whatever you bring it. A strong check is to make it argue the other side.\n\n3 steps.\n1. Paste your plan or draft and say what you decided.\n2. Ask for the strongest argument against it.\n3. Ask which one fact would change its mind, then go check that fact yourself.\n\nAI can be wrong in both directions. You make the call.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AITips #Productivity #AITools #Decisions",
+        "instagram": "How to make AI challenge your plan.\n\nAI agrees too fast. Step 3 makes it push back.\n\nAI often goes along with whatever you bring it. A strong check is to make it argue the other side.\n\n3 steps.\n1. Paste your plan or draft and say what you decided.\n2. Ask for the strongest argument against it.\n3. Ask which one fact would change its mind, then go check that fact yourself.\n\nAI can be wrong in both directions. You make the call.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AITips #Productivity #AITools #Decisions",
+        "tiktok": "How to make AI challenge your plan.\n\nAI agrees too fast. Step 3 makes it push back.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AITips #Productivity #AITools #Decisions"
+      }
+    }
+  ]
+}
