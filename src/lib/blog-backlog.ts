@@ -10918,7 +10918,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How flooring installers and stores can rank for material and installation searches, answer cost questions, and turn long research into booked estimates.",
     excerpt: "Flooring buyers compare materials for weeks. Here's how to be the company that helps them decide.",
-    date: "2026-10-15",
+    date: "2026-11-14",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -10983,7 +10983,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How service businesses can use AI to draft clearer estimates and proposals faster, while keeping pricing accurate and a human in charge.",
     excerpt: "AI can turn your messy notes into a clean proposal in minutes. The numbers still need you.",
-    date: "2026-10-15",
+    date: "2026-11-14",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -11041,7 +11041,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Small changes to your website's contact form can mean more leads. Here's how to cut fields, write better buttons, and tell people what happens next.",
     excerpt: "Every extra field on your form costs you leads. Here's how to build one people finish.",
-    date: "2026-10-15",
+    date: "2026-11-14",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
