@@ -11112,7 +11112,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How businesses with more than one location can set up Google profiles, location pages, and reviews so every location shows up in its own area.",
     excerpt: "Each location needs its own presence. Here's how to set it up without creating a mess.",
-    date: "2026-10-15",
+    date: "2026-11-15",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -11178,7 +11178,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Brand voice is how your business sounds in writing and on the phone. Here's how a small business can define one that feels human and stays consistent.",
     excerpt: "Customers can tell when a business sounds like a brochure. Here's how to sound like you.",
-    date: "2026-10-15",
+    date: "2026-11-15",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -11238,7 +11238,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Texting is one of the best ways to reach customers, and one of the most regulated. Here's how small businesses can text customers without risking fines.",
     excerpt: "Customers love texts from businesses they trust. The rules matter more than most owners realize.",
-    date: "2026-10-15",
+    date: "2026-11-15",
     tag: "Marketing",
     relatedHref: "/growth-kit",
     relatedLabel: "Get the Home Service Growth Kit",

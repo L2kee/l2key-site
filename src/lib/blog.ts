@@ -705,6 +705,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "seo-for-flooring-companies",
   "using-ai-to-write-estimates-faster",
   "contact-forms-that-get-filled-out",
+  "local-seo-for-multiple-locations",
+  "finding-your-brand-voice",
+  "texting-customers-the-right-way",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
