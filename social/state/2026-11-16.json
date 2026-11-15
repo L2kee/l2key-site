@@ -4,5 +4,41 @@
     "post": "2026-11-16-ai-sort-customer-messages",
     "due": "2026-11-16T08:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-16 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6afa1f00ff465c57dab0d349",
+    "post": "2026-11-16-ai-sort-customer-messages",
+    "due": "2026-11-16T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-16 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6afa1f01daa378ad6891f59e",
+    "post": "2026-11-16-ai-sort-customer-messages",
+    "due": "2026-11-16T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-16 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6afa1f0160a910801c4a399b",
+    "post": "2026-11-16-microsoft-365-outage-plan-b",
+    "due": "2026-11-16T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-16 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6afa1f028e87c256a38ff730",
+    "post": "2026-11-16-microsoft-365-outage-plan-b",
+    "due": "2026-11-16T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-16 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6afa1f0260a910801c4a3a4a",
+    "post": "2026-11-16-microsoft-365-outage-plan-b",
+    "due": "2026-11-16T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-17 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6afa1f03daa378ad6891f689",
+    "post": "2026-11-17-devvm-sandbox",
+    "due": "2026-11-17T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
