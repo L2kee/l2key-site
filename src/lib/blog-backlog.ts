@@ -11499,7 +11499,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How property management companies can rank for owner searches and renter searches, and why the two audiences need different pages and messages.",
     excerpt: "Owners and renters both search for you, for completely different reasons.",
-    date: "2026-10-15",
+    date: "2026-11-17",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -11556,7 +11556,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Vague goals like \"get more customers\" don't help. Here's how small business owners can set marketing goals for next year that are specific and trackable.",
     excerpt: "\"Get more customers\" isn't a goal. Here's how to set ones you'll actually hit.",
-    date: "2026-10-15",
+    date: "2026-11-17",
     tag: "Marketing",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "Request a free audit",
@@ -11622,7 +11622,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Google Analytics shows hundreds of numbers. Here are the five that matter most for a small business website and where to find them.",
     excerpt: "Ignore most of the dashboard. These five numbers tell you whether your website is working.",
-    date: "2026-10-15",
+    date: "2026-11-17",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
