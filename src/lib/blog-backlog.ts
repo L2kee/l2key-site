@@ -11300,7 +11300,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How pest control companies can earn steady Google reviews from one time treatments and recurring plans, and reply to complaints about pests coming back.",
     excerpt: "When the problem is gross and urgent, reviews decide who gets the call.",
-    date: "2026-10-15",
+    date: "2026-11-16",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our Google reviews service",
@@ -11362,7 +11362,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Visitors decide in seconds whether your business feels trustworthy. Here are the trust signals that matter on a local service website and where to put them.",
     excerpt: "People won't call a business they don't trust. These signals do the convincing for you.",
-    date: "2026-10-15",
+    date: "2026-11-16",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -11432,7 +11432,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How property management companies can use AI and automation for maintenance requests, tenant communication, leasing inquiries, and owner reporting.",
     excerpt: "Maintenance requests, leasing questions, and owner reports. Here's where automation saves property managers hours.",
-    date: "2026-10-15",
+    date: "2026-11-16",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
