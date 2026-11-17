@@ -40,13 +40,13 @@ export default function ServicesPage() {
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {SERVICES.map((s) => (
           <TiltCard key={s.title} className="glass h-full rounded-2xl p-6">
-            <s.icon size={28} style={{ color: "#5fd8e6" }} />
+            <s.icon size={28} style={{ color: "#a3b06a" }} />
             <h2 className="mt-4 text-lg font-semibold text-white">{s.title}</h2>
             <p className="mt-2 text-sm leading-relaxed text-white/65">{s.body}</p>
             {s.href && (
               <Link
                 href={s.href}
-                className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#5fd8e6] hover:text-[#1f9fb3]"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#a3b06a] hover:text-[#7d8a45]"
               >
                 Learn more <ArrowRight size={14} />
               </Link>

@@ -39,9 +39,9 @@ export default async function ListingStartPage({
 
       <div className="mt-6 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
         <div className="lg:sticky lg:top-28">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/80">EVOGENCY Listing Suite</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]/80">EVOGENCY Listing Suite</p>
           <h1 className={`mt-3 text-4xl leading-[1.05] font-medium sm:text-5xl`}>
-            <span className="text-[#f3ede0]">Let&apos;s Put Your Listing </span>
+            <span className="text-[#f4f1ea]">Let&apos;s Put Your Listing </span>
             <span className="gradient-text italic">on Stage</span>
           </h1>
           <p className="mt-4 text-white/65">
@@ -51,7 +51,7 @@ export default async function ListingStartPage({
           <ul className="mt-6 space-y-2.5">
             {POINTS.map((p) => (
               <li key={p} className="flex items-start gap-2.5 text-white/85">
-                <Check size={18} className="mt-0.5 shrink-0 text-[#5fd8e6]" aria-hidden="true" /> {p}
+                <Check size={18} className="mt-0.5 shrink-0 text-[#a3b06a]" aria-hidden="true" /> {p}
               </li>
             ))}
           </ul>

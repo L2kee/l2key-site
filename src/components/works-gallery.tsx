@@ -26,7 +26,7 @@ export function WorksGallery({
             onClick={() => setActive(c)}
             className={
               active === c
-                ? "rounded-full border border-[#5fd8e6]/40 bg-[#5fd8e6]/15 px-5 py-2 text-sm font-medium text-[#5fd8e6] transition"
+                ? "rounded-full border border-[#a3b06a]/40 bg-[#a3b06a]/15 px-5 py-2 text-sm font-medium text-[#a3b06a] transition"
                 : "rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-medium text-white/60 transition hover:border-white/20 hover:text-white"
             }
           >

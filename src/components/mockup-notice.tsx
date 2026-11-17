@@ -122,7 +122,7 @@ function MockupForm() {
             type="checkbox"
             checked={noWebsite}
             onChange={(e) => setNoWebsite(e.target.checked)}
-            className="h-4 w-4 accent-[#5fd8e6]"
+            className="h-4 w-4 accent-[#a3b06a]"
           />
           No website yet
         </label>
@@ -140,9 +140,9 @@ function MockupForm() {
           {METHODS.map(([m, label]) => (
             <label
               key={m}
-              className={`has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-[#5fd8e6] cursor-pointer rounded-xl border px-3 py-2.5 text-center text-sm transition ${
+              className={`has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-[#a3b06a] cursor-pointer rounded-xl border px-3 py-2.5 text-center text-sm transition ${
                 contact === m
-                  ? "border-[#5fd8e6]/70 bg-[#5fd8e6]/10 text-white"
+                  ? "border-[#a3b06a]/70 bg-[#a3b06a]/10 text-white"
                   : "border-white/15 bg-black/20 text-white/70 hover:border-white/30"
               }`}
             >
@@ -268,7 +268,7 @@ export function MockupNotice() {
         >
           <X size={16} />
         </button>
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">Free homepage mockup</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]">Free homepage mockup</p>
         <p className="mt-1.5 pr-6 text-base font-semibold leading-snug text-white sm:mt-2 sm:text-lg">
           Want to see your new website before you spend a dime?
         </p>
@@ -295,7 +295,7 @@ export function MockupNotice() {
           >
             <X size={18} />
           </button>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]">Free, no obligation</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]">Free, no obligation</p>
           <h2 id="mockup-title" className="mt-2 pr-8 text-2xl font-bold text-white">
             Your free homepage mockup
           </h2>

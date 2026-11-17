@@ -195,7 +195,7 @@ export default function AiFrontDeskPage() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {INCLUDED.map((item) => (
             <TiltCard key={item.title} className="glass h-full rounded-2xl p-6">
-              <item.icon size={26} style={{ color: "#5fd8e6" }} aria-hidden="true" />
+              <item.icon size={26} style={{ color: "#a3b06a" }} aria-hidden="true" />
               <h3 className="mt-4 text-lg font-semibold text-white">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/65">{item.body}</p>
             </TiltCard>
@@ -204,10 +204,10 @@ export default function AiFrontDeskPage() {
       </div>
 
       <TiltCard className="glass mt-20 rounded-2xl p-8 text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/80">Call it yourself</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]/80">Call it yourself</p>
         <a
           href={AI_PHONE_TEL}
-          className="mt-4 block text-3xl font-bold tracking-tight text-white transition hover:text-[#5fd8e6] sm:text-4xl"
+          className="mt-4 block text-3xl font-bold tracking-tight text-white transition hover:text-[#a3b06a] sm:text-4xl"
         >
           {AI_PHONE_DISPLAY}
         </a>
@@ -227,7 +227,7 @@ export default function AiFrontDeskPage() {
               $297<span className="text-base font-medium text-white/60"> a month</span>
             </p>
             <p className="mt-1 text-sm text-white/65">plus $997 setup, month to month</p>
-            <p className="mt-4 rounded-xl border border-[#5fd8e6]/30 bg-[#5fd8e6]/10 px-4 py-3 text-sm text-white/85">
+            <p className="mt-4 rounded-xl border border-[#a3b06a]/30 bg-[#a3b06a]/10 px-4 py-3 text-sm text-white/85">
               Founding offer. Our first 3 clients pay $497 setup in exchange for a testimonial and a case study.
             </p>
             <ul className="mt-5 space-y-2 text-sm text-white/65">
@@ -261,7 +261,7 @@ export default function AiFrontDeskPage() {
         <div className="mt-10 space-y-8">
           {PROCESS.map((p) => (
             <div key={p.step} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#5fd8e6]/50">{p.step}</span>
+              <span className="shrink-0 text-2xl font-bold text-[#a3b06a]/50">{p.step}</span>
               <div>
                 <h3 className="text-lg font-semibold text-white">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">{p.body}</p>

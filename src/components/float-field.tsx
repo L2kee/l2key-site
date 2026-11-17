@@ -12,7 +12,7 @@
 import { useEffect, useId, useRef } from "react";
 
 const fieldClass =
-  "w-full rounded-xl border border-white/15 bg-black/30 px-4 pt-6 pb-2 text-white outline-none transition focus:border-[#5fd8e6]/70 focus:ring-2 focus:ring-[#5fd8e6]/25 aria-[invalid=true]:border-rose-300/70 disabled:opacity-40";
+  "w-full rounded-xl border border-white/15 bg-black/30 px-4 pt-6 pb-2 text-white outline-none transition focus:border-[#a3b06a]/70 focus:ring-2 focus:ring-[#a3b06a]/25 aria-[invalid=true]:border-rose-300/70 disabled:opacity-40";
 
 function FieldError({ id, message }: { id: string; message?: string }) {
   if (!message) return null;

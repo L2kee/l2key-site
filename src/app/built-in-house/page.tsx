@@ -157,7 +157,7 @@ export default function BuiltInHousePage() {
         </Demo>
 
         <Demo title="The morphing menu" body="Hover the menu at the top of this page. One shape slides from link to link and turns into a cut crystal.">
-          <span className="rounded-full border border-[#5fd8e6]/40 px-4 py-2 text-sm text-[#5fd8e6]">Look up ↑</span>
+          <span className="rounded-full border border-[#a3b06a]/40 px-4 py-2 text-sm text-[#a3b06a]">Look up ↑</span>
         </Demo>
 
         <Demo title="Phone menu that spreads in a circle" body="On phones the menu grows out of the button in a circle and the links cascade in one by one.">

@@ -162,9 +162,9 @@ export function SiteChat() {
         className={`site-chat-panel glass-strong fixed z-50 flex flex-col overflow-hidden ${open ? "is-open" : ""}`}
       >
         <header className="flex items-center gap-3 border-b border-white/10 px-4 py-3">
-          <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#5fd8e6]/15 text-sm font-bold text-[#5fd8e6]">
+          <span className="relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#a3b06a]/15 text-sm font-bold text-[#a3b06a]">
             A
-            <span className="absolute right-0 bottom-0 h-2.5 w-2.5 rounded-full border-2 border-[#08090b] bg-emerald-400" />
+            <span className="absolute right-0 bottom-0 h-2.5 w-2.5 rounded-full border-2 border-[#0b0a09] bg-emerald-400" />
           </span>
           <div className="min-w-0 flex-1">
             <p className="text-sm font-semibold text-white">Ava</p>
@@ -201,7 +201,7 @@ export function SiteChat() {
                   key={s}
                   type="button"
                   onClick={() => send(s)}
-                  className="rounded-full border border-[#5fd8e6]/35 bg-[#5fd8e6]/5 px-3 py-1.5 text-left text-xs text-white/85 transition hover:border-[#5fd8e6]/70 hover:bg-[#5fd8e6]/10"
+                  className="rounded-full border border-[#a3b06a]/35 bg-[#a3b06a]/5 px-3 py-1.5 text-left text-xs text-white/85 transition hover:border-[#a3b06a]/70 hover:bg-[#a3b06a]/10"
                 >
                   {s}
                 </button>
@@ -235,7 +235,7 @@ export function SiteChat() {
               }
             }}
             placeholder={done ? "Email hello@evogencyglobal.com to keep going" : "Ask about EVOGENCY..."}
-            className="max-h-28 min-h-10 flex-1 resize-none rounded-xl border border-white/15 bg-black/30 px-3 py-2.5 text-[16px] text-white placeholder:text-white/40 focus:border-[#5fd8e6]/60 focus:outline-none sm:text-sm"
+            className="max-h-28 min-h-10 flex-1 resize-none rounded-xl border border-white/15 bg-black/30 px-3 py-2.5 text-[16px] text-white placeholder:text-white/40 focus:border-[#a3b06a]/60 focus:outline-none sm:text-sm"
           />
           <button
             type="submit"

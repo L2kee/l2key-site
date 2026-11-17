@@ -90,7 +90,7 @@ function Pulse() {
 export default function ElectricalAIProPage() {
   return (
     <div
-      className={`relative w-full bg-[#060a12] text-[#f1f5f9] selection:bg-[#00d3e3]/30`}
+      className={`relative w-full bg-[#0b0a09] text-[#f1f5f9] selection:bg-[#00d3e3]/30`}
     >
       {/* Faint cyan glow behind the hero so the ink reads as depth, not a flat fill. */}
       <div
@@ -100,7 +100,7 @@ export default function ElectricalAIProPage() {
 
       {/* Product sub bar. The site nav hides on scroll down, so this sticks
           to the very top and the site nav slides back over it on scroll up. */}
-      <div className="sticky top-0 z-30 border-b border-[#1c2735] bg-[#060a12]/85 backdrop-blur-xl">
+      <div className="sticky top-0 z-30 border-b border-[#26241f] bg-[#0b0a09]/85 backdrop-blur-xl">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5 sm:px-6">
           <a href="#top-eap" className="flex items-center gap-2.5">
             <span
@@ -113,14 +113,14 @@ export default function ElectricalAIProPage() {
               ElectricalAI <span className="text-[#00d3e3]">Pro</span>
             </span>
           </a>
-          <nav className="hidden items-center gap-7 text-sm text-[#94a0b2] md:flex" aria-label="ElectricalAI Pro sections">
+          <nav className="hidden items-center gap-7 text-sm text-[#bdb7ab] md:flex" aria-label="ElectricalAI Pro sections">
             <a href="#calculators" className="transition-colors hover:text-white">Calculators</a>
             <a href="#assistant" className="transition-colors hover:text-white">AI Assistant</a>
             <a href="#tables" className="transition-colors hover:text-white">Code tables</a>
           </nav>
           <a
             href={APP_HREF}
-            className="rounded-full bg-[#00d3e3] px-4 py-1.5 text-sm font-semibold text-[#041016] transition-colors hover:bg-[#5ee8f2]"
+            className="rounded-full bg-[#00d3e3] px-4 py-1.5 text-sm font-semibold text-[#141a08] transition-colors hover:bg-[#cbd49b]"
           >
             Open the app
           </a>
@@ -136,42 +136,42 @@ export default function ElectricalAIProPage() {
         <section className="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-6 md:pt-24">
           <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_1fr]">
             <div>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#1c2735] bg-[#0a111d]/60 px-3 py-1.5">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#26241f] bg-[#131211]/60 px-3 py-1.5">
                 <Pulse />
-                <Mono className="text-[11px] uppercase tracking-wider text-[#94a0b2]">NEC tables · Free · No signup</Mono>
+                <Mono className="text-[11px] uppercase tracking-wider text-[#bdb7ab]">NEC tables · Free · No signup</Mono>
               </div>
               <h1 className="text-balance text-[2.6rem] font-extrabold leading-[0.98] tracking-tight sm:text-6xl">
                 Electrical math, <span className="text-[#00d3e3]">jobsite ready.</span>
               </h1>
-              <p className="mt-6 max-w-[46ch] text-pretty text-lg leading-relaxed text-[#94a0b2]">
+              <p className="mt-6 max-w-[46ch] text-pretty text-lg leading-relaxed text-[#bdb7ab]">
                 Precision calculators and an AI assistant for electricians, contractors, and students. The math runs
                 on your device, built on the same tables you&apos;d check in the codebook.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href={APP_HREF}
-                  className="rounded-full bg-[#00d3e3] px-6 py-3 text-sm font-semibold text-[#041016] transition-colors hover:bg-[#5ee8f2]"
+                  className="rounded-full bg-[#00d3e3] px-6 py-3 text-sm font-semibold text-[#141a08] transition-colors hover:bg-[#cbd49b]"
                 >
                   Start calculating
                 </a>
                 <a
                   href="#assistant"
-                  className="rounded-full border border-[#1c2735] bg-[#0a111d]/40 px-6 py-3 text-sm font-medium transition-colors hover:border-[#5e6b7d]"
+                  className="rounded-full border border-[#26241f] bg-[#131211]/40 px-6 py-3 text-sm font-medium transition-colors hover:border-[#5e6b7d]"
                 >
                   See a real check
                 </a>
               </div>
-              <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 border-t border-[#1c2735] pt-6 sm:gap-6">
+              <dl className="mt-10 grid max-w-md grid-cols-3 gap-4 border-t border-[#26241f] pt-6 sm:gap-6">
                 <div>
-                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8794a8]">Modules</Mono></dt>
+                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8f8a80]">Modules</Mono></dt>
                   <dd className="mt-1 text-2xl font-bold">11</dd>
                 </div>
                 <div>
-                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8794a8]">Code basis</Mono></dt>
+                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8f8a80]">Code basis</Mono></dt>
                   <dd className="mt-1 text-2xl font-bold">NEC</dd>
                 </div>
                 <div>
-                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8794a8]">Price</Mono></dt>
+                  <dt><Mono className="text-[10px] uppercase tracking-wider text-[#8f8a80]">Price</Mono></dt>
                   <dd className="mt-1 text-2xl font-bold">Free</dd>
                 </div>
               </dl>
@@ -180,34 +180,34 @@ export default function ElectricalAIProPage() {
             {/* Worked example card. Every number here is real calculator output
                 (40 A, 240 V, 80 ft one way, copper, 75°C), not placeholder copy. */}
             <div id="assistant" className="scroll-mt-40">
-              <div className="overflow-hidden rounded-2xl border border-[#1c2735] bg-[#0a111d]/80 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8),0_0_60px_-30px_rgba(0,211,227,0.25)] ring-1 ring-white/[0.03]">
-                <div className="flex items-center justify-between border-b border-[#1c2735] px-4 py-3">
+              <div className="overflow-hidden rounded-2xl border border-[#26241f] bg-[#131211]/80 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.8),0_0_60px_-30px_rgba(0,211,227,0.25)] ring-1 ring-white/[0.03]">
+                <div className="flex items-center justify-between border-b border-[#26241f] px-4 py-3">
                   <div className="flex items-center gap-2">
                     <Pulse />
-                    <Mono className="text-[11px] uppercase tracking-wider text-[#94a0b2]">Wire check</Mono>
+                    <Mono className="text-[11px] uppercase tracking-wider text-[#bdb7ab]">Wire check</Mono>
                   </div>
-                  <Mono className="text-[11px] text-[#8794a8]">Example</Mono>
+                  <Mono className="text-[11px] text-[#8f8a80]">Example</Mono>
                 </div>
                 <div className="space-y-4 p-4 sm:p-5">
                   <div className="ml-auto max-w-[82%] rounded-2xl rounded-tr-sm bg-[#00d3e3]/15 px-4 py-3 text-sm ring-1 ring-[#00d3e3]/20">
                     What copper wire for a 40 A, 240 V circuit, 80 ft one way?
                   </div>
-                  <div className="max-w-[94%] rounded-2xl rounded-tl-sm bg-[#0c1523] px-4 py-3 text-sm text-[#94a0b2] ring-1 ring-[#1c2735]">
+                  <div className="max-w-[94%] rounded-2xl rounded-tl-sm bg-[#191816] px-4 py-3 text-sm text-[#bdb7ab] ring-1 ring-[#26241f]">
                     <p>
                       Go with <strong className="font-semibold text-white">8 AWG</strong> copper. 10 AWG only carries
                       35 A in the 75°C column, so it fails before voltage drop even comes into it.
                     </p>
-                    <div className="mt-4 grid grid-cols-3 gap-2 border-t border-[#1c2735] pt-3">
+                    <div className="mt-4 grid grid-cols-3 gap-2 border-t border-[#26241f] pt-3">
                       <div>
-                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8794a8] sm:text-[10px]">Ampacity</Mono>
+                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8f8a80] sm:text-[10px]">Ampacity</Mono>
                         <div className="mt-1 text-sm font-semibold text-white">50 A</div>
                       </div>
                       <div>
-                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8794a8] sm:text-[10px]">Voltage drop</Mono>
+                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8f8a80] sm:text-[10px]">Voltage drop</Mono>
                         <div className="mt-1 text-sm font-semibold text-white">2.04%</div>
                       </div>
                       <div>
-                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8794a8] sm:text-[10px]">Result</Mono>
+                        <Mono className="block text-[9px] uppercase tracking-wider text-[#8f8a80] sm:text-[10px]">Result</Mono>
                         <div className="mt-1 text-sm font-semibold text-[#00d3e3]">Passes</div>
                       </div>
                     </div>
@@ -218,7 +218,7 @@ export default function ElectricalAIProPage() {
                   </div>
                 </div>
               </div>
-              <p className="mt-3 px-1 text-xs text-[#8794a8]">
+              <p className="mt-3 px-1 text-xs text-[#8f8a80]">
                 Numbers from the app&apos;s own calculators. Planning aid: confirm with your codebook and the AHJ.
               </p>
             </div>
@@ -232,23 +232,23 @@ export default function ElectricalAIProPage() {
               <Mono className="text-[11px] uppercase tracking-wider text-[#00d3e3]">(a) Calculators</Mono>
               <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">The full bench, one surface.</h2>
             </div>
-            <Mono className="hidden text-xs text-[#8794a8] md:block">11 modules</Mono>
+            <Mono className="hidden text-xs text-[#8f8a80] md:block">11 modules</Mono>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {MODULES.map((m) => (
               <a
                 key={m.n}
                 href={APP_HREF}
-                className="group rounded-2xl border border-[#1c2735] bg-[#0a111d]/50 p-5 transition-colors hover:border-[#00d3e3]/40"
+                className="group rounded-2xl border border-[#26241f] bg-[#131211]/50 p-5 transition-colors hover:border-[#00d3e3]/40"
               >
                 <div className="flex items-center justify-between">
-                  <Mono className="text-[11px] text-[#8794a8]">{m.n}</Mono>
-                  <Mono className="text-[11px] text-[#8794a8]">{m.tag}</Mono>
+                  <Mono className="text-[11px] text-[#8f8a80]">{m.n}</Mono>
+                  <Mono className="text-[11px] text-[#8f8a80]">{m.tag}</Mono>
                 </div>
                 <h3 className="mt-4 text-lg font-semibold">{m.title}</h3>
-                <p className="mt-1 text-sm text-[#94a0b2]">{m.body}</p>
-                <div className="mt-4 flex items-center justify-between border-t border-[#1c2735] pt-3">
-                  <Mono className="text-xs text-[#8794a8]">{m.foot}</Mono>
+                <p className="mt-1 text-sm text-[#bdb7ab]">{m.body}</p>
+                <div className="mt-4 flex items-center justify-between border-t border-[#26241f] pt-3">
+                  <Mono className="text-xs text-[#8f8a80]">{m.foot}</Mono>
                   <span className="text-[#00d3e3] transition-transform group-hover:translate-x-1">→</span>
                 </div>
               </a>
@@ -262,7 +262,7 @@ export default function ElectricalAIProPage() {
                 <Mono className="text-[11px] text-[#00d3e3]">MORE</Mono>
               </div>
               <h3 className="mt-4 text-lg font-semibold">6 more modules</h3>
-              <p className="mt-1 text-sm text-[#94a0b2]">Box fill, circuit load, voltage drop comparison, unit conversion, and an NEC quick reference.</p>
+              <p className="mt-1 text-sm text-[#bdb7ab]">Box fill, circuit load, voltage drop comparison, unit conversion, and an NEC quick reference.</p>
               <div className="mt-4 flex justify-between border-t border-[#00d3e3]/20 pt-3">
                 <Mono className="text-xs text-[#00d3e3]">Explore the suite</Mono>
                 <span className="text-[#00d3e3] transition-transform group-hover:translate-x-1">→</span>
@@ -277,55 +277,55 @@ export default function ElectricalAIProPage() {
             <div>
               <Mono className="text-[11px] uppercase tracking-wider text-[#00d3e3]">(b) Code tables</Mono>
               <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Numbers you can check.</h2>
-              <p className="mt-4 max-w-[44ch] text-[#94a0b2]">
+              <p className="mt-4 max-w-[44ch] text-[#bdb7ab]">
                 Each calculator is built on the NEC table you&apos;d reach for anyway, so when a number matters on
                 site or on the plan, you know exactly where to check it.
               </p>
               <div className="mt-8 space-y-3">
                 {TABLES.map((t) => (
-                  <div key={t.code} className="flex items-center gap-3 rounded-xl border border-[#1c2735] bg-[#0a111d]/50 px-4 py-3">
+                  <div key={t.code} className="flex items-center gap-3 rounded-xl border border-[#26241f] bg-[#131211]/50 px-4 py-3">
                     <Mono className="grid size-10 shrink-0 place-items-center rounded-lg bg-[#00d3e3]/15 text-[10px] text-[#00d3e3] ring-1 ring-[#00d3e3]/25">
                       {t.code}
                     </Mono>
                     <div>
                       <div className="text-sm font-semibold">{t.title}</div>
-                      <Mono className="text-[11px] text-[#8794a8]">{t.ref}</Mono>
+                      <Mono className="text-[11px] text-[#8f8a80]">{t.ref}</Mono>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-[#1c2735] bg-[#0c1523] ring-1 ring-white/[0.03]">
-              <div className="flex justify-between border-b border-[#1c2735] px-4 py-3">
-                <Mono className="text-[11px] uppercase tracking-wider text-[#94a0b2]">Check · 8 AWG Cu</Mono>
+            <div className="overflow-hidden rounded-2xl border border-[#26241f] bg-[#191816] ring-1 ring-white/[0.03]">
+              <div className="flex justify-between border-b border-[#26241f] px-4 py-3">
+                <Mono className="text-[11px] uppercase tracking-wider text-[#bdb7ab]">Check · 8 AWG Cu</Mono>
                 <Mono className="text-[11px] uppercase tracking-wider text-[#00d3e3]">Pass</Mono>
               </div>
               <div className="p-5">
                 <div className="mb-5">
                   <div className="flex justify-between text-sm">
-                    <span className="text-[#94a0b2]">Load vs. ampacity</span>
+                    <span className="text-[#bdb7ab]">Load vs. ampacity</span>
                     <Mono>40 A / 50 A</Mono>
                   </div>
-                  <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-[#1c2735]">
+                  <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-[#26241f]">
                     <div className="h-full w-[80%] rounded-full bg-[#00d3e3]" />
                   </div>
                 </div>
                 <div className="mb-5">
                   <div className="flex justify-between text-sm">
-                    <span className="text-[#94a0b2]">Voltage drop vs. 3% target</span>
+                    <span className="text-[#bdb7ab]">Voltage drop vs. 3% target</span>
                     <Mono>2.04% / 3%</Mono>
                   </div>
-                  <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-[#1c2735]">
+                  <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-[#26241f]">
                     <div className="h-full w-[68%] rounded-full bg-[#00d3e3]" />
                   </div>
                 </div>
                 <div className="mb-5">
                   <div className="flex justify-between text-sm">
-                    <span className="text-[#94a0b2]">10 AWG, same run</span>
+                    <span className="text-[#bdb7ab]">10 AWG, same run</span>
                     <Mono className="text-[#f87171]">35 A · fails</Mono>
                   </div>
-                  <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-[#1c2735]">
+                  <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-[#26241f]">
                     <div className="h-full w-full rounded-full bg-[#f87171]/70" />
                   </div>
                 </div>
@@ -339,22 +339,22 @@ export default function ElectricalAIProPage() {
 
         {/* CTA */}
         <section className="mx-auto max-w-6xl px-5 py-20 sm:px-6">
-          <div className="overflow-hidden rounded-3xl border border-[#1c2735] bg-[#0a111d]/60 px-6 py-14 text-center sm:px-16">
+          <div className="overflow-hidden rounded-3xl border border-[#26241f] bg-[#131211]/60 px-6 py-14 text-center sm:px-16">
             <h2 className="mx-auto max-w-[18ch] text-balance text-4xl font-extrabold tracking-tight sm:text-5xl">
               Put precision on the job.
             </h2>
-            <p className="mx-auto mt-4 max-w-[46ch] text-[#94a0b2]">
+            <p className="mx-auto mt-4 max-w-[46ch] text-[#bdb7ab]">
               Free, no signup. Runs in your browser and installs to your phone&apos;s home screen in one tap.
             </p>
             <a
               href={APP_HREF}
-              className="mt-8 inline-flex rounded-full bg-[#00d3e3] px-7 py-3 text-sm font-semibold text-[#041016] transition-colors hover:bg-[#5ee8f2]"
+              className="mt-8 inline-flex rounded-full bg-[#00d3e3] px-7 py-3 text-sm font-semibold text-[#141a08] transition-colors hover:bg-[#cbd49b]"
             >
               Open ElectricalAI Pro
             </a>
-            <p className="mt-8 text-sm text-[#8794a8]">
+            <p className="mt-8 text-sm text-[#8f8a80]">
               Want an app like this for your business?{" "}
-              <Link href="/mobile-app-development-orlando" className="text-[#94a0b2] underline decoration-[#1c2735] underline-offset-4 hover:text-white">
+              <Link href="/mobile-app-development-orlando" className="text-[#bdb7ab] underline decoration-[#26241f] underline-offset-4 hover:text-white">
                 EVOGENCY builds them.
               </Link>
             </p>

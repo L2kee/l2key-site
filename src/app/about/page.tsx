@@ -68,7 +68,7 @@ export default function AboutPage() {
 
       <div className="mt-12">
         <TiltCard className="glass-strong flex flex-col items-center gap-6 rounded-3xl p-10 text-center sm:flex-row sm:text-left">
-          <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-full ring-2 ring-white/10 shadow-[0_20px_50px_-15px_rgba(95,216,230,0.5)]">
+          <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-full ring-2 ring-white/10 shadow-[0_20px_50px_-15px_rgba(163,176,106,0.5)]">
             <Image
               src="/evogency-logo.png"
               alt="EVOGENCY logo"
@@ -79,7 +79,7 @@ export default function AboutPage() {
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white">EVOGENCY</h2>
-            <p className="text-sm font-medium text-[#5fd8e6]">AI front desks, websites, and custom software</p>
+            <p className="text-sm font-medium text-[#a3b06a]">AI front desks, websites, and custom software</p>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
               EVOGENCY was built on a simple premise. Agencies should ship real
               software, not slideshows. We design and build the AI front desks,
@@ -101,7 +101,7 @@ export default function AboutPage() {
           <dl className="mt-5 space-y-3 text-sm leading-relaxed">
             {FACTS.map((f) => (
               <div key={f.label} className="sm:flex sm:gap-4">
-                <dt className="shrink-0 font-semibold text-[#5fd8e6] sm:w-32">{f.label}</dt>
+                <dt className="shrink-0 font-semibold text-[#a3b06a] sm:w-32">{f.label}</dt>
                 <dd className="text-white/70">{f.value}</dd>
               </div>
             ))}
@@ -115,7 +115,7 @@ export default function AboutPage() {
         <div className="mt-12 space-y-8">
           {PRINCIPLES.map((p, i) => (
             <div key={p.title} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#5fd8e6]/50">
+              <span className="shrink-0 text-2xl font-bold text-[#a3b06a]/50">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>

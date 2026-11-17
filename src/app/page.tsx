@@ -93,7 +93,7 @@ export default function Home() {
             order (see .hero-letter and .hero-in in globals.css). */}
         <h1
           aria-label="Redefining Communication Through Innovation"
-          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#d6f6fa] [--accent-first:23] [--accent-last:39] sm:text-5xl xl:text-6xl`}
+          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#f4f1ea] [--accent-first:23] [--accent-last:39] sm:text-5xl xl:text-6xl`}
         >
           <span className="block">
             <DropLetters text="Redefining Communication" />
@@ -112,14 +112,14 @@ export default function Home() {
             instead of waiting out the 2s letter drop. */}
         <div className="hero-in mt-6 flex flex-col items-center gap-3 [--hero-delay:300ms] [--i:0] sm:hidden">
           <HeroMockupButton className="btn-solid hero-cta" />
-          <Link href="/start" className="text-sm font-medium text-[#5fd8e6] underline-offset-4 hover:underline">
+          <Link href="/start" className="text-sm font-medium text-[#a3b06a] underline-offset-4 hover:underline">
             or tell us what you need
           </Link>
         </div>
 
         <p className="hero-in mt-8 text-sm text-white/60 [--i:3]">
           Got a question right now?{" "}
-          <AskAvaLink className="font-semibold text-[#5fd8e6] underline-offset-4 transition hover:text-white hover:underline" />{" "}
+          <AskAvaLink className="font-semibold text-[#a3b06a] underline-offset-4 transition hover:text-white hover:underline" />{" "}
           She&apos;s the same tech we build for you.
         </p>
       </HeroReveal>
@@ -145,7 +145,7 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-8 text-center">
-          <Link href="/services" className="text-sm font-medium text-[#5fd8e6] hover:underline">
+          <Link href="/services" className="text-sm font-medium text-[#a3b06a] hover:underline">
             See all services →
           </Link>
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
           <LogoWall />
         </div>
         <div className="mt-8 text-center">
-          <Link href="/brand-design" className="text-sm font-medium text-[#5fd8e6] hover:underline">
+          <Link href="/brand-design" className="text-sm font-medium text-[#a3b06a] hover:underline">
             See our brand design studio →
           </Link>
         </div>
@@ -168,7 +168,7 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-6 py-8">
         <Link
           href="/built-in-house"
-          className="glass group flex flex-col items-center justify-between gap-4 rounded-2xl px-6 py-6 text-center transition hover:border-[#5fd8e6]/50 sm:flex-row sm:text-left"
+          className="glass group flex flex-col items-center justify-between gap-4 rounded-2xl px-6 py-6 text-center transition hover:border-[#a3b06a]/50 sm:flex-row sm:text-left"
         >
           <span>
             <span className="block font-semibold text-white">Every effect on this site was built by hand.</span>
@@ -176,7 +176,7 @@ export default function Home() {
               The letter drop, the glass, the morphing menu. See all of it, and picture it on yours.
             </span>
           </span>
-          <span className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-[#5fd8e6]">
+          <span className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-[#a3b06a]">
             See what we build <ArrowRight size={16} className="transition group-hover:translate-x-1" />
           </span>
         </Link>

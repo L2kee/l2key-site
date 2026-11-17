@@ -3,9 +3,9 @@
 @theme inline {
   --font-sans: var(--font-site);
   --font-mono: var(--font-site);
-  --color-accent-cyan: #5fd8e6;
-  --color-accent-teal: #1f9fb3;
-  --color-accent-ice: #d6f6fa;
+  --color-accent-cyan: #a3b06a;
+  --color-accent-teal: #7d8a45;
+  --color-accent-ice: #f4f1ea;
   --color-accent-lime: #b5f04a;
 }
 
@@ -29,7 +29,7 @@ body {
    field that draws its own ring (outline-none plus focus:ring) still wins. */
 @layer base {
   :focus-visible {
-    outline: 2px solid #5fd8e6;
+    outline: 2px solid #a3b06a;
     outline-offset: 3px;
   }
 }
@@ -43,7 +43,7 @@ body {
   z-index: 100;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
-  background: #5fd8e6;
+  background: #a3b06a;
   color: #000;
   font-weight: 600;
   transform: translateY(-200%);
@@ -70,8 +70,8 @@ div#top {
 body {
   position: relative;
   overflow-x: clip;
-  background: #000;
-  color: #f3ede0;
+  background: #0b0a09;
+  color: #f4f1ea;
 }
 
 /* Lotus backdrop (site-background.tsx), fixed behind every page. Each
@@ -160,7 +160,7 @@ body {
   .glass {
     background:
       linear-gradient(115deg, transparent 32%, rgb(255 255 255 / 0.04) 44%, transparent 56%),
-      linear-gradient(145deg, rgb(95 216 230 / 0.05), rgb(255 255 255 / 0.02) 45%, rgb(63 200 216 / 0.06));
+      linear-gradient(145deg, rgb(163 176 106 / 0.05), rgb(255 255 255 / 0.02) 45%, rgb(63 200 216 / 0.06));
     -webkit-backdrop-filter: blur(20px) saturate(120%);
     backdrop-filter: blur(20px) saturate(120%);
     border: 1px solid rgb(255 255 255 / 0.10);
@@ -169,7 +169,7 @@ body {
       0 1px 0 rgba(255, 255, 255, 0.08) inset,
       0 0 24px rgba(63, 200, 216, 0.03) inset,
       0 30px 60px -30px rgba(0, 0, 0, 0.7),
-      0 0 40px -20px rgba(95, 216, 230, 0.12);
+      0 0 40px -20px rgba(163, 176, 106, 0.12);
   }
 
   /* The sticky nav needs to stay legible over WHATEVER scrolls behind
@@ -188,7 +188,7 @@ body {
   .glass-strong {
     background:
       linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.05) 43%, transparent 57%),
-      linear-gradient(145deg, rgb(95 216 230 / 0.06), rgb(255 255 255 / 0.03) 45%, rgb(63 200 216 / 0.08));
+      linear-gradient(145deg, rgb(163 176 106 / 0.06), rgb(255 255 255 / 0.03) 45%, rgb(63 200 216 / 0.08));
     -webkit-backdrop-filter: blur(24px) saturate(120%);
     backdrop-filter: blur(24px) saturate(120%);
     border: 1px solid rgb(255 255 255 / 0.12);
@@ -198,7 +198,7 @@ body {
       0 -1px 0 rgba(255, 255, 255, 0.04) inset,
       0 0 30px rgba(63, 200, 216, 0.04) inset,
       0 40px 80px -30px rgba(0, 0, 0, 0.75),
-      0 0 60px -20px rgba(95, 216, 230, 0.14);
+      0 0 60px -20px rgba(163, 176, 106, 0.14);
   }
 
   /* Glass button — the "made of glass" ask. */
@@ -225,7 +225,7 @@ body {
     box-shadow:
       0 1px 0 rgba(255, 255, 255, 0.2) inset,
       0 20px 40px -14px rgba(0, 0, 0, 0.7),
-      0 0 30px -8px rgba(95, 216, 230, 0.45);
+      0 0 30px -8px rgba(163, 176, 106, 0.45);
   }
 
   .btn-solid {
@@ -235,15 +235,15 @@ body {
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
-    color: #041016;
+    color: #141a08;
     font-weight: 600;
-    box-shadow: 0 14px 30px -10px rgba(95, 216, 230, 0.5);
+    box-shadow: 0 14px 30px -10px rgba(163, 176, 106, 0.5);
     transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
   }
   .btn-solid:hover {
     transform: translateY(-2px);
     filter: brightness(1.08);
-    box-shadow: 0 20px 40px -10px rgba(95, 216, 230, 0.6);
+    box-shadow: 0 20px 40px -10px rgba(163, 176, 106, 0.6);
   }
 
   .gradient-text {
@@ -345,9 +345,9 @@ body {
      inherit, so per letter spans (DropLetters) get it. */
   .glass-text {
     color: #fff;
-    -webkit-text-stroke: 2px rgb(95 216 230 / 0.9);
+    -webkit-text-stroke: 2px rgb(163 176 106 / 0.9);
     paint-order: stroke fill;
-    text-shadow: 0 0 16px rgb(95 216 230 / 0.38);
+    text-shadow: 0 0 16px rgb(163 176 106 / 0.38);
   }
 
   /* Glass outline letters: a thin ice edge with a soft cyan glow. */
@@ -360,7 +360,7 @@ body {
     white-space: nowrap;
     color: transparent;
     -webkit-text-stroke: 0.9px rgb(214 246 250 / 0.85);
-    text-shadow: 0 0 18px rgb(95 216 230 / 0.35);
+    text-shadow: 0 0 18px rgb(163 176 106 / 0.35);
   }
   @media (min-width: 481px) {
     .marquee-mojo .marquee-track {
@@ -518,7 +518,7 @@ body {
   margin: 0 -0.12em;
 }
 .hero-serif .italic {
-  filter: drop-shadow(0 0 18px rgb(95 216 230 / 0.55));
+  filter: drop-shadow(0 0 18px rgb(163 176 106 / 0.55));
 }
 
 /* Static base for the work card full page scroll (work-card.tsx). Hidden
@@ -549,13 +549,13 @@ body {
   height: calc(100% + 2px);
   overflow: visible;
   pointer-events: none;
-  filter: drop-shadow(0 0 4px rgba(95, 216, 230, 0.6));
+  filter: drop-shadow(0 0 4px rgba(163, 176, 106, 0.6));
 }
 .cta-trace rect {
   width: calc(100% - 1.5px);
   height: calc(100% - 1.5px);
   fill: none;
-  stroke: #5fd8e6;
+  stroke: #a3b06a;
   stroke-width: 1.5;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
@@ -953,7 +953,7 @@ body {
 .float-field:focus-within .float-label {
   top: 15px;
   font-size: 0.75rem;
-  color: #5fd8e6;
+  color: #a3b06a;
 }
 .float-field:has(:disabled) .float-label {
   opacity: 0.4;
@@ -963,7 +963,7 @@ body {
 .drawn-check circle,
 .drawn-check path {
   fill: none;
-  stroke: #5fd8e6;
+  stroke: #a3b06a;
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -976,7 +976,7 @@ body {
 .mark-sweep {
   color: #fff;
   padding: 0 0.1em;
-  background: linear-gradient(rgb(95 216 230 / 0.38), rgb(95 216 230 / 0.38)) no-repeat 0 88% / 100% 0.45em;
+  background: linear-gradient(rgb(163 176 106 / 0.38), rgb(163 176 106 / 0.38)) no-repeat 0 88% / 100% 0.45em;
 }
 .mark-scope {
   view-timeline-name: --mark;
@@ -1018,7 +1018,7 @@ body {
 /* Growing underline on text links (desktop nav, footer pages). */
 .link-grow {
   padding-bottom: 2px;
-  background: linear-gradient(#5fd8e6, #5fd8e6) no-repeat right bottom / 0% 1px;
+  background: linear-gradient(#a3b06a, #a3b06a) no-repeat right bottom / 0% 1px;
 }
 .link-grow:hover,
 .link-grow:focus-visible {
@@ -1038,13 +1038,13 @@ body {
   inset: 0;
   z-index: -1;
   border-radius: inherit;
-  background: linear-gradient(135deg, #5fd8e6, #1f9fb3);
+  background: linear-gradient(135deg, #a3b06a, #7d8a45);
   transform: scaleX(0);
   transform-origin: left;
 }
 @media (hover: hover) {
   .btn-glass:hover {
-    color: #041016;
+    color: #141a08;
   }
   .btn-glass:hover::before {
     transform: none;
@@ -1078,7 +1078,7 @@ body {
   right: 0;
   z-index: 55;
   height: 3px;
-  background: linear-gradient(90deg, #5fd8e6, #3fc8d8);
+  background: linear-gradient(90deg, #a3b06a, #a3b06a);
   transform-origin: left;
   transform: scaleX(0);
   pointer-events: none;
@@ -1244,7 +1244,7 @@ body {
   clip-path: polygon(10px 0, 100% 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 100%, 0 10px);
 }
 .nav-morph a.is-lit {
-  color: #041016;
+  color: #141a08;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1267,7 +1267,7 @@ body {
    modal backdrop see through glass made the form hard to read. ===== */
 .mockup-notice {
   background-color: rgb(8 10 12 / 0.98);
-  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.9), 0 0 0 1px rgb(95 216 230 / 0.12);
+  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.9), 0 0 0 1px rgb(163 176 106 / 0.12);
   transform: translateY(calc(100% + 2rem));
   opacity: 0;
   visibility: hidden;
@@ -1283,8 +1283,8 @@ body {
   margin: auto;
   padding: 0;
   border-radius: 1.5rem;
-  background-color: #08090b;
-  color: #f3ede0;
+  background-color: #0b0a09;
+  color: #f4f1ea;
   overflow: hidden;
 }
 .mockup-dialog::backdrop {
@@ -1343,7 +1343,7 @@ body {
 }
 .logo-slot:hover .logo-mark {
   color: var(--color-accent-cyan);
-  filter: drop-shadow(0 0 12px rgb(95 216 230 / 0.35));
+  filter: drop-shadow(0 0 12px rgb(163 176 106 / 0.35));
 }
 @media (prefers-reduced-motion: no-preference) {
   .logo-cell {
@@ -1375,13 +1375,13 @@ body {
   padding: 1.5px;
   background: conic-gradient(
     from var(--flagship-spin),
-    rgb(95 216 230 / 0.18),
-    #5fd8e6 12%,
-    #2dd4bf 20%,
-    rgb(95 216 230 / 0.18) 34%,
-    rgb(95 216 230 / 0.18) 62%,
+    rgb(163 176 106 / 0.18),
+    #a3b06a 12%,
+    #cbd49b 20%,
+    rgb(163 176 106 / 0.18) 34%,
+    rgb(163 176 106 / 0.18) 62%,
     #a5f3fc 74%,
-    rgb(95 216 230 / 0.18) 86%
+    rgb(163 176 106 / 0.18) 86%
   );
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1413,11 +1413,11 @@ body {
   background: conic-gradient(
     from var(--flagship-spin),
     rgb(243 237 224 / 0.15),
-    #f3ede0 10%,
-    #d6f6fa 20%,
+    #f4f1ea 10%,
+    #f4f1ea 20%,
     rgb(243 237 224 / 0.15) 32%,
     rgb(243 237 224 / 0.15) 60%,
-    #d6f6fa 72%,
+    #f4f1ea 72%,
     rgb(243 237 224 / 0.15) 84%
   );
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
@@ -1447,7 +1447,7 @@ body {
   height: min(34rem, calc(100dvh - 7.5rem));
   border-radius: 1.5rem;
   background-color: rgb(8 10 12 / 0.98);
-  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.9), 0 0 0 1px rgb(95 216 230 / 0.12);
+  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.9), 0 0 0 1px rgb(163 176 106 / 0.12);
   transform: translateY(1.5rem) scale(0.98);
   transform-origin: bottom right;
   opacity: 0;
@@ -1498,7 +1498,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   margin-left: auto;
   background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
   border-bottom-right-radius: 0.35rem;
-  color: #041016;
+  color: #141a08;
 }
 .site-chat-typing {
   display: flex;
@@ -1509,7 +1509,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 9999px;
-  background: rgb(95 216 230 / 0.8);
+  background: rgb(163 176 106 / 0.8);
 }
 @media (prefers-reduced-motion: no-preference) {
   .site-chat-panel {
@@ -1605,7 +1605,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 .ink-title text {
   paint-order: stroke fill;
   fill: #ffffff;
-  stroke: #5fd8e6;
+  stroke: #a3b06a;
   stroke-width: 0.6;
   stroke-linejoin: round;
 }
@@ -1627,7 +1627,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     ink-fill 500ms ease-out calc(var(--start) + var(--l) * 55ms + 450ms) both;
 }
 .drawn-steps.is-drawn .ink-title {
-  filter: drop-shadow(0 0 6px rgba(95, 216, 230, 0.35));
+  filter: drop-shadow(0 0 6px rgba(163, 176, 106, 0.35));
 }
 .drawn-steps.is-drawn .seep-word {
   animation: seep-in 1400ms ease-out calc(var(--start) + var(--write) * 0.6 + var(--w) * 45ms) both;
@@ -1684,8 +1684,8 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 /* Listing Suite plan cards: a cyan pulse when a tile jumps to one
    (plan-jump-link.tsx adds .plan-flash) or a link lands on its #id. */
 @keyframes plan-flash {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(95, 216, 230, 0); }
-  30%, 60% { box-shadow: 0 0 0 2px rgba(95, 216, 230, 0.9), 0 0 60px -10px rgba(95, 216, 230, 0.7); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(163, 176, 106, 0); }
+  30%, 60% { box-shadow: 0 0 0 2px rgba(163, 176, 106, 0.9), 0 0 60px -10px rgba(163, 176, 106, 0.7); }
 }
 .plan-card.plan-flash,
 .plan-card:target {
@@ -1695,7 +1695,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   .plan-card.plan-flash,
   .plan-card:target {
     animation: none;
-    outline: 2px solid rgba(95, 216, 230, 0.9);
+    outline: 2px solid rgba(163, 176, 106, 0.9);
   }
 }
 
@@ -1706,11 +1706,11 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
    highlight (.wb-glide). */
 .wb-head { text-align: center; max-width: 760px; margin: 0 auto; }
 .wb-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 7px 16px; border-radius: 999px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: rgb(255 255 255 / .8); }
-.wb-dot { width: 7px; height: 7px; border-radius: 50%; background: #5fd8e6; animation: wb-ping 2.2s infinite; }
-@keyframes wb-ping { 0% { box-shadow: 0 0 0 0 rgb(95 216 230 / .7); } 70%, 100% { box-shadow: 0 0 0 9px rgb(95 216 230 / 0); } }
+.wb-dot { width: 7px; height: 7px; border-radius: 50%; background: #a3b06a; animation: wb-ping 2.2s infinite; }
+@keyframes wb-ping { 0% { box-shadow: 0 0 0 0 rgb(163 176 106 / .7); } 70%, 100% { box-shadow: 0 0 0 9px rgb(163 176 106 / 0); } }
 .wb-head h2 { margin-top: 22px; font-size: clamp(34px, 6vw, 60px); line-height: 1.04; letter-spacing: -.03em; font-weight: 700; color: #fff; }
 .wb-flow {
-  background: linear-gradient(90deg, #5fd8e6, #1f9fb3, #d6f6fa, #b5f04a, #5fd8e6);
+  background: linear-gradient(90deg, #a3b06a, #7d8a45, #f4f1ea, #b5f04a, #a3b06a);
   background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: wb-flow 9s linear infinite;
 }
@@ -1725,15 +1725,15 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 .wb-track { display: flex; width: max-content; animation: wb-slide 38s linear infinite; }
 .wb-marquee:hover .wb-track { animation-play-state: paused; }
 .wb-track span { white-space: nowrap; padding: 0 24px; font-size: clamp(17px, 2.3vw, 23px); font-weight: 300; color: rgb(255 255 255 / .55); }
-.wb-track em { font-style: normal; color: #5fd8e6; padding-left: 24px; }
+.wb-track em { font-style: normal; color: #a3b06a; padding-left: 24px; }
 @keyframes wb-slide { to { transform: translateX(-50%); } }
 
 .wb-bar { display: flex; justify-content: center; margin-bottom: 28px; }
 .wb-chips, .wb-tabs { position: relative; display: inline-flex; flex-wrap: wrap; padding: 5px; border-radius: 999px; }
 .wb-chips button, .wb-tabs button { position: relative; z-index: 1; border: 0; background: none; cursor: pointer; border-radius: 999px; font-weight: 500; color: rgb(255 255 255 / .62); transition: color .3s; display: inline-flex; align-items: center; gap: 6px; }
 .wb-chips button { padding: 9px 18px; font-size: 14px; }
-.wb-chips button.is-on, .wb-tabs button.is-on { color: #001418; }
-.wb-glide { position: absolute; z-index: 0; top: 0; left: 0; border-radius: 999px; background: linear-gradient(135deg, #5fd8e6, #1f9fb3); box-shadow: 0 8px 30px -8px rgb(95 216 230 / .7); transition: transform .5s cubic-bezier(.22,1,.36,1), width .5s cubic-bezier(.22,1,.36,1), height .5s cubic-bezier(.22,1,.36,1); pointer-events: none; }
+.wb-chips button.is-on, .wb-tabs button.is-on { color: #141a08; }
+.wb-glide { position: absolute; z-index: 0; top: 0; left: 0; border-radius: 999px; background: linear-gradient(135deg, #a3b06a, #7d8a45); box-shadow: 0 8px 30px -8px rgb(163 176 106 / .7); transition: transform .5s cubic-bezier(.22,1,.36,1), width .5s cubic-bezier(.22,1,.36,1), height .5s cubic-bezier(.22,1,.36,1); pointer-events: none; }
 .wb-tabs { position: absolute; top: 12px; right: 12px; z-index: 4; padding: 4px; background: rgb(0 0 0 / .55); border: 1px solid rgb(255 255 255 / .12); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
 .wb-tabs.is-static { position: relative; top: auto; right: auto; }
 .wb-tabs button { padding: 6px 13px; font-size: 12.5px; font-weight: 600; }
@@ -1745,11 +1745,11 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   position: relative; isolation: isolate; border-radius: 26px; padding: 14px 14px 22px;
   transform: perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry));
 }
-.wb-card::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; background: radial-gradient(420px circle at var(--mx) var(--my), rgb(95 216 230 / .14), transparent 60%); opacity: 0; transition: opacity .4s; }
+.wb-card::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; background: radial-gradient(420px circle at var(--mx) var(--my), rgb(163 176 106 / .14), transparent 60%); opacity: 0; transition: opacity .4s; }
 @property --wb-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
 .wb-card::after {
   content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; pointer-events: none;
-  background: conic-gradient(from var(--wb-a), transparent 0 70%, #5fd8e6 82%, #b5f04a 86%, transparent 92%);
+  background: conic-gradient(from var(--wb-a), transparent 0 70%, #a3b06a 82%, #b5f04a 86%, transparent 92%);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
   opacity: 0; transition: opacity .4s; animation: wb-orbit 4.5s linear infinite;
 }
@@ -1759,7 +1759,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 .wb-rise { opacity: 0; filter: blur(12px); translate: 0 36px; transition: transform .5s cubic-bezier(.22,1,.36,1); }
 .wb-rise.is-in { opacity: 1; filter: none; translate: 0 0; transition: opacity .9s cubic-bezier(.22,1,.36,1), filter .9s cubic-bezier(.22,1,.36,1), translate .9s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1); transition-delay: calc(var(--d, 0) * 110ms), calc(var(--d, 0) * 110ms), calc(var(--d, 0) * 110ms), 0s; }
 
-.wb-stage { container-type: inline-size; position: relative; aspect-ratio: 16 / 11; border-radius: 18px; overflow: hidden; background: radial-gradient(120% 90% at 50% 0%, rgb(95 216 230 / .10), rgb(255 255 255 / .02) 60%); border: 1px solid rgb(255 255 255 / .07); }
+.wb-stage { container-type: inline-size; position: relative; aspect-ratio: 16 / 11; border-radius: 18px; overflow: hidden; background: radial-gradient(120% 90% at 50% 0%, rgb(163 176 106 / .10), rgb(255 255 255 / .02) 60%); border: 1px solid rgb(255 255 255 / .07); }
 .wb-dev { position: absolute; display: block; padding: 0; border: 0; font: inherit; color: inherit; cursor: zoom-in; transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1); }
 .wb-dev.is-off { opacity: 0; transform: scale(.94) translateY(14px); pointer-events: none; }
 .wb-browser { left: 8%; width: 84%; top: calc(50% - 26.25cqw - 13px); border-radius: 12px; overflow: hidden; background: #0d0d0d; box-shadow: 0 30px 60px -20px rgb(0 0 0 / .9), 0 0 0 1px rgb(255 255 255 / .1); }
@@ -1778,14 +1778,14 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 .wb-stage:hover .wb-hint { opacity: 0; }
 
 .wb-meta { padding: 20px 8px 0; }
-.wb-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; color: #5fd8e6; border: 1px solid rgb(95 216 230 / .35); background: rgb(95 216 230 / .06); }
+.wb-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; color: #a3b06a; border: 1px solid rgb(163 176 106 / .35); background: rgb(163 176 106 / .06); }
 .wb-tag.is-brand { color: #b5f04a; border-color: rgb(181 240 74 / .35); background: rgb(181 240 74 / .05); }
 .wb-meta h3 { margin-top: 12px; font-size: 22px; font-weight: 700; letter-spacing: -.015em; color: #fff; }
 .wb-where { font-size: 13.5px; color: rgb(255 255 255 / .45); }
 .wb-meta p { margin-top: 10px; color: rgb(255 255 255 / .66); font-size: 15px; line-height: 1.6; }
 .wb-open { position: relative; overflow: hidden; isolation: isolate; margin-top: 16px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgb(255 255 255 / .16); background: rgb(255 255 255 / .04); padding: 9px 16px; border-radius: 999px; font-size: 14px; font-weight: 500; color: #fff; cursor: pointer; transition: color .3s, border-color .3s; }
-.wb-open::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(135deg, #5fd8e6, #1f9fb3); transform: translateX(-101%); transition: transform .45s cubic-bezier(.22,1,.36,1); }
-.wb-open:hover { color: #001418; border-color: transparent; }
+.wb-open::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(135deg, #a3b06a, #7d8a45); transform: translateX(-101%); transition: transform .45s cubic-bezier(.22,1,.36,1); }
+.wb-open:hover { color: #141a08; border-color: transparent; }
 .wb-open:hover::before { transform: none; }
 .wb-open svg { transition: transform .3s cubic-bezier(.22,1,.36,1); }
 .wb-open:hover svg { transform: translateX(4px); }
@@ -1967,14 +1967,14 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   background: rgb(255 255 255 / 0.03);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.22), rgb(95 216 230 / 0.18)) padding-box;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.22), rgb(163 176 106 / 0.18)) padding-box;
   border: 3px solid transparent;
   border-radius: 12px;
-  box-shadow: inset 0 0 0 1px rgb(95 216 230 / 0.5);
+  box-shadow: inset 0 0 0 1px rgb(163 176 106 / 0.5);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.3), rgb(95 216 230 / 0.3)) padding-box;
-  box-shadow: inset 0 0 0 1px rgb(95 216 230 / 0.85);
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.3), rgb(163 176 106 / 0.3)) padding-box;
+  box-shadow: inset 0 0 0 1px rgb(163 176 106 / 0.85);
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
@@ -1987,6 +1987,16 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 @supports not selector(::-webkit-scrollbar) {
   * {
     scrollbar-width: thin;
-    scrollbar-color: rgb(95 216 230 / 0.45) rgb(255 255 255 / 0.03);
+    scrollbar-color: rgb(163 176 106 / 0.45) rgb(255 255 255 / 0.03);
   }
+}
+
+/* Ava's chat bubble keeps the original cyan (Moe 2026-11-16), the rest of the site is olive */
+.site-chat-launcher.btn-solid {
+  background: linear-gradient(135deg, #5fd8e6, #1f9fb3);
+  color: #041016;
+  box-shadow: 0 14px 30px -10px rgba(95, 216, 230, 0.5);
+}
+.site-chat-launcher.btn-solid:hover {
+  box-shadow: 0 20px 40px -10px rgba(95, 216, 230, 0.6);
 }

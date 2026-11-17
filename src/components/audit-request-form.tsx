@@ -93,7 +93,7 @@ export function AuditRequestForm() {
             type="checkbox"
             checked={noWebsite}
             onChange={(e) => setNoWebsite(e.target.checked)}
-            className="h-4 w-4 accent-[#5fd8e6]"
+            className="h-4 w-4 accent-[#a3b06a]"
           />
           No website yet
         </label>
@@ -120,9 +120,9 @@ export function AuditRequestForm() {
           {(["call", "text", "email"] as const).map((m) => (
             <label
               key={m}
-              className={`has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-[#5fd8e6] cursor-pointer rounded-xl border px-3 py-2.5 text-center text-sm capitalize transition ${
+              className={`has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-[#a3b06a] cursor-pointer rounded-xl border px-3 py-2.5 text-center text-sm capitalize transition ${
                 contact === m
-                  ? "border-[#5fd8e6]/70 bg-[#5fd8e6]/10 text-white"
+                  ? "border-[#a3b06a]/70 bg-[#a3b06a]/10 text-white"
                   : "border-white/15 bg-black/20 text-white/70 hover:border-white/30"
               }`}
             >

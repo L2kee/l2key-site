@@ -105,7 +105,7 @@ export function StartWizard({ slug }: { slug: string }) {
       </div>
       <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/10" aria-hidden="true">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-[#5fd8e6] to-[#1f9fb3] transition-[width] duration-500"
+          className="h-full rounded-full bg-gradient-to-r from-[#a3b06a] to-[#7d8a45] transition-[width] duration-500"
           style={{ width: `${((step + 1) / total) * 100}%` }}
         />
       </div>
@@ -125,14 +125,14 @@ export function StartWizard({ slug }: { slug: string }) {
                   onClick={() => choose(o)}
                   className={`start-choice flex items-center justify-between gap-3 rounded-xl border px-4 py-3.5 text-left text-[15px] transition ${
                     on
-                      ? "border-[#5fd8e6]/70 bg-[#5fd8e6]/12 text-white"
+                      ? "border-[#a3b06a]/70 bg-[#a3b06a]/12 text-white"
                       : "border-white/15 bg-black/25 text-white/80 hover:border-white/35 hover:text-white"
                   }`}
                 >
                   {o}
                   <span
                     className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border transition ${
-                      on ? "border-[#5fd8e6] bg-[#5fd8e6] text-[#041016]" : "border-white/25"
+                      on ? "border-[#a3b06a] bg-[#a3b06a] text-[#141a08]" : "border-white/25"
                     }`}
                   >
                     {on && <Check size={13} strokeWidth={3} />}
@@ -215,7 +215,7 @@ export function StartWizard({ slug }: { slug: string }) {
                   onClick={() => setContact(m)}
                   className={`rounded-xl border px-3 py-2.5 text-center text-sm capitalize transition ${
                     contact === m
-                      ? "border-[#5fd8e6]/70 bg-[#5fd8e6]/10 text-white"
+                      ? "border-[#a3b06a]/70 bg-[#a3b06a]/10 text-white"
                       : "border-white/15 bg-black/20 text-white/70 hover:border-white/30"
                   }`}
                 >
@@ -235,7 +235,7 @@ export function StartWizard({ slug }: { slug: string }) {
               rows={3}
               value={fields.details}
               onChange={set("details")}
-              className="mt-2 w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-[#5fd8e6]/70 focus:ring-2 focus:ring-[#5fd8e6]/25"
+              className="mt-2 w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-white outline-none transition focus:border-[#a3b06a]/70 focus:ring-2 focus:ring-[#a3b06a]/25"
             />
           </label>
 

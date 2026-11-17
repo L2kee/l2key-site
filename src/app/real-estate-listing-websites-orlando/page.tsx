@@ -181,10 +181,10 @@ export default function RealEstateListingWebsitesOrlandoPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicePageGraph(PATH, DESCRIPTION, FAQ)) }}
       />
       <div className="text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/80">EVOGENCY Listing Suite</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]/80">EVOGENCY Listing Suite</p>
         <h1 className={`mask-rise-load mt-3 text-5xl leading-[1.02] font-medium sm:text-6xl lg:text-7xl`}>
           <span className="mask-line">
-            <span className="text-[#f3ede0]" style={{ "--i": 0 } as React.CSSProperties}>Every Property</span>
+            <span className="text-[#f4f1ea]" style={{ "--i": 0 } as React.CSSProperties}>Every Property</span>
           </span>
           <span className="mask-line">
             <span className="gradient-text italic" style={{ "--i": 1 } as React.CSSProperties}>Beautifully Presented</span>
@@ -201,7 +201,7 @@ export default function RealEstateListingWebsitesOrlandoPage() {
         elevated digital experience that makes the home feel as exceptional online as it does in person.
       </p>
       <div className="mx-auto mt-8 max-w-2xl space-y-1 text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/85">Designed. Curated. Delivered in as little as 48 hours.</p>
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#a3b06a]/85">Designed. Curated. Delivered in as little as 48 hours.</p>
         <p className="gradient-text text-2xl font-bold tracking-tight sm:text-3xl">Your Listing. Your Brand. Your Stage.</p>
         <p className="text-white/70">Give your sellers something they can see, share, and remember.</p>
       </div>
@@ -230,26 +230,26 @@ export default function RealEstateListingWebsitesOrlandoPage() {
             <div
               key={plan.name}
               id={plan.id}
-              className={`plan-card glass relative flex scroll-mt-28 flex-col rounded-2xl p-6 ${plan.hot ? "border-[#5fd8e6]/60 shadow-[0_0_50px_-15px_rgba(95,216,230,0.55)]" : ""}`}
+              className={`plan-card glass relative flex scroll-mt-28 flex-col rounded-2xl p-6 ${plan.hot ? "border-[#a3b06a]/60 shadow-[0_0_50px_-15px_rgba(163,176,106,0.55)]" : ""}`}
             >
               {plan.hot && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-[#5fd8e6] to-[#1f9fb3] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#041016]">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-to-r from-[#a3b06a] to-[#7d8a45] px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-[#141a08]">
                   Most agents pick this
                 </span>
               )}
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5fd8e6]/80">{plan.eyebrow}</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]/80">{plan.eyebrow}</p>
               <h3 className="mt-2 text-xl font-semibold text-white">{plan.name}</h3>
               <p className="gradient-text mt-3 text-4xl font-bold tracking-tight">{plan.price}</p>
               <p className="mt-1 text-sm text-white/55">{plan.per}</p>
               <ul className="mt-5 space-y-2 text-sm text-white/75">
                 {plan.items.map((i) => (
                   <li key={i} className="flex gap-2">
-                    <Check size={16} className="mt-0.5 shrink-0 text-[#5fd8e6]" aria-hidden="true" />
+                    <Check size={16} className="mt-0.5 shrink-0 text-[#a3b06a]" aria-hidden="true" />
                     <span>{i}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-auto pt-6 text-sm text-[#d6f6fa]/85">{plan.fit}</p>
+              <p className="mt-auto pt-6 text-sm text-[#f4f1ea]/85">{plan.fit}</p>
               <Link
                 href={listingStartHref(plan.id)}
                 className={`${plan.hot ? "btn-solid" : "btn-glass text-white"} mt-5 w-full justify-center`}
@@ -264,7 +264,7 @@ export default function RealEstateListingWebsitesOrlandoPage() {
           <p className="text-white/80">
             <span className="font-semibold text-white">Your first page is on us.</span> Send your current listing and
             we build it free. Keep it live when you start any plan.{" "}
-            <Link href={listingStartHref("free")} className="font-semibold text-[#5fd8e6] hover:underline">
+            <Link href={listingStartHref("free")} className="font-semibold text-[#a3b06a] hover:underline">
               Claim yours
             </Link>
           </p>
@@ -272,7 +272,7 @@ export default function RealEstateListingWebsitesOrlandoPage() {
         <p className="mt-4 text-center text-sm text-white/55">
           Add on. Put our AI front desk on your listing line to answer buyer questions and book showings around the
           clock.{" "}
-          <Link href="/ai" className="text-[#5fd8e6] underline underline-offset-4 hover:text-white">
+          <Link href="/ai" className="text-[#a3b06a] underline underline-offset-4 hover:text-white">
             See how it works
           </Link>
         </p>
@@ -283,7 +283,7 @@ export default function RealEstateListingWebsitesOrlandoPage() {
         <div className="mt-10 space-y-8">
           {PROCESS.map((p) => (
             <div key={p.step} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#5fd8e6]/50">{p.step}</span>
+              <span className="shrink-0 text-2xl font-bold text-[#a3b06a]/50">{p.step}</span>
               <div>
                 <h3 className="text-lg font-semibold text-white">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/60">{p.body}</p>
@@ -302,7 +302,7 @@ export default function RealEstateListingWebsitesOrlandoPage() {
             href="https://calendly.com/mohamed-eltoukhy011/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-[#5fd8e6] hover:underline"
+            className="inline-flex items-center gap-1 text-[#a3b06a] hover:underline"
           >
             <CalendarClock size={14} aria-hidden="true" /> Book a quick call
           </a>
