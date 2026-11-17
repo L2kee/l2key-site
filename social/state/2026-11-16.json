@@ -77,16 +77,16 @@
     "due": "2026-11-18T19:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
   },
-  "2026-11-18 19:00|6ac29f8e6a5c39ccb6139c75": {
-    "buffer": "6afb9d8d797935b975cdc77a",
-    "post": "2026-11-18-united-bans-ai-agents",
-    "due": "2026-11-18T19:00:00-05:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
+  "2026-11-17 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6afc58a523a8bb6dc9bbde47",
+    "post": "2026-11-17-gemini-4-hydrogen",
+    "due": "2026-11-17T19:00:00-05:00",
+    "fmt": "image"
   },
-  "2026-11-19 12:30|6aee7ad3e29c69a1718c1f7a": {
-    "buffer": "6afb9d8e3e42cd001e3e5842",
-    "post": "2026-11-19-benchup-3d-woodworking",
-    "due": "2026-11-19T12:30:00-05:00",
-    "fmt": "reel_vo_bf_lily@1.15_m2"
+  "2026-11-17 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6afc58a523a8bb6dc9bbde73",
+    "post": "2026-11-17-gemini-4-hydrogen",
+    "due": "2026-11-17T19:00:00-05:00",
+    "fmt": "image"
   }
 }
