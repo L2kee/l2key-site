@@ -88,5 +88,23 @@
     "post": "2026-11-17-gemini-4-hydrogen",
     "due": "2026-11-17T19:00:00-05:00",
     "fmt": "image"
+  },
+  "2026-11-18 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6afce6d793fa11d37df17143",
+    "post": "2026-11-18-united-bans-ai-agents",
+    "due": "2026-11-18T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-19 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6afce6d793fa11d37df17180",
+    "post": "2026-11-19-benchup-3d-woodworking",
+    "due": "2026-11-19T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-19 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6afce6d89f3765f6ab197041",
+    "post": "2026-11-19-benchup-3d-woodworking",
+    "due": "2026-11-19T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
