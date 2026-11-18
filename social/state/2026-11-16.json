@@ -106,5 +106,35 @@
     "post": "2026-11-19-benchup-3d-woodworking",
     "due": "2026-11-19T12:30:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-18 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6afda5df5f355732b1d27f85",
+    "post": "2026-11-18-crucial-conversations-state",
+    "due": "2026-11-18T12:30:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-18 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6afda5df61bd3b7f60c2b9a1",
+    "post": "2026-11-18-crucial-conversations-state",
+    "due": "2026-11-18T12:30:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-19 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6afda5e01c55ed7dd802679c",
+    "post": "2026-11-19-benchup-3d-woodworking",
+    "due": "2026-11-19T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-20 08:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6afda5e14f494ff3a1e54618",
+    "post": "2026-11-20-ai-policy-position",
+    "due": "2026-11-20T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-20 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6afda5e10aec53ca439b7486",
+    "post": "2026-11-20-ai-policy-position",
+    "due": "2026-11-20T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
