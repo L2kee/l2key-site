@@ -714,6 +714,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "seo-for-property-management-companies",
   "setting-marketing-goals-for-next-year",
   "ga4-numbers-worth-checking",
+  "brand-refresh-vs-full-rebrand",
+  "ai-automation-for-pool-service-companies",
+  "website-design-for-chiropractors",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort

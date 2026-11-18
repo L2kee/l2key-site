@@ -11688,7 +11688,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A refresh updates your look while keeping recognition. A rebrand changes who you are. Here's how to tell which one your business actually needs.",
     excerpt: "One keeps what customers already recognize. The other starts over. Here's how to choose.",
-    date: "2026-10-15",
+    date: "2026-11-18",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
@@ -11748,7 +11748,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Practical ways pool service companies can use AI and automation for route scheduling, service reports, chemical tracking, repair quotes, and billing.",
     excerpt: "Weekly routes, visit reports, and repair upsells. Here's where automation helps pool companies.",
-    date: "2026-10-15",
+    date: "2026-11-18",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -11819,7 +11819,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How chiropractic practices can design a website that reassures first time patients, explains care clearly, and makes booking the first visit easy.",
     excerpt: "First time patients are curious and a little nervous. Your website should calm both.",
-    date: "2026-10-15",
+    date: "2026-11-18",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
