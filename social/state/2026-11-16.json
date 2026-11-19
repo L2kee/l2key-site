@@ -148,5 +148,23 @@
     "post": "2026-11-20-gemini-decisions-api",
     "due": "2026-11-20T19:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-19 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6afefa5a03dff68ab45b6d04",
+    "post": "2026-11-19-chatgpt-business-profiles",
+    "due": "2026-11-19T19:00:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-19 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6afefa5a03dff68ab45b6d2b",
+    "post": "2026-11-19-chatgpt-business-profiles",
+    "due": "2026-11-19T19:00:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-20 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6afefa5babf4ba608b74f9bd",
+    "post": "2026-11-20-gemini-decisions-api",
+    "due": "2026-11-20T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
