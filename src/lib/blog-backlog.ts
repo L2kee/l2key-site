@@ -11889,7 +11889,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Before and after photos are the most persuasive content many service businesses have. Here's how to shoot them well, get permission, and use them everywhere.",
     excerpt: "Nothing sells a service like a great before and after. Here's how to take ones that convince.",
-    date: "2026-10-15",
+    date: "2026-11-19",
     tag: "Marketing",
     relatedHref: "/job-site-studio",
     relatedLabel: "Get 3 free videos from your clips",
@@ -11960,7 +11960,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How veterinary clinics can rank for local searches, from new pet owners choosing a vet to urgent searches when a pet is sick or hurt.",
     excerpt: "Pet owners search in calm moments and in panicked ones. Here's how to be there for both.",
-    date: "2026-10-15",
+    date: "2026-11-19",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -12022,7 +12022,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "A clear brief is the difference between a design you love and endless revisions. Here's what to tell a designer before they start on your logo or website.",
     excerpt: "Most disappointing design projects start with a vague brief. Here's how to write a good one.",
-    date: "2026-10-15",
+    date: "2026-11-19",
     tag: "Brand Design",
     relatedHref: "/brand-design",
     relatedLabel: "See our brand design service",
