@@ -214,5 +214,17 @@
     "post": "2026-11-22-ai-front-desk-promo",
     "due": "2026-11-22T08:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-22 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b0091c7861298c9b142c0c5",
+    "post": "2026-11-22-ai-front-desk-promo",
+    "due": "2026-11-22T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-22 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b0091c844c361911350e2e9",
+    "post": "2026-11-22-ai-push-back-tip",
+    "due": "2026-11-22T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
