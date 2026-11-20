@@ -184,5 +184,35 @@
     "post": "2026-11-21-pi-coding-agent",
     "due": "2026-11-21T12:30:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-20 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b0046865d9549971ca86ea8",
+    "post": "2026-11-20-give-and-take-protect",
+    "due": "2026-11-20T12:30:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-20 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b0046865d9549971ca86ed8",
+    "post": "2026-11-20-give-and-take-protect",
+    "due": "2026-11-20T12:30:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-21 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b00468744831c50e4c70fb5",
+    "post": "2026-11-21-pi-coding-agent",
+    "due": "2026-11-21T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-22 08:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b0046877efc64d5e41e9b9f",
+    "post": "2026-11-22-ai-front-desk-promo",
+    "due": "2026-11-22T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-22 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6b004688234b6bb6ee98daf5",
+    "post": "2026-11-22-ai-front-desk-promo",
+    "due": "2026-11-22T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
