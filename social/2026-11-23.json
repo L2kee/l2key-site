@@ -1,0 +1,648 @@
+{
+  "week": "2026-11-23",
+  "posts": [
+    {
+      "date": "2026-11-23",
+      "time": "08:00",
+      "id": "2026-11-23-ai-find-risky-short-links",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Old short links can be hijacked. Step 3 swaps them.",
+      "why": "Old Bitly links in years old posts were taken over this month and now redirect to pages their owners never chose. Any short link you sent long ago could do the same.",
+      "src": "Medianama, Nov 16 2026, KSL, Nov 15 2026",
+      "steps": [
+        "Gather every link from old emails, PDFs, slide decks, and website footers into one list.",
+        "Ask AI to sort them into short links, dead links, and direct links.",
+        "Ask for a replacement list that swaps each short link for a direct link on your own domain."
+      ],
+      "take": "Open each short link yourself and check where it lands today.",
+      "label": "Step",
+      "say": [
+        "Old short links can be hijacked! Step three swaps them.",
+        "Old Bitly links in years old posts were taken over this month and now redirect to pages their owners never chose. Any short link you sent long ago could do the same.",
+        "First, gather every link from old emails, PDFs, slide decks, and website footers into one list. That's the easy part.",
+        "Next, ask AI to sort them into short links, dead links, and direct links.",
+        "Now the swap. Ask for a replacement list that trades each short link for a direct link on your own domain.",
+        "Open each short link yourself and check where it lands today."
+      ],
+      "keyword": "LINKS",
+      "prompt": "You are a careful website helper. Below is a list of links from my old emails, PDFs, slide decks, and website footers. Sort them into three groups, short links, dead links, and direct links. Then write a replacement list that swaps each short link for a direct link on my own domain. If you cannot tell where a link should go, write [check this one] instead of guessing. My links [paste here]",
+      "captions": {
+        "facebook": "How to find risky old short links.\n\nOld short links can be hijacked. Step 3 swaps them.\n\nOld Bitly links in years old posts were taken over this month and now redirect to pages their owners never chose. Any short link you sent long ago could do the same.\n\n3 steps.\n1. Gather every link from old emails, PDFs, slide decks, and website footers into one list.\n2. Ask AI to sort them into short links, dead links, and direct links.\n3. Ask for a replacement list that swaps each short link for a direct link on your own domain.\n\nOpen each short link yourself and check where it lands today.\n\nWant the exact prompt? Follow EVOGENCY and message us the word LINKS. We'll send it to you.\n\n#SmallBusiness #CyberSecurity #Website #AITools",
+        "instagram": "How to find risky old short links.\n\nOld short links can be hijacked. Step 3 swaps them.\n\nOld Bitly links in years old posts were taken over this month and now redirect to pages their owners never chose. Any short link you sent long ago could do the same.\n\n3 steps.\n1. Gather every link from old emails, PDFs, slide decks, and website footers into one list.\n2. Ask AI to sort them into short links, dead links, and direct links.\n3. Ask for a replacement list that swaps each short link for a direct link on your own domain.\n\nOpen each short link yourself and check where it lands today.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word LINKS. We'll send it to you.\n\n#SmallBusiness #CyberSecurity #Website #AITools",
+        "tiktok": "How to find risky old short links.\n\nOld short links can be hijacked. Step 3 swaps them.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us LINKS.\n\n#SmallBusiness #CyberSecurity #Website #AITools"
+      }
+    },
+    {
+      "date": "2026-11-23",
+      "time": "12:30",
+      "id": "2026-11-23-lowndes-better-opener",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Small talk dying? Opener 3 gets real answers.",
+      "why": "Leil Lowndes says small, concrete tactics change a first impression. Asking about what someone cares about beats asking what they do.",
+      "src": "How to Talk to Anyone, Leil Lowndes",
+      "steps": [
+        "Skip what do you do. Ask what they are working on that they are excited about.",
+        "Repeat a few of their own words back, so they know you were listening.",
+        "Before an event, ask AI for 5 openers based on who will be there, then pick the one that sounds like you."
+      ],
+      "take": "Ask about what they care about, then really listen.",
+      "label": "Do this",
+      "say": [
+        "Small talk dying! Opener three gets real answers.",
+        "Leil Lowndes says small, concrete tactics change a first impression. Asking about what someone cares about beats asking what they do.",
+        "First, skip what do you do. Ask what they are working on that they are excited about. Simple, and it works.",
+        "Next, repeat a few of their own words back, so they know you were listening.",
+        "Opener three is the one you prepare. Before an event, ask AI for five openers based on who will be there, then pick the one that sounds like you.",
+        "Ask about what they care about, then really listen."
+      ],
+      "captions": {
+        "facebook": "How to start a conversation with anyone.\n\nSmall talk dying? Opener 3 gets real answers.\n\nLeil Lowndes says small, concrete tactics change a first impression. Asking about what someone cares about beats asking what they do.\n\n3 steps.\n1. Skip what do you do. Ask what they are working on that they are excited about.\n2. Repeat a few of their own words back, so they know you were listening.\n3. Before an event, ask AI for 5 openers based on who will be there, then pick the one that sounds like you.\n\nAsk about what they care about, then really listen.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Networking #Communication #Confidence",
+        "instagram": "How to start a conversation with anyone.\n\nSmall talk dying? Opener 3 gets real answers.\n\nLeil Lowndes says small, concrete tactics change a first impression. Asking about what someone cares about beats asking what they do.\n\n3 steps.\n1. Skip what do you do. Ask what they are working on that they are excited about.\n2. Repeat a few of their own words back, so they know you were listening.\n3. Before an event, ask AI for 5 openers based on who will be there, then pick the one that sounds like you.\n\nAsk about what they care about, then really listen.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Networking #Communication #Confidence",
+        "tiktok": "How to start a conversation with anyone.\n\nSmall talk dying? Opener 3 gets real answers.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #Networking #Communication #Confidence"
+      }
+    },
+    {
+      "date": "2026-11-23",
+      "time": "19:00",
+      "id": "2026-11-23-google-ask-maps-calls-shops",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Google's AI may call your shop. Point 3 is unknown.",
+      "why": "Google says Ask Maps can phone local businesses to find open appointments for beauty, pet care, auto, and home repair. It starts in the US.",
+      "src": "Digital Trends, Nov 16 2026, PPC Land, Nov 16 2026, Startup Fortune, Nov 17 2026",
+      "steps": [
+        "On November 16 Google said Ask Maps can find appointments, and call the business if times are not online.",
+        "The customer then sees the open slots and picks one. It rolls out on Android and iPhone.",
+        "Google has not said if businesses can opt out, if calls say they are automated, or if it books."
+      ],
+      "take": "Keep your hours and services in your Google Business Profile accurate, and check your call settings.",
+      "label": "What it means",
+      "say": [
+        "Google's AI may call your shop! Point three is unknown.",
+        "Google says Ask Maps can phone local businesses to find open appointments for beauty, pet care, auto, and home repair. It starts in the US.",
+        "First, Google announced on November sixteenth that Ask Maps can find appointments, and call the business when it cannot see open times online. That's the headline.",
+        "Next, the customer sees the open slots and picks one. It rolls out on Android and iPhone.",
+        "Point three is what we don't know. Google has not said whether a business can opt out, whether the calls say they are automated, or whether it completes the booking.",
+        "Keep your hours and services in your Google Business Profile accurate, and check your call settings."
+      ],
+      "captions": {
+        "facebook": "Google Ask Maps calling local businesses.\n\nGoogle's AI may call your shop. Point 3 is unknown.\n\nGoogle says Ask Maps can phone local businesses to find open appointments for beauty, pet care, auto, and home repair. It starts in the US.\n\n3 steps.\n1. On November 16 Google said Ask Maps can find appointments, and call the business if times are not online.\n2. The customer then sees the open slots and picks one. It rolls out on Android and iPhone.\n3. Google has not said if businesses can opt out, if calls say they are automated, or if it books.\n\nKeep your hours and services in your Google Business Profile accurate, and check your call settings.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #GoogleMaps #LocalBusiness #SmallBusiness",
+        "instagram": "Google Ask Maps calling local businesses.\n\nGoogle's AI may call your shop. Point 3 is unknown.\n\nGoogle says Ask Maps can phone local businesses to find open appointments for beauty, pet care, auto, and home repair. It starts in the US.\n\n3 steps.\n1. On November 16 Google said Ask Maps can find appointments, and call the business if times are not online.\n2. The customer then sees the open slots and picks one. It rolls out on Android and iPhone.\n3. Google has not said if businesses can opt out, if calls say they are automated, or if it books.\n\nKeep your hours and services in your Google Business Profile accurate, and check your call settings.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #GoogleMaps #LocalBusiness #SmallBusiness",
+        "tiktok": "Google Ask Maps calling local businesses.\n\nGoogle's AI may call your shop. Point 3 is unknown.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #GoogleMaps #LocalBusiness #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "time": "08:00",
+      "id": "2026-11-24-ai-client-promises-tracker",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Forgot a promise to clients? Step 3 writes the nudge.",
+      "why": "Small promises slip through the cracks, and clients remember them. A weekly sweep of your messages catches them before they turn into trouble.",
+      "src": "",
+      "steps": [
+        "Copy the last week of messages with one client into a document. Remove private details.",
+        "Ask AI to list every promise you made, with the due date.",
+        "Ask for a short reminder email for each open promise, then read each one before you send it."
+      ],
+      "take": "AI finds the promises. You decide what to send.",
+      "label": "Step",
+      "say": [
+        "Forgot a promise to clients! Step three writes the nudge.",
+        "Small promises slip through the cracks, and clients remember them. A weekly sweep of your messages catches them before they turn into trouble.",
+        "First, copy the last week of messages with one client into a document and remove private details. Quick win.",
+        "Next, ask AI to list every promise you made, with the due date. You'll be surprised.",
+        "Now the nudge. Ask for a short reminder email for each open promise, then read each one before you send it.",
+        "AI finds the promises. You decide what to send."
+      ],
+      "keyword": "PROMISES",
+      "prompt": "You are my follow up assistant. Below are my messages with one client from the last week, with private details removed. List every promise I made, with who it was for and the due date if one was mentioned. Then write a short, friendly reminder email for each promise that is still open. Only use what is in the messages, and write [fill this in] if a detail is missing. Messages [paste here]",
+      "captions": {
+        "facebook": "How to track client promises with AI.\n\nForgot a promise to clients? Step 3 writes the nudge.\n\nSmall promises slip through the cracks, and clients remember them. A weekly sweep of your messages catches them before they turn into trouble.\n\n3 steps.\n1. Copy the last week of messages with one client into a document. Remove private details.\n2. Ask AI to list every promise you made, with the due date.\n3. Ask for a short reminder email for each open promise, then read each one before you send it.\n\nAI finds the promises. You decide what to send.\n\nWant the exact prompt? Follow EVOGENCY and message us the word PROMISES. We'll send it to you.\n\n#AITools #SmallBusiness #CustomerService #Productivity",
+        "instagram": "How to track client promises with AI.\n\nForgot a promise to clients? Step 3 writes the nudge.\n\nSmall promises slip through the cracks, and clients remember them. A weekly sweep of your messages catches them before they turn into trouble.\n\n3 steps.\n1. Copy the last week of messages with one client into a document. Remove private details.\n2. Ask AI to list every promise you made, with the due date.\n3. Ask for a short reminder email for each open promise, then read each one before you send it.\n\nAI finds the promises. You decide what to send.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word PROMISES. We'll send it to you.\n\n#AITools #SmallBusiness #CustomerService #Productivity",
+        "tiktok": "How to track client promises with AI.\n\nForgot a promise to clients? Step 3 writes the nudge.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us PROMISES.\n\n#AITools #SmallBusiness #CustomerService #Productivity"
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "time": "12:30",
+      "id": "2026-11-24-mastra-agents-typescript",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Build AI agents in TypeScript. Step 3 adds approvals.",
+      "why": "Mastra is a framework for building AI agents in TypeScript, for developers who want agents and workflows in one place.",
+      "src": "github.com/mastra-ai/mastra",
+      "steps": [
+        "Pick from 40 plus model providers through one interface.",
+        "Build an agent with tools, or chain steps in a graph workflow.",
+        "Add a human approval step, so the agent pauses until you say go."
+      ],
+      "take": "Free and open source. The core is Apache 2.0, and code in the ee folders needs a license for production.",
+      "label": "How to use it",
+      "say": [
+        "Build AI agents in TypeScript! Step three adds approvals.",
+        "Mastra is a framework for building AI agents in TypeScript, for developers who want agents and workflows in one place.",
+        "First, pick from forty plus model providers through one interface. Switching models stays easy.",
+        "Next, build an agent with tools, or chain steps in a graph workflow.",
+        "Now the safety net. Add a human approval step, so the agent pauses until you say go.",
+        "Free and open source. The core is Apache two point oh, and code in the ee folders needs a license for production."
+      ],
+      "captions": {
+        "facebook": "Free TypeScript framework for AI agents.\n\nBuild AI agents in TypeScript. Step 3 adds approvals.\n\nMastra is a framework for building AI agents in TypeScript, for developers who want agents and workflows in one place.\n\n3 steps.\n1. Pick from 40 plus model providers through one interface.\n2. Build an agent with tools, or chain steps in a graph workflow.\n3. Add a human approval step, so the agent pauses until you say go.\n\nFree and open source. The core is Apache 2.0, and code in the ee folders needs a license for production.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AIAgents #TypeScript #Developers #OpenSource",
+        "instagram": "Free TypeScript framework for AI agents.\n\nBuild AI agents in TypeScript. Step 3 adds approvals.\n\nMastra is a framework for building AI agents in TypeScript, for developers who want agents and workflows in one place.\n\n3 steps.\n1. Pick from 40 plus model providers through one interface.\n2. Build an agent with tools, or chain steps in a graph workflow.\n3. Add a human approval step, so the agent pauses until you say go.\n\nFree and open source. The core is Apache 2.0, and code in the ee folders needs a license for production.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AIAgents #TypeScript #Developers #OpenSource",
+        "tiktok": "Free TypeScript framework for AI agents.\n\nBuild AI agents in TypeScript. Step 3 adds approvals.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AIAgents #TypeScript #Developers #OpenSource"
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "time": "19:00",
+      "id": "2026-11-24-nginx-critical-flaws-ask-host",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Critical NGINX flaws. Step 3 is emailing your host.",
+      "why": "On November 18 F5 shipped fixes for five critical flaws in NGINX, web server software Wiz says runs on more than 225 million websites.",
+      "src": "Wiz, Nov 18 2026, The Hacker News, Nov 18 2026, Equixly, Nov 18 2026",
+      "steps": [
+        "Two of the flaws sit in HTTP/2 and could let someone run code on a server without logging in.",
+        "The Hacker News reports no attacks yet, and the public proof of concept only works in a lab setup.",
+        "Email your web host or developer today and ask if NGINX is patched. Turning HTTP/2 off is a job for them."
+      ],
+      "take": "This is a check, not a panic.",
+      "label": "What it means",
+      "say": [
+        "Critical NGINX flaws! Step three is emailing your host.",
+        "On November eighteenth F5 shipped fixes for five critical flaws in NGINX, web server software Wiz says runs on more than two hundred twenty five million websites.",
+        "First, two of the flaws sit in HTTP two and could let someone run code on a server without logging in. That's the scary part.",
+        "Next, The Hacker News reports no attacks yet, and the public proof of concept only works in a lab setup.",
+        "Now the email. Ask your web host or developer today if NGINX is patched. Turning HTTP two off is a job for them.",
+        "This is a check, not a panic."
+      ],
+      "captions": {
+        "facebook": "NGINX security flaw, what to do.\n\nCritical NGINX flaws. Step 3 is emailing your host.\n\nOn November 18 F5 shipped fixes for five critical flaws in NGINX, web server software Wiz says runs on more than 225 million websites.\n\n3 steps.\n1. Two of the flaws sit in HTTP/2 and could let someone run code on a server without logging in.\n2. The Hacker News reports no attacks yet, and the public proof of concept only works in a lab setup.\n3. Email your web host or developer today and ask if NGINX is patched. Turning HTTP/2 off is a job for them.\n\nThis is a check, not a panic.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #CyberSecurity #WebHosting #SmallBusiness",
+        "instagram": "NGINX security flaw, what to do.\n\nCritical NGINX flaws. Step 3 is emailing your host.\n\nOn November 18 F5 shipped fixes for five critical flaws in NGINX, web server software Wiz says runs on more than 225 million websites.\n\n3 steps.\n1. Two of the flaws sit in HTTP/2 and could let someone run code on a server without logging in.\n2. The Hacker News reports no attacks yet, and the public proof of concept only works in a lab setup.\n3. Email your web host or developer today and ask if NGINX is patched. Turning HTTP/2 off is a job for them.\n\nThis is a check, not a panic.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #CyberSecurity #WebHosting #SmallBusiness",
+        "tiktok": "NGINX security flaw, what to do.\n\nCritical NGINX flaws. Step 3 is emailing your host.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #CyberSecurity #WebHosting #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-25",
+      "time": "08:00",
+      "id": "2026-11-25-ai-business-profile-faq",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Ready for AI callers? Step 3 writes 5 answers.",
+      "why": "AI tools now read your business profile to answer questions about you. Missing hours or unclear services mean a wrong answer or no answer.",
+      "src": "",
+      "steps": [
+        "Copy your Google Business Profile hours and services into a document.",
+        "Add your last 10 customer questions and ask AI what is missing or unclear.",
+        "Ask for 5 short FAQ answers you can add to your profile and your website."
+      ],
+      "take": "AI drafts the answers. You check every hour and price.",
+      "label": "Step",
+      "say": [
+        "Ready for AI callers! Step three writes five answers.",
+        "AI tools now read your business profile to answer questions about you. Missing hours or unclear services mean a wrong answer, or no answer.",
+        "First, copy your Google Business Profile hours and services into a document. Easy.",
+        "Next, add your last ten customer questions and ask AI what is missing or unclear. That's where the gaps show up.",
+        "Now the five answers. Ask for short FAQ answers you can add to your profile and your website.",
+        "AI drafts the answers. You check every hour and price."
+      ],
+      "keyword": "PROFILE",
+      "prompt": "You are a local business profile editor. Below are my Google Business Profile hours and services, plus my last 10 customer questions. Tell me what is missing or unclear, then write 5 short FAQ answers in plain words that I can add to my profile and website. Only use facts I gave you, and write [fill this in] where a fact is missing. My profile and questions [paste here]",
+      "captions": {
+        "facebook": "How to fix your Google Business Profile with AI.\n\nReady for AI callers? Step 3 writes 5 answers.\n\nAI tools now read your business profile to answer questions about you. Missing hours or unclear services mean a wrong answer or no answer.\n\n3 steps.\n1. Copy your Google Business Profile hours and services into a document.\n2. Add your last 10 customer questions and ask AI what is missing or unclear.\n3. Ask for 5 short FAQ answers you can add to your profile and your website.\n\nAI drafts the answers. You check every hour and price.\n\nWant the exact prompt? Follow EVOGENCY and message us the word PROFILE. We'll send it to you.\n\n#AITools #LocalSEO #GoogleBusinessProfile #SmallBusiness",
+        "instagram": "How to fix your Google Business Profile with AI.\n\nReady for AI callers? Step 3 writes 5 answers.\n\nAI tools now read your business profile to answer questions about you. Missing hours or unclear services mean a wrong answer or no answer.\n\n3 steps.\n1. Copy your Google Business Profile hours and services into a document.\n2. Add your last 10 customer questions and ask AI what is missing or unclear.\n3. Ask for 5 short FAQ answers you can add to your profile and your website.\n\nAI drafts the answers. You check every hour and price.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word PROFILE. We'll send it to you.\n\n#AITools #LocalSEO #GoogleBusinessProfile #SmallBusiness",
+        "tiktok": "How to fix your Google Business Profile with AI.\n\nReady for AI callers? Step 3 writes 5 answers.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us PROFILE.\n\n#AITools #LocalSEO #GoogleBusinessProfile #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-25",
+      "time": "12:30",
+      "id": "2026-11-25-eq-name-it-before-you-send",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Heated email? Step 3 makes it calm and clear.",
+      "why": "Travis Bradberry and Jean Greaves say emotional intelligence is a set of skills you can train. Naming the emotion is where self awareness starts.",
+      "src": "Emotional Intelligence 2.0, Travis Bradberry and Jean Greaves",
+      "steps": [
+        "Before you reply, name the emotion you feel in one word.",
+        "Ask what the other person might be feeling, and why.",
+        "Paste your draft into AI and ask for a calm, clear, kind rewrite. Check it still says what you mean."
+      ],
+      "take": "Name it before you send it.",
+      "label": "Do this",
+      "say": [
+        "Heated email! Step three makes it calm and clear.",
+        "Travis Bradberry and Jean Greaves say emotional intelligence is a set of skills you can train. Naming the emotion is where self awareness starts.",
+        "First, before you reply, name the emotion you feel in one word. Just one. Good start.",
+        "Next, ask what the other person might be feeling, and why.",
+        "Now the calm rewrite. Paste your draft into AI and ask for a calm, clear, kind version. Check it still says what you mean.",
+        "Name it before you send it."
+      ],
+      "captions": {
+        "facebook": "How to write a calm reply to an angry email.\n\nHeated email? Step 3 makes it calm and clear.\n\nTravis Bradberry and Jean Greaves say emotional intelligence is a set of skills you can train. Naming the emotion is where self awareness starts.\n\n3 steps.\n1. Before you reply, name the emotion you feel in one word.\n2. Ask what the other person might be feeling, and why.\n3. Paste your draft into AI and ask for a calm, clear, kind rewrite. Check it still says what you mean.\n\nName it before you send it.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #EmotionalIntelligence #Communication #Leadership",
+        "instagram": "How to write a calm reply to an angry email.\n\nHeated email? Step 3 makes it calm and clear.\n\nTravis Bradberry and Jean Greaves say emotional intelligence is a set of skills you can train. Naming the emotion is where self awareness starts.\n\n3 steps.\n1. Before you reply, name the emotion you feel in one word.\n2. Ask what the other person might be feeling, and why.\n3. Paste your draft into AI and ask for a calm, clear, kind rewrite. Check it still says what you mean.\n\nName it before you send it.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #EmotionalIntelligence #Communication #Leadership",
+        "tiktok": "How to write a calm reply to an angry email.\n\nHeated email? Step 3 makes it calm and clear.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #EmotionalIntelligence #Communication #Leadership"
+      }
+    },
+    {
+      "date": "2026-11-25",
+      "time": "19:00",
+      "id": "2026-11-25-gpt-62-test-your-own-tasks",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "OpenAI's new models split testers. Point 3 is your test.",
+      "why": "On November 17 OpenAI released GPT 6.2 Astra at $8 in and $40 out per million tokens, and Sol at $2 and $10. Early testers split sharply.",
+      "src": "VentureBeat, Nov 17 2026, Implicator, Nov 17 2026, dev.ua, Nov 18 2026",
+      "steps": [
+        "VentureBeat reported a wave of power user complaints, while others praised its bug catching.",
+        "Implicator reports Artificial Analysis found no coding gain for Astra.",
+        "Test it on your own 3 real tasks, keep your old model as a fallback, and compare cost per task."
+      ],
+      "take": "A bigger version number is not a better tool for your job.",
+      "label": "What it means",
+      "say": [
+        "OpenAI's new models split testers! Point three is your test.",
+        "On November seventeenth OpenAI released GPT six point two Astra at eight dollars in and forty out per million tokens, and Sol at two dollars and ten. Early testers split sharply.",
+        "First, VentureBeat reported a wave of power user complaints, while others praised its bug catching. Both sides are loud.",
+        "Next, Implicator reports Artificial Analysis found no coding gain for Astra.",
+        "Your test is point three. Test it on your own three real tasks, keep your old model as a fallback, and compare cost per task.",
+        "A bigger version number is not a better tool for your job."
+      ],
+      "captions": {
+        "facebook": "GPT 6.2 Astra and Sol, should you switch.\n\nOpenAI's new models split testers. Point 3 is your test.\n\nOn November 17 OpenAI released GPT 6.2 Astra at $8 in and $40 out per million tokens, and Sol at $2 and $10. Early testers split sharply.\n\n3 steps.\n1. VentureBeat reported a wave of power user complaints, while others praised its bug catching.\n2. Implicator reports Artificial Analysis found no coding gain for Astra.\n3. Test it on your own 3 real tasks, keep your old model as a fallback, and compare cost per task.\n\nA bigger version number is not a better tool for your job.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #OpenAI #ChatGPT #AITools",
+        "instagram": "GPT 6.2 Astra and Sol, should you switch.\n\nOpenAI's new models split testers. Point 3 is your test.\n\nOn November 17 OpenAI released GPT 6.2 Astra at $8 in and $40 out per million tokens, and Sol at $2 and $10. Early testers split sharply.\n\n3 steps.\n1. VentureBeat reported a wave of power user complaints, while others praised its bug catching.\n2. Implicator reports Artificial Analysis found no coding gain for Astra.\n3. Test it on your own 3 real tasks, keep your old model as a fallback, and compare cost per task.\n\nA bigger version number is not a better tool for your job.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #OpenAI #ChatGPT #AITools",
+        "tiktok": "GPT 6.2 Astra and Sol, should you switch.\n\nOpenAI's new models split testers. Point 3 is your test.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #OpenAI #ChatGPT #AITools"
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "time": "08:00",
+      "id": "2026-11-26-ai-voice-note-to-email",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Rambling voice note? Step 3 writes the email.",
+      "why": "Your best ideas show up while you talk, but a rambling note is hard to act on. AI can turn it into something you can use in minutes.",
+      "src": "",
+      "steps": [
+        "Dictate your thoughts into a voice note app and copy the transcript.",
+        "Ask AI to turn it into a clean checklist and a three line summary.",
+        "Ask for an email you can send from it, then fix anything that is not what you meant."
+      ],
+      "take": "AI tidies it up. You make sure it still sounds like you.",
+      "label": "Step",
+      "say": [
+        "Rambling voice note! Step three writes the email.",
+        "Your best ideas show up while you talk, but a rambling note is hard to act on. AI can turn it into something you can use in minutes.",
+        "First, dictate your thoughts into a voice note app and copy the transcript. Talking is the easy part.",
+        "Next, ask AI to turn it into a clean checklist and a three line summary.",
+        "Now the email. Ask for one you can send from it, then fix anything that is not what you meant.",
+        "AI tidies it up. You make sure it still sounds like you."
+      ],
+      "keyword": "NOTES",
+      "prompt": "You are my writing assistant. Below is a rambling voice note transcript. Turn it into a clean checklist, a three line summary, and a short email I can send. Keep my meaning and my tone, and do not add facts I did not say. If something is unclear, write [check this] instead of guessing. Transcript [paste here]",
+      "captions": {
+        "facebook": "How to turn a voice note into an email with AI.\n\nRambling voice note? Step 3 writes the email.\n\nYour best ideas show up while you talk, but a rambling note is hard to act on. AI can turn it into something you can use in minutes.\n\n3 steps.\n1. Dictate your thoughts into a voice note app and copy the transcript.\n2. Ask AI to turn it into a clean checklist and a three line summary.\n3. Ask for an email you can send from it, then fix anything that is not what you meant.\n\nAI tidies it up. You make sure it still sounds like you.\n\nWant the exact prompt? Follow EVOGENCY and message us the word NOTES. We'll send it to you.\n\n#AITools #Productivity #SmallBusiness #Communication",
+        "instagram": "How to turn a voice note into an email with AI.\n\nRambling voice note? Step 3 writes the email.\n\nYour best ideas show up while you talk, but a rambling note is hard to act on. AI can turn it into something you can use in minutes.\n\n3 steps.\n1. Dictate your thoughts into a voice note app and copy the transcript.\n2. Ask AI to turn it into a clean checklist and a three line summary.\n3. Ask for an email you can send from it, then fix anything that is not what you meant.\n\nAI tidies it up. You make sure it still sounds like you.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word NOTES. We'll send it to you.\n\n#AITools #Productivity #SmallBusiness #Communication",
+        "tiktok": "How to turn a voice note into an email with AI.\n\nRambling voice note? Step 3 writes the email.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us NOTES.\n\n#AITools #Productivity #SmallBusiness #Communication"
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "time": "12:30",
+      "id": "2026-11-26-protomaps-free-world-map",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Free map, no server. The third step is hosting.",
+      "why": "Protomaps is a free, customizable world map for web designers and developers who want a map on a site without running a map server.",
+      "src": "protomaps.com",
+      "steps": [
+        "Grab the free planet map file from the Protomaps site.",
+        "Upload that one file to cloud storage you already use.",
+        "Point a MapLibre map at it. It serves tiles with HTTP range requests, so there is no map server to run."
+      ],
+      "take": "Free to self host. The hosted API is free for noncommercial use, and commercial use needs a GitHub Sponsor.",
+      "label": "How to use it",
+      "say": [
+        "A free map, no server! The third step is hosting.",
+        "Protomaps is a free, customizable world map for web designers and developers who want a map on a site without running a map server.",
+        "First, grab the free planet map file from the Protomaps site. Zero cost.",
+        "Next, upload that one file to cloud storage you already use.",
+        "Now the hosting trick. Point a MapLibre map at it. It serves tiles with HTTP range requests, so there is no map server to run.",
+        "Free to self host. The hosted API is free for noncommercial use, and commercial use needs a GitHub Sponsor."
+      ],
+      "captions": {
+        "facebook": "Free world map for your website.\n\nFree map, no server. The third step is hosting.\n\nProtomaps is a free, customizable world map for web designers and developers who want a map on a site without running a map server.\n\n3 steps.\n1. Grab the free planet map file from the Protomaps site.\n2. Upload that one file to cloud storage you already use.\n3. Point a MapLibre map at it. It serves tiles with HTTP range requests, so there is no map server to run.\n\nFree to self host. The hosted API is free for noncommercial use, and commercial use needs a GitHub Sponsor.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#WebDesign #WebDevelopment #Maps #FreeTools",
+        "instagram": "Free world map for your website.\n\nFree map, no server. The third step is hosting.\n\nProtomaps is a free, customizable world map for web designers and developers who want a map on a site without running a map server.\n\n3 steps.\n1. Grab the free planet map file from the Protomaps site.\n2. Upload that one file to cloud storage you already use.\n3. Point a MapLibre map at it. It serves tiles with HTTP range requests, so there is no map server to run.\n\nFree to self host. The hosted API is free for noncommercial use, and commercial use needs a GitHub Sponsor.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#WebDesign #WebDevelopment #Maps #FreeTools",
+        "tiktok": "Free world map for your website.\n\nFree map, no server. The third step is hosting.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#WebDesign #WebDevelopment #Maps #FreeTools"
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "time": "19:00",
+      "id": "2026-11-26-gemini-4-neon-third-place",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Google's new model ranks third. Fact 3 is the catch.",
+      "why": "Google released Gemini 4 Neon on November 18, a middle model between its hardest job model and its fast everyday one.",
+      "src": "Google, Nov 18 2026, VentureBeat, Nov 18 2026",
+      "steps": [
+        "Neon costs $3 in and $15 out per million tokens, with a 1 million token context window.",
+        "Artificial Analysis scored it 61, third overall, above Claude Opus 5.5 at 59.",
+        "The coding numbers come from Google itself, so test it on your own tasks before you switch."
+      ],
+      "take": "The ranking is independent. The coding edge is not.",
+      "label": "What it means",
+      "say": [
+        "Google's new model ranks third! Fact three is the catch.",
+        "Google released Gemini four Neon on November eighteenth, a middle model between its hardest job model and its fast everyday one.",
+        "First, Neon costs three dollars in and fifteen out per million tokens, with a one million token context window. That's the price.",
+        "Next, Artificial Analysis scored it sixty one, third overall, above Claude Opus five point five at fifty nine.",
+        "Here's the catch. The coding numbers come from Google itself, so test it on your own tasks before you switch.",
+        "The ranking is independent. The coding edge is not."
+      ],
+      "captions": {
+        "facebook": "Gemini 4 Neon, is it worth switching.\n\nGoogle's new model ranks third. Fact 3 is the catch.\n\nGoogle released Gemini 4 Neon on November 18, a middle model between its hardest job model and its fast everyday one.\n\n3 steps.\n1. Neon costs $3 in and $15 out per million tokens, with a 1 million token context window.\n2. Artificial Analysis scored it 61, third overall, above Claude Opus 5.5 at 59.\n3. The coding numbers come from Google itself, so test it on your own tasks before you switch.\n\nThe ranking is independent. The coding edge is not.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Gemini #Google #AITools",
+        "instagram": "Gemini 4 Neon, is it worth switching.\n\nGoogle's new model ranks third. Fact 3 is the catch.\n\nGoogle released Gemini 4 Neon on November 18, a middle model between its hardest job model and its fast everyday one.\n\n3 steps.\n1. Neon costs $3 in and $15 out per million tokens, with a 1 million token context window.\n2. Artificial Analysis scored it 61, third overall, above Claude Opus 5.5 at 59.\n3. The coding numbers come from Google itself, so test it on your own tasks before you switch.\n\nThe ranking is independent. The coding edge is not.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #Gemini #Google #AITools",
+        "tiktok": "Gemini 4 Neon, is it worth switching.\n\nGoogle's new model ranks third. Fact 3 is the catch.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #Gemini #Google #AITools"
+      }
+    },
+    {
+      "date": "2026-11-27",
+      "time": "08:00",
+      "id": "2026-11-27-ai-black-friday-captions",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Black Friday captions. Step 3 adds the honest line.",
+      "why": "Sale season means a wall of posts. Clear captions that match your Reel and say when a link pays you earn more trust than shouting.",
+      "src": "",
+      "steps": [
+        "Paste your current caption and your product list into AI.",
+        "Ask for 3 caption variants that fit a Reel and point to your product links.",
+        "Ask for one short, honest disclosure line for any affiliate link, and check it against the platform rules."
+      ],
+      "take": "You are still responsible for what you post, so edit every line.",
+      "label": "Step",
+      "say": [
+        "Black Friday captions! Step three adds the honest line.",
+        "Sale season means a wall of posts. Clear captions that match your Reel and say when a link pays you earn more trust than shouting.",
+        "First, paste your current caption and your product list into AI. Easy start.",
+        "Next, ask for three caption variants that fit a Reel and point to your product links.",
+        "Now the honest line. Ask for one short disclosure for any affiliate link, and check it against the platform rules.",
+        "You are still responsible for what you post, so edit every line."
+      ],
+      "keyword": "CAPTIONS",
+      "prompt": "You are a social media copywriter. Below are my current caption and my product list. Write 3 caption variants that fit a short Reel and point to my product links. Then write one short, honest disclosure line I can add when a link is an affiliate link. Only use details I gave you, and write [fill this in] if something is missing. Caption and products [paste here]",
+      "captions": {
+        "facebook": "How to write sale captions with AI.\n\nBlack Friday captions. Step 3 adds the honest line.\n\nSale season means a wall of posts. Clear captions that match your Reel and say when a link pays you earn more trust than shouting.\n\n3 steps.\n1. Paste your current caption and your product list into AI.\n2. Ask for 3 caption variants that fit a Reel and point to your product links.\n3. Ask for one short, honest disclosure line for any affiliate link, and check it against the platform rules.\n\nYou are still responsible for what you post, so edit every line.\n\nWant the exact prompt? Follow EVOGENCY and message us the word CAPTIONS. We'll send it to you.\n\n#AITools #ContentCreation #BlackFriday #SmallBusiness",
+        "instagram": "How to write sale captions with AI.\n\nBlack Friday captions. Step 3 adds the honest line.\n\nSale season means a wall of posts. Clear captions that match your Reel and say when a link pays you earn more trust than shouting.\n\n3 steps.\n1. Paste your current caption and your product list into AI.\n2. Ask for 3 caption variants that fit a Reel and point to your product links.\n3. Ask for one short, honest disclosure line for any affiliate link, and check it against the platform rules.\n\nYou are still responsible for what you post, so edit every line.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word CAPTIONS. We'll send it to you.\n\n#AITools #ContentCreation #BlackFriday #SmallBusiness",
+        "tiktok": "How to write sale captions with AI.\n\nBlack Friday captions. Step 3 adds the honest line.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us CAPTIONS.\n\n#AITools #ContentCreation #BlackFriday #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-27",
+      "time": "12:30",
+      "id": "2026-11-27-atomic-habits-people-habit",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Want a people habit? The third step makes it stick.",
+      "why": "James Clear says small habits compound, and his two minute rule shrinks any habit until it is easy to start.",
+      "src": "Atomic Habits, James Clear",
+      "steps": [
+        "Shrink it. Give one person one genuine compliment a day.",
+        "Make it obvious. Tie it to something you already do, like your first coffee.",
+        "Ask AI to design a habit stack around your real day, then check every step is easy."
+      ],
+      "take": "Small habits compound.",
+      "label": "Do this",
+      "say": [
+        "Want a people habit? The third step makes it stick.",
+        "James Clear says small habits compound, and his two minute rule shrinks any habit until it is easy to start.",
+        "First, shrink it. Give one person one genuine compliment a day. Tiny on purpose.",
+        "Next, make it obvious. Tie it to something you already do, like your first coffee.",
+        "Now the part that makes it stick. Ask AI to design a habit stack around your real day, then check every step is easy.",
+        "Small habits compound."
+      ],
+      "captions": {
+        "facebook": "How to build a daily people skills habit.\n\nWant a people habit? The third step makes it stick.\n\nJames Clear says small habits compound, and his two minute rule shrinks any habit until it is easy to start.\n\n3 steps.\n1. Shrink it. Give one person one genuine compliment a day.\n2. Make it obvious. Tie it to something you already do, like your first coffee.\n3. Ask AI to design a habit stack around your real day, then check every step is easy.\n\nSmall habits compound.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #AtomicHabits #Habits #Communication",
+        "instagram": "How to build a daily people skills habit.\n\nWant a people habit? The third step makes it stick.\n\nJames Clear says small habits compound, and his two minute rule shrinks any habit until it is easy to start.\n\n3 steps.\n1. Shrink it. Give one person one genuine compliment a day.\n2. Make it obvious. Tie it to something you already do, like your first coffee.\n3. Ask AI to design a habit stack around your real day, then check every step is easy.\n\nSmall habits compound.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #AtomicHabits #Habits #Communication",
+        "tiktok": "How to build a daily people skills habit.\n\nWant a people habit? The third step makes it stick.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #AtomicHabits #Habits #Communication"
+      }
+    },
+    {
+      "date": "2026-11-27",
+      "time": "19:00",
+      "id": "2026-11-27-chatgpt-wallet-agents-buy",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "Agents can now buy things. Point 3 is your page.",
+      "why": "On November 13 OpenAI launched ChatGPT Wallet, so its agents can pick items and complete a purchase after you approve.",
+      "src": "TechCrunch, Nov 13 2026, CNBC, Nov 13 2026, 9to5Mac, Nov 13 2026",
+      "steps": [
+        "You review the items, total, and card, then approve with Face ID. The agent never sees your card number.",
+        "It starts with a limited group of US ChatGPT Pro subscribers.",
+        "If you sell online, write your price, stock, and shipping in plain text so an agent can read them."
+      ],
+      "take": "Some big stores still block AI agents, so clear pages may win the sale.",
+      "label": "What it means",
+      "say": [
+        "Agents can now buy things! Point three is your page.",
+        "On November thirteenth OpenAI launched ChatGPT Wallet, so its agents can pick items and complete a purchase after you approve.",
+        "First, you review the items, the total, and the card, then approve with Face ID or a fingerprint. The agent never sees your card number.",
+        "Next, it starts with a limited group of US ChatGPT Pro subscribers.",
+        "And point three, your page. If you sell online, write your price, stock, and shipping in plain text so an agent can read them.",
+        "Some big stores still block AI agents, so clear pages may win the sale."
+      ],
+      "captions": {
+        "facebook": "ChatGPT Wallet, AI agents that shop for you.\n\nAgents can now buy things. Point 3 is your page.\n\nOn November 13 OpenAI launched ChatGPT Wallet, so its agents can pick items and complete a purchase after you approve.\n\n3 steps.\n1. You review the items, total, and card, then approve with Face ID. The agent never sees your card number.\n2. It starts with a limited group of US ChatGPT Pro subscribers.\n3. If you sell online, write your price, stock, and shipping in plain text so an agent can read them.\n\nSome big stores still block AI agents, so clear pages may win the sale.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ChatGPT #Ecommerce #SmallBusiness",
+        "instagram": "ChatGPT Wallet, AI agents that shop for you.\n\nAgents can now buy things. Point 3 is your page.\n\nOn November 13 OpenAI launched ChatGPT Wallet, so its agents can pick items and complete a purchase after you approve.\n\n3 steps.\n1. You review the items, total, and card, then approve with Face ID. The agent never sees your card number.\n2. It starts with a limited group of US ChatGPT Pro subscribers.\n3. If you sell online, write your price, stock, and shipping in plain text so an agent can read them.\n\nSome big stores still block AI agents, so clear pages may win the sale.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #ChatGPT #Ecommerce #SmallBusiness",
+        "tiktok": "ChatGPT Wallet, AI agents that shop for you.\n\nAgents can now buy things. Point 3 is your page.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #ChatGPT #Ecommerce #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-28",
+      "time": "08:00",
+      "id": "2026-11-28-ai-app-security-review",
+      "kind": "value",
+      "topic": "Do it with AI",
+      "hook": "Launching an app? Step 3 locks the open doors.",
+      "why": "Apps built fast often leave data open to anyone who knows where to look. A quick AI review before launch catches the obvious mistakes.",
+      "src": "",
+      "steps": [
+        "Paste the code of a small web app into AI. Remove keys and passwords first.",
+        "Ask it to act as a security reviewer and list each piece of data and who can read or change it without logging in.",
+        "Ask for the fixes, then have a developer review them before you launch."
+      ],
+      "take": "AI finds the obvious holes. It is not a full security audit.",
+      "label": "Step",
+      "say": [
+        "Launching an app? Step three locks the open doors.",
+        "Apps built fast often leave data open to anyone who knows where to look. A quick AI review before launch catches the obvious mistakes.",
+        "First, paste the code of a small web app into AI. Remove keys and passwords first. Don't skip that.",
+        "Next, ask it to act as a security reviewer and list each piece of data and who can read or change it without logging in.",
+        "Now the doors. Ask for the fixes, then have a developer review them before you launch.",
+        "AI finds the obvious holes. It is not a full security audit."
+      ],
+      "keyword": "LOCKUP",
+      "prompt": "You are a careful security reviewer. Below is the code of a small web app with keys and passwords removed. List each piece of data it stores, and say who can read or change it without logging in. Then write the fixes, and explain each one in plain words. Say what you are unsure about instead of guessing. Code [paste here]",
+      "captions": {
+        "facebook": "How to check your app for security holes with AI.\n\nLaunching an app? Step 3 locks the open doors.\n\nApps built fast often leave data open to anyone who knows where to look. A quick AI review before launch catches the obvious mistakes.\n\n3 steps.\n1. Paste the code of a small web app into AI. Remove keys and passwords first.\n2. Ask it to act as a security reviewer and list each piece of data and who can read or change it without logging in.\n3. Ask for the fixes, then have a developer review them before you launch.\n\nAI finds the obvious holes. It is not a full security audit.\n\nWant the exact prompt? Follow EVOGENCY and message us the word LOCKUP. We'll send it to you.\n\n#AITools #AppSecurity #Developers #BuildInPublic",
+        "instagram": "How to check your app for security holes with AI.\n\nLaunching an app? Step 3 locks the open doors.\n\nApps built fast often leave data open to anyone who knows where to look. A quick AI review before launch catches the obvious mistakes.\n\n3 steps.\n1. Paste the code of a small web app into AI. Remove keys and passwords first.\n2. Ask it to act as a security reviewer and list each piece of data and who can read or change it without logging in.\n3. Ask for the fixes, then have a developer review them before you launch.\n\nAI finds the obvious holes. It is not a full security audit.\n\nWant the exact prompt? Follow @evogencyglobal and DM us the word LOCKUP. We'll send it to you.\n\n#AITools #AppSecurity #Developers #BuildInPublic",
+        "tiktok": "How to check your app for security holes with AI.\n\nLaunching an app? Step 3 locks the open doors.\n\nWatch for 3 steps.\n\nWant the exact prompt? Follow and DM us LOCKUP.\n\n#AITools #AppSecurity #Developers #BuildInPublic"
+      }
+    },
+    {
+      "date": "2026-11-28",
+      "time": "12:30",
+      "id": "2026-11-28-zigzag-logo-to-embroidery",
+      "kind": "value",
+      "topic": "Tool drop",
+      "hook": "Logo to embroidery, free. The third step is AI.",
+      "why": "ZigZag is free embroidery software for makers who sew. It turns SVG artwork into stitches you can edit.",
+      "src": "github.com/simpsoka/zigzag",
+      "steps": [
+        "Import your SVG artwork, or trace a PNG or JPEG logo into shapes.",
+        "Adjust the stitches in the visual editor, then export to PES, DST, EXP, JEF, or VP3.",
+        "Connect an AI agent through the built in MCP support so it can create and edit designs for you."
+      ],
+      "take": "Free and open source under Apache 2.0, on Mac, Windows, and Linux.",
+      "label": "How to use it",
+      "say": [
+        "Logo to embroidery, free! The third step is AI.",
+        "ZigZag is free embroidery software for makers who sew. It turns SVG artwork into stitches you can edit.",
+        "First, import your SVG artwork, or trace a PNG or JPEG logo into shapes. Done in a click.",
+        "Next, adjust the stitches in the visual editor, then export to PES, DST, EXP, JEF, or VP three.",
+        "Now the AI part. Connect an AI agent through the built in MCP support so it can create and edit designs for you.",
+        "Free and open source under Apache two point oh, on Mac, Windows, and Linux."
+      ],
+      "captions": {
+        "facebook": "Free embroidery software.\n\nLogo to embroidery, free. The third step is AI.\n\nZigZag is free embroidery software for makers who sew. It turns SVG artwork into stitches you can edit.\n\n3 steps.\n1. Import your SVG artwork, or trace a PNG or JPEG logo into shapes.\n2. Adjust the stitches in the visual editor, then export to PES, DST, EXP, JEF, or VP3.\n3. Connect an AI agent through the built in MCP support so it can create and edit designs for you.\n\nFree and open source under Apache 2.0, on Mac, Windows, and Linux.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#Embroidery #Makers #FreeTools #Design",
+        "instagram": "Free embroidery software.\n\nLogo to embroidery, free. The third step is AI.\n\nZigZag is free embroidery software for makers who sew. It turns SVG artwork into stitches you can edit.\n\n3 steps.\n1. Import your SVG artwork, or trace a PNG or JPEG logo into shapes.\n2. Adjust the stitches in the visual editor, then export to PES, DST, EXP, JEF, or VP3.\n3. Connect an AI agent through the built in MCP support so it can create and edit designs for you.\n\nFree and open source under Apache 2.0, on Mac, Windows, and Linux.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#Embroidery #Makers #FreeTools #Design",
+        "tiktok": "Free embroidery software.\n\nLogo to embroidery, free. The third step is AI.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#Embroidery #Makers #FreeTools #Design"
+      }
+    },
+    {
+      "date": "2026-11-28",
+      "time": "19:00",
+      "id": "2026-11-28-optimizely-hijack-your-scripts",
+      "kind": "value",
+      "topic": "AI news",
+      "hook": "A vendor flaw hit 178 sites. Point 3 is yours.",
+      "why": "On November 16 an attacker used a flaw in Optimizely to plant bad code in customer project scripts, which Optimizely's own CDN served to visitors.",
+      "src": "Report URI, Nov 16 2026, The Hacker News, Nov 17 2026",
+      "steps": [
+        "Report URI found bad code in 188 of 1,611 snippets, across at least 178 organizations. It sells detection tools.",
+        "Optimizely says it fixed the flaw and removed the code, but has not said how many projects were changed.",
+        "List every third party script on your site, keep them off checkout pages, and ask vendors if yours changed."
+      ],
+      "take": "One vendor script can run on every page with your name on it.",
+      "label": "What it means",
+      "say": [
+        "A vendor flaw hit one hundred seventy eight sites! Point three is yours.",
+        "On November sixteenth an attacker used a flaw in Optimizely to plant bad code in customer project scripts, which Optimizely's own CDN served to visitors.",
+        "First, Report URI found bad code in one hundred eighty eight of sixteen hundred eleven snippets, across at least one hundred seventy eight organizations, including a card skimmer. Report URI sells detection tools, so weigh that.",
+        "Next, Optimizely says it fixed the flaw and removed the code, but has not said how many projects were changed.",
+        "The last point is on you. List every third party script on your site, keep them off checkout pages, and ask each vendor if your project was changed.",
+        "One vendor script can run on every page with your name on it."
+      ],
+      "captions": {
+        "facebook": "Optimizely script attack, what to check.\n\nA vendor flaw hit 178 sites. Point 3 is yours.\n\nOn November 16 an attacker used a flaw in Optimizely to plant bad code in customer project scripts, which Optimizely's own CDN served to visitors.\n\n3 steps.\n1. Report URI found bad code in 188 of 1,611 snippets, across at least 178 organizations. It sells detection tools.\n2. Optimizely says it fixed the flaw and removed the code, but has not said how many projects were changed.\n3. List every third party script on your site, keep them off checkout pages, and ask vendors if yours changed.\n\nOne vendor script can run on every page with your name on it.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #CyberSecurity #Website #SmallBusiness",
+        "instagram": "Optimizely script attack, what to check.\n\nA vendor flaw hit 178 sites. Point 3 is yours.\n\nOn November 16 an attacker used a flaw in Optimizely to plant bad code in customer project scripts, which Optimizely's own CDN served to visitors.\n\n3 steps.\n1. Report URI found bad code in 188 of 1,611 snippets, across at least 178 organizations. It sells detection tools.\n2. Optimizely says it fixed the flaw and removed the code, but has not said how many projects were changed.\n3. List every third party script on your site, keep them off checkout pages, and ask vendors if yours changed.\n\nOne vendor script can run on every page with your name on it.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AINews #CyberSecurity #Website #SmallBusiness",
+        "tiktok": "Optimizely script attack, what to check.\n\nA vendor flaw hit 178 sites. Point 3 is yours.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AINews #CyberSecurity #Website #SmallBusiness"
+      }
+    },
+    {
+      "date": "2026-11-29",
+      "time": "08:00",
+      "id": "2026-11-29-web-design-promo-owned-site",
+      "kind": "promo",
+      "topic": "From us",
+      "hook": "Rented or owned website? The last promise matters.",
+      "why": "Most visitors are on a phone, and a slow site loses them before they see what you offer. We build sites that are fast, mobile first, and yours.",
+      "src": "",
+      "steps": [
+        "Designed mobile first, then tested across real devices before it goes live.",
+        "Built lean and fast, not weighed down by a bloated page builder.",
+        "Real code you own, with nothing locked behind a template subscription you lose the day you stop paying."
+      ],
+      "take": "We don't promise a number of customers, and nobody honest can. We promise a fast, clear site.",
+      "label": "What we build",
+      "say": [
+        "Rented or owned website? The last promise matters!",
+        "Most visitors are on a phone, and a slow site loses them before they see what you offer. We build sites that are fast, mobile first, and yours.",
+        "First, designed mobile first, then tested across real devices before it goes live.",
+        "Next, built lean and fast, not weighed down by a bloated page builder.",
+        "And the last promise, ownership. Real code you own, with nothing locked behind a template subscription you lose the day you stop paying.",
+        "We don't promise a number of customers, and nobody honest can. We promise a fast, clear site."
+      ],
+      "captions": {
+        "facebook": "Web design for small business in Orlando.\n\nRented or owned website? The last promise matters.\n\nMost visitors are on a phone, and a slow site loses them before they see what you offer. We build sites that are fast, mobile first, and yours.\n\nWhat we build.\n1. Designed mobile first, then tested across real devices before it goes live.\n2. Built lean and fast, not weighed down by a bloated page builder.\n3. Real code you own, with nothing locked behind a template subscription you lose the day you stop paying.\n\nWe don't promise a number of customers, and nobody honest can. We promise a fast, clear site.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites and AI agents for local businesses. See our work at evogencyglobal.com/web-design-agency-orlando\n\n#WebDesign #SmallBusiness #Orlando #LocalBusiness",
+        "instagram": "Web design for small business in Orlando.\n\nRented or owned website? The last promise matters.\n\nMost visitors are on a phone, and a slow site loses them before they see what you offer. We build sites that are fast, mobile first, and yours.\n\nWhat we build.\n1. Designed mobile first, then tested across real devices before it goes live.\n2. Built lean and fast, not weighed down by a bloated page builder.\n3. Real code you own, with nothing locked behind a template subscription you lose the day you stop paying.\n\nWe don't promise a number of customers, and nobody honest can. We promise a fast, clear site.\n\nAbout us. EVOGENCY is an Orlando web design, SEO, and custom software studio. We build fast websites and AI agents for local businesses. See our work at evogencyglobal.com/web-design-agency-orlando (link in bio)\n\n#WebDesign #SmallBusiness #Orlando #LocalBusiness",
+        "tiktok": "Web design for small business in Orlando.\n\nRented or owned website? The last promise matters.\n\nLearn more, link in bio.\n\n#WebDesign #SmallBusiness #Orlando #LocalBusiness"
+      },
+      "foot": "3 site promises"
+    },
+    {
+      "date": "2026-11-29",
+      "time": "12:30",
+      "id": "2026-11-29-voss-accusation-audit",
+      "kind": "value",
+      "topic": "People skills",
+      "hook": "Hard pitch ahead? Step 3 names their doubts first.",
+      "why": "Chris Voss, an FBI hostage negotiator, calls it the accusation audit. Say their worst thoughts about you first, and it lowers their guard.",
+      "src": "Never Split the Difference, Chris Voss",
+      "steps": [
+        "List the worst things the other person might think about you or your offer.",
+        "Say them first, in a calm voice, like you might think this costs too much.",
+        "Ask AI to write your accusation audit from your pitch, then practice it out loud."
+      ],
+      "take": "Say the hard part first, and calmly.",
+      "label": "Do this",
+      "say": [
+        "Hard pitch ahead? Step three names their doubts first.",
+        "Chris Voss, an FBI hostage negotiator, calls it the accusation audit. Say their worst thoughts about you first, and it lowers their guard.",
+        "First, list the worst things the other person might think about you or your offer. Be brutal. It's the easy part.",
+        "Next, say them first, in a calm voice, like you might think this costs too much.",
+        "Now the doubts, named for you. Ask AI to write your accusation audit from your pitch, then practice it out loud.",
+        "Say the hard part first, and calmly."
+      ],
+      "captions": {
+        "facebook": "How to handle objections before they come up.\n\nHard pitch ahead? Step 3 names their doubts first.\n\nChris Voss, an FBI hostage negotiator, calls it the accusation audit. Say their worst thoughts about you first, and it lowers their guard.\n\n3 steps.\n1. List the worst things the other person might think about you or your offer.\n2. Say them first, in a calm voice, like you might think this costs too much.\n3. Ask AI to write your accusation audit from your pitch, then practice it out loud.\n\nSay the hard part first, and calmly.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Negotiation #Sales #Communication",
+        "instagram": "How to handle objections before they come up.\n\nHard pitch ahead? Step 3 names their doubts first.\n\nChris Voss, an FBI hostage negotiator, calls it the accusation audit. Say their worst thoughts about you first, and it lowers their guard.\n\n3 steps.\n1. List the worst things the other person might think about you or your offer.\n2. Say them first, in a calm voice, like you might think this costs too much.\n3. Ask AI to write your accusation audit from your pitch, then practice it out loud.\n\nSay the hard part first, and calmly.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#PeopleSkills #Negotiation #Sales #Communication",
+        "tiktok": "How to handle objections before they come up.\n\nHard pitch ahead? Step 3 names their doubts first.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#PeopleSkills #Negotiation #Sales #Communication"
+      }
+    },
+    {
+      "date": "2026-11-29",
+      "time": "19:00",
+      "id": "2026-11-29-ai-ask-me-questions-tip",
+      "kind": "value",
+      "topic": "AI tip",
+      "hook": "AI answers too vague? Step 3 asks you questions.",
+      "why": "AI guesses what you leave out. Letting it question you first gets a much better first answer.",
+      "src": "",
+      "steps": [
+        "Describe your task in two sentences and say who the answer is for.",
+        "Tell AI to ask you up to 5 questions before it answers.",
+        "Answer them, then ask for the result and a list of any assumptions it made."
+      ],
+      "take": "AI guesses what you leave out, so give it the missing pieces.",
+      "label": "Try this",
+      "say": [
+        "AI answers too vague! Step three asks you questions.",
+        "AI guesses what you leave out. Letting it question you first gets a much better first answer.",
+        "First, describe your task in two sentences and say who the answer is for. That's the setup.",
+        "Next, tell AI to ask you up to five questions before it answers.",
+        "Now the step that fixes it. Answer them, then ask for the result and a list of any assumptions it made.",
+        "AI guesses what you leave out, so give it the missing pieces."
+      ],
+      "captions": {
+        "facebook": "How to get better answers from ChatGPT.\n\nAI answers too vague? Step 3 asks you questions.\n\nAI guesses what you leave out. Letting it question you first gets a much better first answer.\n\n3 steps.\n1. Describe your task in two sentences and say who the answer is for.\n2. Tell AI to ask you up to 5 questions before it answers.\n3. Answer them, then ask for the result and a list of any assumptions it made.\n\nAI guesses what you leave out, so give it the missing pieces.\n\nFollow EVOGENCY for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AITools #ChatGPT #Productivity #PromptTips",
+        "instagram": "How to get better answers from ChatGPT.\n\nAI answers too vague? Step 3 asks you questions.\n\nAI guesses what you leave out. Letting it question you first gets a much better first answer.\n\n3 steps.\n1. Describe your task in two sentences and say who the answer is for.\n2. Tell AI to ask you up to 5 questions before it answers.\n3. Answer them, then ask for the result and a list of any assumptions it made.\n\nAI guesses what you leave out, so give it the missing pieces.\n\nFollow @evogencyglobal for daily AI skills and people skills. Save this so you have it when you need it.\n\n#AITools #ChatGPT #Productivity #PromptTips",
+        "tiktok": "How to get better answers from ChatGPT.\n\nAI answers too vague? Step 3 asks you questions.\n\nWatch for 3 steps.\n\nFollow for daily AI skills and people skills.\n\n#AITools #ChatGPT #Productivity #PromptTips"
+      }
+    }
+  ]
+}
