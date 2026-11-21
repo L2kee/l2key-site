@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer";
 import { HideOnFunnel } from "@/components/hide-on-funnel";
 import { MockupNotice } from "@/components/mockup-notice";
 import { SiteChat } from "@/components/site-chat";
+import { ActionBar } from "@/components/action-bar";
 import { serif } from "@/lib/fonts";
 import { ORG_DESCRIPTION, siteGraph } from "@/lib/schema";
 import "./globals.css";
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </HideOnFunnel>
         <MockupNotice />
         <SiteChat />
+        <ActionBar />
         <Analytics />
       </body>
       <GoogleAnalytics gaId="G-P0SVMCCT5Y" />

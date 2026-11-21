@@ -53,7 +53,7 @@ export function Footer() {
                 </address>
               </li>
               <li>
-                <a href="tel:+18138971954" className="flex items-center gap-2.5 transition hover:text-white">
+                <a href="tel:+18138971954" className="flex min-h-6 items-center gap-2.5 transition hover:text-white">
                   <Phone size={16} className="shrink-0 text-white/35" />
                   (813) 897-1954
                 </a>
@@ -61,7 +61,7 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:hello@evogencyglobal.com"
-                  className="flex items-center gap-2.5 transition hover:text-white"
+                  className="flex min-h-6 items-center gap-2.5 transition hover:text-white"
                 >
                   <Mail size={16} className="shrink-0 text-white/35" />
                   hello@evogencyglobal.com
@@ -72,7 +72,7 @@ export function Footer() {
                   href="https://calendly.com/mohamed-eltoukhy011/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 transition hover:text-white"
+                  className="flex min-h-6 items-center gap-2.5 transition hover:text-white"
                 >
                   <CalendarClock size={16} className="shrink-0 text-white/35" />
                   Book a call
@@ -109,7 +109,7 @@ export function Footer() {
                   href={FOUNDER_LINKEDIN}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 transition hover:text-white"
+                  className="flex min-h-6 items-center gap-2.5 transition hover:text-white"
                 >
                   <LinkedInIcon size={16} className="shrink-0 text-white/35" />
                   LinkedIn

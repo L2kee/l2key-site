@@ -261,7 +261,7 @@ export function ServicesJourney() {
                         {s.kicker.toUpperCase()}
                       </span>
                       <h3 className="mt-1 text-xl font-bold text-white">{s.title}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-white/60">{s.body}</p>
+                      <p className="mt-2 text-base leading-relaxed text-white/70">{s.body}</p>
                       <p className="mt-5 text-base font-semibold leading-snug text-white">{s.ask}</p>
                       <div className="mt-auto flex flex-col items-center gap-3 pt-5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
                         <Link href={s.href} tabIndex={on ? 0 : -1} className="btn-solid">

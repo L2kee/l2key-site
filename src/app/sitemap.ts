@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Bump a page's date when its content changes (git log -1 on its folder).
   // The blog index follows the newest post instead.
   const routes: Record<string, string> = {
-    "": "2026-10-31",
+    "": "2026-11-21",
     "/about": "2026-10-22",
     "/services": "2026-10-22",
     "/ai": "2026-10-22",
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/mobile-app-development-orlando": "2026-10-22",
     "/electricalai-pro": "2026-10-22",
     "/free-review-kit": "2026-11-01",
-    "/growth-kit": "2026-10-22",
+    "/growth-kit": "2026-11-21",
     "/job-site-studio": "2026-11-01",
     "/real-estate-listing-websites-orlando": "2026-11-01",
   };

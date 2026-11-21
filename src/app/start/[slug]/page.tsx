@@ -75,7 +75,7 @@ export default async function StartPathPage({ params }: { params: Promise<{ slug
           {path.pricing.map((p) => (
             <div key={p.label} className="glass rounded-2xl p-6">
               <p className="font-semibold text-white">{p.label}</p>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">{p.body}</p>
+              <p className="mt-2 text-base leading-relaxed text-white/70">{p.body}</p>
             </div>
           ))}
         </div>

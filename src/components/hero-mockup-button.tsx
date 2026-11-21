@@ -3,7 +3,8 @@
 import { ArrowRight } from "lucide-react";
 import { openMockup } from "@/components/mockup-notice";
 
-// Phone hero CTA (Moe 2026-11-13). Opens the free mockup request form, the
+// Homepage hero CTA (phones since Moe 2026-11-13, every size since
+// 2026-11-21). Opens the free mockup request form, the
 // same one as the navbar's Free Mockup link. /contact is the no script
 // fallback.
 export function HeroMockupButton({ className = "" }: { className?: string }) {

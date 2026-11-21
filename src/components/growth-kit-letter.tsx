@@ -56,6 +56,9 @@ export function GrowthKitLetter() {
           The copy and paste texts, review requests, and ads that keep your phone ringing. Set up in 30 minutes, no
           marketing experience needed.
         </p>
+        <div className="mt-6">
+          <BuyButton />
+        </div>
       </header>
 
       <div className="mx-auto mt-10 max-w-2xl space-y-5">

@@ -23,7 +23,7 @@ export function ReviewKitCallout({
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]">Free review kit</p>
         <p className="mt-1 text-lg font-semibold text-white">{title}</p>
-        <p className="mt-1.5 text-sm leading-relaxed text-white/65">{body}</p>
+        <p className="mt-1.5 text-base leading-relaxed text-white/70">{body}</p>
         <Link href="/free-review-kit" className="btn-solid mt-4 !px-5 !py-2.5 text-sm">
           Send Me the Free Kit <ArrowRight size={16} />
         </Link>

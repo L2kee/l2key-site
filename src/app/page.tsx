@@ -92,32 +92,34 @@ export default function Home() {
             while the last letters land). --i sets its place in the
             order (see .hero-letter and .hero-in in globals.css). */}
         <h1
-          aria-label="Redefining Communication Through Innovation"
-          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#f4f1ea] [--accent-first:23] [--accent-last:39] sm:text-5xl xl:text-6xl`}
+          aria-label="Websites and AI That Keep Your Phone Ringing"
+          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#f4f1ea] [--accent-first:13] [--accent-last:36] sm:text-5xl xl:text-6xl`}
         >
           <span className="block">
-            <DropLetters text="Redefining Communication" />
+            <DropLetters text="Websites and AI" />
           </span>
-          <span className="block italic">
-            <DropLetters text="Through Innovation" start={23} letterClass="hero-accent" />
+          <span className="block text-balance italic">
+            <DropLetters text="That Keep Your Phone Ringing" start={13} letterClass="hero-accent" />
           </span>
         </h1>
 
         <p className="hero-in mt-4 max-w-2xl text-balance text-base text-white/80 [--i:2] sm:text-lg">
-          Delivering Excellence Beyond Expectations
+          Fast websites, an AI front desk that answers every call, and SEO that gets you found. Built in Orlando.
         </p>
 
-        {/* Phones only (Moe 2026-11-13): a tap target in the first screen.
-            Its own short --hero-delay so it rises right after the video
-            instead of waiting out the 2s letter drop. */}
-        <div className="hero-in mt-6 flex flex-col items-center gap-3 [--hero-delay:300ms] [--i:0] sm:hidden">
+        {/* The main action in the first screen on every size (phones since
+            2026-11-13, desktop and tablet since the 2026-11-21 UI Design
+            Playbook pass). On phones it has its own short --hero-delay so it
+            rises right after the video instead of waiting out the 2s letter
+            drop. From sm up it rises after the subhead. */}
+        <div className="hero-in mt-6 flex flex-col items-center gap-3 [--hero-delay:300ms] [--i:0] sm:mt-8 sm:[--hero-delay:1200ms] sm:[--i:3]">
           <HeroMockupButton className="btn-solid hero-cta" />
           <Link href="/start" className="text-sm font-medium text-[#a3b06a] underline-offset-4 hover:underline">
             or tell us what you need
           </Link>
         </div>
 
-        <p className="hero-in mt-8 text-sm text-white/60 [--i:3]">
+        <p className="hero-in mt-8 text-sm text-white/60 [--i:3] sm:[--i:4]">
           Got a question right now?{" "}
           <AskAvaLink className="font-semibold text-[#a3b06a] underline-offset-4 transition hover:text-white hover:underline" />{" "}
           She&apos;s the same tech we build for you.

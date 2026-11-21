@@ -31,7 +31,7 @@ export function RelatedGuides({
                 {post.tag}
               </span>
               <h3 className="mt-3 text-lg font-semibold text-white">{post.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">{post.excerpt}</p>
+              <p className="mt-2 text-base leading-relaxed text-white/70">{post.excerpt}</p>
               <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#a3b06a]">
                 Read more <ArrowRight size={14} />
               </span>

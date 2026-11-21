@@ -96,14 +96,14 @@ function MediaOverlays({ item }: { item: WorkItem }) {
 function WorkDetails({ item }: { item: WorkItem }) {
   return (
     <>
-      <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-white/45">
+      <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.2em] text-white/45">
         <span>{item.category}</span>
         <span className="h-1 w-1 rounded-full bg-white/30" />
         <span>{item.year}</span>
       </div>
 
       <h3 className="mt-2 text-lg font-semibold text-white">{item.title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-white/60">{item.body}</p>
+      <p className="mt-2 text-base leading-relaxed text-white/70">{item.body}</p>
 
       <div className="mt-4 flex flex-wrap gap-2">
         {item.stack.map((s) => (

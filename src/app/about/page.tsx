@@ -80,7 +80,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-xl font-semibold text-white">EVOGENCY</h2>
             <p className="text-sm font-medium text-[#a3b06a]">AI front desks, websites, and custom software</p>
-            <p className="mt-3 text-sm leading-relaxed text-white/65">
+            <p className="mt-3 text-base leading-relaxed text-white/70">
               EVOGENCY was built on a simple premise. Agencies should ship real
               software, not slideshows. We design and build the AI front desks,
               websites, CRM platforms, and SEO systems local businesses rely on,
@@ -115,12 +115,12 @@ export default function AboutPage() {
         <div className="mt-12 space-y-8">
           {PRINCIPLES.map((p, i) => (
             <div key={p.title} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#a3b06a]/50">
+              <span className="shrink-0 text-2xl font-bold text-[#a3b06a]/80">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
                 <h3 className="text-lg font-semibold text-white">{p.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{p.body}</p>
+                <p className="mt-2 text-base leading-relaxed text-white/70">{p.body}</p>
               </div>
             </div>
           ))}

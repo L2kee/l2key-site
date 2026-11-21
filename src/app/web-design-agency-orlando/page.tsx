@@ -146,7 +146,7 @@ export default function WebDesignAgencyOrlandoPage() {
           {INCLUDED.map((item) => (
             <TiltCard key={item.title} className="glass h-full rounded-2xl p-6">
               <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">{item.body}</p>
+              <p className="mt-2 text-base leading-relaxed text-white/70">{item.body}</p>
             </TiltCard>
           ))}
         </div>
@@ -157,10 +157,10 @@ export default function WebDesignAgencyOrlandoPage() {
         <div className="mt-10 space-y-8">
           {PROCESS.map((p) => (
             <div key={p.step} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#a3b06a]/50">{p.step}</span>
+              <span className="shrink-0 text-2xl font-bold text-[#a3b06a]/80">{p.step}</span>
               <div>
                 <h3 className="text-lg font-semibold text-white">{p.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{p.body}</p>
+                <p className="mt-2 text-base leading-relaxed text-white/70">{p.body}</p>
               </div>
             </div>
           ))}

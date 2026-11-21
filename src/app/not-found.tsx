@@ -42,7 +42,7 @@ export default function NotFound() {
             <TiltCard key={s.title} className="glass h-full rounded-2xl p-6">
               <s.icon size={28} style={{ color: "#a3b06a" }} />
               <h3 className="mt-4 text-lg font-semibold text-white">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/65">{s.body}</p>
+              <p className="mt-2 text-base leading-relaxed text-white/70">{s.body}</p>
               {s.href && (
                 <Link
                   href={s.href}

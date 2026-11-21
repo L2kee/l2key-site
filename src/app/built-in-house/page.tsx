@@ -77,7 +77,7 @@ function Demo({ title, body, children }: { title: string; body: string; children
     <div className="glass flex flex-col rounded-2xl p-6">
       <div className="flex min-h-[170px] flex-1 items-center justify-center">{children}</div>
       <h3 className="mt-6 font-semibold text-white">{title}</h3>
-      <p className="mt-1.5 text-sm leading-relaxed text-white/60">{body}</p>
+      <p className="mt-1.5 text-base leading-relaxed text-white/70">{body}</p>
     </div>
   );
 }

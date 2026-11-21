@@ -48,7 +48,7 @@ export function DrawnSteps({ steps }: { steps: Step[] }) {
             <h3 className="mt-4">
               <InkTitle text={step.title} />
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-white/65">
+            <p className="mt-2 text-base leading-relaxed text-white/70">
               {step.body.split(" ").map((word, w) => (
                 <span key={w} className="seep-word" style={{ "--w": w } as React.CSSProperties}>
                   {word}{" "}
