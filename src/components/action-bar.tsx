@@ -26,6 +26,7 @@ type Action =
     Studio) or is an app page. */
 function actionFor(path: string): Action | null {
   if (path === "/growth-kit") return { kind: "kit", label: "Get the Kit for $27" };
+  if (path === "/crm") return { kind: "link", label: "Save my founding spot", href: "/crm#join" };
   if (path === "/ai") return { kind: "link", label: "Book a free call", href: "/contact" };
   if (path === "/real-estate-listing-websites-orlando") {
     return { kind: "link", label: "Get a free listing page", href: "/contact" };

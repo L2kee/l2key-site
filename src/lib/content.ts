@@ -103,7 +103,7 @@ export const WORK: WorkItem[] = [
     ],
     body: "A full CRM and prospecting platform built from the ground up: pipeline management, local business prospecting, outreach sequences, a cold calling playbook, and role based access. Live in production today.",
     stack: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-    links: [{ label: "View live app", href: "https://evogencyglobal.com/agency-os" }],
+    links: [{ label: "See the CRM", href: "/crm", internal: true }],
   },
   {
     title: "Orlando Suits",
@@ -205,7 +205,7 @@ export const TOP_SERVICES: WorkItem[] = [
     stack: ["Pipeline", "Lead tracking", "Outreach", "Role based access"],
     links: [
       { label: "See Custom CRM", href: "/custom-crm-development-orlando", internal: true },
-      { label: "View Agency OS live", href: "https://evogencyglobal.com/agency-os" },
+      { label: "See the CRM", href: "/crm", internal: true },
     ],
   },
 ];

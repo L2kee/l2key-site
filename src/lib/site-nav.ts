@@ -8,6 +8,7 @@ export type NavItem = { href: string; label: string; mockup?: boolean };
 export const NAV_LINKS: NavItem[] = [
   { href: "/services", label: "Services" },
   { href: "/works", label: "Work" },
+  { href: "/crm", label: "CRM" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

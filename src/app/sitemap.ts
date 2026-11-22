@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/web-design-agency-orlando": "2026-10-22",
     "/google-reviews-orlando": "2026-10-22",
     "/custom-crm-development-orlando": "2026-10-22",
+    "/crm": "2026-11-21",
     "/mobile-app-development-orlando": "2026-10-22",
     "/electricalai-pro": "2026-10-22",
     "/free-review-kit": "2026-11-01",
