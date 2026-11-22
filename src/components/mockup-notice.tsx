@@ -15,7 +15,8 @@ import { submitMockupRequest, type MockupFormState } from "@/app/contact/actions
 // globals.css). Never on the contact page or the funnel pages, where it would
 // compete with the form that is already there, or on /ai, the AI Front Desk ad
 // landing page, where a website offer would pull clicks off the AI offer.
-// It sits above the site chat button (site-chat.tsx), not over it.
+// It sits above the site chat button (site-chat.tsx), not over it. Desktop
+// only since 2026-11-21: below 1024 px the sticky action bar has the action.
 
 const SEEN_KEY = "evo-mockup-seen";
 const OPEN_EVENT = "evo-open-mockup";
@@ -209,6 +210,11 @@ export function MockupNotice() {
 
   useEffect(() => {
     if (blocked || mounted || isHidden()) return;
+    // Below lg the sticky action bar (action-bar.tsx) already carries the
+    // mockup action, so the notice would stack a second identical button on
+    // top of it (Moe 2026-11-21). Phones and tablets skip the spring; the bar,
+    // the hero button, and the nav link still open the form.
+    if (matchMedia("(max-width: 1023px)").matches) return;
     let done = false;
     const show = () => {
       if (done) return;
