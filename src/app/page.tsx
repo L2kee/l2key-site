@@ -92,14 +92,14 @@ export default function Home() {
             while the last letters land). --i sets its place in the
             order (see .hero-letter and .hero-in in globals.css). */}
         <h1
-          aria-label="Websites and AI That Keep Your Phone Ringing"
-          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#f4f1ea] [--accent-first:13] [--accent-last:36] sm:text-5xl xl:text-6xl`}
+          aria-label="Redefining Communication Through Innovation"
+          className={`hero-serif text-4xl font-semibold leading-[1.05] text-[#f4f1ea] [--accent-first:23] [--accent-last:39] sm:text-5xl xl:text-6xl`}
         >
           <span className="block">
-            <DropLetters text="Websites and AI" />
+            <DropLetters text="Redefining Communication" />
           </span>
-          <span className="block text-balance italic">
-            <DropLetters text="That Keep Your Phone Ringing" start={13} letterClass="hero-accent" />
+          <span className="block italic">
+            <DropLetters text="Through Innovation" start={23} letterClass="hero-accent" />
           </span>
         </h1>
 
