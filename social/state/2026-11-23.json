@@ -10,5 +10,35 @@
     "post": "2026-11-23-lowndes-better-opener",
     "due": "2026-11-23T12:30:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-23 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b0364b9846b0ee907be7700",
+    "post": "2026-11-23-lowndes-better-opener",
+    "due": "2026-11-23T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-24 08:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b0364ba846b0ee907be7737",
+    "post": "2026-11-24-ai-client-promises-tracker",
+    "due": "2026-11-24T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-24 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6b0364babf5d5a73b6c52571",
+    "post": "2026-11-24-ai-client-promises-tracker",
+    "due": "2026-11-24T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-24 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b0364bb846b0ee907be77c9",
+    "post": "2026-11-24-ai-client-promises-tracker",
+    "due": "2026-11-24T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-24 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b0364bbd864a01105fab5c8",
+    "post": "2026-11-24-nginx-critical-flaws-ask-host",
+    "due": "2026-11-24T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
