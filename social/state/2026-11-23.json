@@ -58,5 +58,35 @@
     "post": "2026-11-24-nginx-critical-flaws-ask-host",
     "due": "2026-11-24T19:00:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-24 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b0502dedb52b449cf1fa239",
+    "post": "2026-11-24-nginx-critical-flaws-ask-host",
+    "due": "2026-11-24T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-25 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b0502df6734c08a26aa48ec",
+    "post": "2026-11-25-eq-name-it-before-you-send",
+    "due": "2026-11-25T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-25 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6b0502dff0d7b1e0deaa34ef",
+    "post": "2026-11-25-eq-name-it-before-you-send",
+    "due": "2026-11-25T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-25 12:30|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b0502e09a4bd32ca3ed3302",
+    "post": "2026-11-25-eq-name-it-before-you-send",
+    "due": "2026-11-25T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-26 08:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b0502e0c43c1f2f5c8438f5",
+    "post": "2026-11-26-ai-voice-note-to-email",
+    "due": "2026-11-26T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
