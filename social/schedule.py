@@ -179,6 +179,8 @@ def caption(p, service):
     An avatar Reel's post carries an Egyptian Arabic "title" (TikTok and YouTube) and captions, written by the crew."""
     if service != "youtube":
         return p["captions"][service]
+    if "youtube" in p["captions"]:  # an ad from social/ads.json carries its own (the page link instead of a DM ask)
+        return p["captions"]["youtube"]
     lines = []
     for line in p["captions"]["instagram"].split("\n"):
         kw = re.search(r"DM us the word (\w+)", line)

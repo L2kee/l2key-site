@@ -1,0 +1,142 @@
+{
+ "week": "ads",
+ "_what": "Finished EVOGENCY ads (Moe, 2026-11-24), 3 a week at 17:00. Each post's video is prebuilt in public/social/<id>/ (format avatar, so reel.js and voice.py skip it). Add each week's batch here with its reel. Captions carry a youtube override (no DMs on YouTube).",
+ "posts": [
+  {
+   "date": "2026-11-24",
+   "time": "17:00",
+   "id": "2026-11-24-ad-seo-cinematic",
+   "kind": "promo",
+   "format": "avatar",
+   "topic": "From us",
+   "label": "What you get",
+   "foot": "Free, no strings",
+   "title": "Your customers are searching. Can they find you?",
+   "hook": "Your customers are searching. Can they find you?",
+   "why": "People near you search for what you offer every day, and they find your competitors.",
+   "steps": [
+    "Technical SEO that fixes what Google sees",
+    "Local SEO and a stronger Google profile",
+    "Content built for what customers search"
+   ],
+   "take": "No empty promises. Just real work and reports you can read.",
+   "src": "evogencyglobal.com",
+   "say": [
+    "Your customers are searching. Can they find you?",
+    "People near you search for what you offer every day, and they find your competitors.",
+    "Technical SEO that fixes what Google sees",
+    "Local SEO and a stronger Google profile",
+    "Content built for what customers search",
+    "No empty promises. Just real work and reports you can read."
+   ],
+   "captions": {
+    "instagram": "You're great at what you do. But when customers search Google, can they actually find you? Every day, people near you search for what you offer, and they find your competitors instead. No empty promises. No guaranteed rankings. Just real work and reports you can actually read. DM me the word AUDIT for your free SEO audit. #localseo #orlandobusiness #smallbusiness #googlemaps",
+    "facebook": "Your customers are searching. Can they find you? Get a free SEO audit with real work, a clear plan, and reports you can actually read. https://evogencyglobal.com/seo-agency-orlando",
+    "tiktok": "You're great at what you do. But when customers search Google, can they actually find you? Every day, people near you search for what you offer, and they find your competitors instead. No empty promises. No guaranteed rankings. Just real work and reports you can actually read. DM me the word AUDIT for your free SEO audit. #localseo #orlandobusiness #smallbusiness #googlemaps",
+    "youtube": "Your customers are searching. Can they find you? Get a free SEO audit with real work, a clear plan, and reports you can actually read. https://evogencyglobal.com/seo-agency-orlando"
+   }
+  },
+  {
+   "date": "2026-11-26",
+   "time": "17:00",
+   "id": "2026-11-26-ad-seo-plumber",
+   "kind": "promo",
+   "format": "avatar",
+   "topic": "From us",
+   "label": "What you get",
+   "foot": "Free, no strings",
+   "title": "Orlando plumbers, Google is sending your calls elsewhere",
+   "hook": "Orlando plumbers, Google is sending your calls to someone else",
+   "why": "When someone types plumber near me, the top spots get the call.",
+   "steps": [
+    "We find what's holding your listing back",
+    "We show you exactly what's costing you calls",
+    "You get the audit free, before you spend a dime"
+   ],
+   "take": "See what's costing you calls. Free.",
+   "src": "evogencyglobal.com",
+   "say": [
+    "Orlando plumbers, Google is sending your calls to someone else",
+    "When someone types plumber near me, the top spots get the call.",
+    "We find what's holding your listing back",
+    "We show you exactly what's costing you calls",
+    "You get the audit free, before you spend a dime",
+    "See what's costing you calls. Free."
+   ],
+   "captions": {
+    "instagram": "Orlando plumbers, Google is sending your calls to someone else. When someone types plumber near me, the top spots get the call. DM me the word AUDIT and I'll show you exactly what's costing you calls. Free. #plumber #orlandoplumber #localseo #plumbingbusiness",
+    "facebook": "Orlando plumbers, Google is sending your calls to someone else. See exactly what's costing you calls with a free SEO audit. https://evogencyglobal.com/seo-agency-orlando",
+    "tiktok": "Orlando plumbers, Google is sending your calls to someone else. When someone types plumber near me, the top spots get the call. DM me the word AUDIT and I'll show you exactly what's costing you calls. Free. #plumber #orlandoplumber #localseo #plumbingbusiness",
+    "youtube": "Orlando plumbers, Google is sending your calls to someone else. See exactly what's costing you calls with a free SEO audit. https://evogencyglobal.com/seo-agency-orlando"
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "time": "17:00",
+   "id": "2026-11-28-ad-websites",
+   "kind": "promo",
+   "format": "avatar",
+   "topic": "From us",
+   "label": "How it works",
+   "foot": "Free, no strings",
+   "title": "Your website is a first impression you never see",
+   "hook": "Your website is a first impression you never get to see",
+   "why": "We'll design a new homepage for your business before you pay a single dollar.",
+   "steps": [
+    "Send us your business and current site",
+    "We design your new homepage mockup",
+    "Love it or walk away, no charge"
+   ],
+   "take": "See it first, then decide.",
+   "src": "evogencyglobal.com",
+   "say": [
+    "Your website is a first impression you never get to see",
+    "We'll design a new homepage for your business before you pay a single dollar.",
+    "Send us your business and current site",
+    "We design your new homepage mockup",
+    "Love it or walk away, no charge",
+    "See it first, then decide."
+   ],
+   "captions": {
+    "instagram": "Your website is a first impression you never get to see. We'll design a new homepage for your business before you pay a single dollar. If you don't love it, you walk away. DM me the word MOCKUP and I'll design yours. #webdesign #smallbusiness #orlandobusiness #websitedesign",
+    "facebook": "We'll design your new homepage before you pay a single dollar. Don't love it? Walk away. https://evogencyglobal.com/web-design-agency-orlando",
+    "tiktok": "Your website is a first impression you never get to see. We'll design a new homepage for your business before you pay a single dollar. If you don't love it, you walk away. DM me the word MOCKUP and I'll design yours. #webdesign #smallbusiness #orlandobusiness #websitedesign",
+    "youtube": "We'll design your new homepage before you pay a single dollar. Don't love it? Walk away. https://evogencyglobal.com/web-design-agency-orlando"
+   }
+  },
+  {
+   "date": "2026-11-30",
+   "time": "17:00",
+   "id": "2026-11-30-ad-ai-automation",
+   "kind": "promo",
+   "format": "avatar",
+   "topic": "From us",
+   "label": "What AI handles",
+   "foot": "Free, no strings",
+   "title": "Stop copying and pasting all day",
+   "hook": "You didn't start a business to copy and paste all day",
+   "why": "If you do it the same way every week, AI can do it for you while you work.",
+   "steps": [
+    "Quotes and follow ups that send themselves",
+    "Invoices and reminders on autopilot",
+    "We find what AI can take off your plate"
+   ],
+   "take": "Done while you work.",
+   "src": "evogencyglobal.com",
+   "say": [
+    "You didn't start a business to copy and paste all day",
+    "If you do it the same way every week, AI can do it for you while you work.",
+    "Quotes and follow ups that send themselves",
+    "Invoices and reminders on autopilot",
+    "We find what AI can take off your plate",
+    "Done while you work."
+   ],
+   "captions": {
+    "instagram": "You didn't start a business to copy and paste all day. Quotes, follow ups, invoices, reminders. If you do it the same way every week, AI can do it for you while you work. DM me the word AUTOMATE and I'll find what AI can take off your plate. #aiautomation #smallbusiness #productivity #orlandobusiness",
+    "facebook": "If you do it the same way every week, AI can do it for you while you work. Find what AI can take off your plate. https://evogencyglobal.com/ai-automation-orlando",
+    "tiktok": "You didn't start a business to copy and paste all day. Quotes, follow ups, invoices, reminders. If you do it the same way every week, AI can do it for you while you work. DM me the word AUTOMATE and I'll find what AI can take off your plate. #aiautomation #smallbusiness #productivity #orlandobusiness",
+    "youtube": "If you do it the same way every week, AI can do it for you while you work. Find what AI can take off your plate. https://evogencyglobal.com/ai-automation-orlando"
+   }
+  }
+ ]
+}
