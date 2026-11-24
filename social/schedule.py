@@ -244,6 +244,8 @@ def sync():
                 for c in org_targets:
                     if c["service"] in FIRST_OF_DAY_ONLY and t != firsts[p["date"]]:
                         continue
+                    if "channels" in p and c["service"] not in p["channels"]:
+                        continue  # the post names its channels (ads skip YouTube, whose 2 a day cap the Shorts use)
                     slots.append((due, p, c, path, f"{p['date']} {t}|{c['id']}"))
         slots.sort(key=lambda s: s[0])
 
