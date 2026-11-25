@@ -1,0 +1,91 @@
+{
+ "week": "images",
+ "_what": "Finished single image posts (Moe, 2026-11-25), each picture prebuilt at public/social/<id>/<image>. render.js, reel.js and voice.py skip them, schedule.py books the one image. No phone number in these captions until the (321) line is proven (Vapi).",
+ "posts": [
+  {
+   "date": "2026-11-28",
+   "time": "17:00",
+   "id": "2026-11-28-img-front-desk-night",
+   "kind": "promo",
+   "format": "image",
+   "image": "post.jpg",
+   "alt": "A phone on a nightstand at night showing Call answered and Job booked Thu 9:00 AM while a man sleeps in the background",
+   "topic": "From us",
+   "hook": "It's 2 AM. A pipe just burst at a customer's house. You're asleep. Who picks up the phone?",
+   "captions": {
+    "instagram": "It's 2 AM. A pipe just burst at a customer's house. You're asleep. Who picks up the phone?\n\nAn AI front desk does. It answers, asks the right questions, and books the job for Thursday at 9. You find out over coffee.\n\nEvery missed call is a job someone else books. Yours doesn't have to be.\n\nDM me the word DESK and I'll show you how it works for your business.\n\n#smallbusiness #orlandobusiness #aireceptionist #homeservices"
+   },
+   "channels": [
+    "instagram"
+   ]
+  },
+  {
+   "date": "2026-11-29",
+   "time": "17:00",
+   "id": "2026-11-29-img-front-desk-plumber",
+   "kind": "promo",
+   "format": "image",
+   "image": "post.jpg",
+   "alt": "A plumber working under a kitchen sink while his phone on the counter shows AI front desk answering and New job booked",
+   "topic": "From us",
+   "hook": "Your hands are under a sink. Your phone is ringing. You can't do both.",
+   "captions": {
+    "instagram": "Your hands are under a sink. Your phone is ringing. You can't do both.\n\nAn AI front desk picks up while you work, books the job, and texts back anyone you miss. You finish the repair, and the next job is already on the calendar.\n\nDM me the word DESK and I'll show you how it works for your business.\n\n#plumber #contractor #smallbusiness #aireceptionist"
+   },
+   "channels": [
+    "instagram"
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "time": "17:00",
+   "id": "2026-12-01-img-front-desk-office",
+   "kind": "promo",
+   "format": "image",
+   "image": "post.jpg",
+   "alt": "An empty office at night with rain on the window, a laptop calendar showing a New booking and a headset with a green light",
+   "topic": "From us",
+   "hook": "Your office closes at 5. Your customers don't stop calling at 5.",
+   "captions": {
+    "instagram": "Your office closes at 5. Your customers don't stop calling at 5.\n\nAfter hours calls are often the urgent ones, and the business that answers usually gets the job. An AI front desk answers every call, day or night, and puts the booking right on your calendar.\n\nDM me the word DESK and I'll show you how it works for your business.\n\n#smallbusiness #orlandobusiness #aireceptionist #customerservice"
+   },
+   "channels": [
+    "instagram"
+   ]
+  },
+  {
+   "date": "2026-12-03",
+   "time": "17:00",
+   "id": "2026-12-03-img-front-desk-ava",
+   "kind": "promo",
+   "format": "image",
+   "image": "post.jpg",
+   "alt": "A phone on a nightstand at night showing Ava answered and Job booked Thu 9:00 AM while a man sleeps",
+   "topic": "From us",
+   "hook": "Meet Ava. She works the night shift so you don't have to.",
+   "captions": {
+    "instagram": "Meet Ava. She works the night shift so you don't have to.\n\nShe answers every call, asks the right questions, and books the job on your calendar. You wake up to booked work instead of missed calls.\n\nDM me the word DESK and I'll show you what Ava can do for your business.\n\n#aireceptionist #smallbusiness #orlandobusiness #automation"
+   },
+   "channels": [
+    "instagram"
+   ]
+  },
+  {
+   "date": "2026-12-05",
+   "time": "17:00",
+   "id": "2026-12-05-img-front-desk-wake",
+   "kind": "promo",
+   "format": "image",
+   "image": "post.jpg",
+   "alt": "A glowing phone on a nightstand showing Call answered and Job booked while its owner sleeps",
+   "topic": "From us",
+   "hook": "Two notifications every business owner wants to wake up to. Call answered. Job booked.",
+   "captions": {
+    "instagram": "Two notifications every business owner wants to wake up to. Call answered. Job booked.\n\nThat's an AI front desk working all night, every night, while you get the sleep you earned.\n\nDM me the word DESK and I'll show you how it works for your business.\n\n#smallbusiness #aireceptionist #homeservices #orlandobusiness"
+   },
+   "channels": [
+    "instagram"
+   ]
+  }
+ ]
+}

@@ -67,6 +67,14 @@
   },
   {
    "date": "2026-12-01",
+   "time": "17:30",
+   "kind": "promo",
+   "tag": "Small Business",
+   "image": "2026-12-01-img-front-desk-office/post.jpg",
+   "text": "Your office closes at 5. Your customers don't stop calling at 5.\n\nAfter hours calls are often the urgent ones, and the business that answers usually gets the job. An AI front desk answers every call, day or night, and puts the booking right on your calendar.\n\nReply DESK or DM me and I'll show you how it works for your business."
+  },
+  {
+   "date": "2026-12-01",
    "time": "19:00",
    "kind": "question",
    "tag": "Small Business",
@@ -137,6 +145,14 @@
   },
   {
    "date": "2026-12-03",
+   "time": "17:30",
+   "kind": "promo",
+   "tag": "Small Business",
+   "image": "2026-12-03-img-front-desk-ava/post.jpg",
+   "text": "Meet Ava. She works the night shift so you don't have to.\n\nShe answers every call, asks the right questions, and books the job on your calendar. You wake up to booked work instead of missed calls.\n\nReply DESK or DM me and I'll show you what Ava can do for your business."
+  },
+  {
+   "date": "2026-12-03",
    "time": "19:00",
    "kind": "question",
    "tag": "Small Business",
@@ -204,6 +220,14 @@
    "kind": "build",
    "tag": "Small Business",
    "text": "One thing building our own systems taught me.\n\nThe tech is rarely the hard part. Knowing exactly what should happen when a lead comes in is.\n\nWrite your process down first. Then automate it.\n\nIs your lead process written down anywhere?"
+  },
+  {
+   "date": "2026-12-05",
+   "time": "17:30",
+   "kind": "promo",
+   "tag": "Small Business",
+   "image": "2026-12-05-img-front-desk-wake/post.jpg",
+   "text": "Two notifications every business owner wants to wake up to. Call answered. Job booked.\n\nThat's an AI front desk working all night, every night, while you get the sleep you earned.\n\nReply DESK or DM me and I'll show you how it works for your business."
   },
   {
    "date": "2026-12-05",

@@ -515,7 +515,7 @@ function ffmpeg(file, vo, dur, music) {
     const id = p.id || p.date;
     if (only ? id !== only : when <= now) continue;
     // Stick figure, mascot, and avatar Reels come from Moe's laptop (Content Crew), never from here, so nothing overwrites them.
-    if (formatOf(p, slot) !== 'slides') continue;
+    if (formatOf(p, slot) !== 'slides' || p.image) continue; // a post with its own picture has no reel
     const dir = path.join(ROOT, 'public/social', id);
     const file = path.join(dir, 'reel.mp4');
     const vo = voiceOf(id);

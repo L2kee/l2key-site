@@ -142,7 +142,7 @@ def reel_info(p):
 
 
 def wait_for_slides(posts, reels=()):
-    urls = [(f"{SITE}/social/{pid(p)}/slide-{k}.png", None) for p in posts for k in range(1, 7)]
+    urls = [(url, None) for p in posts for url in image_urls(p)]
     # A re-rendered reel replaces one at the same URL, so wait for this exact file, or Buffer gets the old video.
     urls += [(f"{SITE}/social/{pid(p)}/reel.mp4",
               os.path.getsize(os.path.join(SOCIAL, "..", "public", "social", pid(p), "reel.mp4"))) for p in reels]
@@ -155,7 +155,16 @@ def wait_for_slides(posts, reels=()):
     sys.exit("Slides never went live, nothing booked.")
 
 
+def image_urls(p):
+    """A post with its own finished picture ("image", from social/images.json) posts that one image, not 6 slides."""
+    if p.get("image"):
+        return [f"{SITE}/social/{pid(p)}/{p['image']}"]
+    return [f"{SITE}/social/{pid(p)}/slide-{k}.png" for k in range(1, 7)]
+
+
 def alt(p, k):
+    if p.get("image"):
+        return p["alt"]
     return [p["hook"], p["why"], *p["steps"], p["take"] + " Free audit at evogencyglobal.com/contact"][k - 1]
 
 
@@ -265,6 +274,7 @@ def sync():
         slots = [
             s for s in slots
             if s[2]["service"] not in REEL_SERVICES or fmt(s[1], s[2]).startswith("reel")
+            or s[1].get("image")  # a finished picture never waits for a reel
             or (s[2]["service"] not in VIDEO_ONLY
                 and (s[0] <= now + timedelta(hours=FALLBACK_HOURS) or s[4] in weeks[s[3]][1]))]
 
@@ -320,8 +330,8 @@ def sync():
             if len(booked) >= cap:
                 print(f"{key}: Buffer is full ({cap}), waiting for the next sync")
                 continue
-            carousel = [{"image": {"url": f"{SITE}/social/{pid(p)}/slide-{k}.png", "metadata": {"altText": alt(p, k)}}}
-                        for k in range(1, 7)]
+            carousel = [{"image": {"url": url, "metadata": {"altText": alt(p, k)}}}
+                        for k, url in enumerate(image_urls(p), 1)]
             tries = [] if c["service"] in VIDEO_ONLY else [("image", carousel, META[c["service"]](p))]
             if fmt(p, c).startswith("reel"):
                 reel = [{"video": {"url": f"{SITE}/social/{pid(p)}/reel.mp4",

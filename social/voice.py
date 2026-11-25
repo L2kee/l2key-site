@@ -112,8 +112,8 @@ def main():
         slot = slots(week)
         for p in week["posts"]:
             pid = p.get("id") or p["date"]
-            if format_of(p, slot[id(p)]) != "slides":
-                continue  # stick figure, mascot, and avatar Reels bring their own voices
+            if format_of(p, slot[id(p)]) != "slides" or p.get("image"):
+                continue  # stick figure, mascot, and avatar Reels bring their own voices; image posts have none
             when = f"{p['date']} {p.get('time') or week.get('time', '11:15')}"
             if a.only and pid != a.only:
                 continue

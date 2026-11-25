@@ -56,6 +56,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 WEEKS = os.path.join(HERE, "threads")
 GRACE_HOURS = 2
 KINDS = {"take", "useful", "question", "build", "promo"}
+SITE = "https://evogencyglobal.com"
 MAX_BYTES = 500  # Threads' text limit; emojis count by their UTF-8 bytes
 
 
@@ -142,6 +143,9 @@ def lint_week(path):
         tag = p.get("tag", "")
         if tag and (len(tag) > 50 or "." in tag or "&" in tag):
             problems.append(f"{where}: topic tag must be 1 to 50 characters with no periods or ampersands")
+        image = p.get("image")
+        if image is not None and not (isinstance(image, str) and image.endswith((".jpg", ".png")) and "/" in image):
+            problems.append(f"{where}: image must be \"<post id>/<file>.jpg\" or .png")
         if p.get("kind") not in KINDS:
             problems.append(f"{where}: kind must be one of {', '.join(sorted(KINDS))}")
     return week, problems
@@ -181,6 +185,8 @@ def media_lost(e):
 
 def publish_once(user, p):
     params = {"media_type": "TEXT", "text": p["text"]}
+    if p.get("image"):  # "<post id>/<file>" under evogencyglobal.com/social/, served by the site
+        params = {"media_type": "IMAGE", "image_url": f"{SITE}/social/{p['image']}", "text": p["text"]}
     if p.get("tag"):
         params["topic_tag"] = p["tag"]
     container = call("POST", f"/v1.0/{user}/threads", params)["id"]

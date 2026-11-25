@@ -23,6 +23,7 @@ ${inner}${foot ? `<div class="foot">${foot}</div>` : ''}</div></body></html>`;
   const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
   for (const p of week.posts) {
     if (p.date < today) continue;
+    if (p.image) continue; // brings its own finished picture (social/images.json), no slides to render
     // One folder per post id, so a rewritten post never reuses (or gets served from cache as) old slides.
     const dir = path.join(ROOT, 'public/social', p.id || p.date);
     if ([1, 2, 3, 4, 5, 6].every(k => fs.existsSync(path.join(dir, `slide-${k}.png`)))) continue;
