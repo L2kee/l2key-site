@@ -124,5 +124,17 @@
     "post": "2026-11-25-ai-business-profile-faq",
     "due": "2026-11-25T08:00:00-05:00",
     "fmt": "image"
+  },
+  "2026-11-25 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b06f22532f2334cd2282285",
+    "post": "2026-11-25-gpt-62-test-your-own-tasks",
+    "due": "2026-11-25T19:00:00-05:00",
+    "fmt": "image"
+  },
+  "2026-11-25 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b06f22632f2334cd22822d7",
+    "post": "2026-11-25-gpt-62-test-your-own-tasks",
+    "due": "2026-11-25T19:00:00-05:00",
+    "fmt": "image"
   }
 }
