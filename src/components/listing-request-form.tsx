@@ -26,7 +26,7 @@ const NEXT_STEP: Record<ListingPlanId, string> = {
 function FieldError({ id, message }: { id?: string; message?: string }) {
   if (!message) return null;
   return (
-    <p id={id} className="mt-1.5 text-sm text-rose-300">
+    <p id={id} className="field-error mt-1.5 text-sm text-rose-300">
       {message}
     </p>
   );
@@ -177,7 +177,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
       </fieldset>
 
       {state.status === "error" && state.message && (
-        <p className="text-sm text-rose-300" role="alert">
+        <p className={`${state.fieldErrors ? "form-fix-note " : ""}text-sm text-rose-300`} role="alert">
           {state.message}
         </p>
       )}

@@ -53,7 +53,7 @@ function uploadClip(path: string, file: File, contentType: string, onProgress: (
 
 function FieldError({ message }: { message?: string }) {
   if (!message) return null;
-  return <p className="mt-1.5 text-sm text-rose-300">{message}</p>;
+  return <p className="field-error mt-1.5 text-sm text-rose-300">{message}</p>;
 }
 
 export function ClipRequestForm() {
@@ -229,7 +229,7 @@ export function ClipRequestForm() {
       </div>
 
       {message && (
-        <p className="text-sm text-rose-300" role="alert">
+        <p className={`${Object.keys(errors).length > 0 ? "form-fix-note " : ""}text-sm text-rose-300`} role="alert">
           {message}
         </p>
       )}

@@ -2057,3 +2057,11 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     bottom: calc(5.5rem + env(safe-area-inset-bottom));
   }
 }
+
+/* "Please fix the highlighted fields." goes away once nothing is highlighted
+   (2026-11-25). The fields clear their own errors as they are fixed
+   (float-field.tsx), so this note would otherwise point at nothing until the
+   next send. Browsers without :has keep showing it, as before. */
+form:not(:has(.field-error)) .form-fix-note {
+  display: none;
+}

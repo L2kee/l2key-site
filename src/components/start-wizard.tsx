@@ -19,7 +19,7 @@ const METHOD_PHRASE: Record<string, string> = {
 function FieldError({ id, message }: { id?: string; message?: string }) {
   if (!message) return null;
   return (
-    <p id={id} className="mt-1.5 text-sm text-rose-300">
+    <p id={id} className="field-error mt-1.5 text-sm text-rose-300">
       {message}
     </p>
   );
@@ -242,7 +242,7 @@ export function StartWizard({ slug }: { slug: string }) {
           </label>
 
           {state.status === "error" && state.message && (
-            <p className="text-sm text-rose-300" role="alert">
+            <p className={`${state.fieldErrors ? "form-fix-note " : ""}text-sm text-rose-300`} role="alert">
               {state.message}
             </p>
           )}

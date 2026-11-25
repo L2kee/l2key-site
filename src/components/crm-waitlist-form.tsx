@@ -53,7 +53,7 @@ export function CrmWaitlistForm() {
       </div>
 
       {state.status === "error" && state.message && (
-        <p className="text-sm text-rose-300" role="alert">
+        <p className={`${state.fieldErrors ? "form-fix-note " : ""}text-sm text-rose-300`} role="alert">
           {state.message}
         </p>
       )}
