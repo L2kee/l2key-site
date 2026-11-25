@@ -27,8 +27,8 @@ const STAGES: Stage[] = [
     ask: "How many calls did you miss last week while you were on a job?",
     cta: "Hear it answer",
     href: "/ai",
-    image: "/services-front-desk.jpg",
-    imageAlt: "Conceptual illustration of an empty front desk on a rainy evening, a desk phone streaming cyan light into three floating glass panels showing a phone handset, a calendar with one day booked, and a checkmark, representing an AI receptionist that answers and books calls around the clock",
+    image: "/services-front-desk-olive.jpg",
+    imageAlt: "Conceptual illustration of a phone in a dock on a desk at dusk, an olive sound wave flowing through it into a glass calendar where booked days glow, representing an AI receptionist that answers and books calls around the clock",
     flagship: { tel: "tel:+13214354469", display: "(321) 435 4469" },
   },
   {

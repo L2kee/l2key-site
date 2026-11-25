@@ -178,9 +178,9 @@ export const TOP_SERVICES: WorkItem[] = [
     category: "Top service",
     year: "$297 a month",
     tag: "Answering calls now",
-    images: ["/services-front-desk.jpg"],
+    images: ["/services-front-desk-olive.jpg"],
     imageAlts: [
-      "A desk phone at night projecting glowing call, calendar, and check mark icons, a call answered and booked",
+      "A phone in a dock on a desk at dusk, an olive sound wave flowing through it into a glass calendar with booked days glowing",
     ],
     icon: "call",
     body: "An AI receptionist that answers every call 24/7, books the job onto your calendar, and texts back anyone you miss. $997 setup, then $297 a month, or pay once and own it. Call (321) 435 4469 and our own front desk picks up.",
