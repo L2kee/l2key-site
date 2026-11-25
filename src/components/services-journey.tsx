@@ -38,8 +38,8 @@ const STAGES: Stage[] = [
     ask: "Is your website winning you customers, or sending them to a competitor?",
     cta: "Build my website",
     href: "/web-design-agency-orlando",
-    image: "/services-websites.jpg",
-    imageAlt: "Conceptual illustration of a laptop on a desk at dusk showing a modern house, with cyan light building floating glass website panels and a glowing button beside it, representing custom website design and development",
+    image: "/services-websites-olive.jpg",
+    imageAlt: "Conceptual illustration of a bright desk at dusk with a laptop, a phone and a glass display all showing the same clean olive website with a photo of a modern interior, representing one website that works on every screen",
   },
   {
     kicker: "Brand",
@@ -48,8 +48,8 @@ const STAGES: Stage[] = [
     ask: "Does your brand look as good as the work you deliver?",
     cta: "Elevate my brand",
     href: "/brand-design",
-    image: "/services-brand-identity.jpg",
-    imageAlt: "Conceptual illustration of black business cards and a black shopping bag carrying a gold diamond emblem, with cyan light rising into a floating glass panel of the emblem and black, gold, cream, and cyan color swatches, representing luxury brand identity design",
+    image: "/services-brand-olive.jpg",
+    imageAlt: "Conceptual illustration of matte black business cards and a black shopping bag embossed with a diamond emblem, in front of olive, black, gold and ivory color swatches on a sunlit window, representing a complete brand identity",
   },
   {
     kicker: "Discover",
@@ -58,8 +58,8 @@ const STAGES: Stage[] = [
     ask: "When customers search for what you do, do they find you first?",
     cta: "Get me found",
     href: "/seo-agency-orlando",
-    image: "/services-seo.jpg",
-    imageAlt: "Conceptual illustration of a hand holding a phone with a map on a small town main street at dusk, cyan light rising into a glowing map pin above the shops beside floating panels of review stars, a rising chart, and a magnifying glass, representing local search engine optimization",
+    image: "/services-seo-olive.jpg",
+    imageAlt: "Conceptual illustration of a hand holding a phone with a map on a small town main street at dusk, an olive map pin glowing above the shops with a rising line beside it, representing a local business climbing in search and maps",
   },
   {
     kicker: "Film",
@@ -68,8 +68,8 @@ const STAGES: Stage[] = [
     ask: "Are your best jobs getting seen, or dying in your camera roll?",
     cta: "Try 3 free videos",
     href: "/job-site-studio",
-    image: "/services-job-site-studio.jpg",
-    imageAlt: "Conceptual illustration of a phone on a work truck dashboard at dusk, streaming cyan light into two floating vertical videos of a roofer laying shingles and a driveway being pressure washed, representing job site video editing for social media",
+    image: "/services-job-site-studio-olive.jpg",
+    imageAlt: "Conceptual illustration of a phone in a dock playing a vertical video of a roofer at work, beside two frosted glass panels of home service work, representing job site videos turned into ready to post content",
   },
 ];
 
