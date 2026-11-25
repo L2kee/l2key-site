@@ -7,6 +7,7 @@
 
 import { createLead, notify } from "@/lib/leads";
 import { getStartPath } from "@/lib/start-paths";
+import { isEmail, isPhone, MESSAGES } from "@/lib/validate";
 
 const CONTACT_METHODS = { call: "Call", text: "Text", email: "Email" } as const;
 type ContactMethod = keyof typeof CONTACT_METHODS;
@@ -42,13 +43,12 @@ export async function submitStartRequest(
   const fieldErrors: StartFormState["fieldErrors"] = {};
   if (!name) fieldErrors.name = "Please enter your name.";
   if (!path.personal && !business) fieldErrors.business = "Please enter your business name.";
-  const phoneDigits = phone.replace(/\D/g, "");
-  if (phoneDigits.length < 10 || phoneDigits.length > 15) fieldErrors.phone = "Please enter a valid phone number.";
+  if (!isPhone(phone)) fieldErrors.phone = MESSAGES.phone;
   if (!(contact in CONTACT_METHODS)) fieldErrors.contact = "Pick the best way to reach you.";
   if (contact === "email" && !email) {
     fieldErrors.email = "Please enter your email so we can reach you there.";
-  } else if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    fieldErrors.email = "Please enter a valid email address.";
+  } else if (email && !isEmail(email)) {
+    fieldErrors.email = MESSAGES.email;
   }
   if (Object.keys(fieldErrors).length > 0) {
     return { status: "error", message: "Please fix the highlighted fields.", fieldErrors };

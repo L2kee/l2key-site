@@ -42,6 +42,8 @@ export function StartWizard({ slug }: { slug: string }) {
   const contactErrorId = useId();
   useFocusFirstError(formRef, state);
   const errors = state.fieldErrors ?? {};
+  // A choice group's error is stale once they've picked something.
+  const contactError = contact ? undefined : errors.contact;
 
   if (state.status === "success") {
     return (
@@ -203,7 +205,7 @@ export function StartWizard({ slug }: { slug: string }) {
             />
           </div>
 
-          <fieldset data-invalid={errors.contact ? true : undefined}>
+          <fieldset data-invalid={contactError ? true : undefined}>
             <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
             <div className="mt-2 grid grid-cols-3 gap-3">
               {(["call", "text", "email"] as const).map((m) => (
@@ -211,7 +213,7 @@ export function StartWizard({ slug }: { slug: string }) {
                   key={m}
                   type="button"
                   aria-pressed={contact === m}
-                  aria-describedby={errors.contact ? contactErrorId : undefined}
+                  aria-describedby={contactError ? contactErrorId : undefined}
                   onClick={() => setContact(m)}
                   className={`rounded-xl border px-3 py-2.5 text-center text-sm capitalize transition ${
                     contact === m
@@ -223,7 +225,7 @@ export function StartWizard({ slug }: { slug: string }) {
                 </button>
               ))}
             </div>
-            <FieldError id={contactErrorId} message={errors.contact} />
+            <FieldError id={contactErrorId} message={contactError} />
           </fieldset>
 
           <label className="block">

@@ -1,6 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { CHAT_SYSTEM_PROMPT } from "@/lib/chat-prompt";
 import { createLead, notify } from "@/lib/leads";
+import { isEmail, isPhone } from "@/lib/validate";
 
 // Site chat (site-chat.tsx). The browser holds the conversation as plain
 // text turns and posts all of it each time; this route checks it, asks
@@ -86,9 +87,8 @@ async function saveLead(input: LeadInput, transcript: Turn[]): Promise<{ ok: boo
   const emailRaw = str(input.email, 200);
   const website = str(input.website, 300);
   const bestTime = str(input.best_time, 150);
-  const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailRaw) ? emailRaw : "";
-  const phoneDigits = phone.replace(/\D/g, "").length;
-  const phoneOk = phoneDigits >= 10 && phoneDigits <= 15;
+  const email = isEmail(emailRaw) ? emailRaw : "";
+  const phoneOk = isPhone(phone);
 
   if (!name || !business || !need) return { ok: false, message: "Missing name, business, or what they want. Ask for it." };
   if (!phoneOk && !email) return { ok: false, message: "No valid phone number or email. Ask for one." };

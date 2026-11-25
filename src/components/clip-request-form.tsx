@@ -14,6 +14,7 @@ import {
 } from "@/lib/job-site-studio";
 import { TRADES } from "@/lib/trades";
 import { FloatInput, FloatSelect } from "@/components/float-field";
+import { isEmail, isPhone, MESSAGES } from "@/lib/validate";
 
 type Field = "firstName" | "business" | "trade" | "phone" | "email" | "city" | "clips";
 
@@ -101,9 +102,8 @@ export function ClipRequestForm() {
     if (!form.firstName) found.firstName = "Please enter your first name.";
     if (!form.business) found.business = "Please enter your business name.";
     if (!form.trade) found.trade = "Pick your trade.";
-    const digits = form.phone.replace(/\D/g, "");
-    if (digits.length < 10 || digits.length > 15) found.phone = "Please enter a valid phone number.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) found.email = "Please enter a valid email so we can send your videos.";
+    if (!isPhone(form.phone)) found.phone = MESSAGES.phone;
+    if (!isEmail(form.email)) found.email = "Please enter a valid email so we can send your videos.";
     if (clips.length === 0) found.clips = "Add at least one clip.";
     setErrors(found);
     if (Object.keys(found).length > 0) {
@@ -207,11 +207,11 @@ export function ClipRequestForm() {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <FloatInput label="First name" name="firstName" autoComplete="given-name" disabled={busy} error={errors.firstName} />
-        <FloatInput label="Business name" name="business" autoComplete="organization" disabled={busy} error={errors.business} />
+        <FloatInput label="First name" name="firstName" autoComplete="given-name" required disabled={busy} error={errors.firstName} />
+        <FloatInput label="Business name" name="business" autoComplete="organization" required disabled={busy} error={errors.business} />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <FloatSelect label="Your trade" name="trade" defaultValue="" disabled={busy} error={errors.trade}>
+        <FloatSelect label="Your trade" name="trade" defaultValue="" required disabled={busy} error={errors.trade}>
             <option value="" disabled>
               Pick one
             </option>
@@ -224,8 +224,8 @@ export function ClipRequestForm() {
         <FloatInput label="City you serve" name="city" autoComplete="address-level2" disabled={busy} />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <FloatInput label="Cell phone" name="phone" type="tel" autoComplete="tel" disabled={busy} error={errors.phone} />
-        <FloatInput label="Email" hint="(your videos go here)" name="email" type="email" autoComplete="email" disabled={busy} error={errors.email} />
+        <FloatInput label="Cell phone" name="phone" type="tel" autoComplete="tel" required disabled={busy} error={errors.phone} />
+        <FloatInput label="Email" hint="(your videos go here)" name="email" type="email" autoComplete="email" required disabled={busy} error={errors.email} />
       </div>
 
       {message && (

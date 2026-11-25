@@ -43,6 +43,9 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
   const errors = state.fieldErrors ?? {};
   const values = state.values;
   const plan = getListingPlan(planId);
+  // A choice group's error is stale once they've picked something.
+  const planError = planId ? undefined : errors.plan;
+  const contactError = contact ? undefined : errors.contact;
 
   if (state.status === "success") {
     const done = getListingPlan(state.plan);
@@ -75,7 +78,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
       <input type="hidden" name="plan" value={planId} />
       <input type="hidden" name="contact" value={contact} />
 
-      <fieldset data-invalid={errors.plan ? true : undefined}>
+      <fieldset data-invalid={planError ? true : undefined}>
         <legend className="text-sm font-medium text-white/80">What would you like?</legend>
         <div className="mt-2 grid gap-2 sm:grid-cols-2">
           {LISTING_PLANS.map((p) => (
@@ -90,7 +93,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
               <input
                 type="radio"
                 name="plan_choice"
-                aria-describedby={errors.plan ? planErrorId : undefined}
+                aria-describedby={planError ? planErrorId : undefined}
                 value={p.id}
                 checked={planId === p.id}
                 onChange={() => setPlanId(p.id)}
@@ -101,7 +104,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
             </label>
           ))}
         </div>
-        <FieldError id={planErrorId} message={errors.plan} />
+        <FieldError id={planErrorId} message={planError} />
       </fieldset>
 
       <div className="grid gap-5 sm:grid-cols-2">
@@ -145,7 +148,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
         />
       )}
 
-      <fieldset data-invalid={errors.contact ? true : undefined}>
+      <fieldset data-invalid={contactError ? true : undefined}>
         <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
         <div className="mt-2 grid grid-cols-3 gap-3">
           {(["call", "text", "email"] as const).map((m) => (
@@ -160,7 +163,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
               <input
                 type="radio"
                 name="contact_choice"
-                aria-describedby={errors.contact ? contactErrorId : undefined}
+                aria-describedby={contactError ? contactErrorId : undefined}
                 value={m}
                 checked={contact === m}
                 onChange={() => setContact(m)}
@@ -170,7 +173,7 @@ export function ListingRequestForm({ initialPlan }: { initialPlan?: ListingPlanI
             </label>
           ))}
         </div>
-        <FieldError id={contactErrorId} message={errors.contact} />
+        <FieldError id={contactErrorId} message={contactError} />
       </fieldset>
 
       {state.status === "error" && state.message && (

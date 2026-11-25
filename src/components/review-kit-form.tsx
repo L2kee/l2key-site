@@ -24,12 +24,12 @@ export function ReviewKitForm() {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        <FloatInput label="First name" name="firstName" defaultValue={values?.firstName} autoComplete="given-name" error={errors.firstName} />
-        <FloatInput label="Email" name="email" type="email" defaultValue={values?.email} autoComplete="email" error={errors.email} />
+        <FloatInput label="First name" name="firstName" defaultValue={values?.firstName} autoComplete="given-name" required error={errors.firstName} />
+        <FloatInput label="Email" name="email" type="email" defaultValue={values?.email} autoComplete="email" required error={errors.email} />
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <FloatInput label="Business name" name="business" defaultValue={values?.business} autoComplete="organization" error={errors.business} />
-        <FloatSelect label="Your trade" name="trade" defaultValue={values?.trade ?? ""} error={errors.trade}>
+        <FloatInput label="Business name" name="business" defaultValue={values?.business} autoComplete="organization" required error={errors.business} />
+        <FloatSelect label="Your trade" name="trade" defaultValue={values?.trade ?? ""} required error={errors.trade}>
             <option value="" disabled>
               Pick one
             </option>

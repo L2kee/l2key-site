@@ -8,6 +8,7 @@
 import { redirect } from "next/navigation";
 import { BOOKING_URL, createLead, emailFromMoe, notifyMoe } from "@/lib/growth-kit";
 import { CURRENT_TOOLS, TRADES } from "@/lib/trades";
+import { isEmail, MESSAGES } from "@/lib/validate";
 
 type Field = "firstName" | "email" | "business" | "trade" | "tool";
 
@@ -53,7 +54,7 @@ export async function joinWaitlist(_prev: WaitlistState, data: FormData): Promis
 
   const fieldErrors: WaitlistState["fieldErrors"] = {};
   if (!firstName) fieldErrors.firstName = "Please enter your first name.";
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) fieldErrors.email = "Please enter a valid email address.";
+  if (!isEmail(email)) fieldErrors.email = MESSAGES.email;
   if (!business) fieldErrors.business = "Please enter your business name.";
   if (!(TRADES as readonly string[]).includes(trade)) fieldErrors.trade = "Pick your trade.";
   if (!(CURRENT_TOOLS as readonly string[]).includes(tool)) fieldErrors.tool = "Pick what you use today.";

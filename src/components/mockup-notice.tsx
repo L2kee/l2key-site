@@ -75,6 +75,8 @@ function MockupForm() {
   const [noWebsite, setNoWebsite] = useState(false);
   const errors = state.fieldErrors ?? {};
   const values = state.values;
+  // A choice group's error is stale once they've picked something.
+  const contactError = contact ? undefined : errors.contact;
 
   useEffect(() => {
     if (state.status === "success") hideFor(90);
@@ -117,6 +119,8 @@ function MockupForm() {
           inputMode="url"
           autoComplete="url"
           disabled={noWebsite}
+          check="website"
+          error={errors.website}
         />
         <label className="mt-2 inline-flex items-center gap-2 text-sm text-white/65">
           <input
@@ -127,7 +131,6 @@ function MockupForm() {
           />
           No website yet
         </label>
-        <FieldError message={errors.website} />
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
@@ -135,7 +138,7 @@ function MockupForm() {
         <FloatInput label="Phone number" name="phone" defaultValue={values?.phone} type="tel" autoComplete="tel" required error={errors.phone} />
       </div>
 
-      <fieldset data-invalid={errors.contact ? true : undefined}>
+      <fieldset data-invalid={contactError ? true : undefined}>
         <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
         <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
           {METHODS.map(([m, label]) => (
@@ -150,7 +153,7 @@ function MockupForm() {
               <input
                 type="radio"
                 name="contact_choice"
-                aria-describedby={errors.contact ? contactErrorId : undefined}
+                aria-describedby={contactError ? contactErrorId : undefined}
                 value={m}
                 checked={contact === m}
                 onChange={() => setContact(m)}
@@ -160,7 +163,7 @@ function MockupForm() {
             </label>
           ))}
         </div>
-        <FieldError id={contactErrorId} message={errors.contact} />
+        <FieldError id={contactErrorId} message={contactError} />
       </fieldset>
 
       {state.status === "error" && state.message && (

@@ -5,6 +5,8 @@
 // an instant notification to hello@evogencyglobal.com through Resend. Either
 // path succeeding counts as received; only a double failure shows an error.
 
+import { isEmail, isPhone, MESSAGES, normalizeWebsite } from "@/lib/validate";
+
 const AGENCY_OS_SUPABASE_URL = "https://vpoceoyfprpzapwrunuf.supabase.co";
 // Agency OS admin account that owns inbound leads.
 const LEAD_OWNER_ID = "876aa5bf-e511-4903-a90c-0bc28dd7cfaf";
@@ -26,17 +28,6 @@ export type AuditFormState = {
 
 const field = (data: FormData, key: string, max = 200) =>
   String(data.get(key) ?? "").trim().slice(0, max);
-
-function normalizeWebsite(raw: string): string | null {
-  if (!raw) return null;
-  const withScheme = /^https?:\/\//i.test(raw) ? raw : `https://${raw}`;
-  try {
-    const url = new URL(withScheme);
-    return url.hostname.includes(".") ? url.toString().replace(/\/$/, "") : null;
-  } catch {
-    return null;
-  }
-}
 
 async function createLead(lead: Record<string, unknown>): Promise<boolean> {
   const key = process.env.AGENCY_OS_SUPABASE_SERVICE_ROLE_KEY;
@@ -109,18 +100,17 @@ export async function submitAuditRequest(
   const fieldErrors: AuditFormState["fieldErrors"] = {};
   if (!name) fieldErrors.name = "Please enter your name.";
   if (!business) fieldErrors.business = "Please enter your business name.";
-  const phoneDigits = phone.replace(/\D/g, "");
-  if (phoneDigits.length < 10 || phoneDigits.length > 15) fieldErrors.phone = "Please enter a valid phone number.";
+  if (!isPhone(phone)) fieldErrors.phone = MESSAGES.phone;
   if (!(contact in CONTACT_METHODS)) fieldErrors.contact = "Pick the best way to reach you.";
   // Email is optional, but required when it's their preferred contact, and a
   // typo is flagged either way rather than silently dropped.
   if (contact === "email" && !email) {
     fieldErrors.email = "Please enter your email so we can reach you there.";
-  } else if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    fieldErrors.email = "Please enter a valid email address.";
+  } else if (email && !isEmail(email)) {
+    fieldErrors.email = MESSAGES.email;
   }
   const website = noWebsite ? null : normalizeWebsite(websiteRaw);
-  if (!noWebsite && websiteRaw && !website) fieldErrors.website = "That website address doesn't look right.";
+  if (!noWebsite && websiteRaw && !website) fieldErrors.website = MESSAGES.website;
 
   const values = { name, business, website: websiteRaw, phone, email };
   if (Object.keys(fieldErrors).length > 0) {
@@ -129,7 +119,7 @@ export async function submitAuditRequest(
 
   const method = CONTACT_METHODS[contact];
   const hasWebsite = noWebsite ? false : website ? true : null;
-  const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ? email : null;
+  const validEmail = isEmail(email) ? email : null;
 
   const leadSaved = await createLead({
     user_id: LEAD_OWNER_ID,
@@ -204,12 +194,11 @@ export async function submitMockupRequest(
   const fieldErrors: MockupFormState["fieldErrors"] = {};
   if (!name) fieldErrors.name = "Please enter your name.";
   if (!email) fieldErrors.email = "Please enter your email.";
-  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) fieldErrors.email = "Please enter a valid email address.";
-  const phoneDigits = phone.replace(/\D/g, "");
-  if (phoneDigits.length < 10 || phoneDigits.length > 15) fieldErrors.phone = "Please enter a valid phone number.";
+  else if (!isEmail(email)) fieldErrors.email = MESSAGES.email;
+  if (!isPhone(phone)) fieldErrors.phone = MESSAGES.phone;
   if (!(contact in MOCKUP_METHODS)) fieldErrors.contact = "Pick the best way to reach you.";
   const website = noWebsite ? null : normalizeWebsite(websiteRaw);
-  if (!noWebsite && websiteRaw && !website) fieldErrors.website = "That website address doesn't look right.";
+  if (!noWebsite && websiteRaw && !website) fieldErrors.website = MESSAGES.website;
 
   const values = { name, website: websiteRaw, phone, email };
   if (Object.keys(fieldErrors).length > 0) {

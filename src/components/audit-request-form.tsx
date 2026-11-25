@@ -32,6 +32,8 @@ export function AuditRequestForm() {
   const [noWebsite, setNoWebsite] = useState(false);
   const errors = state.fieldErrors ?? {};
   const values = state.values;
+  // A choice group's error is stale once they've picked something.
+  const contactError = contact ? undefined : errors.contact;
 
   if (state.status === "success") {
     return (
@@ -87,6 +89,8 @@ export function AuditRequestForm() {
           inputMode="url"
           autoComplete="url"
           disabled={noWebsite}
+          check="website"
+          error={errors.website}
         />
         <label className="mt-2 inline-flex items-center gap-2 text-sm text-white/65">
           <input
@@ -97,7 +101,6 @@ export function AuditRequestForm() {
           />
           No website yet
         </label>
-        <FieldError message={errors.website} />
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
@@ -114,7 +117,7 @@ export function AuditRequestForm() {
         />
       </div>
 
-      <fieldset data-invalid={errors.contact ? true : undefined}>
+      <fieldset data-invalid={contactError ? true : undefined}>
         <legend className="text-sm font-medium text-white/80">Best way to reach you</legend>
         <div className="mt-2 grid grid-cols-3 gap-3">
           {(["call", "text", "email"] as const).map((m) => (
@@ -129,7 +132,7 @@ export function AuditRequestForm() {
               <input
                 type="radio"
                 name="contact_choice"
-                aria-describedby={errors.contact ? contactErrorId : undefined}
+                aria-describedby={contactError ? contactErrorId : undefined}
                 value={m}
                 checked={contact === m}
                 onChange={() => setContact(m)}
@@ -139,7 +142,7 @@ export function AuditRequestForm() {
             </label>
           ))}
         </div>
-        <FieldError id={contactErrorId} message={errors.contact} />
+        <FieldError id={contactErrorId} message={contactError} />
       </fieldset>
 
       {state.status === "error" && state.message && (

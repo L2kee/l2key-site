@@ -7,11 +7,11 @@
 
 import { createLead, notify } from "@/lib/leads";
 import { getListingPlan, LISTING_START_PATH } from "@/lib/listing-plans";
+import { isEmail, isPhone, MESSAGES } from "@/lib/validate";
 
 const TAG = "listing-form";
 const CONTACT_METHODS = { call: "Call", text: "Text", email: "Email" } as const;
 type ContactMethod = keyof typeof CONTACT_METHODS;
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type FieldKey = "plan" | "name" | "brokerage" | "phone" | "email" | "address" | "team" | "contact";
 type ValueKey = "name" | "brokerage" | "phone" | "email" | "address" | "team";
@@ -50,10 +50,9 @@ export async function submitListingRequest(
   if (!plan) fieldErrors.plan = "Pick the option that fits you.";
   if (!name) fieldErrors.name = "Please enter your name.";
   if (!brokerage) fieldErrors.brokerage = "Please enter your brokerage.";
-  const phoneDigits = phone.replace(/\D/g, "");
-  if (phoneDigits.length < 10 || phoneDigits.length > 15) fieldErrors.phone = "Please enter a valid phone number.";
+  if (!isPhone(phone)) fieldErrors.phone = MESSAGES.phone;
   if (!email) fieldErrors.email = "Please enter your email.";
-  else if (!EMAIL_RE.test(email)) fieldErrors.email = "Please enter a valid email address.";
+  else if (!isEmail(email)) fieldErrors.email = MESSAGES.email;
   if (plan?.address === "required" && !address) fieldErrors.address = "Please enter the listing address.";
   if (plan?.id === "brokerage" && !team) fieldErrors.team = "Roughly how many agents?";
   if (!(contact in CONTACT_METHODS)) fieldErrors.contact = "Pick the best way to reach you.";

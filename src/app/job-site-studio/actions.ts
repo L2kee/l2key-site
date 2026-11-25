@@ -7,6 +7,7 @@
 import { createLead, emailFromMoe, notifyMoe } from "@/lib/growth-kit";
 import { BASE_PATH, CLIP_PATH_PATTERN, CLIPS_BUCKET, MAX_CLIPS } from "@/lib/job-site-studio";
 import { TRADES } from "@/lib/trades";
+import { isEmail, isPhone } from "@/lib/validate";
 
 export type ClipRequest = {
   firstName: string;
@@ -35,14 +36,12 @@ export async function submitClipRequest(input: ClipRequest): Promise<ClipRequest
   const city = clean(input.city, 80);
   const clips = Array.isArray(input.clips) ? input.clips.map((c) => clean(c, 120)) : [];
 
-  const digits = phone.replace(/\D/g, "");
   if (
     !firstName ||
     !business ||
     !(TRADES as readonly string[]).includes(trade) ||
-    digits.length < 10 ||
-    digits.length > 15 ||
-    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
+    !isPhone(phone) ||
+    !isEmail(email) ||
     clips.length < 1 ||
     clips.length > MAX_CLIPS ||
     !clips.every((c) => CLIP_PATH_PATTERN.test(c))

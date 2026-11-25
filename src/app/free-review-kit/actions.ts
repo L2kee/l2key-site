@@ -8,6 +8,7 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { createLead, emailFromMoe, leadMagnetEmail, notifyMoe } from "@/lib/growth-kit";
 import { TRADES } from "@/lib/trades";
+import { isEmail, MESSAGES } from "@/lib/validate";
 
 export type OptInState = {
   status: "idle" | "error";
@@ -29,7 +30,7 @@ export async function submitOptIn(_prev: OptInState, data: FormData): Promise<Op
 
   const fieldErrors: OptInState["fieldErrors"] = {};
   if (!firstName) fieldErrors.firstName = "Please enter your first name.";
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) fieldErrors.email = "Please enter a valid email address.";
+  if (!isEmail(email)) fieldErrors.email = MESSAGES.email;
   if (!business) fieldErrors.business = "Please enter your business name.";
   if (!(TRADES as readonly string[]).includes(trade)) fieldErrors.trade = "Pick your trade.";
 
