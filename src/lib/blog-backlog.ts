@@ -12278,7 +12278,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "What an acupuncture clinic website needs. A calm first impression, honest condition pages, first visit details, and booking that works on a phone.",
     excerpt: "The pages and details that make a nervous first time patient comfortable enough to book.",
-    date: "2026-11-24",
+    date: "2026-11-25",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -12346,7 +12346,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why quotes, invoices, and replies from your business land in spam. A plain explanation of SPF, DKIM, and DMARC, and the steps that get your email delivered.",
     excerpt: "The three email settings that decide whether your quotes reach the inbox or the junk folder.",
-    date: "2026-11-24",
+    date: "2026-11-25",
     tag: "Marketing",
     relatedHref: "/contact",
     relatedLabel: "Ask us to check your setup",
@@ -12411,7 +12411,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "What schema markup is, which types matter for a local business, what it can and can't do for rankings, and how to check that yours is working.",
     excerpt: "The behind the scenes labels that help Google and AI tools understand your business correctly.",
-    date: "2026-11-24",
+    date: "2026-11-25",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
