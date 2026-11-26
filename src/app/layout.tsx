@@ -63,7 +63,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             rules in globals.css. Browsers without view transitions just
             swap pages as before. */}
         <ViewTransition name="page">
-          <main id="main" tabIndex={-1} className="flex flex-col outline-none">{children}</main>
+          <main id="main" tabIndex={-1} className="flex flex-1 flex-col outline-none">{children}</main>
         </ViewTransition>
         <HideOnFunnel>
           <Footer />

@@ -4,20 +4,48 @@ import { LinkedInIcon } from "@/components/linkedin-icon";
 import { FOUNDER_LINKEDIN } from "@/lib/schema";
 import { Phone, Mail, MapPin, CalendarClock } from "lucide-react";
 
-const PAGES = [
-  { href: "/start", label: "Get Started" },
+// Two even link columns instead of one long one (Moe 2026-11-25, Page
+// Proportions Lesson). Get Started lives on the button under the brand.
+const COMPANY = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/works", label: "Work" },
   { href: "/built-in-house", label: "Built in House" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+];
+
+const PRODUCTS = [
   { href: "/agency-os", label: "Client Portal" },
   { href: "/electricalai-pro", label: "ElectricalAI Pro" },
   { href: "/free-review-kit", label: "Free Review Kit" },
   { href: "/job-site-studio", label: "Job Site Studio" },
   { href: "/real-estate-listing-websites-orlando", label: "Listing Suite" },
 ];
+
+function LinkColumn({ title, links }: { title: string; links: { href: string; label: string }[] }) {
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-[#a3b06a]">{title}</h3>
+      <ul className="mt-4 space-y-3 text-sm text-white/60">
+        {links.map((p) => (
+          <li key={p.href}>
+            {/* Agency OS is proxied, not part of this app, so a Link prefetch 404s. */}
+            {p.href === "/agency-os" ? (
+              <a href={p.href} className="link-grow transition hover:text-white">
+                {p.label}
+              </a>
+            ) : (
+              <Link href={p.href} className="link-grow transition hover:text-white">
+                {p.label}
+              </Link>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export function Footer() {
   return (
@@ -39,6 +67,9 @@ export function Footer() {
               Websites, SEO, and Google presence for local businesses. Real
               software, actually shipped.
             </p>
+            <Link href="/start" className="btn-solid mt-6 !px-5 !py-2.5 text-sm">
+              Get Started
+            </Link>
           </div>
 
           <div>
@@ -78,32 +109,6 @@ export function Footer() {
                   Book a call
                 </a>
               </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-[#a3b06a]">Pages</h3>
-            <ul className="mt-4 space-y-3 text-sm text-white/60">
-              {PAGES.map((p) => (
-                <li key={p.href}>
-                  {/* Agency OS is proxied, not part of this app, so a Link prefetch 404s. */}
-                  {p.href === "/agency-os" ? (
-                    <a href={p.href} className="link-grow transition hover:text-white">
-                      {p.label}
-                    </a>
-                  ) : (
-                    <Link href={p.href} className="link-grow transition hover:text-white">
-                      {p.label}
-                    </Link>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-[#a3b06a]">Elsewhere</h3>
-            <ul className="mt-4 space-y-3 text-sm text-white/60">
               <li>
                 <a
                   href={FOUNDER_LINKEDIN}
@@ -116,10 +121,10 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-            <Link href="/start" className="btn-solid mt-6 !px-5 !py-2.5 text-sm">
-              Get Started
-            </Link>
           </div>
+
+          <LinkColumn title="Company" links={COMPANY} />
+          <LinkColumn title="Products" links={PRODUCTS} />
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-8 sm:flex-row">

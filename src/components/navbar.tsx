@@ -185,17 +185,21 @@ export function Navbar() {
           so on the homepage the services rail under its left edge stays
           clickable. On the homepage (lg up) the services menu sits flush
           left (16px in, Moe 2026-11-08), so the bar spans the rest of the
-          window: full width, padded by the menu's 184px plus the 24px gap. */}
+          window: full width, padded by the menu's 16px inset, its 184px,
+          the 24px gap, and the bar's own 16px (240px in all).
+          Everywhere else the bar uses the footer's container (max-w-6xl
+          with px-6), so the logo starts on the same left edge as the page
+          content and the footer (Moe 2026-11-25, Page Proportions Lesson). */}
       <header
-        className={`nav-scrim pointer-events-none sticky top-0 z-50 flex justify-center px-4 pt-4 transition-transform duration-300 ease-out ${hidden ? "-translate-y-full" : "translate-y-0"} ${scrolled ? "is-scrolled" : ""}`}
+        className={`nav-scrim pointer-events-none sticky top-0 z-50 flex justify-center pt-4 transition-transform duration-300 ease-out ${hidden ? "-translate-y-full" : "translate-y-0"} ${scrolled ? "is-scrolled" : ""}`}
       >
-        <div className={`flex w-full justify-center ${pathname === "/" ? "max-w-5xl lg:max-w-none lg:pl-[208px]" : "max-w-5xl"}`}>
+        <div className={`flex w-full justify-center px-6 ${pathname === "/" ? "max-w-6xl lg:max-w-none lg:pl-[240px] lg:pr-8" : "max-w-6xl"}`}>
         {/* From lg up a three column grid keeps the links dead center in the
             bar whether or not the logo shows: logo, links, Get Started. */}
         {/* Transparent bar, only the words and buttons show (Moe 2026-11-08).
             .nav-clear in globals.css gives the words a soft shadow so they
             stay readable over whatever scrolls behind them. */}
-        <nav className="nav-clear pointer-events-auto flex w-full items-center justify-between rounded-2xl px-4 py-2.5 lg:grid lg:grid-cols-[1fr_auto_1fr]">
+        <nav className="nav-clear pointer-events-auto flex w-full items-center justify-between rounded-2xl py-2.5 lg:grid lg:grid-cols-[1fr_auto_1fr]">
           {/* On the homepage from lg up the services menu already carries the
               logo, so the bar drops it (Moe 2026-11-08). */}
           <Link
@@ -257,7 +261,7 @@ export function Navbar() {
         inert={!open}
         className={`menu-overlay fixed inset-0 z-[60] flex flex-col bg-black lg:hidden ${open ? "is-open" : ""} ${instant ? "menu-instant" : ""}`}
       >
-        <div className="flex items-center justify-between px-[33px] pt-[27px]">
+        <div className="flex items-center justify-between px-[25px] pt-[27px]">
           <span className="flex items-center gap-2.5">
             <Image src="/evogency-logo.png" alt="EVOGENCY logo" width={36} height={36} className="h-9 w-9 object-contain" />
             <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>

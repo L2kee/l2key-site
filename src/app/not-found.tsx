@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <div className="mx-auto max-w-5xl px-6 pt-28 pb-20 text-center">
+    <div className="mx-auto max-w-6xl px-6 pt-28 pb-20 text-center">
       <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#a3b06a]/80">
         404
       </p>
@@ -37,7 +37,7 @@ export default function NotFound() {
 
       <div className="mt-16 text-left">
         <SectionHeading eyebrow="What we do" title="Or find what you need" />
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map((s) => (
             <TiltCard key={s.title} className="glass h-full rounded-2xl p-6">
               <s.icon size={28} style={{ color: "#a3b06a" }} />
