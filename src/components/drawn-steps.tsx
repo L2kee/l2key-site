@@ -42,7 +42,7 @@ export function DrawnSteps({ steps }: { steps: Step[] }) {
             className="glass rounded-2xl p-6"
             style={{ "--start": `${start}ms`, "--write": `${writeTime(step.title)}ms` } as React.CSSProperties}
           >
-            <span className="step-num flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#a3b06a] to-[#7d8a45] text-sm font-bold text-[#141a08]">
+            <span className="step-num flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-olive to-olive-deep text-sm font-bold text-on-olive">
               {i + 1}
             </span>
             <h3 className="mt-4">

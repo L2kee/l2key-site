@@ -72,7 +72,7 @@ export function FunnelNav() {
         <Link
           href="/"
           aria-label="EVOGENCY home"
-          className="glass-nav flex items-center gap-2.5 rounded-2xl px-4 py-2.5 transition hover:border-[#a3b06a]/40"
+          className="glass-nav flex items-center gap-2.5 rounded-2xl px-4 py-2.5 transition hover:border-olive/40"
         >
           <Image src="/evogency-logo.png" alt="" width={36} height={36} className="h-9 w-9 object-contain" />
           <span className="text-sm font-semibold tracking-wide text-white">EVOGENCY</span>
@@ -80,9 +80,9 @@ export function FunnelNav() {
         <Link
           href="/"
           data-funnel-home
-          className="glass-nav absolute right-4 top-[22px] flex h-11 min-w-11 items-center justify-center gap-1.5 rounded-full px-3 text-sm font-medium text-white/80 transition hover:border-[#a3b06a]/50 hover:text-white"
+          className="glass-nav absolute right-4 top-[22px] flex h-11 min-w-11 items-center justify-center gap-1.5 rounded-full px-3 text-sm font-medium text-white/80 transition hover:border-olive/50 hover:text-white"
         >
-          <House size={16} aria-hidden="true" style={{ color: "#a3b06a" }} />
+          <House size={16} aria-hidden="true" style={{ color: "var(--color-olive)" }} />
           <span className="max-sm:sr-only">Home</span>
         </Link>
       </header>
@@ -94,10 +94,10 @@ export function FunnelNav() {
         onClick={() => setOpen(true)}
         aria-expanded={open}
         aria-controls="funnel-menu"
-        className="glass-nav fixed left-4 top-[22px] z-50 flex h-11 min-w-11 items-center justify-center gap-1 rounded-full px-3 text-sm font-medium text-white/80 transition hover:border-[#a3b06a]/50 hover:text-white"
+        className="glass-nav fixed left-4 top-[22px] z-50 flex h-11 min-w-11 items-center justify-center gap-1 rounded-full px-3 text-sm font-medium text-white/80 transition hover:border-olive/50 hover:text-white"
       >
         <span className="max-sm:sr-only">Menu</span>
-        <ChevronRight size={18} aria-hidden="true" style={{ color: "#a3b06a" }} />
+        <ChevronRight size={18} aria-hidden="true" style={{ color: "var(--color-olive)" }} />
       </button>
 
       <div
@@ -124,7 +124,7 @@ export function FunnelNav() {
             type="button"
             onClick={() => setOpen(false)}
             aria-label="Close site menu"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#a3b06a]/50 hover:text-[#a3b06a]"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition hover:border-olive/50 hover:text-olive"
           >
             <ChevronLeft size={20} aria-hidden="true" />
           </button>
@@ -133,9 +133,9 @@ export function FunnelNav() {
         <Link
           href="/"
           onClick={closeForNav}
-          className="mt-5 flex min-h-11 items-center gap-3 rounded-xl border border-[#a3b06a]/30 bg-[#a3b06a]/10 px-3 py-2.5 text-base font-semibold text-white transition hover:border-[#a3b06a]/60"
+          className="mt-5 flex min-h-11 items-center gap-3 rounded-xl border border-olive/30 bg-olive/10 px-3 py-2.5 text-base font-semibold text-white transition hover:border-olive/60"
         >
-          <House size={18} aria-hidden="true" style={{ color: "#a3b06a" }} /> Home
+          <House size={18} aria-hidden="true" style={{ color: "var(--color-olive)" }} /> Home
         </Link>
 
         <nav aria-label="Pages" className="mt-4 flex flex-col">
@@ -146,7 +146,7 @@ export function FunnelNav() {
               mockup={l.mockup}
               onClick={closeForNav}
               className={`flex min-h-11 items-center rounded-xl px-3 text-base transition hover:bg-white/5 ${
-                l.mockup ? "font-semibold text-[#a3b06a] hover:text-white" : "text-white/80 hover:text-white"
+                l.mockup ? "font-semibold text-olive hover:text-white" : "text-white/80 hover:text-white"
               }`}
             >
               {l.label}
@@ -154,7 +154,7 @@ export function FunnelNav() {
           ))}
         </nav>
 
-        <p className="mt-5 px-3 pb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#cbd49b]">All services</p>
+        <p className="mt-5 px-3 pb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-olive-soft">All services</p>
         <nav aria-label="Services" className="flex flex-col gap-0.5">
           {SERVICE_LINKS.map((s) => (
             <Link
@@ -165,8 +165,8 @@ export function FunnelNav() {
                 s.top ? "font-semibold text-white" : "text-white/75"
               }`}
             >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-[#a3b06a]/30 bg-[#a3b06a]/10">
-                <s.icon size={16} aria-hidden="true" style={{ color: "#a3b06a" }} />
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-olive/30 bg-olive/10">
+                <s.icon size={16} aria-hidden="true" style={{ color: "var(--color-olive)" }} />
               </span>
               <span className="min-w-0 flex-1">{s.label}</span>
             </Link>
@@ -181,10 +181,10 @@ export function FunnelNav() {
 
         <div className="mt-6 flex flex-col gap-1 border-t border-white/10 pt-4 text-sm text-white/65">
           <a href="tel:+18138971954" className="flex min-h-11 items-center gap-3 px-3 transition hover:text-white">
-            <Phone size={16} aria-hidden="true" style={{ color: "#a3b06a" }} /> (813) 897 1954
+            <Phone size={16} aria-hidden="true" style={{ color: "var(--color-olive)" }} /> (813) 897 1954
           </a>
           <a href="mailto:hello@evogencyglobal.com" className="flex min-h-11 items-center gap-3 px-3 transition hover:text-white">
-            <Mail size={16} aria-hidden="true" style={{ color: "#a3b06a" }} /> hello@evogencyglobal.com
+            <Mail size={16} aria-hidden="true" style={{ color: "var(--color-olive)" }} /> hello@evogencyglobal.com
           </a>
           <a
             href="https://calendly.com/mohamed-eltoukhy011/30min"
@@ -192,7 +192,7 @@ export function FunnelNav() {
             rel="noopener noreferrer"
             className="flex min-h-11 items-center gap-3 px-3 transition hover:text-white"
           >
-            <CalendarClock size={16} aria-hidden="true" style={{ color: "#a3b06a" }} /> Book a call
+            <CalendarClock size={16} aria-hidden="true" style={{ color: "var(--color-olive)" }} /> Book a call
           </a>
           <a href="/agency-os" onClick={closeForNav} className="flex min-h-11 items-center px-3 text-xs text-white/50 transition hover:text-white">
             Client Portal

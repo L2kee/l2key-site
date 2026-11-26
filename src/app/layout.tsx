@@ -10,6 +10,7 @@ import { MockupNotice } from "@/components/mockup-notice";
 import { SiteChat } from "@/components/site-chat";
 import { ActionBar } from "@/components/action-bar";
 import { serif } from "@/lib/fonts";
+import { THEME_SCRIPT } from "@/lib/theme";
 import { ORG_DESCRIPTION, siteGraph } from "@/lib/schema";
 import "./globals.css";
 
@@ -47,7 +48,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${serif.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
+      <head>
+        {/* Sets data-theme before the first paint (lib/theme.ts), so a
+            visitor who picked light never sees the dark site flash. */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"

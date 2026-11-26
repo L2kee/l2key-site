@@ -16,7 +16,7 @@ export default function CrmThanksPage() {
     <div className="mx-auto max-w-4xl space-y-6 px-4 pt-28 pb-20 sm:px-6">
       <div className="glass rounded-3xl px-6 py-6 text-center">
         <p className="flex items-center justify-center gap-2 text-lg font-semibold text-white">
-          <MailCheck size={22} className="text-[#a3b06a]" aria-hidden="true" /> You&apos;re on the Founding 10 list.
+          <MailCheck size={22} className="text-olive" aria-hidden="true" /> You&apos;re on the Founding 10 list.
         </p>
         <p className="mt-2 text-white/70">
           A welcome email from Moe is on its way. You&apos;ll hear first when a founding spot opens.
@@ -27,7 +27,7 @@ export default function CrmThanksPage() {
             href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-[#a3b06a] underline underline-offset-4"
+            className="inline-flex items-center gap-1 text-olive underline underline-offset-4"
           >
             <CalendarClock size={14} aria-hidden="true" /> Book a 15 minute walkthrough
           </a>

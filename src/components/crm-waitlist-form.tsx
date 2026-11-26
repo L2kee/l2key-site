@@ -35,7 +35,7 @@ export function CrmWaitlistForm() {
             Pick one
           </option>
           {TRADES.map((t) => (
-            <option key={t} value={t} className="bg-[#111111]">
+            <option key={t} value={t} className="bg-option">
               {t}
             </option>
           ))}
@@ -45,7 +45,7 @@ export function CrmWaitlistForm() {
             Pick one
           </option>
           {CURRENT_TOOLS.map((t) => (
-            <option key={t} value={t} className="bg-[#111111]">
+            <option key={t} value={t} className="bg-option">
               {t}
             </option>
           ))}

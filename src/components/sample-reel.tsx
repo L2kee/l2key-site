@@ -122,7 +122,7 @@ export function SampleReel({ samples }: { samples: Sample[] }) {
   }
 
   const arrow =
-    "absolute top-[196px] z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-[#a3b06a]/60 bg-black/80 text-[#a3b06a] transition hover:bg-[#a3b06a] hover:text-black disabled:pointer-events-none disabled:opacity-0 sm:flex";
+    "absolute top-[196px] z-10 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-olive/60 bg-black/80 text-olive transition hover:bg-olive hover:text-black disabled:pointer-events-none disabled:opacity-0 sm:flex";
   // Empty space before the first card and after the last, so each end card can
   // reach the middle. Half the row less half a card (min(62vw, 220px)) less the gap.
   const spacer = "shrink-0 w-[calc(50%_-_min(31vw,110px)_-_1rem)]";
@@ -192,7 +192,7 @@ export function SampleReel({ samples }: { samples: Sample[] }) {
                   <span className="absolute right-2 bottom-2 flex items-center gap-1.5 rounded-full bg-black/70 px-3 py-1.5 text-xs font-semibold text-white">
                     {sound ? (
                       <>
-                        <Volume2 size={14} className="text-[#a3b06a]" /> Sound on
+                        <Volume2 size={14} className="text-olive" /> Sound on
                       </>
                     ) : (
                       <>
@@ -220,7 +220,7 @@ export function SampleReel({ samples }: { samples: Sample[] }) {
             className="group flex h-6 min-w-6 items-center justify-center px-1"
           >
             <span
-              className={`block h-2 rounded-full transition-all ${active === i ? "w-6 bg-[#a3b06a]" : "w-2 bg-white/25 group-hover:bg-white/50"}`}
+              className={`block h-2 rounded-full transition-all ${active === i ? "w-6 bg-olive" : "w-2 bg-white/25 group-hover:bg-white/50"}`}
             />
           </button>
         ))}

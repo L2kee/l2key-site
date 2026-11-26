@@ -76,12 +76,12 @@ const APP_SCHEMA = {
   ],
 };
 
-// Shared type styles. Muted #bdb7ab and faint #8f8a80 are the site's warm
+// Shared type styles. Muted and faint (theme tokens in globals.css) are the site's warm
 // grays (both at least 5.6:1 on the page); the eyebrow is the site's
 // SectionHeading eyebrow.
-const MUTED = "text-[#bdb7ab]";
-const FAINT = "text-[#8f8a80]";
-const EYEBROW = "text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]";
+const MUTED = "text-muted";
+const FAINT = "text-faint";
+const EYEBROW = "text-xs font-semibold uppercase tracking-[0.2em] text-olive";
 const LABEL = "text-[11px] font-semibold uppercase tracking-[0.14em]";
 const RULE = "border-white/10";
 
@@ -102,7 +102,7 @@ export default function ElectricalAIProPage() {
           to the very top and the site nav slides back over it on scroll up.
           On phones the section links drop to a second row instead of
           disappearing. */}
-      <div className={`sticky top-0 z-30 border-b ${RULE} bg-[#0b0a09]/85 backdrop-blur-xl`}>
+      <div className={`sticky top-0 z-30 border-b ${RULE} bg-page/85 backdrop-blur-xl`}>
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 px-5 py-2 sm:px-6 md:h-14 md:flex-nowrap md:py-0">
           <a href="#top-eap" className="flex min-h-11 items-center gap-2.5">
             <span
@@ -189,20 +189,20 @@ export default function ElectricalAIProPage() {
                     <span className="sr-only">Question. </span>
                     What copper wire for a 40 A, 240 V circuit, 80 ft one way?
                   </p>
-                  <div className={`max-w-[94%] rounded-2xl rounded-tl-sm bg-[#191816] px-4 py-3 text-base ${MUTED} ring-1 ring-white/10`}>
+                  <div className={`max-w-[94%] rounded-2xl rounded-tl-sm bg-panel px-4 py-3 text-base ${MUTED} ring-1 ring-white/10`}>
                     <p>
                       <span className="sr-only">Answer. </span>
-                      Go with <strong className="font-semibold text-[#f4f1ea]">8 AWG</strong> copper. 10 AWG only
+                      Go with <strong className="font-semibold text-cream">8 AWG</strong> copper. 10 AWG only
                       carries 35 A in the 75°C column, so it fails before voltage drop even comes into it.
                     </p>
                     <dl className={`mt-4 grid grid-cols-3 gap-2 border-t ${RULE} pt-3`}>
                       <div>
                         <dt className={`${LABEL} ${FAINT}`}>Ampacity</dt>
-                        <dd className="mt-1 font-semibold text-[#f4f1ea]">50 A</dd>
+                        <dd className="mt-1 font-semibold text-cream">50 A</dd>
                       </div>
                       <div>
                         <dt className={`${LABEL} ${FAINT}`}>Voltage drop</dt>
-                        <dd className="mt-1 font-semibold text-[#f4f1ea]">2.04%</dd>
+                        <dd className="mt-1 font-semibold text-cream">2.04%</dd>
                       </div>
                       <div>
                         <dt className={`${LABEL} ${FAINT}`}>Result</dt>

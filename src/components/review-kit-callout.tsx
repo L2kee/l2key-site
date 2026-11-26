@@ -21,7 +21,7 @@ export function ReviewKitCallout({
         className="w-20 shrink-0 rotate-[-3deg] rounded-md shadow-xl shadow-black/50 sm:w-24"
       />
       <div>
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]">Free review kit</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive">Free review kit</p>
         <p className="mt-1 text-lg font-semibold text-white">{title}</p>
         <p className="mt-1.5 text-base leading-relaxed text-white/70">{body}</p>
         <Link href="/free-review-kit" className="btn-solid mt-4 !px-5 !py-2.5 text-sm">

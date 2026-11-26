@@ -206,11 +206,11 @@ export function LogoWall() {
         {shown.map((m, slot) => {
           const mark = MARKS[m];
           return (
-            <div key={slot} className="logo-slot flex aspect-[5/3] items-center justify-center bg-[#050607] px-4">
+            <div key={slot} className="logo-slot flex aspect-[5/3] items-center justify-center bg-wall px-4">
               <div className={`logo-cell flex flex-col items-center gap-2.5 ${out === slot ? "is-out" : ""}`}>
-                <div className={`logo-mark ${mark.tight ? "h-14" : "h-11"} text-[#e9e3d6] sm:h-14`}>{mark.svg}</div>
+                <div className={`logo-mark ${mark.tight ? "h-14" : "h-11"} text-mark sm:h-14`}>{mark.svg}</div>
                 <div className="text-center leading-none">
-                  <p className="text-[15px] tracking-[0.28em] text-[#f4f1ea] uppercase sm:text-base">{mark.name}</p>
+                  <p className="text-[15px] tracking-[0.28em] text-cream uppercase sm:text-base">{mark.name}</p>
                   <p className="mt-1.5 font-sans text-[10px] tracking-[0.2em] text-white/60 uppercase">{mark.note}</p>
                 </div>
               </div>

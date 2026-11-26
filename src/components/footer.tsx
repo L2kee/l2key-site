@@ -26,7 +26,7 @@ const PRODUCTS = [
 function LinkColumn({ title, links }: { title: string; links: { href: string; label: string }[] }) {
   return (
     <div>
-      <h3 className="text-sm font-semibold text-[#a3b06a]">{title}</h3>
+      <h3 className="text-sm font-semibold text-olive">{title}</h3>
       <ul className="mt-4 space-y-3 text-sm text-white/60">
         {links.map((p) => (
           <li key={p.href}>
@@ -73,7 +73,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-[#a3b06a]">Contact</h3>
+            <h3 className="text-sm font-semibold text-olive">Contact</h3>
             <ul className="mt-4 space-y-3 text-sm text-white/60">
               <li className="flex items-start gap-2.5">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-white/35" />

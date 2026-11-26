@@ -34,7 +34,7 @@ export function ReviewKitForm() {
               Pick one
             </option>
             {TRADES.map((t) => (
-              <option key={t} value={t} className="bg-[#111111]">
+              <option key={t} value={t} className="bg-option">
                 {t}
               </option>
             ))}

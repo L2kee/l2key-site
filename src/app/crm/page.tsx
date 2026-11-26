@@ -138,7 +138,7 @@ export default function CrmPage() {
       {/* First screen answers what it is, can I trust it, and what it costs. */}
       <section className="glass-strong grid items-center gap-10 rounded-3xl px-6 py-10 sm:px-10 md:grid-cols-[1fr_1.15fr]">
         <div className="text-center md:text-left">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#a3b06a]">Founding 10 · Home service pros</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-olive">Founding 10 · Home service pros</p>
           <h1 className="mt-3 text-3xl font-bold leading-tight text-white sm:text-4xl">
             Every Callback You Forget Is a Job Your Competitor Books.
           </h1>
@@ -167,7 +167,7 @@ export default function CrmPage() {
             priority
           />
           <figcaption className="mt-3 flex items-center justify-center gap-2 text-xs text-white/65 md:justify-start">
-            <Check size={14} className="text-[#a3b06a]" aria-hidden="true" /> Our real pipeline. Live in production today.
+            <Check size={14} className="text-olive" aria-hidden="true" /> Our real pipeline. Live in production today.
           </figcaption>
         </figure>
       </section>
@@ -197,7 +197,7 @@ export default function CrmPage() {
         <ul className="mt-10 grid gap-5 sm:grid-cols-2">
           {TODAY.map(({ icon: Icon, win, how }) => (
             <li key={win} className="glass flex gap-4 rounded-2xl p-6">
-              <Icon size={22} strokeWidth={1.75} className="mt-1 shrink-0 text-[#a3b06a]" aria-hidden="true" />
+              <Icon size={22} strokeWidth={1.75} className="mt-1 shrink-0 text-olive" aria-hidden="true" />
               <div>
                 <h3 className="text-lg font-semibold text-white">{win}</h3>
                 <p className="mt-1.5 text-base leading-relaxed text-white/70">{how}</p>
@@ -223,7 +223,7 @@ export default function CrmPage() {
         <ul className="mt-8 space-y-3">
           {COMING.map(({ icon: Icon, text }) => (
             <li key={text} className="flex gap-3 text-base leading-relaxed text-white/75">
-              <Icon size={20} strokeWidth={1.75} className="mt-0.5 shrink-0 text-[#a3b06a]" aria-hidden="true" />
+              <Icon size={20} strokeWidth={1.75} className="mt-0.5 shrink-0 text-olive" aria-hidden="true" />
               <span>{text}</span>
             </li>
           ))}
@@ -251,7 +251,7 @@ export default function CrmPage() {
         <ul className="mx-auto mt-10 grid max-w-4xl gap-5 sm:grid-cols-2">
           {FOUNDING.map(({ win, how }) => (
             <li key={win} className="flex gap-3">
-              <Check size={20} className="mt-1 shrink-0 text-[#a3b06a]" aria-hidden="true" />
+              <Check size={20} className="mt-1 shrink-0 text-olive" aria-hidden="true" />
               <p className="text-base leading-relaxed text-white/70">
                 <strong className="text-white">{win}</strong> {how}
               </p>
@@ -270,7 +270,7 @@ export default function CrmPage() {
         </div>
         <p className="mt-6 text-center text-sm text-white/65">
           Rather see it first?{" "}
-          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="text-[#a3b06a] underline underline-offset-4">
+          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="text-olive underline underline-offset-4">
             Book a 15 minute walkthrough
           </a>
           .
@@ -282,7 +282,7 @@ export default function CrmPage() {
         <FaqList items={FAQ} />
         <p className="mt-8 text-center text-sm text-white/65">
           Need one built around your exact process?{" "}
-          <Link href="/custom-crm-development-orlando" className="text-[#a3b06a] underline underline-offset-4">
+          <Link href="/custom-crm-development-orlando" className="text-olive underline underline-offset-4">
             See custom CRM development
           </Link>
           .

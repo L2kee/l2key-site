@@ -2,8 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import { preload } from "react-dom";
+import { currentTheme, THEME_EVENT } from "@/lib/theme";
 
-const SRC = "/hero-lotus.mp4";
+const SRC = { dark: "/hero-lotus.mp4", light: "/hero-lotus-light.mp4" };
 const POSTER = "/hero-lotus-poster.webp";
 
 /** Silent looping lotus video at the top of the homepage. The file has no
@@ -14,7 +15,12 @@ const POSTER = "/hero-lotus-poster.webp";
 
     The poster is the homepage's largest paint on phones, so it is preloaded
     at high priority, and the 2.5 MB video only gets its src after hydration
-    instead of competing with the poster and fonts during first load. */
+    instead of competing with the poster and fonts during first load.
+
+    Light mode (2026-11-25) plays hero-lotus-light.mp4, the same loop turned
+    into teal and gold ink on vanilla. The poster is the box's CSS background
+    (.hero-video-box in globals.css), not the video's poster attribute, so
+    the right one shows before hydration in either theme. */
 export function HeroVideo() {
   const ref = useRef<HTMLVideoElement>(null);
   preload(POSTER, { as: "image", fetchPriority: "high" });
@@ -28,12 +34,18 @@ export function HeroVideo() {
         video.pause();
         return;
       }
-      if (!video.getAttribute("src")) video.src = SRC;
+      const src = SRC[currentTheme()];
+      if (video.getAttribute("src") !== src) video.src = src;
       video.play().catch(() => {});
     };
     apply();
+    const root = document.documentElement;
     motionMq.addEventListener("change", apply);
-    return () => motionMq.removeEventListener("change", apply);
+    root.addEventListener(THEME_EVENT, apply);
+    return () => {
+      motionMq.removeEventListener("change", apply);
+      root.removeEventListener(THEME_EVENT, apply);
+    };
   }, []);
 
   return (
@@ -41,7 +53,6 @@ export function HeroVideo() {
       <div className="hero-video-box">
         <video
           ref={ref}
-          poster={POSTER}
           autoPlay
           muted
           loop

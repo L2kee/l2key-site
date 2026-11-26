@@ -9,6 +9,7 @@ import { isFunnelPath } from "@/lib/funnel-paths";
 import { NavLink } from "@/components/nav-link";
 import { FunnelNav } from "@/components/funnel-nav";
 import { NAV_LINKS } from "@/lib/site-nav";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 // Moe 2026-11-08. AI Front Desk left the bar (still in the homepage services
 // menu, Top Services, and the footer), Built in House moved to the footer,
@@ -89,7 +90,7 @@ function DesktopLinks() {
           href={l.href}
           mockup={l.mockup}
           className={`relative z-[1] rounded-full px-2 py-1.5 text-sm font-medium transition-colors ${
-            l.mockup ? "font-semibold text-[#a3b06a] hover:text-white" : "text-white/70 hover:text-white"
+            l.mockup ? "font-semibold text-olive hover:text-white" : "text-white/70 hover:text-white"
           }`}
         >
           {l.label}
@@ -218,6 +219,8 @@ export function Navbar() {
             <a href="/agency-os" className="text-xs text-white/55 transition hover:text-white">
               Client Portal
             </a>
+            {/* 36px, the Get Started pill's height, so the bar keeps its 74px. */}
+            <ThemeToggle className="!h-9 !w-9" />
             <Link href="/start" className="btn-solid !px-4 !py-2 text-sm">
               Get Started
             </Link>
@@ -226,6 +229,7 @@ export function Navbar() {
           {/* Phones and tablets (Moe 2026-11-13): the Get Started pill sits
               beside the burger so there is a tap target from the first frame. */}
           <div className="flex items-center gap-2 lg:hidden">
+          <ThemeToggle />
           <Link href="/start" className="btn-solid !px-3.5 !py-2 text-xs">
             Get Started
           </Link>
@@ -239,7 +243,7 @@ export function Navbar() {
             aria-label="Open menu"
             aria-expanded={open}
             aria-controls="site-menu"
-            className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white transition hover:border-[#a3b06a]/50 hover:text-[#a3b06a] lg:hidden"
+            className="burger h-10 w-10 rounded-full border border-white/15 bg-white/5 text-white transition hover:border-olive/50 hover:text-olive lg:hidden"
           >
             <i /><i /><i />
           </button>
@@ -285,7 +289,7 @@ export function Navbar() {
               mockup={l.mockup}
               onClick={closeForNav}
               style={{ "--m": i } as React.CSSProperties}
-              className={`menu-item border-b border-white/10 py-4 text-3xl font-semibold hover:text-[#a3b06a] ${l.mockup ? "text-[#a3b06a]" : "text-white"}`}
+              className={`menu-item border-b border-white/10 py-4 text-3xl font-semibold hover:text-olive ${l.mockup ? "text-olive" : "text-white"}`}
             >
               {l.label}
             </NavLink>
@@ -298,10 +302,10 @@ export function Navbar() {
           </Link>
           <div className="mt-6 flex flex-col gap-3 text-sm text-white/60">
             <a href="tel:+18138971954" className="flex items-center gap-3 transition hover:text-white">
-              <Phone size={16} style={{ color: "#a3b06a" }} /> (813) 897-1954
+              <Phone size={16} style={{ color: "var(--color-olive)" }} /> (813) 897-1954
             </a>
             <a href="mailto:hello@evogencyglobal.com" className="flex items-center gap-3 transition hover:text-white">
-              <Mail size={16} style={{ color: "#a3b06a" }} /> hello@evogencyglobal.com
+              <Mail size={16} style={{ color: "var(--color-olive)" }} /> hello@evogencyglobal.com
             </a>
             <a
               href="https://calendly.com/mohamed-eltoukhy011/30min"
@@ -309,7 +313,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="flex items-center gap-3 transition hover:text-white"
             >
-              <CalendarClock size={16} style={{ color: "#a3b06a" }} /> Book a call
+              <CalendarClock size={16} style={{ color: "var(--color-olive)" }} /> Book a call
             </a>
             <a href="/agency-os" onClick={closeForNav} className="text-xs text-white/50 transition hover:text-white">
               Client Portal

@@ -3,10 +3,70 @@
 @theme inline {
   --font-sans: var(--font-site);
   --font-mono: var(--font-site);
-  --color-accent-cyan: #a3b06a;
-  --color-accent-teal: #7d8a45;
-  --color-accent-ice: #f4f1ea;
+  --color-accent-cyan: var(--color-olive);
+  --color-accent-teal: var(--color-olive-deep);
+  --color-accent-ice: var(--color-cream);
   --color-accent-lime: #b5f04a;
+}
+
+/* Dark and light themes (2026-11-25). Every site color is one of these
+   variables, so html[data-theme="light"] flips the whole site. Tailwind's
+   own white and black are remapped too, which is why text-white reads as
+   dark ink in light mode. theme-script.ts sets data-theme before the first
+   paint, and theme-toggle.tsx switches it. Light olive is darkened to
+   #56631f (5.7 to 1 on vanilla) so accent text stays readable. */
+@theme {
+  --color-olive: #a3b06a;
+  --color-olive-deep: #7d8a45;
+  --color-cream: #f4f1ea;
+  --color-on-olive: #141a08;
+  --color-page: #0b0a09;
+  --color-olive-soft: #cbd49b;
+  --color-muted: #bdb7ab;
+  --color-faint: #8f8a80;
+  --color-panel: #191816;
+  --color-wall: #050607;
+  --color-mark: #e9e3d6;
+  --color-option: #111111;
+}
+html[data-theme="light"] {
+  --color-white: #17211f;
+  --color-black: #f5efe0;
+  --color-olive: #56631f;
+  --color-olive-deep: #5f6d24;
+  --color-cream: #1f2b29;
+  --color-on-olive: #f5efe0;
+  --color-page: #f5efe0;
+  --color-olive-soft: #56631f;
+  --color-muted: #46504e;
+  --color-faint: #646b67;
+  --color-panel: #ebe3d1;
+  --color-wall: #ebe3d1;
+  --color-mark: #1f2b29;
+  --color-option: #f5efe0;
+  color-scheme: light;
+}
+html {
+  color-scheme: dark;
+}
+
+/* Faded ink reads weaker on vanilla than faded white does on black (50%
+   white on black is about 5 to 1, 50% ink on vanilla about 3.5 to 1), so
+   light mode lifts each text-white/N step (N becomes 35 + 0.65N). :where()
+   keeps this at one class of specificity, so hover colors still win. */
+@layer utilities {
+  :where(html[data-theme="light"]) .text-white\/35 { color: color-mix(in oklab, var(--color-white) 57.8%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/40 { color: color-mix(in oklab, var(--color-white) 61%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/45 { color: color-mix(in oklab, var(--color-white) 64.2%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/50 { color: color-mix(in oklab, var(--color-white) 67.5%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/55 { color: color-mix(in oklab, var(--color-white) 70.8%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/60 { color: color-mix(in oklab, var(--color-white) 74%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/65 { color: color-mix(in oklab, var(--color-white) 77.2%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/70 { color: color-mix(in oklab, var(--color-white) 80.5%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/75 { color: color-mix(in oklab, var(--color-white) 83.8%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/80 { color: color-mix(in oklab, var(--color-white) 87%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/85 { color: color-mix(in oklab, var(--color-white) 90.2%, transparent); }
+  :where(html[data-theme="light"]) .text-white\/90 { color: color-mix(in oklab, var(--color-white) 93.5%, transparent); }
 }
 
 /* One font site wide, Cormorant Garamond (lib/fonts.ts), except the marquee.
@@ -29,7 +89,7 @@ body {
    field that draws its own ring (outline-none plus focus:ring) still wins. */
 @layer base {
   :focus-visible {
-    outline: 2px solid #a3b06a;
+    outline: 2px solid var(--color-olive);
     outline-offset: 3px;
   }
 }
@@ -43,15 +103,15 @@ body {
   z-index: 100;
   padding: 0.75rem 1.25rem;
   border-radius: 0.75rem;
-  background: #a3b06a;
-  color: #000;
+  background: var(--color-olive);
+  color: var(--color-black);
   font-weight: 600;
   transform: translateY(-200%);
   transition: transform 0.2s ease-out;
 }
 .skip-link:focus {
   transform: translateY(0);
-  outline-color: #fff;
+  outline-color: var(--color-white);
 }
 @media (prefers-reduced-motion: reduce) {
   .skip-link { transition: none; }
@@ -70,8 +130,8 @@ div#top {
 body {
   position: relative;
   overflow-x: clip;
-  background: #0b0a09;
-  color: #f4f1ea;
+  background: var(--color-page);
+  color: var(--color-cream);
 }
 
 /* Lotus backdrop (site-background.tsx), fixed behind every page. Each
@@ -85,12 +145,12 @@ body {
    so it wins on the homepage hero. New art always gets a new file name,
    because Vercel keeps serving the old picture at a reused URL. */
 .site-bg {
-  --bg-dim: linear-gradient(rgb(0 0 0 / 0.85), rgb(0 0 0 / 0.85));
+  --bg-dim: linear-gradient(color-mix(in srgb, var(--color-black) 85%, transparent), color-mix(in srgb, var(--color-black) 85%, transparent));
   position: fixed;
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  background: #000;
+  background: var(--color-black);
   transition: opacity 0.8s ease;
 }
 .site-bg-layer {
@@ -122,12 +182,31 @@ body {
 .site-bg-layer--lab { background-image: var(--bg-dim), url("/bg/lotus-lab.webp"); }
 /* The service pages carry the most body copy, so they get a heavier scrim. */
 .site-bg-layer--services {
-  --bg-dim: linear-gradient(rgb(0 0 0 / 0.9), rgb(0 0 0 / 0.9));
+  --bg-dim: linear-gradient(color-mix(in srgb, var(--color-black) 90%, transparent), color-mix(in srgb, var(--color-black) 90%, transparent));
   background-image: var(--bg-dim), url("/bg/lotus-services.webp");
 }
 /* The AI Front Desk page and the /start funnels: the flower sits on the
    right third so the hero copy and the form sit on dark space. */
 .site-bg-layer--ai { background-image: var(--bg-dim), url("/bg/lotus-ai.webp"); }
+/* Light mode backdrops, the same renders turned into teal and gold ink on
+   vanilla (lightify2.py, 2026-11-25), under a lighter veil than the dark
+   scrim because ink reads stronger than glow. */
+html[data-theme="light"] .site-bg {
+  --bg-dim: linear-gradient(color-mix(in srgb, var(--color-black) 80%, transparent), color-mix(in srgb, var(--color-black) 80%, transparent));
+}
+html[data-theme="light"] .site-bg-layer--services {
+  --bg-dim: linear-gradient(color-mix(in srgb, var(--color-black) 86%, transparent), color-mix(in srgb, var(--color-black) 86%, transparent));
+}
+html[data-theme="light"] .site-bg-layer--default { background-image: var(--bg-dim), url("/bg/lotus-default-light.webp"); }
+html[data-theme="light"] .site-bg-layer--home { background-image: var(--bg-dim), url("/bg/lotus-home-water-light.webp"); }
+html[data-theme="light"] .site-bg-layer--craft { background-image: var(--bg-dim), url("/bg/lotus-craft-light.webp"); }
+html[data-theme="light"] .site-bg-layer--work { background-image: var(--bg-dim), url("/bg/lotus-work-light.webp"); }
+html[data-theme="light"] .site-bg-layer--about { background-image: var(--bg-dim), url("/bg/lotus-about-light.webp"); }
+html[data-theme="light"] .site-bg-layer--contact { background-image: var(--bg-dim), url("/bg/lotus-contact-light.webp"); }
+html[data-theme="light"] .site-bg-layer--brand { background-image: var(--bg-dim), url("/bg/lotus-brand-light.webp"); }
+html[data-theme="light"] .site-bg-layer--lab { background-image: var(--bg-dim), url("/bg/lotus-lab-light.webp"); }
+html[data-theme="light"] .site-bg-layer--services { background-image: var(--bg-dim), url("/bg/lotus-services-light.webp"); }
+html[data-theme="light"] .site-bg-layer--ai { background-image: var(--bg-dim), url("/bg/lotus-ai-light.webp"); }
 @media (max-width: 639px) {
   .site-bg {
     opacity: 0.45;
@@ -159,46 +238,46 @@ body {
      carry the class without positioning side effects. */
   .glass {
     background:
-      linear-gradient(115deg, transparent 32%, rgb(255 255 255 / 0.04) 44%, transparent 56%),
-      linear-gradient(145deg, rgb(163 176 106 / 0.05), rgb(255 255 255 / 0.02) 45%, rgb(63 200 216 / 0.06));
+      linear-gradient(115deg, transparent 32%, color-mix(in srgb, var(--color-white) 4%, transparent) 44%, transparent 56%),
+      linear-gradient(145deg, color-mix(in srgb, var(--color-olive) 5%, transparent), color-mix(in srgb, var(--color-white) 2%, transparent) 45%, rgb(63 200 216 / 0.06));
     -webkit-backdrop-filter: blur(20px) saturate(120%);
     backdrop-filter: blur(20px) saturate(120%);
-    border: 1px solid rgb(255 255 255 / 0.10);
-    border-top-color: rgb(255 255 255 / 0.2);
+    border: 1px solid color-mix(in srgb, var(--color-white) 10%, transparent);
+    border-top-color: color-mix(in srgb, var(--color-white) 20%, transparent);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.08) inset,
+      0 1px 0 color-mix(in srgb, var(--color-white) 8%, transparent) inset,
       0 0 24px rgba(63, 200, 216, 0.03) inset,
-      0 30px 60px -30px rgba(0, 0, 0, 0.7),
-      0 0 40px -20px rgba(163, 176, 106, 0.12);
+      0 30px 60px -30px color-mix(in srgb, var(--color-black) 70%, transparent),
+      0 0 40px -20px color-mix(in srgb, var(--color-olive) 12%, transparent);
   }
 
   /* The sticky nav needs to stay legible over WHATEVER scrolls behind
      it (headlines, wireframe lines), so it gets a much more opaque
      backing than the decorative .glass cards. */
   .glass-nav {
-    background: linear-gradient(160deg, rgba(12, 9, 5, 0.98), rgba(12, 9, 5, 0.95));
+    background: linear-gradient(160deg, color-mix(in srgb, var(--color-page) 98%, transparent), color-mix(in srgb, var(--color-page) 95%, transparent));
     -webkit-backdrop-filter: blur(24px);
     backdrop-filter: blur(24px);
-    border: 1px solid rgb(255 255 255 / 0.1);
+    border: 1px solid color-mix(in srgb, var(--color-white) 10%, transparent);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.06) inset,
-      0 20px 40px -20px rgba(0, 0, 0, 0.8);
+      0 1px 0 color-mix(in srgb, var(--color-white) 6%, transparent) inset,
+      0 20px 40px -20px color-mix(in srgb, var(--color-black) 80%, transparent);
   }
 
   .glass-strong {
     background:
-      linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.05) 43%, transparent 57%),
-      linear-gradient(145deg, rgb(163 176 106 / 0.06), rgb(255 255 255 / 0.03) 45%, rgb(63 200 216 / 0.08));
+      linear-gradient(115deg, transparent 30%, color-mix(in srgb, var(--color-white) 5%, transparent) 43%, transparent 57%),
+      linear-gradient(145deg, color-mix(in srgb, var(--color-olive) 6%, transparent), color-mix(in srgb, var(--color-white) 3%, transparent) 45%, rgb(63 200 216 / 0.08));
     -webkit-backdrop-filter: blur(24px) saturate(120%);
     backdrop-filter: blur(24px) saturate(120%);
-    border: 1px solid rgb(255 255 255 / 0.12);
-    border-top-color: rgb(255 255 255 / 0.22);
+    border: 1px solid color-mix(in srgb, var(--color-white) 12%, transparent);
+    border-top-color: color-mix(in srgb, var(--color-white) 22%, transparent);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.10) inset,
-      0 -1px 0 rgba(255, 255, 255, 0.04) inset,
+      0 1px 0 color-mix(in srgb, var(--color-white) 10%, transparent) inset,
+      0 -1px 0 color-mix(in srgb, var(--color-white) 4%, transparent) inset,
       0 0 30px rgba(63, 200, 216, 0.04) inset,
-      0 40px 80px -30px rgba(0, 0, 0, 0.75),
-      0 0 60px -20px rgba(163, 176, 106, 0.14);
+      0 40px 80px -30px color-mix(in srgb, var(--color-black) 75%, transparent),
+      0 0 60px -20px color-mix(in srgb, var(--color-olive) 14%, transparent);
   }
 
   /* Glass button — the "made of glass" ask. */
@@ -209,23 +288,23 @@ body {
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
-    background: linear-gradient(160deg, rgb(255 255 255 / 0.14), rgb(255 255 255 / 0.04));
+    background: linear-gradient(160deg, color-mix(in srgb, var(--color-white) 14%, transparent), color-mix(in srgb, var(--color-white) 4%, transparent));
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
-    border: 1px solid rgb(255 255 255 / 0.18);
+    border: 1px solid color-mix(in srgb, var(--color-white) 18%, transparent);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.15) inset,
-      0 14px 30px -12px rgba(0, 0, 0, 0.6);
+      0 1px 0 color-mix(in srgb, var(--color-white) 15%, transparent) inset,
+      0 14px 30px -12px color-mix(in srgb, var(--color-black) 60%, transparent);
     font-weight: 500;
     transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
   }
   .btn-glass:hover {
     transform: translateY(-2px);
-    border-color: rgb(255 255 255 / 0.3);
+    border-color: color-mix(in srgb, var(--color-white) 30%, transparent);
     box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.2) inset,
-      0 20px 40px -14px rgba(0, 0, 0, 0.7),
-      0 0 30px -8px rgba(163, 176, 106, 0.45);
+      0 1px 0 color-mix(in srgb, var(--color-white) 20%, transparent) inset,
+      0 20px 40px -14px color-mix(in srgb, var(--color-black) 70%, transparent),
+      0 0 30px -8px color-mix(in srgb, var(--color-olive) 45%, transparent);
   }
 
   .btn-solid {
@@ -235,15 +314,15 @@ body {
     padding: 0.75rem 1.5rem;
     border-radius: 9999px;
     background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
-    color: #141a08;
+    color: var(--color-on-olive);
     font-weight: 600;
-    box-shadow: 0 14px 30px -10px rgba(163, 176, 106, 0.5);
+    box-shadow: 0 14px 30px -10px color-mix(in srgb, var(--color-olive) 50%, transparent);
     transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
   }
   .btn-solid:hover {
     transform: translateY(-2px);
     filter: brightness(1.08);
-    box-shadow: 0 20px 40px -10px rgba(163, 176, 106, 0.6);
+    box-shadow: 0 20px 40px -10px color-mix(in srgb, var(--color-olive) 60%, transparent);
   }
 
   .gradient-text {
@@ -270,9 +349,12 @@ body {
     overflow: hidden;
     width: 100%;
     height: 66vw;
-    background: #000;
+    background: var(--color-black) url("/hero-lotus-poster.webp") center / cover no-repeat;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 85%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 85%, transparent 100%);
+  }
+  html[data-theme="light"] .hero-video-box {
+    background-image: url("/hero-lotus-light-poster.webp");
   }
   @media (min-width: 640px) {
     .hero-video-outer {
@@ -344,10 +426,10 @@ body {
      letter and no inner contour lines appear. Stroke, paint order and shadow
      inherit, so per letter spans (DropLetters) get it. */
   .glass-text {
-    color: #fff;
-    -webkit-text-stroke: 1.5px rgb(163 176 106 / 0.55);
+    color: var(--color-white);
+    -webkit-text-stroke: 1.5px color-mix(in srgb, var(--color-olive) 55%, transparent);
     paint-order: stroke fill;
-    text-shadow: 0 0 10px rgb(163 176 106 / 0.16);
+    text-shadow: 0 0 10px color-mix(in srgb, var(--color-olive) 16%, transparent);
   }
 
   /* Glass outline letters: a thin ice edge with a soft cyan glow. */
@@ -360,7 +442,11 @@ body {
     white-space: nowrap;
     color: transparent;
     -webkit-text-stroke: 0.9px rgb(214 246 250 / 0.85);
-    text-shadow: 0 0 18px rgb(163 176 106 / 0.35);
+    text-shadow: 0 0 18px color-mix(in srgb, var(--color-olive) 35%, transparent);
+  }
+  html[data-theme="light"] .mojo-word {
+    -webkit-text-stroke-color: color-mix(in srgb, var(--color-olive) 85%, transparent);
+    text-shadow: 0 0 18px color-mix(in srgb, var(--color-olive) 18%, transparent);
   }
   @media (min-width: 481px) {
     .marquee-mojo .marquee-track {
@@ -413,7 +499,7 @@ body {
     line-height: 1.9;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: rgb(255 255 255 / 0.78);
+    color: color-mix(in srgb, var(--color-white) 78%, transparent);
   }
   .marquee-rule {
     flex-shrink: 0;
@@ -518,7 +604,7 @@ body {
   margin: 0 -0.12em;
 }
 .hero-serif .italic {
-  filter: drop-shadow(0 0 18px rgb(163 176 106 / 0.55));
+  filter: drop-shadow(0 0 18px color-mix(in srgb, var(--color-olive) 55%, transparent));
 }
 
 /* Static base for the work card full page scroll (work-card.tsx). Hidden
@@ -549,13 +635,13 @@ body {
   height: calc(100% + 2px);
   overflow: visible;
   pointer-events: none;
-  filter: drop-shadow(0 0 4px rgba(163, 176, 106, 0.6));
+  filter: drop-shadow(0 0 4px color-mix(in srgb, var(--color-olive) 60%, transparent));
 }
 .cta-trace rect {
   width: calc(100% - 1.5px);
   height: calc(100% - 1.5px);
   fill: none;
-  stroke: #a3b06a;
+  stroke: var(--color-olive);
   stroke-width: 1.5;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
@@ -937,14 +1023,14 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 1rem;
-  color: rgb(255 255 255 / 0.5);
+  color: color-mix(in srgb, var(--color-white) 50%, transparent);
   pointer-events: none;
 }
 .float-field:has(input:not(:placeholder-shown)) .float-label,
 .float-field:has(select) .float-label {
   top: 15px;
   font-size: 0.75rem;
-  color: rgb(255 255 255 / 0.6);
+  color: color-mix(in srgb, var(--color-white) 60%, transparent);
 }
 .float-field:has(input:-webkit-autofill) .float-label {
   top: 15px;
@@ -953,7 +1039,7 @@ body {
 .float-field:focus-within .float-label {
   top: 15px;
   font-size: 0.75rem;
-  color: #a3b06a;
+  color: var(--color-olive);
 }
 .float-field:has(:disabled) .float-label {
   opacity: 0.4;
@@ -963,7 +1049,7 @@ body {
 .drawn-check circle,
 .drawn-check path {
   fill: none;
-  stroke: #a3b06a;
+  stroke: var(--color-olive);
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -974,9 +1060,9 @@ body {
    full by default, swept in where view timelines exist. The timeline lives
    on the paragraph because an inline box is a shaky timeline subject. */
 .mark-sweep {
-  color: #fff;
+  color: var(--color-white);
   padding: 0 0.1em;
-  background: linear-gradient(rgb(163 176 106 / 0.38), rgb(163 176 106 / 0.38)) no-repeat 0 88% / 100% 0.45em;
+  background: linear-gradient(color-mix(in srgb, var(--color-olive) 38%, transparent), color-mix(in srgb, var(--color-olive) 38%, transparent)) no-repeat 0 88% / 100% 0.45em;
 }
 .mark-scope {
   view-timeline-name: --mark;
@@ -1018,7 +1104,7 @@ body {
 /* Growing underline on text links (desktop nav, footer pages). */
 .link-grow {
   padding-bottom: 2px;
-  background: linear-gradient(#a3b06a, #a3b06a) no-repeat right bottom / 0% 1px;
+  background: linear-gradient(var(--color-olive), var(--color-olive)) no-repeat right bottom / 0% 1px;
 }
 .link-grow:hover,
 .link-grow:focus-visible {
@@ -1038,13 +1124,13 @@ body {
   inset: 0;
   z-index: -1;
   border-radius: inherit;
-  background: linear-gradient(135deg, #a3b06a, #7d8a45);
+  background: linear-gradient(135deg, var(--color-olive), var(--color-olive-deep));
   transform: scaleX(0);
   transform-origin: left;
 }
 @media (hover: hover) {
   .btn-glass:hover {
-    color: #141a08;
+    color: var(--color-on-olive);
   }
   .btn-glass:hover::before {
     transform: none;
@@ -1078,7 +1164,7 @@ body {
   right: 0;
   z-index: 55;
   height: 3px;
-  background: linear-gradient(90deg, #a3b06a, #a3b06a);
+  background: linear-gradient(90deg, var(--color-olive), var(--color-olive));
   transform-origin: left;
   transform: scaleX(0);
   pointer-events: none;
@@ -1231,7 +1317,7 @@ body {
   width: 100%;
   height: 1px;
   border-radius: 1px;
-  background: rgb(255 255 255 / 0.12);
+  background: color-mix(in srgb, var(--color-white) 12%, transparent);
   clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
   pointer-events: none;
 }
@@ -1244,7 +1330,7 @@ body {
   clip-path: polygon(10px 0, 100% 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 100%, 0 10px);
 }
 .nav-morph a.is-lit {
-  color: #141a08;
+  color: var(--color-on-olive);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1266,8 +1352,8 @@ body {
    bottom sheet on phones. The glass gets a solid base, because over the
    modal backdrop see through glass made the form hard to read. ===== */
 .mockup-notice {
-  background-color: rgb(8 10 12 / 0.98);
-  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.9), 0 0 0 1px rgb(163 176 106 / 0.12);
+  background-color: color-mix(in srgb, var(--color-page) 98%, transparent);
+  box-shadow: 0 24px 60px -20px color-mix(in srgb, var(--color-black) 90%, transparent), 0 0 0 1px color-mix(in srgb, var(--color-olive) 12%, transparent);
   transform: translateY(calc(100% + 2rem));
   opacity: 0;
   visibility: hidden;
@@ -1283,12 +1369,12 @@ body {
   margin: auto;
   padding: 0;
   border-radius: 1.5rem;
-  background-color: #0b0a09;
-  color: #f4f1ea;
+  background-color: var(--color-page);
+  color: var(--color-cream);
   overflow: hidden;
 }
 .mockup-dialog::backdrop {
-  background: rgb(0 0 0 / 0.7);
+  background: color-mix(in srgb, var(--color-black) 70%, transparent);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
@@ -1343,7 +1429,7 @@ body {
 }
 .logo-slot:hover .logo-mark {
   color: var(--color-accent-cyan);
-  filter: drop-shadow(0 0 12px rgb(163 176 106 / 0.35));
+  filter: drop-shadow(0 0 12px color-mix(in srgb, var(--color-olive) 35%, transparent));
 }
 @media (prefers-reduced-motion: no-preference) {
   .logo-cell {
@@ -1375,13 +1461,13 @@ body {
   padding: 1.5px;
   background: conic-gradient(
     from var(--flagship-spin),
-    rgb(163 176 106 / 0.18),
-    #a3b06a 12%,
-    #cbd49b 20%,
-    rgb(163 176 106 / 0.18) 34%,
-    rgb(163 176 106 / 0.18) 62%,
+    color-mix(in srgb, var(--color-olive) 18%, transparent),
+    var(--color-olive) 12%,
+    var(--color-olive-soft) 20%,
+    color-mix(in srgb, var(--color-olive) 18%, transparent) 34%,
+    color-mix(in srgb, var(--color-olive) 18%, transparent) 62%,
     #a5f3fc 74%,
-    rgb(163 176 106 / 0.18) 86%
+    color-mix(in srgb, var(--color-olive) 18%, transparent) 86%
   );
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1412,13 +1498,13 @@ body {
   padding: 1.5px;
   background: conic-gradient(
     from var(--flagship-spin),
-    rgb(243 237 224 / 0.15),
-    #f4f1ea 10%,
-    #f4f1ea 20%,
-    rgb(243 237 224 / 0.15) 32%,
-    rgb(243 237 224 / 0.15) 60%,
-    #f4f1ea 72%,
-    rgb(243 237 224 / 0.15) 84%
+    color-mix(in srgb, var(--color-cream) 15%, transparent),
+    var(--color-cream) 10%,
+    var(--color-cream) 20%,
+    color-mix(in srgb, var(--color-cream) 15%, transparent) 32%,
+    color-mix(in srgb, var(--color-cream) 15%, transparent) 60%,
+    var(--color-cream) 72%,
+    color-mix(in srgb, var(--color-cream) 15%, transparent) 84%
   );
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -1446,8 +1532,8 @@ body {
   width: 23rem;
   height: min(34rem, calc(100dvh - 7.5rem));
   border-radius: 1.5rem;
-  background-color: rgb(8 10 12 / 0.98);
-  box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.9), 0 0 0 1px rgb(163 176 106 / 0.12);
+  background-color: color-mix(in srgb, var(--color-page) 98%, transparent);
+  box-shadow: 0 24px 60px -20px color-mix(in srgb, var(--color-black) 90%, transparent), 0 0 0 1px color-mix(in srgb, var(--color-olive) 12%, transparent);
   transform: translateY(1.5rem) scale(0.98);
   transform-origin: bottom right;
   opacity: 0;
@@ -1489,16 +1575,16 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   overflow-wrap: anywhere;
 }
 .site-chat-bubble.is-ava {
-  background: rgb(255 255 255 / 0.06);
-  border: 1px solid rgb(255 255 255 / 0.08);
+  background: color-mix(in srgb, var(--color-white) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-white) 8%, transparent);
   border-bottom-left-radius: 0.35rem;
-  color: rgb(243 237 224 / 0.92);
+  color: color-mix(in srgb, var(--color-cream) 92%, transparent);
 }
 .site-chat-bubble.is-user {
   margin-left: auto;
   background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-teal));
   border-bottom-right-radius: 0.35rem;
-  color: #141a08;
+  color: var(--color-on-olive);
 }
 .site-chat-typing {
   display: flex;
@@ -1509,7 +1595,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 9999px;
-  background: rgb(163 176 106 / 0.8);
+  background: color-mix(in srgb, var(--color-olive) 80%, transparent);
 }
 @media (prefers-reduced-motion: no-preference) {
   .site-chat-panel {
@@ -1584,11 +1670,21 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 60% 55% at 50% 45%, rgb(0 0 0 / 0.55), transparent 75%),
-      linear-gradient(to bottom, rgb(0 0 0 / 0.1) 30%, rgb(0 0 0 / 0.7) 100%);
+      radial-gradient(ellipse 60% 55% at 50% 45%, color-mix(in srgb, var(--color-black) 55%, transparent), transparent 75%),
+      linear-gradient(to bottom, color-mix(in srgb, var(--color-black) 10%, transparent) 30%, color-mix(in srgb, var(--color-black) 70%, transparent) 100%);
   }
   .hero-stage .hero-copy {
     padding-top: 3.5rem;
+  }
+  /* Ink on vanilla needs less veil than glow on black to keep the copy
+     readable, so the lotus shows stronger in light mode. */
+  html[data-theme="light"] .hero-stage .hero-video-box {
+    opacity: 0.9;
+  }
+  html[data-theme="light"] .hero-stage .hero-video-box::after {
+    background:
+      radial-gradient(ellipse 55% 45% at 50% 48%, color-mix(in srgb, var(--color-black) 60%, transparent), transparent 75%),
+      linear-gradient(to bottom, transparent 40%, color-mix(in srgb, var(--color-black) 60%, transparent) 100%);
   }
 }
 
@@ -1604,8 +1700,8 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 }
 .ink-title text {
   paint-order: stroke fill;
-  fill: #ffffff;
-  stroke: #a3b06a;
+  fill: var(--color-white);
+  stroke: var(--color-olive);
   stroke-width: 0.6;
   stroke-linejoin: round;
 }
@@ -1627,7 +1723,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     ink-fill 500ms ease-out calc(var(--start) + var(--l) * 55ms + 450ms) both;
 }
 .drawn-steps.is-drawn .ink-title {
-  filter: drop-shadow(0 0 6px rgba(163, 176, 106, 0.35));
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--color-olive) 35%, transparent));
 }
 .drawn-steps.is-drawn .seep-word {
   animation: seep-in 1400ms ease-out calc(var(--start) + var(--write) * 0.6 + var(--w) * 45ms) both;
@@ -1645,7 +1741,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
     fill: transparent;
   }
   to {
-    fill: #ffffff;
+    fill: var(--color-white);
   }
 }
 @keyframes step-num-in {
@@ -1684,8 +1780,8 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 /* Listing Suite plan cards: a cyan pulse when a tile jumps to one
    (plan-jump-link.tsx adds .plan-flash) or a link lands on its #id. */
 @keyframes plan-flash {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(163, 176, 106, 0); }
-  30%, 60% { box-shadow: 0 0 0 2px rgba(163, 176, 106, 0.9), 0 0 60px -10px rgba(163, 176, 106, 0.7); }
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-olive) 0%, transparent); }
+  30%, 60% { box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-olive) 90%, transparent), 0 0 60px -10px color-mix(in srgb, var(--color-olive) 70%, transparent); }
 }
 .plan-card.plan-flash,
 .plan-card:target {
@@ -1695,7 +1791,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   .plan-card.plan-flash,
   .plan-card:target {
     animation: none;
-    outline: 2px solid rgba(163, 176, 106, 0.9);
+    outline: 2px solid color-mix(in srgb, var(--color-olive) 90%, transparent);
   }
 }
 
@@ -1705,36 +1801,36 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
    light. The Desktop and Phone tabs and the filter chips share one gliding
    highlight (.wb-glide). */
 .wb-head { text-align: center; max-width: 760px; margin: 0 auto; }
-.wb-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 7px 16px; border-radius: 999px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: rgb(255 255 255 / .8); }
-.wb-dot { width: 7px; height: 7px; border-radius: 50%; background: #a3b06a; animation: wb-ping 2.2s infinite; }
-@keyframes wb-ping { 0% { box-shadow: 0 0 0 0 rgb(163 176 106 / .7); } 70%, 100% { box-shadow: 0 0 0 9px rgb(163 176 106 / 0); } }
-.wb-head h2 { margin-top: 22px; font-size: clamp(34px, 6vw, 60px); line-height: 1.04; letter-spacing: -.03em; font-weight: 700; color: #fff; }
+.wb-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 7px 16px; border-radius: 999px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: color-mix(in srgb, var(--color-white) 80%, transparent); }
+.wb-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-olive); animation: wb-ping 2.2s infinite; }
+@keyframes wb-ping { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-olive) 70%, transparent); } 70%, 100% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--color-olive) 0%, transparent); } }
+.wb-head h2 { margin-top: 22px; font-size: clamp(34px, 6vw, 60px); line-height: 1.04; letter-spacing: -.03em; font-weight: 700; color: var(--color-white); }
 .wb-flow {
-  background: linear-gradient(90deg, #a3b06a, #7d8a45, #f4f1ea, #b5f04a, #a3b06a);
+  background: linear-gradient(90deg, var(--color-olive), var(--color-olive-deep), var(--color-cream), #b5f04a, var(--color-olive));
   background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: wb-flow 9s linear infinite;
 }
 @keyframes wb-flow { to { background-position: 300% 0; } }
-.wb-head > p { margin: 18px auto 0; max-width: 620px; color: rgb(255 255 255 / .68); font-size: clamp(16px, 2vw, 18px); text-wrap: balance; }
+.wb-head > p { margin: 18px auto 0; max-width: 620px; color: color-mix(in srgb, var(--color-white) 68%, transparent); font-size: clamp(16px, 2vw, 18px); text-wrap: balance; }
 .wb-stats { display: flex; justify-content: center; flex-wrap: wrap; gap: clamp(22px, 6vw, 60px); margin-top: 36px; }
-.wb-stats b { display: block; font-size: clamp(32px, 5vw, 46px); font-weight: 700; letter-spacing: -.03em; color: #fff; font-variant-numeric: lining-nums tabular-nums; }
-.wb-stats span { font-size: 12.5px; color: rgb(255 255 255 / .65); letter-spacing: .08em; text-transform: uppercase; }
+.wb-stats b { display: block; font-size: clamp(32px, 5vw, 46px); font-weight: 700; letter-spacing: -.03em; color: var(--color-white); font-variant-numeric: lining-nums tabular-nums; }
+.wb-stats span { font-size: 12.5px; color: color-mix(in srgb, var(--color-white) 65%, transparent); letter-spacing: .08em; text-transform: uppercase; }
 
 /* contain keeps the endless track from widening the page (the parent sizes to its content) */
-.wb-marquee { contain: inline-size; margin: 48px calc(50% - 50vw) 40px; border-block: 1px solid rgb(255 255 255 / .1); padding: 15px 0; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+.wb-marquee { contain: inline-size; margin: 48px calc(50% - 50vw) 40px; border-block: 1px solid color-mix(in srgb, var(--color-white) 10%, transparent); padding: 15px 0; overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
 .wb-track { display: flex; width: max-content; animation: wb-slide 38s linear infinite; }
 .wb-marquee:hover .wb-track { animation-play-state: paused; }
-.wb-track span { white-space: nowrap; padding: 0 24px; font-size: clamp(17px, 2.3vw, 23px); font-weight: 300; color: rgb(255 255 255 / .55); }
-.wb-track em { font-style: normal; color: #a3b06a; padding-left: 24px; }
+.wb-track span { white-space: nowrap; padding: 0 24px; font-size: clamp(17px, 2.3vw, 23px); font-weight: 300; color: color-mix(in srgb, var(--color-white) 55%, transparent); }
+.wb-track em { font-style: normal; color: var(--color-olive); padding-left: 24px; }
 @keyframes wb-slide { to { transform: translateX(-50%); } }
 
 .wb-bar { display: flex; justify-content: center; margin-bottom: 28px; }
 .wb-chips, .wb-tabs { position: relative; display: inline-flex; flex-wrap: wrap; padding: 5px; border-radius: 999px; }
-.wb-chips button, .wb-tabs button { position: relative; z-index: 1; border: 0; background: none; cursor: pointer; border-radius: 999px; font-weight: 500; color: rgb(255 255 255 / .62); transition: color .3s; display: inline-flex; align-items: center; gap: 6px; }
+.wb-chips button, .wb-tabs button { position: relative; z-index: 1; border: 0; background: none; cursor: pointer; border-radius: 999px; font-weight: 500; color: color-mix(in srgb, var(--color-white) 62%, transparent); transition: color .3s; display: inline-flex; align-items: center; gap: 6px; }
 .wb-chips button { padding: 9px 18px; font-size: 14px; }
-.wb-chips button.is-on, .wb-tabs button.is-on { color: #141a08; }
-.wb-glide { position: absolute; z-index: 0; top: 0; left: 0; border-radius: 999px; background: linear-gradient(135deg, #a3b06a, #7d8a45); box-shadow: 0 8px 30px -8px rgb(163 176 106 / .7); transition: transform .5s cubic-bezier(.22,1,.36,1), width .5s cubic-bezier(.22,1,.36,1), height .5s cubic-bezier(.22,1,.36,1); pointer-events: none; }
-.wb-tabs { position: absolute; top: 12px; right: 12px; z-index: 4; padding: 4px; background: rgb(0 0 0 / .55); border: 1px solid rgb(255 255 255 / .12); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+.wb-chips button.is-on, .wb-tabs button.is-on { color: var(--color-on-olive); }
+.wb-glide { position: absolute; z-index: 0; top: 0; left: 0; border-radius: 999px; background: linear-gradient(135deg, var(--color-olive), var(--color-olive-deep)); box-shadow: 0 8px 30px -8px color-mix(in srgb, var(--color-olive) 70%, transparent); transition: transform .5s cubic-bezier(.22,1,.36,1), width .5s cubic-bezier(.22,1,.36,1), height .5s cubic-bezier(.22,1,.36,1); pointer-events: none; }
+.wb-tabs { position: absolute; top: 12px; right: 12px; z-index: 4; padding: 4px; background: color-mix(in srgb, var(--color-black) 55%, transparent); border: 1px solid color-mix(in srgb, var(--color-white) 12%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
 .wb-tabs.is-static { position: relative; top: auto; right: auto; }
 .wb-tabs button { padding: 6px 13px; font-size: 12.5px; font-weight: 600; }
 .wb-tabs .wb-glide { box-shadow: none; }
@@ -1745,11 +1841,11 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   position: relative; isolation: isolate; border-radius: 26px; padding: 14px 14px 22px;
   transform: perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry));
 }
-.wb-card::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; background: radial-gradient(420px circle at var(--mx) var(--my), rgb(163 176 106 / .14), transparent 60%); opacity: 0; transition: opacity .4s; }
+.wb-card::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; background: radial-gradient(420px circle at var(--mx) var(--my), color-mix(in srgb, var(--color-olive) 14%, transparent), transparent 60%); opacity: 0; transition: opacity .4s; }
 @property --wb-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
 .wb-card::after {
   content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; pointer-events: none;
-  background: conic-gradient(from var(--wb-a), transparent 0 70%, #a3b06a 82%, #b5f04a 86%, transparent 92%);
+  background: conic-gradient(from var(--wb-a), transparent 0 70%, var(--color-olive) 82%, #b5f04a 86%, transparent 92%);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude;
   opacity: 0; transition: opacity .4s; animation: wb-orbit 4.5s linear infinite;
 }
@@ -1759,52 +1855,52 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 .wb-rise { opacity: 0; filter: blur(12px); translate: 0 36px; transition: transform .5s cubic-bezier(.22,1,.36,1); }
 .wb-rise.is-in { opacity: 1; filter: none; translate: 0 0; transition: opacity .9s cubic-bezier(.22,1,.36,1), filter .9s cubic-bezier(.22,1,.36,1), translate .9s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1); transition-delay: calc(var(--d, 0) * 110ms), calc(var(--d, 0) * 110ms), calc(var(--d, 0) * 110ms), 0s; }
 
-.wb-stage { container-type: inline-size; position: relative; aspect-ratio: 16 / 11; border-radius: 18px; overflow: hidden; background: radial-gradient(120% 90% at 50% 0%, rgb(163 176 106 / .10), rgb(255 255 255 / .02) 60%); border: 1px solid rgb(255 255 255 / .07); }
+.wb-stage { container-type: inline-size; position: relative; aspect-ratio: 16 / 11; border-radius: 18px; overflow: hidden; background: radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--color-olive) 10%, transparent), color-mix(in srgb, var(--color-white) 2%, transparent) 60%); border: 1px solid color-mix(in srgb, var(--color-white) 7%, transparent); }
 .wb-dev { position: absolute; display: block; padding: 0; border: 0; font: inherit; color: inherit; cursor: zoom-in; transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .55s cubic-bezier(.22,1,.36,1); }
 .wb-dev.is-off { opacity: 0; transform: scale(.94) translateY(14px); pointer-events: none; }
-.wb-browser { left: 8%; width: 84%; top: calc(50% - 26.25cqw - 13px); border-radius: 12px; overflow: hidden; background: #0d0d0d; box-shadow: 0 30px 60px -20px rgb(0 0 0 / .9), 0 0 0 1px rgb(255 255 255 / .1); }
+.wb-browser { left: 8%; width: 84%; top: calc(50% - 26.25cqw - 13px); border-radius: 12px; overflow: hidden; background: #0d0d0d; box-shadow: 0 30px 60px -20px color-mix(in srgb, var(--color-black) 90%, transparent), 0 0 0 1px color-mix(in srgb, var(--color-white) 10%, transparent); }
 .wb-chrome { height: 26px; display: flex; align-items: center; gap: 6px; padding: 0 11px; background: #1a1a1a; }
 .wb-chrome i { width: 8px; height: 8px; border-radius: 50%; background: #ff5f57; }
 .wb-chrome i:nth-child(2) { background: #febc2e; }
 .wb-chrome i:nth-child(3) { background: #28c840; }
-.wb-chrome span { margin-left: 10px; flex: 1; height: 15px; border-radius: 6px; background: #262626; font-size: 9.5px; line-height: 15px; color: rgb(255 255 255 / .45); padding: 0 9px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
-.wb-view { position: relative; display: block; overflow: hidden; background: #fff; }
+.wb-chrome span { margin-left: 10px; flex: 1; height: 15px; border-radius: 6px; background: #262626; font-size: 9.5px; line-height: 15px; color: color-mix(in srgb, var(--color-white) 45%, transparent); padding: 0 9px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+.wb-view { position: relative; display: block; overflow: hidden; background: var(--color-white); }
 .wb-browser .wb-view { aspect-ratio: 16 / 10; }
-.wb-phone { top: 4%; height: 92%; left: 50%; translate: -50% 0; aspect-ratio: 9 / 19.2; border-radius: 34px; padding: 9px; background: linear-gradient(145deg, #2b2b2b, #0c0c0c); box-shadow: 0 30px 60px -20px rgb(0 0 0 / .95), inset 0 0 0 1.5px rgb(255 255 255 / .14); }
+.wb-phone { top: 4%; height: 92%; left: 50%; translate: -50% 0; aspect-ratio: 9 / 19.2; border-radius: 34px; padding: 9px; background: linear-gradient(145deg, #2b2b2b, #0c0c0c); box-shadow: 0 30px 60px -20px color-mix(in srgb, var(--color-black) 95%, transparent), inset 0 0 0 1.5px color-mix(in srgb, var(--color-white) 14%, transparent); }
 .wb-phone .wb-view { width: 100%; height: 100%; border-radius: 26px; }
-.wb-phone .wb-view::before { content: ""; position: absolute; z-index: 2; top: 7px; left: 35%; width: 30%; height: 17px; border-radius: 12px; background: #000; }
+.wb-phone .wb-view::before { content: ""; position: absolute; z-index: 2; top: 7px; left: 35%; width: 30%; height: 17px; border-radius: 12px; background: var(--color-black); }
 .wb-view img { display: block; width: 100%; height: auto; transform: translateY(0); will-change: transform; }
-.wb-hint { position: absolute; left: 12px; bottom: 12px; z-index: 4; font-size: 11.5px; color: rgb(255 255 255 / .75); background: rgb(0 0 0 / .55); border: 1px solid rgb(255 255 255 / .12); padding: 5px 11px; border-radius: 999px; pointer-events: none; transition: opacity .3s; }
+.wb-hint { position: absolute; left: 12px; bottom: 12px; z-index: 4; font-size: 11.5px; color: color-mix(in srgb, var(--color-white) 75%, transparent); background: color-mix(in srgb, var(--color-black) 55%, transparent); border: 1px solid color-mix(in srgb, var(--color-white) 12%, transparent); padding: 5px 11px; border-radius: 999px; pointer-events: none; transition: opacity .3s; }
 .wb-stage:hover .wb-hint { opacity: 0; }
 
 .wb-meta { padding: 20px 8px 0; }
-.wb-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; color: #a3b06a; border: 1px solid rgb(163 176 106 / .35); background: rgb(163 176 106 / .06); }
+.wb-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; color: var(--color-olive); border: 1px solid color-mix(in srgb, var(--color-olive) 35%, transparent); background: color-mix(in srgb, var(--color-olive) 6%, transparent); }
 .wb-tag.is-brand { color: #b5f04a; border-color: rgb(181 240 74 / .35); background: rgb(181 240 74 / .05); }
-.wb-meta h3 { margin-top: 12px; font-size: 22px; font-weight: 700; letter-spacing: -.015em; color: #fff; }
-.wb-where { font-size: 13.5px; color: rgb(255 255 255 / .45); }
-.wb-meta p { margin-top: 10px; color: rgb(255 255 255 / .66); font-size: 15px; line-height: 1.6; }
-.wb-open { position: relative; overflow: hidden; isolation: isolate; margin-top: 16px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgb(255 255 255 / .16); background: rgb(255 255 255 / .04); padding: 9px 16px; border-radius: 999px; font-size: 14px; font-weight: 500; color: #fff; cursor: pointer; transition: color .3s, border-color .3s; }
-.wb-open::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(135deg, #a3b06a, #7d8a45); transform: translateX(-101%); transition: transform .45s cubic-bezier(.22,1,.36,1); }
-.wb-open:hover { color: #141a08; border-color: transparent; }
+.wb-meta h3 { margin-top: 12px; font-size: 22px; font-weight: 700; letter-spacing: -.015em; color: var(--color-white); }
+.wb-where { font-size: 13.5px; color: color-mix(in srgb, var(--color-white) 45%, transparent); }
+.wb-meta p { margin-top: 10px; color: color-mix(in srgb, var(--color-white) 66%, transparent); font-size: 15px; line-height: 1.6; }
+.wb-open { position: relative; overflow: hidden; isolation: isolate; margin-top: 16px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid color-mix(in srgb, var(--color-white) 16%, transparent); background: color-mix(in srgb, var(--color-white) 4%, transparent); padding: 9px 16px; border-radius: 999px; font-size: 14px; font-weight: 500; color: var(--color-white); cursor: pointer; transition: color .3s, border-color .3s; }
+.wb-open::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(135deg, var(--color-olive), var(--color-olive-deep)); transform: translateX(-101%); transition: transform .45s cubic-bezier(.22,1,.36,1); }
+.wb-open:hover { color: var(--color-on-olive); border-color: transparent; }
 .wb-open:hover::before { transform: none; }
 .wb-open svg { transition: transform .3s cubic-bezier(.22,1,.36,1); }
 .wb-open:hover svg { transform: translateX(4px); }
 
 .wb-cta { margin: 90px auto 0; max-width: 760px; text-align: center; border-radius: 30px; padding: clamp(34px, 6vw, 56px) clamp(20px, 5vw, 52px); }
-.wb-cta h3 { font-size: clamp(26px, 4.2vw, 40px); line-height: 1.1; letter-spacing: -.025em; font-weight: 700; color: #fff; }
-.wb-cta p { margin: 14px auto 26px; max-width: 500px; color: rgb(255 255 255 / .66); }
+.wb-cta h3 { font-size: clamp(26px, 4.2vw, 40px); line-height: 1.1; letter-spacing: -.025em; font-weight: 700; color: var(--color-white); }
+.wb-cta p { margin: 14px auto 26px; max-width: 500px; color: color-mix(in srgb, var(--color-white) 66%, transparent); }
 .wb-shine { position: relative; overflow: hidden; }
-.wb-shine::after { content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%; background: linear-gradient(100deg, transparent, rgb(255 255 255 / .55), transparent); transform: skewX(-18deg); animation: wb-shine 3.6s cubic-bezier(.22,1,.36,1) infinite; pointer-events: none; }
+.wb-shine::after { content: ""; position: absolute; top: 0; left: -60%; width: 40%; height: 100%; background: linear-gradient(100deg, transparent, color-mix(in srgb, var(--color-white) 55%, transparent), transparent); transform: skewX(-18deg); animation: wb-shine 3.6s cubic-bezier(.22,1,.36,1) infinite; pointer-events: none; }
 @keyframes wb-shine { 0%, 55% { left: -60%; } 100% { left: 130%; } }
-.wb-fine { margin: 22px auto 0; max-width: 680px; text-align: center; font-size: 12.5px; color: rgb(255 255 255 / .6); }
+.wb-fine { margin: 22px auto 0; max-width: 680px; text-align: center; font-size: 12.5px; color: color-mix(in srgb, var(--color-white) 60%, transparent); }
 
-.wb-lb { position: fixed; inset: 0; z-index: 80; display: grid; grid-template-rows: auto 1fr; background: rgb(0 0 0 / .88); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); animation: wb-fade .35s cubic-bezier(.22,1,.36,1); }
+.wb-lb { position: fixed; inset: 0; z-index: 80; display: grid; grid-template-rows: auto 1fr; background: color-mix(in srgb, var(--color-black) 88%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); animation: wb-fade .35s cubic-bezier(.22,1,.36,1); }
 @keyframes wb-fade { from { opacity: 0; } }
-.wb-lb-top { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding: 14px 16px; border-bottom: 1px solid rgb(255 255 255 / .12); color: #fff; }
+.wb-lb-top { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; padding: 14px 16px; border-bottom: 1px solid color-mix(in srgb, var(--color-white) 12%, transparent); color: var(--color-white); }
 .wb-lb-r { display: flex; gap: 10px; align-items: center; }
-.wb-x { width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgb(255 255 255 / .14); background: rgb(255 255 255 / .05); color: #fff; display: grid; place-items: center; cursor: pointer; }
+.wb-x { width: 38px; height: 38px; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--color-white) 14%, transparent); background: color-mix(in srgb, var(--color-white) 5%, transparent); color: var(--color-white); display: grid; place-items: center; cursor: pointer; }
 .wb-lb-body { overflow-y: auto; overscroll-behavior: contain; padding: 24px 16px 60px; }
-.wb-lb-body img { display: block; margin: 0 auto; max-width: min(100%, 1200px); height: auto; border-radius: 12px; box-shadow: 0 30px 80px -20px rgb(0 0 0 / .9); opacity: 0; transform: scale(.96); transition: opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1); }
+.wb-lb-body img { display: block; margin: 0 auto; max-width: min(100%, 1200px); height: auto; border-radius: 12px; box-shadow: 0 30px 80px -20px color-mix(in srgb, var(--color-black) 90%, transparent); opacity: 0; transform: scale(.96); transition: opacity .5s cubic-bezier(.22,1,.36,1), transform .5s cubic-bezier(.22,1,.36,1); }
 .wb-lb-body img.is-phone { width: 390px; }
 .wb-lb-body img.is-ready { opacity: 1; transform: none; }
 
@@ -1885,7 +1981,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 /* Borderless services menu (services-rail.tsx, Moe's pick 2026-11-08). No edge or panel shadow, just a faint frosted wash that
    fades out toward the bottom so the menu melts into the page. */
 .rail-soft {
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.05), rgb(255 255 255 / 0.015) 70%, transparent);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-white) 5%, transparent), color-mix(in srgb, var(--color-white) 1.5%, transparent) 70%, transparent);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
@@ -1895,7 +1991,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
    the words readable when the bar comes back over page content. */
 .nav-clear a,
 .nav-clear span {
-  text-shadow: 0 1px 10px rgb(0 0 0 / 0.85), 0 0 2px rgb(0 0 0 / 0.6);
+  text-shadow: 0 1px 10px color-mix(in srgb, var(--color-black) 85%, transparent), 0 0 2px color-mix(in srgb, var(--color-black) 60%, transparent);
 }
 .nav-clear .btn-solid,
 .nav-clear .nav-morph a.is-lit {
@@ -1912,7 +2008,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   inset: 0 0 -36px 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgb(0 0 0 / 0.96), rgb(0 0 0 / 0.92) 62%, transparent);
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--color-black) 96%, transparent), color-mix(in srgb, var(--color-black) 92%, transparent) 62%, transparent);
   opacity: 0;
 }
 .nav-scrim.is-scrolled::before {
@@ -1964,17 +2060,17 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   height: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: rgb(255 255 255 / 0.03);
+  background: color-mix(in srgb, var(--color-white) 3%, transparent);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.22), rgb(163 176 106 / 0.18)) padding-box;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-white) 22%, transparent), color-mix(in srgb, var(--color-olive) 18%, transparent)) padding-box;
   border: 3px solid transparent;
   border-radius: 12px;
-  box-shadow: inset 0 0 0 1px rgb(163 176 106 / 0.5);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-olive) 50%, transparent);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.3), rgb(163 176 106 / 0.3)) padding-box;
-  box-shadow: inset 0 0 0 1px rgb(163 176 106 / 0.85);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--color-white) 30%, transparent), color-mix(in srgb, var(--color-olive) 30%, transparent)) padding-box;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-olive) 85%, transparent);
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
@@ -1987,7 +2083,7 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
 @supports not selector(::-webkit-scrollbar) {
   * {
     scrollbar-width: thin;
-    scrollbar-color: rgb(163 176 106 / 0.45) rgb(255 255 255 / 0.03);
+    scrollbar-color: color-mix(in srgb, var(--color-olive) 45%, transparent) color-mix(in srgb, var(--color-white) 3%, transparent);
   }
 }
 
@@ -2013,8 +2109,8 @@ body:has(.site-chat-panel.is-open) .mockup-notice {
   align-items: center;
   gap: 0.75rem;
   padding: 0.625rem 5.25rem calc(0.625rem + env(safe-area-inset-bottom)) 1rem;
-  background: rgb(11 10 9 / 0.86);
-  border-top: 1px solid rgb(255 255 255 / 0.08);
+  background: color-mix(in srgb, var(--color-page) 86%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--color-white) 8%, transparent);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   transform: translateY(110%);

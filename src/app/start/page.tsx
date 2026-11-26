@@ -27,7 +27,7 @@ export default function StartPage() {
   return (
     <div className="mx-auto w-full max-w-4xl px-6 pt-14 pb-20">
       <div className="text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a3b06a]/80">Let&apos;s get started</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-olive/80">Let&apos;s get started</p>
         <h1 className="mt-3 text-balance text-3xl font-bold tracking-tight text-white sm:text-5xl">What do you need?</h1>
         <p className="mx-auto mt-4 max-w-xl text-balance text-white/65">
           Pick one. A few quick taps and we&apos;ll come back within one business day with a plan and a real price.
@@ -36,7 +36,7 @@ export default function StartPage() {
       <StartTiles className="mt-10" />
       <p className="mt-8 text-center text-sm text-white/50">
         Rather talk to a person?{" "}
-        <a href="tel:+18138971954" className="font-medium text-[#a3b06a] hover:underline">
+        <a href="tel:+18138971954" className="font-medium text-olive hover:underline">
           Call or text (813) 897 1954
         </a>
       </p>

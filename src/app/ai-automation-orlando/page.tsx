@@ -153,7 +153,7 @@ export default function AiAutomationOrlandoPage() {
       </p>
       <p className="mx-auto mt-4 max-w-2xl text-center text-white/65">
         Losing calls to voicemail?{" "}
-        <Link href="/ai" className="font-medium text-[#a3b06a] hover:text-[#7d8a45]">
+        <Link href="/ai" className="font-medium text-olive hover:text-olive-deep">
           See the AI Front Desk
         </Link>
         , our AI receptionist that answers and books 24/7.
@@ -188,7 +188,7 @@ export default function AiAutomationOrlandoPage() {
         <div className="mt-10 space-y-8">
           {PROCESS.map((p) => (
             <div key={p.step} className="flex gap-6 border-b border-white/10 pb-8 last:border-0">
-              <span className="shrink-0 text-2xl font-bold text-[#a3b06a]/80">{p.step}</span>
+              <span className="shrink-0 text-2xl font-bold text-olive/80">{p.step}</span>
               <div>
                 <h3 className="text-lg font-semibold text-white">{p.title}</h3>
                 <p className="mt-2 text-base leading-relaxed text-white/70">{p.body}</p>

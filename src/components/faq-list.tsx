@@ -13,7 +13,7 @@ export function FaqList({ items }: { items: { q: string; a: string }[] }) {
           <details className="faq" open={i === 0}>
             <summary className="flex cursor-pointer items-start justify-between gap-4 p-6">
               <h3 className="text-base font-semibold text-white">{item.q}</h3>
-              <Plus size={18} aria-hidden="true" className="faq-icon mt-0.5 shrink-0 text-[#a3b06a]" />
+              <Plus size={18} aria-hidden="true" className="faq-icon mt-0.5 shrink-0 text-olive" />
             </summary>
             <p className="px-6 pb-6 text-base leading-relaxed text-white/70">{item.a}</p>
           </details>

@@ -161,14 +161,14 @@ export function ServicesJourney() {
   useEffect(() => () => clearTimeout(dwell.current), []);
 
   const arrow =
-    "absolute top-1/2 z-10 hidden h-11 w-11 -translate-y-1/2 place-items-center rounded-full border border-[#a3b06a]/50 bg-black/70 text-white backdrop-blur transition hover:bg-black/90 sm:grid";
+    "absolute top-1/2 z-10 hidden h-11 w-11 -translate-y-1/2 place-items-center rounded-full border border-olive/50 bg-black/70 text-white backdrop-blur transition hover:bg-black/90 sm:grid";
   const spacer =
     "shrink-0 w-[calc(50%_-_min(39vw,260px)_-_1rem)] sm:w-[calc(50%_-_min(39vw,260px)_-_1.5rem)]";
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-[#a3b06a]">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.3em] text-olive">
           The EVOGENCY system
         </h2>
       </div>
@@ -226,8 +226,8 @@ export function ServicesJourney() {
                     } ${
                       on
                         ? s.flagship
-                          ? "shadow-[0_30px_90px_-20px_rgba(163,176,106,0.45)]"
-                          : "shadow-[0_30px_80px_-24px_rgba(163,176,106,0.25)] ring-1 ring-[#a3b06a]/30"
+                          ? "shadow-[0_30px_90px_-20px_color-mix(in srgb, var(--color-olive) 45%, transparent)]"
+                          : "shadow-[0_30px_80px_-24px_color-mix(in srgb, var(--color-olive) 25%, transparent)] ring-1 ring-olive/30"
                         : "cursor-pointer"
                     }`}
                   >
@@ -242,13 +242,13 @@ export function ServicesJourney() {
                       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
                       {s.flagship && (
                         <div className="pointer-events-none absolute left-4 top-4 flex flex-col items-start gap-2">
-                          <span className="rounded-full border border-[#a3b06a]/60 bg-black/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#a3b06a] backdrop-blur">
+                          <span className="rounded-full border border-olive/60 bg-black/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-olive backdrop-blur">
                             Flagship
                           </span>
                           <span className="flex items-center gap-2 rounded-full border border-white/15 bg-black/60 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur">
                             <span className="relative flex h-2 w-2">
-                              <span className="absolute inline-flex h-full w-full rounded-full bg-[#a3b06a] opacity-75 motion-safe:animate-ping" />
-                              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#a3b06a]" />
+                              <span className="absolute inline-flex h-full w-full rounded-full bg-olive opacity-75 motion-safe:animate-ping" />
+                              <span className="relative inline-flex h-2 w-2 rounded-full bg-olive" />
                             </span>
                             Live 24/7
                           </span>
@@ -257,7 +257,7 @@ export function ServicesJourney() {
                     </div>
 
                     <div className="flex flex-1 flex-col p-6 text-center sm:p-8 sm:text-left">
-                      <span className="text-xs font-semibold tracking-[0.15em] text-[#a3b06a]">
+                      <span className="text-xs font-semibold tracking-[0.15em] text-olive">
                         {s.kicker.toUpperCase()}
                       </span>
                       <h3 className="mt-1 text-xl font-bold text-white">{s.title}</h3>
@@ -271,7 +271,7 @@ export function ServicesJourney() {
                           <a
                             href={s.flagship.tel}
                             tabIndex={on ? 0 : -1}
-                            className="inline-flex items-center gap-2 text-sm font-semibold text-[#a3b06a] transition hover:text-white"
+                            className="inline-flex items-center gap-2 text-sm font-semibold text-olive transition hover:text-white"
                           >
                             <Phone size={15} /> Or call it now, {s.flagship.display}
                           </a>
@@ -298,7 +298,7 @@ export function ServicesJourney() {
             >
               <span
                 className={`block h-2 rounded-full transition-all ${
-                  i === active ? "w-6 bg-[#a3b06a]" : "w-2 bg-white/25 group-hover:bg-white/50"
+                  i === active ? "w-6 bg-olive" : "w-2 bg-white/25 group-hover:bg-white/50"
                 }`}
               />
             </button>

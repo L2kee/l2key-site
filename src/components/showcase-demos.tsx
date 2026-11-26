@@ -13,7 +13,7 @@ export function Replay({ children }: { children: React.ReactNode }) {
       <button
         type="button"
         onClick={() => setRun((r) => r + 1)}
-        className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-3 py-1.5 text-xs text-white/60 transition hover:border-[#a3b06a]/50 hover:text-white"
+        className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-3 py-1.5 text-xs text-white/60 transition hover:border-olive/50 hover:text-white"
       >
         <RotateCcw size={13} /> Play again
       </button>

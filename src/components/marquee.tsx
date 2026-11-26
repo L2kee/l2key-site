@@ -50,7 +50,8 @@ export function Marquee({ children }: { children?: React.ReactNode }) {
                       key={`${set}-${logo.name}`}
                       className="tech-logo"
                       viewBox="0 0 24 24"
-                      fill={logo.color}
+                      // Logos that run white on the dark site follow the theme.
+                      style={{ fill: logo.color === "#FFFFFF" ? "var(--color-white)" : logo.color }}
                       role={hidden ? undefined : "img"}
                       aria-label={hidden ? undefined : logo.name}
                       aria-hidden={hidden || undefined}

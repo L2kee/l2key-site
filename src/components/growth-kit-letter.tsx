@@ -8,14 +8,14 @@ function BuyButton() {
         Get the Kit for $27 <ArrowRight size={20} />
       </button>
       <p className="flex items-center gap-2 text-sm text-white/55">
-        <ShieldCheck size={16} className="text-[#a3b06a]" /> Secure checkout by Stripe. Instant download. 30 day guarantee.
+        <ShieldCheck size={16} className="text-olive" /> Secure checkout by Stripe. Instant download. 30 day guarantee.
       </p>
     </form>
   );
 }
 
 function H2({ children }: { children: React.ReactNode }) {
-  return <h2 className="mt-10 text-2xl font-bold text-[#a3b06a] sm:text-3xl">{children}</h2>;
+  return <h2 className="mt-10 text-2xl font-bold text-olive sm:text-3xl">{children}</h2>;
 }
 
 const PARTS = [
@@ -90,15 +90,15 @@ export function GrowthKitLetter() {
         <ul className="space-y-5">
           {PARTS.map((part) => (
             <li key={part.name} className="flex gap-3">
-              <Check size={22} className="mt-1 shrink-0 text-[#a3b06a]" />
+              <Check size={22} className="mt-1 shrink-0 text-olive" />
               <span>
-                <strong className="text-white">{part.name}:</strong> <em className="text-[#a3b06a]/90">{part.promise}</em>{" "}
+                <strong className="text-white">{part.name}:</strong> <em className="text-olive/90">{part.promise}</em>{" "}
                 {part.detail}
               </span>
             </li>
           ))}
           <li className="flex gap-3">
-            <Check size={22} className="mt-1 shrink-0 text-[#a3b06a]" />
+            <Check size={22} className="mt-1 shrink-0 text-olive" />
             <span>
               <strong className="text-white">Plus an editable copy of every script</strong>, so you can paste straight
               into your phone or CRM.
@@ -124,7 +124,7 @@ export function GrowthKitLetter() {
 
         <H2>&ldquo;So why is it only $27?&rdquo;</H2>
         <p>Fair question. Honestly? Because some of you will read this kit and think:</p>
-        <p className="border-l-2 border-[#a3b06a]/60 pl-4 italic text-white/75">
+        <p className="border-l-2 border-olive/60 pl-4 italic text-white/75">
           &ldquo;This is great, but I don&apos;t have time to set any of it up. Can you just do it for me?&rdquo;
         </p>
         <p>
