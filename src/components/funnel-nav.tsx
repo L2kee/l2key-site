@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ChevronLeft, ChevronRight, House, Phone, Mail, CalendarClock, ArrowRight } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { NavLink } from "@/components/nav-link";
 import { NAV_LINKS, SERVICE_LINKS } from "@/lib/site-nav";
 
@@ -197,6 +198,11 @@ export function FunnelNav() {
           <a href="/agency-os" onClick={closeForNav} className="flex min-h-11 items-center px-3 text-xs text-white/50 transition hover:text-white">
             Client Portal
           </a>
+          {/* Funnel pages keep a clean header, so the theme switch lives here. */}
+          <div className="flex min-h-11 items-center justify-between px-3 text-xs text-white/50">
+            Theme
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </>
