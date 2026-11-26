@@ -136,5 +136,35 @@
     "post": "2026-11-25-gpt-62-test-your-own-tasks",
     "due": "2026-11-25T19:00:00-05:00",
     "fmt": "image"
+  },
+  "2026-11-26 19:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b077e0807071a60673e8b07",
+    "post": "2026-11-26-gemini-4-neon-third-place",
+    "due": "2026-11-26T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-26 19:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6b077e0907071a60673e8b50",
+    "post": "2026-11-26-gemini-4-neon-third-place",
+    "due": "2026-11-26T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-26 19:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b077e0ab8e2338b857729f6",
+    "post": "2026-11-26-gemini-4-neon-third-place",
+    "due": "2026-11-26T19:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-27 12:30|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b077e0a9f6dda31ccaca4b9",
+    "post": "2026-11-27-atomic-habits-people-habit",
+    "due": "2026-11-27T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-27 12:30|6ad443b8778b240e2f4389b4": {
+    "buffer": "6b077e0ba791bea1b23cfc10",
+    "post": "2026-11-27-atomic-habits-people-habit",
+    "due": "2026-11-27T12:30:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
