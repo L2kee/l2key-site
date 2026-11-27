@@ -4,6 +4,7 @@ Usage:
   python social/schedule.py channels        list connected Buffer channels and plan limits (no changes)
   python social/schedule.py inspect <id>    read one Buffer post (no changes)
   python social/schedule.py sync            book the soonest posts from every social/<week>.json
+  python social/schedule.py failed          list posts Buffer failed to send (no changes, exits 1 if any)
   python social/schedule.py cleanup         delete the slides and reels of posts that already went out
   python social/schedule.py metrics         save the numbers of every sent post to social/metrics/<today>.json
 
@@ -24,6 +25,8 @@ reel, or one in an old voice or speed, gets swapped once the new one is live.
 A post whose reel isn't rendered yet waits for a later run, unless it's due within FALLBACK_HOURS, when it goes out
 as the image carousel instead. A booked carousel is swapped for the reel once the reel exists ("fmt" in the state).
 If Buffer refuses a reel, the carousel is booked in its place and the run fails, so GitHub emails Moe.
+Every sync also lists posts Buffer failed to send (a channel that lost its login, say) and fails the run while any are
+left, so GitHub emails Moe the same day. Retry or delete them in Buffer to clear it.
 Reel formats (social/config/abtest.json): in the A/B test (2026-10-26 to 2026-11-01) half the posts carry a 3D stick figure
 reel made on Moe's laptop by the Content Crew (reel.json "engine": "stickman"), and from 2026-11-02 a third of them carry
 the stick figure and a third the two character mascot reel ("engine": "mascot"). They book as "reel_stickman" and
@@ -116,6 +119,37 @@ def scheduled_ids(org_id):
             return ids
         after = page["pageInfo"]["endCursor"]
 
+
+def failed_posts(org_id):
+    """Posts Buffer tried to send and couldn't, such as when a channel lost its login."""
+    q = """query($id: OrganizationId!, $after: String) {
+      posts(first: 100, after: $after, input: {organizationId: $id, filter: {status: [error]}}) {
+        edges { node { id channelId dueAt text } } pageInfo { hasNextPage endCursor } } }"""
+    found, after = [], None
+    while True:
+        page = gql(q, {"id": org_id, "after": after})["posts"]
+        found += [e["node"] for e in page["edges"]]
+        if not page["pageInfo"]["hasNextPage"]:
+            return found
+        after = page["pageInfo"]["endCursor"]
+
+
+def report_failed(orgs, chans):
+    """Print every failed post and return how many there are, so the run can fail and GitHub emails Moe.
+
+    Booking only proves Buffer accepted a post, not that it went out. el2khe lost its Instagram
+    login on 2026-11-21 and 19 posts failed quietly for 5 days before anyone noticed.
+    """
+    names = {c["id"]: f"{c['service']} {c['name']}" for c in chans}
+    total = 0
+    for org in orgs:
+        for n in failed_posts(org["id"]):
+            first = (n["text"] or "").strip().splitlines()[0][:80] if (n["text"] or "").strip() else ""
+            print(f"FAILED IN BUFFER: {names.get(n['channelId'], n['channelId'])} | due {n['dueAt']} | {first}")
+            total += 1
+    if total:
+        print(f"{total} post(s) failed in Buffer. Open Buffer, refresh the channel if it asks, then retry or delete them.")
+    return total
 
 def pid(p):
     return p.get("id") or p["date"]
@@ -351,6 +385,7 @@ def sync():
                 failed += 1
                 print(f"{key} {c['service']}: {kind} FAILED, {res.get('message')}")
         print(f"{org['name']}: {len(booked)} of {cap} scheduled posts in use")
+    failed += report_failed(orgs, targets)
     return 1 if failed else 0
 
 
@@ -412,6 +447,9 @@ if __name__ == "__main__":
     elif sys.argv[1:2] == ["inspect"] and len(sys.argv) == 3:
         q = "query($id: PostId!) { post(input: {id: $id}) { id status dueAt sentAt via allowedActions } }"
         print(json.dumps(gql(q, {"id": sys.argv[2]})["post"], indent=2))
+    elif sys.argv[1:2] == ["failed"]:
+        orgs = organizations()
+        sys.exit(1 if report_failed(orgs, channels(orgs)) else 0)
     elif sys.argv[1:2] == ["cleanup"]:
         cleanup()
     elif sys.argv[1:2] == ["metrics"]:
