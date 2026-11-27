@@ -184,5 +184,23 @@
     "post": "2026-11-27-atomic-habits-people-habit",
     "due": "2026-11-27T12:30:00-05:00",
     "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-28 08:00|6aee7ad3e29c69a1718c1f7a": {
+    "buffer": "6b08d19a8899c4e77901e165",
+    "post": "2026-11-28-ai-app-security-review",
+    "due": "2026-11-28T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-28 08:00|6ad443b8778b240e2f4389b4": {
+    "buffer": "6b08d19b70e2a88e2ce2eee0",
+    "post": "2026-11-28-ai-app-security-review",
+    "due": "2026-11-28T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
+  },
+  "2026-11-28 08:00|6ac29f8e6a5c39ccb6139c75": {
+    "buffer": "6b08d19c7c3f43554e43928b",
+    "post": "2026-11-28-ai-app-security-review",
+    "due": "2026-11-28T08:00:00-05:00",
+    "fmt": "reel_vo_bf_lily@1.15_m2"
   }
 }
