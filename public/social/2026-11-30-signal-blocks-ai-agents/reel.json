@@ -1,0 +1,17 @@
+{
+  "seconds": 40.72,
+  "cover_ms": 3046,
+  "engine": 2,
+  "look": "teal",
+  "motion": {
+    "hook": "mark",
+    "why": "wipe",
+    "num": "pop",
+    "step": "circle",
+    "cta": "pulse",
+    "change": "blur",
+    "scene": "grid"
+  },
+  "voice": "bf_lily@1.15",
+  "music": "blue-skies"
+}
