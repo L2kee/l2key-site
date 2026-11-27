@@ -12471,7 +12471,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to set up automated appointment reminders that reduce no shows. Timing, wording, confirm and reschedule replies, consent rules, and filling the gaps.",
     excerpt: "The timing, wording, and reply options that turn reminders from noise into fewer empty slots.",
-    date: "2026-11-24",
+    date: "2026-11-26",
     tag: "AI Automation",
     relatedHref: "/ai-automation-orlando",
     relatedLabel: "See our AI automation service",
@@ -12534,7 +12534,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why your business listings on Bing and Apple matter more now that AI assistants and iPhones use them, and how to claim and clean them up.",
     excerpt: "Two free business listings that feed Siri, Apple Maps, Copilot, and more, and that most owners never claim.",
-    date: "2026-11-24",
+    date: "2026-11-26",
     tag: "AI Search",
     relatedHref: "/generative-engine-optimization-orlando",
     relatedLabel: "See our AI search service",
@@ -12593,7 +12593,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How to set up sales pipeline stages in a CRM for a service business. The stages that make sense, what moves a lead forward, and the mistakes that clutter it.",
     excerpt: "A clear set of pipeline stages so you always know which leads need a call today.",
-    date: "2026-11-24",
+    date: "2026-11-26",
     tag: "CRM",
     relatedHref: "/custom-crm-development-orlando",
     relatedLabel: "See our custom CRM service",

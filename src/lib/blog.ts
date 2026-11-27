@@ -726,6 +726,9 @@ const PUBLISHED_BACKLOG_SLUGS = [
   "website-design-for-acupuncturists",
   "why-business-emails-land-in-spam",
   "schema-markup-for-local-businesses",
+  "appointment-reminders-that-cut-no-shows",
+  "bing-places-and-apple-business-connect",
+  "pipeline-stages-for-a-service-business",
 ];
 
 // Newest first, so each drip publish shows up at the top of /blog. The sort
