@@ -12660,7 +12660,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "Why your business should own its domain, hosting account, and website files, the risks of letting a vendor hold them, and how to check what you own today.",
     excerpt: "The quiet risk in letting a vendor own your domain or website, and how to check yours today.",
-    date: "2026-11-24",
+    date: "2026-11-27",
     tag: "Web Design",
     relatedHref: "/web-design-agency-orlando",
     relatedLabel: "See our web design service",
@@ -12721,7 +12721,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How personal injury firms can win organic search in a crowded market. The searches that bring cases, the map pack, practice area pages, and advertising rules.",
     excerpt: "Where a personal injury firm can still win organic search when the ads cost a fortune per click.",
-    date: "2026-11-24",
+    date: "2026-11-27",
     tag: "SEO",
     relatedHref: "/seo-agency-orlando",
     relatedLabel: "See our SEO service",
@@ -12786,7 +12786,7 @@ export const BLOG_BACKLOG: BlogPost[] = [
     description:
       "How acupuncture clinics can earn more Google reviews naturally, what first time patients read in them, and how to reply while protecting patient privacy.",
     excerpt: "Why reviews matter so much for acupuncture, and a low pressure way to earn more of them.",
-    date: "2026-11-24",
+    date: "2026-11-27",
     tag: "Reviews",
     relatedHref: "/google-reviews-orlando",
     relatedLabel: "See our reviews service",
